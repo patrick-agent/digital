@@ -1,0 +1,138 @@
+.page {
+  position: relative;
+  min-height: 100vh;
+  padding-top: 80px;
+  overflow: hidden;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: var(--space-3xl) var(--space-xl) var(--space-4xl);
+}
+
+@media (min-width: 768px) {
+  .content {
+    max-width: 520px;
+    padding: var(--space-4xl) 0 var(--space-4xl);
+  }
+}
+
+/* ─── Cover Art ─── */
+.coverBlock {
+  margin-bottom: var(--space-xl);
+}
+
+.coverPlaceholder {
+  width: 280px;
+  height: 280px;
+  border-radius: var(--radius-xl);
+  background: var(--bg-tertiary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-lg);
+  text-align: center;
+  box-shadow: 0 8px 40px rgba(168, 85, 247, 0.15);
+}
+
+@media (max-width: 768px) {
+  .coverPlaceholder {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+.coverPlaceholderText {
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* ─── Track Info ─── */
+.trackInfo {
+  text-align: center;
+  margin-bottom: var(--space-lg);
+}
+
+.trackTitle {
+  font-size: var(--fs-2xl);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.artistName {
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+  margin-bottom: var(--space-sm);
+}
+
+.chooseText {
+  font-size: var(--fs-sm);
+  color: var(--text-secondary);
+}
+
+/* ─── Social Icons ─── */
+.socialRow {
+  display: flex;
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+}
+
+.socialIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-secondary);
+  transition: all var(--transition-fast);
+}
+
+.socialIcon:hover {
+  background: rgba(168, 85, 247, 0.12);
+  color: var(--accent-primary);
+  box-shadow: var(--glow-purple);
+}
+
+/* ─── Platform Links ─── */
+.linksWrapper {
+  width: 100%;
+  margin-bottom: var(--space-2xl);
+}
+
+/* ─── Back Link ─── */
+.backWrapper {
+  margin-bottom: var(--space-xl);
+}
+
+.backLink {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+  letter-spacing: 0.04em;
+}
+
+.backLink:hover {
+  color: var(--accent-primary);
+}
+
+/* ─── Footer Note ─── */
+.footerNote {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+  text-align: center;
+  opacity: 0.5;
+}

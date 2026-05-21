@@ -1,0 +1,52 @@
+.transitionLayer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  pointer-events: none;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+
+.rocketContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.rocketContainer > div,
+.rocketContainer canvas {
+  width: 100% !important;
+  height: 100% !important;
+  transform: scale(1.5) !important;
+  transform-origin: center center !important;
+  overflow: visible !important;
+}
+
+.splineFallback {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+/*Tablet*/
+@media (max-width: 1023px) {
+.transitionLayer {
+  transform: translateX(-30px);
+}
+}
+/* Mobile */
+@media (max-width: 767px) {
+.transitionLayer {
+  transform: translateX(-35px);
+}
+}

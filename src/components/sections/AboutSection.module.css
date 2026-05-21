@@ -1,0 +1,380 @@
+/* ============================================
+   AboutSection — Cyberpunk 2 Columns Layout
+   ============================================ */
+
+.about {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: radial-gradient(ellipse at center, #1a0f2e 0%, #0f0a1a 100%);
+}
+
+.aboutBg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.gradientOverlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, rgba(168, 85, 247, 0.05) 0%, transparent 70%);
+}
+
+.aboutContent {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.characterContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  transition: opacity 0.6s ease, pointer-events 0.6s ease;
+}
+
+.uiOverlay {
+  position: absolute;
+  width: 100%;
+  max-width: 850px;
+  /* Đã giảm từ 1200px xuống 850px để ôm sát nhân vật */
+  height: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  pointer-events: none;
+  transition: opacity 0.6s ease, pointer-events 0.6s ease;
+}
+
+.leftCol,
+.rightCol {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  width: max-content;
+}
+
+.rightCol {
+  align-items: flex-end;
+}
+
+/* ============================================
+     CYBER BOX (Viền mỏng, phát sáng)
+     ============================================ */
+.cyberBox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--space-md) var(--space-xl);
+
+  min-width: 180px;
+  width: max-content;
+  max-width: 320px;
+
+  background: rgba(10, 5, 25, 0.5);
+  /* Nền tối mờ */
+  border: 1px solid rgba(168, 85, 247, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  pointer-events: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.1);
+}
+
+.cyberBox:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(168, 85, 247, 0.3), inset 0 0 15px rgba(168, 85, 247, 0.2);
+}
+
+.cyberContent {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* ĐẢO NGƯỢC TYPOGRAPHY */
+/* TITLE (NAME, ROLE) -> To, phát sáng */
+.cyberLabel {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 10px rgba(192, 132, 252, 0.8);
+}
+
+/* VALUE (Tachy, 2026) -> Nhỏ, monospace, mờ hơn */
+.cyberValue {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: #c084fc;
+  letter-spacing: 0.05em;
+  text-shadow: none;
+}
+
+/* ============================================
+     ĐƯỜNG CHỈ (LINES)
+     ============================================ */
+.pointerLineRight,
+.pointerLineLeft {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 1px;
+  background: rgba(168, 85, 247, 0.7);
+  box-shadow: 0 0 5px rgba(168, 85, 247, 0.5);
+}
+
+.pointerLineRight {
+  right: -50px;
+}
+
+.pointerLineRight::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -2px;
+  width: 5px;
+  height: 5px;
+  background: #c084fc;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #c084fc;
+}
+
+.pointerLineLeft {
+  left: -50px;
+}
+
+.pointerLineLeft::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -2px;
+  width: 5px;
+  height: 5px;
+  background: #c084fc;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #c084fc;
+}
+
+/* ============================================
+     CORNERS (Bốn góc phát sáng)
+     ============================================ */
+.cornerTL,
+.cornerTR,
+.cornerBL,
+.cornerBR {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #c084fc;
+  transition: all 0.3s ease;
+}
+
+.cornerTL {
+  top: -1px;
+  left: -1px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.cornerTR {
+  top: -1px;
+  right: -1px;
+  border-left: none;
+  border-bottom: none;
+}
+
+.cornerBL {
+  bottom: -1px;
+  left: -1px;
+  border-right: none;
+  border-top: none;
+}
+
+.cornerBR {
+  bottom: -1px;
+  right: -1px;
+  border-left: none;
+  border-top: none;
+}
+
+.cyberBox:hover .cornerTL,
+.cyberBox:hover .cornerTR,
+.cyberBox:hover .cornerBL,
+.cyberBox:hover .cornerBR {
+  box-shadow: 0 0 10px #c084fc;
+}
+
+/* ============================================
+     SCROLL TRACK OVERLAY (mobile/tablet)
+     ============================================ */
+.scrollTrackOverlay {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  pointer-events: none;
+  padding: 8px var(--space-md);
+}
+
+.scrollTrack {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  width: 100%;
+  pointer-events: auto;
+}
+
+.scrollTrack::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollTrackInner {
+  display: flex;
+  gap: 16px;
+  width: max-content;
+  padding: 4px 0;
+}
+
+.scrollCard {
+  flex: 0 0 auto;
+  min-width: 180px;
+  max-width: 240px;
+  padding: 12px 20px;
+}
+
+/* ============================================
+     RESPONSIVE
+     ============================================ */
+@media (min-width:641px) and (max-width: 1024px) {
+  .about {
+    flex-direction: column;
+    justify-content: flex-start;
+    clip-path: inset(0 0 300px 0);
+  }
+
+  .uiOverlay {
+    flex-direction: column;
+    height: auto;
+    min-height: 90%;
+    justify-content: space-between;
+    padding: var(--space-lg) var(--space-md);
+    gap: var(--space-md);
+  }
+
+  .leftCol,
+  .rightCol {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 15px;
+  }
+
+  .pointerLineLeft,
+  .pointerLineRight {
+    display: none;
+  }
+
+  .characterContainer {
+    height: calc(120vh - 100px);
+    rotate: 1deg;
+    margin-top: -350px;
+  }
+
+  .scrollTrackOverlay {
+    position: relative;
+    top: auto;
+    margin-top: 50px;
+    z-index: 2;
+    padding: 8px var(--space-md);
+  }
+}
+
+@media (max-width: 640px) {
+  .about {
+    flex-direction: column;
+    justify-content: flex-start;
+    clip-path: inset(0 0 450px 0);
+  }
+
+  .aboutContent {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .uiOverlay {
+    padding: var(--space-md) var(--space-sm);
+    gap: var(--space-sm);
+    height: auto;
+  }
+
+  .cyberBox {
+    width: 100%;
+    max-width: 100%;
+    min-width: 140px;
+    padding: var(--space-sm) var(--space-md);
+  }
+
+  .leftCol,
+  .rightCol {
+    gap: 10px;
+  }
+
+  .characterContainer {
+    height: calc(110vh - 100px);
+    position: relative;
+    rotate: 0.5deg;
+    margin-top: -450px;
+  }
+
+  .cyberLabel {
+    font-size: 1rem;
+  }
+
+  .cyberValue {
+    font-size: 0.65rem;
+  }
+
+  .scrollTrackOverlay {
+    position: relative;
+    top: auto;
+    margin-top: 50px;
+    z-index: 1;
+    padding: 6px var(--space-sm);
+  }
+
+  .scrollTrackInner {
+    gap: 12px;
+  }
+
+  .scrollCard {
+    min-width: 150px;
+    max-width: 200px;
+    padding: 10px 16px;
+  }
+}

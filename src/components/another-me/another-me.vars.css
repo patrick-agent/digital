@@ -1,0 +1,15 @@
+:root {
+  --am-bg: #0a0a0f;
+  --am-cyan: #a855f7;
+  --am-amber: #6366f1;
+  --am-purple: #a855f7;
+  --am-rose: #ec4899;
+  --am-green: #818cf8;
+  --am-text: #f0ede8;
+  --am-muted: #6b7280;
+  --am-border: rgba(168, 85, 247, 0.15);
+  --am-glass: rgba(255, 255, 255, 0.04);
+
+  --am-font-display: var(--font-inter), sans-serif;
+  --am-font-body: var(--font-inter), sans-serif;
+}

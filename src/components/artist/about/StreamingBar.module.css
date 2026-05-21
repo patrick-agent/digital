@@ -1,0 +1,58 @@
+.streamingBar {
+  width: 100%;
+  padding: var(--space-3xl) var(--space-xl);
+  background: var(--bg-secondary);
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xl);
+}
+
+.label {
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.logoRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2xl);
+  flex-wrap: wrap;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  transition: transform 200ms ease, color var(--transition-base);
+}
+
+.logoLink:hover {
+  transform: scale(1.08);
+  color: var(--accent-primary);
+}
+
+@media (max-width: 768px) {
+  .streamingBar {
+    padding: var(--space-2xl) var(--space-md);
+  }
+
+  .logoRow {
+    gap: var(--space-xl);
+  }
+
+  .logoLink svg {
+    width: 28px;
+    height: 28px;
+  }
+}

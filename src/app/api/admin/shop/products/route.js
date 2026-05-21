@@ -1,0 +1,35 @@
+import { NextResponse } from "next/server"
+import { readProducts, createProduct } from "@/lib/db"
+import { auth } from "@/lib/auth"
+
+export async function GET(request) {
+  const session = await auth()
+  if (!session) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
+  }
+
+  const { searchParams } = new URL(request.url)
+  const status = searchParams.get("status") || ""
+  const category = searchParams.get("category") || ""
+
+  const result = await readProducts({ status, category })
+  return NextResponse.json(result)
+}
+
+export async function POST(request) {
+  const session = await auth()
+  if (!session) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
+  }
+
+  try {
+    const body = await request.json()
+    const product = await createProduct(body)
+    return NextResponse.json(product, { status: 201 })
+  } catch (error) {
+    return NextResponse.json(
+      { error: "Failed to create product" },
+      { status: 500 }
+    )
+  }
+}

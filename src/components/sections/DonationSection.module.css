@@ -1,0 +1,488 @@
+/* ============================================
+   DonationSection — Section 5: Donation/Coffee
+   ============================================ */
+
+.donation {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: #04020a;
+  /* Nền tím cực tối */
+  overflow: hidden;
+}
+
+/* ============================================
+   1. BACKGROUND: LƯỚI CYBER & ÁNH SÁNG
+   ============================================ */
+.bgAmbientGlow {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  width: 60vw;
+  height: 60vw;
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.2) 0%, transparent 70%);
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Lưới Cyberpunk 3D dưới sàn */
+.cyberGrid {
+  position: absolute;
+  bottom: -10%;
+  left: -20%;
+  width: 140%;
+  height: 60vh;
+  background-image:
+    linear-gradient(to right, rgba(192, 132, 252, 0.4) 1px, transparent 1px),
+    linear-gradient(to top, rgba(192, 132, 252, 0.4) 1px, transparent 1px);
+  background-size: 40px 40px;
+  transform: perspective(600px) rotateX(75deg);
+  z-index: 0;
+  animation: gridMove 2s linear infinite;
+  pointer-events: none;
+  /* Làm mờ lưới ở xa xa */
+  mask-image: linear-gradient(to top, black 20%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to top, black 20%, transparent 100%);
+}
+
+@keyframes gridMove {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 0 40px;
+  }
+}
+
+.scanline {
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(to bottom, transparent, transparent 3px, rgba(192, 132, 252, 0.04) 4px);
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* ============================================
+   2. LAYER SẮP XẾP
+   ============================================ */
+.canvasLayer {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: auto;
+}
+
+.contentLayer {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 var(--space-xl);
+  z-index: 10;
+  pointer-events: none;
+}
+
+.rightContainer {
+  width: 100%;
+  max-width: 500px;
+  pointer-events: auto;
+}
+
+/* ============================================
+   3. CÁCH FIX HIỆU ỨNG LED RING (CỰC KỲ MỎNG & MƯỢT)
+   ============================================ */
+/* Khởi tạo biến góc xoay cho CSS */
+@property --bg-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+.donationPanelWrapper {
+  position: relative;
+  /* ĐỘ DÀY CỦA DÂY LED (1px) */
+  padding: 1px;
+  border-radius: 20px;
+
+  /* Tạo nền viền xoay quanh box */
+  background: conic-gradient(from var(--bg-angle),
+      transparent 60%,
+      rgba(192, 132, 252, 0.3) 80%,
+      #ff00ff 100%);
+  animation: spinLed 3s linear infinite;
+}
+
+/* Đây là lớp tạo vầng sáng chói (Flare/Glow) tỏa ra ngoài */
+.donationPanelWrapper::after {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  /* Rộng hơn viền 1 chút để glow đẹp hơn */
+  border-radius: 21px;
+  /* Copy lại gradient xoay của wrapper */
+  background: inherit;
+  /* Làm mờ cực mạnh để thành luồng sáng ảo */
+  filter: blur(12px);
+  z-index: -1;
+}
+
+/* Khung nội dung chính đè lên che đi lõi, chỉ chừa lại 1px viền sáng */
+.donationPanel {
+  position: relative;
+  background: rgba(8, 6, 12, 0.95);
+  /* Đen mờ cyberpunk */
+  border-radius: 19px;
+  /* Khớp với độ bo tròn của vỏ */
+  padding: 40px 30px;
+  z-index: 1;
+}
+
+@keyframes spinLed {
+  0% {
+    --bg-angle: 0deg;
+  }
+
+  100% {
+    --bg-angle: 360deg;
+  }
+}
+
+/* ============================================
+   TYPOGRAPHY & CRYPTO CARDS (Giữ nguyên)
+   ============================================ */
+.title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 0 0 15px #c084fc;
+  margin-bottom: 15px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #d8b4fe;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.cryptoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.cryptoCard {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: rgba(168, 85, 247, 0.05);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  border-radius: 12px;
+  padding: 15px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.cryptoCard:hover {
+  border-color: #ff00ff;
+  box-shadow: 0 0 15px rgba(255, 0, 255, 0.2);
+  background: rgba(168, 85, 247, 0.15);
+  transform: translateY(-2px);
+}
+
+.cryptoIcon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #c084fc, #7c3aed);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(192, 132, 252, 0.5);
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.iconOverlay {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.iconOverlay::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(192, 132, 252, 0.3), rgba(124, 58, 237, 0.15));
+  pointer-events: none;
+}
+
+.cryptoInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.cryptoInfo h4 {
+  margin: 0 0 5px 0;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.cryptoAddress {
+  font-size: 0.75rem;
+  color: #c084fc;
+  margin: 0 0 8px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.copyBtn {
+  background: rgba(192, 132, 252, 0.2);
+  border: 1px solid #c084fc;
+  color: #c084fc;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+}
+
+.copyBtn:hover {
+  background: #ff00ff;
+  color: #0a0a0a;
+  box-shadow: 0 0 10px #ff00ff;
+}
+
+/* ============================================
+   QR LASER SCANNER
+   ============================================ */
+.qrContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.qrCode {
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 0 20px rgba(192, 132, 252, 0.4);
+  overflow: hidden;
+  padding: 8px;
+}
+
+.qrImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.qrDecoration {
+  position: absolute;
+  inset: 5px;
+  background: repeating-linear-gradient(0deg, transparent, transparent 4px, rgba(0, 0, 0, 0.05) 4px, rgba(0, 0, 0, 0.05) 8px), repeating-linear-gradient(90deg, transparent, transparent 4px, rgba(0, 0, 0, 0.05) 4px, rgba(0, 0, 0, 0.05) 8px);
+}
+
+.qrLaser {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #ff00ff;
+  box-shadow: 0 0 15px 4px rgba(255, 0, 255, 0.6);
+  animation: scanLaser 2s ease-in-out infinite alternate;
+  z-index: 2;
+}
+
+@keyframes scanLaser {
+  0% {
+    top: 5%;
+  }
+
+  100% {
+    top: 95%;
+  }
+}
+
+.qrLabel {
+  position: relative;
+  z-index: 3;
+  font-size: 0.75rem;
+  color: #000;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+/* ============================================
+   SOCIAL LINKS
+   ============================================ */
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.socialLink {
+  color: #c084fc;
+  text-decoration: none;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border: 1px solid #c084fc;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.socialLink:hover {
+  background: #ff00ff;
+  color: #0a0a0a;
+  box-shadow: 0 0 15px #ff00ff;
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .contentLayer {
+    justify-content: center;
+    align-items: center;
+    padding: var(--space-xl) var(--space-md);
+    height: auto;
+    min-height: 100vh;
+    margin-top: -200px;
+  }
+
+  .rightContainer {
+    max-width: 450px;
+    width: 100%;
+  }
+
+  .canvasLayer {
+    pointer-events: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .contentLayer {
+    padding: var(--space-lg) var(--space-sm);
+    align-items: center;
+    min-height: auto;
+    padding-top: 80px;
+    padding-bottom: var(--space-2xl);
+    margin-top: -150px;
+
+  }
+
+  .rightContainer {
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+    margin-bottom: var(--space-lg);
+  }
+
+  .donationPanel {
+    padding: 25px 20px;
+  }
+
+  .donationPanelWrapper {
+    padding: 1px;
+  }
+
+  .cryptoContainer {
+    gap: 12px;
+    margin-bottom: var(--space-lg);
+  }
+
+  .cryptoCard {
+    flex-direction: column;
+    text-align: center;
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .cryptoIcon {
+    width: 44px;
+    height: 44px;
+    font-size: 1.3rem;
+  }
+
+  .cryptoInfo h4 {
+    font-size: 1rem;
+  }
+
+  .cryptoAddress {
+    font-size: 0.7rem;
+  }
+
+  .copyBtn {
+    padding: 4px 10px;
+    font-size: 0.7rem;
+  }
+
+  .qrContainer {
+    margin-bottom: var(--space-lg);
+  }
+
+  .qrCode {
+    width: 120px;
+    height: 120px;
+  }
+
+  .qrLabel {
+    font-size: 0.65rem;
+  }
+
+  .socialLinks {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .socialLink {
+    font-size: 0.75rem;
+    padding: 6px 12px;
+  }
+
+  .cyberGrid {
+    display: none;
+  }
+
+  .scanline {
+    display: none;
+  }
+
+  .bgAmbientGlow {
+    width: 80vw;
+    height: 80vw;
+  }
+}

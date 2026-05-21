@@ -1,0 +1,494 @@
+/* ============================================
+   HeroSection Styles
+   Full-screen split layout: 60% Canvas | 40% Text
+   ============================================ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* --- Ambient Background Orbs --- */
+.ambientBg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.orb1, .orb2, .orb3 {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.4;
+}
+
+.orb1 {
+  width: 400px;
+  height: 400px;
+  background: rgba(168, 85, 247, 0.12);
+  top: -10%;
+  left: 20%;
+  animation: orbFloat1 8s ease-in-out infinite;
+}
+
+.orb2 {
+  width: 300px;
+  height: 300px;
+  background: rgba(99, 102, 241, 0.1);
+  bottom: 10%;
+  right: 5%;
+  animation: orbFloat2 10s ease-in-out infinite;
+}
+
+.orb3 {
+  width: 200px;
+  height: 200px;
+  background: rgba(236, 72, 153, 0.08);
+  top: 60%;
+  left: 50%;
+  animation: orbFloat3 12s ease-in-out infinite;
+}
+
+@keyframes orbFloat1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(30px, 20px) scale(1.1); }
+}
+
+@keyframes orbFloat2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-20px, -30px) scale(1.05); }
+}
+
+@keyframes orbFloat3 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(15px, -15px) scale(0.95); }
+}
+
+/* --- Main Inner Layout (Foreground Overlay) --- */
+.heroInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space out text and character */
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--space-xl);
+  padding-top: 80px; /* Space for fixed navbar */
+  min-height: 100vh;
+  position: relative;
+  z-index: 10; /* Above the canvas */
+  pointer-events: none; /* Let clicks pass through to 3D background */
+}
+
+/* --- Full Screen 3D Canvas --- */
+.heroFullScreenCanvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1; /* Above ambient bg, below text */
+}
+
+.canvasVignette {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+  background: radial-gradient(ellipse at center, transparent 30%, rgba(6, 6, 8, 0.8) 100%);
+}
+
+/* --- Canvas Loading State --- */
+.canvasLoader {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-lg);
+  background: var(--bg-primary);
+}
+
+.loaderRing {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 3px solid rgba(168, 85, 247, 0.15);
+  border-top-color: var(--accent-primary);
+  animation: spin 1s linear infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loaderInner {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 3px solid rgba(99, 102, 241, 0.15);
+  border-bottom-color: var(--accent-secondary);
+  animation: spin 0.7s linear infinite reverse;
+}
+
+.loaderText {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* --- Right/Overlay: Text Content --- */
+.textContent {
+  flex: 0 0 45%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  pointer-events: auto; /* Re-enable clicks for text and buttons */
+  
+  /* Subtle glass panel behind text for readability over 3D */
+  background: rgba(6, 6, 8, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: var(--space-2xl);
+  border-radius: var(--radius-2xl);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: var(--shadow-lg);
+}
+
+/* --- Character Overlay --- */
+.characterOverlay {
+  flex: 0 0 50%;
+  height: 90vh; /* Make it large enough for a half-body shot */
+  position: relative;
+  pointer-events: auto; /* Re-enable events so mouse movements trigger tracking */
+  display: flex;
+  align-items: flex-end; /* Align character to bottom */
+}
+
+/* Stagger animation for children */
+.textContent [data-animate] {
+  opacity: 0;
+  transform: translateY(25px);
+  animation: revealUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes revealUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- Tagline Badge --- */
+.tagline {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: var(--fs-xs);
+  font-family: var(--font-mono);
+  color: var(--accent-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  padding: 6px 16px;
+  background: rgba(168, 85, 247, 0.06);
+  border: 1px solid rgba(168, 85, 247, 0.15);
+  border-radius: var(--radius-full);
+  width: fit-content;
+}
+
+.tagDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-primary);
+  box-shadow: 0 0 8px rgba(168, 85, 247, 0.6);
+  animation: pulse-glow 2s infinite;
+}
+
+/* --- Headline --- */
+.headline {
+  font-size: clamp(2rem, 3.5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--text-primary);
+}
+
+.headlineAccent {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(135deg, #a855f7 0%, #ec4899 50%, #f59e0b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.headlineUnderline {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  opacity: 0.7;
+}
+
+/* --- Subheadline --- */
+.subheadline {
+  font-size: var(--fs-md);
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 420px;
+}
+
+.platformHighlight {
+  color: var(--text-primary);
+  font-weight: 600;
+  position: relative;
+}
+
+.platformHighlight::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--gradient-primary);
+  opacity: 0.5;
+}
+
+/* --- CTA Group --- */
+.ctaGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  margin-top: var(--space-md);
+}
+
+.ctaPrimary {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: 14px 32px;
+  font-size: var(--fs-base);
+  font-weight: 700;
+  font-family: var(--font-heading);
+  color: white;
+  background: var(--gradient-primary);
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  width: fit-content;
+  transition: all var(--transition-base);
+  box-shadow: 0 4px 20px rgba(168, 85, 247, 0.25);
+}
+
+.ctaPrimary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity var(--transition-base);
+}
+
+.ctaPrimary:hover {
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(168, 85, 247, 0.4), 0 0 60px rgba(168, 85, 247, 0.15);
+}
+
+.ctaPrimary:hover::before {
+  opacity: 1;
+}
+
+.ctaArrow {
+  display: flex;
+  align-items: center;
+  transition: transform var(--transition-base);
+}
+
+.ctaPrimary:hover .ctaArrow {
+  transform: translateX(4px);
+}
+
+.ctaText {
+  position: relative;
+  z-index: 1;
+}
+
+/* --- Scroll Indicator --- */
+.socialHint {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  color: var(--text-muted);
+  font-size: var(--fs-xs);
+  font-family: var(--font-mono);
+  letter-spacing: 0.05em;
+}
+
+.scrollIndicator {
+  width: 24px;
+  height: 38px;
+  border: 2px solid rgba(168, 85, 247, 0.3);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  padding-top: 6px;
+}
+
+.scrollDot {
+  width: 4px;
+  height: 8px;
+  background: var(--accent-primary);
+  border-radius: 4px;
+  animation: scrollBounce 1.8s ease-in-out infinite;
+}
+
+@keyframes scrollBounce {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(14px);
+    opacity: 0.3;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — Tablet
+   ============================================ */
+@media (max-width: 1024px) {
+  .heroInner {
+    padding-top: 80px;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--space-2xl);
+  }
+
+  .textContent {
+    flex: none;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding: var(--space-xl);
+  }
+
+  .characterOverlay {
+    flex: none;
+    width: 100%;
+    height: 80vh;
+    margin-top: -180px;
+  }
+
+  .headline {
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
+  }
+
+  .subheadline {
+    max-width: 500px;
+  }
+
+  .ctaGroup {
+    align-items: center;
+  }
+
+  .orb1 {
+    width: 300px;
+    height: 300px;
+  }
+
+  .orb2 {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — Mobile
+   ============================================ */
+@media (max-width: 640px) {
+  .heroInner {
+    padding: 70px var(--space-md) 0;
+    gap: var(--space-xl);
+  }
+
+  .textContent {
+    padding: var(--space-md);
+    gap: var(--space-sm);
+    background: rgba(6, 6, 8, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  .headline {
+    font-size: clamp(1.5rem, 7vw, 2.2rem);
+    line-height: 1.15;
+  }
+
+  .subheadline {
+    font-size: var(--fs-sm);
+    line-height: 1.5;
+  }
+
+  .tagline {
+    font-size: 0.65rem;
+    padding: 4px 12px;
+  }
+
+  .ctaGroup {
+    gap: var(--space-md);
+  }
+
+  .ctaPrimary {
+    padding: 12px 28px;
+    font-size: var(--fs-sm);
+    width: 100%;
+    justify-content: center;
+  }
+
+  .characterOverlay {
+    height: 80vh;
+    margin-top: -160px;
+  }
+
+  .socialHint {
+    font-size: 0.6rem;
+    gap: var(--space-sm);
+  }
+
+  .scrollIndicator {
+    width: 20px;
+    height: 32px;
+  }
+
+  .orb1 {
+    width: 200px;
+    height: 200px;
+    opacity: 0.25;
+  }
+
+  .orb2 {
+    width: 150px;
+    height: 150px;
+    opacity: 0.2;
+  }
+
+  .orb3 {
+    display: none;
+  }
+}

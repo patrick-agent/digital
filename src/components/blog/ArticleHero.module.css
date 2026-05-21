@@ -1,0 +1,138 @@
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.imageContainer {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.parallaxLayer {
+  position: absolute;
+  inset: -20% 0 0 0;
+  will-change: transform;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.imagePlaceholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--bg-tertiary), var(--bg-secondary));
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    0deg,
+    var(--bg-primary) 0%,
+    rgba(6, 6, 8, 0.7) 40%,
+    rgba(6, 6, 8, 0.3) 100%
+  );
+  pointer-events: none;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+  padding: var(--space-4xl) var(--space-xl) var(--space-3xl);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.categoryBadge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-cool);
+  background: rgba(6, 182, 212, 0.1);
+  padding: 4px 14px;
+  border-radius: var(--radius-full);
+  margin-bottom: var(--space-md);
+  border: 1px solid rgba(6, 182, 212, 0.2);
+}
+
+.title {
+  font-size: var(--fs-3xl);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: var(--space-md);
+  letter-spacing: -0.02em;
+}
+
+.excerpt {
+  font-size: var(--fs-lg);
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 600px;
+  margin-bottom: var(--space-lg);
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+}
+
+.author {
+  color: var(--accent-primary);
+}
+
+.readTime {
+  position: relative;
+  padding-left: var(--space-md);
+}
+
+.readTime::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--text-muted);
+}
+
+.glitchLine {
+  position: relative;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--accent-primary), var(--accent-cool), transparent);
+  animation: glitchLine 3s ease-in-out infinite;
+}
+
+@keyframes glitchLine {
+  0%, 100% { opacity: 1; transform: scaleX(1); }
+  50% { opacity: 0.5; transform: scaleX(0.98); }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 50vh;
+  }
+
+  .title {
+    font-size: var(--fs-2xl);
+  }
+
+  .content {
+    padding: var(--space-2xl) var(--space-md) var(--space-xl);
+  }
+}
