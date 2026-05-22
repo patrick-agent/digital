@@ -350,9 +350,11 @@
 @media (max-width: 767px) {
   .section {
     padding: 60px 16px 0;
+    margin-bottom: 30px;
   }
 
   .colRight {
+    display: none !important;
     height: 45vh;
     min-height: 300px;
     margin-top: -120px;
