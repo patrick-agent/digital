@@ -2,6 +2,7 @@
 
 import { useRef, useEffect } from 'react'
 import dynamic from 'next/dynamic'
+import { useVisibilityLoader } from '@/hooks/useVisibilityLoader'
 import styles from './AnotherMeHero.module.css'
 
 const SplineScene = dynamic(
@@ -14,13 +15,15 @@ export default function AnotherMeHero() {
   const headlineRef = useRef(null)
   const taglineRef = useRef(null)
   const ctaRef = useRef(null)
+  const { ref: visibilityRef, isVisible } = useVisibilityLoader({ rootMargin: '0px' })
 
   useEffect(() => {
     let ctx
     const init = async () => {
       const { gsap } = await import('gsap')
       ctx = gsap.context(() => {
-        const chars = headlineRef.current.querySelectorAll('span')
+        const chars = headlineRef.current?.querySelectorAll('span')
+        if (!chars) return
         gsap.from(chars, {
           opacity: 0,
           y: 30,
@@ -58,9 +61,9 @@ export default function AnotherMeHero() {
   const headline = '10 năm. 3650 ngày. Biến dữ liệu thành cảm xúc.'
 
   return (
-    <section ref={sectionRef} id="hero" className={styles.section}>
+    <section ref={(el) => { sectionRef.current = el; visibilityRef.current = el; }} id="hero" className={styles.section}>
       <div className={styles.splineWrapper}>
-        <SplineScene scene="https://prod.spline.design/FaJ3iYbeeDlZbkJI/scene.splinecode" />
+        {isVisible && <SplineScene scene="https://prod.spline.design/FaJ3iYbeeDlZbkJI/scene.splinecode" />}
         <div className={styles.splineOverlay} />
       </div>
 

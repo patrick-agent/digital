@@ -1,9 +1,9 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import Link from 'next/link';
 import { IconTrendingUp, IconCurrencyDollar, IconCode, IconRobot } from '@tabler/icons-react';
 import { GridScan } from '@/components/ui/GridScan';
+import { useVisibilityLoader, useDeviceType } from '@/hooks/useVisibilityLoader';
 import styles from './AnotherMeServices.module.css';
 
 const services = [
@@ -17,7 +17,7 @@ const services = [
   },
   {
     slug: "",
-    name: "Visulization & Dashboard", 
+    name: "Visualize & Dashboard", 
     tagline: "Xây dựng hệ thống dữ liệu và Dashboard trực quan có insights",
     features: ["Định nghĩa Metrics", "Cào dữ liệu tự động", "Near real-time dashboard","etc..."],
     stat: "Actionable & Decision Making",
@@ -34,7 +34,7 @@ const services = [
   {
     slug: "",
     name: "AI Agent Building",
-    tagline: "Custom AI agents cho quy trình quy trình của bạn",
+    tagline: "Custom AI agents cho quy trình của bạn",
     features: ["n8n / make.com workflows", "Custom agents", "Process automation", "Nuôi tôm - Openclaw"],
     stat: "80% time saved",
     icon: IconRobot
@@ -43,6 +43,8 @@ const services = [
 
 export default function AnotherMeServices() {
   const sectionRef = useRef(null);
+  const { ref: visibilityRef, isVisible } = useVisibilityLoader({ rootMargin: '100px' });
+  const deviceType = useDeviceType();
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -72,21 +74,22 @@ export default function AnotherMeServices() {
   }, []);
 
   return (
-    <section id="services" ref={sectionRef} className={styles.section}>
-      <div className={styles.gridBg}>
+    <section id="services" ref={(el) => { sectionRef.current = el; visibilityRef.current = el; }} className={styles.section}>
+      {isVisible && <div className={styles.gridBg}>
         <GridScan
           sensitivity={0.55}
-          lineThickness={1}
+          lineThickness={deviceType === 'mobile' ? 0.8 : 1}
           linesColor="#2F293A"
-          gridScale={0.1}
+          gridScale={deviceType === 'mobile' ? 0.2 : 0.1}
           scanColor="#a855f7"
-          scanOpacity={0.4}
-          enablePost
-          bloomIntensity={0.6}
-          chromaticAberration={0.002}
-          noiseIntensity={0.01}
+          scanOpacity={deviceType === 'mobile' ? 0.2 : 0.4}
+          enablePost={deviceType !== 'mobile'}
+          bloomIntensity={deviceType === 'mobile' ? 0 : 0.6}
+          chromaticAberration={deviceType === 'mobile' ? 0 : 0.002}
+          noiseIntensity={deviceType === 'mobile' ? 0 : 0.01}
+          scanGlow={deviceType === 'mobile' ? 0.2 : 0.5}
         />
-      </div>
+      </div>}
       <div className={styles.overlay} />
       <div className={styles.header}>
         <span className={styles.label}>What I offer?</span>
@@ -96,28 +99,26 @@ export default function AnotherMeServices() {
 
       <div className={styles.grid}>
         {services.map((service, index) => (
-          <Link key={index} href={`/digital/services/${service.slug}`} className={styles.cardLink}>
-            <article className={styles.card}>
-              <div className={styles.gradientOverlay} />
-              <div className={styles.iconWrapper}>
-                <service.icon size={28} />
-              </div>
-              <div className={styles.titleWrapper}>
-                <span className={styles.sideBar} />
-                <span className={styles.title}>{service.name}</span>
-              </div>
-              <p className={styles.description}>{service.tagline}</p>
-              <ul className={styles.featureList}>
-                {service.features.map((feature, i) => (
-                  <li key={i} className={styles.featureItem}>
-                    <span className={styles.bullet} />
-                    {feature}
-                  </li>
-                ))}
-              </ul>
-              <span className={styles.statBadge}>{service.stat}</span>
-            </article>
-          </Link>
+          <article key={index} className={styles.card}>
+            <div className={styles.gradientOverlay} />
+            <div className={styles.iconWrapper}>
+              <service.icon size={28} />
+            </div>
+            <div className={styles.titleWrapper}>
+              <span className={styles.sideBar} />
+              <span className={styles.title}>{service.name}</span>
+            </div>
+            <p className={styles.description}>{service.tagline}</p>
+            <ul className={styles.featureList}>
+              {service.features.map((feature, i) => (
+                <li key={i} className={styles.featureItem}>
+                  <span className={styles.bullet} />
+                  {feature}
+                </li>
+              ))}
+            </ul>
+            <span className={styles.statBadge}>{service.stat}</span>
+          </article>
         ))}
       </div>
     </section>

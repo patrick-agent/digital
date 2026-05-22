@@ -38,6 +38,7 @@
   margin-bottom: 3rem;
   z-index: 2;
   position: relative;
+  will-change: transform, opacity;
 }
 
 .label {
@@ -78,19 +79,6 @@
   z-index: 2;
 }
 
-.cardLink {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-  transition: transform 0.3s ease;
-}
-
-.cardLink:hover {
-  opacity: 1;
-  transform: scale(1.1);
-  background: #000000;
-}
-
 .card {
   position: relative;
   height: 400px;
@@ -99,8 +87,14 @@
   flex-direction: column;
   border-right: 1px solid rgba(255, 255, 255, 0.06);
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-  cursor: pointer;
+  cursor: default;
   overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  background: #000000;
 }
 
 .card:nth-child(4n+1) {
@@ -273,4 +267,10 @@
     border-left: none !important;
     border-right: none !important;
   }
+
+  .card:hover  {
+    transform: scale(1);
+  }
+
+
 }

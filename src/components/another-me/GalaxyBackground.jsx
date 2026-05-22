@@ -1,6 +1,7 @@
 'use client'
 
 import { useRef, useEffect } from 'react'
+import { useVisibilityLoader, getDeviceType } from '@/hooks/useVisibilityLoader'
 
 export default function GalaxyBackground({ mouseOffset = 20 }) {
   const canvasRef = useRef(null)
@@ -11,6 +12,12 @@ export default function GalaxyBackground({ mouseOffset = 20 }) {
   const mouseRef = useRef({ x: 0, y: 0 })
   const animFrameRef = useRef(null)
   const lastShootingStarRef = useRef(0)
+  const isActiveRef = useRef(true)
+  const { ref: containerRef, isVisible } = useVisibilityLoader({ rootMargin: '100px' })
+
+  useEffect(() => {
+    isActiveRef.current = isVisible
+  }, [isVisible])
 
   useEffect(() => {
     const canvas = canvasRef.current
@@ -19,7 +26,10 @@ export default function GalaxyBackground({ mouseOffset = 20 }) {
     let width = canvas.width = window.innerWidth
     let height = canvas.height = window.innerHeight
 
-    const starCount = 250
+    const deviceType = getDeviceType()
+    const starCount = deviceType === 'mobile' ? 100 : 250
+    const deepStarCount = deviceType === 'mobile' ? 40 : 100
+
     starsRef.current = Array.from({ length: starCount }, () => ({
       x: Math.random() * width,
       y: Math.random() * height,
@@ -29,7 +39,6 @@ export default function GalaxyBackground({ mouseOffset = 20 }) {
       twinkleOffset: Math.random() * Math.PI * 2,
     }))
 
-    const deepStarCount = 100
     deepStarsRef.current = Array.from({ length: deepStarCount }, () => ({
       x: Math.random() * width,
       y: Math.random() * height,
@@ -69,6 +78,10 @@ export default function GalaxyBackground({ mouseOffset = 20 }) {
     }
 
     const animate = (time) => {
+      if (!isActiveRef.current) {
+        animFrameRef.current = requestAnimationFrame(animate)
+        return
+      }
       ctx.clearRect(0, 0, width, height)
       const { x: mx, y: my } = mouseRef.current
       const offset = mouseOffset
@@ -157,17 +170,18 @@ export default function GalaxyBackground({ mouseOffset = 20 }) {
   }, [mouseOffset])
 
   return (
-    <canvas
-      ref={canvasRef}
-      className="galaxy-canvas"
-      style={{
-        position: 'absolute',
-        inset: 0,
-        width: '100%',
-        height: '100%',
-        pointerEvents: 'none',
-        zIndex: 0,
-      }}
-    />
+    <div ref={containerRef} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', zIndex: 0 }}>
+      <canvas
+        ref={canvasRef}
+        className="galaxy-canvas"
+        style={{
+          position: 'absolute',
+          inset: 0,
+          width: '100%',
+          height: '100%',
+          pointerEvents: 'none',
+        }}
+      />
+    </div>
   )
 }

@@ -4,6 +4,7 @@ import { useRef, useEffect, useState } from 'react'
 import dynamic from 'next/dynamic'
 import Galaxy from '@/components/ui/Galaxy'
 import GradientText from '@/components/ui/GradientText'
+import { useVisibilityLoader, useDeviceType } from '@/hooks/useVisibilityLoader'
 import styles from './AnotherMeTimeline.module.css'
 
 const SplineScene = dynamic(
@@ -33,7 +34,7 @@ const milestones = [
     color: '#a855f7',
     headline: 'Leader Level',
     company: 'Hoan My Medical Corporation - Healthcare',
-    achievement: '- Lần đâu tiên tôi được làm việc trong một tập đoàn lớn với quy trình bài bản, tại đây tôi được tiếp xúc với nhiều chuyên gia giỏi và được học hỏi rất nhiều từ họ. \n - Tôi đã có cơ hội để áp dụng những gì mình đã học được vào thực tế và đạt được những kết quả đáng kể cho công ty.\n - Đây cũng là nơi tôi cho tôi được làm việc với góc độ quản lý. \n Tôi phát triển mạnh mẽ hơn về kỹ năng chuyên ngành và đặc biệt trong mảng SEO.',
+    achievement: '- Lần đâu tiên tôi được làm việc trong một tập đoàn lớn với quy trình bài bản, tại đây tôi được tiếp xúc với nhiều chuyên gia giỏi và được học hỏi rất nhiều từ họ. \n - Tôi đã có cơ hội để áp dụng những gì mình đã học được vào thực tế và đạt được những kết quả đáng kể cho công ty.\n - Đây cũng là nơi tôi cho tôi được làm việc với góc độ quản lý. \n- Tôi phát triển mạnh mẽ hơn về kỹ năng chuyên ngành và đặc biệt trong mảng SEO.',
     stat: { value: 'Thành công của tôi', label: '- Đặc biệt nhất là trong thời điểm dịch COVID-19, tôi đã góp phần cho thành công trong việc truyền thông xét nghiệm PCR quan trọng thế nào và ở TP. HCM trong thời điểm block down có lẽ Hoàn Mỹ là đơn vị tiên phonng thực hiện. \n- Cùng một công thức, tôi đã clone cho các chuyên khoa mũi nhọn khác như "Khám bệnh Tại nhà", "Nội soi tiêu hóa An thần"... \n - Và rất nhiều bài viết của chuyên khoa khác On Top Google (Organic)' }
   },
   {
@@ -74,6 +75,8 @@ export default function AnotherMeTimeline() {
   const [fiberTop, setFiberTop] = useState(0)
   const [fiberHeight, setFiberHeight] = useState(0)
   const [dotYPositions, setDotYPositions] = useState([])
+  const { ref: visibilityRef, isVisible } = useVisibilityLoader({ rootMargin: '200px' })
+  const deviceType = useDeviceType()
 
   useEffect(() => {
     milestoneRefs.current = milestoneRefs.current.slice(0, milestones.length)
@@ -272,19 +275,20 @@ export default function AnotherMeTimeline() {
   }, [fiberHeight, dotYPositions])
 
   return (
-    <section ref={sectionRef} id="timeline" className={styles.section}>
-      <div className={styles.galaxyBg}>
+    <section ref={(el) => { sectionRef.current = el; visibilityRef.current = el; }} id="timeline" className={styles.section}>
+      {isVisible && <div className={styles.galaxyBg}>
         <Galaxy
           hueShift={280}
-          density={1.0}
-          glowIntensity={0.35}
-          saturation={0.5}
+          density={deviceType === 'mobile' ? 0.4 : 1.0}
+          glowIntensity={deviceType === 'mobile' ? 0.15 : 0.35}
+          saturation={deviceType === 'mobile' ? 0.3 : 0.5}
           starSpeed={0.25}
           mouseRepulsion={false}
-          twinkleIntensity={0.25}
+          twinkleIntensity={deviceType === 'mobile' ? 0.1 : 0.25}
           rotationSpeed={0.08}
+          speed={deviceType === 'mobile' ? 0.5 : 1.0}
         />
-      </div>
+      </div>}
       <div className={styles.inner}>
         <div ref={headingRef} className={styles.heading}>
           <span className={styles.headingLabel}>The Journey</span>
@@ -302,9 +306,9 @@ export default function AnotherMeTimeline() {
             <div ref={fiberGlowRef} className={styles.fiberGlow} />
             <div ref={rocketRef} className={styles.rocketWrapper}>
               <div className={styles.rocketContainer}>
-                <SplineScene
+                {isVisible && <SplineScene
                   scene="https://prod.spline.design/xc5ykxFbQXgCsObK/scene.splinecode"
-                />
+                />}
               </div>
             </div>
           </div>

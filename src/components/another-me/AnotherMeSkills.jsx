@@ -1,9 +1,10 @@
 'use client';
 
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, memo } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { CanvasRevealEffect } from '@/components/ui/canvas-reveal-effect';
 import RippleGrid from '@/components/ui/RippleGrid';
+import { useVisibilityLoader, useDeviceType } from '@/hooks/useVisibilityLoader';
 import styles from './AnotherMeSkills.module.css';
 
 const skillClusters = [
@@ -55,6 +56,8 @@ export default function AnotherMeSkills() {
   const [visibleCards, setVisibleCards] = useState(3);
   const [cardWidthPercent, setCardWidthPercent] = useState(33.333);
   const carouselRef = useRef(null);
+  const { ref: sectionRef, isVisible } = useVisibilityLoader({ rootMargin: '100px' });
+  const deviceType = useDeviceType();
 
   useEffect(() => {
     const updateVisible = () => {
@@ -114,20 +117,20 @@ export default function AnotherMeSkills() {
   }, [isDragging, dragOffset, currentIndex, maxIndex]);
 
   return (
-    <section id="skills" className={styles.section}>
-      <div className={styles.rippleBg}>
+    <section id="skills" ref={sectionRef} className={styles.section}>
+      {isVisible && <div className={styles.rippleBg}>
         <RippleGrid
           enableRainbow={false}
           gridColor="#a855f7"
-          rippleIntensity={0.03}
-          gridSize={8}
-          gridThickness={12}
-          mouseInteraction={true}
+          rippleIntensity={deviceType === 'mobile' ? 0.01 : 0.03}
+          gridSize={deviceType === 'mobile' ? 6 : 8}
+          gridThickness={deviceType === 'mobile' ? 8 : 12}
+          mouseInteraction={deviceType !== 'mobile'}
           mouseInteractionRadius={1.5}
-          opacity={0.6}
-          glowIntensity={0.15}
+          opacity={deviceType === 'mobile' ? 0.3 : 0.6}
+          glowIntensity={deviceType === 'mobile' ? 0.05 : 0.15}
         />
-      </div>
+      </div>}
       <div className={styles.header}>
         <span className={styles.label}>THE ARSENAL</span>
         <h2 className={styles.heading}>Bộ kỹ năng của tôi</h2>
@@ -171,14 +174,14 @@ export default function AnotherMeSkills() {
           <div className={styles.logoTrack}>
             {[...toolLogos, ...toolLogos].map((logo, i) => (
               <div key={i} className={styles.logoItem}>
-                <img src={logo.src} alt={logo.name} className={styles.logoImg} />
+                <img src={logo.src} alt={logo.name} className={styles.logoImg} loading="lazy" />
               </div>
             ))}
           </div>
           <div className={styles.logoTrackReverse}>
             {[...toolLogos, ...toolLogos].map((logo, i) => (
               <div key={`r-${i}`} className={styles.logoItem}>
-                <img src={logo.src} alt={logo.name} className={styles.logoImg} />
+                <img src={logo.src} alt={logo.name} className={styles.logoImg} loading="lazy" />
               </div>
             ))}
           </div>
@@ -188,7 +191,7 @@ export default function AnotherMeSkills() {
   );
 }
 
-const Card = ({ title, color, headline, description, skills }) => {
+const Card = memo(function Card({ title, color, headline, description, skills }) {
   const [hovered, setHovered] = useState(false);
   const rgb = color.join(',');
 
@@ -243,4 +246,4 @@ const Card = ({ title, color, headline, description, skills }) => {
       </div>
     </div>
   );
-};
+});

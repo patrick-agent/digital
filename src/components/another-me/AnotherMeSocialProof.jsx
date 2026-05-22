@@ -6,6 +6,7 @@ import dynamic from 'next/dynamic';
 import RotatingText from '@/components/ui/RotatingText';
 import '@/components/ui/RotatingText.css';
 import Galaxy from '@/components/ui/Galaxy';
+import { useVisibilityLoader, useDeviceType } from '@/hooks/useVisibilityLoader';
 import styles from './AnotherMeSocialProof.module.css';
 
 const SplineScene = dynamic(
@@ -27,6 +28,8 @@ export default function AnotherMeSocialProof() {
   const marqueeRef = useRef(null);
   const colLeftRef = useRef(null);
   const colRightRef = useRef(null);
+  const { ref: visibilityRef, isVisible } = useVisibilityLoader({ rootMargin: '200px' });
+  const deviceType = useDeviceType();
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -63,19 +66,20 @@ export default function AnotherMeSocialProof() {
   }, []);
 
   return (
-    <section id="about" ref={sectionRef} className={styles.section}>
-      <div className={styles.galaxyBg}>
+    <section id="about" ref={(el) => { sectionRef.current = el; visibilityRef.current = el; }} className={styles.section}>
+      {isVisible && <div className={styles.galaxyBg}>
         <Galaxy
           hueShift={270}
-          density={1.2}
-          glowIntensity={0.4}
-          saturation={0.6}
+          density={deviceType === 'mobile' ? 0.5 : 1.2}
+          glowIntensity={deviceType === 'mobile' ? 0.2 : 0.4}
+          saturation={deviceType === 'mobile' ? 0.3 : 0.6}
           starSpeed={0.3}
           mouseRepulsion={false}
-          twinkleIntensity={0.2}
+          twinkleIntensity={deviceType === 'mobile' ? 0.1 : 0.2}
           rotationSpeed={0.05}
+          speed={deviceType === 'mobile' ? 0.5 : 1.0}
         />
-      </div>
+      </div>}
       <div className={styles.container}>
         <div className={styles.heroRow}>
           <div ref={colLeftRef} className={styles.colLeft}>
@@ -115,7 +119,7 @@ export default function AnotherMeSocialProof() {
               </p>
 
               <div className={styles.buttonRow}>
-                <Link href="/digital/#timeline" className={`${styles.btn} ${styles.btnSecondary}`}>
+                <Link href="https://drive.google.com/file/d/1GfAVzjAmbqgNoa1g3tPWdSZ3RBDL4p2D/view?usp=sharing" className={`${styles.btn} ${styles.btnSecondary}`}>
                   Download my Resume
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M9 18l6-6-6-6" />
@@ -134,6 +138,7 @@ export default function AnotherMeSocialProof() {
                             src={logo.src}
                             alt={logo.name}
                             className={styles.logoImg}
+                            loading="lazy"
                           />
                         </div>
                       ))}
@@ -146,7 +151,7 @@ export default function AnotherMeSocialProof() {
 
           <div ref={colRightRef} className={styles.colRight}>
             <div className={styles.splineContainer}>
-              <SplineScene scene="https://prod.spline.design/xc5ykxFbQXgCsObK/scene.splinecode" />
+              {isVisible && <SplineScene scene="https://prod.spline.design/xc5ykxFbQXgCsObK/scene.splinecode" />}
               <div className={styles.splineOverlay} />
             </div>
           </div>

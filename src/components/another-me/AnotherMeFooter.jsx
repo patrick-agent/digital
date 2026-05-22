@@ -30,14 +30,14 @@ export default function AnotherMeFooter() {
     <section className={styles.footerSection}>
       <div className={styles.footerWrapper}>
         <div className={styles.footerLeft}>
-          <video className={styles.footerLeftVideo} autoPlay muted loop playsInline preload="auto">
+          <video className={styles.footerLeftVideo} autoPlay muted loop playsInline preload="none" poster="/logo.png">
             <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260503_104800_bc43ae09-f494-43e3-97d7-2f8c1692cfd7.mp4" type="video/mp4" />
           </video>
           <div className={styles.videoOverlay} />
 
           <div className={styles.footerLogo}>
             <div className={styles.footerLogoMark}>
-              <img src="/logo.png" alt="Tachy" className={styles.footerLogoImg} />
+              <img src="/logo.png" alt="Tachy" className={styles.footerLogoImg} loading="lazy" />
             </div>
             <span className={styles.footerLogoName}>Tachy</span>
           </div>
@@ -70,7 +70,7 @@ export default function AnotherMeFooter() {
 
         <div className={styles.footerRight}>
           <div className={styles.footerLuckyGraphic}>
-            <img src="/logo.png" alt="Tachy" className={styles.footerLogoGraphic} />
+            <img src="/logo.png" alt="Tachy" className={styles.footerLogoGraphic} loading="lazy" />
           </div>
 
           <div className={styles.footerRightTop}>

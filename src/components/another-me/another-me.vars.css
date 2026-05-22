@@ -13,3 +13,5 @@
   --am-font-display: var(--font-inter), sans-serif;
   --am-font-body: var(--font-inter), sans-serif;
 }
+
+/* GPU-accelerated animation optimizations */
