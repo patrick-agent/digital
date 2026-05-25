@@ -15,8 +15,7 @@ export default function ProgressTracker() {
 
     if (r3fProgress >= 100) {
       readyRef.current = true;
-      const timer = setTimeout(() => markReady(), 300);
-      return () => clearTimeout(timer);
+      markReady();
     }
   }, [r3fProgress, set3DProgress, markReady]);
 
