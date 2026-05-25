@@ -260,7 +260,7 @@ void main() {
       };
 
       const loop = t => {
-        if (!rendererRef.current || !uniformsRef.current || !meshRef.current) {
+        if (!isVisible || !rendererRef.current || !uniformsRef.current || !meshRef.current) {
           return;
         }
 
@@ -277,7 +277,10 @@ void main() {
 
         try {
           renderer.render({ scene: mesh });
-          animationIdRef.current = requestAnimationFrame(loop);
+          // Only request next frame if component is still visible
+          if (isVisible) {
+            animationIdRef.current = requestAnimationFrame(loop);
+          }
         } catch (error) {
           console.warn('WebGL rendering error:', error);
           return;

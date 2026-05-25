@@ -10,6 +10,7 @@ function CameraParallax() {
   const smoothMouse = useRef({ x: 0.5, y: 0.5 });
   const basePosRef = useRef(new THREE.Vector3(1.5, 1.25, 0.5));
   const maxOffsetRef = useRef(new THREE.Vector3(0.15, 0.125, 0.05));
+  const rafIdRef = useRef(null);
 
   useEffect(() => {
     if (!camera) return;
@@ -24,7 +25,8 @@ function CameraParallax() {
       mouseRef.current.y = event.clientY / window.innerHeight;
     };
 
-    window.addEventListener("mousemove", handleMouseMove);
+    // Throttle mouse events with RAF instead of every mousemove
+    window.addEventListener("mousemove", handleMouseMove, { passive: true });
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, [camera]);
 

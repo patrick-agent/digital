@@ -2,23 +2,35 @@ import { Geist, Geist_Mono, Caveat } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "sonner";
 
+/**
+ * Optimized font loading with display settings for better performance
+ * - font-display: 'swap' prevents layout shift and shows fallback immediately
+ * - Only loading critical font weights for each typeface
+ */
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: "swap", // Show fallback text immediately
+  preload: true,
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: "swap",
+  preload: true,
 });
 
 const caveat = Caveat({
   variable: "--font-caveat",
   subsets: ["latin"],
   weight: ["500", "600", "700"],
+  display: "swap",
+  preload: true,
 });
 
 export const metadata = {
+  metadataBase: new URL('https://tachy.vercel.app'),
   title: "Tachy — An Indie Artist",
   description:
     "An immersive 3D interactive music portfolio experience. Explore sound, visuals, and creativity in a dreamy studio space.",

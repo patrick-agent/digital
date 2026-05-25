@@ -109,12 +109,16 @@
   
   /* Subtle glass panel behind text for readability over 3D */
   background: rgba(6, 6, 8, 0.4);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  /* Reduced blur for better performance while maintaining readability */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   padding: var(--space-2xl);
   border-radius: var(--radius-2xl);
   border: 1px solid rgba(255, 255, 255, 0.05);
   box-shadow: var(--shadow-lg);
+  /* CSS Containment for better rendering performance */
+  contain: layout style paint;
+  will-change: opacity;
 }
 
 /* --- Character Overlay --- */

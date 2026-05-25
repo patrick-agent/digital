@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "analyze": "node scripts/analyze-bundle.mjs",
     "models:analyze": "node scripts/compress-models.mjs",
     "models:compress": "node scripts/compress-models.mjs compress",
     "sync:blog": "node scripts/sync-blog.mjs",
