@@ -1,6 +1,6 @@
 "use client";
-import { useFBX, useGLTF } from "@react-three/drei";
-import { useEffect, useRef, useMemo } from "react";
+import { useGLTF } from "@react-three/drei";
+import { useEffect, useRef } from "react";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 
@@ -15,14 +15,12 @@ export default function CharacterModel({
   const headBoneRef = useRef(null);
   const neckBoneRef = useRef(null);
 
-  // Load trực tiếp file FBX - đã preload nên sẽ nhanh
-  const fbx = useFBX("/models/Floating.fbx");
+  const { scene, animations } = useGLTF("/models/Floating.glb");
 
   useEffect(() => {
-    if (!fbx) return;
+    if (!scene) return;
 
-    // Quét qua toàn bộ model để cài đặt Material và tìm Xương (Bones)
-    fbx.traverse((child) => {
+    scene.traverse((child) => {
       // Cài đặt Material (Da thịt) giống như ý bạn
       if (child.isMesh && child.material) {
         const applyMat = (mat) => {
@@ -40,21 +38,20 @@ export default function CharacterModel({
         child.receiveShadow = true;
       }
 
-      // Tìm và lưu lại Xương Đầu và Xương Cổ
-      if (child.name === "mixamorigHead") headBoneRef.current = child;
-      if (child.name === "mixamorigNeck") neckBoneRef.current = child;
+      if (child.isBone) {
+        if (child.name === "mixamorig_Head" || child.name === "mixamorigHead") headBoneRef.current = child;
+        if (child.name === "mixamorig_Neck" || child.name === "mixamorigNeck") neckBoneRef.current = child;
+      }
     });
 
-    // Cài đặt và Play Animation (Chuyển động Floating)
-    if (fbx.animations?.length > 0) {
-      mixerRef.current = new THREE.AnimationMixer(fbx);
-      const action = mixerRef.current.clipAction(fbx.animations[0]);
+    if (animations?.length > 0) {
+      mixerRef.current = new THREE.AnimationMixer(scene);
+      const action = mixerRef.current.clipAction(animations[0]);
       action.loop = THREE.LoopRepeat;
       action.clampWhenFinished = false;
       action.play();
-      console.log("✓ Animation đang chạy:", fbx.animations[0].name);
     } else {
-      console.warn("Không tìm thấy Animation trong file FBX này");
+      console.warn("Không tìm thấy Animation trong model này");
     }
 
     // Xóa mixer khi component unmount
@@ -64,7 +61,7 @@ export default function CharacterModel({
         mixerRef.current = null;
       }
     };
-  }, [fbx]);
+  }, [scene, animations]);
 
   useFrame((_, delta) => {
     // 1. Cập nhật Animation TRƯỚC
@@ -115,7 +112,7 @@ export default function CharacterModel({
     }
   });
 
-  if (!fbx) return null;
+  if (!scene) return null;
 
   return (
     <group
@@ -128,8 +125,7 @@ export default function CharacterModel({
       ]}
       scale={0.7}
     >
-      {/* Đưa thẳng fbx vào, không dùng character clone nữa */}
-      <primitive object={fbx} />
+      <primitive object={scene} />
     </group>
   );
 }

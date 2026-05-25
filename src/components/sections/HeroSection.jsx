@@ -3,12 +3,7 @@
 import { useEffect, useRef } from "react";
 import dynamic from "next/dynamic";
 import styles from "./HeroSection.module.css";
-import LightRays from "@/components/ui/LightRays";
-
-const StudioCanvas = dynamic(
-  () => import("../canvas/StudioCanvas"),
-  { ssr: false, loading: () => null }
-);
+import GradientBlinds from "../canvas/GradientBlinds";
 
 const CharacterCanvas = dynamic(
   () => import("../canvas/CharacterCanvas"),
@@ -30,26 +25,21 @@ export default function HeroSection() {
 
   return (
     <section id="hero" className={styles.hero} ref={sectionRef}>
-      <div className={styles.ambientBg}>
-        <LightRays
-          raysOrigin="top-center"
-          raysColor="#ec4899"
-          raysSpeed={0.8}
-          lightSpread={1.2}
-          rayLength={2.5}
-          followMouse={true}
-          mouseInfluence={0.2}
-          noiseAmount={0.02}
-          distortion={0.08}
-          fadeDistance={0.4}
-          saturation={1.0}
-          pulsating={true}
-        />
-      </div>
-
       <div className={styles.heroFullScreenCanvas}>
-        <StudioCanvas />
-        <div className={styles.canvasVignette} />
+        <GradientBlinds
+          gradientColors={['#FF9FFC', '#5227FF']}
+          angle={0}
+          noise={0.3}
+          blindCount={20}
+          blindMinWidth={50}
+          spotlightRadius={0.5}
+          spotlightSoftness={1}
+          spotlightOpacity={1}
+          mouseDampening={0.15}
+          distortAmount={0}
+          shineDirection="left"
+          mixBlendMode="lighten"
+        />
       </div>
 
       <div className={styles.heroInner}>

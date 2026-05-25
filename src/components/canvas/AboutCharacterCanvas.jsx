@@ -2,13 +2,14 @@
 
 import { Suspense, useEffect, useRef, forwardRef, useImperativeHandle } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
-import { useFBX } from "@react-three/drei";
+import { useGLTF } from "@react-three/drei";
 import * as THREE from "three";
 import { useCanvasOptimizer } from "@/hooks/useCanvasOptimizer";
 import TeleportBeam from "./TeleportBeam";
 import GlowBackground from "./GlowBackground";
 import ParticleField from "./ParticleField";
 import FloatingGeometries from "./FloatingGeometries";
+
 
 function HologramBase() {
   const gridRef = useRef();
@@ -48,33 +49,35 @@ function HologramBase() {
 }
 
 function CharacterModel({ mousePos }) {
-  const fbx = useFBX("/models/Walking.fbx");
+  const { scene, animations } = useGLTF("/models/Walking.glb");
   const mixerRef = useRef(null);
   const smoothMouse = useRef({ x: 0, y: 0 });
   const headBoneRef = useRef(null);
   const neckBoneRef = useRef(null);
 
   useEffect(() => {
-    if (!fbx) return;
+    if (!scene) return;
     try {
-      fbx.traverse(child => {
+      scene.traverse(child => {
         if (child.isMesh) {
           child.castShadow = true;
           child.receiveShadow = true;
           if (child.material) {
             child.material.fog = false;
+            child.material.emissive = new THREE.Color(0x440088);
+            child.material.emissiveIntensity = 0.15;
           }
         }
-        if (child.name === "mixamorigHead") headBoneRef.current = child;
-        if (child.name === "mixamorigNeck") neckBoneRef.current = child;
+        if (child.name === "mixamorigHead" || child.name === "mixamorig_Head") headBoneRef.current = child;
+        if (child.name === "mixamorigNeck" || child.name === "mixamorig_Neck") neckBoneRef.current = child;
       });
-      if (fbx.animations?.length) {
-        mixerRef.current = new THREE.AnimationMixer(fbx);
-        mixerRef.current.clipAction(fbx.animations[0]).setLoop(THREE.LoopRepeat).play();
+      if (animations?.length) {
+        mixerRef.current = new THREE.AnimationMixer(scene);
+        mixerRef.current.clipAction(animations[0]).setLoop(THREE.LoopRepeat).play();
       }
     } catch (e) { console.error(e); }
     return () => { if (mixerRef.current) mixerRef.current.stopAllAction(); };
-  }, [fbx]);
+  }, [scene, animations]);
 
   useFrame((_, delta) => {
     if (mixerRef.current) mixerRef.current.update(delta);
@@ -91,8 +94,8 @@ function CharacterModel({ mousePos }) {
     }
   });
 
-  if (!fbx) return null;
-  return <primitive object={fbx} />;
+  if (!scene) return null;
+  return <primitive object={scene} />;
 }
 
 const AboutCharacterCanvas = forwardRef(({ mousePos, initialPos = [0, 0, 0], initialRot = [0, 0, 0], initialScale = [1, 1, 1], isMobile = false, sectionVisible = false }, ref) => {
@@ -118,10 +121,10 @@ const AboutCharacterCanvas = forwardRef(({ mousePos, initialPos = [0, 0, 0], ini
         dpr={devicePixelRatio}
       >
         <fog attach="fog" args={['#0f0a1a', 200, 350]} />
-        <ambientLight intensity={0.9} color="#ffffff" />
+        <ambientLight intensity={1.5} color="#ffffff" />
         <pointLight position={[5, 5, 5]} intensity={2.5} color="#c084fc" />
-        <pointLight position={[-5, 3, 5]} intensity={2} color="#ffffff" />
-        <directionalLight position={[0, 5, 5]} intensity={2.5} color="#ffffff" />
+        <pointLight position={[-5, 3, 5]} intensity={3} color="#ffffff" />
+        <directionalLight position={[0, 5, 5]} intensity={4} color="#ffffff" />
         <ParticleField count={particleCount} color="#a855f7" spread={20} size={0.03} opacity={0.3} mouseReactive={!isMobile} />
         {!isMobile && <FloatingGeometries count={6} color="#6366f1" spread={12} size={0.25} />}
         <GlowBackground color="#a855f7" secondaryColor="#6366f1" intensity={0.8} radius={30} />

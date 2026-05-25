@@ -2,7 +2,7 @@
 import { Suspense, useEffect, useRef, useState, useCallback } from "react";
 import { Canvas } from "@react-three/fiber";
 import CharacterModel from "./CharacterModel";
-import GlowBackground from "./GlowBackground";
+import PostProcessing from "./PostProcessing";
 import { useCanvasOptimizer } from "@/hooks/useCanvasOptimizer";
 
 function toNorm(clientX, clientY, rect) {
@@ -25,7 +25,7 @@ export default function CharacterCanvas() {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [mounted, setMounted] = useState(false);
   const scrollTick = useRef(0);
-  const { isMobile, devicePixelRatio, getResponsiveFov } = useCanvasOptimizer();
+  const { isMobile, isTablet, devicePixelRatio } = useCanvasOptimizer();
 
   useEffect(() => {
     setMounted(true);
@@ -73,13 +73,13 @@ export default function CharacterCanvas() {
     >
       <Canvas
         camera={{
-          position: [60, 55, 118.65],
-          fov: getResponsiveFov(30),
+          position: isMobile ? [80, 45, 180] : isTablet ? [60, 50, 120] : [60, 50, 120],
+          fov:      isMobile ? 20 :            isTablet ? 25            : 32,
           near: 0.1,
           far: 1000,
         }}
         onCreated={({ camera }) => {
-          camera.lookAt(0, 42, 0);
+          camera.lookAt(isMobile ? 0 : isTablet ? 0 : 10, isMobile ? 40 : isTablet ? 45 : 40, 0);
         }}
         gl={{ alpha: true, antialias: false }}
         style={{
@@ -89,12 +89,18 @@ export default function CharacterCanvas() {
         }}
         dpr={[1, 1.5]}
       >
-        <GlowBackground color="#a855f7" secondaryColor="#6366f1" intensity={0.6} radius={30} />
-        <ambientLight intensity={2} color="#ffffff" />
-        <pointLight position={[5, 5, 5]} intensity={3} color="#c084fc" />
-        <pointLight position={[-5, 3, 5]} intensity={2} color="#8b5cf6" />
-        <directionalLight position={[0, 5, 5]} intensity={2} color="#f0e6ff" />
+        <ambientLight intensity={3} color="#ffffff" />
+        <pointLight position={[5, 5, 5]} intensity={4} color="#c084fc" />
+        <pointLight position={[-5, 3, 5]} intensity={2.5} color="#8b5cf6" />
+        <directionalLight position={[0, 5, 5]} intensity={3} color="#ffffff" />
 
+        <PostProcessing
+          bloomIntensity={isMobile ? 0.6 : 1.0}
+          bloom={true}
+          noise={false}
+          chromaticAberration={false}
+          vignette={false}
+        />
         <Suspense fallback={null}>
           <CharacterModel
             mousePos={isMobile ? { x: 0, y: 0 } : mousePos}

@@ -1,13 +1,14 @@
 "use client";
 import { Suspense, useEffect, useRef, forwardRef, useImperativeHandle } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { useFBX } from "@react-three/drei";
+import { useGLTF } from "@react-three/drei";
 import * as THREE from "three";
 import { useCanvasOptimizer } from "@/hooks/useCanvasOptimizer";
 import TeleportBeam from "./TeleportBeam";
 import GlowBackground from "./GlowBackground";
 import ParticleField from "./ParticleField";
 import FloatingGeometries from "./FloatingGeometries";
+
 
 
 
@@ -45,34 +46,41 @@ function SoundwaveBase() {
 }
 
 function PointingModel() {
-  const fbx = useFBX("/models/pointing-to-the-right-hologram.fbx");
-  const fallbackFbx = useFBX("/models/Walking.fbx");
+  const { scene, animations } = useGLTF("/models/pointing-to-the-right-hologram.glb");
+  const { scene: fallbackScene, animations: fallbackAnimations } = useGLTF("/models/Walking.glb");
   const mixerRef = useRef(null);
 
   useEffect(() => {
-    if (!fbx) return;
+    if (!scene) return;
     try {
-      fbx.traverse(child => {
+      scene.traverse(child => {
         if (child.isMesh) {
           child.castShadow = true;
           child.receiveShadow = true;
-          if (child.material) child.material.fog = false;
+          if (child.material) {
+            child.material.fog = false;
+            child.material.emissive = new THREE.Color(0x440088);
+            child.material.emissiveIntensity = 0.15;
+          }
         }
       });
-      const animSource = fbx.animations?.length ? fbx : (fallbackFbx?.animations?.length ? fallbackFbx : null);
-      if (animSource) {
-        mixerRef.current = new THREE.AnimationMixer(animSource);
-        const action = mixerRef.current.clipAction(animSource.animations[0]);
+      const hasAnim = animations?.length;
+      const needsFallback = !hasAnim && fallbackAnimations?.length;
+      const anims = hasAnim ? animations : (needsFallback ? fallbackAnimations : null);
+      const root = hasAnim ? scene : (needsFallback ? fallbackScene : scene);
+      if (anims) {
+        mixerRef.current = new THREE.AnimationMixer(root);
+        const action = mixerRef.current.clipAction(anims[0]);
         action.setLoop(THREE.LoopRepeat);
         action.play();
       }
     } catch (e) { console.error(e); }
     return () => { if (mixerRef.current) mixerRef.current.stopAllAction(); };
-  }, [fbx, fallbackFbx]);
+  }, [scene, animations, fallbackScene, fallbackAnimations]);
 
   useFrame((_, delta) => { if (mixerRef.current) mixerRef.current.update(delta); });
-  if (!fbx) return null;
-  return <primitive object={fbx} />;
+  if (!scene) return null;
+  return <primitive object={scene} />;
 }
 
 const PointingCharacterCanvas = forwardRef(({ initialPos = [0, 0, 0], initialRot = [0, 0, 0], initialScale = [1, 1, 1], isMobile = false, sectionVisible = false }, ref) => {
@@ -90,12 +98,12 @@ const PointingCharacterCanvas = forwardRef(({ initialPos = [0, 0, 0], initialRot
         gl={{ alpha: true, antialias: !isMobile, powerPreference: "high-performance" }}
         dpr={devicePixelRatio}
       >
-        <ambientLight intensity={0.9} color="#ffffff" />
+        <ambientLight intensity={1.5} color="#ffffff" />
         <ParticleField count={particleCount} color="#ec4899" spread={18} size={0.035} opacity={0.25} mouseReactive={!isMobile} />
         {!isMobile && <FloatingGeometries count={4} color="#a855f7" spread={10} size={0.2} />}
-        <pointLight position={[5, 5, 5]} intensity={isMobile ? 1.5 : 2.5} color="#c084fc" />
-        <pointLight position={[-5, 3, 5]} intensity={2} color="#ffffff" />
-        <directionalLight position={[0, 5, 5]} intensity={isMobile ? 1.5 : 2.5} color="#ffffff" />
+        <pointLight position={[5, 5, 5]} intensity={isMobile ? 1.2 : 2.5} color="#c084fc" />
+        <pointLight position={[-5, 3, 5]} intensity={3} color="#ffffff" />
+        <directionalLight position={[0, 5, 5]} intensity={isMobile ? 2.5 : 4} color="#ffffff" />
         <GlowBackground color="#ec4899" secondaryColor="#a855f7" intensity={isMobile ? 0.3 : 0.6} radius={20} />
         <Suspense fallback={null}>
           <group ref={groupRef} position={initialPos} rotation={initialRot} scale={initialScale}>

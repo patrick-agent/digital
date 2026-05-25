@@ -5,23 +5,24 @@
 
 import { Suspense, useMemo, useEffect, useRef } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
-import { useFBX } from "@react-three/drei";
+import { useGLTF } from "@react-three/drei";
 import * as THREE from "three";
 import GlowBackground from "./GlowBackground";
+
 
 function WalkingCharacterModel() {
   const groupRef = useRef();
   const mixerRef = useRef(null);
-  const fbx = useFBX("/models/Walking.fbx");
+  const { scene, animations } = useGLTF("/models/Walking.glb");
 
   const character = useMemo(() => {
     try {
-      return fbx.clone(true);
+      return scene.clone(true);
     } catch (e) {
       console.error("Error cloning walking character:", e);
       return null;
     }
-  }, [fbx]);
+  }, [scene]);
 
   useEffect(() => {
     if (!character) return;
@@ -38,26 +39,20 @@ function WalkingCharacterModel() {
         }
       });
 
-      if (fbx.animations && fbx.animations.length > 0) {
+      if (animations && animations.length > 0) {
         mixerRef.current = new THREE.AnimationMixer(character);
-        const action = mixerRef.current.clipAction(fbx.animations[0]);
+        const action = mixerRef.current.clipAction(animations[0]);
         action.loop = THREE.LoopRepeat;
         action.clampWhenFinished = false;
         action.play();
-        console.log("✓ Walking animation playing:", fbx.animations[0].name);
+        console.log("✓ Walking animation playing:", animations[0].name);
       } else {
-        console.warn("No animations found in Walking FBX");
+        console.warn("No animations found in Walking GLB");
       }
     } catch (e) {
       console.error("Error setting up walking character:", e);
     }
-  }, [character, fbx]);
-
-  useFrame((state, delta) => {
-    if (mixerRef.current) {
-      mixerRef.current.update(delta);
-    }
-  });
+  }, [character, animations]);
 
   if (!character) return null;
 
@@ -95,9 +90,9 @@ export default function WalkingCharacterCanvas() {
       style={{ background: "transparent" }}
     >
       <GlowBackground color="#a855f7" secondaryColor="#6366f1" intensity={0.4} radius={25} />
-      <ambientLight intensity={0.6} color="#a78bfa" />
-      <pointLight position={[2, 1.5, 2]} intensity={1} color="#c084fc" />
-      <pointLight position={[-2, 1, 1]} intensity={0.7} color="#8b5cf6" />
+      <ambientLight intensity={1.2} color="#ffffff" />
+      <pointLight position={[2, 1.5, 2]} intensity={1.2} color="#c084fc" />
+      <pointLight position={[-2, 1, 1]} intensity={1.5} color="#8b5cf6" />
 
       <Suspense fallback={null}>
         <WalkingCharacterModel />

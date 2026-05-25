@@ -49,7 +49,6 @@ function CameraParallax() {
   return null;
 }
 
-import StudioModel from "./StudioModel";
 import StudioLights from "./StudioLights";
 import PostProcessing from "./PostProcessing";
 import GlowBackground from "./GlowBackground";
@@ -105,7 +104,6 @@ export default function StudioCanvas() {
       <GlowBackground color="#7e22ce" secondaryColor="#4c1d95" intensity={0.3} radius={1.5} />
       <StudioLights />
       <CameraParallax />
-      <StudioModel />
       <PostProcessing
         bloomIntensity={ppConfig.bloomIntensity || 0.3}
         noiseOpacity={ppConfig.noiseOpacity || 0.015}

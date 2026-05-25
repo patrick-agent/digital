@@ -2,7 +2,7 @@
 
 import React, { forwardRef, useEffect, useRef, useImperativeHandle } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { useFBX } from '@react-three/drei';
+import { useGLTF } from '@react-three/drei';
 import * as THREE from 'three';
 import { useCanvasOptimizer } from '@/hooks/useCanvasOptimizer';
 import GlowBackground from './GlowBackground';
@@ -10,44 +10,46 @@ import ParticleField from './ParticleField';
 import FloatingGeometries from './FloatingGeometries';
 
 function WaveModel() {
-  const fbx = useFBX('/models/wave-hiphop-dance.fbx');
+  const { scene, animations } = useGLTF('/models/wave-hiphop-dance.glb');
   const mixerRef = useRef(null);
 
   useEffect(() => {
-    if (!fbx) return;
-    fbx.traverse((child) => {
+    if (!scene) return;
+    scene.traverse((child) => {
       if (child.isMesh) {
         child.castShadow = true;
         child.receiveShadow = true;
         if (child.material) {
           child.material.fog = false;
           child.material.side = THREE.DoubleSide;
+          child.material.emissive = new THREE.Color(0x440088);
+          child.material.emissiveIntensity = 0.15;
         }
       }
     });
-    const box = new THREE.Box3().setFromObject(fbx);
+    const box = new THREE.Box3().setFromObject(scene);
     const size = box.getSize(new THREE.Vector3());
     const center = box.getCenter(new THREE.Vector3());
-    fbx.position.sub(center);
-    fbx.position.y += size.y / 2;
+    scene.position.sub(center);
+    scene.position.y += size.y / 2;
 
-    if (fbx.animations && fbx.animations.length > 0) {
-      mixerRef.current = new THREE.AnimationMixer(fbx);
-      fbx.animations.forEach((clip) => {
+    if (animations && animations.length > 0) {
+      mixerRef.current = new THREE.AnimationMixer(scene);
+      animations.forEach((clip) => {
         mixerRef.current.clipAction(clip).play();
       });
     }
     return () => {
       if (mixerRef.current) mixerRef.current.stopAllAction();
     };
-  }, [fbx]);
+  }, [scene, animations]);
 
   useFrame((state, delta) => {
     if (mixerRef.current) mixerRef.current.update(delta);
   });
 
-  if (!fbx) return null;
-  return <primitive object={fbx} />;
+  if (!scene) return null;
+  return <primitive object={scene} />;
 }
 
 const WaveCharacterCanvas = forwardRef(({
@@ -77,10 +79,10 @@ const WaveCharacterCanvas = forwardRef(({
         <GlowBackground color="#a855f7" secondaryColor="#6366f1" intensity={isMobile ? 0.3 : 0.5} radius={25} />
         <ParticleField count={particleCount} color="#06b6d4" spread={16} size={0.03} opacity={0.25} mouseReactive={!isMobile} />
         {!isMobile && <FloatingGeometries count={5} color="#ec4899" spread={14} size={0.2} />}
-        <ambientLight intensity={1} color="#ffffff" />
+        <ambientLight intensity={1.5} color="#ffffff" />
         <pointLight position={[50, 100, 50]} intensity={isMobile ? 1 : 2} color="#c084fc" />
-        <pointLight position={[-50, 50, -50]} intensity={1} color="#ffffff" />
-        <directionalLight position={[0, 150, 100]} intensity={isMobile ? 1 : 1.5} color="#ffffff" castShadow={!isMobile} />
+        <pointLight position={[-50, 50, -50]} intensity={1.5} color="#ffffff" />
+        <directionalLight position={[0, 150, 100]} intensity={isMobile ? 1.5 : 2.5} color="#ffffff" castShadow={!isMobile} />
         <group ref={groupRef} position={initialPos} rotation={initialRot} scale={initialScale}>
           <WaveModel />
         </group>

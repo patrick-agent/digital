@@ -1,65 +1,51 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { Suspense, useEffect, useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { FBXLoader } from 'three-stdlib';
+import { useGLTF } from '@react-three/drei';
 import * as THREE from 'three';
 
 function ByeModel() {
-  const [model, setModel] = useState(null);
+  const { scene, animations } = useGLTF('/models/bye.glb');
   const mixerRef = useRef(null);
 
   useEffect(() => {
-    let cancelled = false;
+    if (!scene) return;
 
-    const loader = new FBXLoader();
-    loader.load(
-      '/models/bye.fbx',
-      (fbx) => {
-        if (cancelled) return;
-
-        fbx.traverse((child) => {
-          if (child.isMesh) {
-            child.castShadow = true;
-            child.receiveShadow = true;
-            if (child.material) {
-              child.material.fog = false;
-              child.material.side = THREE.DoubleSide;
-            }
-          }
-        });
-
-        const box = new THREE.Box3().setFromObject(fbx);
-        const size = box.getSize(new THREE.Vector3());
-        const center = box.getCenter(new THREE.Vector3());
-        fbx.position.sub(center);
-        fbx.position.y += size.y / 2;
-
-        if (fbx.animations && fbx.animations.length > 0) {
-          mixerRef.current = new THREE.AnimationMixer(fbx);
-          fbx.animations.forEach((clip) => {
-            mixerRef.current.clipAction(clip).play();
-          });
+    scene.traverse((child) => {
+      if (child.isMesh) {
+        child.castShadow = true;
+        child.receiveShadow = true;
+        if (child.material) {
+          child.material.fog = false;
+          child.material.side = THREE.DoubleSide;
+          child.material.emissive = new THREE.Color(0x440088);
+          child.material.emissiveIntensity = 0.15;
         }
-
-        setModel(fbx);
-      },
-      undefined,
-      (err) => {
-        console.warn('bye.fbx load failed:', err);
       }
-    );
+    });
+
+    const box = new THREE.Box3().setFromObject(scene);
+    const size = box.getSize(new THREE.Vector3());
+    const center = box.getCenter(new THREE.Vector3());
+    scene.position.sub(center);
+    scene.position.y += size.y / 2;
+
+    if (animations && animations.length > 0) {
+      mixerRef.current = new THREE.AnimationMixer(scene);
+      animations.forEach((clip) => {
+        mixerRef.current.clipAction(clip).play();
+      });
+    }
 
     return () => {
-      cancelled = true;
       if (mixerRef.current) mixerRef.current.stopAllAction();
     };
-  }, []);
+  }, [scene, animations]);
 
   useFrame((state, delta) => {
     if (mixerRef.current) mixerRef.current.update(delta);
   });
 
-  if (!model) return null;
-  return <primitive object={model} />;
+  return <primitive object={scene} />;
 }
 
 function Scene() {
@@ -67,12 +53,14 @@ function Scene() {
 
   return (
     <>
-      <ambientLight intensity={2} color="#ffffff" />
-      <directionalLight position={[15, 40, 30]} intensity={3} color="#ffffff" />
+      <ambientLight intensity={3} color="#ffffff" />
+      <directionalLight position={[15, 40, 30]} intensity={4.5} color="#ffffff" />
       <directionalLight position={[-15, 10, -20]} intensity={1.5} color="#c084fc" />
-      <hemisphereLight args={['#d8b4fe', '#1a0f2e', 1]} />
-      <group ref={groupRef} position={[-65, -80, 0]} scale={[0.8, 0.8, 0.8]}>
-        <ByeModel />
+      <hemisphereLight args={['#d8b4fe', '#1a0f2e', 1.5]} />
+      <group ref={groupRef} position={[-135, -180, 0]} scale={[0.9, 0.9, 0.9]}>
+        <Suspense fallback={null}>
+          <ByeModel />
+        </Suspense>
       </group>
     </>
   );

@@ -7,14 +7,13 @@ export default function PreloadModels() {
     const preload = async () => {
       try {
         const drei = await import("@react-three/drei");
-        drei.useFBX.preload("/models/Floating.fbx");
-        drei.useFBX.preload("/models/Walking.fbx");
-        drei.useFBX.preload("/models/pointing-to-the-right-hologram.fbx");
-        drei.useFBX.preload("/models/wave-hiphop-dance.fbx");
-        drei.useFBX.preload("/models/breakdance-freezes.fbx");
-        drei.useFBX.preload("/models/rumba-dancing.fbx");
-        drei.useFBX.preload("/models/bye.fbx");
-        drei.useGLTF.preload("/models/home-studio-1k.glb");
+        drei.useGLTF.preload("/models/Floating.glb");
+        drei.useGLTF.preload("/models/Walking.glb");
+        drei.useGLTF.preload("/models/pointing-to-the-right-hologram.glb");
+        drei.useGLTF.preload("/models/wave-hiphop-dance.glb");
+        drei.useGLTF.preload("/models/breakdance-freezes.glb");
+        drei.useGLTF.preload("/models/rumba-dancing.glb");
+        drei.useGLTF.preload("/models/bye.glb");
       } catch (err) {
         console.warn("Model preload failed:", err);
       }
