@@ -347,7 +347,7 @@
 
 @media (max-width: 1024px) {
   .music {
-    margin-top: -300px;
+    margin-top: 0;
   }
 
   .musicContent {
@@ -380,7 +380,7 @@
 
 @media (max-width: 640px) {
   .music {
-    margin-top: -400px;
+    margin-top: 0;
   }
 
   .musicContent {

@@ -374,7 +374,7 @@
     padding: var(--space-xl) var(--space-md);
     height: auto;
     min-height: 100vh;
-    margin-top: -200px;
+    margin-top: 0;
   }
 
   .rightContainer {
@@ -391,11 +391,11 @@
   .contentLayer {
     padding: var(--space-lg) var(--space-sm);
     align-items: center;
+    height: auto;
     min-height: auto;
     padding-top: 80px;
     padding-bottom: var(--space-2xl);
-    margin-top: -150px;
-
+    margin-top: 0;
   }
 
   .rightContainer {

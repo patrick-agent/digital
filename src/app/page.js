@@ -9,6 +9,7 @@ import ContactSection from "@/components/sections/ContactSection";
 import PreloadModels from "@/components/PreloadModels";
 import ProgressTracker from "@/components/ProgressTracker";
 import LoadingScreen from "@/components/LoadingScreen";
+import ErrorBoundary from "@/components/ErrorBoundary";
 import { LoadingProvider } from "@/context/LoadingContext";
 
 export default function Home() {
@@ -16,16 +17,18 @@ export default function Home() {
     <LoadingProvider>
       <LoadingScreen />
       <Navbar />
-      <main>
-        <PreloadModels />
-        <ProgressTracker />
-        <HeroSection />
-        <AboutSection />
-        <MusicSection />
-        <LatestEPSection />
-        <DonationSection />
-        <ContactSection />
-      </main>
+      <ErrorBoundary>
+        <main>
+          <PreloadModels />
+          <ProgressTracker />
+          <HeroSection />
+          <AboutSection />
+          <MusicSection />
+          <LatestEPSection />
+          <DonationSection />
+          <ContactSection />
+        </main>
+      </ErrorBoundary>
       <Footer />
     </LoadingProvider>
   );

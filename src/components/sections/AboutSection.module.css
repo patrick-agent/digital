@@ -274,7 +274,6 @@
   .about {
     flex-direction: column;
     justify-content: flex-start;
-    clip-path: inset(0 0 300px 0);
   }
 
   .uiOverlay {
@@ -301,9 +300,9 @@
   }
 
   .characterContainer {
-    height: calc(120vh - 100px);
+    height: 60vh;
     rotate: 1deg;
-    margin-top: -350px;
+    margin-top: 0;
   }
 
   .scrollTrackOverlay {
@@ -319,7 +318,6 @@
   .about {
     flex-direction: column;
     justify-content: flex-start;
-    clip-path: inset(0 0 450px 0);
   }
 
   .aboutContent {
@@ -346,10 +344,10 @@
   }
 
   .characterContainer {
-    height: calc(110vh - 100px);
+    height: 40vh;
     position: relative;
     rotate: 0.5deg;
-    margin-top: -450px;
+    margin-top: 0;
   }
 
   .cyberLabel {

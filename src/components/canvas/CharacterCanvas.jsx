@@ -24,20 +24,12 @@ export default function CharacterCanvas() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [scrollProgress, setScrollProgress] = useState(0);
   const [mounted, setMounted] = useState(false);
-  const [show3D, setShow3D] = useState(undefined);
+  const scrollTick = useRef(0);
   const { isMobile, devicePixelRatio, getResponsiveFov } = useCanvasOptimizer();
 
   useEffect(() => {
     setMounted(true);
     setScrollProgress(calcScroll());
-    if (typeof window === "undefined") return;
-    const cores = navigator.hardwareConcurrency || 4;
-    const memory = navigator.deviceMemory || 4;
-    if (window.innerWidth < 768 || (cores <= 4 && memory <= 4)) {
-      setShow3D(false);
-    } else {
-      setShow3D(true);
-    }
   }, []);
 
   const onMouseMove = useCallback((e) => {
@@ -45,34 +37,29 @@ export default function CharacterCanvas() {
     if (rect) setMousePos(toNorm(e.clientX, e.clientY, rect));
   }, []);
 
-  const onTouchMove = useCallback((e) => {
-    if (isMobile) return;
-    const t = e.touches[0];
-    const rect = wrapRef.current?.getBoundingClientRect();
-    if (t && rect) setMousePos(toNorm(t.clientX, t.clientY, rect));
-  }, [isMobile]);
-
   const onMouseLeave = useCallback(() => setMousePos({ x: 0, y: 0 }), []);
-  const onScroll = useCallback(() => setScrollProgress(calcScroll()), []);
+  const onScroll = useCallback(() => {
+    const now = performance.now();
+    if (now - scrollTick.current < 100) return;
+    scrollTick.current = now;
+    setScrollProgress(calcScroll());
+  }, []);
 
   useEffect(() => {
     if (!mounted) return;
     if (!isMobile) {
       window.addEventListener("mousemove", onMouseMove, { passive: true });
+      window.addEventListener("mouseleave", onMouseLeave);
     }
-    window.addEventListener("touchmove", onTouchMove, { passive: true });
-    window.addEventListener("mouseleave", onMouseLeave);
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => {
       window.removeEventListener("mousemove", onMouseMove);
-      window.removeEventListener("touchmove", onTouchMove);
       window.removeEventListener("mouseleave", onMouseLeave);
       window.removeEventListener("scroll", onScroll);
     };
-  }, [mounted, onMouseMove, onTouchMove, onMouseLeave, onScroll, isMobile]);
+  }, [mounted, onMouseMove, onMouseLeave, onScroll, isMobile]);
 
-  if (show3D === false || !mounted) return null;
-  if (show3D === undefined) return null;
+  if (!mounted) return null;
 
   return (
     <div

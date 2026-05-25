@@ -56,21 +56,15 @@ import { useCanvasOptimizer } from "@/hooks/useCanvasOptimizer";
 function shouldRender3D() {
   if (typeof window === "undefined") return false;
   const width = window.innerWidth;
-  if (width < 768) return false;
-  if (width < 1024) {
-    const cores = navigator.hardwareConcurrency || 4;
-    const memory = navigator.deviceMemory || 4;
-    return cores > 4 || memory > 4;
-  }
+  if (width < 480) return false;
   return true;
 }
 
 export default function StudioCanvas() {
   const [show3D, setShow3D] = useState(false);
-  const { isVisible, devicePixelRatio, getResponsiveFov, getPostProcessingConfig } = useCanvasOptimizer({
+  const { devicePixelRatio, getResponsiveFov, getPostProcessingConfig } = useCanvasOptimizer({
     pixelRatioCap: 2,
     mobilePixelRatioCap: 1,
-    skipInitialVisibility: true,
   });
 
   const ppConfig = getPostProcessingConfig();
@@ -81,7 +75,7 @@ export default function StudioCanvas() {
     return () => clearTimeout(timer);
   }, []);
 
-  if (!show3D || !isVisible) return null;
+  if (!show3D) return null;
 
   return (
     <Canvas
@@ -100,7 +94,7 @@ export default function StudioCanvas() {
         depth: true,
       }}
       dpr={devicePixelRatio}
-      frameloop={isVisible ? "always" : "demand"}
+      frameloop="always"
       scene={{
         background: new THREE.Color('#1a0f2e'),
         fog: new THREE.Fog('#1a0f2e', 1.5, 10),
@@ -110,17 +104,15 @@ export default function StudioCanvas() {
       <StudioLights />
       <CameraParallax />
       <StudioModel />
-      {isVisible && (
-        <PostProcessing
-          bloomIntensity={ppConfig.bloomIntensity || 0.3}
-          noiseOpacity={ppConfig.noiseOpacity || 0.015}
-          vignetteDarkness={ppConfig.vignetteDarkness || 0.5}
-          bloom={ppConfig.bloom}
-          noise={ppConfig.noise}
-          chromaticAberration={ppConfig.chromaticAberration}
-          vignette={ppConfig.vignette}
-        />
-      )}
+      <PostProcessing
+        bloomIntensity={ppConfig.bloomIntensity || 0.3}
+        noiseOpacity={ppConfig.noiseOpacity || 0.015}
+        vignetteDarkness={ppConfig.vignetteDarkness || 0.5}
+        bloom={ppConfig.bloom}
+        noise={ppConfig.noise}
+        chromaticAberration={ppConfig.chromaticAberration}
+        vignette={ppConfig.vignette}
+      />
     </Canvas>
   );
 }
