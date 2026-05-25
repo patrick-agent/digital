@@ -9,8 +9,7 @@ import GlowBackground from "./GlowBackground";
 import ParticleField from "./ParticleField";
 import FloatingGeometries from "./FloatingGeometries";
 
-useFBX.preload("/models/pointing-to-the-right-hologram.fbx");
-useFBX.preload("/models/Walking.fbx");
+
 
 function SoundwaveBase() {
   const ring1 = useRef();

@@ -7,6 +7,7 @@ import LatestEPSection from "@/components/sections/LatestEPSection";
 import DonationSection from "@/components/sections/DonationSection";
 import ContactSection from "@/components/sections/ContactSection";
 import PreloadModels from "@/components/PreloadModels";
+import ProgressTracker from "@/components/ProgressTracker";
 import LoadingScreen from "@/components/LoadingScreen";
 import { LoadingProvider } from "@/context/LoadingContext";
 
@@ -17,6 +18,7 @@ export default function Home() {
       <Navbar />
       <main>
         <PreloadModels />
+        <ProgressTracker />
         <HeroSection />
         <AboutSection />
         <MusicSection />

@@ -24,11 +24,20 @@ export default function CharacterCanvas() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [scrollProgress, setScrollProgress] = useState(0);
   const [mounted, setMounted] = useState(false);
+  const [show3D, setShow3D] = useState(undefined);
   const { isMobile, devicePixelRatio, getResponsiveFov } = useCanvasOptimizer();
 
   useEffect(() => {
     setMounted(true);
     setScrollProgress(calcScroll());
+    if (typeof window === "undefined") return;
+    const cores = navigator.hardwareConcurrency || 4;
+    const memory = navigator.deviceMemory || 4;
+    if (window.innerWidth < 768 || (cores <= 4 && memory <= 4)) {
+      setShow3D(false);
+    } else {
+      setShow3D(true);
+    }
   }, []);
 
   const onMouseMove = useCallback((e) => {
@@ -62,7 +71,8 @@ export default function CharacterCanvas() {
     };
   }, [mounted, onMouseMove, onTouchMove, onMouseLeave, onScroll, isMobile]);
 
-  if (!mounted) return null;
+  if (show3D === false || !mounted) return null;
+  if (show3D === undefined) return null;
 
   return (
     <div
@@ -84,13 +94,13 @@ export default function CharacterCanvas() {
         onCreated={({ camera }) => {
           camera.lookAt(0, 42, 0);
         }}
-        gl={{ alpha: true, antialias: !isMobile }}
+        gl={{ alpha: true, antialias: false }}
         style={{
           width: "100%",
           height: "100%",
           background: "transparent",
         }}
-        dpr={devicePixelRatio}
+        dpr={[1, 1.5]}
       >
         <GlowBackground color="#a855f7" secondaryColor="#6366f1" intensity={0.6} radius={30} />
         <ambientLight intensity={2} color="#ffffff" />

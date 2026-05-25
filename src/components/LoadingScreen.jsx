@@ -96,62 +96,42 @@ export default function LoadingScreen() {
         style={{ position: "absolute", inset: 0, pointerEvents: "none" }}
       />
 
-      {/* Animated rings */}
-      <div style={{ position: "relative", width: 64, height: 64, marginBottom: 32 }}>
-        <div
-          style={{
-            position: "absolute",
-            inset: 0,
-            borderRadius: "50%",
-            border: "2px solid rgba(168, 85, 247, 0.15)",
-            borderTopColor: "#a855f7",
-            animation: "ls-spin 0.8s linear infinite",
-          }}
-        />
-        <div
-          style={{
-            position: "absolute",
-            inset: 4,
-            borderRadius: "50%",
-            border: "2px solid rgba(99, 102, 241, 0.1)",
-            borderBottomColor: "#6366f1",
-            animation: "ls-spin 0.6s linear infinite reverse",
-          }}
-        />
-        <div
-          style={{
-            position: "absolute",
-            top: "50%",
-            left: "50%",
-            width: 8,
-            height: 8,
-            margin: -4,
-            borderRadius: "50%",
-            background: "#a855f7",
-            boxShadow: "0 0 16px rgba(168, 85, 247, 0.6)",
-          }}
+      {/* Logo with rotation */}
+      <div
+        style={{
+          position: "relative",
+          width: 80,
+          height: 80,
+          marginBottom: 32,
+          animation: "ls-spin 2s linear infinite",
+        }}
+      >
+        <img
+          src="/logo.png"
+          alt="Tachy"
+          style={{ width: "100%", height: "100%", objectFit: "contain" }}
         />
       </div>
 
       {/* Progress bar */}
       <div
         style={{
-          width: 180,
-          height: 2,
-          background: "rgba(255,255,255,0.05)",
-          borderRadius: 2,
+          width: 200,
+          height: 3,
+          background: "rgba(255,255,255,0.06)",
+          borderRadius: 3,
           overflow: "hidden",
           marginBottom: 12,
         }}
       >
         <div
           style={{
-            width: `${Math.max(progress, 5)}%`,
+            width: `${Math.max(progress, 3)}%`,
             height: "100%",
             background: "linear-gradient(90deg, #a855f7, #ec4899)",
-            borderRadius: 2,
+            borderRadius: 3,
             transition: "width 0.3s ease",
-            boxShadow: "0 0 8px rgba(168,85,247,0.4)",
+            boxShadow: "0 0 12px rgba(168,85,247,0.5)",
           }}
         />
       </div>
@@ -159,17 +139,19 @@ export default function LoadingScreen() {
       <p
         style={{
           fontFamily: "var(--font-mono)",
-          fontSize: "clamp(0.65rem, 0.8vw, 0.75rem)",
-          color: "#5a5a72",
+          fontSize: "clamp(0.7rem, 0.9vw, 0.8rem)",
+          color: "#6b7280",
           textTransform: "uppercase",
-          letterSpacing: "0.15em",
+          letterSpacing: "0.2em",
         }}
       >
-        Loading Studio...
+        Loading... {Math.round(progress)}%
       </p>
 
       <style>{`
-        @keyframes ls-spin { to { transform: rotate(360deg); } }
+        @keyframes ls-spin {
+          to { transform: rotate(360deg); }
+        }
       `}</style>
     </div>
   );

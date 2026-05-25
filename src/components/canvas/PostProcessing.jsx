@@ -1,32 +1,51 @@
 "use client";
 
-import { useRef, useState, useEffect } from "react";
+import React, { useRef } from "react";
 import { useThree } from "@react-three/fiber";
 import { EffectComposer, Bloom, ChromaticAberration, Noise, Vignette, DepthOfField } from "@react-three/postprocessing";
 import { BlendFunction } from "postprocessing";
 
+class ComposerErrorBoundary extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false };
+  }
+  static getDerivedStateFromError() {
+    return { hasError: true };
+  }
+  render() {
+    if (this.state.hasError) return null;
+    return this.props.children;
+  }
+}
+
 function SafeEffectComposer({ children, multisampling = 4 }) {
   const gl = useThree((state) => state.gl);
-  const [ready, setReady] = useState(false);
+  const mountKey = useRef(0);
+  const prevGl = useRef(gl);
 
-  useEffect(() => {
-    if (gl && gl.getContext()) {
-      const timer = setTimeout(() => setReady(true), 50);
-      return () => clearTimeout(timer);
-    }
-  }, [gl]);
+  if (!gl) return null;
 
-  if (!ready) return null;
+  const context = gl.getContext();
+  if (!context) return null;
 
-  try {
-    return (
-      <EffectComposer multisampling={multisampling} disableNormalPass>
+  if (!context.getContextAttributes) return null;
+
+  const ctxAttrs = context.getContextAttributes();
+  if (!ctxAttrs) return null;
+
+  if (prevGl.current !== gl) {
+    prevGl.current = gl;
+    mountKey.current += 1;
+  }
+
+  return (
+    <ComposerErrorBoundary>
+      <EffectComposer key={mountKey.current} multisampling={multisampling}>
         {children}
       </EffectComposer>
-    );
-  } catch {
-    return null;
-  }
+    </ComposerErrorBoundary>
+  );
 }
 
 export default function PostProcessing({

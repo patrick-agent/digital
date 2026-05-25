@@ -10,8 +10,6 @@ import GlowBackground from "./GlowBackground";
 import ParticleField from "./ParticleField";
 import FloatingGeometries from "./FloatingGeometries";
 
-useFBX.preload("/models/Walking.fbx");
-
 function HologramBase() {
   const gridRef = useRef();
 

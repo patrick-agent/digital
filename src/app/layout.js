@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono, DM_Sans, Caveat, Inter, Outfit } from "next/font/google";
+import { Geist, Geist_Mono, Caveat } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "sonner";
 
@@ -12,28 +12,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const dmSans = DM_Sans({
-  variable: "--font-dm-sans",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
-
 const caveat = Caveat({
   variable: "--font-caveat",
   subsets: ["latin"],
   weight: ["500", "600", "700"],
-});
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
-
-const outfit = Outfit({
-  variable: "--font-outfit",
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
 });
 
 export const metadata = {
@@ -78,7 +60,7 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${dmSans.variable} ${caveat.variable} ${inter.variable} ${outfit.variable}`}>
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${caveat.variable}`}>
       <body suppressHydrationWarning>
         {children}
         <Toaster

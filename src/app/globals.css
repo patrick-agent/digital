@@ -71,8 +71,8 @@
   --text-muted: #5a5a72;
   --text-accent: var(--accent-primary);
 
-  --font-heading: var(--font-geist-sans), 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-body: var(--font-geist-sans), 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: var(--font-geist-mono), 'JetBrains Mono', 'Fira Code', monospace;
 
   --fs-xs: clamp(0.7rem, 0.8vw, 0.75rem);

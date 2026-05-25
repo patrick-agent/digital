@@ -5,65 +5,64 @@ import { createContext, useContext, useState, useCallback, useRef, useEffect } f
 const LoadingContext = createContext({
   isLoading: true,
   progress: 0,
-  setReady: () => {},
+  set3DProgress: () => {},
+  markReady: () => {},
 });
 
-const MAX_LOAD_TIME = 4000;
+const MIN_LOAD_TIME = 2000;
+const MAX_LOAD_TIME = 8000;
 
 export function LoadingProvider({ children }) {
   const [progress, setProgress] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
-  const [modelsLoaded, setModelsLoaded] = useState(false);
-  const startedRef = useRef(false);
+  const [allReady, setAllReady] = useState(false);
+  const [loaded3D, setLoaded3D] = useState(false);
+  const startTimeRef = useRef(null);
+  const timerRef = useRef(null);
 
-  const onLoad = useCallback(() => {
-    setModelsLoaded(true);
-    setProgress(100);
-    setTimeout(() => setIsLoading(false), 500);
+  const updateProgress = useCallback((pct) => {
+    setProgress((prev) => Math.max(prev, Math.min(pct, 95)));
+  }, []);
+
+  const set3DProgress = useCallback((pct) => {
+    setProgress((prev) => Math.max(prev, Math.min(pct * 0.95, 95)));
+  }, []);
+
+  const markReady = useCallback(() => {
+    setAllReady(true);
   }, []);
 
   useEffect(() => {
-    if (startedRef.current) return;
-    startedRef.current = true;
+    startTimeRef.current = Date.now();
+  }, []);
 
-    let checking = true;
-    let attempts = 0;
+  useEffect(() => {
+    if (!allReady) return;
 
-    const checkModels = () => {
-      if (!checking) return;
-      attempts++;
+    const elapsed = Date.now() - startTimeRef.current;
+    const remaining = Math.max(0, MIN_LOAD_TIME - elapsed);
 
-      const canvas = document.querySelector("canvas");
-      const fbxModels = document.querySelectorAll("[data-fbx]");
+    setProgress(100);
 
-      const allFbx = document.querySelectorAll('[class*="character"]');
-
-      if (attempts > MAX_LOAD_TIME / 100) {
-        onLoad();
-        return;
-      }
-
-      setProgress(Math.min(attempts * 8, 90));
-
-      if (canvas) {
-        onLoad();
-      } else {
-        setTimeout(checkModels, 100);
-      }
-    };
-
-    setTimeout(checkModels, 500);
-
-    const fallbackTimer = setTimeout(onLoad, MAX_LOAD_TIME);
+    timerRef.current = setTimeout(() => {
+      setIsLoading(false);
+    }, remaining);
 
     return () => {
-      checking = false;
-      clearTimeout(fallbackTimer);
+      if (timerRef.current) clearTimeout(timerRef.current);
     };
-  }, [onLoad]);
+  }, [allReady]);
+
+  useEffect(() => {
+    const fallback = setTimeout(() => {
+      setAllReady(true);
+    }, MAX_LOAD_TIME);
+
+    return () => clearTimeout(fallback);
+  }, []);
 
   return (
-    <LoadingContext.Provider value={{ isLoading, progress, setReady: onLoad }}>
+    <LoadingContext.Provider value={{ isLoading, progress, set3DProgress, markReady }}>
       {children}
     </LoadingContext.Provider>
   );

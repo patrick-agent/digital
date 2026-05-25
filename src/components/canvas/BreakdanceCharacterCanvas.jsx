@@ -1,3 +1,5 @@
+"use client";
+
 import React, { forwardRef, useEffect, useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { useFBX } from '@react-three/drei';

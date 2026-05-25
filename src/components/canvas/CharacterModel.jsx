@@ -4,9 +4,6 @@ import { useEffect, useRef, useMemo } from "react";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 
-// Preload the model at app startup
-useFBX.preload("/models/Floating.fbx");
-
 export default function CharacterModel({
   mousePos = { x: 0, y: 0 },
   scrollProgress = 0,

@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import { IconTrendingUp, IconCurrencyDollar, IconCode, IconRobot } from '@tabler/icons-react';
+import { TrendingUp, DollarSign, Code, Bot } from 'lucide-react';
 import { GridScan } from '@/components/ui/GridScan';
 import { useVisibilityLoader, useDeviceType } from '@/hooks/useVisibilityLoader';
 import styles from './AnotherMeServices.module.css';
@@ -13,7 +13,7 @@ const services = [
     tagline: "Data-driven Solutions, Full Funnel Approach cho Digital Campaigns",
     features: ["Google & Meta Ads", "SEO/SEM", "Marketing Automation", "etc..."],
     stat: "50+ Projects tôi đã tham gia",
-    icon: IconCurrencyDollar
+    icon: DollarSign
   },
   {
     slug: "",
@@ -21,7 +21,7 @@ const services = [
     tagline: "Xây dựng hệ thống dữ liệu và Dashboard trực quan có insights",
     features: ["Định nghĩa Metrics", "Cào dữ liệu tự động", "Near real-time dashboard","etc..."],
     stat: "Actionable & Decision Making",
-    icon: IconTrendingUp
+    icon: TrendingUp
   },
   {
     slug: "",
@@ -29,7 +29,7 @@ const services = [
     tagline: "Chỉ cần ý tưởng, AI thực thi và chúng ta QC kết quả",
     features: ["Opencode, VS Code, Claude Code,...", "Automation scripts", "AI integration","etc..."],
     stat: "10x faster",
-    icon: IconCode
+    icon: Code
   },
   {
     slug: "",
@@ -37,7 +37,7 @@ const services = [
     tagline: "Custom AI agents cho quy trình của bạn",
     features: ["n8n / make.com workflows", "Custom agents", "Process automation", "Nuôi tôm - Openclaw"],
     stat: "80% time saved",
-    icon: IconRobot
+    icon: Bot
   },
 ];
 

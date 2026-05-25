@@ -14,7 +14,7 @@ export default function PreloadModels() {
         drei.useFBX.preload("/models/breakdance-freezes.fbx");
         drei.useFBX.preload("/models/rumba-dancing.fbx");
         drei.useFBX.preload("/models/bye.fbx");
-        console.log("✓ Models preloaded");
+        drei.useGLTF.preload("/models/home-studio-1k.glb");
       } catch (err) {
         console.warn("Model preload failed:", err);
       }

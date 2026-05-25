@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import * as THREE from "three";
 
@@ -53,13 +53,35 @@ import PostProcessing from "./PostProcessing";
 import GlowBackground from "./GlowBackground";
 import { useCanvasOptimizer } from "@/hooks/useCanvasOptimizer";
 
+function shouldRender3D() {
+  if (typeof window === "undefined") return false;
+  const width = window.innerWidth;
+  if (width < 768) return false;
+  if (width < 1024) {
+    const cores = navigator.hardwareConcurrency || 4;
+    const memory = navigator.deviceMemory || 4;
+    return cores > 4 || memory > 4;
+  }
+  return true;
+}
+
 export default function StudioCanvas() {
+  const [show3D, setShow3D] = useState(false);
   const { isVisible, devicePixelRatio, getResponsiveFov, getPostProcessingConfig } = useCanvasOptimizer({
     pixelRatioCap: 2,
-    mobilePixelRatioCap: 1.5,
+    mobilePixelRatioCap: 1,
+    skipInitialVisibility: true,
   });
 
   const ppConfig = getPostProcessingConfig();
+
+  useEffect(() => {
+    if (!shouldRender3D()) return;
+    const timer = setTimeout(() => setShow3D(true), 100);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (!show3D || !isVisible) return null;
 
   return (
     <Canvas
@@ -72,7 +94,7 @@ export default function StudioCanvas() {
       }}
       gl={{
         alpha: false,
-        antialias: true,
+        antialias: false,
         powerPreference: "high-performance",
         stencil: false,
         depth: true,
