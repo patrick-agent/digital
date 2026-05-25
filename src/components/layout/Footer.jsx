@@ -45,10 +45,13 @@ const NAV_LINKS = [
 ];
 
 const SERVICES = [
-  { label: "Music Production", href: "#" },
-  { label: "Mixing & Mastering", href: "#" },
-  { label: "Sound Design", href: "#" },
-  { label: "Studio Recording", href: "#" },
+  { label: "Another Me", href: "/digital" },
+  { label: "About Tachy", href: "/about" },
+  { label: "Blog", href: "/blog" },
+  { label: "Shop", href: "/shop" },
+  { label: "Contact Me", href: "/contact" },
+  { label: "Terms & Condition", href: "/terms" },
+  { label: "Privacy Policy", href: "/privacy" },
 ];
 
 function ShootingStars() {
@@ -129,7 +132,7 @@ export default function Footer() {
             ))}
           </div>
           <div className={styles.linkColumn}>
-            <h4>Services</h4>
+            <h4>Others</h4>
             {SERVICES.map((link) => (
               <a key={link.label} href={link.href}>{link.label}</a>
             ))}

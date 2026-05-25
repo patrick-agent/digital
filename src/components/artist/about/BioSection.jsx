@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import BorderGlow from "@/components/canvas/BorderGlow";
 import styles from "./BioSection.module.css";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
@@ -89,16 +90,28 @@ export default function BioSection() {
       <div className={styles.bioContainer}>
         <div className={styles.bioLeft}>
           <div ref={frameRef} className={styles.photoFrame}>
-            <div ref={photoRef} className={styles.photoWrapper}>
-              <Image
-                src="/images/tachy-about.jpg"
-                alt="Tachy - Artist Photo"
-                width={400}
-                height={500}
-                className={styles.photo}
-                priority
-              />
-            </div>
+            <BorderGlow
+              glowColor="268 100 76"
+              backgroundColor="transparent"
+              borderRadius={16}
+              glowRadius={40}
+              glowIntensity={1.2}
+              coneSpread={25}
+              animated
+              colors={['#c084fc', '#f472b6', '#38bdf8']}
+              fillOpacity={0.4}
+            >
+              <div ref={photoRef} className={styles.photoWrapper}>
+                <Image
+                  src="/images/tachy-about.jpg"
+                  alt="Tachy - Artist Photo"
+                  width={400}
+                  height={500}
+                  className={styles.photo}
+                  priority
+                />
+              </div>
+            </BorderGlow>
           </div>
         </div>
 

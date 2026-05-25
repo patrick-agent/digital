@@ -1,6 +1,7 @@
 import { readMusic } from "@/lib/db"
 import ReleaseShelf3D from "@/components/artist/bio-music/ReleaseShelf3D"
 import ReleaseCard from "@/components/artist/bio-music/ReleaseCard"
+import SpotlightCard from "@/components/canvas/SpotlightCard"
 import styles from "./page.module.css"
 
 export const dynamic = "force-dynamic"
@@ -47,7 +48,13 @@ export default async function BioMusicPage() {
         ) : (
           <div className={styles.grid}>
             {releases.map((release) => (
-              <ReleaseCard key={release.id} release={release} />
+              <SpotlightCard
+                key={release.id}
+                className="spotlight-card"
+                spotlightColor="rgba(168, 85, 247, 0.2)"
+              >
+                <ReleaseCard release={release} />
+              </SpotlightCard>
             ))}
           </div>
         )}

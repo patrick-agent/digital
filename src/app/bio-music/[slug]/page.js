@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation"
 import { readMusicItem } from "@/lib/db"
 import PlatformLinksCard from "@/components/artist/bio-music/PlatformLinksCard"
-import BioDetailBackground from "@/components/artist/bio-music/BioDetailBackground"
+import LightPillar from "@/components/ui/LightPillar"
 import {
   SpotifyIcon,
   YouTubeIcon,
@@ -39,7 +39,20 @@ export default async function BioMusicDetailPage({ params }) {
   return (
     <div className={styles.page}>
       {/* 3D Background accent */}
-      <BioDetailBackground />
+      <div style={{ opacity: 0.5 }}>
+        <LightPillar
+          topColor="#5227FF"
+          bottomColor="#FF9FFC"
+          intensity={0.8}
+          rotationSpeed={0.2}
+          glowAmount={0.008}
+          pillarWidth={3.0}
+          pillarHeight={0.4}
+          noiseIntensity={0.3}
+          mixBlendMode="screen"
+          pillarRotation={45}
+        />
+      </div>
 
       <div className={styles.content}>
         {/* Cover Art */}

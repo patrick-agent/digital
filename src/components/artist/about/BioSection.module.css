@@ -31,54 +31,10 @@
   display: inline-block;
 }
 
-.photoFrame::before {
-  content: "";
-  position: absolute;
-  top: -12px;
-  left: -12px;
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  border: 2px solid var(--accent-primary);
-  border-radius: var(--radius-md);
-  opacity: 0.6;
-  z-index: 0;
-}
-
-.photoFrame::after {
-  content: "";
-  position: absolute;
-  top: -12px;
-  left: -12px;
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  border-radius: var(--radius-md);
-  z-index: 1;
-  pointer-events: none;
-  background: linear-gradient(
-    90deg,
-    transparent 0%,
-    transparent 40%,
-    var(--accent-primary) 50%,
-    transparent 60%,
-    transparent 100%
-  );
-  background-size: 300% 100%;
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  padding: 2px;
-  animation: scanLine 3s linear infinite;
-}
-
-@keyframes scanLine {
-  0% { background-position: 100% 0; }
-  100% { background-position: -100% 0; }
-}
-
 .photoWrapper {
   position: relative;
   z-index: 2;
-  border-radius: var(--radius-md);
+  border-radius: 16px;
   overflow: hidden;
   width: 100%;
   max-width: 400px;
@@ -98,6 +54,10 @@
   color: var(--accent-primary);
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  border: 1px solid var(--accent-primary);
+  padding: 6px 20px;
+  border-radius: 999px;
+  width: fit-content;
 }
 
 .heading {
@@ -192,7 +152,9 @@
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .bioLeft {
-    flex: 0 0 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: 45%;
   }
 
@@ -219,21 +181,8 @@
   }
 
   .photoWrapper {
-    max-width: 300px;
-  }
-
-  .photoFrame::before {
-    top: -8px;
-    left: -8px;
-    width: calc(100% + 2px);
-    height: calc(100% + 2px);
-  }
-
-  .photoFrame::after {
-    top: -8px;
-    left: -8px;
-    width: calc(100% + 2px);
-    height: calc(100% + 2px);
+    max-width: 100vw;
+    border: 0.5px solid rgba(255, 51, 228, 0.1);
   }
 
   .bioRight {
@@ -249,5 +198,8 @@
     font-size: var(--fs-xs);
     width: 100%;
     text-align: center;
+  }
+  .ctaWrapper {
+    max-width: fit-content;
   }
 }

@@ -3,16 +3,6 @@
   flex-direction: column;
   gap: var(--space-sm);
   cursor: pointer;
-  transition: transform var(--transition-base);
-}
-
-.card:hover {
-  transform: translateY(-2px);
-}
-
-.card:hover .cover {
-  transform: scale(1.04);
-  box-shadow: 0 8px 32px rgba(168, 85, 247, 0.25);
 }
 
 .coverWrapper {
@@ -28,7 +18,6 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 250ms ease, box-shadow 250ms ease;
 }
 
 .coverPlaceholder {

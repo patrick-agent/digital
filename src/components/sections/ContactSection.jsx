@@ -107,7 +107,7 @@ function BackgroundLayers({ isMobile, mouse }) {
 const SOCIAL_CHANNELS = [
   { name: "Facebook", handle: "@tachy.ngo", url: "https://facebook.com/tachy.ngo/" },
   { name: "Instagram", handle: "@tachy.ngo", url: "https://instagram.com/tachy.ngo/" },
-  { name: "YouTube", handle: "@TachyNgo", url: "https://youtube.com /@TachyNgo" },
+  { name: "YouTube", handle: "@TachyNgo", url: "https://youtube.com/@TachyNgo" },
   { name: "TikTok", handle: "@tachy.ngo", url: "https://tiktok.com/@tachy.ngo" },
   { name: "Spotify", handle: "Tachy", url: "https://open.spotify.com/artist/6k6IAy0p8zl0cfzBqGvX9G" },
   { name: "Apple Music", handle: "Tachy", url: "https://music.apple.com/gb/artist/tachy/1818075133" },

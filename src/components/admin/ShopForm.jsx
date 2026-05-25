@@ -33,6 +33,9 @@ export default function ShopForm({ product }) {
     status: "hidden",
     seoTitle: "",
     seoDescription: "",
+    features: "",
+    whyRecommend: "",
+    faq: [{ question: "", answer: "" }],
   })
   const [slugManuallyEdited, setSlugManuallyEdited] = useState(false)
   const [saving, setSaving] = useState(false)
@@ -53,6 +56,9 @@ export default function ShopForm({ product }) {
         status: product.status || "hidden",
         seoTitle: product.seoTitle || "",
         seoDescription: product.seoDescription || "",
+        features: (product.features || []).join("\n"),
+        whyRecommend: product.whyRecommend || "",
+        faq: product.faq?.length ? product.faq : [{ question: "", answer: "" }],
       })
     }
   }, [product])
@@ -113,6 +119,12 @@ export default function ShopForm({ product }) {
       status: form.status,
       seoTitle: form.seoTitle,
       seoDescription: form.seoDescription,
+      features: form.features
+        .split("\n")
+        .map((f) => f.trim())
+        .filter(Boolean),
+      whyRecommend: form.whyRecommend,
+      faq: form.faq.filter((item) => item.question.trim() && item.answer.trim()),
     }
 
     try {
@@ -339,6 +351,80 @@ space-y-4">
                 rows={2}
                 className="w-full px-3 py-2 bg-admin-bg border border-border rounded-lg text-text-primary text-sm focus:outline-none focus:ring-2 focus:ring-accent-purple/50 resize-none"
               />
+            </div>
+          </div>
+
+          <div className="bg-admin-card border border-border rounded-xl p-5 space-y-4">
+            <h3 className="text-sm font-semibold text-text-primary">SEO Content</h3>
+
+            <div>
+              <label className="block text-xs text-text-muted mb-1">Features (one per line)</label>
+              <textarea
+                value={form.features}
+                onChange={(e) => handleChange("features", e.target.value)}
+                rows={4}
+                className="w-full px-3 py-2 bg-admin-bg border border-border rounded-lg text-text-primary text-sm placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-accent-purple/50 resize-none font-mono text-xs"
+                placeholder="Cardioid polar pattern&#x0a;Frequency response: 20-20,000 Hz&#x0a;Requires 48V phantom power"
+              />
+            </div>
+
+            <div>
+              <label className="block text-xs text-text-muted mb-1">Why Tachy Recommends This</label>
+              <RichTextEditor
+                content={form.whyRecommend}
+                onChange={(html) => handleChange("whyRecommend", html)}
+              />
+            </div>
+
+            <div>
+              <label className="block text-xs text-text-muted mb-2">FAQ</label>
+              {form.faq.map((item, i) => (
+                <div key={i} className="mb-3 p-3 bg-admin-bg rounded-lg border border-border space-y-2">
+                  <input
+                    type="text"
+                    value={item.question}
+                    onChange={(e) => {
+                      const next = [...form.faq]
+                      next[i] = { ...next[i], question: e.target.value }
+                      handleChange("faq", next)
+                    }}
+                    className="w-full px-2 py-1.5 bg-admin-bg border border-border rounded text-text-primary text-sm focus:outline-none focus:ring-2 focus:ring-accent-purple/50"
+                    placeholder="Question"
+                  />
+                  <textarea
+                    value={item.answer}
+                    onChange={(e) => {
+                      const next = [...form.faq]
+                      next[i] = { ...next[i], answer: e.target.value }
+                      handleChange("faq", next)
+                    }}
+                    rows={2}
+                    className="w-full px-2 py-1.5 bg-admin-bg border border-border rounded text-text-primary text-sm focus:outline-none focus:ring-2 focus:ring-accent-purple/50 resize-none"
+                    placeholder="Answer"
+                  />
+                  {form.faq.length > 1 && (
+                    <button
+                      type="button"
+                      onClick={() => {
+                        const next = form.faq.filter((_, j) => j !== i)
+                        handleChange("faq", next)
+                      }}
+                      className="text-xs text-red-400 hover:text-red-300"
+                    >
+                      Remove
+                    </button>
+                  )}
+                </div>
+              ))}
+              <button
+                type="button"
+                onClick={() => {
+                  handleChange("faq", [...form.faq, { question: "", answer: "" }])
+                }}
+                className="text-xs text-accent-primary hover:text-accent-primary/80"
+              >
+                + Add FAQ
+              </button>
             </div>
           </div>
         </div>

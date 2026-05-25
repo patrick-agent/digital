@@ -39,11 +39,6 @@ const AnotherMeContact = dynamic(() => import('@/components/another-me/AnotherMe
   loading: () => <div style={{ height: '50vh', background: '#0a0a0f' }} />,
 })
 
-const AnotherMeFooter = dynamic(() => import('@/components/another-me/AnotherMeFooter'), {
-  ssr: false,
-  loading: () => <div style={{ height: '60vh', background: '#0a0a0f' }} />,
-})
-
 export default function AnotherMePageContent() {
   const [mounted, setMounted] = useState(false)
 
@@ -64,7 +59,6 @@ export default function AnotherMePageContent() {
       <AnotherMeSkills />
       <AnotherMeServices />
       <AnotherMeContact />
-      <AnotherMeFooter />
     </>
   )
 }

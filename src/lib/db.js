@@ -222,6 +222,9 @@ export async function createProduct(data) {
     status: data.status || "hidden",
     seoTitle: data.seoTitle || "",
     seoDescription: data.seoDescription || "",
+    features: data.features || [],
+    whyRecommend: data.whyRecommend || "",
+    faq: data.faq || [],
     createdAt: now,
     updatedAt: now,
   }

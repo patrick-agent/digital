@@ -1,5 +1,6 @@
-import { Geist, Geist_Mono, DM_Sans, Caveat, Inter } from "next/font/google";
+import { Geist, Geist_Mono, DM_Sans, Caveat, Inter, Outfit } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,6 +30,12 @@ const inter = Inter({
   weight: ["400", "500", "600", "700"],
 });
 
+const outfit = Outfit({
+  variable: "--font-outfit",
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+});
+
 export const metadata = {
   title: "Tachy — An Indie Artist",
   description:
@@ -48,6 +55,17 @@ export const metadata = {
     description:
       "An immersive 3D interactive music portfolio experience.",
     type: "website",
+    url: "https://tachy.vercel.app",
+    siteName: "Tachy",
+    images: [
+      { url: "/apple-touch-icon.png", width: 180, height: 180 },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Tachy — An Indie Artist",
+    description:
+      "An immersive 3D interactive music portfolio experience.",
   },
 };
 
@@ -60,8 +78,22 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${dmSans.variable} ${caveat.variable} ${inter.variable}`}>
-      <body suppressHydrationWarning>{children}</body>
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${dmSans.variable} ${caveat.variable} ${inter.variable} ${outfit.variable}`}>
+      <body suppressHydrationWarning>
+        {children}
+        <Toaster
+          position="top-right"
+          richColors
+          closeButton
+          toastOptions={{
+            style: {
+              background: "#1a1a2e",
+              border: "1px solid rgba(168, 85, 247, 0.2)",
+              color: "#fff",
+            },
+          }}
+        />
+      </body>
     </html>
   );
 }

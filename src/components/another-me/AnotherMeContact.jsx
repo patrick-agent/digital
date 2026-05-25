@@ -6,7 +6,7 @@ import styles from './AnotherMeContact.module.css';
 
 export default function AnotherMeContact() {
   return (
-    <section className={styles.section}>
+    <section id="contact" className={styles.section}>
       <div className={styles.auroraBg}>
         <SoftAurora
           speed={0.4}

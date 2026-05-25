@@ -15,7 +15,7 @@ export default function BlogLayout({ children }) {
   return (
     <>
       <Navbar />
-      <main>{children}</main>
+      <main style={{ paddingBottom: 220 }}>{children}</main>
       <Footer />
     </>
   )

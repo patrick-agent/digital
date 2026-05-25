@@ -2,8 +2,10 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import styles from './AnotherMeNavbar.module.css';
+import ThemeToggle from './digital-blog/ThemeToggle';
 
 const sections = [
   { label: 'Home',         href: '#hero' },
@@ -11,10 +13,12 @@ const sections = [
   { label: 'My Journey',   href: '#timeline' },
   { label: 'Skills',       href: '#skills' },
   { label: 'Services',     href: '#services' },
+  { label: 'Blog',         href: '/digital/blog', external: true },
   { label: 'Contact',      href: '#contact' },
 ];
 
 export default function AnotherMeNavbar() {
+  const router = useRouter();
   const [scrolled, setScrolled] = useState(false);
   const [hidden, setHidden] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -51,7 +55,8 @@ export default function AnotherMeNavbar() {
       { rootMargin: '-40% 0px -55% 0px' }
     );
 
-    sections.forEach(({ href }) => {
+    sections.forEach(({ href, external }) => {
+      if (external) return;
       const el = document.querySelector(href);
       if (el) observer.observe(el);
     });
@@ -69,14 +74,29 @@ export default function AnotherMeNavbar() {
     return () => window.removeEventListener('resize', onResize);
   }, [isOpen]);
 
+  const isOnBlog = typeof window !== 'undefined' && window.location.pathname.startsWith('/digital/blog');
+
   const closeMenu = () => setIsOpen(false);
 
   const scrollToSection = (href) => {
+    if (isOnBlog) {
+      router.push(`/digital${href}`);
+      return;
+    }
     const el = document.querySelector(href);
     if (el) {
       el.scrollIntoView({ behavior: 'smooth' });
     }
     closeMenu();
+  };
+
+  const handleNavClick = (e, section) => {
+    if (section.external) {
+      closeMenu();
+      return;
+    }
+    e.preventDefault();
+    scrollToSection(section.href);
   };
 
   const navHeight = scrolled ? 58 : 64;
@@ -105,21 +125,30 @@ export default function AnotherMeNavbar() {
 
           <div className={styles.desktopNav}>
             {sections.map((section) => (
-              <a
-                key={section.href}
-                href={section.href}
-                className={`${styles.navLink} ${activeSection === section.href ? styles.active : ''}`}
-                onClick={(e) => {
-                  e.preventDefault();
-                  scrollToSection(section.href);
-                }}
-              >
-                {section.label}
-              </a>
+              section.external ? (
+                <Link
+                  key={section.href}
+                  href={section.href}
+                  className={styles.navLink}
+                  onClick={closeMenu}
+                >
+                  {section.label}
+                </Link>
+              ) : (
+                <a
+                  key={section.href}
+                  href={section.href}
+                  className={`${styles.navLink} ${activeSection === section.href ? styles.active : ''}`}
+                  onClick={(e) => handleNavClick(e, section)}
+                >
+                  {section.label}
+                </a>
+              )
             ))}
           </div>
 
           <div className={styles.desktopCta}>
+            <ThemeToggle />
             <a
               href="#contact"
               className={styles.ctaBtn}
@@ -156,34 +185,46 @@ export default function AnotherMeNavbar() {
         role="dialog"
         aria-hidden={!isOpen}
       >
-        {sections.map((section) => (
+        {sections.map((section) =>
+          section.external ? (
+            <Link
+              key={section.href}
+              href={section.href}
+              className={styles.mobileLink}
+              onClick={closeMenu}
+            >
+              {section.label}
+            </Link>
+          ) : (
+            <a
+              key={section.href}
+              href={section.href}
+              className={`${styles.mobileLink} ${activeSection === section.href ? styles.active : ''}`}
+              onClick={(e) => handleNavClick(e, section)}
+            >
+              {section.label}
+            </a>
+          )
+        )}
+        <div style={{ display: 'flex', gap: '8px', marginTop: '16px', alignItems: 'center' }}>
+          <ThemeToggle />
           <a
-            key={section.href}
-            href={section.href}
-            className={`${styles.mobileLink} ${activeSection === section.href ? styles.active : ''}`}
+            href="#contact"
+            className={styles.mobileCta}
+            style={{ flex: 1, margin: 0 }}
             onClick={(e) => {
               e.preventDefault();
-              scrollToSection(section.href);
+              scrollToSection('#contact');
             }}
           >
-            {section.label}
+            Đặt lịch tư vấn
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none">
+              <path d="M2.5 10.5L10.5 2.5M10.5 2.5H5M10.5 2.5V8"
+                    stroke="currentColor" strokeWidth="1.4"
+                    strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
           </a>
-        ))}
-        <a
-          href="#contact"
-          className={styles.mobileCta}
-          onClick={(e) => {
-            e.preventDefault();
-            scrollToSection('#contact');
-          }}
-        >
-          Đặt lịch tư vấn
-          <svg width="13" height="13" viewBox="0 0 13 13" fill="none">
-            <path d="M2.5 10.5L10.5 2.5M10.5 2.5H5M10.5 2.5V8"
-                  stroke="currentColor" strokeWidth="1.4"
-                  strokeLinecap="round" strokeLinejoin="round"/>
-          </svg>
-        </a>
+        </div>
       </div>
     </>
   );

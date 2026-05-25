@@ -1,4 +1,5 @@
 import AnotherMeNavbar from '@/components/another-me/AnotherMeNavbar';
+import AnotherMeFooter from '@/components/another-me/AnotherMeFooter';
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function DigitalLayout({ children }) {
@@ -9,6 +10,7 @@ export default function DigitalLayout({ children }) {
       <main style={{ paddingTop: '64px' }}>
         {children}
       </main>
+      <AnotherMeFooter />
     </>
   );
 }

@@ -14,7 +14,7 @@ export const siteMetadata = {
   title: "Artist Portfolio",
   description:
     "Personal artist website — tutorials, insights, and stories about 3D art, music production, and the creative process.",
-  siteUrl: "http://localhost3000",
+  siteUrl: "http://localhost:3000",
   author: "Artist Name",
   defaultImage: "/og-image.png",
   twitterHandle: "@artist",
