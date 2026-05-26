@@ -323,7 +323,7 @@
   .aboutContent {
     height: auto;
     min-height: 100vh;
-    scale: 3;
+    transform: translateX(-165px) translateY(-80px) scale(1);
     margin-top: -180px;
   }
 
@@ -346,9 +346,9 @@
   }
 
   .characterContainer {
-    height: 40vh;
+    height: auto;
     position: relative;
-    rotate: 0.5deg;
+    rotate: 0deg;
     margin-top: 0;
   }
 
