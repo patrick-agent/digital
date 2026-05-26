@@ -101,15 +101,17 @@ function CharacterModel({ mousePos }) {
 const AboutCharacterCanvas = forwardRef(({ mousePos, initialPos = [0, 0, 0], initialRot = [0, 0, 0], initialScale = [1, 1, 1], isMobile = false, sectionVisible = false }, ref) => {
   const groupRef = useRef();
   useImperativeHandle(ref, () => ({ get current() { return groupRef.current; } }), []);
-  const { containerRef, devicePixelRatio, getResponsiveFov, getResponsiveParticleCount } = useCanvasOptimizer({ threshold: 0 });
+  const { containerRef, devicePixelRatio, getResponsiveParticleCount, isMobile: hookIsMobile, isTablet } = useCanvasOptimizer({ threshold: 0 });
   const particleCount = getResponsiveParticleCount(80);
+
+  const fov = hookIsMobile ? 30 : isTablet ? 22 : 30;
 
   return (
     <div ref={containerRef} style={{ width: '100%', height: '100%' }}>
       {sectionVisible && <Canvas
         camera={{
           position: [115, 125, 150],
-          fov: getResponsiveFov(30),
+          fov,
           near: 0.1,
           far: 1000,
         }}

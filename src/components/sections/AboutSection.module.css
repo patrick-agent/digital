@@ -276,6 +276,10 @@
     justify-content: flex-start;
   }
 
+  .aboutContent {
+    height: 100vh;
+  }
+
   .uiOverlay {
     flex-direction: column;
     height: auto;
@@ -300,8 +304,12 @@
   }
 
   .characterContainer {
-    height: 60vh;
-    rotate: 1deg;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70vh;
+    min-height: 350px;
     margin-top: 0;
   }
 
@@ -323,7 +331,7 @@
   .aboutContent {
     height: auto;
     min-height: 100vh;
-    transform: translateX(-165px) translateY(-80px) scale(1);
+    transform: translateX(0) translateY(0) scale(1);
     margin-top: -180px;
   }
 
@@ -346,7 +354,8 @@
   }
 
   .characterContainer {
-    height: auto;
+    height: 70vh;
+    min-height: 350px;
     position: relative;
     rotate: 0deg;
     margin-top: 0;
