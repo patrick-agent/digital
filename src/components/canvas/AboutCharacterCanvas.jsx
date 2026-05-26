@@ -11,6 +11,17 @@ import ParticleField from "./ParticleField";
 import FloatingGeometries from "./FloatingGeometries";
 
 
+function CharacterRimLights() {
+  return (
+    <>
+      <pointLight position={[-30, 50, -40]} intensity={2.5} color="#fff" distance={100} decay={1.5} />
+      <pointLight position={[30, 50, -40]} intensity={2.5} color="#fff" distance={100} decay={1.5} />
+      <pointLight position={[0, 100, -35]} intensity={2} color="#fff" distance={80} decay={1.5} />
+      <pointLight position={[0, 20, -40]} intensity={1.2} color="#fff" distance={70} decay={1.5} />
+    </>
+  );
+}
+
 function HologramBase() {
   const gridRef = useRef();
 
@@ -64,6 +75,7 @@ function CharacterModel({ mousePos }) {
           child.receiveShadow = true;
           if (child.material) {
             child.material.fog = false;
+            child.material.side = THREE.DoubleSide;
             child.material.emissive = new THREE.Color(0x440088);
             child.material.emissiveIntensity = 0.15;
           }
@@ -123,10 +135,18 @@ const AboutCharacterCanvas = forwardRef(({ mousePos, initialPos = [0, 0, 0], ini
         dpr={devicePixelRatio}
       >
         <fog attach="fog" args={['#0f0a1a', 200, 350]} />
-        <ambientLight intensity={1.5} color="#ffffff" />
-        <pointLight position={[5, 5, 5]} intensity={2.5} color="#c084fc" />
-        <pointLight position={[-5, 3, 5]} intensity={3} color="#ffffff" />
-        <directionalLight position={[0, 5, 5]} intensity={4} color="#ffffff" />
+        <CharacterRimLights />
+        <ambientLight intensity={2.5} color="#ffffff" />
+        <pointLight position={[30, 80, 30]} intensity={2.5} color="#fff" />
+        <pointLight position={[-30, 50, -30]} intensity={2} color="#fff" />
+        <directionalLight position={[0, 100, 80]} intensity={2.5} color="#ffffff" />
+        <spotLight
+          position={[0, 90, 0]}
+          angle={Math.PI / 5}
+          penumbra={1}
+          intensity={1.8}
+          color="#f6b3ff"
+        />
         <ParticleField count={particleCount} color="#a855f7" spread={20} size={0.03} opacity={0.3} mouseReactive={!isMobile} />
         {!isMobile && <FloatingGeometries count={6} color="#6366f1" spread={12} size={0.25} />}
         <GlowBackground color="#a855f7" secondaryColor="#6366f1" intensity={0.8} radius={30} />

@@ -48,6 +48,8 @@ function ByeModel() {
   return <primitive object={scene} />;
 }
 
+const CAM_TARGET = [75, 90, 0];
+
 function Scene() {
   const groupRef = useRef();
 
@@ -57,7 +59,7 @@ function Scene() {
       <directionalLight position={[15, 40, 30]} intensity={4.5} color="#ffffff" />
       <directionalLight position={[-15, 10, -20]} intensity={1.5} color="#c084fc" />
       <hemisphereLight args={['#d8b4fe', '#1a0f2e', 1.5]} />
-      <group ref={groupRef} position={[-135, -180, 0]} scale={[0.9, 0.9, 0.9]}>
+      <group ref={groupRef} position={[0, 0, 0]} scale={[0.9, 0.9, 0.9]}>
         <Suspense fallback={null}>
           <ByeModel />
         </Suspense>
@@ -70,7 +72,10 @@ export default function ByeCharacterCanvas() {
   return (
     <div style={{ width: '100%', height: '100%', position: 'relative', minHeight: '200px' }}>
       <Canvas
-        camera={{ position: [0, 0, 0], fov: 25, near: 0.1, far: 1000 }}
+        camera={{ position: [25, 80, 150], fov: 35, near: 0.1, far: 1000 }}
+        onCreated={({ camera }) => {
+          camera.lookAt(...CAM_TARGET);
+        }}
         style={{
           width: '100%',
           height: '100%',

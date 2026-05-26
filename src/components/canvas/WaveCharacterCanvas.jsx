@@ -5,7 +5,7 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { useGLTF } from '@react-three/drei';
 import * as THREE from 'three';
 import { useCanvasOptimizer } from '@/hooks/useCanvasOptimizer';
-import GlowBackground from './GlowBackground';
+import PostProcessing from './PostProcessing';
 import ParticleField from './ParticleField';
 import FloatingGeometries from './FloatingGeometries';
 
@@ -17,8 +17,8 @@ function WaveModel() {
     if (!scene) return;
     scene.traverse((child) => {
       if (child.isMesh) {
-        child.castShadow = true;
-        child.receiveShadow = true;
+        child.castShadow = false;
+        child.receiveShadow = false;
         if (child.material) {
           child.material.fog = false;
           child.material.side = THREE.DoubleSide;
@@ -52,6 +52,17 @@ function WaveModel() {
   return <primitive object={scene} />;
 }
 
+function CharacterRimLights() {
+  return (
+    <>
+      <pointLight position={[-30, 50, -40]} intensity={2.5} color="#fff" distance={100} decay={1.5} />
+      <pointLight position={[30, 50, -40]} intensity={2.5} color="#fff" distance={100} decay={1.5} />
+      <pointLight position={[0, 100, -35]} intensity={2} color="#fff" distance={80} decay={1.5} />
+      <pointLight position={[0, 20, -40]} intensity={1.2} color="#fff" distance={70} decay={1.5} />
+    </>
+  );
+}
+
 const WaveCharacterCanvas = forwardRef(({
   initialPos = [0, 0, 0],
   initialRot = [0, 0, 0],
@@ -67,7 +78,7 @@ const WaveCharacterCanvas = forwardRef(({
   return (
     <div ref={containerRef} style={{ width: '100%', height: '100%' }}>
       {sectionVisible && <Canvas
-        shadows={!isMobile}
+        shadows={false}
         camera={{ position: [-80, 100, 110], fov: getResponsiveFov(45), near: 0.1, far: 1000 }}
         onCreated={({ camera }) => {
           camera.lookAt(10, 55, 0);
@@ -76,16 +87,36 @@ const WaveCharacterCanvas = forwardRef(({
         gl={{ alpha: true, antialias: !isMobile, powerPreference: 'high-performance' }}
         dpr={devicePixelRatio}
       >
-        <GlowBackground color="#a855f7" secondaryColor="#6366f1" intensity={isMobile ? 0.3 : 0.5} radius={25} />
         <ParticleField count={particleCount} color="#06b6d4" spread={16} size={0.03} opacity={0.25} mouseReactive={!isMobile} />
         {!isMobile && <FloatingGeometries count={5} color="#ec4899" spread={14} size={0.2} />}
-        <ambientLight intensity={1.5} color="#ffffff" />
-        <pointLight position={[50, 100, 50]} intensity={isMobile ? 1 : 2} color="#c084fc" />
-        <pointLight position={[-50, 50, -50]} intensity={1.5} color="#ffffff" />
-        <directionalLight position={[0, 150, 100]} intensity={isMobile ? 1.5 : 2.5} color="#ffffff" castShadow={!isMobile} />
+        <CharacterRimLights />
+        <ambientLight intensity={2.5} color="#ffffff" />
+        <pointLight position={[30, 80, 30]} intensity={isMobile ? 1.2 : 2.5} color="#fff" />
+        <pointLight position={[-30, 50, -30]} intensity={2} color="#fff" />
+        <directionalLight position={[0, 100, 80]} intensity={isMobile ? 1.5 : 2.5} color="#ffffff" />
+        {!isMobile && (
+          <spotLight
+            position={[0, 90, 0]}
+            angle={Math.PI / 5}
+            penumbra={1}
+            intensity={1.8}
+            color="#f6b3ff"
+          />
+        )}
         <group ref={groupRef} position={initialPos} rotation={initialRot} scale={initialScale}>
           <WaveModel />
         </group>
+        {!isMobile && (
+          <PostProcessing
+            bloomIntensity={2}
+            noiseOpacity={1}
+            vignetteDarkness={5}
+            bloom={true}
+            noise={false}
+            chromaticAberration={true}
+            vignette={false}
+          />
+        )}
       </Canvas>}
     </div>
   );

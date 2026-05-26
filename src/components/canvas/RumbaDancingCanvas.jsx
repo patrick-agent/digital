@@ -53,10 +53,10 @@ function RumbaModel() {
 function CharacterRimLights() {
   return (
     <>
-      <pointLight position={[-30, 50, -40]} intensity={2.5} color="#c084fc" distance={100} decay={1.5} />
-      <pointLight position={[30, 50, -40]} intensity={2.5} color="#a855f7" distance={100} decay={1.5} />
-      <pointLight position={[0, 100, -35]} intensity={2} color="#e879f9" distance={80} decay={1.5} />
-      <pointLight position={[0, 20, -40]} intensity={1.2} color="#9333ea" distance={70} decay={1.5} />
+      <pointLight position={[-30, 50, -40]} intensity={2.5} color="#fff" distance={100} decay={1.5} />
+      <pointLight position={[30, 50, -40]} intensity={2.5} color="#fff" distance={100} decay={1.5} />
+      <pointLight position={[0, 100, -35]} intensity={2} color="#fff" distance={80} decay={1.5} />
+      <pointLight position={[0, 20, -40]} intensity={1.2} color="#fff" distance={70} decay={1.5} />
     </>
   );
 }
@@ -75,7 +75,7 @@ const RumbaDancingCanvas = forwardRef(({
     <div ref={containerRef} style={{ width: '100%', height: '100%' }}>
       {sectionVisible && <Canvas
         shadows={!isMobile}
-        camera={{ position: [0, 78, 90], fov: getResponsiveFov(100), near: 0.1, far: 1000 }}
+        camera={{ position: [0, 77, 90], fov: getResponsiveFov(100), near: 0.1, far: 1000 }}
         onCreated={({ camera }) => {
           camera.lookAt(0, 80, 0);
         }}
@@ -84,9 +84,9 @@ const RumbaDancingCanvas = forwardRef(({
         dpr={devicePixelRatio}
       >
         <CharacterRimLights />
-        <ambientLight intensity={1.5} color="#ffffff" />
-        <pointLight position={[30, 80, 30]} intensity={isMobile ? 1.2 : 2.5} color="#c084fc" />
-        <pointLight position={[-30, 50, -30]} intensity={2} color="#9333ea" />
+        <ambientLight intensity={2.5} color="#ffffff" />
+        <pointLight position={[30, 80, 30]} intensity={isMobile ? 1.2 : 2.5} color="#fff" />
+        <pointLight position={[-30, 50, -30]} intensity={2} color="#fff" />
         <directionalLight position={[0, 100, 80]} intensity={isMobile ? 1.5 : 2.5} color="#ffffff" castShadow={!isMobile} />
         {!isMobile && (
           <spotLight
@@ -94,7 +94,7 @@ const RumbaDancingCanvas = forwardRef(({
             angle={Math.PI / 5}
             penumbra={1}
             intensity={1.8}
-            color="#c084fc"
+            color="#f6b3ff"
             castShadow
           />
         )}
@@ -103,12 +103,12 @@ const RumbaDancingCanvas = forwardRef(({
         </group>
         {!isMobile && (
           <PostProcessing
-            bloomIntensity={1.5}
-            noiseOpacity={0.015}
-            vignetteDarkness={0.5}
+            bloomIntensity={2}
+            noiseOpacity={1}
+            vignetteDarkness={5}
             bloom={true}
             noise={false}
-            chromaticAberration={false}
+            chromaticAberration={true}
             vignette={false}
           />
         )}

@@ -119,11 +119,11 @@ function RotatingLightRing() {
     <group ref={ringRef}>
       <mesh rotation={[Math.PI / 2, 0, 0]}>
         <torusGeometry args={[18, 0.1, 16, 100]} />
-        <meshBasicMaterial color="#c084fc" transparent opacity={0.4} />
+        <meshBasicMaterial color="#ffffff" transparent opacity={0.15} />
       </mesh>
       <mesh rotation={[Math.PI / 2, 0, 0]}>
         <torusGeometry args={[22, 0.08, 16, 100]} />
-        <meshBasicMaterial color="#00ffff" transparent opacity={0.3} />
+        <meshBasicMaterial color="#c084fc" transparent opacity={0.3} />
       </mesh>
     </group>
   );
@@ -151,12 +151,12 @@ const BreakdanceCharacterCanvas = forwardRef(({
         gl={{ alpha: true, antialias: !isMobile, powerPreference: 'high-performance' }}
         dpr={devicePixelRatio}
       >
-        <GlowBackground color="#c084fc" secondaryColor="#00ffff" intensity={0.5} radius={25} />
+        <GlowBackground color="#c084fc" secondaryColor="#a200ff" intensity={0.3} radius={10} />
         {!isMobile && <MouseParticles />}
         <RotatingLightRing />
-        <ambientLight intensity={1.5} color="#ffffff" />
+        <ambientLight intensity={3} color="#ffffff" />
         <pointLight position={[50, 100, 50]} intensity={isMobile ? 2 : 3} color="#c084fc" />
-        <pointLight position={[-50, 60, -50]} intensity={2.5} color="#00ffff" />
+        <pointLight position={[-50, 60, -50]} intensity={0.5} color="#fff" />
         <directionalLight position={[0, 150, 100]} intensity={isMobile ? 1.5 : 3} color="#ffffff" castShadow={!isMobile} />
         {!isMobile && (
           <spotLight
@@ -164,11 +164,11 @@ const BreakdanceCharacterCanvas = forwardRef(({
             angle={Math.PI / 6}
             penumbra={1}
             intensity={2}
-            color="#c084fc"
+            color="#e5cbff"
             castShadow
           />
         )}
-        <group ref={groupRef} position={initialPos} rotation={initialRot} scale={initialScale}>
+        <group ref={groupRef} position={initialPos} rotation={initialRot} scale={initialScale}>        
           <BreakdanceModel />
         </group>
       </Canvas>}
