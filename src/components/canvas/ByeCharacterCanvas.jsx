@@ -70,7 +70,7 @@ export default function ByeCharacterCanvas() {
   return (
     <div style={{ width: '100%', height: '100%', position: 'relative', minHeight: '200px' }}>
       <Canvas
-        camera={{ position: [-45, 0, 160], fov: 25, near: 0.1, far: 1000 }}
+        camera={{ position: [0, 0, 0], fov: 25, near: 0.1, far: 1000 }}
         style={{
           width: '100%',
           height: '100%',

@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono, Caveat } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "sonner";
+import { LoadingProvider } from "@/context/LoadingContext";
 
 /**
  * Optimized font loading with display settings for better performance
@@ -73,8 +74,17 @@ export const viewport = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${caveat.variable}`}>
+      <head>
+        {/* Preconnect to external domains for faster loading */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* DNS prefetch for CDN resources */}
+        <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+      </head>
       <body suppressHydrationWarning>
-        {children}
+        <LoadingProvider>
+          {children}
+        </LoadingProvider>
         <Toaster
           position="top-right"
           richColors
