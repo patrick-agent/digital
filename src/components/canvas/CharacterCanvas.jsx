@@ -170,7 +170,7 @@ export default function CharacterCanvas() {
         <directionalLight position={[0, 5, 5]} intensity={3} color="#ffffff" />
 
         <PostProcessing
-          bloomIntensity={isMobile ? 0.6 : 1.0}
+          bloomIntensity={isMobile ? 1 : 0.8}
           bloom={!isMobile}
           noise={!isMobile}
           chromaticAberration={false}
