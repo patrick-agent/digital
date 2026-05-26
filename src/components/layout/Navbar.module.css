@@ -368,6 +368,10 @@
 }
 
 @media (max-width: 768px) {
+  .hamburger {
+    left: 98%;
+  }
+
   .header {
     padding: var(--space-sm) var(--space-md);
   }
@@ -409,6 +413,10 @@
 }
 
 @media (max-width: 640px) {
+  .hamburger {
+    left: 95%;
+  }
+  
   .drawer {
     width: 100%;
     max-width: 100%;

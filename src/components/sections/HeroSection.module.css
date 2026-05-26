@@ -386,7 +386,7 @@
    ============================================ */
 @media (max-width: 640px) {
   .heroInner {
-    padding: 70px var(--space-md) 0;
+    padding: 100px var(--space-md) 0;
     gap: var(--space-xl);
   }
 

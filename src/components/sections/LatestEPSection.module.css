@@ -212,7 +212,7 @@
 
 @media (max-width: 640px) {
   .content {
-    padding-top: 70px;
+    padding-top: var(--space-lg);
     padding-bottom: var(--space-lg);
   }
 
