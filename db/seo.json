@@ -1,0 +1,33 @@
+{
+  "pages": {
+    "home": {
+      "title": "Tachy — An Indie Artist",
+      "description": "An immersive 3D interactive music portfolio experience. Explore sound, visuals, and creativity in a dreamy studio space.",
+      "ogImage": "/apple-touch-icon.png"
+    },
+    "about": {
+      "title": "About — Tachy",
+      "description": "Learn more about Tachy — the story, the music, and the vision behind the art."
+    },
+    "blog": {
+      "title": "Blog — Tachy",
+      "description": "Read articles on music production, 3D web development, SEO, and creative strategies for artists."
+    },
+    "shop": {
+      "title": "Shop — Tachy",
+      "description": "Browse studio gear recommended by Tachy. Affiliate links to professional audio equipment."
+    },
+    "contact": {
+      "title": "Contact — Tachy",
+      "description": "Get in touch with Tachy for bookings, collaborations, or general inquiries."
+    },
+    "bio-music": {
+      "title": "Music — Tachy",
+      "description": "Explore Tachy's discography — EPs, singles, and releases with streaming links."
+    },
+    "digital": {
+      "title": "Digital — Tachy Portfolio",
+      "description": "Professional portfolio showcasing 3D web development, digital marketing, and brand identity services."
+    }
+  }
+}

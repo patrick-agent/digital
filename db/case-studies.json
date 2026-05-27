@@ -1,0 +1,83 @@
+[
+  {
+    "id": "cs-001",
+    "title": "Complete Rebrand & Digital Overhaul for Indie Artist Luna Vee",
+    "slug": "luna-vee-rebrand",
+    "clientName": "Luna Vee",
+    "industry": "Music & Entertainment",
+    "challenge": "<p>Luna Vee had outgrown her original DIY brand. Her music had evolved from bedroom pop to a polished electronic-pop sound, but her visual identity — a mismatched collection of social media profiles and a basic Wix site — no longer reflected her artistic direction. Her streaming numbers were plateauing, and she had no way to convert casual listeners into loyal fans.</p>",
+    "solution": "<p>We rebuilt her entire digital presence from the ground up. Starting with a brand strategy workshop to define her new visual direction, we created a cohesive identity system — logo, typography, color palette, and social media templates. Then we built a custom Next.js portfolio with integrated music player, merchandise shop, and a blog for behind-the-scenes content. SEO optimization targeted long-tail keywords around her genre and location.</p>",
+    "results": [
+      "Streaming grew 340% in 6 months (Spotify: 2.3K → 10.1K monthly listeners)",
+      "Website traffic increased 580% with 4.2K organic visits/month",
+      "Email list grew from 0 to 1,400+ subscribers",
+      "Merch sales launched with $12K revenue in first quarter"
+    ],
+    "metrics": {
+      "streamingGrowth": "+340%",
+      "trafficIncrease": "+580%",
+      "emailSubscribers": "1,400+",
+      "merchRevenue": "$12K"
+    },
+    "coverImage": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=500&fit=crop",
+    "testimonialQuote": "Working with Tachy completely transformed my career. My music finally looks and sounds like it belongs together. The website alone has opened doors I didn't even know existed.",
+    "testimonialAuthor": "Luna Vee, Artist",
+    "tags": ["branding", "web-development", "music", "seo"],
+    "publishedAt": "2026-01-15T10:00:00.000Z",
+    "status": "published"
+  },
+  {
+    "id": "cs-002",
+    "title": "3D Product Launch Site for Techwear Brand 'Neon Pulse'",
+    "slug": "neon-pulse-3d-launch",
+    "clientName": "Neon Pulse",
+    "industry": "Fashion / E-Commerce",
+    "challenge": "<p>Neon Pulse was launching their flagship cyberpunk-inspired jacket collection and needed a launch site that matched the futuristic aesthetic of the product. A standard Shopify store wouldn't cut it — they needed an immersive experience that would go viral and establish their brand as a leader in the techwear space.</p>",
+    "solution": "<p>Built a full-screen 3D experience using Three.js and React Three Fiber where visitors could explore the jacket in 360°, see materials react to mouse movement, and watch animated tech specs float around the model. Integrated with Stripe for checkout, GSAP for scroll-triggered animations, and Spline for the hero scene. The site achieved perfect Lighthouse scores through aggressive code-splitting and model optimization.</p>",
+    "results": [
+      "Launch week: 50K+ unique visitors organically via Twitter/X",
+      "First batch (500 units) sold out in 8 hours",
+      "Average session duration: 4 minutes 23 seconds",
+      "Social mentions: 2,300+ across platforms"
+    ],
+    "metrics": {
+      "uniqueVisitors": "50K+",
+      "selloutTime": "8 hours",
+      "avgSessionDuration": "4m 23s",
+      "socialMentions": "2,300+"
+    },
+    "coverImage": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&h=500&fit=crop",
+    "testimonialQuote": "The 3D experience blew everyone away. Our customers didn't just buy a jacket — they bought into a world. The site itself became part of the product.",
+    "testimonialAuthor": "Kai, Founder of Neon Pulse",
+    "tags": ["3d", "ecommerce", "threejs", "spline"],
+    "publishedAt": "2026-03-01T14:00:00.000Z",
+    "status": "published"
+  },
+  {
+    "id": "cs-003",
+    "title": "SEO-Driven Content Strategy for Producer Collective 'Beat Syndicate'",
+    "slug": "beat-syndicate-seo",
+    "clientName": "Beat Syndicate",
+    "industry": "Music Production",
+    "challenge": "<p>Beat Syndicate had a library of 500+ beat packs for sale but were invisible on Google. Their WordPress site had technical SEO issues, slow load times, and content that wasn't targeting buyer intent. They were relying entirely on Instagram for sales, leaving massive organic traffic potential untapped.</p>",
+    "solution": "<p>Migrated their store to a headless Next.js architecture with a custom CMS. Performed technical SEO overhaul: fixed Core Web Vitals, added structured data (Product schema, FAQ schema, BreadcrumbList), and built a content strategy around long-tail keywords like 'type beat for sale' and 'trap drum kit 2025'. Created 30+ SEO-optimized blog posts linking to products and built a backlink outreach program targeting producer forums and YouTube channels.</p>",
+    "results": [
+      "Organic traffic from 0 to 18K monthly visits in 4 months",
+      "Beat sales increased 210% month-over-month",
+      "Site speed improved from 45 to 94 on Lighthouse Performance",
+      "Ranked #1 for 12 high-intent keywords"
+    ],
+    "metrics": {
+      "organicTraffic": "18K/month",
+      "salesIncrease": "+210%",
+      "lighthouseScore": "94",
+      "keywordRankings": "#1 for 12 terms"
+    },
+    "coverImage": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop",
+    "testimonialQuote": "We went from completely invisible on Google to getting daily organic orders. The content strategy alone paid for itself in the first month. Should have done this years ago.",
+    "testimonialAuthor": "DJ Phantom, Beat Syndicate Founder",
+    "tags": ["seo", "web-development", "content-strategy", "ecommerce"],
+    "publishedAt": "2026-04-10T09:00:00.000Z",
+    "status": "published"
+  }
+]

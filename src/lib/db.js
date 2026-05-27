@@ -16,8 +16,16 @@ async function readJSON(filename) {
   if (!existsSync(filePath)) {
     return []
   }
-  const raw = await readFile(filePath, "utf-8")
-  return JSON.parse(raw)
+  try {
+    const raw = await readFile(filePath, "utf-8")
+    if (!raw || raw.trim() === "") {
+      return []
+    }
+    return JSON.parse(raw)
+  } catch (error) {
+    console.error(`Error reading/parsing ${filename}:`, error.message)
+    return []
+  }
 }
 
 async function writeJSON(filename, data) {

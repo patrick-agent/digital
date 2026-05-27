@@ -1,0 +1,14 @@
+{
+  "bioShort": "Tachy — Cyberpunk musician, 3D creator, and digital performer blurring the lines between sound and code.",
+  "bioLong": "Tachy is an indie artist and 3D web creator based in Vietnam, known for blending electronic music with immersive digital experiences. From producing genre-defying tracks to building interactive 3D websites, Tachy's work exists at the intersection of music, technology, and visual art.",
+  "headshots": [
+    "https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=400&h=400&fit=crop&crop=face"
+  ],
+  "logos": [
+    "/tachy-logo.png"
+  ],
+  "pressReleases": [],
+  "contactBookingEmail": "booking@tachy.art",
+  "riderPdf": "",
+  "techSpecPdf": ""
+}

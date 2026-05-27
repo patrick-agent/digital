@@ -18,7 +18,14 @@ export const metadata = {
 }
 
 export default async function BioMusicPage() {
-  const { data: releases } = await readMusic({})
+  let releases = []
+  try {
+    const { data } = await readMusic({})
+    releases = data || []
+  } catch (error) {
+    console.error("Error loading music:", error)
+    releases = []
+  }
 
   return (
     <div className={styles.page}>

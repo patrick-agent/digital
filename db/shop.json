@@ -1,0 +1,260 @@
+[
+  {
+    "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "name": "Audio-Technica AT2020 Microphone",
+    "slug": "audio-technica-at2020-microphone",
+    "description": "<p>The Audio-Technica AT2020 is a side-address condenser microphone with a wide dynamic range and high SPL handling — perfect for home studio recording, vocals, and podcasting.</p><p>Used by Tachy for all vocal tracking. Delivers crisp, professional-quality sound at an affordable price point.</p>",
+    "price": 1490000,
+    "currency": "VND",
+    "images": [
+      "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lsadjf3948asdf"
+    ],
+    "category": "Studio Gear",
+    "tags": ["microphone", "recording", "studio", "audio"],
+    "affiliateUrl": "https://shopee.vn/product/123456789/9876543210",
+    "stockQuantity": 0,
+    "stripeProductId": "",
+    "status": "active",
+    "seoTitle": "Audio-Technica AT2020 Microphone — Studio Gear Recommended by Tachy",
+    "seoDescription": "Buy the Audio-Technica AT2020 condenser microphone recommended by Tachy for home studio recording, vocals, and podcasting.",
+    "features": [
+      "Cardioid polar pattern reduces background noise",
+      "Frequency response: 20–20,000 Hz for detailed sound capture",
+      "Handles high SPL up to 144 dB — great for loud sources",
+      "Requires 48V phantom power (standard with any audio interface)",
+      "Includes stand mount and protective pouch"
+    ],
+    "whyRecommend": "<p>I've been using the AT2020 since my first home studio setup. For the price, it's hands-down the best entry-level condenser mic on the market. The cardioid pattern isolates my vocals beautifully even in an untreated room, and the high SPL handling means I never have to worry about distortion when tracking loud takes.</p><p>If you're just starting your home studio journey, this is the first mic you should buy.</p>",
+    "faq": [
+      {
+        "question": "Do I need an audio interface for this microphone?",
+        "answer": "Yes, the AT2020 requires 48V phantom power, which is provided by any standard audio interface like the Focusrite Scarlett 2i2."
+      },
+      {
+        "question": "Is this microphone good for podcasting?",
+        "answer": "Absolutely. Its cardioid pattern picks up sound from the front while rejecting room noise, making it excellent for spoken word and podcasting."
+      },
+      {
+        "question": "What cable do I need?",
+        "answer": "You need a standard XLR cable (male to female). The microphone does not use USB — it's a professional XLR connection."
+      }
+    ],
+    "createdAt": "2026-05-25T05:00:00.000Z",
+    "updatedAt": "2026-05-25T05:00:00.000Z"
+  },
+  {
+    "id": "b2c3d4e5-f6a7-8901-bcde-f12345678901",
+    "name": "Focusrite Scarlett 2i2 (4th Gen)",
+    "slug": "focusrite-scarlett-2i2-4th-gen",
+    "description": "<p>The Focusrite Scarlett 2i2 4th Gen is the industry-standard audio interface for musicians and producers. Two pristine mic preamps, ultra-low latency, and loopback functionality.</p><p>Tachy uses this as the centerpiece of his portable recording rig. Compatible with all major DAWs.</p>",
+    "price": 4790000,
+    "currency": "VND",
+    "images": [
+      "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lsbdjg3949asdg"
+    ],
+    "category": "Studio Gear",
+    "tags": ["audio-interface", "recording", "studio", "production"],
+    "affiliateUrl": "https://shopee.vn/product/234567890/8765432109",
+    "stockQuantity": 0,
+    "stripeProductId": "",
+    "status": "active",
+    "seoTitle": "Focusrite Scarlett 2i2 (4th Gen) — Audio Interface by Tachy",
+    "seoDescription": "Buy the Focusrite Scarlett 2i2 4th Gen audio interface. Industry-standard USB-C interface for home recording and music production.",
+    "features": [
+      "2-in / 2-out USB-C audio interface with ultra-low latency",
+      "Air mode enhances vocal presence with a high-frequency lift",
+      "High-impedance (Hi-Z) instrument input for guitar and bass",
+      "Loopback functionality for streaming and podcasting",
+      "Includes Ableton Live Lite and Pro Tools | First"
+    ],
+    "whyRecommend": "<p>The Scarlett 2i2 is the first piece of gear I recommend to anyone building a home studio. It's what I started with, and it's still in my portable rig today. The 4th Gen preamps are noticeably cleaner than previous versions — my vocals come through with zero noise floor.</p><p>Air mode is a game-changer: one click and your vocal track instantly sits better in the mix. Plus, the USB-C connection means it works flawlessly with modern laptops.</p>",
+    "faq": [
+      {
+        "question": "Does this work with my DAW?",
+        "answer": "Yes, the Scarlett 2i2 is class-compliant and works with all major DAWs including Ableton Live, Logic Pro, FL Studio, Cubase, Pro Tools, and GarageBand."
+      },
+      {
+        "question": "Can I use this for streaming?",
+        "answer": "Yes! The 4th Gen includes loopback functionality, which lets you route audio from your computer back into your stream — perfect for streaming and podcasting."
+      },
+      {
+        "question": "Does it come with any software?",
+        "answer": "Yes, it includes Ableton Live Lite, Pro Tools | First, and a suite of Focusrite plugins and effects."
+      }
+    ],
+    "createdAt": "2026-05-25T05:10:00.000Z",
+    "updatedAt": "2026-05-25T05:10:00.000Z"
+  },
+  {
+    "id": "c3d4e5f6-a7b8-9012-cdef-123456789012",
+    "name": "Shure SM7B Dynamic Microphone",
+    "slug": "shure-sm7b-dynamic-microphone",
+    "description": "<p>The Shure SM7B is a legendary dynamic microphone with a smooth, flat, wide-range frequency response — the go-to choice for vocals, broadcasting, and podcasting worldwide.</p><p>Features an advanced air suspension shock isolation and pop filter built-in. Tachy's preferred mic for live-streaming and voiceovers.</p>",
+    "price": 8290000,
+    "currency": "VND",
+    "images": [
+      "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-ltcgkh4050bseh"
+    ],
+    "category": "Studio Gear",
+    "tags": ["microphone", "vocal", "podcast", "broadcasting"],
+    "affiliateUrl": "https://shopee.vn/product/345678901/7654321098",
+    "stockQuantity": 0,
+    "stripeProductId": "",
+    "status": "active",
+    "seoTitle": "Shure SM7B — Professional Dynamic Microphone by Tachy",
+    "seoDescription": "Buy the Shure SM7B dynamic microphone. Legendary vocal and broadcasting mic with built-in pop filter and shock isolation.",
+    "features": [
+      "Dynamic cartridge with smooth, flat frequency response",
+      "Cardioid polar pattern rejects off-axis noise",
+      "Built-in pop filter and air suspension shock isolation",
+      "Detachable windscreen included for close-up vocals",
+      "Legendary broadcast sound used by professionals worldwide"
+    ],
+    "whyRecommend": "<p>The SM7B is my go-to microphone for streaming and voiceover work. Unlike condenser mics, it doesn't pick up every tiny room sound — which is crucial when you're recording in a less-than-perfect space.</p><p>The built-in pop filter and shock mount mean you don't need any extra accessories. Just plug it in and your voice sounds broadcast-ready. It's an investment, but one that will last you a decade or more.</p>",
+    "faq": [
+      {
+        "question": "Do I need a cloudlifter with the SM7B?",
+        "answer": "The SM7B has low output. With modern audio interfaces like the Scarlett 2i2 4th Gen, a cloudlifter is optional but recommended for cleaner gain."
+      },
+      {
+        "question": "Is this good for music vocals?",
+        "answer": "Yes, the SM7B has been used on countless hit records. It delivers a warm, present vocal tone that sits well in a mix without harshness."
+      },
+      {
+        "question": "Does it require phantom power?",
+        "answer": "No, the SM7B is a dynamic microphone and does not require phantom power. It works with standard XLR connections."
+      }
+    ],
+    "createdAt": "2026-05-25T05:20:00.000Z",
+    "updatedAt": "2026-05-25T05:20:00.000Z"
+  },
+  {
+    "id": "d4e5f6a7-b8c9-0123-defa-234567890123",
+    "name": "AKG K240 Studio Headphones",
+    "slug": "akg-k240-studio-headphones",
+    "description": "<p>The AKG K240 Studio is a semi-open, over-ear reference headphone trusted by audio engineers worldwide for mixing and monitoring.</p><p>Lightweight, comfortable for long sessions, and delivers a natural, balanced sound. Tachy relies on these for final mix checks before release.</p>",
+    "price": 1890000,
+    "currency": "VND",
+    "images": [
+      "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-ludhjl5161ctif"
+    ],
+    "category": "Studio Gear",
+    "tags": ["headphones", "monitoring", "mixing", "audio"],
+    "affiliateUrl": "https://shopee.vn/product/456789012/6543210987",
+    "stockQuantity": 0,
+    "stripeProductId": "",
+    "status": "active",
+    "seoTitle": "AKG K240 Studio Headphones — Mixing & Monitoring by Tachy",
+    "seoDescription": "Buy the AKG K240 Studio semi-open reference headphones. Trusted for mixing and monitoring with natural, balanced sound.",
+    "features": [
+      "Semi-open design provides natural spatial imaging",
+      "Varimotion 30mm XXL drivers for detailed sound",
+      "Self-adjusting headband for all-day comfort",
+      "55 ohms impedance — works without a headphone amp",
+      "Detachable mini-XLR cable for easy replacement"
+    ],
+    "whyRecommend": "<p>These headphones are incredible value. I use the K240s for late-night mixing sessions when I can't use my monitors. The semi-open design gives you a natural stereo image that helps you place each element in the mix accurately.</p><p>They're also incredibly comfortable — I've worn them for 6-hour sessions without any fatigue. At this price point, every producer should own a pair.</p>",
+    "faq": [
+      {
+        "question": "Do I need a headphone amplifier?",
+        "answer": "At 55 ohms, the K240s can be driven by most audio interfaces and laptops, though a dedicated headphone amp will give you more headroom."
+      },
+      {
+        "question": "Are these good for mixing?",
+        "answer": "Yes, they're widely considered one of the best budget mixing headphones. The semi-open design gives a wide soundstage for critical listening."
+      },
+      {
+        "question": "Do they leak sound?",
+        "answer": "As semi-open headphones, they do leak some sound and let in ambient noise. They're best suited for quiet listening environments."
+      }
+    ],
+    "createdAt": "2026-05-25T05:30:00.000Z",
+    "updatedAt": "2026-05-25T05:30:00.000Z"
+  },
+  {
+    "id": "e5f6a7b8-c9d0-1234-efab-345678901234",
+    "name": "Rode NT1-A Condenser Microphone",
+    "slug": "rode-nt1-a-condenser-microphone",
+    "description": "<p>The Rode NT1-A is renowned as one of the quietest studio condenser microphones on the market. Exceptionally low self-noise makes it ideal for capturing subtle vocal nuances and acoustic instruments.</p><p>Comes complete with the Rode SM6 shock mount and pop filter. A staple in Tachy's recording chain.</p>",
+    "price": 3290000,
+    "currency": "VND",
+    "images": [
+      "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lveikl6272dujg"
+    ],
+    "category": "Studio Gear",
+    "tags": ["microphone", "condenser", "recording", "studio"],
+    "affiliateUrl": "https://shopee.vn/product/567890123/5432109876",
+    "stockQuantity": 0,
+    "stripeProductId": "",
+    "status": "active",
+    "seoTitle": "Rode NT1-A Condenser Microphone — Quietest Studio Mic by Tachy",
+    "seoDescription": "Buy the Rode NT1-A condenser microphone. One of the quietest studio mics with only 5dBA self-noise. Perfect for vocals and acoustic recording.",
+    "features": [
+      "Ultra-low self-noise of only 5dBA — near silent",
+      "Large 1-inch gold-sputtered diaphragm for rich tone",
+      "Cardioid polar pattern for focused sound capture",
+      "Complete package: SM6 shock mount, pop filter, XLR cable",
+      "Includes a 10-year manufacturer warranty"
+    ],
+    "whyRecommend": "<p>When I need the cleanest possible vocal recording, I reach for the NT1-A. The self-noise is so low that even in quiet passages, there's zero hiss. It captures the natural warmth and detail of my voice better than anything else in this price range.</p><p>The included SM6 shock mount is professional-grade — it isolates the mic from floor vibrations and desk bumps completely. If you record acoustic instruments or want pristine vocal takes, this is the mic for you.</p>",
+    "faq": [
+      {
+        "question": "How does this compare to the AT2020?",
+        "answer": "The NT1-A has significantly lower self-noise (5dBA vs 20dBA) and includes a better shock mount. It's a step up in quality for about double the price."
+      },
+      {
+        "question": "Does it require phantom power?",
+        "answer": "Yes, as a condenser microphone, the NT1-A requires 48V phantom power from your audio interface."
+      },
+      {
+        "question": "Is the included shock mount good?",
+        "answer": "Yes, the Rode SM6 is one of the best shock mounts on the market. It effectively eliminates vibration noise and includes a pop filter."
+      }
+    ],
+    "createdAt": "2026-05-25T05:40:00.000Z",
+    "updatedAt": "2026-05-25T05:40:00.000Z"
+  },
+  {
+    "id": "f6a7b8c9-d0e1-2345-fabc-456789012345",
+    "name": "M-Audio BX5 D3 Monitor Speakers",
+    "slug": "m-audio-bx5-d3-monitor-speakers",
+    "description": "<p>The M-Audio BX5 D3 are 5-inch near-field studio monitors delivering accurate, flat frequency response for critical mixing and mastering.</p><p>Equipped with custom Kevlar woofers and natural silk tweeters. Tachy uses these paired with the AKG K240 for a complete monitoring setup.</p>",
+    "price": 5490000,
+    "currency": "VND",
+    "images": [
+      "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lwfjlm7383evkh"
+    ],
+    "category": "Studio Gear",
+    "tags": ["monitors", "speakers", "mixing", "studio"],
+    "affiliateUrl": "https://shopee.vn/product/678901234/4321098765",
+    "stockQuantity": 0,
+    "stripeProductId": "",
+    "status": "active",
+    "seoTitle": "M-Audio BX5 D3 — Studio Monitor Speakers by Tachy",
+    "seoDescription": "Buy the M-Audio BX5 D3 near-field studio monitors. Kevlar woofers and silk tweeters for accurate mixing and mastering.",
+    "features": [
+      "5-inch Kevlar low-frequency driver for punchy bass",
+      "1-inch natural silk dome tweeter for smooth highs",
+      "45W + 25W bi-amped Class A/B amplification",
+      "Acoustic Space Control for room boundary compensation",
+      "Rear ported design for extended low-end response"
+    ],
+    "whyRecommend": "<p>Good monitors are essential for making good mix decisions. The BX5 D3s give me an honest picture of my mix — if something sounds good on these, it'll sound good anywhere.</p><p>The Kevlar woofers deliver tight, controlled bass that doesn't boom or exaggerate. Combined with my AKG K240 headphones, this setup lets me cross-reference my mixes with confidence.</p>",
+    "faq": [
+      {
+        "question": "What size room are these suitable for?",
+        "answer": "The BX5 D3s are ideal for small to medium home studios (10-20 sq meters). For larger rooms, consider the BX8 D3s."
+      },
+      {
+        "question": "Do I need a subwoofer?",
+        "answer": "Not necessarily. The 5-inch drivers provide adequate bass response for mixing most genres. Add a sub if you produce bass-heavy music like EDM or hip-hop."
+      },
+      {
+        "question": "What cables do I need?",
+        "answer": "You'll need two balanced TRS or XLR cables to connect these to your audio interface."
+      }
+    ],
+    "createdAt": "2026-05-25T05:50:00.000Z",
+    "updatedAt": "2026-05-25T05:50:00.000Z"
+  }
+]

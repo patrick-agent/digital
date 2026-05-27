@@ -32,7 +32,15 @@ function getCategories(products) {
 }
 
 export default async function ShopPage() {
-  const { data: products } = await readProducts({ status: "active" })
+  let products = []
+  try {
+    const { data } = await readProducts({ status: "active" })
+    products = data || []
+  } catch (error) {
+    console.error("Error loading products:", error)
+    products = []
+  }
+
   const categories = getCategories(products)
 
   const itemListJsonLd = {

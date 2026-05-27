@@ -1,0 +1,74 @@
+[
+  {
+    "id": "gal-001",
+    "title": "Studio Session – Recording 'EP. The Love'",
+    "mediaType": "photo",
+    "fileUrl": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=800&h=600&fit=crop",
+    "thumbnail": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=400&h=300&fit=crop",
+    "altText": "Recording session in home studio with microphone and audio interface",
+    "caption": "Late night tracking vocals for EP. The Love at the home studio.",
+    "tags": ["studio", "recording", "behind-the-scenes"],
+    "eventRef": "",
+    "createdAt": "2024-02-10T00:00:00.000Z"
+  },
+  {
+    "id": "gal-002",
+    "title": "Live Performance at The Observatory",
+    "mediaType": "video",
+    "fileUrl": "https://www.youtube.com/watch?v=CAu8rI13xLw",
+    "thumbnail": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=300&fit=crop",
+    "altText": "Performing live on stage with neon purple lighting",
+    "caption": "First live show of 2024 at The Observatory. Thank you everyone who came out!",
+    "tags": ["live", "performance", "concert"],
+    "eventRef": "",
+    "createdAt": "2024-06-15T00:00:00.000Z"
+  },
+  {
+    "id": "gal-003",
+    "title": "Music Video Shoot – 'Not Me'",
+    "mediaType": "photo",
+    "fileUrl": "https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?w=800&h=600&fit=crop",
+    "thumbnail": "https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?w=400&h=300&fit=crop",
+    "altText": "Behind the scenes of a music video shoot with camera equipment",
+    "caption": "BTS from the 'Not Me' music video shoot. Full video dropping soon.",
+    "tags": ["music-video", "behind-the-scenes", "production"],
+    "eventRef": "",
+    "createdAt": "2023-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "gal-004",
+    "title": "Studio Desk Setup 2025",
+    "mediaType": "photo",
+    "fileUrl": "https://images.unsplash.com/photo-1598653222000-6b7b7a552625?w=800&h=600&fit=crop",
+    "thumbnail": "https://images.unsplash.com/photo-1598653222000-6b7b7a552625?w=400&h=300&fit=crop",
+    "altText": "Music production studio desk with monitor speakers and MIDI keyboard",
+    "caption": "Updated the studio setup with the new Scarlett 2i2. Clean cable management this time!",
+    "tags": ["studio", "setup", "gear"],
+    "eventRef": "",
+    "createdAt": "2025-01-05T00:00:00.000Z"
+  },
+  {
+    "id": "gal-005",
+    "title": "Behind the Mix – 'Tsunami' Production",
+    "mediaType": "video",
+    "fileUrl": "https://www.youtube.com/watch?v=YhW7aRSlKBw",
+    "thumbnail": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=400&h=300&fit=crop",
+    "altText": "DAW session showing the production of Tsunami track",
+    "caption": "Walkthrough of the production process for 'Tsunami' featuring Duy Thanh.",
+    "tags": ["production", "tutorial", "behind-the-scenes", "music"],
+    "eventRef": "",
+    "createdAt": "2025-11-10T00:00:00.000Z"
+  },
+  {
+    "id": "gal-006",
+    "title": "Merch Design Preview – Neon Collection",
+    "mediaType": "photo",
+    "fileUrl": "https://images.unsplash.com/photo-1556306535-0f09a537f0a3?w=800&h=600&fit=crop",
+    "thumbnail": "https://images.unsplash.com/photo-1556306535-0f09a537f0a3?w=400&h=300&fit=crop",
+    "altText": "T-shirt merch design mockup with neon artwork",
+    "caption": "Preview of the upcoming Neon Collection. Limited drop — sign up for the newsletter!",
+    "tags": ["merch", "design", "fashion"],
+    "eventRef": "",
+    "createdAt": "2026-03-20T00:00:00.000Z"
+  }
+]

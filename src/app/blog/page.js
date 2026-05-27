@@ -17,11 +17,25 @@ export const metadata = {
 }
 
 export default async function BlogPage() {
-  const [{ posts }, categories, featuredPost] = await Promise.all([
-    getAllPublishedPosts({ page: 1, limit: 9999 }),
-    getAllCategories(),
-    getFeaturedPost(),
-  ])
+  let posts = []
+  let categories = []
+  let featuredPost = null
+
+  try {
+    const [postsData, categoriesData, featured] = await Promise.all([
+      getAllPublishedPosts({ page: 1, limit: 9999 }),
+      getAllCategories(),
+      getFeaturedPost(),
+    ])
+    posts = postsData?.posts || []
+    categories = categoriesData || []
+    featuredPost = featured || null
+  } catch (error) {
+    console.error("Error loading blog data:", error)
+    posts = []
+    categories = []
+    featuredPost = null
+  }
 
   return (
     <BlogClient

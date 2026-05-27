@@ -382,6 +382,7 @@
 
 @media (max-width: 640px) {
   .page {
+    max-height: none;
     padding: 100px var(--space-md) 200px;
     padding-left: calc(var(--space-md) + env(safe-area-inset-left, 0px));
     padding-right: calc(var(--space-md) + env(safe-area-inset-right, 0px));

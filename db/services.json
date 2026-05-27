@@ -1,0 +1,78 @@
+[
+  {
+    "id": "svc-001",
+    "serviceName": "Music Production & Recording",
+    "slug": "music-production",
+    "headline": "From Demo to Master — Pro Studio Quality",
+    "description": "Full-service music production including recording, editing, mixing, and mastering. Whether you're tracking vocals, recording instruments, or producing beats, I bring years of studio experience to make your sound stand out. Every project gets personalized attention with professional-grade gear.",
+    "features": [
+      "Professional vocal recording & tuning",
+      "Beat production & arrangement",
+      "Mixing & mastering (stems or full track)",
+      "Audio restoration & noise reduction",
+      "Session musicians coordination available"
+    ],
+    "priceRange": "$300 - $2,000",
+    "ctaLabel": "Book a Session",
+    "ctaUrl": "/contact",
+    "icon": "Music",
+    "status": "active"
+  },
+  {
+    "id": "svc-002",
+    "serviceName": "3D Web Development",
+    "slug": "3d-web-development",
+    "headline": "Immersive 3D Experiences on the Web",
+    "description": "Custom 3D websites built with Next.js, Three.js, and WebGL. From interactive portfolios to product showcases, I create high-performance 3D web experiences that captivate audiences and elevate brands. Optimized for all devices with smooth 60fps performance.",
+    "features": [
+      "Interactive 3D product showcases",
+      "WebGL-based visual effects & shaders",
+      "Scroll-triggered 3D animations",
+      "Spline & Three.js integration",
+      "Responsive 3D across mobile & desktop"
+    ],
+    "priceRange": "$1,000 - $5,000",
+    "ctaLabel": "Get a Quote",
+    "ctaUrl": "/contact",
+    "icon": "Globe",
+    "status": "active"
+  },
+  {
+    "id": "svc-003",
+    "serviceName": "Digital Marketing & SEO",
+    "slug": "digital-marketing-seo",
+    "headline": "Get Found. Get Heard. Grow Your Audience.",
+    "description": "Data-driven digital marketing strategies tailored for artists and creators. From search engine optimization to social media growth, I help you build a sustainable online presence that connects with your target audience and drives real results.",
+    "features": [
+      "SEO audit & keyword strategy",
+      "Content marketing & blog strategy",
+      "Social media growth consulting",
+      "Email marketing automation",
+      "Analytics setup & performance tracking"
+    ],
+    "priceRange": "$500 - $3,000",
+    "ctaLabel": "Start Growing",
+    "ctaUrl": "/contact",
+    "icon": "TrendingUp",
+    "status": "active"
+  },
+  {
+    "id": "svc-004",
+    "serviceName": "Brand Identity & Design",
+    "slug": "brand-identity-design",
+    "headline": "Visual Identity That Tells Your Story",
+    "description": "Comprehensive branding services including logo design, color palette development, typography selection, and brand guidelines. I craft cohesive visual identities that resonate with your audience and stand out in today's crowded digital landscape.",
+    "features": [
+      "Logo & icon design",
+      "Color palette & typography system",
+      "Brand guidelines document",
+      "Social media kit & templates",
+      "Merchandise & print-ready assets"
+    ],
+    "priceRange": "$400 - $2,500",
+    "ctaLabel": "Design Your Brand",
+    "ctaUrl": "/contact",
+    "icon": "Palette",
+    "status": "active"
+  }
+]
