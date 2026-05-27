@@ -16,6 +16,13 @@
   padding: var(--space-3xl) var(--space-xl) var(--space-4xl);
 }
 
+@media (max-width: 640px) {
+  .content {
+    max-width: 100%;
+    padding: var(--space-2xl) var(--space-md) var(--space-3xl);
+  }
+}
+
 @media (min-width: 768px) {
   .content {
     max-width: 520px;

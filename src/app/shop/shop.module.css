@@ -12,6 +12,12 @@
   padding: var(--space-4xl) var(--space-xl) var(--space-2xl);
 }
 
+@media (max-width: 640px) {
+  .hero {
+    padding: var(--space-2xl) var(--space-md) var(--space-xl);
+  }
+}
+
 .overline {
   font-family: var(--font-mono);
   font-size: var(--fs-xs);
@@ -48,6 +54,12 @@
   margin: 0 auto;
 }
 
+@media (max-width: 640px) {
+  .filters {
+    padding: 0 var(--space-md) var(--space-xl);
+  }
+}
+
 .filterBtn {
   padding: 6px 20px;
   border: 1px solid rgba(168, 85, 247, 0.2);
@@ -75,6 +87,12 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 var(--space-xl) var(--space-4xl);
+}
+
+@media (max-width: 640px) {
+  .gridSection {
+    padding: 0 var(--space-md) var(--space-3xl);
+  }
 }
 
 .grid {
