@@ -41,16 +41,16 @@ const NAV_LINKS = [
   { label: "About", href: "#about" },
   { label: "Music", href: "#music" },
   { label: "Latest EP.", href: "#latest-ep" },
-  { label: "Contact", href: "#contact" },
 ];
 
 const SERVICES = [
   { label: "Another Me", href: "/digital" },
-  { label: "About Tachy", href: "/about" },
   { label: "Blog", href: "/blog" },
+  { label: "About Tachy", href: "/about" },
   { label: "Shop", href: "/shop" },
-  { label: "Contact Me", href: "/contact" },
+  { label: "Bio Music", href: "/bio-music" },
   { label: "Terms & Condition", href: "/terms" },
+  { label: "Contact Me", href: "/contact" },
   { label: "Privacy Policy", href: "/privacy" },
 ];
 
@@ -133,9 +133,11 @@ export default function Footer() {
           </div>
           <div className={styles.linkColumn}>
             <h4>Others</h4>
-            {SERVICES.map((link) => (
-              <a key={link.label} href={link.href}>{link.label}</a>
-            ))}
+            <div className={styles.othersGrid}>
+              {SERVICES.map((link) => (
+                <a key={link.label} href={link.href}>{link.label}</a>
+              ))}
+            </div>
           </div>
         </div>
         <div className={styles.bottomSection}>

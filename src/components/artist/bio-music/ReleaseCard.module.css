@@ -78,7 +78,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 6px 16px;
+  padding: 2px 16px;
   border-radius: var(--radius-full);
   border: 1px solid var(--accent-primary);
   font-family: var(--font-mono);

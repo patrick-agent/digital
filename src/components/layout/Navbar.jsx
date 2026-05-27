@@ -10,7 +10,7 @@ const NAV_LINKS = [
   { href: "/#music", id: "music", label: "Music" },
   { href: "/#latest-ep", id: "latest-ep", label: "Lastest EP" },
   { href: "/#donation", id: "donation", label: "Support" },
-  { href: "/#contact", id: "contact", label: "Contact" },
+  { href: "/contact", id: "contact", label: "Contact" },
 ];
 
 export default function Navbar() {

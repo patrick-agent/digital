@@ -19,7 +19,7 @@
 .page {
   position: relative;
   z-index: 1;
-  min-height: 100vh;
+  max-height: 100vh;
   padding: 120px var(--space-xl) 280px;
   max-width: 1100px;
   margin: 0 auto;

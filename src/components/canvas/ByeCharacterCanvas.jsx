@@ -48,7 +48,7 @@ function ByeModel() {
   return <primitive object={scene} />;
 }
 
-const CAM_TARGET = [75, 90, 0];
+const CAM_TARGET = [95, 95, 0];
 
 function Scene() {
   const groupRef = useRef();

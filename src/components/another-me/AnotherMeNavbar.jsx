@@ -14,7 +14,7 @@ const sections = [
   { label: 'Skills',       href: '#skills' },
   { label: 'Services',     href: '#services' },
   { label: 'Blog',         href: '/digital/blog', external: true },
-  { label: 'Contact',      href: '#contact' },
+  { label: 'Contact',      href: '/contact', external: true },
 ];
 
 export default function AnotherMeNavbar() {
