@@ -29,7 +29,7 @@ const caveat = Caveat({
 });
 
 export const metadata = {
-  metadataBase: new URL('https://tachy.vercel.app'),
+  metadataBase: new URL('https://tachy.io.vn'),
   title: "Tachy — An Indie Artist",
   description:
     "An immersive 3D interactive music portfolio experience. Explore sound, visuals, and creativity in a dreamy studio space.",
@@ -48,7 +48,7 @@ export const metadata = {
     description:
       "An immersive 3D interactive music portfolio experience.",
     type: "website",
-    url: "https://tachy.vercel.app",
+    url: "https://tachy.io.vn",
     siteName: "Tachy",
     images: [
       { url: "/apple-touch-icon.png", width: 180, height: 180 },
