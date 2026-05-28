@@ -20,9 +20,13 @@ function blobStoreId() {
   return null
 }
 
-function blobBaseUrl() {
+function blobReadUrl(filename) {
   const id = blobStoreId()
-  return id ? `https://${id}.private.blob.vercel-storage.com` : null
+  return id ? `https://${id}.private.blob.vercel-storage.com/${blobPath(filename)}` : null
+}
+
+function blobWriteUrl(filename) {
+  return `https://blob.vercel-storage.com/${blobPath(filename)}`
 }
 
 function blobAuthHeaders() {
@@ -42,11 +46,10 @@ function blobPath(filename) {
 }
 
 async function readBlob(filename) {
-  const baseUrl = blobBaseUrl()
-  if (!baseUrl || !blobToken()) return null
+  const url = blobReadUrl(filename)
+  if (!url || !blobToken()) return null
   try {
-    const path = blobPath(filename)
-    const res = await fetch(`${baseUrl}/${path}`, { headers: blobAuthHeaders() })
+    const res = await fetch(url, { headers: blobAuthHeaders() })
     if (!res.ok) {
       if (res.status !== 404) {
         console.error(`readBlob(${filename}) status:`, res.status, await res.text().catch(() => ''))
@@ -63,12 +66,11 @@ async function readBlob(filename) {
 }
 
 async function writeBlob(filename, data) {
-  const baseUrl = blobBaseUrl()
-  if (!baseUrl || !blobToken()) return false
+  if (!blobToken()) return false
   try {
     const json = JSON.stringify(data, null, 2)
-    const path = blobPath(filename)
-    const res = await fetch(`${baseUrl}/${path}`, {
+    const url = blobWriteUrl(filename)
+    const res = await fetch(url, {
       method: 'PUT',
       headers: { ...blobAuthHeaders(), 'Content-Type': 'application/json' },
       body: json,
