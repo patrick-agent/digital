@@ -5,48 +5,46 @@ import { createPost, updatePost, readPosts } from "@/lib/db"
 const SHEET_STATUS_PUBLIC = "public"
 const BLOG_PERSONA = "artist"
 
-const COLUMN_MAP = {
-  title: "title",
-  slug: "slug",
-  content: "content",
-  excerpt: "excerpt",
-  coverImage: "coverImage",
-  tags: "tags",
-  category: "category",
-  status: "status",
-  seoTitle: "seoTitle",
-  seoDescription: "seoDescription",
-  seoKeywords: "seoKeywords",
-}
-
 function parseTags(value) {
   if (!value) return []
-  return value.split(",").map((t) => t.trim()).filter(Boolean)
+  if (Array.isArray(value)) return value.filter(Boolean)
+  return String(value).split(",").map((t) => t.trim()).filter(Boolean)
 }
 
 function mapRowToPost(row) {
-  const raw = {}
-  for (const [field, col] of Object.entries(COLUMN_MAP)) {
-    raw[field] = row[col] !== undefined ? String(row[col]).trim() : ""
-  }
+  console.log('Incoming row:', JSON.stringify(row, null, 2))
 
-  const status = raw.status?.toLowerCase() === SHEET_STATUS_PUBLIC ? "published" : "draft"
+  const status = String(row.status || "").toLowerCase() === SHEET_STATUS_PUBLIC ? "published" : "draft"
+
+  const title = String(row.title || "").trim() || "Untitled"
+  const content = row.content || row.html || ""
+  const excerpt = String(row.excerpt || row.description || "").trim()
+  const coverImage = row.coverImage || row.featured_image_url || row.cover_image || ""
+  const tags = parseTags(row.tags)
+  const category = String(row.category || "").trim()
+  const slug = row.slug ? String(row.slug).trim() : undefined
+  const seoTitle = String(row.seoTitle || row.seo_title || title).trim()
+  const seoDescription = String(row.seoDescription || row.seo_description || row.excerpt || "").trim()
+  const seoKeywords = parseTags(row.seoKeywords || row.seo_keywords)
+
+  console.log('Mapped content:', JSON.stringify(content?.slice(0, 200)))
+  console.log('Mapped image:', coverImage)
 
   const post = {
-    title: raw.title || "Untitled",
-    content: raw.content || "",
-    excerpt: raw.excerpt || "",
-    coverImage: raw.coverImage || "",
-    tags: parseTags(raw.tags),
-    category: raw.category || "",
+    title,
+    content,
+    excerpt,
+    coverImage,
+    tags,
+    category,
     status,
     persona: BLOG_PERSONA,
-    seoTitle: raw.seoTitle || raw.title || "",
-    seoDescription: raw.seoDescription || raw.excerpt || "",
-    seoKeywords: parseTags(raw.seoKeywords),
+    seoTitle,
+    seoDescription,
+    seoKeywords,
   }
 
-  if (raw.slug) post.slug = raw.slug
+  if (slug) post.slug = slug
   if (status === "published") post.publishedAt = new Date().toISOString()
 
   return post
