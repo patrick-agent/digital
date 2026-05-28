@@ -6,7 +6,10 @@ import { put, list } from "@vercel/blob"
 const DB_DIR = path.join(process.cwd(), "db")
 const jsonCache = new Map()
 const isVercel = process.env.VERCEL === '1'
-const BLOB_TOKEN = process.env.BLOB_READ_WRITE_TOKEN || ''
+
+function blobToken() {
+  return process.env.BLOB_READ_WRITE_TOKEN || ''
+}
 
 async function ensureDbDir() {
   if (isVercel) return
@@ -20,35 +23,37 @@ function blobPath(filename) {
 }
 
 async function readBlob(filename) {
-  if (!BLOB_TOKEN) return null
+  if (!blobToken()) return null
   try {
     const { blobs } = await list({ prefix: blobPath(filename) })
     if (blobs.length === 0) return null
     const res = await fetch(blobs[0].url, {
-      headers: { Authorization: `Bearer ${BLOB_TOKEN}` },
+      headers: { Authorization: `Bearer ${blobToken()}` },
     })
     if (!res.ok) return null
     const text = await res.text()
     if (!text || !text.trim()) return null
     return JSON.parse(text)
-  } catch {
+  } catch (err) {
+    console.error(`readBlob(${filename}) error:`, err?.message || err)
     return null
   }
 }
 
 async function writeBlob(filename, data) {
-  if (!BLOB_TOKEN) return false
+  if (!blobToken()) return false
   try {
     const json = JSON.stringify(data, null, 2)
     await put(blobPath(filename), json, { access: 'private' })
     return true
-  } catch {
+  } catch (err) {
+    console.error(`writeBlob(${filename}) error:`, err?.message || err)
     return false
   }
 }
 
 async function readJSON(filename) {
-  if (isVercel && BLOB_TOKEN) {
+  if (isVercel && blobToken()) {
     const blobData = await readBlob(filename)
     if (blobData) return blobData
   }
@@ -82,7 +87,7 @@ async function readJSON(filename) {
 }
 
 async function writeJSON(filename, data) {
-  if (isVercel && BLOB_TOKEN) {
+  if (isVercel && blobToken()) {
     const ok = await writeBlob(filename, data)
     jsonCache.delete(`blob:${filename}`)
     if (ok) return
@@ -102,7 +107,7 @@ async function writeJSON(filename, data) {
 }
 
 async function readFileJSON(filename) {
-  if (isVercel && BLOB_TOKEN) {
+  if (isVercel && blobToken()) {
     const blobData = await readBlob(filename)
     if (blobData) return blobData
   }
@@ -114,9 +119,10 @@ async function readFileJSON(filename) {
 }
 
 async function writeFileJSON(filename, data) {
-  if (isVercel && BLOB_TOKEN) {
-    await writeBlob(filename, data)
-    return
+  if (isVercel && blobToken()) {
+    const ok = await writeBlob(filename, data)
+    jsonCache.delete(`blob:${filename}`)
+    if (ok) return
   }
 
   if (isVercel) {
