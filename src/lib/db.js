@@ -1,7 +1,7 @@
 import { readFile, writeFile, mkdir, stat } from "fs/promises"
 import { existsSync } from "fs"
 import path from "path"
-import { put, list } from "@vercel/blob"
+
 
 const DB_DIR = path.join(process.cwd(), "db")
 const jsonCache = new Map()
@@ -9,6 +9,25 @@ const isVercel = process.env.VERCEL === '1'
 
 function blobToken() {
   return process.env.BLOB_READ_WRITE_TOKEN || ''
+}
+
+function blobStoreId() {
+  const token = blobToken()
+  const parts = token.split('_')
+  if (parts.length >= 4 && parts[0] === 'vercel' && parts[1] === 'blob' && parts[2] === 'rw') {
+    return parts[3].toLowerCase()
+  }
+  return null
+}
+
+function blobBaseUrl() {
+  const id = blobStoreId()
+  return id ? `https://${id}.private.blob.vercel-storage.com` : null
+}
+
+function blobAuthHeaders() {
+  const token = blobToken()
+  return token ? { Authorization: `Bearer ${token}` } : {}
 }
 
 async function ensureDbDir() {
@@ -23,14 +42,17 @@ function blobPath(filename) {
 }
 
 async function readBlob(filename) {
-  if (!blobToken()) return null
+  const baseUrl = blobBaseUrl()
+  if (!baseUrl || !blobToken()) return null
   try {
-    const { blobs } = await list({ prefix: blobPath(filename) })
-    if (blobs.length === 0) return null
-    const res = await fetch(blobs[0].url, {
-      headers: { Authorization: `Bearer ${blobToken()}` },
-    })
-    if (!res.ok) return null
+    const path = blobPath(filename)
+    const res = await fetch(`${baseUrl}/${path}`, { headers: blobAuthHeaders() })
+    if (!res.ok) {
+      if (res.status !== 404) {
+        console.error(`readBlob(${filename}) status:`, res.status, await res.text().catch(() => ''))
+      }
+      return null
+    }
     const text = await res.text()
     if (!text || !text.trim()) return null
     return JSON.parse(text)
@@ -41,10 +63,21 @@ async function readBlob(filename) {
 }
 
 async function writeBlob(filename, data) {
-  if (!blobToken()) return false
+  const baseUrl = blobBaseUrl()
+  if (!baseUrl || !blobToken()) return false
   try {
     const json = JSON.stringify(data, null, 2)
-    await put(blobPath(filename), json, { access: 'private' })
+    const path = blobPath(filename)
+    const res = await fetch(`${baseUrl}/${path}`, {
+      method: 'PUT',
+      headers: { ...blobAuthHeaders(), 'Content-Type': 'application/json' },
+      body: json,
+    })
+    if (!res.ok) {
+      const errorText = await res.text().catch(() => '')
+      console.error(`writeBlob(${filename}) failed: ${res.status} ${errorText}`)
+      return false
+    }
     return true
   } catch (err) {
     console.error(`writeBlob(${filename}) error:`, err?.message || err)
