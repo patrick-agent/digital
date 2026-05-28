@@ -7,7 +7,7 @@ import {
 } from "@/lib/blog"
 import { siteMetadata } from "@/lib/seo"
 import ArticleHero from "@/components/blog/ArticleHero"
-import ArticleBody from "@/components/blog/ArticleBody"
+import ArticleBody, { ArticleSummary } from "@/components/blog/ArticleBody"
 import ArticleSchema from "@/components/blog/ArticleSchema"
 import TableOfContents from "@/components/blog/TableOfContents"
 import RelatedPosts from "@/components/blog/RelatedPosts"
@@ -119,11 +119,7 @@ export default async function ArticlePage({ params }) {
 
           <div className={styles.bodyWrap}>
             {/* TL;DR / Summary — AIO optimisation */}
-            {post.excerpt && (
-              <section aria-label="summary" className={styles.summary}>
-                <p>{post.excerpt}</p>
-              </section>
-            )}
+            <ArticleSummary excerpt={post.excerpt} />
 
             {/* Rich-text body */}
             <ArticleBody content={post.content} />
