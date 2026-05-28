@@ -4,6 +4,9 @@ import path from "path"
 
 const DB_DIR = path.join(process.cwd(), "db")
 const jsonCache = new Map()
+const isVercel = process.env.VERCEL === '1'
+const BLOB_TOKEN = process.env.BLOB_READ_WRITE_TOKEN || ''
+const BLOB_DOMAIN = process.env.BLOB_DOMAIN || ''
 
 async function ensureDbDir() {
   if (!existsSync(DB_DIR)) {
@@ -11,8 +14,58 @@ async function ensureDbDir() {
   }
 }
 
+function blobPath(filename) {
+  return `db/${filename}`
+}
+
+function blobUrl(filename) {
+  if (BLOB_DOMAIN) return `https://${BLOB_DOMAIN}/${blobPath(filename)}`
+  return null
+}
+
+async function readBlob(filename) {
+  const url = blobUrl(filename)
+  if (!url) return null
+  try {
+    const res = await fetch(url, {
+      headers: { Authorization: `Bearer ${BLOB_TOKEN}` },
+    })
+    if (!res.ok) return null
+    const text = await res.text()
+    if (!text || !text.trim()) return null
+    return JSON.parse(text)
+  } catch {
+    return null
+  }
+}
+
+async function writeBlob(filename, data) {
+  if (!BLOB_TOKEN) return false
+  try {
+    const json = JSON.stringify(data, null, 2)
+    const res = await fetch(
+      `https://blob.vercel-storage.com/${blobPath(filename)}`,
+      {
+        method: 'PUT',
+        headers: {
+          Authorization: `Bearer ${BLOB_TOKEN}`,
+          'Content-Type': 'application/json',
+        },
+        body: json,
+      }
+    )
+    return res.ok
+  } catch {
+    return false
+  }
+}
+
 async function readJSON(filename) {
-  await ensureDbDir()
+  if (isVercel && BLOB_TOKEN) {
+    const blobData = await readBlob(filename)
+    if (blobData) return blobData
+  }
+
   const filePath = path.join(DB_DIR, filename)
   if (!existsSync(filePath)) {
     jsonCache.delete(filePath)
@@ -42,11 +95,42 @@ async function readJSON(filename) {
 }
 
 async function writeJSON(filename, data) {
+  if (isVercel && BLOB_TOKEN) {
+    const ok = await writeBlob(filename, data)
+    jsonCache.delete(`blob:${filename}`)
+    if (ok) return
+  }
+
   await ensureDbDir()
   const filePath = path.join(DB_DIR, filename)
   await writeFile(filePath, JSON.stringify(data, null, 2), "utf-8")
   jsonCache.delete(filePath)
 }
+
+async function readFileJSON(filename) {
+  if (isVercel && BLOB_TOKEN) {
+    const blobData = await readBlob(filename)
+    if (blobData) return blobData
+  }
+
+  const filePath = path.join(DB_DIR, filename)
+  if (!existsSync(filePath)) return null
+  const raw = await readFile(filePath, "utf-8")
+  return JSON.parse(raw)
+}
+
+async function writeFileJSON(filename, data) {
+  if (isVercel && BLOB_TOKEN) {
+    await writeBlob(filename, data)
+    return
+  }
+
+  await ensureDbDir()
+  const filePath = path.join(DB_DIR, filename)
+  await writeFile(filePath, JSON.stringify(data, null, 2), "utf-8")
+}
+
+// ─── Slug helpers ────────────────────────────
 
 function slugify(text) {
   return text
@@ -74,7 +158,7 @@ async function generateUniqueSlug(baseSlug, existingItems, currentId) {
   return slug
 }
 
-// ─── Blog ───────────────────────────────────────────────
+// ─── Blog ────────────────────────────────────
 
 export async function readPosts(filters = {}) {
   let posts = await readJSON("blog.json")
@@ -187,7 +271,7 @@ export async function duplicatePost(id) {
   })
 }
 
-// ─── Shop ───────────────────────────────────────────────
+// ─── Shop ────────────────────────────────────
 
 export async function readProducts(filters = {}) {
   let products = await readJSON("shop.json")
@@ -291,7 +375,7 @@ export async function deleteProduct(id) {
   return true
 }
 
-// ─── Music / Discography ────────────────────────────────
+// ─── Music / Discography ─────────────────────
 
 export async function readMusic(filters = {}) {
   let items = await readJSON("music.json")
@@ -375,294 +459,25 @@ export async function deleteMusic(id) {
   return true
 }
 
-// ─── Events / Tour ──────────────────────────────────────
-
-export async function readEvents(filters = {}) {
-  let items = await readJSON("events.json")
-  const { status, search, page = 1, limit = 50 } = filters
-
-  if (status) items = items.filter((e) => e.status === status)
-
-  if (search) {
-    const q = search.toLowerCase()
-    items = items.filter(
-      (e) =>
-        e.eventName.toLowerCase().includes(q) ||
-        e.venue?.toLowerCase().includes(q) ||
-        e.city?.toLowerCase().includes(q)
-    )
-  }
-
-  items.sort((a, b) => new Date(a.date) - new Date(b.date))
-
-  // Auto-archive past events
-  const now = new Date()
-  items = items.map((e) => {
-    if (e.status === "upcoming" && new Date(e.date) < now) {
-      return { ...e, status: "past" }
-    }
-    return e
-  })
-  await writeJSON("events.json", items)
-
-  const total = items.length
-  const offset = (page - 1) * limit
-  const data = items.slice(offset, offset + limit)
-
-  return { data, meta: { page, limit, total } }
-}
-
-export async function readEvent(id) {
-  const items = await readJSON("events.json")
-  return items.find((e) => e.id === id) || null
-}
-
-export async function createEvent(data) {
-  const items = await readJSON("events.json")
-  const now = new Date().toISOString()
-
-  const item = {
-    id: crypto.randomUUID(),
-    eventName: data.eventName || "",
-    venue: data.venue || "",
-    city: data.city || "",
-    country: data.country || "",
-    date: data.date || null,
-    ticketUrl: data.ticketUrl || "",
-    posterImage: data.posterImage || "",
-    status: data.status || "upcoming",
-    createdAt: now,
-    updatedAt: now,
-  }
-
-  items.push(item)
-  await writeJSON("events.json", items)
-  return item
-}
-
-export async function updateEvent(id, data) {
-  const items = await readJSON("events.json")
-  const index = items.findIndex((e) => e.id === id)
-  if (index === -1) return null
-
-  const existing = items[index]
-  items[index] = { ...existing, ...data, id: existing.id, createdAt: existing.createdAt, updatedAt: new Date().toISOString() }
-  await writeJSON("events.json", items)
-  return items[index]
-}
-
-export async function deleteEvent(id) {
-  const items = await readJSON("events.json")
-  const index = items.findIndex((e) => e.id === id)
-  if (index === -1) return false
-  items.splice(index, 1)
-  await writeJSON("events.json", items)
-  return true
-}
-
-// ─── Services (Another Me) ──────────────────────────────
-
-export async function readServices(filters = {}) {
-  let items = await readJSON("services.json")
-  const { status, search, page = 1, limit = 50 } = filters
-
-  if (status) items = items.filter((s) => s.status === status)
-
-  if (search) {
-    const q = search.toLowerCase()
-    items = items.filter(
-      (s) =>
-        s.serviceName.toLowerCase().includes(q) ||
-        s.headline?.toLowerCase().includes(q)
-    )
-  }
-
-  items.sort((a, b) => (a.displayOrder || 0) - (b.displayOrder || 0))
-
-  const total = items.length
-  const offset = (page - 1) * limit
-  const data = items.slice(offset, offset + limit)
-
-  return { data, meta: { page, limit, total } }
-}
-
-export async function readService(idOrSlug) {
-  const items = await readJSON("services.json")
-  return items.find((s) => s.id === idOrSlug || s.slug === idOrSlug) || null
-}
-
-export async function createService(data) {
-  const items = await readJSON("services.json")
-  const slug = await generateUniqueSlug(data.slug || slugify(data.serviceName), items)
-  const now = new Date().toISOString()
-
-  const maxOrder = items.reduce((max, s) => Math.max(max, s.displayOrder || 0), 0)
-
-  const item = {
-    id: crypto.randomUUID(),
-    serviceName: data.serviceName || "",
-    slug,
-    persona: "digital",
-    headline: data.headline || "",
-    description: data.description || "",
-    features: data.features || [],
-    priceRange: data.priceRange || "",
-    ctaLabel: data.ctaLabel || "Contact",
-    ctaUrl: data.ctaUrl || "",
-    icon: data.icon || "",
-    displayOrder: data.displayOrder ?? maxOrder + 1,
-    status: data.status || "active",
-    createdAt: now,
-    updatedAt: now,
-  }
-
-  items.push(item)
-  await writeJSON("services.json", items)
-  return item
-}
-
-export async function updateService(id, data) {
-  const items = await readJSON("services.json")
-  const index = items.findIndex((s) => s.id === id)
-  if (index === -1) return null
-
-  const existing = items[index]
-  if (data.serviceName || data.slug) {
-    const newSlug = data.slug || slugify(data.serviceName || existing.serviceName)
-    data.slug = await generateUniqueSlug(newSlug, items, id)
-  }
-
-  items[index] = { ...existing, ...data, id: existing.id, createdAt: existing.createdAt, updatedAt: new Date().toISOString() }
-  await writeJSON("services.json", items)
-  return items[index]
-}
-
-export async function deleteService(id) {
-  const items = await readJSON("services.json")
-  const index = items.findIndex((s) => s.id === id)
-  if (index === -1) return false
-  items.splice(index, 1)
-  await writeJSON("services.json", items)
-  return true
-}
-
-export async function reorderServices(orderedIds) {
-  const items = await readJSON("services.json")
-  orderedIds.forEach((id, index) => {
-    const item = items.find((s) => s.id === id)
-    if (item) item.displayOrder = index + 1
-  })
-  await writeJSON("services.json", items)
-  return items
-}
-
-// ─── Case Studies ───────────────────────────────────────
-
-export async function readCaseStudies(filters = {}) {
-  let items = await readJSON("case-studies.json")
-  const { status, search, industry, page = 1, limit = 50 } = filters
-
-  if (status) items = items.filter((c) => c.status === status)
-  if (industry) items = items.filter((c) => c.industry === industry)
-
-  if (search) {
-    const q = search.toLowerCase()
-    items = items.filter(
-      (c) =>
-        c.title.toLowerCase().includes(q) ||
-        c.clientName?.toLowerCase().includes(q)
-    )
-  }
-
-  items.sort((a, b) => new Date(b.publishedAt || b.createdAt) - new Date(a.publishedAt || a.createdAt))
-
-  const total = items.length
-  const offset = (page - 1) * limit
-  const data = items.slice(offset, offset + limit)
-
-  return { data, meta: { page, limit, total } }
-}
-
-export async function readCaseStudy(idOrSlug) {
-  const items = await readJSON("case-studies.json")
-  return items.find((c) => c.id === idOrSlug || c.slug === idOrSlug) || null
-}
-
-export async function createCaseStudy(data) {
-  const items = await readJSON("case-studies.json")
-  const slug = await generateUniqueSlug(data.slug || slugify(data.title), items)
-  const now = new Date().toISOString()
-
-  const item = {
-    id: crypto.randomUUID(),
-    title: data.title || "",
-    slug,
-    clientName: data.clientName || "",
-    industry: data.industry || "",
-    challenge: data.challenge || "",
-    solution: data.solution || "",
-    results: data.results || [],
-    metrics: data.metrics || {},
-    coverImage: data.coverImage || "",
-    testimonialQuote: data.testimonialQuote || "",
-    testimonialAuthor: data.testimonialAuthor || "",
-    tags: data.tags || [],
-    publishedAt: data.publishedAt || null,
-    status: data.status || "draft",
-    createdAt: now,
-    updatedAt: now,
-  }
-
-  items.push(item)
-  await writeJSON("case-studies.json", items)
-  return item
-}
-
-export async function updateCaseStudy(id, data) {
-  const items = await readJSON("case-studies.json")
-  const index = items.findIndex((c) => c.id === id)
-  if (index === -1) return null
-
-  const existing = items[index]
-  if (data.title || data.slug) {
-    const newSlug = data.slug || slugify(data.title || existing.title)
-    data.slug = await generateUniqueSlug(newSlug, items, id)
-  }
-
-  items[index] = { ...existing, ...data, id: existing.id, createdAt: existing.createdAt, updatedAt: new Date().toISOString() }
-  await writeJSON("case-studies.json", items)
-  return items[index]
-}
-
-export async function deleteCaseStudy(id) {
-  const items = await readJSON("case-studies.json")
-  const index = items.findIndex((c) => c.id === id)
-  if (index === -1) return false
-  items.splice(index, 1)
-  await writeJSON("case-studies.json", items)
-  return true
-}
-
-// ─── Gallery ────────────────────────────────────────────
+// ─── Gallery ──────────────────────────────────
 
 export async function readGallery(filters = {}) {
   let items = await readJSON("gallery.json")
-  const { mediaType, search, page = 1, limit = 50 } = filters
+  const { category, search, status, page = 1, limit = 50 } = filters
 
-  if (mediaType) items = items.filter((g) => g.mediaType === mediaType)
+  if (status) items = items.filter((i) => i.status === status)
+  if (category) items = items.filter((i) => i.category === category)
 
   if (search) {
     const q = search.toLowerCase()
     items = items.filter(
-      (g) =>
-        g.title.toLowerCase().includes(q) ||
-        g.caption?.toLowerCase().includes(q) ||
-        g.altText?.toLowerCase().includes(q)
+      (i) =>
+        i.title?.toLowerCase().includes(q) ||
+        i.description?.toLowerCase().includes(q)
     )
   }
 
-  items.sort((a, b) => (a.displayOrder || 0) - (b.displayOrder || 0))
-
+  items.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
   const total = items.length
   const offset = (page - 1) * limit
   const data = items.slice(offset, offset + limit)
@@ -670,111 +485,81 @@ export async function readGallery(filters = {}) {
   return { data, meta: { page, limit, total } }
 }
 
-export async function readGalleryItem(id) {
-  const items = await readJSON("gallery.json")
-  return items.find((g) => g.id === id) || null
+// ─── Events ───────────────────────────────────
+
+export async function readEvents(filters = {}) {
+  let items = await readJSON("events.json")
+  const { status, type, page = 1, limit = 50 } = filters
+
+  if (status) items = items.filter((e) => e.status === status)
+  if (type) items = items.filter((e) => e.type === type)
+
+  items.sort((a, b) => new Date(b.eventDate || b.createdAt) - new Date(a.eventDate || a.createdAt))
+  const total = items.length
+  const offset = (page - 1) * limit
+  const data = items.slice(offset, offset + limit)
+
+  return { data, meta: { page, limit, total } }
 }
 
-export async function createGalleryItem(data) {
-  const items = await readJSON("gallery.json")
-  const now = new Date().toISOString()
-  const maxOrder = items.reduce((max, g) => Math.max(max, g.displayOrder || 0), 0)
+// ─── Case Studies ─────────────────────────────
 
-  const item = {
-    id: crypto.randomUUID(),
-    title: data.title || "",
-    mediaType: data.mediaType || "photo",
-    fileUrl: data.fileUrl || "",
-    thumbnail: data.thumbnail || "",
-    altText: data.altText || "",
-    caption: data.caption || "",
-    tags: data.tags || [],
-    eventRef: data.eventRef || "",
-    displayOrder: data.displayOrder ?? maxOrder + 1,
-    createdAt: now,
-    updatedAt: now,
-  }
+export async function readCaseStudies(filters = {}) {
+  let items = await readJSON("case-studies.json")
+  const { status, page = 1, limit = 50 } = filters
 
-  items.push(item)
-  await writeJSON("gallery.json", items)
-  return item
+  if (status) items = items.filter((c) => c.status === status)
+
+  items.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
+  const total = items.length
+  const offset = (page - 1) * limit
+  const data = items.slice(offset, offset + limit)
+
+  return { data, meta: { page, limit, total } }
 }
 
-export async function updateGalleryItem(id, data) {
-  const items = await readJSON("gallery.json")
-  const index = items.findIndex((g) => g.id === id)
-  if (index === -1) return null
+// ─── Services ─────────────────────────────────
 
-  const existing = items[index]
-  items[index] = { ...existing, ...data, id: existing.id, createdAt: existing.createdAt, updatedAt: new Date().toISOString() }
-  await writeJSON("gallery.json", items)
-  return items[index]
+export async function readServices(filters = {}) {
+  let items = await readJSON("services.json")
+  const { status, active, page = 1, limit = 50 } = filters
+
+  if (status) items = items.filter((s) => s.status === status)
+  if (active !== undefined) items = items.filter((s) => s.active === active)
+
+  items.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
+  const total = items.length
+  const offset = (page - 1) * limit
+  const data = items.slice(offset, offset + limit)
+
+  return { data, meta: { page, limit, total } }
 }
 
-export async function deleteGalleryItem(id) {
-  const items = await readJSON("gallery.json")
-  const index = items.findIndex((g) => g.id === id)
-  if (index === -1) return false
-  items.splice(index, 1)
-  await writeJSON("gallery.json", items)
-  return true
-}
-
-export async function bulkCreateGalleryItems(itemsData) {
-  const items = await readJSON("gallery.json")
-  const now = new Date().toISOString()
-  const maxOrder = items.reduce((max, g) => Math.max(max, g.displayOrder || 0), 0)
-
-  const newItems = itemsData.map((data, i) => ({
-    id: crypto.randomUUID(),
-    title: data.title || "",
-    mediaType: data.mediaType || "photo",
-    fileUrl: data.fileUrl || "",
-    thumbnail: data.thumbnail || "",
-    altText: data.altText || "",
-    caption: data.caption || "",
-    tags: data.tags || [],
-    eventRef: data.eventRef || "",
-    displayOrder: data.displayOrder ?? maxOrder + i + 1,
-    createdAt: now,
-    updatedAt: now,
-  }))
-
-  items.push(...newItems)
-  await writeJSON("gallery.json", items)
-  return newItems
-}
-
-// ─── Press Kit (Singleton) ──────────────────────────────
+// ─── Press Kit ────────────────────────────────
 
 export async function readPressKit() {
-  await ensureDbDir()
-  const filePath = path.join(DB_DIR, "press-kit.json")
-  if (!existsSync(filePath)) {
-    return {
-      bioShort: "",
-      bioLong: "",
-      headshots: [],
-      logos: [],
-      pressReleases: [],
-      contactBookingEmail: "",
-      riderPdf: "",
-      techSpecPdf: "",
-    }
+  const data = await readFileJSON("press-kit.json")
+  if (data) return data
+  return {
+    bioShort: "",
+    bioLong: "",
+    headshots: [],
+    logos: [],
+    pressReleases: [],
+    contactBookingEmail: "",
+    riderPdf: "",
+    techSpecPdf: "",
   }
-  const raw = await readFile(filePath, "utf-8")
-  return JSON.parse(raw)
 }
 
 export async function updatePressKit(data) {
   const existing = await readPressKit()
   const updated = { ...existing, ...data }
-  const filePath = path.join(DB_DIR, "press-kit.json")
-  await writeFile(filePath, JSON.stringify(updated, null, 2), "utf-8")
+  await writeFileJSON("press-kit.json", updated)
   return updated
 }
 
-// ─── Newsletter Subscribers ─────────────────────────────
+// ─── Newsletter ───────────────────────────────
 
 export async function readSubscribers(filters = {}) {
   let items = await readJSON("newsletter.json")
@@ -793,7 +578,6 @@ export async function readSubscribers(filters = {}) {
   }
 
   items.sort((a, b) => new Date(b.subscribedAt) - new Date(a.subscribedAt))
-
   const total = items.length
   const offset = (page - 1) * limit
   const data = items.slice(offset, offset + limit)
@@ -815,7 +599,6 @@ export async function unsubscribeSubscriber(id) {
 export async function addSubscriber(data) {
   const items = await readJSON("newsletter.json")
 
-  // Check duplicate
   if (items.some((s) => s.email === data.email)) {
     return null
   }
@@ -835,16 +618,12 @@ export async function addSubscriber(data) {
   return subscriber
 }
 
-// ─── SEO & Metadata ─────────────────────────────────────
+// ─── SEO ──────────────────────────────────────
 
 export async function readSEOMetadata() {
-  await ensureDbDir()
-  const filePath = path.join(DB_DIR, "seo.json")
-  if (!existsSync(filePath)) {
-    return { pages: {} }
-  }
-  const raw = await readFile(filePath, "utf-8")
-  return JSON.parse(raw)
+  const data = await readFileJSON("seo.json")
+  if (data) return data
+  return { pages: {} }
 }
 
 export async function updateSEOMetadata(route, data) {
@@ -857,8 +636,7 @@ export async function updateSEOMetadata(route, data) {
     updatedAt: new Date().toISOString(),
   }
 
-  const filePath = path.join(DB_DIR, "seo.json")
-  await writeFile(filePath, JSON.stringify(existing, null, 2), "utf-8")
+  await writeFileJSON("seo.json", existing)
   return existing.pages[route]
 }
 
@@ -884,32 +662,27 @@ export async function getAllRoutes() {
   ]
 }
 
-// ─── Settings ───────────────────────────────────────────
+// ─── Settings ─────────────────────────────────
 
 export async function readSettings() {
-  await ensureDbDir()
-  const filePath = path.join(DB_DIR, "settings.json")
-  if (!existsSync(filePath)) {
-    return {
-      siteTitle: "Tachy Artist",
-      seoTitle: "Tachy Artist — Interactive Music Portfolio",
-      seoDescription: "",
-      seoKeywords: [],
-      socialLinks: {},
-    }
+  const data = await readFileJSON("settings.json")
+  if (data) return data
+  return {
+    siteTitle: "Tachy Artist",
+    seoTitle: "Tachy Artist — Interactive Music Portfolio",
+    seoDescription: "",
+    seoKeywords: [],
+    socialLinks: {},
   }
-  const raw = await readFile(filePath, "utf-8")
-  return JSON.parse(raw)
 }
 
 export async function updateSettings(data) {
   const settings = await readSettings()
   const updated = { ...settings, ...data }
-  const filePath = path.join(DB_DIR, "settings.json")
-  await writeFile(filePath, JSON.stringify(updated, null, 2), "utf-8")
+  await writeFileJSON("settings.json", updated)
   return updated
 }
 
-// ─── Export helpers ─────────────────────────────────────
+// ─── Export helpers ───────────────────────────
 
 export { slugify, generateUniqueSlug }
