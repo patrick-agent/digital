@@ -9,6 +9,7 @@ const BLOB_TOKEN = process.env.BLOB_READ_WRITE_TOKEN || ''
 const BLOB_DOMAIN = process.env.BLOB_DOMAIN || ''
 
 async function ensureDbDir() {
+  if (isVercel) return
   if (!existsSync(DB_DIR)) {
     await mkdir(DB_DIR, { recursive: true })
   }
@@ -101,6 +102,13 @@ async function writeJSON(filename, data) {
     if (ok) return
   }
 
+  if (isVercel) {
+    throw new Error(
+      `Cannot write ${filename} on Vercel. ` +
+      "Set BLOB_READ_WRITE_TOKEN in Vercel Environment Variables."
+    )
+  }
+
   await ensureDbDir()
   const filePath = path.join(DB_DIR, filename)
   await writeFile(filePath, JSON.stringify(data, null, 2), "utf-8")
@@ -123,6 +131,13 @@ async function writeFileJSON(filename, data) {
   if (isVercel && BLOB_TOKEN) {
     await writeBlob(filename, data)
     return
+  }
+
+  if (isVercel) {
+    throw new Error(
+      `Cannot write ${filename} on Vercel. ` +
+      "Set BLOB_READ_WRITE_TOKEN in Vercel Environment Variables."
+    )
   }
 
   await ensureDbDir()
