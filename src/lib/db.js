@@ -1,12 +1,12 @@
 import { readFile, writeFile, mkdir, stat } from "fs/promises"
 import { existsSync } from "fs"
 import path from "path"
+import { put, list } from "@vercel/blob"
 
 const DB_DIR = path.join(process.cwd(), "db")
 const jsonCache = new Map()
 const isVercel = process.env.VERCEL === '1'
 const BLOB_TOKEN = process.env.BLOB_READ_WRITE_TOKEN || ''
-const BLOB_DOMAIN = process.env.BLOB_DOMAIN || ''
 
 async function ensureDbDir() {
   if (isVercel) return
@@ -19,16 +19,12 @@ function blobPath(filename) {
   return `db/${filename}`
 }
 
-function blobUrl(filename) {
-  if (BLOB_DOMAIN) return `https://${BLOB_DOMAIN}/${blobPath(filename)}`
-  return null
-}
-
 async function readBlob(filename) {
-  const url = blobUrl(filename)
-  if (!url) return null
+  if (!BLOB_TOKEN) return null
   try {
-    const res = await fetch(url, {
+    const { blobs } = await list({ prefix: blobPath(filename) })
+    if (blobs.length === 0) return null
+    const res = await fetch(blobs[0].url, {
       headers: { Authorization: `Bearer ${BLOB_TOKEN}` },
     })
     if (!res.ok) return null
@@ -44,18 +40,8 @@ async function writeBlob(filename, data) {
   if (!BLOB_TOKEN) return false
   try {
     const json = JSON.stringify(data, null, 2)
-    const res = await fetch(
-      `https://blob.vercel-storage.com/${blobPath(filename)}`,
-      {
-        method: 'PUT',
-        headers: {
-          Authorization: `Bearer ${BLOB_TOKEN}`,
-          'Content-Type': 'application/json',
-        },
-        body: json,
-      }
-    )
-    return res.ok
+    await put(blobPath(filename), json, { access: 'private' })
+    return true
   } catch {
     return false
   }
