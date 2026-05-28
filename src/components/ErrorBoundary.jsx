@@ -1,7 +1,6 @@
 "use client";
 
 import { Component } from "react";
-import { useLoading } from "@/context/LoadingContext";
 
 // Error fallback component for WebGL errors
 function ErrorFallback({ error, isMobile }) {
@@ -56,15 +55,12 @@ export default class ErrorBoundary extends Component {
       console.error("Repeated errors detected, check device capabilities");
     }
 
-    // Call markReady on unrecoverable errors to prevent infinite loading
-    const loadingContext = this.context;
     if (
       error.message.includes("WebGL") ||
       error.message.includes("context") ||
       error.message.includes("texture")
     ) {
       console.warn("WebGL-related error detected");
-      // Let the loading context know about the error if available
     }
   }
 

@@ -1,3 +1,8 @@
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   transpilePackages: ["three", "@react-three/fiber", "@react-three/drei"],
@@ -30,13 +35,15 @@ const nextConfig = {
   },
 
   // Turbopack configuration for Next.js 16
-  turbopack: {},
+  turbopack: {
+    root: __dirname,
+  },
 
   // Headers for caching and performance
   async headers() {
     return [
       {
-        source: '/public/models/:path*',
+        source: '/models/:path*',
         headers: [
           {
             key: 'Cache-Control',
@@ -45,7 +52,25 @@ const nextConfig = {
         ],
       },
       {
-        source: '/public/images/:path*',
+        source: '/images/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      {
+        source: '/tool-logos/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      {
+        source: '/company-logos/:path*',
         headers: [
           {
             key: 'Cache-Control',

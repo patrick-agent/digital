@@ -1,9 +1,13 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import styles from "./HeroSection.module.css";
-import GradientBlinds from "../canvas/GradientBlinds";
+
+const GradientBlinds = dynamic(
+  () => import("../canvas/GradientBlinds"),
+  { ssr: false, loading: () => null }
+);
 
 const CharacterCanvas = dynamic(
   () => import("../canvas/CharacterCanvas"),
@@ -13,6 +17,8 @@ const CharacterCanvas = dynamic(
 export default function HeroSection() {
   const sectionRef = useRef(null);
   const textRef = useRef(null);
+  const [enableHeroEffects, setEnableHeroEffects] = useState(false);
+  const [enableCharacter, setEnableCharacter] = useState(false);
 
   useEffect(() => {
     const textEl = textRef.current;
@@ -23,23 +29,41 @@ export default function HeroSection() {
     });
   }, []);
 
+  useEffect(() => {
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const isMobile = window.innerWidth < 768;
+    const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+    const isSlowNetwork = ["slow-2g", "2g", "3g"].includes(connection?.effectiveType);
+
+    if (reduceMotion || isMobile || isSlowNetwork) return;
+
+    const timer = window.setTimeout(() => {
+      setEnableHeroEffects(true);
+      setEnableCharacter(true);
+    }, 500);
+
+    return () => window.clearTimeout(timer);
+  }, []);
+
   return (
     <section id="hero" className={styles.hero} ref={sectionRef}>
       <div className={styles.heroFullScreenCanvas}>
-        <GradientBlinds
-          gradientColors={['#FF9FFC', '#5227FF']}
-          angle={0}
-          noise={0.3}
-          blindCount={20}
-          blindMinWidth={50}
-          spotlightRadius={0.5}
-          spotlightSoftness={1}
-          spotlightOpacity={1}
-          mouseDampening={0.15}
-          distortAmount={0}
-          shineDirection="left"
-          mixBlendMode="lighten"
-        />
+        {enableHeroEffects && (
+          <GradientBlinds
+            gradientColors={['#FF9FFC', '#5227FF']}
+            angle={0}
+            noise={0.3}
+            blindCount={20}
+            blindMinWidth={50}
+            spotlightRadius={0.5}
+            spotlightSoftness={1}
+            spotlightOpacity={1}
+            mouseDampening={0.15}
+            distortAmount={0}
+            shineDirection="left"
+            mixBlendMode="lighten"
+          />
+        )}
       </div>
 
       <div className={styles.heroInner}>
@@ -93,9 +117,11 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <div id="hero-character" className={styles.characterOverlay}>
-          <CharacterCanvas />
-        </div>
+        {enableCharacter && (
+          <div id="hero-character" className={styles.characterOverlay}>
+            <CharacterCanvas />
+          </div>
+        )}
       </div>
     </section>
   );

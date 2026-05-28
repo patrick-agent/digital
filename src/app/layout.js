@@ -1,7 +1,6 @@
 import { Geist, Geist_Mono, Caveat } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "sonner";
-import { LoadingProvider } from "@/context/LoadingContext";
 
 /**
  * Optimized font loading with display settings for better performance
@@ -27,7 +26,7 @@ const caveat = Caveat({
   subsets: ["latin"],
   weight: ["500", "600", "700"],
   display: "swap",
-  preload: true,
+  preload: false,
 });
 
 export const metadata = {
@@ -82,9 +81,7 @@ export default function RootLayout({ children }) {
         <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
       </head>
       <body suppressHydrationWarning>
-        <LoadingProvider>
-          {children}
-        </LoadingProvider>
+        {children}
         <Toaster
           position="top-right"
           richColors

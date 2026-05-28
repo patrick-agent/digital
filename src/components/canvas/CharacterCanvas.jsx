@@ -4,7 +4,6 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import CharacterModel from "./CharacterModel";
 import PostProcessing from "./PostProcessing";
 import { useCanvasOptimizer } from "@/hooks/useCanvasOptimizer";
-import { useLoading } from "@/context/LoadingContext";
 import * as THREE from "three";
 
 function toNorm(clientX, clientY, rect) {
@@ -33,8 +32,7 @@ export default function CharacterCanvas() {
   const [mounted, setMounted] = useState(false);
   const [contextLost, setContextLost] = useState(false);
   const scrollTick = useRef(0);
-  const { isMobile, isTablet, devicePixelRatio } = useCanvasOptimizer();
-  const { markReady } = useLoading();
+  const { isMobile, isTablet } = useCanvasOptimizer();
 
   useEffect(() => {
     setMounted(true);
