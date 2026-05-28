@@ -66,13 +66,23 @@ async function readBlob(filename) {
 }
 
 async function writeBlob(filename, data) {
-  if (!blobToken()) return false
+  const token = blobToken()
+  const storeId = blobStoreId()
+  if (!token || !storeId) return false
   try {
     const json = JSON.stringify(data, null, 2)
-    const url = blobWriteUrl(filename)
-    const res = await fetch(url, {
+    const path = blobPath(filename)
+    const res = await fetch(`https://vercel.com/api/blob/?pathname=${encodeURIComponent(path)}`, {
       method: 'PUT',
-      headers: { ...blobAuthHeaders(), 'Content-Type': 'application/json' },
+      headers: {
+        authorization: `Bearer ${token}`,
+        'x-vercel-blob-store-id': storeId,
+        'x-api-version': '12',
+        'x-vercel-blob-access': 'private',
+        'x-add-random-suffix': '0',
+        'x-allow-overwrite': '1',
+        'x-content-type': 'application/json',
+      },
       body: json,
     })
     if (!res.ok) {
