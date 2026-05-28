@@ -2,7 +2,6 @@
 import { Suspense, useEffect, useRef, useState, useCallback } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import CharacterModel from "./CharacterModel";
-import PostProcessing from "./PostProcessing";
 import { useCanvasOptimizer } from "@/hooks/useCanvasOptimizer";
 import * as THREE from "three";
 
@@ -150,7 +149,7 @@ export default function CharacterCanvas() {
         }}
         gl={{ 
           alpha: true, 
-          antialias: !isMobile,
+          antialias: false,
           powerPreference: "low-power",
           failIfMajorPerformanceCaveat: true,
           preserveDrawingBuffer: false,
@@ -167,13 +166,6 @@ export default function CharacterCanvas() {
         <pointLight position={[-5, 3, 5]} intensity={2.5} color="#8b5cf6" />
         <directionalLight position={[0, 5, 5]} intensity={3} color="#ffffff" />
 
-        <PostProcessing
-          bloomIntensity={isMobile ? 1 : 0.8}
-          bloom={!isMobile}
-          noise={!isMobile}
-          chromaticAberration={false}
-          vignette={!isMobile}
-        />
         <Suspense fallback={null}>
           <CharacterModel
             mousePos={isMobile ? { x: 0, y: 0 } : mousePos}

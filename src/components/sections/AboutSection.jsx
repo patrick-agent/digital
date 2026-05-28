@@ -2,7 +2,6 @@
 
 import { useRef, useEffect, useState, useCallback } from "react";
 import dynamic from "next/dynamic";
-import * as THREE from "three";
 import styles from "./AboutSection.module.css";
 import GlassPanel from "../ui/GlassPanel";
 import SectionTitle from "../ui/SectionTitle";
@@ -13,12 +12,14 @@ const AboutCharacterCanvas = dynamic(
   { ssr: false, loading: () => null }
 );
 
+const degToRad = (deg) => (deg * Math.PI) / 180;
+
 const CHAR_CONFIG = {
   startPos: { x: 200, y: 20, z: 100 },
-  startRot: { x: THREE.MathUtils.degToRad(-12), y: THREE.MathUtils.degToRad(35), z: THREE.MathUtils.degToRad(8.5) },
+  startRot: { x: degToRad(-12), y: degToRad(35), z: degToRad(8.5) },
   startScale: { x: 0.7, y: 0.7, z: 0.7 },
   endPos: { x: 0, y: 35, z: 0 },
-  endRot: { x: THREE.MathUtils.degToRad(-12), y: THREE.MathUtils.degToRad(35), z: THREE.MathUtils.degToRad(8.5) },
+  endRot: { x: degToRad(-12), y: degToRad(35), z: degToRad(8.5) },
   endScale: { x: 0.7, y: 0.7, z: 0.7 },
 };
 

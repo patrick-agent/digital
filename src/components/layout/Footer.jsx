@@ -3,16 +3,13 @@
 import { useRef, useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import styles from "./Footer.module.css";
-import { Canvas } from "@react-three/fiber";
-import ParticleField from "../canvas/ParticleField";
-import { useCanvasOptimizer } from "@/hooks/useCanvasOptimizer";
 import {
   FacebookIcon, InstagramIcon, YouTubeIcon, TikTokIcon,
   SpotifyIcon, AppleMusicIcon, AmazonMusicIcon
 } from "../icons/SocialIcons";
 
-const ByeCharacterCanvas = dynamic(
-  () => import("../canvas/ByeCharacterCanvas"),
+const FooterEffects = dynamic(
+  () => import("./FooterEffects"),
   { ssr: false, loading: () => null }
 );
 
@@ -64,28 +61,9 @@ function ShootingStars() {
   );
 }
 
-function ParticleBackground({ isMobile }) {
-  const { devicePixelRatio, isVisible } = useCanvasOptimizer({ threshold: 0 });
-  const particleCount = isMobile ? 30 : 60;
-
-  return (
-    <Canvas
-      style={{ position: "absolute", inset: 0, pointerEvents: "none" }}
-      camera={{ position: [0, 0, 10], fov: 60, near: 0.1, far: 50 }}
-      gl={{ alpha: true, antialias: !isMobile, powerPreference: "low-power" }}
-      dpr={devicePixelRatio}
-      frameloop={isVisible ? "always" : "demand"}
-    >
-      <ambientLight intensity={0.5} />
-      <ParticleField count={particleCount} color="#a855f7" spread={18} size={0.025} opacity={0.12} mouseReactive={!isMobile} />
-    </Canvas>
-  );
-}
-
 export default function Footer() {
   const [visible, setVisible] = useState(false);
   const sectionRef = useRef(null);
-  const { isMobile } = useCanvasOptimizer();
 
   useEffect(() => {
     const el = sectionRef.current;
@@ -108,12 +86,12 @@ export default function Footer() {
       <div className={styles.starsLayer}>
         {visible && <ShootingStars />}
       </div>
-      <div className={styles.canvasLayer}>
-        {visible && <ParticleBackground isMobile={isMobile} />}
-      </div>
-      <div className={styles.modelLayer}>
-        <ByeCharacterCanvas />
-      </div>
+      {visible && (
+        <FooterEffects
+          canvasClassName={styles.canvasLayer}
+          modelClassName={styles.modelLayer}
+        />
+      )}
       <div className={styles.content}>
         <div className={styles.brand}>
           <h3 className={styles.brandName}>TACHY</h3>

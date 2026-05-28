@@ -10,6 +10,7 @@
     "analyze": "node scripts/analyze-bundle.mjs",
     "models:analyze": "node scripts/compress-models.mjs",
     "models:compress": "node scripts/compress-models.mjs compress",
+    "music:covers:extract": "node scripts/extract-music-cover-art.mjs",
     "sync:blog": "node scripts/sync-blog.mjs",
     "sync:blog:dry": "node scripts/sync-blog.mjs --dry-run"
   },

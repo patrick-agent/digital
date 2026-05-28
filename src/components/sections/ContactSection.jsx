@@ -2,7 +2,6 @@
 
 import { useRef, useEffect, useState, useCallback } from "react";
 import dynamic from "next/dynamic";
-import * as THREE from "three";
 import styles from "./ContactSection.module.css";
 import GlassPanel from "../ui/GlassPanel";
 import { Canvas } from "@react-three/fiber";
@@ -18,6 +17,8 @@ const RumbaDancingCanvas = dynamic(
   () => import("../canvas/RumbaDancingCanvas"),
   { ssr: false, loading: () => null }
 );
+
+const degToRad = (deg) => (deg * Math.PI) / 180;
 
 const ICON_MAP = {
   Facebook: FacebookIcon,
@@ -77,7 +78,7 @@ function ParallaxNotes({ mouse }) {
 
 const SECTION_CONFIG = {
   startPos: { x: 0, y: -5, z: 0 },
-  startRot: { x: 0, y: THREE.MathUtils.degToRad(0), z: 0 },
+  startRot: { x: 0, y: degToRad(0), z: 0 },
   startScale: { x: 1.0, y: 1.0, z: 1.0 },
 };
 
@@ -90,7 +91,7 @@ function BackgroundLayers({ isMobile, mouse }) {
     <Canvas
       style={{ position: "absolute", inset: 0, pointerEvents: "none" }}
       camera={{ position: [0, 0, 10], fov: 60, near: 0.1, far: 50 }}
-      gl={{ alpha: true, antialias: !isMobile, powerPreference: "low-power" }}
+      gl={{ alpha: true, antialias: false, powerPreference: "low-power" }}
       dpr={devicePixelRatio}
       frameloop={isVisible ? "always" : "demand"}
     >

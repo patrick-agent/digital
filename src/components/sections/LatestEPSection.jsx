@@ -2,7 +2,6 @@
 
 import { useRef, useEffect, useState } from "react";
 import dynamic from "next/dynamic";
-import * as THREE from "three";
 import AuroraBackground from "./AuroraBackground";
 import styles from "./LatestEPSection.module.css";
 import GlassPanel from "../ui/GlassPanel";
@@ -13,6 +12,8 @@ const WaveCharacterCanvas = dynamic(
   () => import("../canvas/WaveCharacterCanvas"),
   { ssr: false, loading: () => null }
 );
+
+const degToRad = (deg) => (deg * Math.PI) / 180;
 
 const SECTION_CONFIG = {
   startPos: { x: 0, y: 0, z: 0 },
@@ -32,17 +33,17 @@ const PLATFORMS = [
   {
     id: "soundcloud",
     title: "SoundCloud",
-    embed: `<iframe width="100%" height="150" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A2034733239&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>`,
+    embed: `<iframe width="100%" height="150" scrolling="no" frameborder="no" loading="lazy" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A2034733239&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>`,
   },
   {
     id: "apple",
     title: "Apple Music",
-    embed: `<iframe allow="encrypted-media *;" frameborder="0" height="150" style="width:100%;border-radius:12px" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/gb/album/the-love-ep/1819560384"></iframe>`,
+    embed: `<iframe allow="encrypted-media *;" frameborder="0" height="150" loading="lazy" style="width:100%;border-radius:12px" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/gb/album/the-love-ep/1819560384"></iframe>`,
   },
   {
     id: "amazon",
     title: "Amazon Music",
-    embed: `<iframe id="AmazonMusicEmbedB0FCMVJD1C" src="https://music.amazon.com/embed/B0FCMVJD1C/?id=o9xGnAdU8V&marketplaceId=ATVPDKIKX0DER&musicTerritory=US" width="100%" height="352px" frameBorder="0" style="border-radius:20px;max-width:100%"></iframe>`,
+    embed: `<iframe id="AmazonMusicEmbedB0FCMVJD1C" src="https://music.amazon.com/embed/B0FCMVJD1C/?id=o9xGnAdU8V&marketplaceId=ATVPDKIKX0DER&musicTerritory=US" width="100%" height="352px" frameBorder="0" loading="lazy" style="border-radius:20px;max-width:100%"></iframe>`,
   },
 ];
 
@@ -115,7 +116,7 @@ export default function LatestEPSection() {
       }
 
       const startRotY = group.rotation.y;
-      const spinRad = THREE.MathUtils.degToRad(SECTION_CONFIG.spinRotation);
+      const spinRad = degToRad(SECTION_CONFIG.spinRotation);
 
       tl.to(group.position, { x: SECTION_CONFIG.endPos.x, duration: 2, ease: "power3.inOut" }, 0);
       tl.to(group.rotation, { y: startRotY + spinRad, duration: 2, ease: "power3.inOut" }, 0);

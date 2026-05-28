@@ -1,8 +1,8 @@
 'use client'
 
-import { useRef, useEffect } from 'react'
+import { useRef, useEffect, useState } from 'react'
 import dynamic from 'next/dynamic'
-import { useVisibilityLoader } from '@/hooks/useVisibilityLoader'
+import { useDeviceType, useVisibilityLoader } from '@/hooks/useVisibilityLoader'
 import styles from './AnotherMeHero.module.css'
 
 const SplineScene = dynamic(
@@ -16,6 +16,16 @@ export default function AnotherMeHero() {
   const taglineRef = useRef(null)
   const ctaRef = useRef(null)
   const { ref: visibilityRef, isVisible } = useVisibilityLoader({ rootMargin: '0px' })
+  const deviceType = useDeviceType()
+  const [allowSpline, setAllowSpline] = useState(false)
+
+  useEffect(() => {
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection
+    const isSlowNetwork = ['slow-2g', '2g', '3g'].includes(connection?.effectiveType)
+    const isDesktopViewport = window.innerWidth >= 1024
+    setAllowSpline(!reduceMotion && !isSlowNetwork && deviceType === 'desktop' && isDesktopViewport)
+  }, [deviceType])
 
   useEffect(() => {
     let ctx
@@ -63,7 +73,7 @@ export default function AnotherMeHero() {
   return (
     <section ref={(el) => { sectionRef.current = el; visibilityRef.current = el; }} id="hero" className={styles.section}>
       <div className={styles.splineWrapper}>
-        {isVisible && <SplineScene scene="https://prod.spline.design/FaJ3iYbeeDlZbkJI/scene.splinecode" />}
+        {isVisible && allowSpline && <SplineScene scene="https://prod.spline.design/FaJ3iYbeeDlZbkJI/scene.splinecode" />}
         <div className={styles.splineOverlay} />
       </div>
 

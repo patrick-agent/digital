@@ -1,8 +1,9 @@
 import Link from "next/link"
+import Image from "next/image"
 import { readProducts } from "@/lib/db"
 import styles from "./shop.module.css"
 
-export const dynamic = "force-dynamic"
+export const revalidate = 300
 
 export const metadata = {
   title: "Shop — Tachy Artist",
@@ -110,11 +111,12 @@ export default async function ShopPage() {
               <article key={product.id} className={styles.card}>
                 <Link href={`/shop/${product.slug}`} className={styles.cardImageWrap}>
                   {product.images?.[0] ? (
-                    <img
+                    <Image
                       src={product.images[0]}
                       alt={product.name}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       className={styles.cardImage}
-                      loading="lazy"
                     />
                   ) : (
                     <div

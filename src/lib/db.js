@@ -1,8 +1,9 @@
-import { readFile, writeFile, mkdir } from "fs/promises"
+import { readFile, writeFile, mkdir, stat } from "fs/promises"
 import { existsSync } from "fs"
 import path from "path"
 
 const DB_DIR = path.join(process.cwd(), "db")
+const jsonCache = new Map()
 
 async function ensureDbDir() {
   if (!existsSync(DB_DIR)) {
@@ -14,16 +15,28 @@ async function readJSON(filename) {
   await ensureDbDir()
   const filePath = path.join(DB_DIR, filename)
   if (!existsSync(filePath)) {
+    jsonCache.delete(filePath)
     return []
   }
   try {
+    const fileStats = await stat(filePath)
+    const cached = jsonCache.get(filePath)
+    if (cached?.mtimeMs === fileStats.mtimeMs && cached?.size === fileStats.size) {
+      return cached.data
+    }
+
     const raw = await readFile(filePath, "utf-8")
     if (!raw || raw.trim() === "") {
-      return []
+      const data = []
+      jsonCache.set(filePath, { mtimeMs: fileStats.mtimeMs, size: fileStats.size, data })
+      return data
     }
-    return JSON.parse(raw)
+    const data = JSON.parse(raw)
+    jsonCache.set(filePath, { mtimeMs: fileStats.mtimeMs, size: fileStats.size, data })
+    return data
   } catch (error) {
     console.error(`Error reading/parsing ${filename}:`, error.message)
+    jsonCache.delete(filePath)
     return []
   }
 }
@@ -32,6 +45,7 @@ async function writeJSON(filename, data) {
   await ensureDbDir()
   const filePath = path.join(DB_DIR, filename)
   await writeFile(filePath, JSON.stringify(data, null, 2), "utf-8")
+  jsonCache.delete(filePath)
 }
 
 function slugify(text) {

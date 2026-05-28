@@ -40,7 +40,7 @@ const Footer = dynamic(() => import("@/components/layout/Footer"), {
   loading: () => <SectionPlaceholder minHeight="55vh" />,
 });
 
-function LazyMount({ id, minHeight, children, rootMargin = "900px 0px" }) {
+function LazyMount({ id, minHeight, children, rootMargin = "400px 0px" }) {
   const ref = useRef(null);
   const [shouldRender, setShouldRender] = useState(false);
 
@@ -77,16 +77,16 @@ export default function HomeLazySections() {
       <LazyMount id="about" minHeight="100vh">
         <AboutSection />
       </LazyMount>
-      <LazyMount id="music" minHeight="100vh">
+      <LazyMount id="music" minHeight="100vh" rootMargin="350px 0px">
         <MusicSection />
       </LazyMount>
-      <LazyMount id="latest-ep" minHeight="90vh">
+      <LazyMount id="latest-ep" minHeight="90vh" rootMargin="300px 0px">
         <LatestEPSection />
       </LazyMount>
-      <LazyMount id="donation" minHeight="70vh">
+      <LazyMount id="donation" minHeight="70vh" rootMargin="250px 0px">
         <DonationSection />
       </LazyMount>
-      <LazyMount id="contact" minHeight="100vh">
+      <LazyMount id="contact" minHeight="100vh" rootMargin="250px 0px">
         <ContactSection />
       </LazyMount>
     </>
@@ -95,7 +95,7 @@ export default function HomeLazySections() {
 
 export function LazyFooter() {
   return (
-    <LazyMount minHeight="55vh" rootMargin="500px 0px">
+    <LazyMount minHeight="55vh" rootMargin="250px 0px">
       <Footer />
     </LazyMount>
   );

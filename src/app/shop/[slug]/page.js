@@ -1,9 +1,15 @@
 import Link from "next/link"
+import Image from "next/image"
 import { notFound } from "next/navigation"
 import { readProducts, readProduct } from "@/lib/db"
 import styles from "@/app/shop/shop.module.css"
 
-export const dynamic = "force-dynamic"
+export const revalidate = 300
+
+export async function generateStaticParams() {
+  const { data } = await readProducts({ status: "active", limit: 1000 })
+  return data.map((product) => ({ slug: product.slug }))
+}
 
 function stripHtml(html) {
   return html?.replace(/<[^>]*>/g, "").trim() || ""
@@ -114,7 +120,14 @@ export default async function ProductDetailPage({ params }) {
       <div className={styles.detailGrid}>
         <div className={styles.detailImageWrap}>
           {product.images?.[0] ? (
-            <img src={product.images[0]} alt={product.name} className={styles.detailImage} />
+            <Image
+              src={product.images[0]}
+              alt={product.name}
+              fill
+              priority
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className={styles.detailImage}
+            />
           ) : (
             <div style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", color: "var(--text-muted)", fontSize: "var(--fs-sm)", fontFamily: "var(--font-mono)" }}>
               no image
@@ -219,7 +232,13 @@ export default async function ProductDetailPage({ params }) {
               <article key={rp.id} className={styles.card}>
                 <Link href={`/shop/${rp.slug}`} className={styles.cardImageWrap}>
                   {rp.images?.[0] ? (
-                    <img src={rp.images[0]} alt={rp.name} className={styles.cardImage} loading="lazy" />
+                    <Image
+                      src={rp.images[0]}
+                      alt={rp.name}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      className={styles.cardImage}
+                    />
                   ) : (
                     <div style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", color: "var(--text-muted)", fontSize: "var(--fs-sm)", fontFamily: "var(--font-mono)" }}>
                       no image

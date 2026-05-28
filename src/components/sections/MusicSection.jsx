@@ -5,7 +5,6 @@
 
 import { useRef, useEffect, useState, useMemo } from "react";
 import dynamic from "next/dynamic";
-import * as THREE from "three";
 import AuroraBackground from "./AuroraBackground";
 import styles from "./MusicSection.module.css";
 import GlassPanel from "../ui/GlassPanel";
@@ -17,12 +16,14 @@ const PointingCharacterCanvas = dynamic(
   { ssr: false, loading: () => null }
 );
 
+const degToRad = (deg) => (deg * Math.PI) / 180;
+
 const CHAR_CONFIG = {
   startPos: { x: 0, y: 200, z: 0 },
-  startRot: { x: THREE.MathUtils.degToRad(-20), y: THREE.MathUtils.degToRad(35), z: THREE.MathUtils.degToRad(8.5) },
+  startRot: { x: degToRad(-20), y: degToRad(35), z: degToRad(8.5) },
   startScale: { x: 0.7, y: 0.7, z: 0.7 },
   endPos: { x: 0, y: 50, z: 0 },
-  endRot: { x: THREE.MathUtils.degToRad(-20), y: THREE.MathUtils.degToRad(35), z: THREE.MathUtils.degToRad(8.5) },
+  endRot: { x: degToRad(-20), y: degToRad(35), z: degToRad(8.5) },
   endScale: { x: 0.7, y: 0.7, z: 0.7 },
 };
 
@@ -204,11 +205,13 @@ export default function MusicSection() {
           <GlassPanel variant="elevated" style={{ width: "100%", marginBottom: 25, overflow: "hidden", padding: 0 }}>
             <div className={styles.mainPlayer}>
               <iframe
-                src={`https://www.youtube.com/embed/${activeVideo.videoId}?autoplay=1&mute=1`}
+                src={`https://www.youtube-nocookie.com/embed/${activeVideo.videoId}?rel=0&modestbranding=1`}
                 title={activeVideo.title}
                 frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
+                loading="lazy"
+                referrerPolicy="strict-origin-when-cross-origin"
               />
             </div>
           </GlassPanel>

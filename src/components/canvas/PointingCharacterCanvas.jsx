@@ -47,7 +47,6 @@ function SoundwaveBase() {
 
 function PointingModel() {
   const { scene, animations } = useGLTF("/models/pointing-to-the-right-hologram.glb");
-  const { scene: fallbackScene, animations: fallbackAnimations } = useGLTF("/models/Walking.glb");
   const mixerRef = useRef(null);
 
   useEffect(() => {
@@ -64,19 +63,15 @@ function PointingModel() {
           }
         }
       });
-      const hasAnim = animations?.length;
-      const needsFallback = !hasAnim && fallbackAnimations?.length;
-      const anims = hasAnim ? animations : (needsFallback ? fallbackAnimations : null);
-      const root = hasAnim ? scene : (needsFallback ? fallbackScene : scene);
-      if (anims) {
-        mixerRef.current = new THREE.AnimationMixer(root);
-        const action = mixerRef.current.clipAction(anims[0]);
+      if (animations?.length) {
+        mixerRef.current = new THREE.AnimationMixer(scene);
+        const action = mixerRef.current.clipAction(animations[0]);
         action.setLoop(THREE.LoopRepeat);
         action.play();
       }
     } catch (e) { console.error(e); }
     return () => { if (mixerRef.current) mixerRef.current.stopAllAction(); };
-  }, [scene, animations, fallbackScene, fallbackAnimations]);
+  }, [scene, animations]);
 
   useFrame((_, delta) => { if (mixerRef.current) mixerRef.current.update(delta); });
   if (!scene) return null;

@@ -13,8 +13,8 @@ export function useCanvasOptimizer(options = {}) {
   const {
     threshold = 0.1,
     rootMargin = "200px",
-    pixelRatioCap = 2,
-    mobilePixelRatioCap = 1.5,
+    pixelRatioCap = 1.5,
+    mobilePixelRatioCap = 1,
     skipInitialVisibility = false,
   } = options;
 

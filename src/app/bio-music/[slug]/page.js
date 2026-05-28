@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation"
-import { readMusicItem } from "@/lib/db"
+import Image from "next/image"
+import { readMusic, readMusicItem } from "@/lib/db"
 import PlatformLinksCard from "@/components/artist/bio-music/PlatformLinksCard"
 import LightPillar from "@/components/ui/LightPillar"
 import {
@@ -9,7 +10,14 @@ import {
 } from "@/components/icons/SocialIcons"
 import styles from "./page.module.css"
 
-export const dynamic = "force-dynamic"
+export const revalidate = 300
+
+export async function generateStaticParams() {
+  const { data } = await readMusic({ limit: 1000 })
+  return data
+    .filter((release) => release.status === "published")
+    .map((release) => ({ slug: release.slug }))
+}
 
 export async function generateMetadata({ params }) {
   const { slug } = await params
@@ -58,9 +66,13 @@ export default async function BioMusicDetailPage({ params }) {
         {/* Cover Art */}
         <div className={styles.coverBlock}>
           {release.coverArt ? (
-            <img
+            <Image
               src={release.coverArt}
               alt={release.title}
+              width={280}
+              height={280}
+              priority
+              sizes="280px"
               className={styles.coverImage}
               style={{ width: 280, height: 280, borderRadius: 'var(--radius-xl)', objectFit: 'cover', boxShadow: '0 8px 40px rgba(168, 85, 247, 0.15)' }}
             />

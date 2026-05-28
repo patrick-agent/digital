@@ -1,8 +1,7 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import dynamic from 'next/dynamic'
-import AnotherMeLoading from './loading'
 
 const AnotherMeHero = dynamic(() => import('@/components/another-me/AnotherMeHero'), {
   ssr: false,
@@ -39,26 +38,63 @@ const AnotherMeContact = dynamic(() => import('@/components/another-me/AnotherMe
   loading: () => <div style={{ height: '50vh', background: '#0a0a0f' }} />,
 })
 
-export default function AnotherMePageContent() {
-  const [mounted, setMounted] = useState(false)
+function SectionPlaceholder({ minHeight = '80vh' }) {
+  return <div style={{ minHeight, background: '#0a0a0f' }} aria-hidden="true" />
+}
+
+function LazyMount({ children, minHeight = '80vh', rootMargin = '350px 0px' }) {
+  const ref = useRef(null)
+  const [shouldRender, setShouldRender] = useState(false)
 
   useEffect(() => {
-    setMounted(true)
-  }, [])
+    if (shouldRender) return
+    const el = ref.current
+    if (!el || !('IntersectionObserver' in window)) {
+      setShouldRender(true)
+      return
+    }
 
-  if (!mounted) {
-    return <AnotherMeLoading />
-  }
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setShouldRender(true)
+          observer.disconnect()
+        }
+      },
+      { rootMargin, threshold: 0 }
+    )
 
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [rootMargin, shouldRender])
+
+  if (shouldRender) return children
+
+  return <div ref={ref}><SectionPlaceholder minHeight={minHeight} /></div>
+}
+
+export default function AnotherMePageContent() {
   return (
     <>
       <AnotherMeHero />
-      <AnotherMeSocialProof />
-      <AnotherMeTransition />
-      <AnotherMeTimeline />
-      <AnotherMeSkills />
-      <AnotherMeServices />
-      <AnotherMeContact />
+      <LazyMount minHeight="100vh">
+        <AnotherMeSocialProof />
+      </LazyMount>
+      <LazyMount minHeight="40vh" rootMargin="250px 0px">
+        <AnotherMeTransition />
+      </LazyMount>
+      <LazyMount minHeight="100vh" rootMargin="300px 0px">
+        <AnotherMeTimeline />
+      </LazyMount>
+      <LazyMount minHeight="60vh" rootMargin="250px 0px">
+        <AnotherMeSkills />
+      </LazyMount>
+      <LazyMount minHeight="80vh" rootMargin="250px 0px">
+        <AnotherMeServices />
+      </LazyMount>
+      <LazyMount minHeight="50vh" rootMargin="200px 0px">
+        <AnotherMeContact />
+      </LazyMount>
     </>
   )
 }

@@ -14,9 +14,9 @@ export default function AuroraBackground({ className, isMobile = false }) {
     const gl = canvas.getContext('webgl2') || canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
     if (!gl) return;
 
-    const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: !isMobile, canvas });
+    const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: false, canvas, powerPreference: "low-power" });
     renderer.setSize(container.clientWidth, container.clientHeight);
-    renderer.setPixelRatio(isMobile ? 1 : Math.min(window.devicePixelRatio, 1.5));
+    renderer.setPixelRatio(isMobile ? 1 : Math.min(window.devicePixelRatio, 1.25));
     container.appendChild(renderer.domElement);
 
     const scene = new THREE.Scene();
@@ -101,9 +101,10 @@ export default function AuroraBackground({ className, isMobile = false }) {
     scene.add(mesh);
 
     const clock = new THREE.Clock();
+    let frameId = 0;
 
     function animate() {
-      requestAnimationFrame(animate);
+      frameId = requestAnimationFrame(animate);
       const elapsedTime = clock.getElapsedTime();
       material.uniforms.uTime.value = elapsedTime;
       renderer.render(scene, camera);
@@ -125,14 +126,15 @@ export default function AuroraBackground({ className, isMobile = false }) {
 
     // Cleanup
     return () => {
+      cancelAnimationFrame(frameId);
       window.removeEventListener("resize", onWindowResize);
+      geometry.dispose();
+      material.dispose();
       renderer.dispose();
-      scene.traverse((object) => {
-        if (object.isMesh) {
-          geometry.dispose();
-          material.dispose();
-        }
-      });
+      renderer.forceContextLoss?.();
+      if (renderer.domElement.parentElement === container) {
+        container.removeChild(renderer.domElement);
+      }
     };
   }, [isMobile]);
 

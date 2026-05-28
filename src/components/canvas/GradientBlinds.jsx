@@ -48,15 +48,18 @@ const GradientBlinds = ({
   const mouseTargetRef = useRef([0, 0]);
   const lastTimeRef = useRef(0);
   const firstResizeRef = useRef(true);
+  const visibleRef = useRef(true);
 
   useEffect(() => {
     const container = containerRef.current;
     if (!container) return;
 
+    const targetDpr = dpr ?? (typeof window !== 'undefined' ? window.devicePixelRatio || 1 : 1);
     const renderer = new Renderer({
-      dpr: dpr ?? (typeof window !== 'undefined' ? window.devicePixelRatio || 1 : 1),
+      dpr: Math.min(targetDpr, 1.25),
       alpha: true,
-      antialias: true
+      antialias: false,
+      powerPreference: 'low-power'
     });
     rendererRef.current = renderer;
     const gl = renderer.gl;
@@ -255,6 +258,16 @@ void main() {
     const ro = new ResizeObserver(resize);
     ro.observe(container);
 
+    const io = 'IntersectionObserver' in window
+      ? new IntersectionObserver(
+        ([entry]) => {
+          visibleRef.current = entry.isIntersecting;
+        },
+        { threshold: 0.01 }
+      )
+      : null;
+    io?.observe(container);
+
     const onPointerMove = e => {
       const rect = canvas.getBoundingClientRect();
       const scale = renderer.dpr || 1;
@@ -284,7 +297,7 @@ void main() {
       } else {
         lastTimeRef.current = t;
       }
-      if (!paused && programRef.current && meshRef.current) {
+      if (!paused && visibleRef.current && !document.hidden && programRef.current && meshRef.current) {
         try {
           renderer.render({ scene: meshRef.current });
         } catch (e) {
@@ -298,6 +311,7 @@ void main() {
       if (rafRef.current) cancelAnimationFrame(rafRef.current);
       canvas.removeEventListener('pointermove', onPointerMove);
       ro.disconnect();
+      io?.disconnect();
       if (canvas.parentElement === container) {
         container.removeChild(canvas);
       }

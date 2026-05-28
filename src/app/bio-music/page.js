@@ -4,7 +4,7 @@ import ReleaseCard from "@/components/artist/bio-music/ReleaseCard"
 import SpotlightCard from "@/components/canvas/SpotlightCard"
 import styles from "./page.module.css"
 
-export const dynamic = "force-dynamic"
+export const revalidate = 300
 
 export const metadata = {
   title: "Bio Music — Tachy Artist",

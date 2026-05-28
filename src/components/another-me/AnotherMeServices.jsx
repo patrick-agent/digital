@@ -1,10 +1,15 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import dynamic from 'next/dynamic';
 import { TrendingUp, DollarSign, Code, Bot } from 'lucide-react';
-import { GridScan } from '@/components/ui/GridScan';
 import { useVisibilityLoader, useDeviceType } from '@/hooks/useVisibilityLoader';
 import styles from './AnotherMeServices.module.css';
+
+const GridScan = dynamic(
+  () => import('@/components/ui/GridScan').then((mod) => mod.GridScan),
+  { ssr: false, loading: () => null }
+);
 
 const services = [
   {
@@ -50,27 +55,36 @@ export default function AnotherMeServices() {
     const section = sectionRef.current;
     if (!section) return;
 
-    let gsap, ScrollTrigger;
+    let ctx;
+    let cancelled = false;
     (async () => {
       const gsapModule = await import('gsap');
       const scrollModule = await import('gsap/ScrollTrigger');
-      gsap = gsapModule.default || gsapModule;
-      ScrollTrigger = scrollModule.ScrollTrigger || scrollModule.default?.ScrollTrigger;
+      if (cancelled) return;
+
+      const gsap = gsapModule.default || gsapModule;
+      const ScrollTrigger = scrollModule.ScrollTrigger || scrollModule.default?.ScrollTrigger;
       gsap.registerPlugin(ScrollTrigger);
 
-      const header = section.querySelector(`.${styles.header}`);
+      ctx = gsap.context(() => {
+        const header = section.querySelector(`.${styles.header}`);
+        if (!header) return;
 
-      gsap.fromTo(header, { y: 30, opacity: 0 }, {
-        y: 0, opacity: 1, duration: 0.6, ease: 'power2.out',
-        scrollTrigger: {
-          trigger: section,
-          start: 'top 75%',
-          toggleActions: 'play none none reverse',
-        }
-      });
-
-      return () => ScrollTrigger.getAll().forEach(t => t.kill());
+        gsap.fromTo(header, { y: 30, opacity: 0 }, {
+          y: 0, opacity: 1, duration: 0.6, ease: 'power2.out',
+          scrollTrigger: {
+            trigger: section,
+            start: 'top 75%',
+            toggleActions: 'play none none reverse',
+          }
+        });
+      }, section);
     })();
+
+    return () => {
+      cancelled = true;
+      ctx?.revert();
+    };
   }, []);
 
   return (

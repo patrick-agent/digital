@@ -1,6 +1,5 @@
 import { Geist, Geist_Mono, Caveat } from "next/font/google";
 import "./globals.css";
-import { Toaster } from "sonner";
 
 /**
  * Optimized font loading with display settings for better performance
@@ -24,7 +23,7 @@ const geistMono = Geist_Mono({
 const caveat = Caveat({
   variable: "--font-caveat",
   subsets: ["latin"],
-  weight: ["500", "600", "700"],
+  weight: ["600"],
   display: "swap",
   preload: false,
 });
@@ -73,27 +72,8 @@ export const viewport = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${caveat.variable}`}>
-      <head>
-        {/* Preconnect to external domains for faster loading */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        {/* DNS prefetch for CDN resources */}
-        <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
-      </head>
       <body suppressHydrationWarning>
         {children}
-        <Toaster
-          position="top-right"
-          richColors
-          closeButton
-          toastOptions={{
-            style: {
-              background: "#1a1a2e",
-              border: "1px solid rgba(168, 85, 247, 0.2)",
-              color: "#fff",
-            },
-          }}
-        />
       </body>
     </html>
   );
