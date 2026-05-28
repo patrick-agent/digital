@@ -87,16 +87,16 @@ async function readJSON(filename) {
 }
 
 async function writeJSON(filename, data) {
-  if (isVercel && blobToken()) {
+  if (isVercel) {
     const ok = await writeBlob(filename, data)
     jsonCache.delete(`blob:${filename}`)
     if (ok) return
-  }
-
-  if (isVercel) {
     throw new Error(
-      `Cannot write ${filename} on Vercel. ` +
-      "Set BLOB_READ_WRITE_TOKEN in Vercel Environment Variables."
+      `Blob write failed for ${filename}. ` +
+      (blobToken()
+        ? "Check Vercel Function Logs for details."
+        : "Set BLOB_READ_WRITE_TOKEN in Vercel Environment Variables."
+      )
     )
   }
 
@@ -119,16 +119,16 @@ async function readFileJSON(filename) {
 }
 
 async function writeFileJSON(filename, data) {
-  if (isVercel && blobToken()) {
+  if (isVercel) {
     const ok = await writeBlob(filename, data)
     jsonCache.delete(`blob:${filename}`)
     if (ok) return
-  }
-
-  if (isVercel) {
     throw new Error(
-      `Cannot write ${filename} on Vercel. ` +
-      "Set BLOB_READ_WRITE_TOKEN in Vercel Environment Variables."
+      `Blob write failed for ${filename}. ` +
+      (blobToken()
+        ? "Check Vercel Function Logs for details."
+        : "Set BLOB_READ_WRITE_TOKEN in Vercel Environment Variables."
+      )
     )
   }
 
