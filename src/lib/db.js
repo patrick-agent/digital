@@ -301,9 +301,9 @@ export async function updatePost(id, data) {
   return posts[index]
 }
 
-export async function deletePost(id) {
+export async function deletePost(idOrSlug) {
   const posts = await readJSON("blog.json")
-  const index = posts.findIndex((p) => p.id === id)
+  const index = posts.findIndex((p) => p.id === idOrSlug || p.slug === idOrSlug)
   if (index === -1) return false
 
   posts.splice(index, 1)
