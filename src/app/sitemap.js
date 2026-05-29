@@ -1,18 +1,27 @@
 import { getAllPublishedSlugs, getAllCategories } from "@/lib/blog"
+import { getAllRoutes } from "@/lib/db"
 import { siteMetadata } from "@/lib/seo"
+import { readMusic } from "@/lib/db"
+import { readProducts } from "@/lib/db"
 
 const DOMAIN = siteMetadata.siteUrl
+
+const staticPages = [
+  { route: "/", priority: 1.0, frequency: "monthly" },
+  { route: "/about", priority: 0.8, frequency: "monthly" },
+  { route: "/contact", priority: 0.6, frequency: "yearly" },
+  { route: "/privacy", priority: 0.3, frequency: "yearly" },
+  { route: "/terms", priority: 0.3, frequency: "yearly" },
+  { route: "/blog", priority: 0.9, frequency: "daily" },
+  { route: "/bio-music", priority: 0.8, frequency: "weekly" },
+  { route: "/shop", priority: 0.7, frequency: "weekly" },
+  { route: "/digital", priority: 0.7, frequency: "weekly" },
+  { route: "/digital/blog", priority: 0.6, frequency: "weekly" },
+]
 
 export default async function sitemap() {
   const slugs = await getAllPublishedSlugs()
   const categories = await getAllCategories()
-
-  const postUrls = slugs.map((p) => ({
-    url: `${DOMAIN}/blog/${p.category}/${p.slug}`,
-    lastModified: p.updatedAt || p.publishedAt,
-    changeFrequency: "weekly",
-    priority: 0.8,
-  }))
 
   const categoryUrls = categories.map((cat) => ({
     url: `${DOMAIN}/blog/${cat}`,
@@ -21,20 +30,80 @@ export default async function sitemap() {
     priority: 0.6,
   }))
 
-  return [
-    {
-      url: DOMAIN,
+  const postUrls = slugs.map((p) => {
+    const url = p.category
+      ? `${DOMAIN}/blog/${p.category}/${p.slug}`
+      : `${DOMAIN}/blog/${p.slug}`
+    return {
+      url,
+      lastModified: p.updatedAt || p.publishedAt,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    }
+  })
+
+  let musicUrls = []
+  try {
+    const music = (await readMusic()).data || []
+    musicUrls = music
+      .filter((m) => m.status === "published" || !m.status)
+      .map((m) => ({
+        url: `${DOMAIN}/bio-music/${m.slug}`,
+        lastModified: m.updatedAt || m.publishedAt || new Date(),
+        changeFrequency: "monthly",
+        priority: 0.7,
+      }))
+  } catch {}
+
+  let productUrls = []
+  try {
+    const products = (await readProducts()).data || []
+    productUrls = products
+      .filter((p) => p.status === "published" || !p.status)
+      .map((p) => ({
+        url: `${DOMAIN}/shop/${p.slug}`,
+        lastModified: p.updatedAt || new Date(),
+        changeFrequency: "monthly",
+        priority: 0.6,
+      }))
+  } catch {}
+
+  const routes = await getAllRoutes()
+
+  const routeUrls = routes
+    .filter((r) => {
+      if (r.route === "/" || r.route === "/blog") return false
+      if (r.route.startsWith("/digital/")) return false
+      if (r.route.startsWith("/admin")) return false
+      return true
+    })
+    .map((r) => ({
+      url: `${DOMAIN}${r.route}`,
       lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 1.0,
-    },
-    {
-      url: `${DOMAIN}/blog`,
-      lastModified: new Date(),
-      changeFrequency: "daily",
-      priority: 0.9,
-    },
+      priority: 0.5,
+    }))
+
+  const staticUrls = staticPages.map((p) => ({
+    url: `${DOMAIN}${p.route}`,
+    lastModified: new Date(),
+    changeFrequency: p.frequency,
+    priority: p.priority,
+  }))
+
+  const all = [
+    ...staticUrls,
     ...categoryUrls,
+    ...routeUrls,
     ...postUrls,
+    ...musicUrls,
+    ...productUrls,
   ]
+
+  const seen = new Set()
+  return all.filter((entry) => {
+    if (seen.has(entry.url)) return false
+    seen.add(entry.url)
+    return true
+  })
 }
