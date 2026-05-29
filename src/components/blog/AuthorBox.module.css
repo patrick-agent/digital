@@ -1,6 +1,6 @@
 .author {
   display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-columns: 1fr 3fr;
   gap: 1.25rem;
   margin-top: 1.5rem;
   padding: 24px;
@@ -11,8 +11,12 @@
 }
 
 .avatar {
-  border-radius: 22px;
+  display: block;
+  height: 100%;
+  width: auto;
+  margin: 0 auto;
   object-fit: cover;
+  border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
@@ -45,8 +49,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 40px;
-  padding: 0.65rem 1rem;
+  min-height: auto;
+  padding: 4px 30px;
   border-radius: 999px;
   background: #8b5cf6;
   color: #ffffff;
@@ -67,7 +71,7 @@
   }
 
   .avatar {
-    width: 72px;
-    height: 72px;
+    width: 100%;
+    height: auto;
   }
 }
