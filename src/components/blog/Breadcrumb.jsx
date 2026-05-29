@@ -1,7 +1,13 @@
 "use client"
 
 import Link from "next/link"
+import { siteMetadata } from "@/lib/seo"
 import styles from "./Breadcrumb.module.css"
+
+function absoluteHref(href) {
+  if (/^https?:\/\//i.test(href)) return href
+  return `${siteMetadata.siteUrl}${href.startsWith("/") ? href : `/${href}`}`
+}
 
 export default function Breadcrumb({ items }) {
   const schema = {
@@ -11,7 +17,7 @@ export default function Breadcrumb({ items }) {
       "@type": "ListItem",
       position: i + 1,
       name: item.label,
-      item: item.href,
+      item: absoluteHref(item.href),
     })),
   }
 
@@ -19,7 +25,7 @@ export default function Breadcrumb({ items }) {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, "\\u003c") }}
       />
       <nav aria-label="Breadcrumb" className={styles.breadcrumb}>
         {items.map((item, i) => (

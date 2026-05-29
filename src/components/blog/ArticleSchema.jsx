@@ -5,13 +5,19 @@ const DOMAIN = siteMetadata.siteUrl
 const AUTHOR_NAME = siteMetadata.author
 const SITE_NAME = siteMetadata.title
 
+function absoluteUrl(url) {
+  if (!url) return `${DOMAIN}${siteMetadata.defaultImage}`
+  return /^https?:\/\//i.test(url) ? url : `${DOMAIN}${url.startsWith("/") ? url : `/${url}`}`
+}
+
 export default function ArticleSchema({ post }) {
+  const plainText = post.content?.replace(/<[^>]*>/g, "") || ""
   const schema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline: post.seoTitle || post.title,
     description: post.seoDescription || post.excerpt,
-    image: post.coverImage,
+    image: absoluteUrl(post.coverImage),
     author: {
       "@type": "Person",
       name: AUTHOR_NAME,
@@ -29,6 +35,7 @@ export default function ArticleSchema({ post }) {
     dateModified: post.updatedAt || post.publishedAt,
     keywords: post.seoKeywords?.join(", ") || post.tags?.join(", ") || "",
     articleSection: post.category,
+    wordCount: plainText.split(/\s+/).filter(Boolean).length,
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": `${DOMAIN}${canonicalUrl(post)}`,
@@ -38,7 +45,7 @@ export default function ArticleSchema({ post }) {
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, "\\u003c") }}
     />
   )
 }

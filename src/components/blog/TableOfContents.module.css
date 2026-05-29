@@ -1,9 +1,14 @@
 .toc {
   position: sticky;
-  top: 100px;
-  max-height: calc(100vh - 120px);
+  top: 120px;
+  max-height: calc(100vh - 140px);
   overflow-y: auto;
-  padding-right: var(--space-lg);
+  padding: 1rem;
+  background: rgba(15, 15, 15, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
   scrollbar-width: none;
 }
 
@@ -12,23 +17,25 @@
 }
 
 .title {
-  font-family: var(--font-heading);
-  font-size: var(--fs-sm);
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--text-muted);
-  margin-bottom: var(--space-md);
-  padding-bottom: var(--space-sm);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  letter-spacing: 0.16em;
+  color: #f4f4f5;
+  margin-bottom: 0.9rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .list {
-  list-style: none;
+  list-style: decimal;
   padding: 0;
-  margin: 0;
+  margin: 0 0 0 1.15rem;
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 0.25rem;
+  color: rgba(255, 255, 255, 0.32);
 }
 
 .h2 {
@@ -36,29 +43,38 @@
 }
 
 .h3 {
-  padding-left: var(--space-lg);
+  padding-left: 0.85rem;
+  list-style: none;
 }
 
 .link {
   display: block;
   font-family: var(--font-mono);
-  font-size: var(--fs-xs);
-  color: var(--text-muted);
-  padding: 4px 8px;
-  border-radius: 4px;
+  font-size: 0.78rem;
+  color: #8f8f9d;
+  padding: 0.45rem 0.55rem;
+  border-radius: 10px;
   border-left: 2px solid transparent;
-  transition: all var(--transition-fast);
+  transition: all 0.25s ease;
   text-decoration: none;
-  line-height: 1.4;
+  line-height: 1.45;
 }
 
 .link:hover {
-  color: var(--text-secondary);
-  background: rgba(168, 85, 247, 0.04);
+  color: #ffffff;
+  background: rgba(139, 92, 246, 0.1);
+  transform: translateX(2px);
 }
 
 .active {
-  color: var(--accent-cool);
-  border-left-color: var(--accent-cool);
-  background: rgba(6, 182, 212, 0.04);
+  color: #ffffff;
+  border-left-color: #8b5cf6;
+  background: rgba(139, 92, 246, 0.14);
+  box-shadow: inset 0 0 0 1px rgba(139, 92, 246, 0.12);
+}
+
+@media (max-width: 1024px) {
+  .toc {
+    display: none;
+  }
 }

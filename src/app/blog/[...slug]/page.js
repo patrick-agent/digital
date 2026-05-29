@@ -6,15 +6,17 @@ import {
   getPostBySlugOnly,
   getAllPublishedSlugs,
   getRelatedPosts,
-  estimateReadTime,
 } from "@/lib/blog"
 import { siteMetadata } from "@/lib/seo"
 import ArticleHero from "@/components/blog/ArticleHero"
 import ArticleBody, { ArticleSummary } from "@/components/blog/ArticleBody"
 import ArticleSchema from "@/components/blog/ArticleSchema"
+import ReadingProgress from "@/components/blog/ReadingProgress"
 import TableOfContents from "@/components/blog/TableOfContents"
 import RelatedPosts from "@/components/blog/RelatedPosts"
 import Breadcrumb from "@/components/blog/Breadcrumb"
+import ShareSection from "@/components/blog/ShareSection"
+import AuthorBox from "@/components/blog/AuthorBox"
 import BlogClient from "@/components/blog/BlogClient"
 import styles from "./article-page.module.css"
 
@@ -165,7 +167,8 @@ export default async function BlogCatchAllPage({ params }) {
     const post = await getPostBySlugOnly(first)
     if (!post) notFound()
 
-    return renderArticlePage(post, [])
+    const related = await getRelatedPosts(post, 3)
+    return renderArticlePage(post, related)
   }
 
   // Two+ segments: /blog/[category]/[slug]
@@ -183,11 +186,11 @@ export default async function BlogCatchAllPage({ params }) {
 }
 
 async function renderArticlePage(post, related) {
-  const readTime = estimateReadTime(post.content)
   const parentHref = post.category ? `/blog/${post.category}` : "/blog"
   const currentHref = post.category
     ? `/blog/${post.category}/${post.slug}`
     : `/blog/${post.slug}`
+  const shareUrl = `${siteMetadata.siteUrl}${currentHref}`
 
   const breadcrumbItems = [
     { label: "Home", href: "/" },
@@ -198,36 +201,41 @@ async function renderArticlePage(post, related) {
 
   return (
     <>
+      <ReadingProgress />
       <ArticleSchema post={post} />
       <article className={styles.article}>
         <ArticleHero post={post} />
-        <div className={styles.breadcrumbWrap}>
-          <Breadcrumb items={breadcrumbItems} />
-        </div>
-        <div className={styles.contentGrid}>
-          <aside className={styles.tocAside}>
-            <TableOfContents content={post.content} />
-          </aside>
-          <div className={styles.bodyWrap}>
-            <ArticleSummary excerpt={post.excerpt} />
-            <ArticleBody content={post.content} />
+        <div className={styles.articleShell}>
+          <div className={styles.breadcrumbWrap}>
+            <Breadcrumb items={breadcrumbItems} />
           </div>
-        </div>
-        {post.tags?.length > 0 && (
-          <section className={styles.tagsSection}>
-            <h2 className={styles.tagsHeading}>Tags</h2>
-            <div className={styles.tags}>
-              {post.tags.map((tag) => (
-                <a key={tag} href={`/blog?tag=${encodeURIComponent(tag)}`} className={styles.tag}>
-                  {tag}
-                </a>
-              ))}
+          <div className={styles.contentGrid}>
+            <aside className={styles.tocAside}>
+              <TableOfContents content={post.content} />
+            </aside>
+            <div className={styles.bodyWrap}>
+              <ArticleSummary excerpt={post.excerpt} />
+              <ArticleBody content={post.content} />
+              {post.tags?.length > 0 && (
+                <section className={styles.tagsSection}>
+                  <h2 className={styles.tagsHeading}>Tags</h2>
+                  <div className={styles.tags}>
+                    {post.tags.map((tag) => (
+                      <a key={tag} href={`/blog?tag=${encodeURIComponent(tag)}`} className={styles.tag}>
+                        {tag}
+                      </a>
+                    ))}
+                  </div>
+                </section>
+              )}
+              <ShareSection title={post.title} url={shareUrl} />
+              <AuthorBox />
             </div>
-          </section>
-        )}
-        <RelatedPosts posts={related} />
-        <div className={styles.backWrap}>
-          <a href="/blog" className={styles.backLink}>← Back to Blog</a>
+          </div>
+          <RelatedPosts posts={related} />
+          <div className={styles.backWrap}>
+            <a href="/blog" className={styles.backLink}>← Back to Blog</a>
+          </div>
         </div>
       </article>
     </>

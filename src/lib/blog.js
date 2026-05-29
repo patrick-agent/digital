@@ -45,20 +45,22 @@ export function getPostBySlugOnly(slug) {
 
 export async function getRelatedPosts(post, limit = 3) {
   const result = await readPosts({ status: "published", page: 1, limit: 9999 })
-  let candidates = result.data.filter((p) => p.id !== post.id)
+  const candidates = result.data.filter((p) => p.id !== post.id)
 
   const sameCategory = candidates.filter((p) => p.category === post.category)
-
-  if (sameCategory.length >= limit) {
-    return sameCategory.slice(0, limit)
-  }
-
   const sharedTag = candidates.filter(
     (p) => p.tags?.some((t) => post.tags?.includes(t))
   )
 
   const combined = [...sameCategory]
   for (const p of sharedTag) {
+    if (!combined.find((c) => c.id === p.id)) {
+      combined.push(p)
+    }
+    if (combined.length >= limit) break
+  }
+
+  for (const p of candidates) {
     if (!combined.find((c) => c.id === p.id)) {
       combined.push(p)
     }

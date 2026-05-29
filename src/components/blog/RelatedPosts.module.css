@@ -1,14 +1,14 @@
 .section {
-  max-width: 1100px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: var(--space-3xl) var(--space-xl);
+  padding: 4rem 0 0;
 }
 
 .heading {
   font-family: var(--font-heading);
-  font-size: var(--fs-2xl);
+  font-size: clamp(2rem, 3vw, 3rem);
   font-weight: 700;
-  margin-bottom: var(--space-xl);
+  margin-bottom: 1.5rem;
   background: var(--gradient-text);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -18,7 +18,7 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-xl);
+  gap: 1.5rem;
 }
 
 @media (max-width: 1024px) {
@@ -33,6 +33,6 @@
   }
 
   .section {
-    padding: var(--space-2xl) var(--space-md);
+    padding-top: 3rem;
   }
 }
