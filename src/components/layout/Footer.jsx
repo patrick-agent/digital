@@ -46,9 +46,9 @@ const SERVICES = [
   { label: "About Tachy", href: "/about" },
   { label: "Shop", href: "/shop" },
   { label: "Bio Music", href: "/bio-music" },
-  { label: "Terms & Condition", href: "/terms" },
+  { label: "Terms", href: "/terms" },
   { label: "Contact Me", href: "/contact" },
-  { label: "Privacy Policy", href: "/privacy" },
+  { label: "Privacy", href: "/privacy" },
 ];
 
 function ShootingStars() {
