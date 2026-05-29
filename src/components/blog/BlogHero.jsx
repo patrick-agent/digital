@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
+import { postUrl } from "@/lib/post-utils"
 import styles from "./BlogHero.module.css"
 
 export default function BlogHero({ featuredPost }) {
@@ -18,7 +19,7 @@ export default function BlogHero({ featuredPost }) {
 
       {featuredPost && (
         <Link
-          href={`/blog/${featuredPost.category}/${featuredPost.slug}`}
+          href={postUrl(featuredPost)}
           className={styles.featured}
         >
           <div className={styles.featuredImageWrapper}>

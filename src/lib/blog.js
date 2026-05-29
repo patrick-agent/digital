@@ -29,10 +29,19 @@ export async function getAllPublishedPosts(options = {}) {
 export function getPostBySlug(category, slug) {
   return readPost(slug).then((post) => {
     if (!post || post.status !== "published") return null
-    if (post.category !== category) return null
+    if (category && post.category !== category) return null
     return post
   })
 }
+
+export function getPostBySlugOnly(slug) {
+  return readPost(slug).then((post) => {
+    if (!post || post.status !== "published") return null
+    return post
+  })
+}
+
+
 
 export async function getRelatedPosts(post, limit = 3) {
   const result = await readPosts({ status: "published", page: 1, limit: 9999 })

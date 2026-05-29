@@ -212,7 +212,9 @@ export default function BlogForm({ post }) {
 
   // Preview URL dựa trên persona
   const previewUrl = isEditing
-    ? `/blog/${form.category || "uncategorized"}/${form.slug}`
+    ? form.category
+      ? `/blog/${form.category}/${form.slug}`
+      : `/blog/${form.slug}`
     : null
 
   return (

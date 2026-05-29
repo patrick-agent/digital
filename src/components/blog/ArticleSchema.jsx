@@ -1,4 +1,5 @@
 import { siteMetadata } from "@/lib/seo"
+import { canonicalUrl } from "@/lib/post-utils"
 
 const DOMAIN = siteMetadata.siteUrl
 const AUTHOR_NAME = siteMetadata.author
@@ -30,7 +31,7 @@ export default function ArticleSchema({ post }) {
     articleSection: post.category,
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `${DOMAIN}/blog/${post.category}/${post.slug}`,
+      "@id": `${DOMAIN}${canonicalUrl(post)}`,
     },
   }
 

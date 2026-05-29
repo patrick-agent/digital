@@ -3,6 +3,7 @@
 import { useRef, useCallback } from "react"
 import Link from "next/link"
 import Image from "next/image"
+import { postUrl } from "@/lib/post-utils"
 import styles from "./PostCard.module.css"
 
 export default function PostCard({ post, featured = false }) {
@@ -33,7 +34,7 @@ export default function PostCard({ post, featured = false }) {
 
   return (
     <Link
-      href={`/blog/${post.category}/${post.slug}`}
+      href={postUrl(post)}
       className={`${styles.card} ${featured ? styles.featured : ""}`}
       ref={cardRef}
       onMouseMove={handleMouseMove}

@@ -1,0 +1,50 @@
+{
+  "rows": [
+    {
+      "title": "Hướng dẫn thiết kế Portfolio Cyberpunk với Three.js",
+      "slug": "cyberpunk-portfolio-threejs-guide",
+      "content": "<h3>Giới thiệu</h3><p>Three.js là thư viện WebGL mạnh mẽ giúp bạn tạo hiệu ứng 3D ngay trên trình duyệt. Trong bài viết này, chúng ta sẽ xây dựng một portfolio cá nhân theo phong cách cyberpunk.</p><h3>Bước 1: Thiết lập Scene</h3><p>Đầu tiên, tạo một Scene, Camera và Renderer cơ bản:</p><pre><code>const scene = new THREE.Scene();\nconst camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);\nconst renderer = new THREE.WebGLRenderer({ antialias: true });</code></pre><h3>Bước 2: Thêm Neon Lighting</h3><p>Sử dụng điểm sáng với màu cyan và magenta để tạo hiệu ứng neon đặc trưng của cyberpunk.</p><blockquote>Mẹo: Kết hợp Bloom post-processing để ánh sáng phát sáng mạnh hơn.</blockquote><h3>Kết luận</h3><p>Với Three.js, bạn có thể tạo những trải nghiệm 3D ấn tượng. Hãy thử nghiệm và sáng tạo theo phong cách riêng của bạn!</p>",
+      "excerpt": "Học cách xây dựng portfolio cyberpunk 3D với Three.js – từ thiết lập scene, neon lighting đến bloom post-processing.",
+      "coverImage": "https://picsum.photos/seed/cyberpunk/1200/630",
+      "tags": "three.js, cyberpunk, portfolio, webgl, 3d",
+      "category": "tutorials",
+      "status": "public",
+      "seoTitle": "Hướng dẫn Portfolio Cyberpunk Three.js | Tachy Blog",
+      "seoDescription": "Hướng dẫn từng bước thiết kế portfolio cá nhân phong cách cyberpunk sử dụng Three.js và WebGL.",
+      "seoKeywords": "three.js tutorial, cyberpunk design, 3D portfolio, webgl guide"
+    },
+    {
+      "title": "Top 5 Công Cụ SEO Miễn Phí Cho Freelancer 2026",
+      "slug": "",
+      "content": "<h3>Tại sao cần SEO?</h3><p>SEO giúp portfolio của bạn xuất hiện trên Google mà không tốn chi phí quảng cáo. Dưới đây là 5 công cụ miễn phí không thể bỏ qua.</p><h3>1. Google Search Console</h3><p>Công cụ miễn phí từ Google giúp theo dõi hiệu suất tìm kiếm, phát hiện lỗi và gửi sitemap.</p><h3>2. Ahrefs Webmaster Tools</h3><p>Phiên bản miễn phí của Ahrefs cho phép kiểm tra backlink và từ khóa cơ bản.</p><h3>3. PageSpeed Insights</h3><p>Đo tốc độ website cả trên desktop và mobile, kèm đề xuất cải thiện cụ thể.</p><h3>4. Ubersuggest</h3><p>Công cụ nghiên cứu từ khóa miễn phí với dữ liệu tìm kiếm trực quan.</p><h3>5. AnswerThePublic</h3><p>Khám phá câu hỏi thường gặp của người dùng để xây dựng nội dung blog hiệu quả.</p>",
+      "excerpt": "Top 5 công cụ SEO miễn phí giúp freelancer tối ưu website, tăng traffic mà không tốn ngân sách quảng cáo.",
+      "coverImage": "https://picsum.photos/seed/seotools/1200/630",
+      "tags": ["seo", "freelancer", "marketing", "công cụ miễn phí"],
+      "category": "seo-tips",
+      "status": "public",
+      "seoTitle": "",
+      "seoDescription": "",
+      "seoKeywords": ""
+    },
+    {
+      "title": "Affiliate cho Creator: Bắt đầu từ con số 0",
+      "slug": "",
+      "content": "<p>Affiliate marketing là cách kiếm thu nhập thụ động bằng cách giới thiệu sản phẩm/dịch vụ qua link riêng. Bạn sẽ nhận hoa hồng mỗi khi có giao dịch thành công.</p><h2>Chọn nền tảng phù hợp</h2><ul><li><strong>Amazon Associates</strong> – Hoa hồng thấp nhưng sản phẩm đa dạng</li><li><strong>ClickBank</strong> – Hoa hồng cao, tập trung sản phẩm số</li><li><strong>ShareASale</strong> – Nhiều thương hiệu lớn tham gia</li></ul><h2>Chiến lược nội dung</h2><p>Viết bài review chân thực, so sánh sản phẩm và chia sẻ trải nghiệm cá nhân. Người đọc tin tưởng bạn sẽ click link affiliate.</p>",
+      "excerpt": "Hướng dẫn affiliate marketing cho content creator: chọn nền tảng, chiến lược nội dung và tối ưu thu nhập thụ động.",
+      "coverImage": "https://picsum.photos/seed/affiliate/1200/630",
+      "tags": "affiliate, marketing, kiếm tiền, content creator",
+      "category": "affiliate",
+      "status": "public",
+      "seoTitle": "Affiliate Marketing cho Creator 2026 | Tachy Blog",
+      "seoDescription": "Bắt đầu affiliate marketing từ con số 0 – hướng dẫn chọn nền tảng, viết nội dung và tối ưu hoa hồng. Dành cho content creator và freelancer.",
+      "seoKeywords": "affiliate marketing, kiếm tiền online, content creator, review sản phẩm"
+    },
+    {
+      "title": "Bài viết nháp (chưa xuất bản)",
+      "content": "",
+      "excerpt": "",
+      "status": "draft",
+      "category": "tutorials"
+    }
+  ]
+}
