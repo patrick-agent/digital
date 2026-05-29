@@ -12,12 +12,16 @@ function parseTags(value) {
 }
 
 function mapRowToPost(row) {
+  console.log('--- mapRowToPost ---')
+  console.log('Incoming row keys:', Object.keys(row))
+  console.log('row.content length:', row.content?.length)
+  console.log('row.content preview:', row.content?.slice(0, 300))
   console.log('Incoming row:', JSON.stringify(row, null, 2))
 
   const status = String(row.status || "").toLowerCase() === SHEET_STATUS_PUBLIC ? "published" : "draft"
 
   const title = String(row.title || "").trim() || "Untitled"
-  const content = row.content || row.html || ""
+  const content = row.content || row.html || row.body || ""
   const excerpt = String(row.excerpt || row.description || "").trim()
   const coverImage = row.coverImage || row.featured_image_url || row.cover_image || ""
   const tags = parseTags(row.tags)
@@ -83,6 +87,7 @@ export async function POST(request) {
         )
 
         if (existing) {
+          console.log('Final post content length:', postData.content?.length, '| slug:', slug)
           await updatePost(existing.id, { ...postData, slug: existing.slug })
           results.updated++
         } else {
