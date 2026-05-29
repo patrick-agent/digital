@@ -17,7 +17,7 @@ export default function AuthorBox() {
           <p className={styles.role}>Independent Artist</p>
         </div>
         <p className={styles.bio}>
-          Tachy chia sẻ các góc nhìn về âm nhạc, sáng tạo số, 3D web và cách xây dựng trải nghiệm nghệ thuật hiện đại.
+          Tachy là một nghệ sĩ độc lập tự sáng tác và phân phối sản phẩm của chính mình lên đa nền tảng âm nhạc số.
         </p>
         <a className={styles.follow} href="https://youtube.com/@TachyNgo" target="_blank" rel="noreferrer">
           Follow

@@ -67,7 +67,7 @@
 
 @media (max-width: 640px) {
   .author {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 3fr;
   }
 
   .avatar {
@@ -75,3 +75,16 @@
     height: auto;
   }
 }
+  .bio {
+    font-size: 0.63rem;
+    margin: 10px 0;
+  }
+
+  .role {
+    font-size: 0.7rem;
+  }
+
+  .follow {
+    font-size: 0.6rem;
+    padding: 4px 16px;
+  }
