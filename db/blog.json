@@ -1,53 +1,85 @@
 [
-  {
-    "id": "post-001",
-    "title": "How to Rank in 2025: The Complete SEO Guide for Creators",
-    "slug": "how-to-rank-in-2025",
-    "content": "<h2 id=\"what-is-seo\">What Is SEO and Why Does It Matter?</h2><p>Search Engine Optimization (SEO) is the practice of improving your website's visibility on search engines like Google. In 2025, SEO has evolved beyond simple keyword stuffing — it now encompasses user experience, content quality, technical performance, and AI-driven search signals.</p><h2 id=\"keyword-research\">Keyword Research: The Foundation</h2><p>Every successful SEO strategy starts with understanding what your audience is searching for. Use tools like Google Keyword Planner, Ahrefs, or SEMrush to identify high-intent keywords with manageable competition.</p><h3 id=\"long-tail-keywords\">Long-Tail Keywords</h3><p>Long-tail keywords are specific, multi-word phrases that capture highly targeted traffic. For example, instead of targeting \"SEO\", target \"SEO tips for small business blogs\". These keywords typically have lower competition and higher conversion rates.</p><h2 id=\"on-page-seo\">On-Page SEO Essentials</h2><p>On-page SEO involves optimizing individual pages to rank higher. Key elements include:</p><ul><li>Title tags with primary keywords</li><li>Meta descriptions that drive clicks</li><li>Proper heading hierarchy (H1 → H2 → H3)</li><li>Internal linking structure</li><li>Image alt text optimization</li></ul><h2 id=\"technical-seo\">Technical SEO in 2025</h2><p>Technical SEO ensures search engines can crawl and index your site efficiently. Focus on Core Web Vitals, mobile responsiveness, structured data, and site speed.</p><pre><code class=\"language-javascript\">// Example: Adding JSON-LD structured data\nconst schema = {\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Article\",\n  \"headline\": \"Your Article Title\",\n  \"author\": {\n    \"@type\": \"Person\",\n    \"name\": \"Artist Name\"\n  }\n};</code></pre><h2 id=\"conclusion\">Conclusion</h2><p>SEO in 2025 requires a holistic approach. Focus on creating genuinely helpful content, optimize for user experience, and stay updated with algorithm changes. The creators who win are those who put their audience first.</p>",
-    "excerpt": "A comprehensive guide to SEO in 2025 — from keyword research to technical optimization. Learn how to rank higher and attract organic traffic to your creative website.",
-    "coverImage": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=630&fit=crop",
-    "tags": ["seo", "featured", "tutorial", "marketing"],
-    "category": "seo-tips",
-    "status": "published",
-    "publishedAt": "2025-03-15T10:00:00Z",
-    "seoTitle": "How to Rank in 2025: Complete SEO Guide for Creators",
-    "seoDescription": "Master SEO in 2025 with this comprehensive guide covering keyword research, on-page optimization, technical SEO, and AI-driven search strategies.",
-    "seoKeywords": ["SEO 2025", "keyword research", "technical SEO", "content marketing"],
-    "createdAt": "2025-03-10T08:00:00Z",
-    "updatedAt": "2025-03-15T10:00:00Z"
-  },
-  {
-    "id": "post-002",
-    "title": "Best Affiliate Tools for Creators in 2025",
-    "slug": "best-tools-for-creators",
-    "content": "<h2 id=\"why-affiliate\">Why Affiliate Marketing Works for Creators</h2><p>Affiliate marketing allows creators to earn commissions by recommending products they genuinely use and trust. It's one of the most sustainable monetization strategies because it aligns your interests with your audience's needs.</p><h2 id=\"top-tools\">Top Affiliate Tools You Need</h2><h3 id=\"link-management\">Link Management</h3><p>Tools like GeniusLink and Affilimate help you manage affiliate links across platforms. They automatically geo-target users and optimize for conversions.</p><h3 id=\"analytics\">Analytics &amp; Tracking</h3><p>Understanding which content drives affiliate revenue is crucial. Use dedicated analytics to track clicks, conversions, and earnings per post.</p><h2 id=\"choosing-programs\">Choosing the Right Affiliate Programs</h2><p>Not all affiliate programs are created equal. Look for programs with competitive commission rates, reliable tracking, and products that genuinely benefit your audience.</p><pre><code class=\"language-python\"># Example: Calculate affiliate earnings\ndef calculate_earnings(clicks, conversion_rate, commission):\n    conversions = clicks * conversion_rate\n    return conversions * commission\n\nearnings = calculate_earnings(10000, 0.02, 50)\nprint(f\"Projected earnings: ${earnings}\")</code></pre><h2 id=\"disclosure\">Disclosure and Transparency</h2><p>Always disclose affiliate relationships to your audience. Transparency builds trust and is required by the FTC. A simple disclaimer at the top of your content is sufficient.</p><h2 id=\"final-thoughts\">Final Thoughts</h2><p>Affiliate marketing is a long game. Focus on building genuine relationships with your audience, recommend products you believe in, and the revenue will follow.</p>",
-    "excerpt": "Discover the best affiliate marketing tools and strategies for content creators in 2025. From link management to analytics, here's everything you need to monetize your content.",
-    "coverImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=630&fit=crop",
-    "tags": ["affiliate", "tools", "monetization", "creators"],
-    "category": "affiliate",
-    "status": "published",
-    "publishedAt": "2025-02-28T14:00:00Z",
-    "seoTitle": "Best Affiliate Tools for Creators in 2025 — Complete Guide",
-    "seoDescription": "The ultimate guide to affiliate marketing tools for creators. Learn about link management, analytics, and how to choose the right programs.",
-    "seoKeywords": ["affiliate marketing", "creator tools", "monetization", "affiliate programs"],
-    "createdAt": "2025-02-25T09:00:00Z",
-    "updatedAt": "2025-02-28T14:00:00Z"
-  },
-  {
-    "id": "post-003",
-    "title": "Building a Cyberpunk Portfolio with Three.js and React",
-    "slug": "cyberpunk-portfolio-guide",
-    "content": "<h2 id=\"intro\">Introduction: Why Cyberpunk?</h2><p>The cyberpunk aesthetic — with its neon lights, glitch effects, and futuristic UI — has become a popular choice for creative portfolios. It's bold, memorable, and perfectly suited for artists working in 3D, music, and digital media.</p><h2 id=\"tech-stack\">Tech Stack Overview</h2><p>For this portfolio, we're using:</p><ul><li><strong>Next.js 14+</strong> — App Router, SSG/ISR for SEO</li><li><strong>Three.js / React Three Fiber</strong> — 3D scenes and animations</li><li><strong>GSAP + ScrollTrigger</strong> — Scroll-based animations</li><li><strong>Framer Motion</strong> — Page transitions and micro-interactions</li><li><strong>CSS Modules</strong> — Scoped styling with cyberpunk theme</li></ul><h2 id=\"setting-up\">Setting Up the 3D Scene</h2><p>Start by creating a canvas component that wraps your Three.js scene. Use React Three Fiber to declaratively define your 3D objects.</p><pre><code class=\"language-jsx\">import { Canvas } from '@react-three/fiber'\nimport { OrbitControls, Float } from '@react-three/drei'\n\nfunction Scene() {\n  return (\n    &lt;Canvas camera={{ position: [0, 0, 5], fov: 50 }}&gt;\n      &lt;ambientLight intensity={0.3} /&gt;\n      &lt;pointLight position={[10, 10, 10]} color=\"#a855f7\" /&gt;\n      &lt;Float speed={2} rotationIntensity={0.5}&gt;\n        &lt;mesh&gt;\n          &lt;torusKnotGeometry args={[1, 0.3, 128, 32]} /&gt;\n          &lt;meshStandardMaterial\n            color=\"#06b6d4\"\n            emissive=\"#06b6d4\"\n            emissiveIntensity={0.4}\n          /&gt;\n        &lt;/mesh&gt;\n      &lt;/Float&gt;\n      &lt;OrbitControls enableZoom={false} /&gt;\n    &lt;/Canvas&gt;\n  )\n}</code></pre><h2 id=\"glitch-effects\">Creating Glitch Text Effects</h2><p>Glitch effects are a hallmark of the cyberpunk aesthetic. You can achieve this with pure CSS using pseudo-elements and clip-path animations.</p><h2 id=\"performance\">Performance Optimization</h2><p>3D portfolios can be heavy. Optimize by:</p><ul><li>Using dynamic imports for Three.js components</li><li>Implementing lazy loading for below-the-fold content</li><li>Compressing textures and 3D models</li><li>Using <code>prefers-reduced-motion</code> to disable animations for users who need it</li></ul><h2 id=\"conclusion\">Conclusion</h2><p>Building a cyberpunk portfolio is about balancing visual impact with performance. Use 3D elements sparingly, optimize for all devices, and always prioritize accessibility.</p>",
-    "excerpt": "Learn how to build a stunning cyberpunk-themed portfolio website using Three.js, React, and GSAP. Complete guide covering 3D scenes, glitch effects, and performance optimization.",
-    "coverImage": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=1200&h=630&fit=crop",
-    "tags": ["threejs", "react", "tutorial", "portfolio", "3d"],
-    "category": "tutorials",
-    "status": "published",
-    "publishedAt": "2025-01-20T16:00:00Z",
-    "seoTitle": "Building a Cyberpunk Portfolio with Three.js and React — Full Guide",
-    "seoDescription": "Step-by-step guide to creating a cyberpunk-themed portfolio with Three.js, React, GSAP animations, and performance optimization techniques.",
-    "seoKeywords": ["Three.js", "React", "cyberpunk", "portfolio", "web development"],
-    "createdAt": "2025-01-15T11:00:00Z",
-    "updatedAt": "2025-01-20T16:00:00Z"
-  }
+    {
+        "id":  "post-001",
+        "title":  "How to Rank in 2025: The Complete SEO Guide for Creators",
+        "slug":  "how-to-rank-in-2025",
+        "content":  "\u003ch2 id=\"what-is-seo\"\u003eWhat Is SEO and Why Does It Matter?\u003c/h2\u003e\u003cp\u003eSearch Engine Optimization (SEO) is the practice of improving your website\u0027s visibility on search engines like Google. In 2025, SEO has evolved beyond simple keyword stuffing — it now encompasses user experience, content quality, technical performance, and AI-driven search signals.\u003c/p\u003e\u003ch2 id=\"keyword-research\"\u003eKeyword Research: The Foundation\u003c/h2\u003e\u003cp\u003eEvery successful SEO strategy starts with understanding what your audience is searching for. Use tools like Google Keyword Planner, Ahrefs, or SEMrush to identify high-intent keywords with manageable competition.\u003c/p\u003e\u003ch3 id=\"long-tail-keywords\"\u003eLong-Tail Keywords\u003c/h3\u003e\u003cp\u003eLong-tail keywords are specific, multi-word phrases that capture highly targeted traffic. For example, instead of targeting \"SEO\", target \"SEO tips for small business blogs\". These keywords typically have lower competition and higher conversion rates.\u003c/p\u003e\u003ch2 id=\"on-page-seo\"\u003eOn-Page SEO Essentials\u003c/h2\u003e\u003cp\u003eOn-page SEO involves optimizing individual pages to rank higher. Key elements include:\u003c/p\u003e\u003cul\u003e\u003cli\u003eTitle tags with primary keywords\u003c/li\u003e\u003cli\u003eMeta descriptions that drive clicks\u003c/li\u003e\u003cli\u003eProper heading hierarchy (H1 → H2 → H3)\u003c/li\u003e\u003cli\u003eInternal linking structure\u003c/li\u003e\u003cli\u003eImage alt text optimization\u003c/li\u003e\u003c/ul\u003e\u003ch2 id=\"technical-seo\"\u003eTechnical SEO in 2025\u003c/h2\u003e\u003cp\u003eTechnical SEO ensures search engines can crawl and index your site efficiently. Focus on Core Web Vitals, mobile responsiveness, structured data, and site speed.\u003c/p\u003e\u003cpre\u003e\u003ccode class=\"language-javascript\"\u003e// Example: Adding JSON-LD structured data\nconst schema = {\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Article\",\n  \"headline\": \"Your Article Title\",\n  \"author\": {\n    \"@type\": \"Person\",\n    \"name\": \"Artist Name\"\n  }\n};\u003c/code\u003e\u003c/pre\u003e\u003ch2 id=\"conclusion\"\u003eConclusion\u003c/h2\u003e\u003cp\u003eSEO in 2025 requires a holistic approach. Focus on creating genuinely helpful content, optimize for user experience, and stay updated with algorithm changes. The creators who win are those who put their audience first.\u003c/p\u003e",
+        "excerpt":  "A comprehensive guide to SEO in 2025 — from keyword research to technical optimization. Learn how to rank higher and attract organic traffic to your creative website.",
+        "coverImage":  "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200\u0026h=630\u0026fit=crop",
+        "tags":  [
+                     "seo",
+                     "featured",
+                     "tutorial",
+                     "marketing"
+                 ],
+        "category":  "seo-tips",
+        "status":  "published",
+        "publishedAt":  "2025-03-15T10:00:00Z",
+        "seoTitle":  "How to Rank in 2025: Complete SEO Guide for Creators",
+        "seoDescription":  "Master SEO in 2025 with this comprehensive guide covering keyword research, on-page optimization, technical SEO, and AI-driven search strategies.",
+        "seoKeywords":  [
+                            "SEO 2025",
+                            "keyword research",
+                            "technical SEO",
+                            "content marketing"
+                        ],
+        "createdAt":  "2025-03-10T08:00:00Z",
+        "updatedAt":  "2025-03-15T10:00:00Z"
+    },
+    {
+        "id":  "post-002",
+        "title":  "Best Affiliate Tools for Creators in 2025",
+        "slug":  "best-tools-for-creators",
+        "content":  "\u003ch2 id=\"why-affiliate\"\u003eWhy Affiliate Marketing Works for Creators\u003c/h2\u003e\u003cp\u003eAffiliate marketing allows creators to earn commissions by recommending products they genuinely use and trust. It\u0027s one of the most sustainable monetization strategies because it aligns your interests with your audience\u0027s needs.\u003c/p\u003e\u003ch2 id=\"top-tools\"\u003eTop Affiliate Tools You Need\u003c/h2\u003e\u003ch3 id=\"link-management\"\u003eLink Management\u003c/h3\u003e\u003cp\u003eTools like GeniusLink and Affilimate help you manage affiliate links across platforms. They automatically geo-target users and optimize for conversions.\u003c/p\u003e\u003ch3 id=\"analytics\"\u003eAnalytics \u0026amp; Tracking\u003c/h3\u003e\u003cp\u003eUnderstanding which content drives affiliate revenue is crucial. Use dedicated analytics to track clicks, conversions, and earnings per post.\u003c/p\u003e\u003ch2 id=\"choosing-programs\"\u003eChoosing the Right Affiliate Programs\u003c/h2\u003e\u003cp\u003eNot all affiliate programs are created equal. Look for programs with competitive commission rates, reliable tracking, and products that genuinely benefit your audience.\u003c/p\u003e\u003cpre\u003e\u003ccode class=\"language-python\"\u003e# Example: Calculate affiliate earnings\ndef calculate_earnings(clicks, conversion_rate, commission):\n    conversions = clicks * conversion_rate\n    return conversions * commission\n\nearnings = calculate_earnings(10000, 0.02, 50)\nprint(f\"Projected earnings: ${earnings}\")\u003c/code\u003e\u003c/pre\u003e\u003ch2 id=\"disclosure\"\u003eDisclosure and Transparency\u003c/h2\u003e\u003cp\u003eAlways disclose affiliate relationships to your audience. Transparency builds trust and is required by the FTC. A simple disclaimer at the top of your content is sufficient.\u003c/p\u003e\u003ch2 id=\"final-thoughts\"\u003eFinal Thoughts\u003c/h2\u003e\u003cp\u003eAffiliate marketing is a long game. Focus on building genuine relationships with your audience, recommend products you believe in, and the revenue will follow.\u003c/p\u003e",
+        "excerpt":  "Discover the best affiliate marketing tools and strategies for content creators in 2025. From link management to analytics, here\u0027s everything you need to monetize your content.",
+        "coverImage":  "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200\u0026h=630\u0026fit=crop",
+        "tags":  [
+                     "affiliate",
+                     "tools",
+                     "monetization",
+                     "creators"
+                 ],
+        "category":  "affiliate",
+        "status":  "published",
+        "publishedAt":  "2025-02-28T14:00:00Z",
+        "seoTitle":  "Best Affiliate Tools for Creators in 2025 — Complete Guide",
+        "seoDescription":  "The ultimate guide to affiliate marketing tools for creators. Learn about link management, analytics, and how to choose the right programs.",
+        "seoKeywords":  [
+                            "affiliate marketing",
+                            "creator tools",
+                            "monetization",
+                            "affiliate programs"
+                        ],
+        "createdAt":  "2025-02-25T09:00:00Z",
+        "updatedAt":  "2025-02-28T14:00:00Z"
+    },
+    {
+        "id":  "post-003",
+        "title":  "Building a Cyberpunk Portfolio with Three.js and React",
+        "slug":  "cyberpunk-portfolio-guide",
+        "content":  "\u003ch2 id=\"intro\"\u003eIntroduction: Why Cyberpunk?\u003c/h2\u003e\u003cp\u003eThe cyberpunk aesthetic — with its neon lights, glitch effects, and futuristic UI — has become a popular choice for creative portfolios. It\u0027s bold, memorable, and perfectly suited for artists working in 3D, music, and digital media.\u003c/p\u003e\u003ch2 id=\"tech-stack\"\u003eTech Stack Overview\u003c/h2\u003e\u003cp\u003eFor this portfolio, we\u0027re using:\u003c/p\u003e\u003cul\u003e\u003cli\u003e\u003cstrong\u003eNext.js 14+\u003c/strong\u003e — App Router, SSG/ISR for SEO\u003c/li\u003e\u003cli\u003e\u003cstrong\u003eThree.js / React Three Fiber\u003c/strong\u003e — 3D scenes and animations\u003c/li\u003e\u003cli\u003e\u003cstrong\u003eGSAP + ScrollTrigger\u003c/strong\u003e — Scroll-based animations\u003c/li\u003e\u003cli\u003e\u003cstrong\u003eFramer Motion\u003c/strong\u003e — Page transitions and micro-interactions\u003c/li\u003e\u003cli\u003e\u003cstrong\u003eCSS Modules\u003c/strong\u003e — Scoped styling with cyberpunk theme\u003c/li\u003e\u003c/ul\u003e\u003ch2 id=\"setting-up\"\u003eSetting Up the 3D Scene\u003c/h2\u003e\u003cp\u003eStart by creating a canvas component that wraps your Three.js scene. Use React Three Fiber to declaratively define your 3D objects.\u003c/p\u003e\u003cpre\u003e\u003ccode class=\"language-jsx\"\u003eimport { Canvas } from \u0027@react-three/fiber\u0027\nimport { OrbitControls, Float } from \u0027@react-three/drei\u0027\n\nfunction Scene() {\n  return (\n    \u0026lt;Canvas camera={{ position: [0, 0, 5], fov: 50 }}\u0026gt;\n      \u0026lt;ambientLight intensity={0.3} /\u0026gt;\n      \u0026lt;pointLight position={[10, 10, 10]} color=\"#a855f7\" /\u0026gt;\n      \u0026lt;Float speed={2} rotationIntensity={0.5}\u0026gt;\n        \u0026lt;mesh\u0026gt;\n          \u0026lt;torusKnotGeometry args={[1, 0.3, 128, 32]} /\u0026gt;\n          \u0026lt;meshStandardMaterial\n            color=\"#06b6d4\"\n            emissive=\"#06b6d4\"\n            emissiveIntensity={0.4}\n          /\u0026gt;\n        \u0026lt;/mesh\u0026gt;\n      \u0026lt;/Float\u0026gt;\n      \u0026lt;OrbitControls enableZoom={false} /\u0026gt;\n    \u0026lt;/Canvas\u0026gt;\n  )\n}\u003c/code\u003e\u003c/pre\u003e\u003ch2 id=\"glitch-effects\"\u003eCreating Glitch Text Effects\u003c/h2\u003e\u003cp\u003eGlitch effects are a hallmark of the cyberpunk aesthetic. You can achieve this with pure CSS using pseudo-elements and clip-path animations.\u003c/p\u003e\u003ch2 id=\"performance\"\u003ePerformance Optimization\u003c/h2\u003e\u003cp\u003e3D portfolios can be heavy. Optimize by:\u003c/p\u003e\u003cul\u003e\u003cli\u003eUsing dynamic imports for Three.js components\u003c/li\u003e\u003cli\u003eImplementing lazy loading for below-the-fold content\u003c/li\u003e\u003cli\u003eCompressing textures and 3D models\u003c/li\u003e\u003cli\u003eUsing \u003ccode\u003eprefers-reduced-motion\u003c/code\u003e to disable animations for users who need it\u003c/li\u003e\u003c/ul\u003e\u003ch2 id=\"conclusion\"\u003eConclusion\u003c/h2\u003e\u003cp\u003eBuilding a cyberpunk portfolio is about balancing visual impact with performance. Use 3D elements sparingly, optimize for all devices, and always prioritize accessibility.\u003c/p\u003e",
+        "excerpt":  "Learn how to build a stunning cyberpunk-themed portfolio website using Three.js, React, and GSAP. Complete guide covering 3D scenes, glitch effects, and performance optimization.",
+        "coverImage":  "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=1200\u0026h=630\u0026fit=crop",
+        "tags":  [
+                     "threejs",
+                     "react",
+                     "tutorial",
+                     "portfolio",
+                     "3d"
+                 ],
+        "category":  "tutorials",
+        "status":  "published",
+        "publishedAt":  "2025-01-20T16:00:00Z",
+        "seoTitle":  "Building a Cyberpunk Portfolio with Three.js and React — Full Guide",
+        "seoDescription":  "Step-by-step guide to creating a cyberpunk-themed portfolio with Three.js, React, GSAP animations, and performance optimization techniques.",
+        "seoKeywords":  [
+                            "Three.js",
+                            "React",
+                            "cyberpunk",
+                            "portfolio",
+                            "web development"
+                        ],
+        "createdAt":  "2025-01-15T11:00:00Z",
+        "updatedAt":  "2025-01-20T16:00:00Z"
+    }
 ]
