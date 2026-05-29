@@ -44,6 +44,9 @@ export const metadata = {
       { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
     ],
   },
+  verification: {
+    google: "rmZiW-EkmfQCHQr7kdW4m4G7Ie9_Dzlu3hpc_KCsrho",
+  },
   openGraph: {
     title: "Tachy — An Indie Artist",
     description:
