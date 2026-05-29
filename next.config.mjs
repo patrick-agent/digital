@@ -33,6 +33,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "down-vn.img.susercontent.com",
       },
+      {
+        protocol: "https",
+        hostname: "lh3.googleusercontent.com",
+      },
     ],
     // Cache images longer in production
     minimumCacheTTL: 31536000, // 1 year
