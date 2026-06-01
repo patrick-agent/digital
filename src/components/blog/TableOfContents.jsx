@@ -47,7 +47,7 @@ export default function TableOfContents({ content }) {
       <h2 className={styles.title}>Mục lục</h2>
       <ul className={styles.list}>
         {headings.map((h) => (
-          <li key={h.id} className={h.level === 2 ? styles.h2 : styles.h3}>
+          <li key={h.id} className={styles[`h${h.level}`] || styles.h3}>
             <a
               href={`#${h.id}`}
               className={`${styles.link} ${activeId === h.id ? styles.active : ""}`}

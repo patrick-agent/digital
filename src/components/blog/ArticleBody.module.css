@@ -35,6 +35,18 @@
   letter-spacing: 0.01em;
 }
 
+.body h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 3vw, 2.65rem);
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-top: 3rem;
+  margin-bottom: 1.1rem;
+  letter-spacing: -0.035em;
+  line-height: 1.15;
+  scroll-margin-top: 132px;
+}
+
 .body h2 {
   font-family: var(--font-heading);
   font-size: clamp(1.75rem, 2.4vw, 2rem);
@@ -194,12 +206,22 @@
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+.body :global(.articleTableScroll) {
+  width: 100%;
+  overflow-x: auto;
+  margin: 2rem 0;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.025);
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.22);
+  -webkit-overflow-scrolling: touch;
+}
+
 .body table {
   width: 100%;
   border-collapse: collapse;
-  margin: 2rem 0;
-  overflow: hidden;
-  border-radius: 16px;
+  min-width: 640px;
+  margin: 0;
 }
 
 .body th,
@@ -207,11 +229,24 @@
   border: 1px solid rgba(255, 255, 255, 0.08);
   padding: 0.85rem 1rem;
   text-align: left;
+  vertical-align: top;
 }
 
 .body th {
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(139, 92, 246, 0.13);
   color: #ffffff;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+}
+
+.body td {
+  color: #d4d4d8;
+  background: rgba(255, 255, 255, 0.018);
+}
+
+.body tr:nth-child(even) td {
+  background: rgba(255, 255, 255, 0.035);
 }
 
 /* Syntax highlight tones for code blocks */
@@ -244,6 +279,11 @@
     margin-top: 2.5rem;
   }
 
+  .body h1 {
+    font-size: 1.85rem;
+    margin-top: 2.5rem;
+  }
+
   .body h3 {
     font-size: 1.25rem;
   }
@@ -257,5 +297,9 @@
   .body img,
   .body iframe {
     border-radius: 16px;
+  }
+
+  .body table {
+    min-width: 600px;
   }
 }

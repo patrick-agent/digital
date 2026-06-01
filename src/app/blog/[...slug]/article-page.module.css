@@ -19,22 +19,14 @@
   margin-bottom: 3rem;
 }
 
-/* ---- Two-column grid (TOC + body) ---- */
+/* ---- Article body ---- */
 .contentGrid {
-  display: grid;
-  grid-template-columns: 280px minmax(0, 800px);
-  gap: 64px;
-  align-items: start;
-  justify-content: center;
-}
-
-.tocAside {
-  min-width: 0;
+  max-width: 860px;
+  margin: 0 auto;
 }
 
 .bodyWrap {
-  min-width: 0; /* prevent overflow in grid */
-  max-width: 800px;
+  min-width: 0;
 }
 
 /* ---- Tags ---- */
@@ -107,22 +99,6 @@
 }
 
 /* ---- Responsive ---- */
-@media (max-width: 1024px) {
-  .contentGrid {
-    grid-template-columns: 1fr;
-    gap: 0;
-  }
-
-  .tocAside {
-    display: none;
-  }
-
-  .bodyWrap {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-}
-
 @media (max-width: 768px) {
   .article {
     padding: 0 var(--space-md) var(--space-3xl);

@@ -210,11 +210,9 @@ async function renderArticlePage(post, related) {
             <Breadcrumb items={breadcrumbItems} />
           </div>
           <div className={styles.contentGrid}>
-            <aside className={styles.tocAside}>
-              <TableOfContents content={post.content} />
-            </aside>
             <div className={styles.bodyWrap}>
               <ArticleSummary excerpt={post.excerpt} />
+              <TableOfContents content={post.content} />
               <ArticleBody content={post.content} />
               {post.tags?.length > 0 && (
                 <section className={styles.tagsSection}>
