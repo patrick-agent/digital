@@ -154,3 +154,48 @@ Google Sheet ──► scripts/sync-blog.mjs (CLI)
    - Nếu không → create mới với persona = "artist"
 4. Bỏ qua rows có status ≠ "public"
 <!-- END:google-sheets-sync -->
+
+<!-- BEGIN:auto-indexing -->
+# Google Sitemap Ping — Auto Index URLs
+
+## Tổng quan
+
+Gửi sitemap đến Google sau mỗi lần deploy để Google crawl và lập chỉ mục.
+
+## Cách hoạt động
+
+1. Script gọi `https://www.google.com/ping?sitemap=https://tachy.io.vn/sitemap.xml`
+2. Google nhận ping và lên lịch crawl sitemap
+3. Các URL mới/cập nhật sẽ được index trong vài giờ
+
+## Cách sử dụng
+
+```bash
+# Dry-run (xem trước)
+npm run index:urls:dry
+
+# Thực thi thật
+npm run index:urls
+```
+
+## Architecture
+
+```
+Vercel Deploy ──► npm run postdeploy
+                       │
+                       ▼
+              scripts/index-urls.mjs
+                       │
+                       ▼
+         https://www.google.com/ping?sitemap=...
+                       │
+                       ▼
+              Google lên lịch crawl
+```
+
+## Ghi chú
+
+- Không cần cấu hình, không cần API key, không cần biến môi trường
+- Google sẽ crawl lại toàn bộ sitemap, thường trong vài giờ
+- Nếu muốn index nhanh hơn (vài phút), dùng Google Indexing API (xem target_6yfxb4a)
+<!-- END:auto-indexing -->

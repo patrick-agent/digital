@@ -2,6 +2,9 @@ import { Geist, Geist_Mono, Caveat } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 
+const siteDescription =
+  "Tachy là một nghệ sĩ độc lập tự sáng tác và phân phối sản phẩm âm nhạc của chính mình lên đa nền tảng âm nhạc số. Với triết lý “âm nhạc là sự thật của cảm xúc”, các tác phẩm của nghệ sĩ Indie Tachy thường mang màu sắc sâu lắng, mộng mị nhưng vẫn hiện đại và giàu sáng tạo. ";
+
 /**
  * Optimized font loading with display settings for better performance
  * - font-display: 'swap' prevents layout shift and shows fallback immediately
@@ -32,8 +35,7 @@ const caveat = Caveat({
 export const metadata = {
   metadataBase: new URL('https://tachy.io.vn'),
   title: "Tachy — An Indie Artist",
-  description:
-    "An immersive 3D interactive music portfolio experience. Explore sound, visuals, and creativity in a dreamy studio space.",
+  description: siteDescription,
   keywords: ["music", "portfolio", "3D", "interactive", "studio", "artist", "Tachy", "indie"],
   icons: {
     icon: [
@@ -49,8 +51,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Tachy — An Indie Artist",
-    description:
-      "An immersive 3D interactive music portfolio experience.",
+    description: siteDescription,
     type: "website",
     url: "https://tachy.io.vn",
     siteName: "Tachy",
@@ -61,8 +62,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Tachy — An Indie Artist",
-    description:
-      "An immersive 3D interactive music portfolio experience.",
+    description: siteDescription,
   },
 };
 
