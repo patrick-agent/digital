@@ -1,19 +1,13 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import styles from "./Navbar.module.css";
+import { enabledItems, mergeSiteSettings } from "@/lib/site-defaults";
 
-const NAV_LINKS = [
-  { href: "/#hero", id: "hero", label: "Home" },
-  { href: "/#about", id: "about", label: "About" },
-  { href: "/#music", id: "music", label: "Music" },
-  { href: "/#latest-ep", id: "latest-ep", label: "Lastest EP" },
-  { href: "/#donation", id: "donation", label: "Support" },
-  { href: "/contact", id: "contact", label: "Contact" },
-];
-
-export default function Navbar() {
+export default function Navbar({ settings }) {
+  const siteSettings = mergeSiteSettings(settings);
+  const branding = siteSettings.branding;
+  const navLinks = enabledItems(siteSettings.navigation);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("hero");
@@ -35,7 +29,7 @@ export default function Navbar() {
       { threshold: 0.3, rootMargin: "-80px 0px 0px 0px" }
     );
 
-    NAV_LINKS.forEach(({ id }) => {
+    navLinks.forEach(({ id }) => {
       const el = document.getElementById(id);
       if (el) observer.observe(el);
     });
@@ -79,9 +73,9 @@ export default function Navbar() {
       <nav className={styles.nav}>
         <a href="/" className={styles.brand} id="nav-brand">
           <div className={styles.logoMark}>
-            <Image
-              src="/logo.png"
-              alt="Tachy Logo"
+            <img
+              src={branding.logoUrl || "/logo.png"}
+              alt={`${branding.siteName || "Tachy"} Logo`}
               width={52}
               height={52}
               className={styles.logoImage}
@@ -89,13 +83,13 @@ export default function Navbar() {
             />
           </div>
           <div className={styles.brandText}>
-            <span className={styles.brandName}>Tachy</span>
-            <span className={styles.brandSub}>An Indie Artist</span>
+            <span className={styles.brandName}>{branding.siteName}</span>
+            <span className={styles.brandSub}>{branding.siteSubtitle}</span>
           </div>
         </a>
 
         <div className={styles.desktopLinks}>
-          {NAV_LINKS.map((link) => (
+          {navLinks.map((link) => (
             <a
               key={link.id}
               href={link.href}
@@ -118,7 +112,7 @@ export default function Navbar() {
           <span className={styles.bar} />
         </button>
 
-        <a href="/#music" className={styles.cta} id="nav-listen-now">
+        <a href={branding.navCtaHref || "/#music"} className={styles.cta} id="nav-listen-now">
           <span className={styles.ctaPulse} />
           <svg
             className={styles.ctaIcon}
@@ -129,7 +123,7 @@ export default function Navbar() {
           >
             <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z" />
           </svg>
-          Listen Now
+          {branding.navCtaLabel || "Listen Now"}
         </a>
       </nav>
 
@@ -146,7 +140,7 @@ export default function Navbar() {
         aria-label="Navigation menu"
       >
         <div className={styles.drawerContent}>
-          {NAV_LINKS.map((link) => (
+          {navLinks.map((link) => (
             <a
               key={link.id}
               href={link.href}
@@ -157,7 +151,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="/#music"
+            href={branding.navCtaHref || "/#music"}
             className={styles.drawerCta}
             onClick={handleNavClick}
           >
@@ -169,7 +163,7 @@ export default function Navbar() {
             >
               <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z" />
             </svg>
-            Listen Now
+            {branding.navCtaLabel || "Listen Now"}
           </a>
         </div>
       </div>

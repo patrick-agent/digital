@@ -2,6 +2,7 @@
 
 import { forwardRef, useEffect, useRef, useState } from "react";
 import dynamic from "next/dynamic";
+import { mergeSiteSettings } from "@/lib/site-defaults";
 
 const SectionPlaceholder = forwardRef(function SectionPlaceholder(
   { id, minHeight = "100vh" },
@@ -71,32 +72,34 @@ function LazyMount({ id, minHeight, children, rootMargin = "400px 0px" }) {
   return <SectionPlaceholder id={id} minHeight={minHeight} ref={ref} />;
 }
 
-export default function HomeLazySections() {
+export default function HomeLazySections({ settings }) {
+  const visibility = mergeSiteSettings(settings).homepage.sectionVisibility;
+
   return (
     <>
-      <LazyMount id="about" minHeight="100vh">
+      {visibility.about && <LazyMount id="about" minHeight="100vh">
         <AboutSection />
-      </LazyMount>
-      <LazyMount id="music" minHeight="100vh" rootMargin="350px 0px">
+      </LazyMount>}
+      {visibility.music && <LazyMount id="music" minHeight="100vh" rootMargin="350px 0px">
         <MusicSection />
-      </LazyMount>
-      <LazyMount id="latest-ep" minHeight="90vh" rootMargin="300px 0px">
+      </LazyMount>}
+      {visibility.latestEp && <LazyMount id="latest-ep" minHeight="90vh" rootMargin="300px 0px">
         <LatestEPSection />
-      </LazyMount>
-      <LazyMount id="donation" minHeight="70vh" rootMargin="250px 0px">
+      </LazyMount>}
+      {visibility.donation && <LazyMount id="donation" minHeight="70vh" rootMargin="250px 0px">
         <DonationSection />
-      </LazyMount>
-      <LazyMount id="contact" minHeight="100vh" rootMargin="250px 0px">
+      </LazyMount>}
+      {visibility.contact && <LazyMount id="contact" minHeight="100vh" rootMargin="250px 0px">
         <ContactSection />
-      </LazyMount>
+      </LazyMount>}
     </>
   );
 }
 
-export function LazyFooter() {
+export function LazyFooter({ settings }) {
   return (
     <LazyMount minHeight="55vh" rootMargin="250px 0px">
-      <Footer />
+      <Footer settings={settings} />
     </LazyMount>
   );
 }

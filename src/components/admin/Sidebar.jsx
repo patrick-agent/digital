@@ -21,6 +21,8 @@ import {
   User,
   Users,
   Globe,
+  FolderOpen,
+  Palette,
 } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { useState } from "react"
@@ -57,6 +59,8 @@ const NAV_GROUPS = [
     label: "Global",
     icon: Globe,
     items: [
+      { href: "/admin/website", label: "Website Builder", icon: Palette },
+      { href: "/admin/media", label: "Media Library", icon: FolderOpen },
       { href: "/admin/newsletter", label: "Newsletter", icon: Mail },
       { href: "/admin/press-kit", label: "Press Kit", icon: File },
       { href: "/admin/seo", label: "SEO & Metadata", icon: Search },
@@ -142,16 +146,16 @@ export default function SidebarAdmin() {
   const pathname = usePathname()
 
   return (
-    <aside className="w-[20%] min-w-[200px] max-w-[300px] flex-none bg-sidebar border-r border-border flex flex-col h-screen sticky top-0">
+    <aside className="w-[280px] flex-none bg-sidebar border-r border-border flex flex-col h-screen sticky top-0 shadow-[18px_0_60px_rgba(0,0,0,0.22)]">
       {/* Logo */}
-      <div className="p-6 border-b border-border">
+      <div className="p-6 border-b border-border bg-gradient-to-br from-sidebar to-admin-card">
         <Link href="/admin/dashboard" className="flex items-center gap-3">
           <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-accent-purple to-accent-cyan flex items-center justify-center text-white font-bold text-sm">
             T
           </div>
           <div>
             <p className="text-text-primary font-semibold text-sm">Tachy Artist</p>
-            <p className="text-text-muted text-xs">Admin CMS</p>
+            <p className="text-text-muted text-xs">ngx-admin workspace</p>
           </div>
         </Link>
       </div>

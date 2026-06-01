@@ -7,6 +7,7 @@ import {
   FacebookIcon, InstagramIcon, YouTubeIcon, TikTokIcon,
   SpotifyIcon, AppleMusicIcon, AmazonMusicIcon
 } from "../icons/SocialIcons";
+import { enabledItems, mergeSiteSettings } from "@/lib/site-defaults";
 
 const FooterEffects = dynamic(
   () => import("./FooterEffects"),
@@ -23,33 +24,15 @@ const ICON_MAP = {
   "Amazon Music": AmazonMusicIcon,
 };
 
-const SOCIAL_LINKS = [
-  { name: "Facebook", url: "https://facebook.com/tachy.ngo/" },
-  { name: "Instagram", url: "https://instagram.com/tachy.ngo/" },
-  { name: "YouTube", url: "https://youtube.com/@TachyNgo" },
-  { name: "TikTok", url: "https://tiktok.com/@tachy.ngo" },
-  { name: "Spotify", url: "https://open.spotify.com/artist/6k6IAy0p8zl0cfzBqGvX9G" },
-  { name: "Apple Music", url: "https://music.apple.com/gb/artist/tachy/1818075133" },
-  { name: "Amazon Music", url: "https://music.amazon.com/artists/B0FBMQJR61/tachy" },
-];
-
-const NAV_LINKS = [
-  { label: "Home", href: "#hero" },
-  { label: "About", href: "#about" },
-  { label: "Music", href: "#music" },
-  { label: "Latest EP.", href: "#latest-ep" },
-];
-
-const SERVICES = [
-  { label: "Another Me", href: "/digital" },
-  { label: "Blog", href: "/blog" },
-  { label: "About Tachy", href: "/about" },
-  { label: "Shop", href: "/shop" },
-  { label: "Bio Music", href: "/bio-music" },
-  { label: "Terms", href: "/terms" },
-  { label: "Contact Me", href: "/contact" },
-  { label: "Privacy", href: "/privacy" },
-];
+const SOCIAL_LABELS = {
+  facebook: "Facebook",
+  instagram: "Instagram",
+  youtube: "YouTube",
+  tiktok: "TikTok",
+  spotify: "Spotify",
+  appleMusic: "Apple Music",
+  amazonMusic: "Amazon Music",
+};
 
 function ShootingStars() {
   return (
@@ -61,7 +44,12 @@ function ShootingStars() {
   );
 }
 
-export default function Footer() {
+export default function Footer({ settings }) {
+  const siteSettings = mergeSiteSettings(settings);
+  const footer = siteSettings.footer;
+  const socialLinks = Object.entries(siteSettings.socialLinks)
+    .map(([key, url]) => ({ name: SOCIAL_LABELS[key] || key, url }))
+    .filter((link) => link.url && ICON_MAP[link.name]);
   const [visible, setVisible] = useState(false);
   const sectionRef = useRef(null);
 
@@ -94,25 +82,22 @@ export default function Footer() {
       )}
       <div className={styles.content}>
         <div className={styles.brand}>
-          <h3 className={styles.brandName}>TACHY</h3>
-          <p className={styles.brandTagline}>
-            Tachy không chỉ là một nghệ sĩ Indie, mà còn là Music Producer độc lập với niềm đam mê khám phá chất âm mới. Từ phòng thu cá nhân, Tachy tự viết, tự thu và phát hành nhạc, mang đến trải nghiệm rất riêng cho người nghe yêu thích dòng RnB, Indie Poptimism, Chillout và Hip-hop.
-          </p>
-          <p className={styles.brandTagline}>
-            Với triết lý “âm nhạc là sự thật của cảm xúc”, các tác phẩm của nghệ sĩ Indie Tachy thường mang màu sắc sâu lắng, mộng mị nhưng vẫn hiện đại và giàu sáng tạo.
-          </p>
+          <h3 className={styles.brandName}>{footer.brandName}</h3>
+          {footer.paragraphs.map((paragraph, index) => (
+            <p key={index} className={styles.brandTagline}>{paragraph}</p>
+          ))}
         </div>
         <div className={styles.topSection}>
           <div className={styles.linkColumn}>
             <h4>Navigation</h4>
-            {NAV_LINKS.map((link) => (
+            {enabledItems(footer.navigationLinks).map((link) => (
               <a key={link.label} href={link.href}>{link.label}</a>
             ))}
           </div>
           <div className={styles.linkColumn}>
             <h4>Others</h4>
             <div className={styles.othersGrid}>
-              {SERVICES.map((link) => (
+              {enabledItems(footer.otherLinks).map((link) => (
                 <a key={link.label} href={link.href}>{link.label}</a>
               ))}
             </div>
@@ -120,7 +105,7 @@ export default function Footer() {
         </div>
         <div className={styles.bottomSection}>
           <div className={styles.socialIcons}>
-            {SOCIAL_LINKS.map((link) => {
+            {socialLinks.map((link) => {
               const IconComponent = ICON_MAP[link.name];
               return (
                 <a
@@ -137,7 +122,7 @@ export default function Footer() {
             })}
           </div>
           <p className={styles.copyright}>
-            &copy; {new Date().getFullYear()} <span>TACHY</span>. All rights reserved.
+            &copy; {new Date().getFullYear()} <span>{footer.copyrightName}</span>. All rights reserved.
           </p>
           <button className={styles.backToTop} onClick={scrollToTop} title="Back to top">
             &#8593;

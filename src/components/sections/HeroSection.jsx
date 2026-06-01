@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import styles from "./HeroSection.module.css";
+import { mergeSiteSettings } from "@/lib/site-defaults";
 
 const GradientBlinds = dynamic(
   () => import("../canvas/GradientBlinds"),
@@ -14,7 +15,8 @@ const CharacterCanvas = dynamic(
   { ssr: false, loading: () => null }
 );
 
-export default function HeroSection() {
+export default function HeroSection({ settings }) {
+  const heroSettings = mergeSiteSettings(settings).homepage.hero;
   const sectionRef = useRef(null);
   const textRef = useRef(null);
   const [enableHeroEffects, setEnableHeroEffects] = useState(false);
@@ -35,11 +37,11 @@ export default function HeroSection() {
     const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
     const isSlowNetwork = ["slow-2g", "2g", "3g"].includes(connection?.effectiveType);
 
-    if (reduceMotion || isMobile || isSlowNetwork) return;
+    if (reduceMotion || isMobile || isSlowNetwork || (!heroSettings.effectsEnabled && !heroSettings.characterEnabled)) return;
 
     const timer = window.setTimeout(() => {
-      setEnableHeroEffects(true);
-      setEnableCharacter(true);
+      setEnableHeroEffects(Boolean(heroSettings.effectsEnabled));
+      setEnableCharacter(Boolean(heroSettings.characterEnabled));
     }, 500);
 
     return () => window.clearTimeout(timer);
@@ -70,13 +72,13 @@ export default function HeroSection() {
         <div className={styles.textContent} ref={textRef}>
           <div className={styles.tagline} data-animate>
             <span className={styles.tagDot} />
-            Artist &bull; Producer &bull; Digital Marketer
+            {heroSettings.kicker}
           </div>
 
           <h1 className={styles.headline} data-animate>
-            Welcome to{" "}
+            {heroSettings.titlePrefix}{" "}
             <span className={styles.headlineAccent}>
-              Tachy&apos;s
+              {heroSettings.titleAccent}
               <svg className={styles.headlineUnderline} viewBox="0 0 200 12" preserveAspectRatio="none">
                 <path d="M2 8 Q50 2, 100 8 T198 6" stroke="url(#underlineGrad)" strokeWidth="3" fill="none" strokeLinecap="round" />
                 <defs>
@@ -87,19 +89,16 @@ export default function HeroSection() {
                 </defs>
               </svg>
             </span>{" "}
-            World
+            {heroSettings.titleSuffix}
           </h1>
 
           <p className={styles.subheadline} data-animate>
-            Listen to Tachy&apos;s latest track on{" "}
-            <span className={styles.platformHighlight}>Spotify</span>,{" "}
-            <span className={styles.platformHighlight}>Youtube</span>,{" "}
-            <span className={styles.platformHighlight}>Apple Music</span>,...
+            {heroSettings.description}
           </p>
 
           <div className={styles.ctaGroup} data-animate>
-            <a href="#music" className={styles.ctaPrimary}>
-              <span className={styles.ctaText}>Kh&aacute;m ph&aacute; h&agrave;nh tr&igrave;nh</span>
+            <a href={heroSettings.primaryCtaHref || "#music"} className={styles.ctaPrimary}>
+              <span className={styles.ctaText}>{heroSettings.primaryCtaLabel}</span>
               <span className={styles.ctaArrow}>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <line x1="5" y1="12" x2="19" y2="12" />
@@ -112,7 +111,7 @@ export default function HeroSection() {
               <div className={styles.scrollIndicator}>
                 <div className={styles.scrollDot} />
               </div>
-              <span>Cuộn để kh&aacute;m ph&aacute;</span>
+              <span>{heroSettings.scrollHint}</span>
             </div>
           </div>
         </div>
