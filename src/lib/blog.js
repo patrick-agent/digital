@@ -84,10 +84,8 @@ export async function getAllTags() {
 
 export async function getFeaturedPost() {
   const result = await readPosts({ status: "published", page: 1, limit: 9999 })
-  const featured = result.data
-    .filter((p) => p.tags?.includes("featured"))
-    .sort((a, b) => new Date(b.publishedAt || b.createdAt) - new Date(a.publishedAt || a.createdAt))
-  return featured[0] || null
+  const sorted = [...result.data].sort((a, b) => new Date(b.publishedAt || b.createdAt) - new Date(a.publishedAt || a.createdAt))
+  return sorted[0] || null
 }
 
 export async function getAllPublishedSlugs() {

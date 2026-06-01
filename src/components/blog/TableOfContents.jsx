@@ -1,12 +1,13 @@
 "use client"
 
-import { useMemo, useEffect, useState } from "react"
+import { useMemo, useEffect, useState, useCallback } from "react"
 import { getArticleHeadings } from "@/lib/article-content"
 import styles from "./TableOfContents.module.css"
 
 export default function TableOfContents({ content }) {
   const headings = useMemo(() => getArticleHeadings(content), [content])
   const [activeId, setActiveId] = useState(null)
+  const [isOpen, setIsOpen] = useState(true)
 
   function handleClick(e, id) {
     e.preventDefault()
@@ -44,20 +45,28 @@ export default function TableOfContents({ content }) {
 
   return (
     <nav className={styles.toc} aria-label="Table of contents">
-      <h2 className={styles.title}>Mục lục</h2>
-      <ul className={styles.list}>
-        {headings.map((h) => (
-          <li key={h.id} className={styles[`h${h.level}`] || styles.h3}>
-            <a
-              href={`#${h.id}`}
-              className={`${styles.link} ${activeId === h.id ? styles.active : ""}`}
-              onClick={(e) => handleClick(e, h.id)}
-            >
-              {h.text}
-            </a>
-          </li>
-        ))}
-      </ul>
+      <button
+        className={styles.header}
+        onClick={() => setIsOpen((v) => !v)}
+        aria-expanded={isOpen}
+      >
+        <h2 className={styles.title}>Mục lục</h2>
+      </button>
+      <div className={`${styles.wrapper} ${isOpen ? styles.wrapperOpen : ""}`}>
+        <ul className={styles.list}>
+          {headings.map((h) => (
+            <li key={h.id} className={styles[`h${h.level}`] || styles.h3}>
+              <a
+                href={`#${h.id}`}
+                className={`${styles.link} ${activeId === h.id ? styles.active : ""}`}
+                onClick={(e) => handleClick(e, h.id)}
+              >
+                {h.text}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </nav>
   )
 }

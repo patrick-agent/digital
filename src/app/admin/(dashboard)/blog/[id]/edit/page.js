@@ -1,6 +1,8 @@
 import { notFound } from "next/navigation"
 import { readPost } from "@/lib/db"
 import BlogForm from "@/components/admin/BlogForm"
+import PageHeader from "@/components/admin/PageHeader"
+import AdminPageContainer from "@/components/admin/AdminPageContainer"
 
 export const dynamic = "force-dynamic"
 
@@ -13,15 +15,12 @@ export default async function EditBlogPostPage({ params }) {
   }
 
   return (
-    <div>
-      <div className="mb-6">
-        <h1 className="text-2xl font-bold text-text-primary">Edit Post</h1>
-        <p className="text-text-muted text-sm mt-1">
-          Editing: {post.title}
-        </p>
-      </div>
-
+    <AdminPageContainer>
+      <PageHeader
+        title="Edit Post"
+        subtitle={`Editing: ${post.title}`}
+      />
       <BlogForm post={post} />
-    </div>
+    </AdminPageContainer>
   )
 }

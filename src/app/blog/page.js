@@ -30,6 +30,9 @@ export default async function BlogPage() {
     posts = postsData?.posts || []
     categories = categoriesData || []
     featuredPost = featured || null
+    if (featuredPost) {
+      posts = posts.filter((p) => p.id !== featuredPost.id)
+    }
   } catch (error) {
     console.error("Error loading blog data:", error)
     posts = []

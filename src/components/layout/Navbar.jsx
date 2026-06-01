@@ -79,7 +79,6 @@ export default function Navbar({ settings }) {
               width={52}
               height={52}
               className={styles.logoImage}
-              priority
             />
           </div>
           <div className={styles.brandText}>

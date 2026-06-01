@@ -3,14 +3,14 @@
 import { useState } from "react"
 import { useRouter } from "next/navigation"
 import Link from "next/link"
-import { Search, Edit, Trash2, ExternalLink, Copy } from "lucide-react"
+import { Edit, Trash2, ExternalLink, Copy, Search } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { calculateSEOScore } from "@/lib/seo-score"
 
 const STATUS_COLORS = {
-  draft: "bg-yellow-500/10 text-yellow-500 border-yellow-500/20",
-  published: "bg-green-500/10 text-green-500 border-green-500/20",
-  scheduled: "bg-blue-500/10 text-blue-500 border-blue-500/20",
+  draft: "bg-yellow-50 text-yellow-700 border-yellow-200",
+  published: "bg-green-50 text-green-700 border-green-200",
+  scheduled: "bg-blue-50 text-blue-700 border-blue-200",
 }
 
 const PERSONA_LABELS = {
@@ -25,8 +25,34 @@ const PERSONA_COLORS = {
 
 function SEOScoreBadge({ data }) {
   const { score } = calculateSEOScore(data)
-  const color = score >= 75 ? "text-green-400" : score >= 50 ? "text-yellow-400" : "text-red-400"
+  const color = score >= 75 ? "text-green-600" : score >= 50 ? "text-yellow-600" : "text-accent-pink"
   return <span className={`text-xs font-bold ${color}`}>{score}</span>
+}
+
+function ActionIcon({ icon: Icon, onClick, label }) {
+  return (
+    <button
+      onClick={onClick}
+      className="flex h-9 w-9 items-center justify-center rounded-lg text-text-muted transition-colors hover:bg-gray-100 hover:text-text-primary"
+      title={label}
+      aria-label={label}
+    >
+      <Icon size={16} />
+    </button>
+  )
+}
+
+function ActionLink({ icon: Icon, href, label }) {
+  return (
+    <Link
+      href={href}
+      className="flex h-9 w-9 items-center justify-center rounded-lg text-text-muted transition-colors hover:bg-gray-100 hover:text-text-primary"
+      title={label}
+      aria-label={label}
+    >
+      <Icon size={16} />
+    </Link>
+  )
 }
 
 export default function BlogListClient({ posts: initialPosts }) {
@@ -38,11 +64,7 @@ export default function BlogListClient({ posts: initialPosts }) {
 
   async function handleDelete(id) {
     if (!confirm("Are you sure you want to delete this post?")) return
-
-    const res = await fetch(`/api/admin/blog/posts/${id}`, {
-      method: "DELETE",
-    })
-
+    const res = await fetch(`/api/admin/blog/posts/${id}`, { method: "DELETE" })
     if (res.ok) {
       setPosts((prev) => prev.filter((p) => p.id !== id))
       router.refresh()
@@ -50,10 +72,7 @@ export default function BlogListClient({ posts: initialPosts }) {
   }
 
   async function handleDuplicate(id) {
-    const res = await fetch(`/api/admin/blog/posts/${id}?action=duplicate`, {
-      method: "POST",
-    })
-
+    const res = await fetch(`/api/admin/blog/posts/${id}?action=duplicate`, { method: "POST" })
     if (res.ok) {
       const data = await res.json()
       router.push(`/admin/blog/${data.id}/edit`)
@@ -62,81 +81,67 @@ export default function BlogListClient({ posts: initialPosts }) {
   }
 
   const filtered = posts.filter((post) => {
-    const matchesSearch =
-      !search ||
-      post.title.toLowerCase().includes(search.toLowerCase())
+    const matchesSearch = !search || post.title.toLowerCase().includes(search.toLowerCase())
     const matchesStatus = !statusFilter || post.status === statusFilter
     const matchesPersona = !personaFilter || post.persona === personaFilter
     return matchesSearch && matchesStatus && matchesPersona
   })
 
   return (
-    <div>
-      {/* Filters */}
-      <div className="flex items-center gap-3 mb-4">
-        <div className="relative flex-1 max-w-sm">
-          <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-text-muted" />
-          <input
-            type="text"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            placeholder="Search posts..."
-            className="w-full pl-9 pr-3 py-2 bg-admin-bg border border-border rounded-lg text-text-primary text-sm placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-accent-purple/50"
-          />
+    <div className="space-y-5">
+      {/* Toolbar */}
+      <div className="admin-card p-4">
+        <div className="flex flex-wrap items-center gap-3">
+          <div className="relative flex-1 max-w-xs">
+            <Search size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-text-muted-2" />
+            <input
+              type="text"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              placeholder="Search posts..."
+              className="admin-input pl-9"
+            />
+          </div>
+          <select
+            value={personaFilter}
+            onChange={(e) => setPersonaFilter(e.target.value)}
+            className="admin-input w-auto"
+          >
+            <option value="">All Personas</option>
+            <option value="artist">Tachy Artist</option>
+            <option value="marketer">Another Me</option>
+          </select>
+          <select
+            value={statusFilter}
+            onChange={(e) => setStatusFilter(e.target.value)}
+            className="admin-input w-auto"
+          >
+            <option value="">All Status</option>
+            <option value="draft">Draft</option>
+            <option value="published">Published</option>
+            <option value="scheduled">Scheduled</option>
+          </select>
         </div>
-        <select
-          value={personaFilter}
-          onChange={(e) => setPersonaFilter(e.target.value)}
-          className="px-3 py-2 bg-admin-bg border border-border rounded-lg text-text-primary text-sm focus:outline-none focus:ring-2 focus:ring-accent-purple/50"
-        >
-          <option value="">All Personas</option>
-          <option value="artist">Tachy Artist</option>
-          <option value="marketer">Another Me</option>
-        </select>
-        <select
-          value={statusFilter}
-          onChange={(e) => setStatusFilter(e.target.value)}
-          className="px-3 py-2 bg-admin-bg border border-border rounded-lg text-text-primary text-sm focus:outline-none focus:ring-2 focus:ring-accent-purple/50"
-        >
-          <option value="">All Status</option>
-          <option value="draft">Draft</option>
-          <option value="published">Published</option>
-          <option value="scheduled">Scheduled</option>
-        </select>
       </div>
 
       {/* Table */}
-      <div className="bg-admin-card border border-border rounded-xl overflow-x-auto">
-        <table className="w-full">
+      <div className="admin-table-wrapper">
+        <table>
           <thead>
             <tr className="border-b border-border">
-              <th className="text-left px-5 py-3 text-xs font-medium text-text-muted uppercase tracking-wider">
-                Title
-              </th>
-              <th className="text-left px-5 py-3 text-xs font-medium text-text-muted uppercase tracking-wider">
-                Persona
-              </th>
-              <th className="text-left px-5 py-3 text-xs font-medium text-text-muted uppercase tracking-wider">
-                Status
-              </th>
-              <th className="text-left px-5 py-3 text-xs font-medium text-text-muted uppercase tracking-wider">
-                Category
-              </th>
-              <th className="text-center px-5 py-3 text-xs font-medium text-text-muted uppercase tracking-wider">
-                SEO
-              </th>
-              <th className="text-left px-5 py-3 text-xs font-medium text-text-muted uppercase tracking-wider">
-                Updated
-              </th>
-              <th className="text-right px-5 py-3 text-xs font-medium text-text-muted uppercase tracking-wider">
-                Actions
-              </th>
+              <th>Title</th>
+              <th>Persona</th>
+              <th>Status</th>
+              <th>Category</th>
+              <th className="text-center">SEO</th>
+              <th>Updated</th>
+              <th className="text-right">Actions</th>
             </tr>
           </thead>
           <tbody>
             {filtered.length === 0 ? (
               <tr>
-                <td colSpan={7} className="px-5 py-12 text-center text-text-muted text-sm">
+                <td colSpan={7} className="px-6 py-20 text-center text-sm text-text-muted">
                   {posts.length === 0
                     ? "No posts yet. Create your first post!"
                     : "No posts match your filters."}
@@ -144,71 +149,60 @@ export default function BlogListClient({ posts: initialPosts }) {
               </tr>
             ) : (
               filtered.map((post) => (
-                <tr key={post.id} className="border-b border-border last:border-0 hover:bg-admin-hover/50 transition-colors">
-                  <td className="px-5 py-3">
-                    <div>
-                      <p className="text-text-primary text-sm font-medium">{post.title || "Untitled"}</p>
+                <tr key={post.id} className="border-b border-border last:border-0 hover:bg-gray-50 transition-colors">
+                  <td>
+                    <div className="max-w-md">
+                      <p className="text-sm font-semibold text-text-primary truncate">
+                        {post.title || "Untitled"}
+                      </p>
                       {post.slug && (
-                        <p className="text-text-muted text-xs mt-0.5">/{post.slug}</p>
+                        <p className="mt-0.5 text-xs text-text-muted truncate">/{post.slug}</p>
                       )}
                     </div>
                   </td>
-                  <td className="px-5 py-3">
+                  <td>
                     <Badge
                       variant="outline"
-                      className={`text-xs ${PERSONA_COLORS[post.persona] || ""}`}
+                      className={`text-xs font-semibold ${PERSONA_COLORS[post.persona] || ""}`}
                     >
                       {PERSONA_LABELS[post.persona] || post.persona || "artist"}
                     </Badge>
                   </td>
-                  <td className="px-5 py-3">
+                  <td>
                     <Badge
                       variant="outline"
-                      className={`text-xs ${STATUS_COLORS[post.status] || ""}`}
+                      className={`text-xs font-semibold capitalize ${STATUS_COLORS[post.status] || ""}`}
                     >
                       {post.status}
                     </Badge>
                   </td>
-                  <td className="px-5 py-3 text-text-secondary text-sm">
-                    {post.category || "—"}
+                  <td className="text-sm font-medium text-text-secondary">
+                    {post.category || <span className="text-text-muted-2">—</span>}
                   </td>
-                  <td className="px-5 py-3 text-center">
+                  <td className="text-center">
                     <SEOScoreBadge data={post} />
                   </td>
-                  <td className="px-5 py-3 text-text-muted text-sm">
-                    {new Date(post.updatedAt).toLocaleDateString()}
+                  <td className="text-sm text-text-muted whitespace-nowrap">
+                    {new Date(post.updatedAt).toLocaleDateString("en-US", {
+                      month: "short",
+                      day: "numeric",
+                      year: "numeric",
+                    })}
                   </td>
-                  <td className="px-5 py-3 text-right">
-                    <div className="flex items-center justify-end gap-1">
-                      <Link
+                  <td className="text-right">
+                    <div className="flex items-center justify-end gap-0.5">
+                      <ActionLink
+                        icon={ExternalLink}
                         href={`/blog/${post.category || "uncategorized"}/${post.slug}`}
-                        target="_blank"
-                        className="p-1.5 text-text-muted hover:text-accent-cyan transition-colors"
-                        title="Preview"
-                      >
-                        <ExternalLink size={16} />
-                      </Link>
-                      <button
-                        onClick={() => handleDuplicate(post.id)}
-                        className="p-1.5 text-text-muted hover:text-accent-purple transition-colors"
-                        title="Duplicate"
-                      >
-                        <Copy size={16} />
-                      </button>
-                      <Link
-                        href={`/admin/blog/${post.id}/edit`}
-                        className="p-1.5 text-text-muted hover:text-accent-cyan transition-colors"
-                        title="Edit"
-                      >
-                        <Edit size={16} />
-                      </Link>
-                      <button
+                        label="Preview post"
+                      />
+                      <ActionIcon icon={Copy} onClick={() => handleDuplicate(post.id)} label="Duplicate post" />
+                      <ActionLink icon={Edit} href={`/admin/blog/${post.id}/edit`} label="Edit post" />
+                      <ActionIcon
+                        icon={Trash2}
                         onClick={() => handleDelete(post.id)}
-                        className="p-1.5 text-text-muted hover:text-red-400 transition-colors"
-                        title="Delete"
-                      >
-                        <Trash2 size={16} />
-                      </button>
+                        label="Delete post"
+                      />
                     </div>
                   </td>
                 </tr>

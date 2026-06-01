@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { usePathname } from "next/navigation"
+import { usePathname, useSearchParams } from "next/navigation"
 import { signOut } from "next-auth/react"
 import {
   LayoutDashboard,
@@ -17,20 +17,18 @@ import {
   Settings,
   File,
   LogOut,
-  ChevronDown,
   User,
   Users,
   Globe,
   FolderOpen,
   Palette,
+  Sparkles,
 } from "lucide-react"
 import { cn } from "@/lib/utils"
-import { useState } from "react"
 
-// Cấu trúc navigation theo persona
 const NAV_GROUPS = [
   {
-    label: "Dashboard",
+    label: "Overview",
     items: [
       { href: "/admin/dashboard", label: "Dashboard", icon: LayoutDashboard },
     ],
@@ -62,118 +60,103 @@ const NAV_GROUPS = [
       { href: "/admin/website", label: "Website Builder", icon: Palette },
       { href: "/admin/media", label: "Media Library", icon: FolderOpen },
       { href: "/admin/newsletter", label: "Newsletter", icon: Mail },
-      { href: "/admin/press-kit", label: "Press Kit", icon: File },
+      { href: "/admin/pages", label: "Pages", icon: File },
       { href: "/admin/seo", label: "SEO & Metadata", icon: Search },
       { href: "/admin/settings", label: "Settings", icon: Settings },
     ],
   },
 ]
 
-function NavGroup({ group, pathname }) {
-  const [collapsed, setCollapsed] = useState(false)
-  const hasSubItems = group.items.length > 1
-  const GroupIcon = group.icon
+function NavItem({ item, pathname }) {
+  const Icon = item.icon
+  const isActive = item.isActive(pathname)
 
-  // Nếu group chỉ có 1 item (Dashboard), render thẳng không cần collapse
-  if (!hasSubItems) {
-    const item = group.items[0]
-    const Icon = item.icon
-    const isActive = pathname === item.href
-    return (
-      <Link
-        href={item.href}
+  return (
+    <Link
+      href={item.persona ? `${item.href}?persona=${item.persona}` : item.href}
+      className={cn(
+        "group relative flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-semibold transition-all duration-150",
+        isActive
+          ? "bg-accent-purple/10 text-accent-purple"
+          : "text-text-secondary hover:bg-sidebar-hover hover:text-text-primary"
+      )}
+    >
+      {isActive && (
+        <span className="absolute left-0 top-1/2 h-5 w-0.5 -translate-y-1/2 rounded-full bg-accent-purple" />
+      )}
+      <div
         className={cn(
-          "flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors",
+          "flex h-8 w-8 items-center justify-center rounded-lg transition-colors",
           isActive
-            ? "bg-sidebar-active text-accent-cyan"
-            : "text-text-secondary hover:bg-sidebar-hover hover:text-text-primary"
+            ? "bg-accent-purple/15 text-accent-purple"
+            : "text-text-muted group-hover:text-text-secondary"
         )}
       >
         <Icon size={18} />
-        {item.label}
-      </Link>
-    )
-  }
-
-  return (
-    <div className="space-y-1">
-      <button
-        onClick={() => setCollapsed(!collapsed)}
-        className="flex items-center justify-between w-full px-3 py-2 text-xs font-semibold text-text-muted uppercase tracking-wider hover:text-text-secondary transition-colors"
-      >
-        <span className="flex items-center gap-2">
-          {GroupIcon && <GroupIcon size={14} />}
-          {group.label}
-        </span>
-        <ChevronDown
-          size={14}
-          className={cn("transition-transform", collapsed && "-rotate-90")}
-        />
-      </button>
-
-      {!collapsed && (
-        <div className="space-y-0.5 pl-2">
-          {group.items.map((item) => {
-            const Icon = item.icon
-            // Active check: với blog có persona, check thêm query param
-            const isActive = item.persona
-              ? pathname === item.href
-              : pathname.startsWith(item.href)
-
-            return (
-              <Link
-                key={item.href + (item.persona || "")}
-                href={item.persona ? `${item.href}?persona=${item.persona}` : item.href}
-                className={cn(
-                  "flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors",
-                  isActive
-                    ? "bg-sidebar-active text-accent-cyan"
-                    : "text-text-secondary hover:bg-sidebar-hover hover:text-text-primary"
-                )}
-              >
-                <Icon size={16} />
-                {item.label}
-              </Link>
-            )
-          })}
-        </div>
-      )}
-    </div>
+      </div>
+      <span>{item.label}</span>
+    </Link>
   )
 }
 
-export default function SidebarAdmin() {
+export default function SidebarAdmin({ open = true }) {
   const pathname = usePathname()
+  const searchParams = useSearchParams()
+
+  const groups = NAV_GROUPS.map((group) => ({
+    ...group,
+    items: group.items.map((item) => ({
+      ...item,
+      isActive(currentPathname) {
+        if (item.persona) {
+          return currentPathname === item.href && searchParams.get("persona") === item.persona
+        }
+        return currentPathname === item.href || currentPathname.startsWith(`${item.href}/`)
+      },
+    })),
+  }))
 
   return (
-    <aside className="w-[280px] flex-none bg-sidebar border-r border-border flex flex-col h-screen sticky top-0 shadow-[18px_0_60px_rgba(0,0,0,0.22)]">
-      {/* Logo */}
-      <div className="p-6 border-b border-border bg-gradient-to-br from-sidebar to-admin-card">
-        <Link href="/admin/dashboard" className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-accent-purple to-accent-cyan flex items-center justify-center text-white font-bold text-sm">
-            T
-          </div>
-          <div>
-            <p className="text-text-primary font-semibold text-sm">Tachy Artist</p>
-            <p className="text-text-muted text-xs">ngx-admin workspace</p>
-          </div>
-        </Link>
+    <aside className="admin-sidebar-content flex h-full w-full flex-col border-r border-border bg-white">
+      <div className="flex h-16 shrink-0 items-center gap-3 border-b border-border px-5">
+        <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent-purple/10">
+          <Sparkles size={18} className="text-accent-purple" />
+        </div>
+        <div>
+          <p className="text-sm font-bold leading-tight text-text-primary">Tachy CMS</p>
+          <p className="text-[11px] font-medium leading-tight text-text-muted">Admin Panel</p>
+        </div>
       </div>
 
-      {/* Navigation groups */}
-      <nav className="flex-1 min-h-0 overflow-y-auto p-4 space-y-3">
-        {NAV_GROUPS.map((group) => (
-          <NavGroup key={group.label} group={group} pathname={pathname} />
-        ))}
+      <nav className="flex-1 overflow-y-auto px-3 py-4">
+        <div>
+          {groups.map((group) => (
+            <div key={group.label} className="admin-nav-group">
+              <p className="mb-1.5 px-3 text-xs font-bold uppercase tracking-[0.08em] text-text-muted">
+                {group.label}
+              </p>
+              <div className="space-y-0.5">
+                {group.items.map((item) => (
+                  <NavItem
+                    key={item.href + (item.persona || "")}
+                    item={item}
+                    pathname={pathname}
+                  />
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
       </nav>
 
-      {/* Logout */}
-      <div className="p-4 border-t border-border">
+      <div className="shrink-0 border-t border-border p-3">
         <button
           onClick={() => signOut({ callbackUrl: "/admin/login" })}
-          className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-text-muted hover:bg-sidebar-hover hover:text-red-400 transition-colors w-full"
+          className="flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-semibold text-text-muted transition-colors hover:bg-red-50 hover:text-red-500"
         >
-          <LogOut size={18} />
+          <div className="flex h-8 w-8 items-center justify-center rounded-lg text-current">
+            <LogOut size={18} />
+          </div>
           Logout
         </button>
       </div>

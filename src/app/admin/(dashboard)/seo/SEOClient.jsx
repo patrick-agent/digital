@@ -58,7 +58,7 @@ export default function SEOClient({ seo, routes }) {
                 onClick={() => handleRouteChange(r.route)}
                 className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors ${
                   selectedRoute === r.route
-                    ? "bg-sidebar-active text-accent-cyan"
+                    ? "bg-sidebar-active text-accent-purple shadow-[inset_3px_0_0_var(--color-accent-purple)]"
                     : "text-text-secondary hover:bg-sidebar-hover"
                 }`}
               >

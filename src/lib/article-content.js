@@ -315,10 +315,68 @@ function markdownToHtml(markdown) {
   return blocks.join("\n")
 }
 
+function parseEmbeddedTable(inner) {
+  const lines = inner.split(/\r?\n/).map(l => l.trim()).filter(Boolean)
+
+  if (lines.length >= 3) {
+    const delimIdx = lines.findIndex(l => isTableDelimiter(l))
+    if (delimIdx > 0 && lines[delimIdx - 1].includes("|")) {
+      const headers = splitTableRow(lines[delimIdx - 1])
+      const alignments = splitTableRow(lines[delimIdx]).map(tableAlignment)
+      const rowCount = headers.length
+      const rows = []
+      for (let i = delimIdx + 1; i < lines.length; i++) {
+        if (lines[i].includes("|")) rows.push(splitTableRow(lines[i]))
+      }
+      return { headers, alignments, rows }
+    }
+  }
+
+  const cells = inner.trim().split("|").map(s => s.trim())
+  const emptyIdx = []
+  cells.forEach((c, i) => { if (c === "") emptyIdx.push(i) })
+  const groups = []
+  for (let i = 0; i < emptyIdx.length - 1; i++) {
+    const start = emptyIdx[i] + 1
+    const end = emptyIdx[i + 1]
+    if (start < end) groups.push(cells.slice(start, end))
+  }
+
+  if (groups.length < 2) return null
+  const alignCells = groups[1]
+  if (!alignCells.every(c => /^:?-{3,}:?$/.test(c))) return null
+  return {
+    headers: groups[0],
+    alignments: alignCells.map(tableAlignment),
+    rows: groups.slice(2),
+  }
+}
+
+function renderTableHtml({ headers, alignments, rows }) {
+  const head = headers.map((cell, i) =>
+    `<th style="text-align:${alignments[i] || "left"}">${parseInlineMarkdown(cell)}</th>`
+  ).join("")
+  const body = rows.map(row => {
+    const cells = headers.map((_, i) =>
+      `<td style="text-align:${alignments[i] || "left"}">${parseInlineMarkdown(row[i] || "")}</td>`
+    ).join("")
+    return `<tr>${cells}</tr>`
+  }).join("")
+  return `<div class="articleTableScroll"><table><thead><tr>${head}</tr></thead><tbody>${body}</tbody></table></div>`
+}
+
+function preprocessEmbeddedTables(html) {
+  return html.replace(/<p>([\s\S]*?)<\/p>/gi, (match, inner) => {
+    const parsed = parseEmbeddedTable(inner)
+    return parsed ? renderTableHtml(parsed) : match
+  })
+}
+
 function normalizeArticleContent(content) {
   const parsed = parseArticleFrontmatter(content)
-  const body = parsed.content.trim()
+  let body = parsed.content.trim()
   if (!body) return ""
+  body = preprocessEmbeddedTables(body)
   return looksLikeHtml(body) && !looksLikeMarkdown(body) ? body : markdownToHtml(body)
 }
 

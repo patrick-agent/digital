@@ -16,9 +16,10 @@ export default function AdminRootLayout({ children }) {
         closeButton
         toastOptions={{
           style: {
-            background: "#1a1a2e",
-            border: "1px solid rgba(168, 85, 247, 0.2)",
-            color: "#fff",
+            background: "#ffffff",
+            border: "1px solid #e4e9f2",
+            color: "#192038",
+            boxShadow: "0 0.5rem 1rem rgba(44, 51, 73, 0.12)",
           },
         }}
       />

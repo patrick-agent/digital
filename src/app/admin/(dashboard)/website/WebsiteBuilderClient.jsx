@@ -13,15 +13,15 @@ const tabs = [
   { id: "theme", label: "Theme", icon: Palette },
 ]
 
-const inputClass = "w-full px-3 py-2 bg-admin-bg border border-border rounded-lg text-text-primary text-sm focus:outline-none focus:ring-2 focus:ring-accent-purple/50"
-const labelClass = "block text-sm font-medium text-text-secondary mb-1"
+const inputClass = "w-full rounded-lg border border-border bg-white px-4 py-3 text-sm text-text-primary shadow-sm focus:outline-none focus:ring-2 focus:ring-accent-purple/20"
+const labelClass = "mb-2 block text-[0.8125rem] font-bold uppercase tracking-[0.04em] text-text-secondary"
 
 function Card({ title, description, children }) {
   return (
-    <section className="bg-admin-card border border-border rounded-xl p-6 space-y-4 shadow-[0_18px_60px_rgba(0,0,0,0.22)]">
+    <section className="admin-card space-y-6 p-6 lg:p-7">
       <div>
-        <h2 className="text-lg font-semibold text-text-primary">{title}</h2>
-        {description && <p className="text-sm text-text-muted mt-1">{description}</p>}
+        <h2>{title}</h2>
+        {description && <p className="mt-2 max-w-2xl text-sm text-text-muted">{description}</p>}
       </div>
       {children}
     </section>
@@ -30,7 +30,7 @@ function Card({ title, description, children }) {
 
 function TextField({ label, value, onChange, placeholder, type = "text" }) {
   return (
-    <div>
+    <div className="space-y-2">
       <label className={labelClass}>{label}</label>
       <input
         type={type}
@@ -45,7 +45,7 @@ function TextField({ label, value, onChange, placeholder, type = "text" }) {
 
 function TextArea({ label, value, onChange, rows = 3 }) {
   return (
-    <div>
+    <div className="space-y-2">
       <label className={labelClass}>{label}</label>
       <textarea
         value={value || ""}
@@ -59,8 +59,8 @@ function TextArea({ label, value, onChange, rows = 3 }) {
 
 function ToggleField({ label, checked, onChange }) {
   return (
-    <label className="flex items-center justify-between gap-4 rounded-lg border border-border bg-admin-bg px-3 py-2 text-sm text-text-secondary">
-      <span>{label}</span>
+    <label className="flex items-center justify-between gap-4 rounded-lg border border-border bg-admin-bg px-4 py-3 text-sm font-semibold text-text-secondary">
+      <span className="leading-6">{label}</span>
       <input
         type="checkbox"
         checked={Boolean(checked)}
@@ -73,21 +73,21 @@ function ToggleField({ label, checked, onChange }) {
 
 function LinkEditor({ title, items, onChange, onAdd, onRemove, showId = false }) {
   return (
-    <div className="space-y-3">
-      <div className="flex items-center justify-between">
-        <h3 className="text-sm font-semibold text-text-primary">{title}</h3>
+    <div className="space-y-3" style={{ paddingLeft: 16, paddingRight: 16 }}>
+      <div className="flex items-center justify-between gap-4">
+        <h3>{title}</h3>
         <button
           type="button"
           onClick={onAdd}
-          className="inline-flex items-center gap-2 rounded-lg border border-border bg-admin-bg px-3 py-2 text-xs font-medium text-text-secondary hover:text-text-primary"
+          className="inline-flex items-center gap-2 rounded-lg border border-border bg-admin-bg px-3 py-2 text-xs font-bold text-text-secondary hover:text-accent-purple"
         >
           <Plus size={14} /> Add link
         </button>
       </div>
       <div className="space-y-3">
         {items.map((item, index) => (
-          <div key={`${item.label}-${index}`} className="rounded-xl border border-border bg-admin-bg p-4">
-            <div className="grid grid-cols-1 gap-3 lg:grid-cols-12">
+          <div key={`${item.label}-${index}`} className="rounded-xl border border-border bg-admin-bg p-5">
+            <div className="grid grid-cols-1 gap-4 lg:grid-cols-12">
               <div className="lg:col-span-3">
                 <TextField label="Label" value={item.label} onChange={(value) => onChange(index, "label", value)} />
               </div>
@@ -100,7 +100,7 @@ function LinkEditor({ title, items, onChange, onAdd, onRemove, showId = false })
                 </div>
               )}
               <div className="flex items-end gap-3 lg:col-span-3">
-                <label className="flex h-10 flex-1 items-center justify-center gap-2 rounded-lg border border-border text-sm text-text-secondary">
+                <label className="flex h-11 flex-1 items-center justify-center gap-2 rounded-lg border border-border bg-white text-sm font-semibold text-text-secondary">
                   <input
                     type="checkbox"
                     checked={item.enabled !== false}
@@ -200,18 +200,18 @@ export default function WebsiteBuilderClient({ settings }) {
 
   return (
     <div className="space-y-6">
-      <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+      <div className="admin-card flex flex-col gap-5 p-6 lg:flex-row lg:items-center lg:justify-between lg:p-7">
         <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-accent-cyan">ngx-admin inspired</p>
-          <h1 className="mt-2 text-2xl font-bold text-text-primary">Website Builder</h1>
-          <p className="mt-1 text-sm text-text-muted">Tùy chỉnh website từ một giao diện admin, không cần sửa code.</p>
+          <p className="text-xs font-bold uppercase tracking-[0.22em] text-accent-purple">ngx-admin inspired</p>
+          <h1 className="mt-2">Website Builder</h1>
+          <p className="mt-2 max-w-2xl text-sm text-text-muted">Tùy chỉnh website từ một giao diện admin, không cần sửa code.</p>
         </div>
         <div className="flex flex-wrap gap-3">
           <a
             href="/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-lg border border-border bg-admin-card px-4 py-2 text-sm font-medium text-text-secondary hover:text-text-primary"
+            className="inline-flex items-center gap-2 rounded-lg border border-border bg-admin-card px-4 py-2.5 text-sm font-bold text-text-secondary hover:text-accent-purple"
           >
             <Eye size={16} /> Preview site
           </a>
@@ -219,7 +219,7 @@ export default function WebsiteBuilderClient({ settings }) {
             type="button"
             onClick={handleSave}
             disabled={saving}
-            className="inline-flex items-center gap-2 rounded-lg bg-accent-purple px-4 py-2 text-sm font-medium text-white hover:bg-accent-purple/90 disabled:opacity-50"
+            className="inline-flex items-center gap-2 rounded-lg bg-accent-purple px-4 py-2.5 text-sm font-bold text-white hover:bg-accent-purple/90 disabled:opacity-50"
           >
             <Save size={16} /> {saving ? "Saving..." : "Save Website"}
           </button>
@@ -227,7 +227,7 @@ export default function WebsiteBuilderClient({ settings }) {
       </div>
 
       <div className="grid grid-cols-1 gap-6 xl:grid-cols-[260px_minmax(0,1fr)]">
-        <aside className="rounded-2xl border border-border bg-sidebar p-3 xl:sticky xl:top-24 xl:self-start">
+        <aside className="admin-card p-3 xl:sticky xl:top-24 xl:self-start">
           <div className="space-y-1">
             {tabs.map((tab) => {
               const Icon = tab.icon
@@ -236,9 +236,9 @@ export default function WebsiteBuilderClient({ settings }) {
                   key={tab.id}
                   type="button"
                   onClick={() => setActiveTab(tab.id)}
-                  className={`flex w-full items-center gap-3 rounded-xl px-3 py-3 text-left text-sm font-medium transition-colors ${
+                  className={`flex w-full items-center gap-3 rounded-xl px-4 py-3 text-left text-sm font-bold transition-colors ${
                     activeTab === tab.id
-                      ? "bg-sidebar-active text-accent-cyan shadow-[inset_3px_0_0_var(--color-accent-cyan)]"
+                      ? "bg-sidebar-active text-accent-purple shadow-[inset_3px_0_0_var(--color-accent-purple)]"
                       : "text-text-secondary hover:bg-sidebar-hover hover:text-text-primary"
                   }`}
                 >

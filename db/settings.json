@@ -2,7 +2,154 @@
   "siteTitle": "Studio 3D",
   "seoTitle": "Tachy — Indie Artist & 3D Creator",
   "seoDescription": "An immersive 3D interactive music portfolio experience by Tachy — indie artist, producer, and 3D web creator.",
-  "seoKeywords": ["Tachy", "indie artist", "3D portfolio", "music producer", "web development", "cyberpunk"],
+  "seoKeywords": [
+    "Tachy",
+    "indie artist",
+    "3D portfolio",
+    "music producer",
+    "web development",
+    "cyberpunk"
+  ],
+  "branding": {
+    "siteName": "Tachy",
+    "siteSubtitle": "An Indie Artist",
+    "logoUrl": "/logo.png",
+    "adminTitle": "Tachy Artist",
+    "adminSubtitle": "Admin CMS",
+    "navCtaLabel": "Listen Now",
+    "navCtaHref": "/#music"
+  },
+  "navigation": [
+    {
+      "href": "/#hero",
+      "id": "hero",
+      "label": "Home",
+      "enabled": true
+    },
+    {
+      "href": "/#about",
+      "id": "about",
+      "label": "About",
+      "enabled": true
+    },
+    {
+      "href": "/#music",
+      "id": "music",
+      "label": "Music",
+      "enabled": true
+    },
+    {
+      "href": "/#latest-ep",
+      "id": "latest-ep",
+      "label": "Lastest EP",
+      "enabled": true
+    },
+    {
+      "href": "/#donation",
+      "id": "donation",
+      "label": "Support",
+      "enabled": true
+    },
+    {
+      "href": "/contact",
+      "id": "contact",
+      "label": "Contact",
+      "enabled": true
+    }
+  ],
+  "homepage": {
+    "hero": {
+      "kicker": "Artist • Producer • Digital Marketer",
+      "titlePrefix": "Welcome to",
+      "titleAccent": "Tachy's",
+      "titleSuffix": "World",
+      "description": "Listen to Tachy's latest track on Spotify, Youtube, Apple Music,...",
+      "primaryCtaLabel": "Khám phá hành trình",
+      "primaryCtaHref": "#music",
+      "scrollHint": "Cuộn để khám phá",
+      "effectsEnabled": true,
+      "characterEnabled": true
+    },
+    "sectionVisibility": {
+      "about": true,
+      "music": true,
+      "latestEp": true,
+      "donation": true,
+      "contact": true
+    }
+  },
+  "footer": {
+    "brandName": "TACHY",
+    "paragraphs": [
+      "Tachy không chỉ là một nghệ sĩ Indie, mà còn là Music Producer độc lập với niềm đam mê khám phá chất âm mới. Từ phòng thu cá nhân, Tachy tự viết, tự thu và phát hành nhạc, mang đến trải nghiệm rất riêng cho người nghe yêu thích dòng RnB, Indie Poptimism, Chillout và Hip-hop.",
+      "Với triết lý “âm nhạc là sự thật của cảm xúc”, các tác phẩm của nghệ sĩ Indie Tachy thường mang màu sắc sâu lắng, mộng mị nhưng vẫn hiện đại và giàu sáng tạo."
+    ],
+    "navigationLinks": [
+      {
+        "label": "Home",
+        "href": "#hero",
+        "enabled": true
+      },
+      {
+        "label": "About",
+        "href": "#about",
+        "enabled": true
+      },
+      {
+        "label": "Music",
+        "href": "#music",
+        "enabled": true
+      },
+      {
+        "label": "Latest EP.",
+        "href": "#latest-ep",
+        "enabled": true
+      }
+    ],
+    "otherLinks": [
+      {
+        "label": "Another Me",
+        "href": "/digital",
+        "enabled": true
+      },
+      {
+        "label": "Blog",
+        "href": "/blog",
+        "enabled": true
+      },
+      {
+        "label": "About Tachy",
+        "href": "/about",
+        "enabled": true
+      },
+      {
+        "label": "Shop",
+        "href": "/shop",
+        "enabled": true
+      },
+      {
+        "label": "Bio Music",
+        "href": "/bio-music",
+        "enabled": true
+      },
+      {
+        "label": "Terms",
+        "href": "/terms",
+        "enabled": true
+      },
+      {
+        "label": "Contact Me",
+        "href": "/contact",
+        "enabled": true
+      },
+      {
+        "label": "Privacy",
+        "href": "/privacy",
+        "enabled": true
+      }
+    ],
+    "copyrightName": "TACHY"
+  },
   "socialLinks": {
     "facebook": "https://facebook.com/tachy.ngo/",
     "instagram": "https://instagram.com/tachy.ngo/",
@@ -10,6 +157,14 @@
     "spotify": "https://open.spotify.com/artist/6k6IAy0p8zl0cfzBqGvX9G",
     "linkedin": "https://linkedin.com/in/tachyngo/",
     "tiktok": "https://tiktok.com/@tachy.ngo",
-    "appleMusic": "https://music.apple.com/gb/artist/tachy/1818075133"
+    "appleMusic": "https://music.apple.com/gb/artist/tachy/1818075133",
+    "amazonMusic": "https://music.amazon.com/artists/B0FBMQJR61/tachy"
+  },
+  "theme": {
+    "preset": "ngx-admin-classic-dark",
+    "primaryColor": "#a855f7",
+    "secondaryColor": "#06b6d4",
+    "accentColor": "#ec4899",
+    "adminDensity": "comfortable"
   }
 }

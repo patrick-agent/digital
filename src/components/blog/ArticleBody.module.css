@@ -11,7 +11,7 @@
 .summaryLabel {
   display: inline-block;
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.14em;
@@ -21,7 +21,7 @@
 
 .summaryText {
   color: #d4d4d8;
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 1.8;
   margin: 0;
 }
@@ -37,7 +37,7 @@
 
 .body h1 {
   font-family: var(--font-heading);
-  font-size: clamp(2rem, 3vw, 2.65rem);
+  font-size: 42px;
   font-weight: 800;
   color: var(--text-primary);
   margin-top: 3rem;
@@ -49,7 +49,7 @@
 
 .body h2 {
   font-family: var(--font-heading);
-  font-size: clamp(1.75rem, 2.4vw, 2rem);
+  font-size: 32px;
   font-weight: 700;
   color: var(--text-primary);
   margin-top: 3rem;
@@ -60,7 +60,7 @@
 
 .body h3 {
   font-family: var(--font-heading);
-  font-size: clamp(1.3rem, 1.8vw, 1.5rem);
+  font-size: 24px;
   font-weight: 600;
   color: var(--text-primary);
   margin-top: 2.25rem;
@@ -72,7 +72,7 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
   color: #d4d4d8;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.01em;
 }
@@ -105,17 +105,57 @@
   margin-bottom: 2rem;
   padding-left: 1.5rem;
   color: #d4d4d8;
-  line-height: 1.9;
+  line-height: 1.75;
+  font-size: 16px;
+  list-style: none;
 }
 
 .body li {
+  position: relative;
   margin-bottom: 0.75rem;
-  padding-left: 0.25rem;
-  line-height: 1.9;
+  padding-left: 1.25rem;
+  line-height: 1.75;
 }
 
-.body li::marker {
-  color: var(--article-accent);
+.body ul > li::before {
+  content: "";
+  position: absolute;
+  left: -0.45rem;
+  top: 0.65em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--article-accent);
+  opacity: 0.7;
+}
+
+.body ol {
+  border-left: 2px solid rgba(139, 92, 246, 0.35);
+  padding-left: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.body ol:hover {
+  border-left-color: var(--article-accent);
+}
+
+.body li ul,
+.body li ol {
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.body li ol {
+  border-left: none;
+  padding-left: 1.25rem;
+}
+
+.body li li {
+  padding-left: 1.75rem;
+}
+
+.body li li li {
+  padding-left: 2.25rem;
 }
 
 .body blockquote {
@@ -141,7 +181,7 @@
   margin: 2rem 0;
   overflow-x: auto;
   font-family: var(--font-mono);
-  font-size: 0.92rem;
+  font-size: 15px;
   line-height: 1.6;
   color: #e0e0e0;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
@@ -158,7 +198,7 @@
   background: rgba(139, 92, 246, 0.13);
   padding: 0.18rem 0.42rem;
   border-radius: 7px;
-  font-size: 0.875em;
+  font-size: 16px;
   color: #ddd6fe;
   font-family: var(--font-mono);
 }
@@ -187,7 +227,7 @@
 .body figcaption {
   margin-top: 0.75rem;
   color: var(--text-muted);
-  font-size: 0.9rem;
+  font-size: 14px;
   line-height: 1.6;
   text-align: center;
 }
@@ -227,16 +267,17 @@
 .body th,
 .body td {
   border: 1px solid rgba(255, 255, 255, 0.08);
-  padding: 0.85rem 1rem;
+  padding: 0.7rem 0.9rem;
   text-align: left;
   vertical-align: top;
+  font-size: 14px;
+  line-height: 1.6;
 }
 
 .body th {
   background: rgba(139, 92, 246, 0.13);
   color: #ffffff;
   font-family: var(--font-mono);
-  font-size: 0.82rem;
   letter-spacing: 0.02em;
 }
 
@@ -275,17 +316,17 @@
   }
 
   .body h2 {
-    font-size: 1.55rem;
+    font-size: 25px;
     margin-top: 2.5rem;
   }
 
   .body h1 {
-    font-size: 1.85rem;
+    font-size: 30px;
     margin-top: 2.5rem;
   }
 
   .body h3 {
-    font-size: 1.25rem;
+    font-size: 20px;
   }
 
   .body p {
