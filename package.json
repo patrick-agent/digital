@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predev": "node scripts/sync-db-from-vercel.mjs --silent-if-missing-token",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -13,6 +14,9 @@
     "music:covers:extract": "node scripts/extract-music-cover-art.mjs",
     "sync:blog": "node scripts/sync-blog.mjs",
     "sync:blog:dry": "node scripts/sync-blog.mjs --dry-run",
+    "sync:data:pull": "node scripts/sync-db-from-vercel.mjs",
+    "sync:data:pull:dry": "node scripts/sync-db-from-vercel.mjs --dry-run",
+    "sync:data:watch": "node scripts/sync-db-from-vercel.mjs --watch",
     "index:urls": "node scripts/index-urls.mjs",
     "index:urls:dry": "node scripts/index-urls.mjs --dry-run",
     "postdeploy": "node scripts/index-urls.mjs"

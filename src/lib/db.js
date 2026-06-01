@@ -7,6 +7,7 @@ import { mergeDeep, mergeSiteSettings } from "./site-defaults.js"
 const DB_DIR = path.join(process.cwd(), "db")
 const jsonCache = new Map()
 const isVercel = process.env.VERCEL === '1'
+const useBlobDb = isVercel || process.env.USE_VERCEL_BLOB_DB === '1' || process.env.DB_SYNC_MODE === 'blob'
 
 function blobToken() {
   return process.env.BLOB_READ_WRITE_TOKEN || ''
@@ -36,7 +37,7 @@ function blobAuthHeaders() {
 }
 
 async function ensureDbDir() {
-  if (isVercel) return
+  if (useBlobDb) return
   if (!existsSync(DB_DIR)) {
     await mkdir(DB_DIR, { recursive: true })
   }
@@ -99,7 +100,7 @@ async function writeBlob(filename, data) {
 }
 
 async function readJSON(filename) {
-  if (isVercel && blobToken()) {
+  if (useBlobDb && blobToken()) {
     const blobData = await readBlob(filename)
     if (blobData) return blobData
   }
@@ -133,7 +134,7 @@ async function readJSON(filename) {
 }
 
 async function writeJSON(filename, data) {
-  if (isVercel) {
+  if (useBlobDb) {
     const ok = await writeBlob(filename, data)
     jsonCache.delete(`blob:${filename}`)
     if (ok) return
@@ -153,7 +154,7 @@ async function writeJSON(filename, data) {
 }
 
 async function readFileJSON(filename) {
-  if (isVercel && blobToken()) {
+  if (useBlobDb && blobToken()) {
     const blobData = await readBlob(filename)
     if (blobData) return blobData
   }
@@ -165,7 +166,7 @@ async function readFileJSON(filename) {
 }
 
 async function writeFileJSON(filename, data) {
-  if (isVercel) {
+  if (useBlobDb) {
     const ok = await writeBlob(filename, data)
     jsonCache.delete(`blob:${filename}`)
     if (ok) return
