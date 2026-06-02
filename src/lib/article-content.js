@@ -372,11 +372,21 @@ function preprocessEmbeddedTables(html) {
   })
 }
 
+function preprocessEmbeddedHeadings(html) {
+  return html.replace(/<p>(\s*#{1,6}\s[\s\S]*?)<\/p>/gi, (match, inner) => {
+    const trimmed = inner.trim()
+    const level = trimmed.match(/^#{1,6}/)[0].length
+    const headingText = trimmed.replace(/^#{1,6}\s+/, "").trim()
+    return `<h${level}>${parseInlineMarkdown(headingText)}</h${level}>`
+  })
+}
+
 function normalizeArticleContent(content) {
   const parsed = parseArticleFrontmatter(content)
   let body = parsed.content.trim()
   if (!body) return ""
   body = preprocessEmbeddedTables(body)
+  body = preprocessEmbeddedHeadings(body)
   return looksLikeHtml(body) && !looksLikeMarkdown(body) ? body : markdownToHtml(body)
 }
 
