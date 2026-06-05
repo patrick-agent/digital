@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server"
 import { readPosts, createPost } from "@/lib/db"
 import { auth } from "@/lib/auth"
+import { notifyPublishedBlogPost } from "@/lib/blog-indexing"
 
 export async function GET(request) {
   const session = await auth()
@@ -26,7 +27,8 @@ export async function POST(request) {
   try {
     const body = await request.json()
     const post = await createPost(body)
-    return NextResponse.json(post, { status: 201 })
+    const indexing = await notifyPublishedBlogPost(post)
+    return NextResponse.json({ ...post, indexing }, { status: 201 })
   } catch (error) {
     return NextResponse.json(
       { error: "Failed to create post" },

@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server"
 import { readPost, updatePost, deletePost, duplicatePost } from "@/lib/db"
 import { auth } from "@/lib/auth"
+import { notifyPublishedBlogPost } from "@/lib/blog-indexing"
 
 export async function GET(request, { params }) {
   const session = await auth()
@@ -33,7 +34,8 @@ export async function PATCH(request, { params }) {
       return NextResponse.json({ error: "Not found" }, { status: 404 })
     }
 
-    return NextResponse.json(post)
+    const indexing = await notifyPublishedBlogPost(post)
+    return NextResponse.json({ ...post, indexing })
   } catch (error) {
     return NextResponse.json(
       { error: "Failed to update post" },

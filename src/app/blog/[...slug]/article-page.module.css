@@ -9,31 +9,82 @@
 }
 
 .articleShell {
+  position: relative;
   width: min(1280px, calc(100vw - 48px));
   margin-left: calc(50% - min(640px, calc(50vw - 24px)));
 }
 
 /* ---- Breadcrumb ---- */
 .breadcrumbWrap {
+  max-width: 1200px;
+  padding: 0 0.35rem;
   margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  margin-left: auto;
 }
 
 /* ---- Article body ---- */
 .contentGrid {
-  max-width: 860px;
+  position: relative;
+  isolation: isolate;
+  max-width: 1200px;
   margin: 0 auto;
+}
+
+.contentGrid::before {
+  content: "";
+  position: absolute;
+  top: 1.5rem;
+  left: 50%;
+  width: min(60rem, 108%);
+  height: 34rem;
+  transform: translateX(-50%);
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.12) 0%, rgba(91, 33, 182, 0.06) 34%, rgba(15, 15, 25, 0) 74%);
+  filter: blur(68px);
+  opacity: 0.54;
+  pointer-events: none;
+  z-index: -1;
 }
 
 .bodyWrap {
   min-width: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(3rem, 5vw, 4rem);
+  border: 1px solid rgba(168, 85, 247, 0.18);
+  background: linear-gradient(180deg, rgba(17, 17, 28, 0.9), rgba(12, 12, 20, 0.88));
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45), 0 12px 34px rgba(76, 29, 149, 0.15);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-sizing: border-box;
+}
+
+.bodyWrap > * {
+  width: min(100%, 800px);
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+  .breadcrumbWrap,
+  .contentGrid,
+  .bodyWrap {
+    max-width: 860px;
+  }
+
+  .bodyWrap {
+    padding: 2.5rem 2.35rem;
+  }
 }
 
 /* ---- Tags ---- */
 .tagsSection {
   margin-top: 3rem;
   padding-top: 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(168, 85, 247, 0.16);
 }
 
 .tagsHeading {
@@ -60,7 +111,7 @@
   background: rgba(139, 92, 246, 0.1);
   padding: 0.48rem 0.85rem;
   border-radius: 999px;
-  border: 1px solid rgba(139, 92, 246, 0.18);
+  border: 1px solid rgba(168, 85, 247, 0.18);
   text-decoration: none;
   transition: all 0.25s ease;
 }
@@ -68,7 +119,7 @@
 .tag:hover {
   color: #ffffff;
   background: rgba(139, 92, 246, 0.18);
-  border-color: rgba(139, 92, 246, 0.4);
+  border-color: rgba(168, 85, 247, 0.36);
   transform: translateY(-2px);
 }
 
@@ -112,9 +163,26 @@
   .breadcrumbWrap {
     margin-top: 1.5rem;
     margin-bottom: 2rem;
+    padding: 0;
+  }
+
+  .contentGrid::before {
+    top: 1rem;
+    width: 140%;
+    height: 28rem;
+    filter: blur(44px);
+    opacity: 0.48;
+  }
+
+  .bodyWrap {
+    padding: 1.5rem 1.4rem;
+    border-radius: 20px;
   }
 
   .tagsSection {
     margin-top: 2.5rem;
   }
 }
+  .tag {
+    font-size: 9px;
+  }

@@ -70,7 +70,6 @@ export default function ArticleHero({ post }) {
         <h1 className={styles.title}>{post.title}</h1>
         {post.excerpt && <p className={styles.excerpt}>{post.excerpt}</p>}
         <div className={styles.meta}>
-          <span className={styles.author}>{siteMetadata.author}</span>
           <time dateTime={post.publishedAt}>
             {new Date(post.publishedAt || post.createdAt).toLocaleDateString("en-US", {
               year: "numeric",

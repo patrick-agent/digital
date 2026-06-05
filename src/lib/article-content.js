@@ -26,7 +26,7 @@ function decodeHtml(value) {
     .replace(/&#(\d+);/g, (_, code) => String.fromCharCode(Number(code)))
 }
 
-function slugifyHeading(text) {
+export function slugifyHeading(text) {
   const normalized = decodeHtml(text)
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
@@ -73,6 +73,10 @@ function looksLikeHtml(value) {
   return /<\/?(?:h[1-6]|p|ul|ol|li|blockquote|pre|code|table|thead|tbody|tr|td|th|img|figure|figcaption|div|section|br|hr)\b/i.test(value)
 }
 
+function looksLikeEscapedHtml(value) {
+  return /&lt;\/?(?:h[1-6]|p|ul|ol|li|blockquote|pre|code|table|thead|tbody|tr|td|th|img|figure|figcaption|div|section|br|hr|strong|em|a)\b/i.test(value)
+}
+
 function looksLikeMarkdown(value) {
   return Boolean(
     /(^|\n)\s{0,3}#{1,6}\s+/.test(value) ||
@@ -93,6 +97,13 @@ function parseInlineMarkdown(value) {
   let output = String(value || "").replace(/`([^`\n]+)`/g, (_, code) => {
     const token = `@@ARTICLE_CODE_${codeTokens.length}@@`
     codeTokens.push(`<code>${escapeHtml(code)}</code>`)
+    return token
+  })
+
+  const htmlTokens = []
+  output = output.replace(/<\/?(?:strong|em|a|img|code|span|br)\b[^>]*>/gi, (tag) => {
+    const token = `@@ARTICLE_HTML_${htmlTokens.length}@@`
+    htmlTokens.push(tag)
     return token
   })
 
@@ -122,6 +133,10 @@ function parseInlineMarkdown(value) {
     .replace(/__([^_]+)__/g, "<strong>$1</strong>")
     .replace(/(^|[\s(])\*([^*\n]+)\*/g, "$1<em>$2</em>")
     .replace(/(^|[\s(])_([^_\n]+)_/g, "$1<em>$2</em>")
+
+  htmlTokens.forEach((html, index) => {
+    output = output.replace(`@@ARTICLE_HTML_${index}@@`, html)
+  })
 
   codeTokens.forEach((html, index) => {
     output = output.replace(`@@ARTICLE_CODE_${index}@@`, html)
@@ -377,17 +392,57 @@ function preprocessEmbeddedHeadings(html) {
     const trimmed = inner.trim()
     const level = trimmed.match(/^#{1,6}/)[0].length
     const headingText = trimmed.replace(/^#{1,6}\s+/, "").trim()
+
+    const looksLikeBodyCopy =
+      headingText.length > 120 ||
+      /<\/?(?:strong|em|a|img|code|br)\b/i.test(headingText) ||
+      /\s-\s/.test(headingText)
+
+    if (looksLikeBodyCopy) {
+      return `<p>${parseInlineMarkdown(headingText)}</p>`
+    }
+
     return `<h${level}>${parseInlineMarkdown(headingText)}</h${level}>`
   })
 }
 
-function normalizeArticleContent(content) {
+function prepareArticleContent(content) {
   const parsed = parseArticleFrontmatter(content)
   let body = parsed.content.trim()
   if (!body) return ""
+  if (!looksLikeHtml(body) && looksLikeEscapedHtml(body)) {
+    body = decodeHtml(body)
+  }
   body = preprocessEmbeddedTables(body)
   body = preprocessEmbeddedHeadings(body)
-  return looksLikeHtml(body) && !looksLikeMarkdown(body) ? body : markdownToHtml(body)
+  return body
+}
+
+function detectArticleRenderMode(body) {
+  if (!body) return "markdown"
+
+  const hasHtml = looksLikeHtml(body)
+  const hasMarkdown = looksLikeMarkdown(body)
+
+  if (/^\s*</.test(body) || (hasHtml && !hasMarkdown)) {
+    return "html"
+  }
+
+  return "markdown"
+}
+
+export function getArticleSource(content) {
+  return prepareArticleContent(content)
+}
+
+export function getArticleRenderMode(content) {
+  return detectArticleRenderMode(prepareArticleContent(content))
+}
+
+function normalizeArticleContent(content) {
+  const body = prepareArticleContent(content)
+  if (!body) return ""
+  return detectArticleRenderMode(body) === "html" ? body : markdownToHtml(body)
 }
 
 function uniqueId(baseId, seen) {

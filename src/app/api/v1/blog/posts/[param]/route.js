@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server"
 import { validateApiKey } from "@/lib/api-auth"
 import { readPost, updatePost, deletePost } from "@/lib/db"
+import { notifyPublishedBlogPost } from "@/lib/blog-indexing"
 
 export async function GET(request, { params }) {
   const authError = validateApiKey(request)
@@ -35,7 +36,8 @@ export async function PATCH(request, { params }) {
       )
     }
 
-    return NextResponse.json({ success: true, data: post })
+    const indexing = await notifyPublishedBlogPost(post)
+    return NextResponse.json({ success: true, data: post, indexing })
   } catch (error) {
     return NextResponse.json(
       { success: false, error: "Failed to update post" },

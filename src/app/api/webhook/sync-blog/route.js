@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server"
 import { validateApiKey } from "@/lib/api-auth"
 import { createPost, updatePost, readPosts } from "@/lib/db"
+import { notifyPublishedBlogPost } from "@/lib/blog-indexing"
 
 const SHEET_STATUS_PUBLIC = "public"
 const BLOG_PERSONA = "artist"
@@ -69,7 +70,7 @@ export async function POST(request) {
       )
     }
 
-    const results = { created: 0, updated: 0, skipped: 0, errors: [] }
+    const results = { created: 0, updated: 0, skipped: 0, indexed: 0, indexSkipped: 0, indexErrors: 0, errors: [] }
     const existingPosts = (await readPosts({ persona: BLOG_PERSONA })).data
 
     for (const row of rows) {
@@ -88,10 +89,18 @@ export async function POST(request) {
 
         if (existing) {
           console.log('Final post content length:', postData.content?.length, '| slug:', slug)
-          await updatePost(existing.id, { ...postData, slug: existing.slug })
+          const post = await updatePost(existing.id, { ...postData, slug: existing.slug })
+          const indexing = await notifyPublishedBlogPost(post)
+          if (indexing.success) results.indexed++
+          else if (indexing.skipped) results.indexSkipped++
+          else results.indexErrors++
           results.updated++
         } else {
-          await createPost(postData)
+          const post = await createPost(postData)
+          const indexing = await notifyPublishedBlogPost(post)
+          if (indexing.success) results.indexed++
+          else if (indexing.skipped) results.indexSkipped++
+          else results.indexErrors++
           results.created++
         }
       } catch (err) {

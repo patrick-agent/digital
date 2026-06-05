@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server"
 import { validateApiKey } from "@/lib/api-auth"
 import { readPosts, createPost } from "@/lib/db"
+import { notifyPublishedBlogPost } from "@/lib/blog-indexing"
 
 export async function GET(request) {
   const authError = validateApiKey(request)
@@ -27,9 +28,10 @@ export async function POST(request) {
   try {
     const body = await request.json()
     const post = await createPost(body)
+    const indexing = await notifyPublishedBlogPost(post)
 
     return NextResponse.json(
-      { success: true, data: post },
+      { success: true, data: post, indexing },
       { status: 201 }
     )
   } catch (error) {

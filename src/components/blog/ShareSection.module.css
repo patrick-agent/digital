@@ -1,11 +1,6 @@
 .share {
   margin-top: 3rem;
-  padding: 1.25rem;
-  border-radius: 22px;
-  background: rgba(15, 15, 15, 0.72);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
+  padding: 1.35rem 0;
 }
 
 .title {
@@ -26,12 +21,12 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 42px;
-  padding: 0.68rem 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  min-height: auto;
+  padding: 4px 16px;
+  border: 1px solid rgba(168, 85, 247, 0.16);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.04);
-  color: #e4e4e7;
+  background: rgba(255, 255, 255, 0.03);
+  color: #d8d8e3;
   font-family: var(--font-mono);
   font-size: 13px;
   cursor: pointer;
@@ -40,8 +35,8 @@
 
 .button:hover {
   color: #ffffff;
-  border-color: rgba(139, 92, 246, 0.44);
-  background: rgba(139, 92, 246, 0.14);
+  border-color: rgba(168, 85, 247, 0.34);
+  background: rgba(139, 92, 246, 0.12);
   transform: translateY(-2px);
 }
 
