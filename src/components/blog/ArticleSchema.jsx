@@ -37,7 +37,7 @@ export default function ArticleSchema({ post }) {
     },
     datePublished: publishedAt,
     dateModified: modifiedAt,
-    keywords: post.seoKeywords?.join(", ") || post.tags?.join(", ") || "",
+    keywords: (Array.isArray(post.seoKeywords) ? post.seoKeywords : []).join(", ") || (Array.isArray(post.tags) ? post.tags : []).join(", ") || "",
     articleSection: post.category,
     wordCount: plainText.split(/\s+/).filter(Boolean).length,
     mainEntityOfPage: {

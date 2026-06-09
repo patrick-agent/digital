@@ -1296,7 +1296,12 @@
     "publishedAt": "2026-06-09T09:29:08.329Z",
     "seoTitle": "Vòng Hòa Âm Là Gì? 10 Chord Progression Cơ Bản Cho Người Mới",
     "seoDescription": "Khám phá vòng hòa âm (chord progression): I-IV-V, ii-V-I, 12-bar blues và cách áp dụng vào sáng tác nhạc trên FL Studio, Ableton.",
-    "seoKeywords": "vòng hòa âm là gì, chord progression cơ bản, vòng hợp âm, sáng tác nhạc",
+    "seoKeywords": [
+      "vòng hòa âm là gì",
+      "chord progression cơ bản",
+      "vòng hợp âm",
+      "sáng tác nhạc"
+    ],
     "createdAt": "2026-06-09T09:29:08.335Z",
     "updatedAt": "2026-06-09T09:29:08.335Z"
   },
@@ -1321,7 +1326,13 @@
     "publishedAt": "2026-06-09T09:29:08.330Z",
     "seoTitle": "Các Loại Synthesizer: Subtractive, FM Và Wavetable Khác Nhau Thế Nào?",
     "seoDescription": "So sánh 3 loại synthesizer chính: Subtractive (analog), FM (digital) và Wavetable — cách chúng tạo ra âm thanh và ứng dụng trong sản xuất nhạc.",
-    "seoKeywords": "synthesizer là gì, subtractive synthesis, fm synthesis, wavetable synth, sound design",
+    "seoKeywords": [
+      "synthesizer là gì",
+      "subtractive synthesis",
+      "fm synthesis",
+      "wavetable synth",
+      "sound design"
+    ],
     "createdAt": "2026-06-09T09:29:08.343Z",
     "updatedAt": "2026-06-09T09:29:08.343Z"
   },
