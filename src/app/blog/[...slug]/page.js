@@ -21,7 +21,7 @@ import AuthorBox from "@/components/blog/AuthorBox"
 import BlogClient from "@/components/blog/BlogClient"
 import styles from "./article-page.module.css"
 
-export const dynamic = "force-dynamic"
+export const revalidate = 300
 
 export async function generateStaticParams() {
   const slugs = await getAllPublishedSlugs()
