@@ -199,3 +199,91 @@ Vercel Deploy ──► npm run postdeploy
 - Google sẽ crawl lại toàn bộ sitemap, thường trong vài giờ
 - Nếu muốn index nhanh hơn (vài phút), dùng Google Indexing API (xem target_6yfxb4a)
 <!-- END:auto-indexing -->
+
+<!-- BEGIN:seo-aeo-skills -->
+# SEO & AEO Skills Stack (Installed)
+
+## Skills đã cài đặt
+
+### 1. aaron-he-zhu/seo-geo-claude-skills (20 skills, bundle)
+- `competitor-analysis` — Phân tích đối thủ
+- `content-gap-analysis` — Phân tích khoảng trống nội dung
+- `keyword-research` — Nghiên cứu từ khóa
+- `serp-analysis` — Phân tích SERP
+- `geo-content-optimizer` — Tối ưu nội dung cho Generative Engine
+- `meta-tags-optimizer` — Tối ưu thẻ meta
+- `schema-markup-generator` — Tạo JSON-LD schema markup
+- `seo-content-writer` — Viết nội dung SEO
+- `content-refresher` — Refresh nội dung cũ
+- `internal-linking-optimizer` — Tối ưu internal links
+- `on-page-seo-auditor` — Audit on-page SEO
+- `technical-seo-checker` — Kiểm tra technical SEO
+- `backlink-analyzer` — Phân tích backlink
+- `rank-tracker` — Theo dõi thứ hạng
+- `content-quality-auditor` — Audit chất lượng nội dung
+- `domain-authority-auditor` — Audit domain authority
+- `entity-optimizer` — Tối ưu entity cho AI
+- `performance-reporter` — Báo cáo hiệu suất
+- `alert-manager` — Quản lý cảnh báo
+- `memory-management` — Quản lý bộ nhớ skill
+
+### 2. addyosmani/web-quality-skills@seo
+- Technical SEO (crawlability, robots.txt, canonical, sitemap)
+- On-page (title, meta, headings, image SEO, internal linking)
+- JSON-LD structured data (Organization, Article, Product, FAQ, Breadcrumb)
+- Mobile SEO, hreflang
+- Audit checklist (critical/high/medium)
+
+### 3. coreyhaines31/marketingskills@ai-seo
+- AI search optimization (Google AI Overviews, ChatGPT, Perplexity, Claude, Gemini, Copilot)
+- 3-pillar strategy: structure, authority, presence
+- AI visibility audit framework
+- Content-type-specific guidance
+
+### 4. sanity-io/agent-toolkit@seo-aeo-best-practices
+- SEO + AEO combined best practices
+- EEAT guidelines
+- Structured data implementation
+- Sitemap & robots.txt optimization
+
+### 5. jdrhyne/agent-skills@gsc (190 installs)
+- Query Google Search Console for search analytics, indexing status, SEO insights
+- Commands: top queries, top pages by traffic, low-CTR opportunities, URL inspection, sitemaps
+- Dimensions: query, page, country, device, date
+- Metrics: clicks, impressions, CTR, position
+- Requires: Google Cloud OAuth with `webmasters.readonly` scope + GSC property access
+
+### 6. agricidaniel/claude-seo@seo-backlinks (1.6K installs)
+- Backlink profile analysis: referring domains, anchor text distribution, toxic link detection, competitor gap analysis
+- Works with free APIs (Moz, Bing Webmaster, Common Crawl) + DataForSEO extension
+- Commands: `/seo backlinks <url>`, `/seo backlinks gap <url1> <url2>`, `/seo backlinks toxic <url>`
+- Output: Backlink Health Score 0-100, critical/high/medium priority issues, link building opportunities
+- Fallback cascade: DataForSEO → Moz → Bing → Common Crawl → verification crawler
+
+## Workflow đề xuất
+
+### Blog Post Lifecycle (Vibe Code)
+
+1. **Viết bài mới** → request tôi viết blog, tôi sẽ dùng `seo-content-writer` + `ai-seo` + `geo-content-optimizer` để tối ưu
+2. **Sync từ Google Sheets** → `npm run sync:blog` (tự động map SEO fields)
+3. **Sau sync** → tôi sẽ chạy `schema-markup-generator` để tạo JSON-LD, `meta-tags-optimizer` để kiểm tra metadata
+4. **Index** → `npm run postdeploy` (ping sitemap + Google Indexing API)
+5. **Theo dõi** → `rank-tracker`, `content-quality-auditor`, `backlink-analyzer`
+
+### Các lệnh CLI
+
+```bash
+# Sync blog + SEO optimize + index chạy tuần tự
+npm run sync:blog && npm run postdeploy
+
+# Kiểm tra technical SEO trước khi deploy
+# (dùng technical-seo-checker skill qua agent)
+
+# Phân tích nội dung AI visibility
+# (dùng ai-seo skill qua agent)
+```
+
+## Kích hoạt skills
+
+Các skills nằm tại `~\.agents\skills\`. Để dùng skill cụ thể trong phiên làm việc, chỉ cần yêu cầu agent load skill đó khi cần.
+<!-- END:seo-aeo-skills -->
