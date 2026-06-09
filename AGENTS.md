@@ -283,6 +283,15 @@ npm run sync:blog && npm run postdeploy
 # (dùng ai-seo skill qua agent)
 ```
 
+## Quy tắc tự động commit
+
+Sau mỗi lần viết/sửa blog post (thay đổi `db/blog.json`), tôi sẽ tự động:
+1. `git add db/blog.json` (và `AGENTS.md` nếu cần)
+2. `git commit -m "blog: [mô tả ngắn]"`
+3. Thông báo cho bạn biết
+
+Hoặc chạy thủ công: `npm run save`
+
 ## Kích hoạt skills
 
 Các skills nằm tại `~\.agents\skills\`. Để dùng skill cụ thể trong phiên làm việc, chỉ cần yêu cầu agent load skill đó khi cần.

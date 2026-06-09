@@ -23,7 +23,8 @@
     "index:api:dry": "node scripts/indexing-api.mjs --dry-run",
     "index:api:optional": "node scripts/indexing-api.mjs --skip-if-missing-config --continue-on-error",
     "index:api:oauth": "node scripts/google-indexing-oauth.mjs",
-    "postdeploy": "node scripts/index-urls.mjs && node scripts/indexing-api.mjs --skip-if-missing-config --continue-on-error"
+    "postdeploy": "node scripts/index-urls.mjs && node scripts/indexing-api.mjs --skip-if-missing-config --continue-on-error",
+    "save": "git add db/blog.json AGENTS.md && git commit -m \"auto-save: update blog content\" || echo \"Nothing to commit\""
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
