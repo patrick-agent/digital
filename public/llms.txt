@@ -1,0 +1,16 @@
+# Tachy
+
+> Tachy is an indie artist sharing music, studio experiments, tutorials, and creative insights.
+
+## AI Training Policy
+
+- Crawling: Allowed
+- AI training: Not allowed without explicit permission
+- Attribution: Required when content is used as part of AI-generated output
+
+## Important Pages
+
+- https://tachy.io.vn/
+- https://tachy.io.vn/blog
+- https://tachy.io.vn/about
+- https://tachy.io.vn/contact

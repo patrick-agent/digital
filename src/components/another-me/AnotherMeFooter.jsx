@@ -86,10 +86,10 @@ export default function AnotherMeFooter() {
               </div>
               <div className={styles.footerCol}>
                 <p className={styles.footerColTitle}>Other</p>
-                <a href="#">Another Me</a>
+                <a href="/digital">Another Me</a>
                 <a href="/digital/blog">Blog</a>
-                <a href="#">Terms and Condition</a>
-                <a href="#">Privacy Policy</a>
+                <a href="/terms">Terms and Condition</a>
+                <a href="/privacy">Privacy Policy</a>
               </div>
             </div>
           </div>

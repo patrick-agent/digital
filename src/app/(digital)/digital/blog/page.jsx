@@ -4,6 +4,20 @@ import BlogClient from './BlogClient';
 export const metadata = {
   title: 'Blog — Another Me',
   description: 'Digital Marketing insights, chiến lược, và kiến thức từ Tachy.',
+  openGraph: {
+    title: 'Blog — Another Me',
+    description: 'Digital Marketing insights, chiến lược, và kiến thức từ Tachy.',
+    type: 'website',
+    url: 'https://tachy.io.vn/digital/blog',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Blog — Another Me',
+    description: 'Digital Marketing insights, chiến lược, và kiến thức từ Tachy.',
+  },
+  alternates: {
+    canonical: 'https://tachy.io.vn/digital/blog',
+  },
 };
 
 export default function DigitalBlogPage() {

@@ -136,6 +136,16 @@ export default async function BlogCatchAllPage({ params }) {
         getAllCategories(),
       ])
 
+      const categoryDescriptions = {
+        tutorials: "Hướng dẫn chi tiết về sản xuất âm nhạc, home studio, và các kỹ thuật phòng thu.",
+        news: "Cập nhật tin tức, sự kiện và thông báo mới nhất từ Tachy.",
+        reviews: "Đánh giá chân thực về thiết bị phòng thu, nhạc cụ và công cụ sản xuất.",
+        music: "Chia sẻ về quá trình sáng tác, sản xuất và cảm hứng âm nhạc.",
+        production: "Kiến thức chuyên sâu về music production, mixing và mastering.",
+        gear: "Giới thiệu và đánh giá thiết bị phòng thu âm nhạc.",
+        seo: "Chiến lược SEO, digital marketing và tối ưu nội dung cho nghệ sĩ.",
+      }
+
       return (
         <BlogClient
           initialPosts={posts}
@@ -143,6 +153,7 @@ export default async function BlogCatchAllPage({ params }) {
           featuredPost={null}
           initialActiveCategory={decoded}
           pageTitle={`Category: ${decoded}`}
+          categoryDescriptions={categoryDescriptions}
         />
       )
     }

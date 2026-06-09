@@ -7,8 +7,18 @@ export const metadata = {
     "All releases by Tachy — RnB, Trapchill & Hip-hop singles and EPs. Listen on Spotify, Apple Music, YouTube and more.",
   openGraph: {
     title: "Bio Music — Tachy Artist",
-    description: "Discography of indie artist Tachy.",
+    description: "Complete discography of indie artist Tachy — RnB, Trapchill & Hip-hop.",
     type: "website",
+    images: [{ url: "/images/tachy-about.jpg", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bio Music — Tachy Artist",
+    description: "Complete discography of indie artist Tachy — RnB, Trapchill & Hip-hop.",
+    images: ["/images/tachy-about.jpg"],
+  },
+  alternates: {
+    canonical: "https://tachy.io.vn/bio-music",
   },
 }
 

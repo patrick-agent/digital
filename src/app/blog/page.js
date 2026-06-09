@@ -9,9 +9,16 @@ export const metadata = {
   description: "Read articles on music production, home studio gear, SEO, and creative strategy from Tachy.",
   openGraph: {
     title: "Blog — Tachy",
-    description: "Read articles on music production, home studio gear, SEO, and creative strategy from Tachy.",
+    description: "Khám phá các bài viết về sản xuất âm nhạc, thiết bị phòng thu, SEO và chiến lược sáng tạo từ Tachy.",
     type: "website",
     url: `${siteMetadata.siteUrl}/blog`,
+    images: [{ url: "/images/tachy-about.jpg", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blog — Tachy",
+    description: "Music production, home studio gear, SEO, and creative strategy from Tachy.",
+    images: ["/images/tachy-about.jpg"],
   },
   alternates: {
     canonical: `${siteMetadata.siteUrl}/blog`,

@@ -3,7 +3,7 @@ import Script from "next/script";
 import "./globals.css";
 
 const siteDescription =
-  "Tachy là một nghệ sĩ độc lập tự sáng tác và phân phối sản phẩm âm nhạc của chính mình lên đa nền tảng âm nhạc số. Với triết lý “âm nhạc là sự thật của cảm xúc”, các tác phẩm của nghệ sĩ Indie Tachy thường mang màu sắc sâu lắng, mộng mị nhưng vẫn hiện đại và giàu sáng tạo. ";
+  "Tachy là nghệ sĩ Indie RnB, Trapchill & Hip-hop. Sáng tác, sản xuất âm nhạc, chia sẻ kiến thức studio và chiến lược sáng tạo.";
 
 /**
  * Optimized font loading with display settings for better performance
@@ -56,13 +56,14 @@ export const metadata = {
     url: "https://tachy.io.vn",
     siteName: "Tachy",
     images: [
-      { url: "/apple-touch-icon.png", width: 180, height: 180 },
+      { url: "/images/tachy-about.jpg", width: 1200, height: 630 },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Tachy — An Indie Artist",
     description: siteDescription,
+    images: ["/images/tachy-about.jpg"],
   },
 };
 
@@ -77,6 +78,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning className={`${geistSans.variable} ${geistMono.variable} ${caveat.variable}`}>
       <body suppressHydrationWarning>
+        <link rel="preconnect" href="https://prod.spline.design" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="dns-prefetch" href="https://prod.spline.design" />
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-K9T7TND3"
@@ -86,6 +90,41 @@ export default function RootLayout({ children }) {
           />
         </noscript>
         {children}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "WebSite",
+                  name: "Tachy",
+                  url: "https://tachy.io.vn",
+                  description: siteDescription,
+                  potentialAction: {
+                    "@type": "SearchAction",
+                    target: {
+                      "@type": "EntryPoint",
+                      urlTemplate: "https://tachy.io.vn/search?q={search_term_string}",
+                    },
+                    "query-input": "required name=search_term_string",
+                  },
+                },
+                {
+                  "@type": "Person",
+                  name: "Tachy",
+                  url: "https://tachy.io.vn",
+                  sameAs: [
+                    "https://open.spotify.com/artist/6k6IAy0p8zl0cfzBqGvX9G",
+                    "https://youtube.com/@TachyNgo",
+                    "https://music.apple.com/gb/artist/tachy/1818075133",
+                  ],
+                  image: "https://tachy.io.vn/images/tachy-about.jpg",
+                },
+              ],
+            }),
+          }}
+        />
         <Script
           id="gtm"
           strategy="afterInteractive"

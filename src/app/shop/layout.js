@@ -9,6 +9,16 @@ export const metadata = {
     title: "Shop — Tachy Artist",
     description: "Curated gear & tools recommended by Tachy.",
     type: "website",
+    images: [{ url: "/images/tachy-about.jpg", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Shop — Tachy Artist",
+    description: "Discover recommended gear, tools, and essentials curated by Tachy.",
+    images: ["/images/tachy-about.jpg"],
+  },
+  alternates: {
+    canonical: "https://tachy.io.vn/shop",
   },
 }
 

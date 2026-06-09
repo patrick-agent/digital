@@ -11,8 +11,18 @@ export const metadata = {
     "Tachy is an independent RnB, Trapchill & Hip-hop artist and music producer — writing, producing, and recording everything on his own.",
   openGraph: {
     title: "About — Tachy Artist",
-    description: "Indie artist & producer. RnB, Trapchill, Hip-hop.",
+    description: "Tachy is an independent RnB, Trapchill & Hip-hop artist and music producer — writing, producing, and recording everything on his own.",
     type: "profile",
+    images: [{ url: "/images/tachy-about.jpg", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About — Tachy Artist",
+    description: "Tachy is an independent RnB, Trapchill & Hip-hop artist and music producer.",
+    images: ["/images/tachy-about.jpg"],
+  },
+  alternates: {
+    canonical: "https://tachy.io.vn/about",
   },
 };
 

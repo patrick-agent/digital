@@ -1,4 +1,5 @@
 import { readMusic } from "@/lib/db"
+import { siteMetadata } from "@/lib/seo"
 import ReleaseShelf3D from "@/components/artist/bio-music/ReleaseShelf3D"
 import ReleaseCard from "@/components/artist/bio-music/ReleaseCard"
 import SpotlightCard from "@/components/canvas/SpotlightCard"
@@ -12,8 +13,18 @@ export const metadata = {
     "All releases by Tachy — RnB, Trapchill & Hip-hop singles and EPs. Listen on Spotify, Apple Music, YouTube and more.",
   openGraph: {
     title: "Bio Music — Tachy Artist",
-    description: "Discography of indie artist Tachy.",
+    description: "Complete discography of indie artist Tachy — RnB, Trapchill & Hip-hop.",
     type: "website",
+    images: [{ url: "/images/tachy-about.jpg", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bio Music — Tachy Artist",
+    description: "Complete discography of indie artist Tachy — RnB, Trapchill & Hip-hop.",
+    images: ["/images/tachy-about.jpg"],
+  },
+  alternates: {
+    canonical: "https://tachy.io.vn/bio-music",
   },
 }
 
@@ -35,6 +46,32 @@ export default async function BioMusicPage() {
         <h1 className={styles.title}>All Releases</h1>
         <p className={styles.subtitle}>Every track, every story.</p>
       </section>
+
+      {/* MusicAlbum JSON-LD */}
+      {releases.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "MusicAlbum",
+              name: "Tachy Discography",
+              byArtist: {
+                "@type": "MusicGroup",
+                name: "Tachy",
+                url: "https://tachy.io.vn",
+              },
+              albumRelease: releases.map((r) => ({
+                "@type": "MusicRelease",
+                name: r.title,
+                url: `${siteMetadata.siteUrl}/bio-music/${r.slug}`,
+                image: r.coverArt,
+                datePublished: r.publishedAt || r.createdAt,
+              })),
+            }),
+          }}
+        />
+      )}
 
       {/* 3D Release Shelf — hidden on mobile via CSS */}
       {releases.length > 0 && (

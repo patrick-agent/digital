@@ -11,6 +11,16 @@ export const metadata = {
     description:
       "Privacy policy for the Tachy Artist website.",
     type: "website",
+    images: [{ url: "/images/tachy-about.jpg", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy — Tachy Artist",
+    description: "Privacy policy for the Tachy Artist website.",
+    images: ["/images/tachy-about.jpg"],
+  },
+  alternates: {
+    canonical: "https://tachy.io.vn/privacy",
   },
 };
 

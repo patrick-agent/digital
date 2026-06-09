@@ -2,6 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { notFound } from "next/navigation"
 import { readProducts, readProduct } from "@/lib/db"
+import { siteMetadata } from "@/lib/seo"
 import styles from "@/app/shop/shop.module.css"
 
 export const revalidate = 300
@@ -45,6 +46,15 @@ export async function generateMetadata({ params }) {
       type: "website",
       images: product.images?.[0] ? [{ url: product.images[0] }] : [],
     },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: product.images?.[0] ? [product.images[0]] : [],
+    },
+    alternates: {
+      canonical: `${siteMetadata.siteUrl}/shop/${product.slug}`,
+    },
   }
 }
 
@@ -68,12 +78,12 @@ export default async function ProductDetailPage({ params }) {
     description: stripHtml(product.description),
     image: product.images?.[0] || undefined,
     category: product.category || undefined,
-    url: `https://tachyartist.com/shop/${product.slug}`,
+    url: `${siteMetadata.siteUrl}/shop/${product.slug}`,
     offers: {
       "@type": "Offer",
       price: product.price,
       priceCurrency: product.currency || "USD",
-      url: product.affiliateUrl || `https://tachyartist.com/shop/${product.slug}`,
+      url: product.affiliateUrl || `${siteMetadata.siteUrl}/shop/${product.slug}`,
       availability: "https://schema.org/InStock",
       priceValidUntil: new Date(Date.now() + 365 * 24 * 60 * 60 * 1000).toISOString(),
     },
@@ -83,8 +93,8 @@ export default async function ProductDetailPage({ params }) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://tachyartist.com" },
-      { "@type": "ListItem", position: 2, name: "Shop", item: "https://tachyartist.com/shop" },
+      { "@type": "ListItem", position: 1, name: "Home", item: siteMetadata.siteUrl },
+      { "@type": "ListItem", position: 2, name: "Shop", item: `${siteMetadata.siteUrl}/shop` },
       { "@type": "ListItem", position: 3, name: product.name },
     ],
   }

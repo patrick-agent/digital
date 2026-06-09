@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation"
 import Image from "next/image"
 import { readMusic, readMusicItem } from "@/lib/db"
+import { siteMetadata } from "@/lib/seo"
 import PlatformLinksCard from "@/components/artist/bio-music/PlatformLinksCard"
 import LightPillar from "@/components/ui/LightPillar"
 import {
@@ -30,8 +31,18 @@ export async function generateMetadata({ params }) {
       `Listen to ${release.title} by Tachy on all platforms.`,
     openGraph: {
       title: `${release.title} — Tachy`,
+      description: release.description || `Listen to ${release.title} by Tachy.`,
+      images: [{ url: release.coverArt, width: 280, height: 280 }],
+      type: "music.song",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${release.title} — Tachy`,
+      description: release.description || `Listen to ${release.title} by Tachy.`,
       images: [release.coverArt],
-      type: "website",
+    },
+    alternates: {
+      canonical: `${siteMetadata.siteUrl}/bio-music/${release.slug}`,
     },
   }
 }
@@ -44,8 +55,26 @@ export default async function BioMusicDetailPage({ params }) {
     notFound()
   }
 
+  const musicReleaseSchema = {
+    "@context": "https://schema.org",
+    "@type": "MusicRelease",
+    name: release.title,
+    byArtist: {
+      "@type": "MusicGroup",
+      name: "Tachy",
+      url: "https://tachy.io.vn",
+    },
+    image: release.coverArt,
+    url: `${siteMetadata.siteUrl}/bio-music/${release.slug}`,
+    datePublished: release.publishedAt || release.createdAt,
+  }
+
   return (
     <div className={styles.page}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(musicReleaseSchema).replace(/</g, "\\u003c") }}
+      />
       {/* 3D Background accent */}
       <div style={{ opacity: 0.5 }}>
         <LightPillar

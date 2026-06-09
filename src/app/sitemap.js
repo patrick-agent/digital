@@ -4,6 +4,7 @@ import { siteMetadata } from "@/lib/seo"
 import { canonicalUrl } from "@/lib/post-utils"
 import { readMusic } from "@/lib/db"
 import { readProducts } from "@/lib/db"
+import { getAllPosts } from "@/components/another-me/digital-blog/blog-posts"
 
 const DOMAIN = siteMetadata.siteUrl
 
@@ -58,6 +59,13 @@ export default async function sitemap() {
       }))
   } catch {}
 
+  const digitalPosts = getAllPosts().map((p) => ({
+    url: `${DOMAIN}/digital/blog/${p.slug}`,
+    lastModified: new Date(p.date).toISOString(),
+    changeFrequency: "monthly",
+    priority: 0.6,
+  }))
+
   const routes = await getAllRoutes()
 
   const routeUrls = routes
@@ -87,6 +95,7 @@ export default async function sitemap() {
     ...postUrls,
     ...musicUrls,
     ...productUrls,
+    ...digitalPosts,
   ]
 
   const seen = new Set()

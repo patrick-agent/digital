@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { readProducts } from "@/lib/db"
+import { siteMetadata } from "@/lib/seo"
 import styles from "./shop.module.css"
 
 export const revalidate = 300
@@ -13,6 +14,9 @@ export const metadata = {
     title: "Shop — Tachy Artist",
     description: "Curated gear & tools recommended by Tachy.",
     type: "website",
+  },
+  alternates: {
+    canonical: `${siteMetadata.siteUrl}/shop`,
   },
 }
 
@@ -49,7 +53,7 @@ export default async function ShopPage() {
     "@type": "ItemList",
     name: "Tachy Artist Shop",
     description: "Curated gear, tools, and essentials recommended by Tachy.",
-    url: "https://tachyartist.com/shop",
+    url: `${siteMetadata.siteUrl}/shop`,
     numberOfItems: products.length,
     itemListElement: products.map((p, i) => ({
       "@type": "ListItem",
@@ -57,14 +61,14 @@ export default async function ShopPage() {
       item: {
         "@type": "Product",
         name: p.name,
-        url: `https://tachyartist.com/shop/${p.slug}`,
+        url: `${siteMetadata.siteUrl}/shop/${p.slug}`,
         category: p.category,
         offers: p.price
           ? {
               "@type": "Offer",
               price: p.price,
               priceCurrency: p.currency || "USD",
-              url: p.affiliateUrl || `https://tachyartist.com/shop/${p.slug}`,
+              url: p.affiliateUrl || `${siteMetadata.siteUrl}/shop/${p.slug}`,
             }
           : undefined,
       },

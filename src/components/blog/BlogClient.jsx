@@ -8,7 +8,7 @@ import PostGrid from "./PostGrid"
 import Breadcrumb from "./Breadcrumb"
 import styles from "./BlogClient.module.css"
 
-export default function BlogClient({ initialPosts, categories, featuredPost, initialActiveCategory = null, pageTitle }) {
+export default function BlogClient({ initialPosts, categories, featuredPost, initialActiveCategory = null, pageTitle, categoryDescriptions = {} }) {
   const [activeCategory, setActiveCategory] = useState(initialActiveCategory)
 
   const filteredPosts = useMemo(() => {
@@ -32,7 +32,9 @@ export default function BlogClient({ initialPosts, categories, featuredPost, ini
         <div className={styles.categoryHeader}>
           <h1 className={styles.categoryTitle}>{pageTitle}</h1>
           <p className={styles.categorySubtext}>
-            Articles filed under <strong>{activeCategory || initialActiveCategory}</strong>
+            {categoryDescriptions[activeCategory || initialActiveCategory] || (
+              <>Articles filed under <strong>{activeCategory || initialActiveCategory}</strong></>
+            )}
           </p>
           <div className={styles.divider} />
         </div>
