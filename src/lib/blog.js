@@ -49,7 +49,7 @@ export async function getRelatedPosts(post, limit = 3) {
 
   const sameCategory = candidates.filter((p) => p.category === post.category)
   const sharedTag = candidates.filter(
-    (p) => p.tags?.some((t) => post.tags?.includes(t))
+    (p) => Array.isArray(p.tags) && Array.isArray(post.tags) && p.tags.some((t) => post.tags.includes(t))
   )
 
   const combined = [...sameCategory]
