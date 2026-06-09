@@ -1,14 +1,17 @@
+import { siteMetadata } from "@/lib/seo"
 import Navbar from "@/components/layout/Navbar"
 import Footer from "@/components/layout/Footer"
 
 export const metadata = {
-  title: "Blog — Studio 3D",
-  description: "Explore tutorials, insights, and stories about 3D art, music production, and the creative process.",
+  title: "Blog — Tachy",
+  description: "Explore music production guides, SEO articles, and creative experiments from Tachy.",
   openGraph: {
-    title: "Blog — Studio 3D",
-    description: "Explore tutorials, insights, and stories about 3D art, music production, and the creative process.",
+    title: "Blog — Tachy",
+    description: "Explore music production guides, SEO articles, and creative experiments from Tachy.",
     type: "website",
+    url: `${siteMetadata.siteUrl}/blog`,
   },
+  robots: { index: true, follow: true },
 }
 
 export default function BlogLayout({ children }) {

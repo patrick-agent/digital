@@ -1,6 +1,5 @@
 "use client"
 
-import Link from "next/link"
 import Image from "next/image"
 import { postUrl } from "@/lib/post-utils"
 import styles from "./BlogHero.module.css"
@@ -13,12 +12,9 @@ export default function BlogHero({ featuredPost }) {
           Blog
         </h1>
       </div>
-      <p className={styles.subtext}>
-        Tutorials, insights, and stories about 3D art, music production, and the creative process.
-      </p>
 
       {featuredPost && (
-        <Link
+        <a
           href={postUrl(featuredPost)}
           className={styles.featured}
         >
@@ -55,7 +51,7 @@ export default function BlogHero({ featuredPost }) {
               )}
             </div>
           </div>
-        </Link>
+        </a>
       )}
 
       <div className={styles.divider} />

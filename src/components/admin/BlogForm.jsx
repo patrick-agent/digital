@@ -186,7 +186,7 @@ export default function BlogForm({ post }) {
   }
 
   const previewUrl = isEditing
-    ? form.category ? `/blog/${form.category}/${form.slug}` : `/blog/${form.slug}`
+    ? `/blog/${form.slug}`
     : null
 
   return (

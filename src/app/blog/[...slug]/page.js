@@ -1,4 +1,4 @@
-import { notFound } from "next/navigation"
+import { notFound, permanentRedirect } from "next/navigation"
 import {
   getAllPublishedPosts,
   getAllCategories,
@@ -8,6 +8,7 @@ import {
   getRelatedPosts,
 } from "@/lib/blog"
 import { siteMetadata } from "@/lib/seo"
+import { canonicalUrl as getCanonicalUrl, postUrl } from "@/lib/post-utils"
 import ArticleHero from "@/components/blog/ArticleHero"
 import ArticleBody, { ArticleSummary } from "@/components/blog/ArticleBody"
 import ArticleSchema from "@/components/blog/ArticleSchema"
@@ -24,22 +25,55 @@ export const revalidate = 300
 
 export async function generateStaticParams() {
   const slugs = await getAllPublishedSlugs()
-  const params = []
-  for (const { category, slug } of slugs) {
-    if (category) {
-      params.push({ slug: [category, slug] })
-    } else {
-      params.push({ slug: [slug] })
-    }
-  }
-  // Also generate params for every valid category
+  const params = slugs.map(({ slug }) => ({ slug: [slug] }))
+
   const categories = await getAllCategories()
   for (const cat of categories) {
     if (!params.some((p) => p.slug.length === 1 && p.slug[0] === cat)) {
       params.push({ slug: [cat] })
     }
   }
+
   return params
+}
+
+function getPostMetadata(post) {
+  const seoTitle = post.seoTitle || post.title
+  const seoDescription = post.seoDescription || post.excerpt
+  const canonical = `${siteMetadata.siteUrl}${getCanonicalUrl(post)}`
+  const publishedTime = post.publishedAt || post.createdAt || undefined
+  const modifiedTime = post.updatedAt || post.publishedAt || post.createdAt || undefined
+  const image = post.coverImage || siteMetadata.defaultImage
+
+  return {
+    title: seoTitle,
+    description: seoDescription,
+    keywords: post.seoKeywords?.length ? post.seoKeywords : post.tags,
+    openGraph: {
+      title: seoTitle,
+      description: seoDescription,
+      url: canonical,
+      type: "article",
+      publishedTime,
+      modifiedTime,
+      tags: post.tags,
+      images: [{ url: image, width: 1200, height: 630, alt: post.title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: seoTitle,
+      description: seoDescription,
+      images: [image],
+    },
+    alternates: { canonical },
+    robots: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
+  }
 }
 
 export async function generateMetadata({ params }) {
@@ -48,47 +82,21 @@ export async function generateMetadata({ params }) {
 
   if (segments.length === 1) {
     const [first] = segments
+    const post = await getPostBySlugOnly(first)
+
+    if (post) {
+      return getPostMetadata(post)
+    }
+
+    const decoded = decodeURIComponent(first)
     const categories = await getAllCategories()
 
-    // Category listing page
-    if (categories.includes(first)) {
-      const decoded = decodeURIComponent(first)
+    if (categories.includes(decoded)) {
       return {
         title: `${decoded} — Blog`,
         description: `Articles filed under ${decoded}. Tutorials, insights, and stories from ${siteMetadata.author}.`,
-        alternates: { canonical: `${siteMetadata.siteUrl}/blog/${decoded}` },
-      }
-    }
-
-    // Single slug detail page (no category)
-    const post = await getPostBySlugOnly(first)
-    if (post) {
-      const seoTitle = post.seoTitle || post.title
-      const seoDescription = post.seoDescription || post.excerpt
-      return {
-        title: seoTitle,
-        description: seoDescription,
-        keywords: post.seoKeywords?.length ? post.seoKeywords : post.tags,
-        openGraph: {
-          title: seoTitle,
-          description: seoDescription,
-          url: `${siteMetadata.siteUrl}/blog/${post.slug}`,
-          type: "article",
-          publishedTime: post.publishedAt || undefined,
-          modifiedTime: post.updatedAt || post.publishedAt || undefined,
-          tags: post.tags,
-          images: post.coverImage
-            ? [{ url: post.coverImage, width: 1200, height: 630, alt: post.title }]
-            : [{ url: siteMetadata.defaultImage, width: 1200, height: 630, alt: post.title }],
-        },
-        twitter: {
-          card: "summary_large_image",
-          title: seoTitle,
-          description: seoDescription,
-          images: [post.coverImage || siteMetadata.defaultImage],
-        },
-        alternates: { canonical: `${siteMetadata.siteUrl}/blog/${post.slug}` },
-        robots: { index: true, follow: true, "max-snippet": -1, "max-image-preview": "large", "max-video-preview": -1 },
+        alternates: { canonical: `${siteMetadata.siteUrl}/blog/${first}` },
+        robots: { index: true, follow: true },
       }
     }
 
@@ -97,39 +105,10 @@ export async function generateMetadata({ params }) {
 
   if (segments.length >= 2) {
     const [categoryRaw, ...rest] = segments
-    const slug = rest.join("/")
-    const post = await getPostBySlug(categoryRaw, slug)
+    const post = await getPostBySlug(categoryRaw, rest.join("/"))
     if (!post) return {}
 
-    const seoTitle = post.seoTitle || post.title
-    const seoDescription = post.seoDescription || post.excerpt
-    const canonicalUrl = `${siteMetadata.siteUrl}/blog/${post.category}/${post.slug}`
-
-    return {
-      title: seoTitle,
-      description: seoDescription,
-      keywords: post.seoKeywords?.length ? post.seoKeywords : post.tags,
-      openGraph: {
-        title: seoTitle,
-        description: seoDescription,
-        url: canonicalUrl,
-        type: "article",
-        publishedTime: post.publishedAt || undefined,
-        modifiedTime: post.updatedAt || post.publishedAt || undefined,
-        tags: post.tags,
-        images: post.coverImage
-          ? [{ url: post.coverImage, width: 1200, height: 630, alt: post.title }]
-          : [{ url: siteMetadata.defaultImage, width: 1200, height: 630, alt: post.title }],
-      },
-      twitter: {
-        card: "summary_large_image",
-        title: seoTitle,
-        description: seoDescription,
-        images: [post.coverImage || siteMetadata.defaultImage],
-      },
-      alternates: { canonical: canonicalUrl },
-      robots: { index: true, follow: true, "max-snippet": -1, "max-image-preview": "large", "max-video-preview": -1 },
-    }
+    return getPostMetadata(post)
   }
 
   return {}
@@ -139,47 +118,44 @@ export default async function BlogCatchAllPage({ params }) {
   const { slug } = await params
   const segments = slug || []
 
-  // Single segment
   if (segments.length === 1) {
     const [first] = segments
+    const post = await getPostBySlugOnly(first)
+
+    if (post) {
+      const related = await getRelatedPosts(post, 3)
+      return renderArticlePage(post, related)
+    }
+
     const decoded = decodeURIComponent(first)
     const categories = await getAllCategories()
 
-    // Category listing
     if (categories.includes(decoded)) {
       const [{ posts }, allCategories] = await Promise.all([
         getAllPublishedPosts({ category: decoded, page: 1, limit: 9999 }),
         getAllCategories(),
       ])
+
       return (
         <BlogClient
           initialPosts={posts}
           categories={allCategories}
           featuredPost={null}
-          totalPosts={posts.length}
           initialActiveCategory={decoded}
           pageTitle={`Category: ${decoded}`}
         />
       )
     }
 
-    // Post slug without category
-    const post = await getPostBySlugOnly(first)
-    if (!post) notFound()
-
-    const related = await getRelatedPosts(post, 3)
-    return renderArticlePage(post, related)
+    notFound()
   }
 
-  // Two+ segments: /blog/[category]/[slug]
   if (segments.length >= 2) {
     const [categoryRaw, ...rest] = segments
-    const postSlug = rest.join("/")
-    const post = await getPostBySlug(categoryRaw, postSlug)
+    const post = await getPostBySlug(categoryRaw, rest.join("/"))
     if (!post) notFound()
 
-    const related = await getRelatedPosts(post, 3)
-    return renderArticlePage(post, related)
+    permanentRedirect(postUrl(post))
   }
 
   notFound()
@@ -187,9 +163,7 @@ export default async function BlogCatchAllPage({ params }) {
 
 async function renderArticlePage(post, related) {
   const parentHref = post.category ? `/blog/${post.category}` : "/blog"
-  const currentHref = post.category
-    ? `/blog/${post.category}/${post.slug}`
-    : `/blog/${post.slug}`
+  const currentHref = postUrl(post)
   const shareUrl = `${siteMetadata.siteUrl}${currentHref}`
 
   const breadcrumbItems = [

@@ -193,7 +193,7 @@ export default function BlogListClient({ posts: initialPosts }) {
                     <div className="flex items-center justify-end gap-0.5">
                       <ActionLink
                         icon={ExternalLink}
-                        href={`/blog/${post.category || "uncategorized"}/${post.slug}`}
+                        href={`/blog/${post.slug}`}
                         label="Preview post"
                       />
                       <ActionIcon icon={Copy} onClick={() => handleDuplicate(post.id)} label="Duplicate post" />

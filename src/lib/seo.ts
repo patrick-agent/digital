@@ -11,11 +11,11 @@
  *   twitterHandle → your Twitter / X handle
  */
 export const siteMetadata = {
-  title: "Artist Portfolio",
+  title: "Tachy",
   description:
-    "Personal artist website — tutorials, insights, and stories about 3D art, music production, and the creative process.",
+    "Tachy is an indie artist sharing music, studio experiments, tutorials, and creative insights.",
   siteUrl: "https://tachy.io.vn",
-  author: "Artist Name",
-  defaultImage: "/og-image.png",
-  twitterHandle: "@artist",
+  author: "Tachy",
+  defaultImage: "/images/tachy-about.jpg",
+  twitterHandle: "@tachy",
 }

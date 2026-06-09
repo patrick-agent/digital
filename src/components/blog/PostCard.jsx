@@ -1,7 +1,6 @@
 "use client"
 
 import { useRef, useCallback } from "react"
-import Link from "next/link"
 import Image from "next/image"
 import { postUrl } from "@/lib/post-utils"
 import styles from "./PostCard.module.css"
@@ -33,7 +32,7 @@ export default function PostCard({ post, featured = false }) {
   const readTime = post.readTime || Math.max(1, Math.ceil((post.content?.replace(/<[^>]*>/g, "").split(/\s+/).filter(Boolean).length || 0) / 200))
 
   return (
-    <Link
+    <a
       href={postUrl(post)}
       className={`${styles.card} ${featured ? styles.featured : ""}`}
       ref={cardRef}
@@ -71,6 +70,6 @@ export default function PostCard({ post, featured = false }) {
           <span className={styles.readTime}>{readTime} min read</span>
         </div>
       </div>
-    </Link>
+    </a>
   )
 }

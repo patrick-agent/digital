@@ -1,19 +1,22 @@
 import { getAllPublishedPosts, getAllCategories, getFeaturedPost } from "@/lib/blog"
+import { siteMetadata } from "@/lib/seo"
 import BlogClient from "@/components/blog/BlogClient"
 
 export const revalidate = 300
 
 export const metadata = {
-  title: "Blog — Studio 3D",
-  description: "Tutorials, insights, and stories about 3D art, music production, and the creative process.",
+  title: "Blog — Tachy",
+  description: "Read articles on music production, home studio gear, SEO, and creative strategy from Tachy.",
   openGraph: {
-    title: "Blog — Studio 3D",
-    description: "Tutorials, insights, and stories about 3D art, music production, and the creative process.",
+    title: "Blog — Tachy",
+    description: "Read articles on music production, home studio gear, SEO, and creative strategy from Tachy.",
     type: "website",
+    url: `${siteMetadata.siteUrl}/blog`,
   },
   alternates: {
-    canonical: "https://yourdomain.com/blog",
+    canonical: `${siteMetadata.siteUrl}/blog`,
   },
+  robots: { index: true, follow: true },
 }
 
 export default async function BlogPage() {
@@ -45,7 +48,6 @@ export default async function BlogPage() {
       initialPosts={posts}
       categories={categories}
       featuredPost={featuredPost}
-      totalPosts={posts.length}
     />
   )
 }

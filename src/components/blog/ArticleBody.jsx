@@ -83,6 +83,7 @@ const markdownSanitizeSchema = {
     h1: [...(defaultSchema.attributes?.h1 || []), "id"],
     h2: [...(defaultSchema.attributes?.h2 || []), "id"],
     h3: [...(defaultSchema.attributes?.h3 || []), "id"],
+    h4: [...(defaultSchema.attributes?.h4 || []), "id"],
     img: ["src", "alt", "title", "width", "height", "loading", "decoding"],
     th: [...(defaultSchema.attributes?.th || []), "align"],
     td: [...(defaultSchema.attributes?.td || []), "align"],
@@ -92,7 +93,7 @@ const markdownSanitizeSchema = {
 function injectHeadingIds(html, headings) {
   let headingIndex = 0
 
-  return html.replace(/<h([1-3])([^>]*)>([\s\S]*?)<\/h\1>/gi, (match, level, attrs, text) => {
+  return html.replace(/<h([1-4])([^>]*)>([\s\S]*?)<\/h\1>/gi, (match, level, attrs, text) => {
     const heading = headings[headingIndex]
     headingIndex += 1
     if (!heading) return match
@@ -207,6 +208,7 @@ export default function ArticleBody({ content }) {
           h1: createHeading("h1"),
           h2: createHeading("h2"),
           h3: createHeading("h3"),
+          h4: createHeading("h4"),
           table: renderTable,
           img: ({ node: _node, alt = "", ...props }) => {
             void _node

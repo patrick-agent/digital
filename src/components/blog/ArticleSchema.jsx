@@ -12,11 +12,15 @@ function absoluteUrl(url) {
 
 export default function ArticleSchema({ post }) {
   const plainText = post.content?.replace(/<[^>]*>/g, "") || ""
+  const url = `${DOMAIN}${canonicalUrl(post)}`
+  const publishedAt = post.publishedAt || post.createdAt
+  const modifiedAt = post.updatedAt || post.publishedAt || post.createdAt
   const schema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline: post.seoTitle || post.title,
     description: post.seoDescription || post.excerpt,
+    url,
     image: absoluteUrl(post.coverImage),
     author: {
       "@type": "Person",
@@ -31,14 +35,14 @@ export default function ArticleSchema({ post }) {
         url: `${DOMAIN}/logo.png`,
       },
     },
-    datePublished: post.publishedAt,
-    dateModified: post.updatedAt || post.publishedAt,
+    datePublished: publishedAt,
+    dateModified: modifiedAt,
     keywords: post.seoKeywords?.join(", ") || post.tags?.join(", ") || "",
     articleSection: post.category,
     wordCount: plainText.split(/\s+/).filter(Boolean).length,
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `${DOMAIN}${canonicalUrl(post)}`,
+      "@id": url,
     },
   }
 

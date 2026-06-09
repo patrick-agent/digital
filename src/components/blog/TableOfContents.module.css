@@ -61,13 +61,14 @@
 }
 
 .list li {
-  counter-increment: toc-counter;
   display: flex;
   align-items: baseline;
   gap: 0.4rem;
 }
 
-.list li::before {
+.h1::before,
+.h2::before {
+  counter-increment: toc-counter;
   content: counter(toc-counter, decimal-leading-zero) ".";
   font-family: var(--font-mono);
   font-size: 10px;
@@ -76,6 +77,8 @@
   min-width: 1.8em;
   text-align: right;
 }
+
+
 
 .h1 {
   font-weight: 500;
@@ -87,6 +90,13 @@
 
 .h3 {
   font-weight: 400;
+  padding-left: 2rem;
+}
+
+.h4 {
+  font-weight: 400;
+  font-size: 0.9em;
+  padding-left: 3rem;
 }
 
 .link {

@@ -34,7 +34,7 @@ export default function AdminLoginPage() {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-deep-bg">
-      <div className="w-full max-w-sm p-8 bg-admin-card border border-border rounded-xl">
+      <div className="w-full max-w-sm p-10 bg-admin-card border border-border rounded-xl">
         <div className="text-center mb-8">
           <h1 className="text-2xl font-bold text-text-primary">Admin Login</h1>
           <p className="text-sm text-text-muted mt-1">Sign in to manage your site</p>

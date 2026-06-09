@@ -456,7 +456,7 @@ function extractArticleHeadings(html) {
 
   const headings = []
   const seen = new Map()
-  const regex = /<h([1-3])([^>]*)>([\s\S]*?)<\/h\1>/gi
+  const regex = /<h([1-4])([^>]*)>([\s\S]*?)<\/h\1>/gi
   let match
 
   while ((match = regex.exec(html)) !== null) {

@@ -1,6 +1,7 @@
-import { getAllPublishedSlugs, getAllCategories } from "@/lib/blog"
+import { getAllPublishedSlugs } from "@/lib/blog"
 import { getAllRoutes } from "@/lib/db"
 import { siteMetadata } from "@/lib/seo"
+import { canonicalUrl } from "@/lib/post-utils"
 import { readMusic } from "@/lib/db"
 import { readProducts } from "@/lib/db"
 
@@ -21,21 +22,10 @@ const staticPages = [
 
 export default async function sitemap() {
   const slugs = await getAllPublishedSlugs()
-  const categories = await getAllCategories()
-
-  const categoryUrls = categories.map((cat) => ({
-    url: `${DOMAIN}/blog/${cat}`,
-    lastModified: new Date(),
-    changeFrequency: "daily",
-    priority: 0.6,
-  }))
 
   const postUrls = slugs.map((p) => {
-    const url = p.category
-      ? `${DOMAIN}/blog/${p.category}/${p.slug}`
-      : `${DOMAIN}/blog/${p.slug}`
     return {
-      url,
+      url: `${DOMAIN}${canonicalUrl(p)}`,
       lastModified: p.updatedAt || p.publishedAt,
       changeFrequency: "weekly",
       priority: 0.8,
@@ -93,7 +83,6 @@ export default async function sitemap() {
 
   const all = [
     ...staticUrls,
-    ...categoryUrls,
     ...routeUrls,
     ...postUrls,
     ...musicUrls,

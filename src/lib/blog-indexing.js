@@ -23,7 +23,7 @@ export function revalidateBlogPost(post) {
 
   const slugPath = getBlogPostIndexingPath(post)
   if (slugPath) revalidatePath(slugPath)
-  if (post?.category && post?.slug) revalidatePath(`/blog/${post.category}/${post.slug}`)
+  if (post?.category) revalidatePath(`/blog/${post.category}`)
 }
 
 export async function notifyPublishedBlogPost(post) {

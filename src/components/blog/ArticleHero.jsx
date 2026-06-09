@@ -2,7 +2,6 @@
 
 import { useRef, useEffect } from "react"
 import Image from "next/image"
-import { siteMetadata } from "@/lib/seo"
 import styles from "./ArticleHero.module.css"
 
 export default function ArticleHero({ post }) {
@@ -42,6 +41,8 @@ export default function ArticleHero({ post }) {
   }, [])
 
   const readTime = Math.max(1, Math.ceil((post.content?.replace(/<[^>]*>/g, "").split(/\s+/).filter(Boolean).length || 0) / 200))
+  const publishedAt = post.publishedAt || post.createdAt
+  const modifiedAt = post.updatedAt || post.publishedAt || post.createdAt
 
   return (
     <header className={styles.hero}>
@@ -70,13 +71,20 @@ export default function ArticleHero({ post }) {
         <h1 className={styles.title}>{post.title}</h1>
         {post.excerpt && <p className={styles.excerpt}>{post.excerpt}</p>}
         <div className={styles.meta}>
-          <time dateTime={post.publishedAt}>
-            {new Date(post.publishedAt || post.createdAt).toLocaleDateString("en-US", {
+          <span>
+            Published <time dateTime={publishedAt}>{new Date(publishedAt).toLocaleDateString("en-US", {
               year: "numeric",
               month: "long",
               day: "numeric",
-            })}
-          </time>
+            })}</time>
+          </span>
+          <span className={styles.readTime}>
+            Updated <time dateTime={modifiedAt}>{new Date(modifiedAt).toLocaleDateString("en-US", {
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            })}</time>
+          </span>
           <span className={styles.readTime}>{readTime} min read</span>
         </div>
       </div>
