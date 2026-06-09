@@ -21,6 +21,7 @@ import AuthorBox from "@/components/blog/AuthorBox"
 import BlogClient from "@/components/blog/BlogClient"
 import styles from "./article-page.module.css"
 
+export const dynamicParams = true
 export const revalidate = 300
 
 export async function generateStaticParams() {
