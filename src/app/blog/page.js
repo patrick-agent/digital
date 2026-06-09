@@ -2,7 +2,7 @@ import { getAllPublishedPosts, getAllCategories, getFeaturedPost } from "@/lib/b
 import { siteMetadata } from "@/lib/seo"
 import BlogClient from "@/components/blog/BlogClient"
 
-export const revalidate = 300
+export const dynamic = "force-dynamic"
 
 export const metadata = {
   title: "Blog — Tachy",
