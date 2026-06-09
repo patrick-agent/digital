@@ -44,9 +44,11 @@ export default function SettingsForm({ settings }) {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-2xl space-y-6">
-      <div className="bg-admin-card border border-border rounded-xl p-6 space-y-4">
-        <h2 className="text-lg font-semibold text-text-primary">General</h2>
+    <form onSubmit={handleSubmit} className="max-w-2xl space-y-6" style={{ margin: 12 , borderRadius: "0" , minHeight: "80vh" , maxWidth: "100%" }}>
+      <div className="bg-admin-card border border-border rounded-xl p-6 space-y-4" style={{ padding: 12 , borderRadius: "0" , marginBottom: 12 }}>
+        <h2 className="text-lg font-semibold text-text-primary" style={{ color: "var(--color-text-muted)" , fontSize: "1rem" , marginBottom: 12 }}>
+          General
+        </h2>
 
         <div>
           <label className="block text-sm font-medium text-text-secondary mb-1">
@@ -61,11 +63,13 @@ export default function SettingsForm({ settings }) {
         </div>
       </div>
 
-      <div className="bg-admin-card border border-border rounded-xl p-6 space-y-4">
-        <h2 className="text-lg font-semibold text-text-primary">SEO Defaults</h2>
+      <div className="bg-admin-card border border-border rounded-xl p-6 space-y-4" style={{ padding: 12 , borderRadius: "0" , marginBottom: 12 }}>
+        <h2 className="text-lg font-semibold text-text-primary" style={{ color: "var(--color-text-muted)" , fontSize: "1rem" , marginBottom: 12 }}>
+          SEO Defaults
+        </h2>
 
         <div>
-          <label className="block text-sm font-medium text-text-secondary mb-1">
+          <label className="block text-sm font-medium text-text-secondary mb-1" style={{ marginTop: 12 }}>
             Default SEO Title
           </label>
           <input
@@ -77,7 +81,7 @@ export default function SettingsForm({ settings }) {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-text-secondary mb-1">
+          <label className="block text-sm font-medium text-text-secondary mb-1" style={{ marginTop: 12 }}>
             Default SEO Description
           </label>
           <textarea
@@ -89,7 +93,7 @@ export default function SettingsForm({ settings }) {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-text-secondary mb-1">
+          <label className="block text-sm font-medium text-text-secondary mb-1" style={{ marginTop: 12 }}>
             Default SEO Keywords (comma separated)
           </label>
           <input
@@ -117,6 +121,7 @@ export default function SettingsForm({ settings }) {
         type="submit"
         disabled={saving}
         className="px-6 py-2.5 bg-accent-purple hover:bg-accent-purple/90 text-white rounded-lg text-sm font-medium transition-colors disabled:opacity-50"
+        style={{ backgroundColor: "var(--color-accent-purple)" , color: "#fff" , borderRadius: "9999px" , fontSize: "0.875rem" , padding: "6px 30px" }}
       >
         {saving ? "Saving..." : "Save Settings"}
       </button>

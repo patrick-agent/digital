@@ -13,11 +13,6 @@ const STATUS_OPTIONS = [
   { value: "scheduled", label: "Scheduled" },
 ]
 
-const PERSONA_OPTIONS = [
-  { value: "artist", label: "Tachy Artist" },
-  { value: "marketer", label: "Another Me" },
-]
-
 function SEOIndicator({ data }) {
   const { score, checks } = calculateSEOScore(data)
 
@@ -34,12 +29,12 @@ function SEOIndicator({ data }) {
   }
 
   return (
-    <div className="space-y-3">
+    <div className="space-y-3" style={{ paddingLeft: 12, paddingRight: 12 , marginBottom: 24 }}>
       <div className="flex items-center justify-between">
         <span className="text-xs font-medium text-text-muted">SEO Score</span>
         <span className={`text-sm font-bold ${getColor(score)}`}>{score}/100 — {getLabel(score)}</span>
       </div>
-      <div className="h-2 w-full overflow-hidden rounded-full bg-gray-100">
+      <div className="h-2 w-full overflow-hidden rounded-full bg-gray-100" style={{ marginBottom: 12 }}>
         <div
           className={`h-full rounded-full transition-all ${score >= 75 ? "bg-green-500" : score >= 50 ? "bg-yellow-500" : "bg-accent-pink"}`}
           style={{ width: `${score}%` }}
@@ -208,26 +203,7 @@ export default function BlogForm({ post }) {
             <div className="section-header">
               <h3>Basic Information</h3>
             </div>
-            <div className="admin-form-section space-y-5 p-6">
-              <div>
-                <label className="admin-label">Persona</label>
-                <div className="flex gap-3">
-                  {PERSONA_OPTIONS.map((opt) => (
-                    <button
-                      key={opt.value}
-                      type="button"
-                      onClick={() => handleChange("persona", opt.value)}
-                      className={`flex-1 rounded-xl border px-4 py-2.5 text-sm font-semibold transition-colors ${
-                        form.persona === opt.value
-                          ? "border-accent-purple bg-accent-purple/10 text-accent-purple"
-                          : "border-border bg-white text-text-muted hover:text-text-secondary"
-                      }`}
-                    >
-                      {opt.label}
-                    </button>
-                  ))}
-                </div>
-              </div>
+            <div className="section-body section-body-loose admin-form-section space-y-5" style={{ marginTop: 8 }}>
               <div>
                 <label className="admin-label">Title</label>
                 <input
@@ -260,7 +236,7 @@ export default function BlogForm({ post }) {
             <div className="section-header">
               <h3>Content</h3>
             </div>
-            <div className="p-1 sm:p-4">
+            <div className="section-body section-body-editor">
               <RichTextEditor
                 content={form.content}
                 onChange={(html) => handleChange("content", html)}
@@ -294,7 +270,7 @@ export default function BlogForm({ post }) {
             <div className="section-header">
               <h3>Publish</h3>
             </div>
-            <div className="admin-form-group space-y-4 p-5">
+            <div className="section-body section-body-compact admin-form-group space-y-4">
               <div>
                 <label className="admin-label-light">Status</label>
                 <select
@@ -308,7 +284,9 @@ export default function BlogForm({ post }) {
                 </select>
               </div>
               <div>
-                <label className="admin-label-light">Published At</label>
+                <label className="admin-label-light" style={{ marginTop: 12 }}>
+                  Published At
+                </label>
                 <input
                   type="datetime-local"
                   value={form.publishedAt}
@@ -316,7 +294,7 @@ export default function BlogForm({ post }) {
                   className="admin-input mt-1"
                 />
               </div>
-              <div className="flex gap-2">
+              <div className="flex gap-2" style={{ marginLeft: 12, marginRight: 12 }}>
                 {isEditing && (
                   <button
                     type="button"
@@ -354,7 +332,7 @@ export default function BlogForm({ post }) {
             <div className="section-header">
               <h3>Media</h3>
             </div>
-            <div className="admin-form-group space-y-4 p-5">
+            <div className="section-body section-body-compact admin-form-group space-y-4">
               <div>
                 <label className="admin-label-light">Cover Image URL</label>
                 <input
@@ -366,7 +344,7 @@ export default function BlogForm({ post }) {
                 />
               </div>
               {form.coverImage && (
-                <div className="overflow-hidden rounded-xl border border-border">
+                <div className="overflow-hidden rounded-xl border border-border" style={{ marginBottom: 0 }}>
                   <img
                     src={form.coverImage}
                     alt="Cover preview"
@@ -383,7 +361,7 @@ export default function BlogForm({ post }) {
             <div className="section-header">
               <h3>Taxonomy</h3>
             </div>
-            <div className="admin-form-group space-y-4 p-5">
+            <div className="section-body section-body-compact admin-form-group space-y-4">
               <div>
                 <label className="admin-label-light">Category</label>
                 <input
@@ -412,7 +390,7 @@ export default function BlogForm({ post }) {
             <div className="section-header">
               <h3>SEO</h3>
             </div>
-            <div className="admin-form-group space-y-4 p-5">
+            <div className="section-body section-body-compact admin-form-group space-y-4">
               <SEOIndicator data={form} />
               <div>
                 <label className="admin-label-light">SEO Title</label>

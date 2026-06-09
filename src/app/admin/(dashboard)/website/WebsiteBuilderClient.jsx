@@ -4,6 +4,7 @@ import { useState } from "react"
 import { toast } from "sonner"
 import { Eye, Globe, LayoutDashboard, Navigation, Palette, PanelBottom, Plus, Save, Trash2 } from "lucide-react"
 import { mergeSiteSettings } from "@/lib/site-defaults"
+import { Autofocus } from "@react-three/postprocessing"
 
 const tabs = [
   { id: "branding", label: "Branding", icon: Globe },
@@ -18,10 +19,10 @@ const labelClass = "mb-2 block text-[0.8125rem] font-bold uppercase tracking-[0.
 
 function Card({ title, description, children }) {
   return (
-    <section className="admin-card space-y-6 p-6 lg:p-7">
+    <section className="admin-card space-y-6 p-6 lg:p-7" style={{ marginBottom: 12 , padding: 12 , borderRadius: "0" }}>
       <div>
-        <h2>{title}</h2>
-        {description && <p className="mt-2 max-w-2xl text-sm text-text-muted">{description}</p>}
+        <h2 style={{ marginBottom: 2 , color: "var(--color-text-primary)" }}>{title}</h2>
+        {description && <p className="mt-2 max-w-2xl text-sm text-text-muted" style={{ marginBottom: 12 , color: "var(--color-text-muted)" }}>{description}</p>}
       </div>
       {children}
     </section>
@@ -30,7 +31,7 @@ function Card({ title, description, children }) {
 
 function TextField({ label, value, onChange, placeholder, type = "text" }) {
   return (
-    <div className="space-y-2">
+    <div className="space-y-2" style={{ marginTop:12 }}>
       <label className={labelClass}>{label}</label>
       <input
         type={type}
@@ -38,6 +39,7 @@ function TextField({ label, value, onChange, placeholder, type = "text" }) {
         onChange={(event) => onChange(event.target.value)}
         placeholder={placeholder}
         className={inputClass}
+        style={{ padding: 12 , paddingRight: 12 , paddingTop: 4 , paddingBottom: 4 , border: "1px solid var(--color-border)" , borderRadius: "8px" , background: "var(--color-white)" , color: "var(--color-text-primary)" }}
       />
     </div>
   )
@@ -45,13 +47,14 @@ function TextField({ label, value, onChange, placeholder, type = "text" }) {
 
 function TextArea({ label, value, onChange, rows = 3 }) {
   return (
-    <div className="space-y-2">
+    <div className="space-y-2" style={{ marginTop:12 }}>
       <label className={labelClass}>{label}</label>
       <textarea
         value={value || ""}
         onChange={(event) => onChange(event.target.value)}
         rows={rows}
         className={`${inputClass} resize-y`}
+        style={{ padding: 12 , paddingRight: 12 , paddingTop: 4 , paddingBottom: 4 , border: "1px solid var(--color-border)" , borderRadius: "8px" , background: "var(--color-white)" , color: "var(--color-text-primary)" }}
       />
     </div>
   )
@@ -66,6 +69,7 @@ function ToggleField({ label, checked, onChange }) {
         checked={Boolean(checked)}
         onChange={(event) => onChange(event.target.checked)}
         className="h-4 w-4 accent-accent-purple"
+        style={{ marginLeft: 12 }}
       />
     </label>
   )
@@ -86,7 +90,7 @@ function LinkEditor({ title, items, onChange, onAdd, onRemove, showId = false })
       </div>
       <div className="space-y-3">
         {items.map((item, index) => (
-          <div key={`${item.label}-${index}`} className="rounded-xl border border-border bg-admin-bg p-5">
+          <div key={`${item.label}-${index}`} className="rounded-xl border border-border bg-admin-bg p-5" style={{ marginTop: 12 , paddingBottom: 12 }}>
             <div className="grid grid-cols-1 gap-4 lg:grid-cols-12">
               <div className="lg:col-span-3">
                 <TextField label="Label" value={item.label} onChange={(value) => onChange(index, "label", value)} />
@@ -200,13 +204,11 @@ export default function WebsiteBuilderClient({ settings }) {
 
   return (
     <div className="space-y-6">
-      <div className="admin-card flex flex-col gap-5 p-6 lg:flex-row lg:items-center lg:justify-between lg:p-7">
+      <div className="admin-card flex flex-col gap-5 p-6 lg:flex-row lg:items-center lg:justify-between lg:p-7" style={{ marginBottom: 12 , padding: 12 , borderRadius: "0" }}>
         <div>
-          <p className="text-xs font-bold uppercase tracking-[0.22em] text-accent-purple">ngx-admin inspired</p>
-          <h1 className="mt-2">Website Builder</h1>
-          <p className="mt-2 max-w-2xl text-sm text-text-muted">Tùy chỉnh website từ một giao diện admin, không cần sửa code.</p>
+          <p className="text-xs font-bold uppercase tracking-[0.22em] text-accent-purple">TACHY - Website Builder</p>
         </div>
-        <div className="flex flex-wrap gap-3">
+        <div className="flex flex-wrap gap-24" style={{ marginRight: 36 }}>
           <a
             href="/"
             target="_blank"
@@ -220,6 +222,7 @@ export default function WebsiteBuilderClient({ settings }) {
             onClick={handleSave}
             disabled={saving}
             className="inline-flex items-center gap-2 rounded-lg bg-accent-purple px-4 py-2.5 text-sm font-bold text-white hover:bg-accent-purple/90 disabled:opacity-50"
+            style={{ padding: 12 , paddingRight: 12 , paddingTop: 4 , paddingBottom: 4 , border: "1px solid var(--color-accent-purple)" , borderRadius: "99px" , background: "var(--color-accent-purple)" , color: "#fff" }}
           >
             <Save size={16} /> {saving ? "Saving..." : "Save Website"}
           </button>
@@ -227,7 +230,7 @@ export default function WebsiteBuilderClient({ settings }) {
       </div>
 
       <div className="grid grid-cols-1 gap-6 xl:grid-cols-[260px_minmax(0,1fr)]">
-        <aside className="admin-card p-3 xl:sticky xl:top-24 xl:self-start">
+        <aside className="admin-card p-3 xl:sticky xl:top-24 xl:self-start" style={{ marginBottom: 12 , padding: 12 , borderRadius: "0" }}>
           <div className="space-y-1">
             {tabs.map((tab) => {
               const Icon = tab.icon
@@ -241,6 +244,7 @@ export default function WebsiteBuilderClient({ settings }) {
                       ? "bg-sidebar-active text-accent-purple shadow-[inset_3px_0_0_var(--color-accent-purple)]"
                       : "text-text-secondary hover:bg-sidebar-hover hover:text-text-primary"
                   }`}
+                  style={{ paddingLeft: 12 , paddingRight: 12 , marginTop: 12 , marginBottom: 12 , border: activeTab === tab.id ? "1px solid var(--color-accent-purple)" : "1px solid transparent" , background: activeTab === tab.id ? "var(--color-sidebar-active)" : "transparent" , color: activeTab === tab.id ? "var(--color-accent-purple)" : "var(--color-text-secondary)" }}
                 >
                   <Icon size={18} /> {tab.label}
                 </button>
@@ -285,7 +289,7 @@ export default function WebsiteBuilderClient({ settings }) {
                 </div>
                 <TextArea label="Description" value={form.homepage.hero.description} onChange={(value) => updateHero("description", value)} />
                 <TextField label="Scroll Hint" value={form.homepage.hero.scrollHint} onChange={(value) => updateHero("scrollHint", value)} />
-                <div className="grid grid-cols-1 gap-3 lg:grid-cols-2">
+                <div className="grid grid-cols-1 gap-3 lg:grid-cols-2" style={{ margin: 12 }}>
                   <ToggleField label="Enable hero background effects" checked={form.homepage.hero.effectsEnabled} onChange={(value) => updateHero("effectsEnabled", value)} />
                   <ToggleField label="Enable 3D character" checked={form.homepage.hero.characterEnabled} onChange={(value) => updateHero("characterEnabled", value)} />
                 </div>
@@ -350,7 +354,7 @@ export default function WebsiteBuilderClient({ settings }) {
                 <TextField label="Secondary Color" type="color" value={form.theme.secondaryColor} onChange={(value) => updateObject("theme", "secondaryColor", value)} />
                 <TextField label="Accent Color" type="color" value={form.theme.accentColor} onChange={(value) => updateObject("theme", "accentColor", value)} />
               </div>
-              <div className="rounded-xl border border-border bg-admin-bg p-4 text-sm text-text-muted">
+              <div className="rounded-xl border border-border bg-admin-bg p-4 text-sm text-text-muted" style={{ margin: 12 , padding: 8 }}>
                 Media Library đã có trang riêng trong sidebar. Bạn có thể upload ảnh trước, copy URL rồi dán vào Logo URL hoặc các form nội dung.
               </div>
             </Card>

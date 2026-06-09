@@ -43,11 +43,13 @@ export default function BlogClient({ initialPosts, categories, featuredPost, ini
       <div className={styles.container}>
         <Breadcrumb items={breadcrumbItems} />
 
-        <CategoryNav
-          categories={categories}
-          active={activeCategory}
-          onSelect={handleCategoryChange}
-        />
+        {pageTitle && (
+          <CategoryNav
+            categories={categories}
+            active={activeCategory}
+            onSelect={handleCategoryChange}
+          />
+        )}
 
         <AnimatePresence mode="wait">
           <motion.div

@@ -19,6 +19,7 @@ export default async function EditBlogPostPage({ params }) {
       <PageHeader
         title="Edit Post"
         subtitle={`Editing: ${post.title}`}
+        style={{ marginBottom: 12 , paddingLeft: 12, paddingRight: 12 }}
       />
       <BlogForm post={post} />
     </AdminPageContainer>

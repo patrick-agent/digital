@@ -8,9 +8,11 @@ export default async function AdminSettingsPage() {
 
   return (
     <div>
-      <div className="mb-6">
-        <h1 className="text-2xl font-bold text-text-primary">Settings</h1>
-        <p className="text-text-muted text-sm mt-1">
+      <div className="mb-6" style={{ margin: 12 }}>
+        <h1 className="text-2xl font-bold text-text-primary" style={{ color: "var(--color-text-primary)" , fontSize: "1.5rem" }}>
+          Settings
+        </h1>
+        <p className="text-text-muted text-sm mt-1" style={{ color: "var(--color-text-muted)" , fontSize: "0.875rem" }}>
           Configure global site settings and SEO defaults
         </p>
       </div>

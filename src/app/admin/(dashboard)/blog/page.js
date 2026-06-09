@@ -22,6 +22,7 @@ export default async function AdminBlogPage({ searchParams }) {
       <PageHeader
         title={personaLabel}
         subtitle={`${meta.total} ${meta.total === 1 ? "post" : "posts"} total${persona ? ` • ${persona === "artist" ? "Tachy Artist" : "Another Me"}` : ""}`}
+        contentStyle={{ paddingBottom: 12 }}
         actions={
           <Link href="/admin/blog/new" className="admin-btn-primary">
             <Plus size={16} />

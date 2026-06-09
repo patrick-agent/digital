@@ -1,9 +1,9 @@
 import { cn } from "@/lib/utils"
 
-export default function PageHeader({ title, subtitle, actions, className }) {
+export default function PageHeader({ title, subtitle, actions, className, contentClassName, contentStyle, style }) {
   return (
-    <div className={cn("mb-6 flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between", className)}>
-      <div className="min-w-0 flex-1">
+    <div className={cn("mb-6 flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between", className)} style={style}>
+      <div className={cn("min-w-0 flex-1", contentClassName)} style={contentStyle}>
         <h1 className="admin-h1">{title}</h1>
         {subtitle && <p className="admin-subtitle mt-1">{subtitle}</p>}
       </div>

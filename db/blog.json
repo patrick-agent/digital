@@ -1,32 +1,5 @@
 [
   {
-    "id": "post-001",
-    "title": "How to Rank in 2025: The Complete SEO Guide for Creators",
-    "slug": "how-to-rank-in-2025",
-    "content": "<h2 id=\"what-is-seo\">What Is SEO and Why Does It Matter?</h2><p>Search Engine Optimization (SEO) is the practice of improving your website's visibility on search engines like Google. In 2025, SEO has evolved beyond simple keyword stuffing — it now encompasses user experience, content quality, technical performance, and AI-driven search signals.</p><h2 id=\"keyword-research\">Keyword Research: The Foundation</h2><p>Every successful SEO strategy starts with understanding what your audience is searching for. Use tools like Google Keyword Planner, Ahrefs, or SEMrush to identify high-intent keywords with manageable competition.</p><h3 id=\"long-tail-keywords\">Long-Tail Keywords</h3><p>Long-tail keywords are specific, multi-word phrases that capture highly targeted traffic. For example, instead of targeting \"SEO\", target \"SEO tips for small business blogs\". These keywords typically have lower competition and higher conversion rates.</p><h2 id=\"on-page-seo\">On-Page SEO Essentials</h2><p>On-page SEO involves optimizing individual pages to rank higher. Key elements include:</p><ul><li>Title tags with primary keywords</li><li>Meta descriptions that drive clicks</li><li>Proper heading hierarchy (H1 → H2 → H3)</li><li>Internal linking structure</li><li>Image alt text optimization</li></ul><h2 id=\"technical-seo\">Technical SEO in 2025</h2><p>Technical SEO ensures search engines can crawl and index your site efficiently. Focus on Core Web Vitals, mobile responsiveness, structured data, and site speed.</p><pre><code class=\"language-javascript\">// Example: Adding JSON-LD structured data\nconst schema = {\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Article\",\n  \"headline\": \"Your Article Title\",\n  \"author\": {\n    \"@type\": \"Person\",\n    \"name\": \"Artist Name\"\n  }\n};</code></pre><h2 id=\"conclusion\">Conclusion</h2><p>SEO in 2025 requires a holistic approach. Focus on creating genuinely helpful content, optimize for user experience, and stay updated with algorithm changes. The creators who win are those who put their audience first.</p>",
-    "excerpt": "A comprehensive guide to SEO in 2025 — from keyword research to technical optimization. Learn how to rank higher and attract organic traffic to your creative website.",
-    "coverImage": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=630&fit=crop",
-    "tags": [
-      "seo",
-      "featured",
-      "tutorial",
-      "marketing"
-    ],
-    "category": "seo-tips",
-    "status": "published",
-    "publishedAt": "2025-03-15T10:00:00Z",
-    "seoTitle": "How to Rank in 2025: Complete SEO Guide for Creators",
-    "seoDescription": "Master SEO in 2025 with this comprehensive guide covering keyword research, on-page optimization, technical SEO, and AI-driven search strategies.",
-    "seoKeywords": [
-      "SEO 2025",
-      "keyword research",
-      "technical SEO",
-      "content marketing"
-    ],
-    "createdAt": "2025-03-10T08:00:00Z",
-    "updatedAt": "2025-03-15T10:00:00Z"
-  },
-  {
     "id": "post-002",
     "title": "Best Affiliate Tools for Creators in 2025",
     "slug": "best-tools-for-creators",

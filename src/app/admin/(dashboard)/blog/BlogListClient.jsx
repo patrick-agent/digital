@@ -1,11 +1,13 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { useRouter } from "next/navigation"
 import Link from "next/link"
-import { Edit, Trash2, ExternalLink, Copy, Search } from "lucide-react"
+import { Edit, Trash2, ExternalLink, Copy } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { calculateSEOScore } from "@/lib/seo-score"
+
+const ITEMS_PER_PAGE = 10
 
 const STATUS_COLORS = {
   draft: "bg-yellow-50 text-yellow-700 border-yellow-200",
@@ -61,6 +63,7 @@ export default function BlogListClient({ posts: initialPosts }) {
   const [search, setSearch] = useState("")
   const [statusFilter, setStatusFilter] = useState("")
   const [personaFilter, setPersonaFilter] = useState("")
+  const [currentPage, setCurrentPage] = useState(1)
 
   async function handleDelete(id) {
     if (!confirm("Are you sure you want to delete this post?")) return
@@ -87,24 +90,38 @@ export default function BlogListClient({ posts: initialPosts }) {
     return matchesSearch && matchesStatus && matchesPersona
   })
 
+  const totalPages = Math.max(1, Math.ceil(filtered.length / ITEMS_PER_PAGE))
+  const startIndex = (currentPage - 1) * ITEMS_PER_PAGE
+  const endIndex = startIndex + ITEMS_PER_PAGE
+  const paginatedPosts = filtered.slice(startIndex, endIndex)
+
+  useEffect(() => {
+    setCurrentPage((page) => Math.min(page, totalPages))
+  }, [totalPages])
+
   return (
     <div className="space-y-5">
       {/* Toolbar */}
-      <div className="admin-card p-4">
+      <div className="admin-card p-4" style={{ paddingBottom: 12 , paddingTop: 12 , marginBottom: 12}}>
         <div className="flex flex-wrap items-center gap-3">
-          <div className="relative flex-1 max-w-xs">
-            <Search size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-text-muted-2" />
+          <div className="relative flex-1 w-auto">
             <input
               type="text"
               value={search}
-              onChange={(e) => setSearch(e.target.value)}
+              onChange={(e) => {
+                setSearch(e.target.value)
+                setCurrentPage(1)
+              }}
               placeholder="Search posts..."
               className="admin-input pl-9"
             />
           </div>
           <select
             value={personaFilter}
-            onChange={(e) => setPersonaFilter(e.target.value)}
+            onChange={(e) => {
+              setPersonaFilter(e.target.value)
+              setCurrentPage(1)
+            }}
             className="admin-input w-auto"
           >
             <option value="">All Personas</option>
@@ -113,7 +130,10 @@ export default function BlogListClient({ posts: initialPosts }) {
           </select>
           <select
             value={statusFilter}
-            onChange={(e) => setStatusFilter(e.target.value)}
+            onChange={(e) => {
+              setStatusFilter(e.target.value)
+              setCurrentPage(1)
+            }}
             className="admin-input w-auto"
           >
             <option value="">All Status</option>
@@ -148,7 +168,7 @@ export default function BlogListClient({ posts: initialPosts }) {
                 </td>
               </tr>
             ) : (
-              filtered.map((post) => (
+              paginatedPosts.map((post) => (
                 <tr key={post.id} className="border-b border-border last:border-0 hover:bg-gray-50 transition-colors">
                   <td>
                     <div className="max-w-md">
@@ -211,6 +231,38 @@ export default function BlogListClient({ posts: initialPosts }) {
           </tbody>
         </table>
       </div>
+
+      {filtered.length > 0 && (
+        <div
+          className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between"
+          style={{ paddingLeft: 12, paddingRight: 12 , marginTop: 12}}
+        >
+          <p className="text-sm text-text-muted">
+            Showing {startIndex + 1}-{Math.min(endIndex, filtered.length)} of {filtered.length} posts
+          </p>
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              onClick={() => setCurrentPage((page) => Math.max(1, page - 1))}
+              disabled={currentPage === 1}
+              className="rounded-lg border border-border bg-white px-3 py-2 text-sm font-medium text-text-secondary transition-colors hover:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-50"
+            >
+              Previous
+            </button>
+            <span className="min-w-24 text-center text-sm font-medium text-text-secondary">
+              Page {currentPage} of {totalPages}
+            </span>
+            <button
+              type="button"
+              onClick={() => setCurrentPage((page) => Math.min(totalPages, page + 1))}
+              disabled={currentPage === totalPages}
+              className="rounded-lg border border-border bg-white px-3 py-2 text-sm font-medium text-text-secondary transition-colors hover:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-50"
+            >
+              Next
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
