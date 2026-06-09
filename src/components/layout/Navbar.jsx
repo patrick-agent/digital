@@ -78,7 +78,7 @@ export default function Navbar({ settings }) {
               alt={`${branding.siteName || "Tachy"} Logo`}
               width={52}
               height={52}
-              fetchpriority="high"
+              fetchPriority="high"
               decoding="sync"
               className={styles.logoImage}
             />
