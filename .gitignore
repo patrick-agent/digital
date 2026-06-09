@@ -42,3 +42,6 @@ yarn-error.log*
 next-env.d.ts
 
 .vercel
+
+# Vercel utility script - causes build failures if tracked
+scripts/_sync-to-vercel.mjs
