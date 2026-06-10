@@ -17,9 +17,9 @@ function stripHtml(html) {
 }
 
 function formatPrice(price, currency) {
-  const symbols = { USD: "$", EUR: "\u20ac", VND: "\u20ab" }
+  const symbols = { USD: "$", EUR: "\u20ac" }
   const sym = symbols[currency] || currency + " "
-  if (currency === "VND") return sym + Number(price).toLocaleString("vi-VN")
+  if (currency === "VND") return Number(price).toLocaleString("vi-VN") + " VNĐ"
   return sym + Number(price).toFixed(2)
 }
 
@@ -226,7 +226,7 @@ export default async function ProductDetailPage({ params }) {
             {product.faq.map((item, i) => (
               <details key={i} className={styles.faqItem}>
                 <summary className={styles.faqQuestion}>{item.question}</summary>
-                <p className={styles.faqAnswer}>{item.answer}</p>
+                <p className={styles.faqAnswer} dangerouslySetInnerHTML={{ __html: item.answer }} />
               </details>
             ))}
           </div>

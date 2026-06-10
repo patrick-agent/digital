@@ -1,7 +1,9 @@
 import Link from "next/link"
 import Image from "next/image"
+import { Suspense } from "react"
 import { readProducts } from "@/lib/db"
 import { siteMetadata } from "@/lib/seo"
+import FilterSelect from "./FilterSelect"
 import styles from "./shop.module.css"
 
 export const revalidate = 300
@@ -25,9 +27,9 @@ function stripHtml(html) {
 }
 
 function formatPrice(price, currency) {
-  const symbols = { USD: "$", EUR: "\u20ac", VND: "\u20ab" }
+  const symbols = { USD: "$", EUR: "\u20ac" }
   const sym = symbols[currency] || currency + " "
-  if (currency === "VND") return sym + Number(price).toLocaleString("vi-VN")
+  if (currency === "VND") return Number(price).toLocaleString("vi-VN") + " VNĐ"
   return sym + Number(price).toFixed(2)
 }
 
@@ -37,7 +39,7 @@ function getCategories(products) {
 }
 
 export default async function ShopPage({ searchParams }) {
-  const { category } = await searchParams || {}
+  const { category, priceRange, sort, q } = await searchParams || {}
 
   let products = []
   try {
@@ -50,8 +52,42 @@ export default async function ShopPage({ searchParams }) {
 
   const categories = getCategories(products)
 
+  // ── Category filter ──
   if (category && category !== "all") {
     products = products.filter((p) => p.category === category)
+  }
+
+  // ── Price range filter ──
+  if (priceRange) {
+    const [minStr, maxStr] = priceRange.split("-")
+    const min = minStr ? Number(minStr) : 0
+    const max = maxStr ? Number(maxStr) : Infinity
+    products = products.filter((p) => p.price >= min && p.price <= max)
+  }
+
+  // ── Search ──
+  if (q) {
+    const kw = q.toLowerCase()
+    products = products.filter((p) => {
+      return (
+        p.name?.toLowerCase().includes(kw) ||
+        p.brand?.toLowerCase().includes(kw) ||
+        p.category?.toLowerCase().includes(kw) ||
+        (p.tags && p.tags.some((t) => t.toLowerCase().includes(kw))) ||
+        stripHtml(p.description).toLowerCase().includes(kw)
+      )
+    })
+  }
+
+  // ── Sort ──
+  if (sort === "price-asc") {
+    products.sort((a, b) => a.price - b.price)
+  } else if (sort === "price-desc") {
+    products.sort((a, b) => b.price - a.price)
+  } else if (sort === "name-asc") {
+    products.sort((a, b) => (a.name || "").localeCompare(b.name || "vi"))
+  } else if (sort === "name-desc") {
+    products.sort((a, b) => (b.name || "").localeCompare(a.name || "vi"))
   }
 
   const itemListJsonLd = {
@@ -99,24 +135,12 @@ export default async function ShopPage({ searchParams }) {
       </section>
 
       {categories.length > 1 && (
-        <nav className={styles.filters} aria-label="Filter by category">
-          <Link
-            href="/shop"
-            className={`${styles.filterBtn} ${!category || category === "all" ? styles.filterBtnActive : ""}`}
-          >
-            All
-          </Link>
-          {categories.map((cat) => (
-            <Link
-              key={cat}
-              href={`?category=${encodeURIComponent(cat)}`}
-              className={`${styles.filterBtn} ${category === cat ? styles.filterBtnActive : ""}`}
-            >
-              {cat}
-            </Link>
-          ))}
-        </nav>
+        <Suspense fallback={<div className={styles.filterBar}><p className={styles.empty}>Loading filters…</p></div>}>
+          <FilterSelect categories={categories} />
+        </Suspense>
       )}
+
+      <div className={styles.filterDivider} />
 
       <section className={styles.gridSection}>
         {products.length === 0 ? (
