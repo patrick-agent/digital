@@ -283,7 +283,7 @@
 
 .cardPrice {
   font-family: var(--font-mono);
-  font-size: var(--fs-lg);
+  font-size: 20px;
   font-weight: 700;
   color: var(--accent-primary);
 }
