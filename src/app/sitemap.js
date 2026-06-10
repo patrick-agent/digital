@@ -1,3 +1,4 @@
+import { connection } from "next/server"
 import { getAllPublishedSlugs } from "@/lib/blog"
 import { getAllRoutes } from "@/lib/db"
 import { siteMetadata } from "@/lib/seo"
@@ -22,6 +23,10 @@ const staticPages = [
 ]
 
 export default async function sitemap() {
+  // Metadata routes are cached by default in Next 16, so force request-time
+  // generation to keep sitemap.xml aligned with the current Blob-backed DB.
+  await connection()
+
   const slugs = await getAllPublishedSlugs()
 
   const postUrls = slugs.map((p) => {

@@ -130,13 +130,6 @@ function getOAuthCredentials(env) {
 }
 
 function getAuth(env) {
-  const oauth = getOAuthCredentials(env)
-  if (oauth.clientId && oauth.clientSecret && oauth.refreshToken) {
-    const auth = new google.auth.OAuth2(oauth.clientId, oauth.clientSecret)
-    auth.setCredentials({ refresh_token: oauth.refreshToken })
-    return { auth, method: "OAuth owner account" }
-  }
-
   const serviceAccount = getServiceAccountCredentials(env)
   if (serviceAccount.clientEmail && serviceAccount.privateKey) {
     return {
@@ -150,6 +143,13 @@ function getAuth(env) {
       }),
       method: "service account",
     }
+  }
+
+  const oauth = getOAuthCredentials(env)
+  if (oauth.clientId && oauth.clientSecret && oauth.refreshToken) {
+    const auth = new google.auth.OAuth2(oauth.clientId, oauth.clientSecret)
+    auth.setCredentials({ refresh_token: oauth.refreshToken })
+    return { auth, method: "OAuth owner account" }
   }
 
   return { auth: null, method: "" }

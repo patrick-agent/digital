@@ -33,8 +33,8 @@ function getServiceAccountAuth() {
   }
 }
 
-function getAuth() {
-  return getOAuthAuth() || getServiceAccountAuth()
+function getAuthConfigs() {
+  return [getServiceAccountAuth(), getOAuthAuth()].filter(Boolean)
 }
 
 function shouldSkipLocalIndexing() {
@@ -48,17 +48,22 @@ export async function publishGoogleIndexingNotification(url, type = "URL_UPDATED
     return { success: false, skipped: true, reason: "local-environment", url, type }
   }
 
-  const authConfig = getAuth()
-  if (!authConfig) {
+  const authConfigs = getAuthConfigs()
+  if (authConfigs.length === 0) {
     return { success: false, skipped: true, reason: "missing-credentials", url, type }
   }
 
-  try {
-    const indexing = google.indexing({ version: "v3", auth: authConfig.auth })
-    await indexing.urlNotifications.publish({ requestBody: { url, type } })
-    return { success: true, skipped: false, url, type, auth: authConfig.method }
-  } catch (err) {
-    const error = err?.response?.data?.error?.message || err.message || "Unknown error"
-    return { success: false, skipped: false, url, type, error }
+  let lastError = "Unknown error"
+
+  for (const authConfig of authConfigs) {
+    try {
+      const indexing = google.indexing({ version: "v3", auth: authConfig.auth })
+      await indexing.urlNotifications.publish({ requestBody: { url, type } })
+      return { success: true, skipped: false, url, type, auth: authConfig.method }
+    } catch (err) {
+      lastError = err?.response?.data?.error?.message || err.message || "Unknown error"
+    }
   }
+
+  return { success: false, skipped: false, url, type, error: lastError }
 }
