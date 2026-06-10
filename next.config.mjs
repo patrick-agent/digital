@@ -41,6 +41,16 @@ const nextConfig = {
         protocol: "https",
         hostname: "res.cloudinary.com",
       },
+      { protocol: "https", hostname: "**.thomann.de" },
+
+      { protocol: "https", hostname: "api.beyerdynamic.de" },
+      { protocol: "https", hostname: "alctron-audio.com" },
+      { protocol: "https", hostname: "jdsound.com.au" },
+      { protocol: "https", hostname: "m.media-amazon.com" },
+      { protocol: "https", hostname: "neewer.com" },
+      { protocol: "https", hostname: "images.samsung.com" },
+      { protocol: "https", hostname: "www.sandisk.com" },
+      { protocol: "https", hostname: "assets.micron.com" },
     ],
     // Cache images longer in production
     minimumCacheTTL: 31536000, // 1 year

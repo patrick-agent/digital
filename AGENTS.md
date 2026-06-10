@@ -4,6 +4,64 @@
 This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
 <!-- END:nextjs-agent-rules -->
 
+<!-- BEGIN:anchored-summary -->
+# Session Summary
+
+## Goal
+Xây dựng trang `/shop` với toàn bộ 33 sản phẩm affiliate, kèm SEO/AEO/GEO content, giá tham khảo, và ảnh thật sản phẩm từ nguồn ngoài Shopee.
+
+## Constraints & Preferences
+- 33 sản phẩm từ affiliate links đã gửi.
+- Mỗi sản phẩm cần content chuẩn SEO/AEO/GEO, giá tham khảo, và ảnh thật ưu tiên nền trắng.
+- Trang `/shop` và `/shop/[slug]` đã có sẵn; cần cập nhật data và UI.
+- Giá tham khảo từ Shopee (cập nhật real-time).
+- Ảnh remote từ CDN ngoài (Thomann.de / manufacturer / retailer).
+
+## Progress
+### Done
+- `db/shop.json`: 33 products với ảnh đầy đủ (mỗi sản phẩm 1 ảnh).
+- `next.config.mjs`: thêm 9 remotePatterns cho CDN image hosts.
+- Xoá tất cả debug scripts (`_inspect-*.mjs`, `_sample*.html`, etc).
+- `scripts/rebuild-shop-catalog.mjs`: cập nhật với `IMAGE_MAP` lookup table, bỏ phụ thuộc Shopee cho ảnh.
+- Nguồn ảnh:
+  - **Thomann.de** (og:image): 24/33 sản phẩm (audio interface, mic, headphone, monitor, MIDI, booster).
+  - **Beyerdynamic API**: DT 880 Pro.
+  - **Alctron official**: PF8.
+  - **JD Sound / Amazon / Neewer**: accessories (Soundking stand, desk mic stand, pop filter, XLR cable).
+  - **Samsung / SanDisk / Crucial official**: SSDs.
+- Xác nhận Shopee SPA + DataDome → không thể scrape ảnh từ Shopee.
+- Xác nhận Builder Cart (B&H) cũng SPA → không thể lấy ảnh.
+- Xác nhận Thomann.de SSR → nguồn ảnh reliable nhất cho music gear.
+
+### Blocked
+- Không thể lấy gallery nhiều ảnh (chỉ có 1 ảnh chính từ og:image). Cần gallery thì phải dùng thêm API chuyên biệt.
+- OAuth Indexing API vẫn `invalid_grant`.
+
+## Key Decisions
+- **Shopee**: Không thể scrape → từ bỏ.
+- **Thomann.de**: Nguồn ảnh chính (24/33). SSR nên scrape được.
+- **IMAGE_MAP**: Static lookup table trong `rebuild-shop-catalog.mjs`. Dễ maintain.
+- Các script inspect tạm đã xoá sau khi hoàn thành.
+
+## Next Steps
+1. Nâng UI `/shop/[slug]`: gallery grid (nếu có nhiều ảnh), priceNote, features, FAQ, related articles section.
+2. Nâng UI `/shop`: active category filter, card grid với ảnh + giá.
+3. Sync `db/shop.json` lên Vercel Blob + revalidate.
+4. Submit Indexing API cho `/shop` và từng `/shop/[slug]`.
+5. Xoá debug scripts còn lại (`_gen-links-report.mjs`, `_rebuild-posts.mjs`, `_seo-optimize.mjs`, `add-internal-links.mjs`).
+
+## Relevant Files
+- `scripts/rebuild-shop-catalog.mjs`: script chính; đã cập nhật IMAGE_MAP.
+- `db/shop.json`: 33 products, mỗi product có 1 ảnh.
+- `src/app/shop/page.js`: cần active category filter + card layout.
+- `src/app/shop/[slug]/page.js`: cần gallery + sections nâng cao.
+- `src/app/shop/shop.module.css`: cần gallery CSS.
+- `src/app/shop/layout.js`: cần metadata tiếng Việt.
+- `next.config.mjs`: 9 remotePatterns mới cho CDN image hosts.
+- `src/lib/db.js`: readProducts, readProduct, createProduct — giữ nguyên.
+- `scripts/add-internal-links.mjs`, `scripts/_gen-links-report.mjs`, `scripts/_rebuild-posts.mjs`, `scripts/_seo-optimize.mjs`: chưa xoá.
+<!-- END:anchored-summary -->
+
 <!-- BEGIN:google-sheets-sync -->
 # Google Sheets → Blog Auto-Post Workflow
 

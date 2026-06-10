@@ -16,6 +16,8 @@
     "sync:blog:dry": "node scripts/sync-blog.mjs --dry-run",
     "sync:data:pull": "node scripts/sync-db-from-vercel.mjs",
     "sync:data:pull:dry": "node scripts/sync-db-from-vercel.mjs --dry-run",
+    "sync:data:push": "node scripts/sync-to-vercel.mjs",
+    "sync:data:push:shop": "node scripts/sync-to-vercel.mjs --shop-only",
     "sync:data:watch": "node scripts/sync-db-from-vercel.mjs --watch",
     "index:urls": "node scripts/index-urls.mjs",
     "index:urls:dry": "node scripts/index-urls.mjs --dry-run",

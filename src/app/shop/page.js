@@ -36,7 +36,9 @@ function getCategories(products) {
   return cats.sort()
 }
 
-export default async function ShopPage() {
+export default async function ShopPage({ searchParams }) {
+  const { category } = await searchParams || {}
+
   let products = []
   try {
     const { data } = await readProducts({ status: "active" })
@@ -47,6 +49,10 @@ export default async function ShopPage() {
   }
 
   const categories = getCategories(products)
+
+  if (category && category !== "all") {
+    products = products.filter((p) => p.category === category)
+  }
 
   const itemListJsonLd = {
     "@context": "https://schema.org",
@@ -94,14 +100,20 @@ export default async function ShopPage() {
 
       {categories.length > 1 && (
         <nav className={styles.filters} aria-label="Filter by category">
+          <Link
+            href="/shop"
+            className={`${styles.filterBtn} ${!category || category === "all" ? styles.filterBtnActive : ""}`}
+          >
+            All
+          </Link>
           {categories.map((cat) => (
-            <a
+            <Link
               key={cat}
               href={`?category=${encodeURIComponent(cat)}`}
-              className={styles.filterBtn}
+              className={`${styles.filterBtn} ${category === cat ? styles.filterBtnActive : ""}`}
             >
               {cat}
-            </a>
+            </Link>
           ))}
         </nav>
       )}

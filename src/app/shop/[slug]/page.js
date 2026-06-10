@@ -158,6 +158,10 @@ export default async function ProductDetailPage({ params }) {
             </span>
           )}
 
+          {product.priceNote && (
+            <span className={styles.priceNote}>{product.priceNote}</span>
+          )}
+
           {product.description && (
             <div className={styles.detailDesc} dangerouslySetInnerHTML={{ __html: product.description }} />
           )}
@@ -180,10 +184,7 @@ export default async function ProductDetailPage({ params }) {
                     <polyline points="15 3 21 3 21 9" />
                     <line x1="10" y1="14" x2="21" y2="3" />
                   </svg>
-                </a>
-                <span className={styles.affiliateDisclosure}>
-                  As an affiliate, I earn from qualifying purchases at no extra cost to you.
-                </span>
+                </a>              
               </>
             ) : (
               <span style={{ color: "var(--text-muted)", fontSize: "var(--fs-sm)" }}>
@@ -229,6 +230,23 @@ export default async function ProductDetailPage({ params }) {
               </details>
             ))}
           </div>
+        </section>
+      )}
+
+      {/* ─── Related Articles ─── */}
+      {product.relatedArticles?.length > 0 && (
+        <section className={styles.contentSection}>
+          <div className={styles.sectionDivider} />
+          <h2 className={styles.sectionTitle}>Related Articles</h2>
+          <ul className={styles.relatedArticlesList}>
+            {product.relatedArticles.map((article, i) => (
+              <li key={i}>
+                <Link href={`/blog/${article.slug}`} className={styles.relatedArticleLink}>
+                  {article.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </section>
       )}
 
