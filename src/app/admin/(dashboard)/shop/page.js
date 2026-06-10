@@ -14,9 +14,11 @@ export default async function AdminShopPage({ searchParams }) {
 
   return (
     <div>
-      <div className="flex items-center justify-between mb-6">
+      <div className="flex items-center justify-between mb-6" style={{ padding: 24 }}>
         <div>
-          <h1 className="text-2xl font-bold text-text-primary">Products</h1>
+          <h1 className="text-2xl font-bold text-text-primary" style={{ color: "Black" , fontSize: 24 , marginBottom: 4}}>
+            Products
+          </h1>
           <p className="text-text-muted text-sm mt-1">
             {meta.total} {meta.total === 1 ? "product" : "products"} total
           </p>
@@ -24,6 +26,7 @@ export default async function AdminShopPage({ searchParams }) {
         <Link
           href="/admin/shop/new"
           className="flex items-center gap-2 px-4 py-2 bg-accent-purple hover:bg-accent-purple/90 text-white rounded-lg text-sm font-medium transition-colors"
+          style={{ padding: "4px 12px" , borderRadius: 999 , color: "white" }}
         >
           <Plus size={16} />
           New Product

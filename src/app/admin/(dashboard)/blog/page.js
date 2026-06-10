@@ -13,7 +13,7 @@ export default async function AdminBlogPage({ searchParams }) {
   const search = params?.search || ""
   const persona = params?.persona || ""
 
-  const { data: posts, meta } = await readPosts({ status, search, persona })
+  const { data: posts, meta } = await readPosts({ status, search, persona, limit: 9999 })
 
   const personaLabel = persona === "marketer" ? "Another Me Blog" : persona === "artist" ? "Tachy Artist Blog" : "Blog Posts"
 

@@ -40,9 +40,9 @@ export default function ShopListClient({ products: initialProducts }) {
 
   return (
     <div>
-      <div className="flex items-center gap-3 mb-4">
+      <div className="flex items-center gap-3 mb-4" style={{ marginBottom: 16 , gap: 0 }}>
         <div className="relative flex-1 max-w-sm">
-          <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-text-muted" />
+          <Search size={16} className="absolute left-5 top-1/2 -translate-y-1/2 text-text-muted" />
           <input
             type="text"
             value={search}
@@ -63,7 +63,7 @@ export default function ShopListClient({ products: initialProducts }) {
         </select>
       </div>
 
-      <div className="bg-admin-card border border-border rounded-xl overflow-x-auto">
+      <div className="bg-admin-card border border-border rounded-xl overflow-x-auto" style={{ margin: 12 }}>
         <table className="w-full">
           <thead>
             <tr className="border-b border-border">
@@ -95,8 +95,7 @@ export default function ShopListClient({ products: initialProducts }) {
               filtered.map((product) => (
                 <tr
                   key={product.id}
-                  className="border-b border-border last:border-0 hover:bg-admin-hover/50 transition-colors"
-                >
+                  className="border-b border-border last:border-0 hover:bg-admin-hover/50 transition-colors"                >
                   <td className="px-5 py-3">
                     <p className="text-text-primary text-sm font-medium">{product.name}</p>
                     <p className="text-text-muted text-xs mt-0.5">/{product.slug}</p>
@@ -105,6 +104,7 @@ export default function ShopListClient({ products: initialProducts }) {
                     <Badge
                       variant="outline"
                       className={`text-xs ${STATUS_COLORS[product.status] || ""}`}
+                      style={{ padding: "2px 8px" }}
                     >
                       {product.status?.replace("_", " ")}
                     </Badge>
@@ -115,8 +115,8 @@ export default function ShopListClient({ products: initialProducts }) {
                   <td className="px-5 py-3 text-text-secondary text-sm">
                     {product.category || "—"}
                   </td>
-                  <td className="px-5 py-3 text-right">
-                    <div className="flex items-center justify-end gap-1">
+                  <td className="px-5 py-3 text-center">
+                    <div className="flex items-center justify-start gap-2">
                       <Link
                         href={`/admin/shop/${product.id}/edit`}
                         className="p-1.5 text-text-muted hover:text-accent-cyan transition-colors"

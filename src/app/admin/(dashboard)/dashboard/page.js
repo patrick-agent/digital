@@ -26,7 +26,7 @@ import AdminPageContainer from "@/components/admin/AdminPageContainer"
 export const dynamic = "force-dynamic"
 
 export default async function AdminDashboardPage() {
-  const { data: allPosts } = await readPosts()
+  const { data: allPosts } = await readPosts({ limit: 9999 })
   const { data: products } = await readProducts()
   const { data: events } = await readEvents()
   const { data: subscribers } = await readSubscribers()
