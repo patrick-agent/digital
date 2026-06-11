@@ -145,7 +145,7 @@ const BreakdanceCharacterCanvas = forwardRef(({
         shadows={!isMobile}
         camera={{ position: [0, 35, 110], fov: getResponsiveFov(45), near: 0.1, far: 1000 }}
         onCreated={({ camera }) => {
-          camera.lookAt(85, 70, 0);
+          camera.lookAt(50, 70, 0);
         }}
         style={{ background: 'transparent', pointerEvents: 'auto', width: '100%', height: '100%' }}
         gl={{ alpha: true, antialias: !isMobile, powerPreference: 'high-performance' }}
