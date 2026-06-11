@@ -17,12 +17,12 @@ export const metadata = {
 
 const styles = {
   disclosure: {
-    background: '#fffbe6',
-    borderBottom: '1px solid #ffe58f',
-    padding: '8px 16px',
-    fontSize: '13px',
+    background: 'rgba(0,0,0,0.03)',
+    borderTop: '1px solid rgba(0,0,0,0.06)',
+    padding: '6px 16px',
+    fontSize: '12px',
     textAlign: 'center',
-    color: '#8c6e00',
+    color: '#999',
   },
 }
 
@@ -38,10 +38,10 @@ export default function BlogLayout({ children }) {
   return (
     <>
       <SkipLink href="#blog-content">Bỏ qua điều hướng tới blog</SkipLink>
-      <AffiliateDisclosure />
       <Navbar />
       <main id="blog-content" style={{ paddingBottom: 220 }}>{children}</main>
       <Footer />
+      <AffiliateDisclosure />
     </>
   )
 }
