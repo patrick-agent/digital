@@ -1,44 +1,44 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import "../../styles/design-tokens.css";
 @import "tailwindcss";
 
 @theme {
-  --color-deep-bg: #edf1f7;
-  --color-admin-bg: #f3f4f8;
+  --color-deep-bg: #f3f0ff;
+  --color-admin-bg: #f7f5ff;
   --color-admin-card: #ffffff;
-  --color-admin-hover: #f0f1f5;
-  --color-accent-purple: #2563eb;
-  --color-accent-cyan: #059669;
-  --color-accent-pink: #e11d48;
+  --color-admin-hover: #f1edff;
+  --color-accent-purple: #7c3aed;
+  --color-accent-cyan: #6366f1;
+  --color-accent-pink: #db2777;
   --color-text-primary: #0f172a;
   --color-text-secondary: #334155;
   --color-text-muted: #64748b;
   --color-text-muted-2: #94a3b8;
-  --color-border: #e2e8f0;
-  --color-border-light: #f1f5f9;
+  --color-border: #e9e3ff;
+  --color-border-light: #f5f2ff;
   --color-sidebar: #ffffff;
-  --color-sidebar-hover: #f8fafc;
-  --color-sidebar-active: #eef2ff;
+  --color-sidebar-hover: #faf7ff;
+  --color-sidebar-active: #f3ecff;
 
   /* shadcn overrides */
-  --color-background: #f3f4f8;
+  --color-background: #f7f5ff;
   --color-foreground: #0f172a;
   --color-card: #ffffff;
   --color-card-foreground: #0f172a;
   --color-popover: #ffffff;
   --color-popover-foreground: #0f172a;
-  --color-primary: #2563eb;
+  --color-primary: #7c3aed;
   --color-primary-foreground: #ffffff;
-  --color-secondary: #f0f1f5;
+  --color-secondary: #f1edff;
   --color-secondary-foreground: #0f172a;
-  --color-muted: #f0f1f5;
+  --color-muted: #f1edff;
   --color-muted-foreground: #64748b;
-  --color-accent: #f0f1f5;
+  --color-accent: #f1edff;
   --color-accent-foreground: #0f172a;
-  --color-destructive: #e11d48;
+  --color-destructive: #db2777;
   --color-destructive-foreground: #ffffff;
-  --color-border: #e2e8f0;
-  --color-input: #e2e8f0;
-  --color-ring: #2563eb;
+  --color-border: #e9e3ff;
+  --color-input: #e9e3ff;
+  --color-ring: #7c3aed;
   --radius: 0.5rem;
 }
 
@@ -54,7 +54,7 @@ html { scrollbar-width: thin; scrollbar-color: var(--color-text-muted-2) transpa
 body {
   background: var(--color-admin-bg);
   color: var(--color-text-primary);
-  font-family: "Inter", var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  font-family: var(--font-sans-ui);
   font-size: 14px;
   line-height: 1.6;
 }
@@ -298,14 +298,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(37, 99, 235, 0.1);
+  background: rgba(124, 58, 237, 0.1);
   color: var(--color-accent-purple);
   flex-shrink: 0;
   transition: background 0.15s ease;
 }
 
 .admin-action-card:hover .action-icon {
-  background: rgba(37, 99, 235, 0.18);
+  background: rgba(124, 58, 237, 0.18);
 }
 
 .admin-action-card .action-icon svg {
@@ -346,7 +346,7 @@ main :is(input:not([type="checkbox"]):not([type="radio"]):not([type="file"]), se
 .admin-input:focus,
 main :is(input, select, textarea):focus {
   border-color: var(--color-accent-purple);
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.12);
   outline: none;
 }
 
@@ -396,7 +396,7 @@ main label {
   white-space: nowrap;
 }
 
-.admin-btn-primary:hover { background: #1d4ed8; }
+.admin-btn-primary:hover { background: #6d28d9; }
 
 .admin-btn-secondary {
   display: inline-flex;
@@ -602,7 +602,7 @@ main .bg-red-400 { background: var(--color-accent-pink); }
   border: 0;
   background: transparent;
   color: #e5e7eb;
-  caret-color: #a855f7;
+  caret-color: var(--color-accent-purple);
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   font-size: 14px;
   line-height: 1.7;
@@ -771,7 +771,7 @@ main .bg-red-400 { background: var(--color-accent-pink); }
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(37, 99, 235, 0.1);
+  background: rgba(124, 58, 237, 0.1);
   color: var(--color-accent-purple);
   margin-bottom: 16px;
 }

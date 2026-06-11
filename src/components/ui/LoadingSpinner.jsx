@@ -13,7 +13,7 @@ export default function LoadingSpinner({ text = "Loading" }) {
     }}>
       <div className="spinner-ring" />
       <p style={{
-        fontFamily: 'var(--font-inter, sans-serif)',
+        fontFamily: 'var(--font-body)',
         fontSize: 14,
         color: 'rgba(255,255,255,0.4)',
         letterSpacing: '0.15em',

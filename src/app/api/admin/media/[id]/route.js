@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server"
 import { auth } from "@/lib/auth"
-import { deleteMediaItem, updateMediaItem } from "@/lib/db"
+import { updateMedia, deleteMedia } from "@/lib/media/service"
 
 export async function PATCH(request, { params }) {
   const session = await auth()
@@ -8,9 +8,9 @@ export async function PATCH(request, { params }) {
 
   const { id } = await params
   const body = await request.json()
-  const item = await updateMediaItem(id, body)
-  if (!item) return NextResponse.json({ error: "Not found" }, { status: 404 })
-  return NextResponse.json(item)
+  const result = await updateMedia({ id, ...body })
+  if (!result.success) return NextResponse.json({ error: result.error.message }, { status: 404 })
+  return NextResponse.json(result.data)
 }
 
 export async function DELETE(_request, { params }) {
@@ -18,7 +18,7 @@ export async function DELETE(_request, { params }) {
   if (!session) return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
 
   const { id } = await params
-  const deleted = await deleteMediaItem(id)
-  if (!deleted) return NextResponse.json({ error: "Not found" }, { status: 404 })
-  return NextResponse.json({ ok: true })
+  const result = await deleteMedia({ id })
+  if (!result.success) return NextResponse.json({ error: result.error.message }, { status: 404 })
+  return NextResponse.json({ success: true })
 }

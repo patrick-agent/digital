@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server"
-import { readProduct, updateProduct, deleteProduct } from "@/lib/db"
+import { getShopProduct, updateShopProduct, deleteShopProduct } from "@/lib/shop/service"
 import { auth } from "@/lib/auth"
 
 export async function GET(request, { params }) {
@@ -9,13 +9,9 @@ export async function GET(request, { params }) {
   }
 
   const { id } = await params
-  const product = await readProduct(id)
-
-  if (!product) {
-    return NextResponse.json({ error: "Not found" }, { status: 404 })
-  }
-
-  return NextResponse.json(product)
+  const result = await getShopProduct({ id })
+  if (!result.success) return NextResponse.json({ error: result.error.message }, { status: 404 })
+  return NextResponse.json(result.data)
 }
 
 export async function PATCH(request, { params }) {
@@ -27,13 +23,9 @@ export async function PATCH(request, { params }) {
   try {
     const { id } = await params
     const body = await request.json()
-    const product = await updateProduct(id, body)
-
-    if (!product) {
-      return NextResponse.json({ error: "Not found" }, { status: 404 })
-    }
-
-    return NextResponse.json(product)
+    const result = await updateShopProduct({ id, ...body })
+    if (!result.success) return NextResponse.json({ error: result.error.message }, { status: 404 })
+    return NextResponse.json(result.data)
   } catch (error) {
     return NextResponse.json(
       { error: "Failed to update product" },
@@ -50,12 +42,8 @@ export async function DELETE(request, { params }) {
 
   try {
     const { id } = await params
-    const deleted = await deleteProduct(id)
-
-    if (!deleted) {
-      return NextResponse.json({ error: "Not found" }, { status: 404 })
-    }
-
+    const result = await deleteShopProduct({ id })
+    if (!result.success) return NextResponse.json({ error: result.error.message }, { status: 404 })
     return NextResponse.json({ success: true })
   } catch (error) {
     return NextResponse.json(

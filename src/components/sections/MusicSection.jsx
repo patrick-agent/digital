@@ -78,6 +78,15 @@ export default function MusicSection() {
   const [visible, setVisible] = useState(false);
   const { isMobile, isTablet } = useCanvasOptimizer();
   const isSmall = isMobile || isTablet;
+  const [reducedMotion, setReducedMotion] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
+    setReducedMotion(mq.matches);
+    const handler = (e) => setReducedMotion(e.matches);
+    mq.addEventListener("change", handler);
+    return () => mq.removeEventListener("change", handler);
+  }, []);
 
   useEffect(() => {
     const el = sectionRef.current;
@@ -114,7 +123,7 @@ export default function MusicSection() {
   }, []);
 
   useEffect(() => {
-    if (!gsapObj.ready || !charReady || !sectionRef.current) return;
+    if (!gsapObj.ready || !charReady || !sectionRef.current || reducedMotion) return;
     const { gsap, ScrollTrigger } = gsapObj;
     const group = characterRef.current?.current;
     if (!group) return;
@@ -130,28 +139,20 @@ export default function MusicSection() {
       });
 
       if (characterWrapperRef.current) {
-        tl.fromTo(characterWrapperRef.current,
-          { opacity: 0, x: -50 },
-          { opacity: 1, x: 0, duration: 1, ease: "power2.out", immediateRender: false },
-          0
-        );
+        tl.set(characterWrapperRef.current, { opacity: 1, x: 0 });
       }
 
-      tl.to(group.position, { ...CHAR_CONFIG.endPos, duration: 2, ease: "power3.inOut" }, 0);
-      tl.to(group.rotation, { ...CHAR_CONFIG.endRot, duration: 2, ease: "power3.inOut" }, 0);
-      tl.to(group.scale, { ...CHAR_CONFIG.endScale, duration: 2, ease: "power3.inOut" }, 0);
+      tl.set(group.position, { ...CHAR_CONFIG.endPos }, 0);
+      tl.set(group.rotation, { ...CHAR_CONFIG.endRot }, 0);
+      tl.set(group.scale, { ...CHAR_CONFIG.endScale }, 0);
 
       if (rightColRef.current) {
-        tl.fromTo(rightColRef.current,
-          { opacity: 0, x: 50, filter: "blur(5px)" },
-          { opacity: 1, x: 0, filter: "blur(0px)", duration: 1, ease: "power2.out", immediateRender: false },
-          0.5
-        );
+        tl.set(rightColRef.current, { opacity: 1, x: 0, filter: "blur(0px)" });
       }
     });
 
     return () => ctx.revert();
-  }, [gsapObj, charReady]);
+  }, [gsapObj, charReady, reducedMotion]);
 
   return (
     <section id="music" className={styles.music} ref={sectionRef}>
@@ -222,8 +223,11 @@ export default function MusicSection() {
               {YOUTUBE_VIDEOS.map((video, index) => (
                 <div
                   key={video.id}
+                  role="button"
+                  tabIndex={0}
                   className={`${styles.trackItem} ${activeVideo.id === video.id ? styles.activeTrack : ""}`}
                   onClick={() => setActiveVideo(video)}
+                  onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setActiveVideo(video); } }}
                 >
                   <span className={styles.trackNumber}>{(index + 1).toString().padStart(2, '0')}</span>
                   <div className={styles.trackInfo}>

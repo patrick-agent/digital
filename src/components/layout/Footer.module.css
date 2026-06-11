@@ -3,7 +3,7 @@
   width: 100%;
   background: radial-gradient(ellipse at center bottom, #1a0f2e 0%, #0a0612 60%, #060608 100%);
   overflow: hidden;
-  border-top: 1px solid rgba(168, 85, 247, 0.1);
+  border-top: 1px solid rgba(var(--brand-primary-rgb), 0.1);
 }
 
 .canvasLayer {
@@ -32,7 +32,7 @@
   height: 2px;
   background: #fff;
   border-radius: 50%;
-  box-shadow: 0 0 4px 1px rgba(168, 85, 247, 0.5);
+  box-shadow: 0 0 4px 1px rgba(var(--brand-primary-rgb), 0.5);
   animation: shoot calc(3s + var(--i) * 2s) linear infinite;
   animation-delay: calc(var(--i) * 2.5s);
   top: calc(10% + var(--i) * 15%);
@@ -47,10 +47,10 @@
   left: 1px;
   width: 100px;
   height: 2px;
-  background: linear-gradient(to right, rgba(168, 85, 247, 0.6), transparent);
+  background: linear-gradient(to right, rgba(var(--brand-primary-rgb), 0.6), transparent);
   transform-origin: left center;
   transform: rotate(-15deg);
-  box-shadow: 0 0 10px 2px rgba(168, 85, 247, 0.2);
+  box-shadow: 0 0 10px 2px rgba(var(--brand-primary-rgb), 0.2);
 }
 
 @keyframes shoot {
@@ -83,7 +83,7 @@
   left: 10%;
   width: 80%;
   height: 1px;
-  background: linear-gradient(90deg, transparent 0%, rgba(168, 85, 247, 0.5) 25%, rgba(99, 102, 241, 0.5) 50%, rgba(168, 85, 247, 0.5) 75%, transparent 100%);
+  background: linear-gradient(90deg, transparent 0%, rgba(var(--brand-primary-rgb), 0.5) 25%, rgba(var(--brand-secondary-rgb), 0.5) 50%, rgba(var(--brand-primary-rgb), 0.5) 75%, transparent 100%);
 }
 
 .content {
@@ -101,15 +101,13 @@
 }
 
 .brand {
-  flex: 1;
-  max-width: 450px;
-  padding-right: 30px;
+  max-width: 480px;
 }
 
 .brandName {
   font-size: 1.8rem;
   font-weight: 800;
-  background: linear-gradient(135deg, #f0f0f5 0%, #a855f7 50%, #ec4899 100%);
+  background: linear-gradient(135deg, #f0f0f5 0%, var(--brand-primary) 50%, #ec4899 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -130,7 +128,7 @@
 .linkColumn h4 {
   font-size: 0.8rem;
   font-weight: 700;
-  color: #a855f7;
+  color: var(--brand-primary);
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 0 0 20px 0;
@@ -155,7 +153,7 @@
 
 .linkColumn a:hover {
   color: #f0f0f5;
-  text-shadow: 0 0 12px rgba(168, 85, 247, 0.4);
+  text-shadow: 0 0 12px rgba(var(--brand-primary-rgb), 0.4);
   transform: translateX(4px);
 }
 
@@ -164,21 +162,20 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 25px;
-  border-top: 1px solid rgba(168, 85, 247, 0.08);
+  border-top: 1px solid rgba(var(--brand-primary-rgb), 0.08);
 }
 
 .socialIcons {
   display: flex;
   gap: 12px;
-  margin-left: 350px;
 }
 
 .socialIcon {
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  background: rgba(168, 85, 247, 0.08);
-  border: 1px solid rgba(168, 85, 247, 0.15);
+  background: rgba(var(--brand-primary-rgb), 0.08);
+  border: 1px solid rgba(var(--brand-primary-rgb), 0.15);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -189,9 +186,9 @@
 }
 
 .socialIcon:hover {
-  background: rgba(168, 85, 247, 0.2);
-  border-color: #a855f7;
-  box-shadow: 0 0 20px rgba(168, 85, 247, 0.3);
+  background: rgba(var(--brand-primary-rgb), 0.2);
+  border-color: var(--brand-primary);
+  box-shadow: 0 0 20px rgba(var(--brand-primary-rgb), 0.3);
   transform: translateY(-3px);
   color: #fff;
 }
@@ -199,19 +196,18 @@
 .copyright {
   font-size: 0.85rem;
   color: #5a5a72;
-  margin-left: 120px;
 }
 
 .copyright span {
-  color: #a855f7;
+  color: var(--brand-primary);
 }
 
 .backToTop {
   width: 44px;
   height: 44px;
   border-radius: 12px;
-  background: linear-gradient(135deg, rgba(168, 85, 247, 0.15), rgba(99, 102, 241, 0.15));
-  border: 1px solid rgba(168, 85, 247, 0.25);
+  background: linear-gradient(135deg, rgba(var(--brand-primary-rgb), 0.15), rgba(var(--brand-secondary-rgb), 0.15));
+  border: 1px solid rgba(var(--brand-primary-rgb), 0.25);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -222,9 +218,9 @@
 }
 
 .backToTop:hover {
-  background: linear-gradient(135deg, rgba(168, 85, 247, 0.3), rgba(99, 102, 241, 0.3));
-  border-color: #a855f7;
-  box-shadow: 0 0 25px rgba(168, 85, 247, 0.4);
+  background: linear-gradient(135deg, rgba(var(--brand-primary-rgb), 0.3), rgba(var(--brand-secondary-rgb), 0.3));
+  border-color: var(--brand-primary);
+  box-shadow: 0 0 25px rgba(var(--brand-primary-rgb), 0.4);
   transform: translateY(-3px);
   color: #fff;
 }
@@ -247,6 +243,17 @@
 
   .bottomSection {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .socialIcons {
+    margin-left: 350px;
+  }
+
+  .copyright {
+    margin-left: 120px;
   }
 }
 
@@ -264,7 +271,6 @@
   .brand {
     max-width: 100%;
     text-align: left;
-    margin-left: 0;
   }
 
   .topSection {
@@ -299,13 +305,11 @@
     order: -1;
     width: 100%;
     justify-content: left;
-    margin-left: 0;
   }
 
   .copyright {
     width: 100%;
     text-align: left;
-    margin-left: 0;
   }
 
   .modelLayer {
@@ -327,7 +331,6 @@
   .brand {
     max-width: 100%;
     text-align: left;
-    margin-left: 0;
   }
 
   .topSection {
@@ -341,7 +344,6 @@
   .othersGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0 0;
   }
 
   .linkColumn {
@@ -369,12 +371,10 @@
 
   .socialIcons {
     justify-content: center;
-    margin-left: 0;
   }
 
   .copyright {
     text-align: center;
-    margin-left: 0;
   }
 
   .brandName {

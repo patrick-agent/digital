@@ -1,22 +1,22 @@
 import { NextResponse } from "next/server"
 import { validateApiKey } from "@/lib/api-auth"
-import { readProduct, updateProduct, deleteProduct } from "@/lib/db"
+import { getShopProduct, updateShopProduct, deleteShopProduct } from "@/lib/shop/service"
 
 export async function GET(request, { params }) {
   const authError = validateApiKey(request)
   if (authError) return authError
 
   const { param } = await params
-  const product = await readProduct(param)
+  const result = await getShopProduct({ id: param })
 
-  if (!product) {
+  if (!result.success) {
     return NextResponse.json(
-      { success: false, error: "Product not found" },
+      { success: false, error: result.error.message },
       { status: 404 }
     )
   }
 
-  return NextResponse.json({ success: true, data: product })
+  return NextResponse.json({ success: true, data: result.data })
 }
 
 export async function PATCH(request, { params }) {
@@ -26,16 +26,16 @@ export async function PATCH(request, { params }) {
   try {
     const { param } = await params
     const body = await request.json()
-    const product = await updateProduct(param, body)
+    const result = await updateShopProduct({ id: param, ...body })
 
-    if (!product) {
+    if (!result.success) {
       return NextResponse.json(
-        { success: false, error: "Product not found" },
+        { success: false, error: result.error.message },
         { status: 404 }
       )
     }
 
-    return NextResponse.json({ success: true, data: product })
+    return NextResponse.json({ success: true, data: result.data })
   } catch (error) {
     return NextResponse.json(
       { success: false, error: "Failed to update product" },
@@ -50,11 +50,11 @@ export async function DELETE(request, { params }) {
 
   try {
     const { param } = await params
-    const deleted = await deleteProduct(param)
+    const result = await deleteShopProduct({ id: param })
 
-    if (!deleted) {
+    if (!result.success) {
       return NextResponse.json(
-        { success: false, error: "Product not found" },
+        { success: false, error: result.error.message },
         { status: 404 }
       )
     }

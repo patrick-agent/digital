@@ -14,8 +14,8 @@ export default async function EditProductPage({ params }) {
 
   return (
     <div>
-      <div className="mb-6">
-        <h1 className="text-2xl font-bold text-text-primary">Edit Product</h1>
+      <div className="mb-6" style={{ margin: 16 }}>
+        <h1 className="text-2xl font-bold text-text-primary" style={{ color: "black", fontSize: 24 }}>Edit Product</h1>
         <p className="text-text-muted text-sm mt-1">Editing: {product.name}</p>
       </div>
 

@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server"
-import { readMusic, createMusic } from "@/lib/db"
+import { listMusicItems, createMusicItem } from "@/lib/music/service"
 import { auth } from "@/lib/auth"
 
 export async function GET(request) {
@@ -7,11 +7,13 @@ export async function GET(request) {
   if (!session) return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
 
   const { searchParams } = new URL(request.url)
-  const result = await readMusic({
+  const result = await listMusicItems({
     type: searchParams.get("type") || "",
     search: searchParams.get("search") || "",
   })
-  return NextResponse.json(result)
+
+  if (!result.success) return NextResponse.json({ error: result.error.message }, { status: 500 })
+  return NextResponse.json({ data: result.data.items, meta: result.data.meta })
 }
 
 export async function POST(request) {
@@ -20,8 +22,9 @@ export async function POST(request) {
 
   try {
     const body = await request.json()
-    const item = await createMusic(body)
-    return NextResponse.json(item, { status: 201 })
+    const result = await createMusicItem(body)
+    if (!result.success) return NextResponse.json({ error: result.error.message }, { status: 500 })
+    return NextResponse.json(result.data, { status: 201 })
   } catch {
     return NextResponse.json({ error: "Failed to create" }, { status: 500 })
   }

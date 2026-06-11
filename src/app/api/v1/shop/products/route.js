@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server"
 import { validateApiKey } from "@/lib/api-auth"
-import { readProducts, createProduct } from "@/lib/db"
+import { listShopProducts, createShopProduct } from "@/lib/shop/service"
 
 export async function GET(request) {
   const authError = validateApiKey(request)
@@ -12,12 +12,13 @@ export async function GET(request) {
   const page = parseInt(searchParams.get("page") || "1", 10)
   const limit = parseInt(searchParams.get("limit") || "50", 10)
 
-  const { data, meta } = await readProducts({ status, category, page, limit })
+  const result = await listShopProducts({ status, category, page, limit })
+  if (!result.success) return NextResponse.json({ success: false, error: result.error.message }, { status: 500 })
 
   return NextResponse.json({
     success: true,
-    data,
-    meta,
+    data: result.data.items,
+    meta: result.data.meta,
   })
 }
 
@@ -27,10 +28,11 @@ export async function POST(request) {
 
   try {
     const body = await request.json()
-    const product = await createProduct(body)
+    const result = await createShopProduct(body)
+    if (!result.success) return NextResponse.json({ success: false, error: result.error.message }, { status: 500 })
 
     return NextResponse.json(
-      { success: true, data: product },
+      { success: true, data: result.data },
       { status: 201 }
     )
   } catch (error) {

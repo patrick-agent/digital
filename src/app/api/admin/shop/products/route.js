@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server"
-import { readProducts, createProduct } from "@/lib/db"
+import { listShopProducts, createShopProduct } from "@/lib/shop/service"
 import { auth } from "@/lib/auth"
 
 export async function GET(request) {
@@ -12,8 +12,9 @@ export async function GET(request) {
   const status = searchParams.get("status") || ""
   const category = searchParams.get("category") || ""
 
-  const result = await readProducts({ status, category })
-  return NextResponse.json(result)
+  const result = await listShopProducts({ status, category })
+  if (!result.success) return NextResponse.json({ error: result.error.message }, { status: 500 })
+  return NextResponse.json({ data: result.data.items, meta: result.data.meta })
 }
 
 export async function POST(request) {
@@ -24,8 +25,9 @@ export async function POST(request) {
 
   try {
     const body = await request.json()
-    const product = await createProduct(body)
-    return NextResponse.json(product, { status: 201 })
+    const result = await createShopProduct(body)
+    if (!result.success) return NextResponse.json({ error: result.error.message }, { status: 500 })
+    return NextResponse.json(result.data, { status: 201 })
   } catch (error) {
     return NextResponse.json(
       { error: "Failed to create product" },

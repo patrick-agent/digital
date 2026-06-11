@@ -1,4 +1,4 @@
-import { getAllPublishedPosts, getAllCategories, getFeaturedPost } from "@/lib/blog"
+import { listPublishedPosts, getBlogCategories, getFeaturedPublishedPost } from "@/lib/blog/public-catalog"
 import { siteMetadata } from "@/lib/seo"
 import BlogClient from "@/components/blog/BlogClient"
 
@@ -32,12 +32,12 @@ export default async function BlogPage() {
   let featuredPost = null
 
   try {
-    const [postsData, categoriesData, featured] = await Promise.all([
-      getAllPublishedPosts({ page: 1, limit: 9999 }),
-      getAllCategories(),
-      getFeaturedPost(),
+    const [listResult, categoriesData, featured] = await Promise.all([
+      listPublishedPosts({ page: 1, limit: 9999 }),
+      getBlogCategories(),
+      getFeaturedPublishedPost(),
     ])
-    posts = postsData?.posts || []
+    posts = listResult.success ? listResult.data.posts : []
     categories = categoriesData || []
     featuredPost = featured || null
     if (featuredPost) {

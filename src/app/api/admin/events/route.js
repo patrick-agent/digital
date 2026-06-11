@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server"
-import { readEvents, createEvent } from "@/lib/db"
+import { listEvents, createEvent } from "@/lib/events/service"
 import { auth } from "@/lib/auth"
 
 export async function GET(request) {
@@ -7,11 +7,12 @@ export async function GET(request) {
   if (!session) return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
 
   const { searchParams } = new URL(request.url)
-  const result = await readEvents({
+  const result = await listEvents({
     status: searchParams.get("status") || "",
     search: searchParams.get("search") || "",
   })
-  return NextResponse.json(result)
+  if (!result.success) return NextResponse.json({ error: result.error.message }, { status: 500 })
+  return NextResponse.json({ data: result.data.items, meta: result.data.meta })
 }
 
 export async function POST(request) {
@@ -20,8 +21,9 @@ export async function POST(request) {
 
   try {
     const body = await request.json()
-    const item = await createEvent(body)
-    return NextResponse.json(item, { status: 201 })
+    const result = await createEvent(body)
+    if (!result.success) return NextResponse.json({ error: result.error.message }, { status: 500 })
+    return NextResponse.json(result.data, { status: 201 })
   } catch {
     return NextResponse.json({ error: "Failed to create" }, { status: 500 })
   }

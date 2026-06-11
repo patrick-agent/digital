@@ -136,21 +136,34 @@ export default function ContactPageClient() {
           </p>
         </header>
 
-        <div className={styles.personaTabs} role="tablist">
+        <div className={styles.personaTabs} role="tablist" aria-label="Select contact persona">
           {PERSONAS.map((p) => (
             <button
               key={p.id}
               role="tab"
+              id={`tab-${p.id}`}
               aria-selected={persona === p.id}
+              aria-controls={`panel-${p.id}`}
               className={`${styles.personaTab} ${persona === p.id ? styles.personaTabActive : ""}`}
               onClick={() => setPersona(p.id)}
+              onKeyDown={(e) => {
+                if (e.key === "ArrowLeft" || e.key === "ArrowRight") {
+                  e.preventDefault();
+                  const idx = PERSONAS.findIndex((x) => x.id === persona);
+                  const next = e.key === "ArrowLeft"
+                    ? (idx - 1 + PERSONAS.length) % PERSONAS.length
+                    : (idx + 1) % PERSONAS.length;
+                  setPersona(PERSONAS[next].id);
+                  document.getElementById(`tab-${PERSONAS[next].id}`)?.focus();
+                }
+              }}
             >
               {p.label}
             </button>
           ))}
         </div>
 
-        <div className={styles.grid}>
+        <div className={styles.grid} role="tabpanel" id={`panel-${persona}`} aria-labelledby={`tab-${persona}`}>
           <aside className={styles.infoCard}>
             <div className={styles.personaBadge}>
               <span className={styles.personaDot} />

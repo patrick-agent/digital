@@ -148,7 +148,7 @@
   overflow: hidden;
   border: 2px solid transparent;
   background: linear-gradient(#1a0f2e, #1a0f2e) padding-box,
-    linear-gradient(135deg, #c084fc, #a855f7, #ec4899) border-box;
+    linear-gradient(135deg, #c084fc, var(--brand-primary), var(--brand-tertiary)) border-box;
   box-shadow: 0 0 20px rgba(168, 85, 247, 0.3), inset 0 0 15px rgba(168, 85, 247, 0.1);
   animation: borderGlow 3s ease-in-out infinite alternate;
 }
@@ -226,7 +226,7 @@
 }
 
 .playlist::-webkit-scrollbar-thumb {
-  background: #a855f7;
+  background: var(--brand-primary);
   border-radius: 4px;
 }
 
@@ -246,6 +246,11 @@
 
 .trackItem:hover {
   background: rgba(168, 85, 247, 0.1);
+}
+
+.trackItem:focus-visible {
+  outline: 2px solid var(--brand-primary);
+  outline-offset: 2px;
 }
 
 .activeTrack {

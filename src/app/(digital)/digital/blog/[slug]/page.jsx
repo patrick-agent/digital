@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { getPostBySlug } from '@/components/another-me/digital-blog/blog-posts';
+import { getPostBySlug } from '@/components/digital/digital-blog/blog-posts';
 import BlogPostClient from './BlogPostClient';
 
 export async function generateMetadata({ params }) {

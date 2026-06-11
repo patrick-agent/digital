@@ -41,9 +41,9 @@ export default function MusicListClient({ items: initialItems }) {
 
   return (
     <div>
-      <div className="flex items-center gap-3 mb-4">
+      <div className="flex items-center mb-4" style={{ marginBottom: 16 }}>
         <div className="relative flex-1 max-w-sm">
-          <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-text-muted" />
+          <Search size={16} className="absolute left-5 top-1/2 -translate-y-1/2 text-text-muted" />
           <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search releases..." className="w-full pl-9 pr-3 py-2 bg-admin-bg border border-border rounded-lg text-text-primary text-sm placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-accent-purple/50" />
         </div>
         <select value={typeFilter} onChange={(e) => setTypeFilter(e.target.value)} className="px-3 py-2 bg-admin-bg border border-border rounded-lg text-text-primary text-sm focus:outline-none focus:ring-2 focus:ring-accent-purple/50">
@@ -55,7 +55,7 @@ export default function MusicListClient({ items: initialItems }) {
         </select>
       </div>
 
-      <div className="bg-admin-card border border-border rounded-xl overflow-x-auto">
+      <div className="bg-admin-card border border-border rounded-xl overflow-x-auto" style={{ margin: 16 }}>
         <table className="w-full">
           <thead>
             <tr className="border-b border-border">
@@ -96,7 +96,7 @@ export default function MusicListClient({ items: initialItems }) {
                     </td>
                     <td className="px-5 py-3 text-text-muted text-sm">{item.featured ? "Yes" : "No"}</td>
                     <td className="px-5 py-3 text-right">
-                      <div className="flex items-center justify-end gap-1">
+                      <div className="flex items-center justify-start gap-1">
                         <Link href={`/admin/music/${item.id}/edit`} className="p-1.5 text-text-muted hover:text-accent-cyan transition-colors"><Edit size={16} /></Link>
                         <button onClick={() => handleDelete(item.id)} className="p-1.5 text-text-muted hover:text-red-400 transition-colors"><Trash2 size={16} /></button>
                       </div>

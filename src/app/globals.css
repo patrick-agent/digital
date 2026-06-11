@@ -1,4 +1,5 @@
 @import "tailwindcss" layer(utilities);
+@import "../styles/design-tokens.css";
 @plugin "@tailwindcss/typography";
 
 @keyframes cyberBorderPulse {
@@ -22,7 +23,7 @@
   inset: 0;
   border-radius: 16px;
   padding: 1px;
-  background: linear-gradient(135deg, rgba(168,85,247,0.9) 0%, rgba(99,102,241,0.6) 50%, rgba(168,85,247,0.9) 100%);
+  background: linear-gradient(135deg, rgba(var(--brand-primary-rgb), 0.9) 0%, rgba(var(--brand-secondary-rgb), 0.6) 50%, rgba(var(--brand-primary-rgb), 0.9) 100%);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
@@ -47,7 +48,7 @@
 
 .hover-glow-panel:hover {
   transform: translateY(-4px) scale(1.03) !important;
-  box-shadow: 0 0 60px rgba(168, 85, 247, 0.9), 0 0 120px rgba(168, 85, 247, 0.6), inset 0 0 60px rgba(168, 85, 247, 0.25) !important;
+  box-shadow: 0 0 60px rgba(var(--brand-primary-rgb), 0.9), 0 0 120px rgba(var(--brand-primary-rgb), 0.6), inset 0 0 60px rgba(var(--brand-primary-rgb), 0.25) !important;
 }
 
 :root {
@@ -57,26 +58,27 @@
   --bg-card: rgba(16, 16, 28, 0.6);
   --bg-glass: rgba(18, 18, 30, 0.4);
 
-  --accent-primary: #a855f7;
-  --accent-secondary: #6366f1;
-  --accent-tertiary: #ec4899;
+  --accent-primary: var(--brand-primary);
+  --accent-secondary: var(--brand-secondary);
+  --accent-tertiary: var(--brand-tertiary);
   --accent-warm: #f59e0b;
   --accent-cool: #06b6d4;
 
   --gradient-primary: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
   --gradient-warm: linear-gradient(135deg, var(--accent-tertiary), var(--accent-warm));
   --gradient-cool: linear-gradient(135deg, var(--accent-secondary), var(--accent-cool));
-  --gradient-glow: radial-gradient(ellipse at center, rgba(168, 85, 247, 0.15) 0%, transparent 70%);
-  --gradient-text: linear-gradient(135deg, #f0f0f5 0%, #a855f7 50%, #ec4899 100%);
+  --gradient-glow: radial-gradient(ellipse at center, rgba(var(--brand-primary-rgb), 0.15) 0%, transparent 70%);
+  --gradient-text: linear-gradient(135deg, #f0f0f5 0%, var(--brand-primary) 50%, var(--brand-tertiary) 100%);
 
   --text-primary: #f0f0f5;
   --text-secondary: #a0a0b8;
   --text-muted: #5a5a72;
   --text-accent: var(--accent-primary);
 
-  --font-heading: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-body: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-mono: var(--font-geist-mono), 'JetBrains Mono', 'Fira Code', monospace;
+  --font-heading: var(--font-sans-ui);
+  --font-body: var(--font-sans-ui);
+  --font-mono: var(--font-mono-ui);
+  --font-accent: var(--font-script-ui);
 
   --fs-xs: clamp(0.7rem, 0.8vw, 0.75rem);
   --fs-sm: clamp(0.8rem, 0.9vw, 0.875rem);
@@ -109,8 +111,8 @@
   --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
   --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
   --shadow-xl: 0 16px 64px rgba(0, 0, 0, 0.6);
-  --glow-purple: 0 0 20px rgba(168, 85, 247, 0.3);
-  --glow-pink: 0 0 20px rgba(236, 72, 153, 0.3);
+  --glow-purple: 0 0 20px rgba(var(--brand-primary-rgb), 0.3);
+  --glow-pink: 0 0 20px rgba(var(--brand-tertiary-rgb), 0.3);
   --glow-cyan: 0 0 20px rgba(6, 182, 212, 0.3);
 
   --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -170,9 +172,9 @@ body::before {
   width: 100%;
   height: 100%;
   background:
-    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(168, 85, 247, 0.08) 0%, transparent 60%),
-    radial-gradient(ellipse 60% 40% at 80% 50%, rgba(99, 102, 241, 0.05) 0%, transparent 50%),
-    radial-gradient(ellipse 40% 60% at 10% 80%, rgba(236, 72, 153, 0.04) 0%, transparent 50%);
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(var(--brand-primary-rgb), 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 80% 50%, rgba(var(--brand-secondary-rgb), 0.05) 0%, transparent 50%),
+    radial-gradient(ellipse 40% 60% at 10% 80%, rgba(var(--brand-tertiary-rgb), 0.04) 0%, transparent 50%);
   pointer-events: none;
   z-index: var(--z-behind);
 }
@@ -200,6 +202,20 @@ a:hover {
   color: var(--accent-primary);
 }
 
+button:active,
+a:active,
+[role="button"]:active {
+  transform: scale(0.97);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  button:active,
+  a:active,
+  [role="button"]:active {
+    transform: none;
+  }
+}
+
 .glass {
   background: var(--bg-glass);
   backdrop-filter: blur(var(--blur-lg));
@@ -213,11 +229,11 @@ a:hover {
   -webkit-backdrop-filter: blur(var(--blur-md));
   border: 1px solid rgba(255, 255, 255, 0.04);
   border-radius: var(--radius-lg);
-  transition: all var(--transition-base);
+  transition: border-color var(--transition-base), box-shadow var(--transition-base), transform var(--transition-base);
 }
 
 .glass-card:hover {
-  border-color: rgba(168, 85, 247, 0.2);
+  border-color: rgba(var(--brand-primary-rgb), 0.2);
   box-shadow: var(--glow-purple);
   transform: translateY(-2px);
 }
@@ -249,16 +265,16 @@ a:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(168, 85, 247, 0.3);
+  background: rgba(var(--brand-primary-rgb), 0.3);
   border-radius: var(--radius-full);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(168, 85, 247, 0.5);
+  background: rgba(var(--brand-primary-rgb), 0.5);
 }
 
 ::selection {
-  background: rgba(168, 85, 247, 0.3);
+  background: rgba(var(--brand-primary-rgb), 0.3);
   color: var(--text-primary);
 }
 
@@ -293,7 +309,7 @@ a:hover {
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  border: 2px solid rgba(168, 85, 247, 0.1);
+  border: 2px solid rgba(var(--brand-primary-rgb), 0.1);
   border-top-color: var(--accent-primary);
   animation: spin 1s linear infinite;
 }
@@ -325,10 +341,10 @@ a:hover {
 
 @keyframes pulse-glow {
   0%, 100% {
-    box-shadow: 0 0 20px rgba(168, 85, 247, 0.2);
+    box-shadow: 0 0 20px rgba(var(--brand-primary-rgb), 0.2);
   }
   50% {
-    box-shadow: 0 0 40px rgba(168, 85, 247, 0.4);
+    box-shadow: 0 0 40px rgba(var(--brand-primary-rgb), 0.4);
   }
 }
 
@@ -405,10 +421,10 @@ a:hover {
     0deg,
     transparent,
     transparent 2px,
-    rgba(0, 0, 0, 0.03) 2px,
-    rgba(0, 0, 0, 0.03) 4px
+    rgba(0, 0, 0, 0.02) 2px,
+    rgba(0, 0, 0, 0.02) 4px
   );
-  opacity: 0.4;
+  opacity: 0.15;
 }
 
 @media (prefers-reduced-motion: reduce) {

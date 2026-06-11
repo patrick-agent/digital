@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server"
-import { readSubscribers, unsubscribeSubscriber } from "@/lib/db"
+import { listSubscribers, unsubscribeSubscriber } from "@/lib/newsletter/service"
 import { auth } from "@/lib/auth"
 
 export async function GET(request) {
@@ -7,11 +7,13 @@ export async function GET(request) {
   if (!session) return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
 
   const { searchParams } = new URL(request.url)
-  const result = await readSubscribers({
+  const result = await listSubscribers({
     status: searchParams.get("status") || "",
     search: searchParams.get("search") || "",
   })
-  return NextResponse.json(result)
+
+  if (!result.success) return NextResponse.json({ error: result.error.message }, { status: 500 })
+  return NextResponse.json({ data: result.data.items, meta: result.data.meta })
 }
 
 export async function PATCH(request) {
@@ -21,9 +23,9 @@ export async function PATCH(request) {
   try {
     const body = await request.json()
     if (body.action === "unsubscribe" && body.id) {
-      const subscriber = await unsubscribeSubscriber(body.id)
-      if (!subscriber) return NextResponse.json({ error: "Not found" }, { status: 404 })
-      return NextResponse.json(subscriber)
+      const result = await unsubscribeSubscriber({ id: body.id })
+      if (!result.success) return NextResponse.json({ error: result.error.message }, { status: 404 })
+      return NextResponse.json(result.data)
     }
     return NextResponse.json({ error: "Unknown action" }, { status: 400 })
   } catch {

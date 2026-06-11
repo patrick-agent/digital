@@ -4,8 +4,8 @@ import { getAllRoutes } from "@/lib/db"
 import { siteMetadata } from "@/lib/seo"
 import { canonicalUrl } from "@/lib/post-utils"
 import { readMusic } from "@/lib/db"
-import { readProducts } from "@/lib/db"
-import { getAllPosts } from "@/components/another-me/digital-blog/blog-posts"
+import { listPublicProducts } from "@/lib/shop/public-catalog"
+import { getAllPosts } from "@/components/digital/digital-blog/blog-posts"
 
 const DOMAIN = siteMetadata.siteUrl
 
@@ -53,10 +53,9 @@ export default async function sitemap() {
 
   let productUrls = []
   try {
-    const products = (await readProducts()).data || []
-    productUrls = products
-      .filter((p) => p.status === "published" || !p.status)
-      .map((p) => ({
+    const result = await listPublicProducts({ limit: 1000 })
+    const products = result.success ? result.data.products : []
+    productUrls = products.map((p) => ({
         url: `${DOMAIN}/shop/${p.slug}`,
         lastModified: p.updatedAt || new Date(),
         changeFrequency: "monthly",

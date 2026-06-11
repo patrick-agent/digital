@@ -370,9 +370,11 @@ export default function ContactSection() {
                       type="text"
                       id="name"
                       name="name"
-                      placeholder="Your name"
+                      required
+                      placeholder="Your name…"
                       value={formData.name}
                       onChange={handleInputChange}
+                      aria-describedby="name-error"
                     />
                   </div>
 
@@ -382,9 +384,11 @@ export default function ContactSection() {
                       type="email"
                       id="email"
                       name="email"
-                      placeholder="your@email.com"
+                      required
+                      placeholder="your@email.com…"
                       value={formData.email}
                       onChange={handleInputChange}
+                      aria-describedby="email-error"
                     />
                   </div>
 
@@ -394,9 +398,11 @@ export default function ContactSection() {
                       type="text"
                       id="subject"
                       name="subject"
-                      placeholder="Subject"
+                      required
+                      placeholder="Subject…"
                       value={formData.subject}
                       onChange={handleInputChange}
+                      aria-describedby="subject-error"
                     />
                   </div>
 
@@ -405,13 +411,15 @@ export default function ContactSection() {
                     <textarea
                       id="message"
                       name="message"
-                      placeholder="Your message..."
+                      required
+                      placeholder="Your message…"
                       value={formData.message}
                       onChange={handleInputChange}
+                      aria-describedby="message-error"
                     />
                   </div>
 
-                  {error && <div className={styles.errorMessage}>{error}</div>}
+                  {error && <div id="form-error" className={styles.errorMessage} role="alert">{error}</div>}
 
                   <button
                     type="submit"

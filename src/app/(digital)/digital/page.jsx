@@ -1,6 +1,6 @@
 import { Suspense } from 'react'
-import AnotherMePageContent from './page.client'
-import AnotherMeLoading from './loading'
+import DigitalPageContent from './page.client'
+import DigitalLoading from './loading'
 
 /** @type {import('next').Metadata} */
 export const metadata = {
@@ -29,10 +29,10 @@ export const viewport = {
   themeColor: '#0a0a0f',
 }
 
-export default function AnotherMePage() {
+export default function DigitalPage() {
   return (
-    <Suspense fallback={<AnotherMeLoading />}>
-      <AnotherMePageContent />
+    <Suspense fallback={<DigitalLoading />}>
+      <DigitalPageContent />
     </Suspense>
   )
 }

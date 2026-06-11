@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server"
 import { validateApiKey } from "@/lib/api-auth"
-import { readPost, updatePost, deletePost } from "@/lib/db"
+import { getBlogPost, updateBlogPost, deleteBlogPost } from "@/lib/blog/service"
 import { notifyPublishedBlogPost } from "@/lib/blog-indexing"
 
 export async function GET(request, { params }) {
@@ -8,16 +8,16 @@ export async function GET(request, { params }) {
   if (authError) return authError
 
   const { param } = await params
-  const post = await readPost(param)
+  const result = await getBlogPost({ id: param })
 
-  if (!post) {
+  if (!result.success) {
     return NextResponse.json(
-      { success: false, error: "Post not found" },
+      { success: false, error: result.error.message },
       { status: 404 }
     )
   }
 
-  return NextResponse.json({ success: true, data: post })
+  return NextResponse.json({ success: true, data: result.data })
 }
 
 export async function PATCH(request, { params }) {
@@ -27,17 +27,17 @@ export async function PATCH(request, { params }) {
   try {
     const { param } = await params
     const body = await request.json()
-    const post = await updatePost(param, body)
+    const result = await updateBlogPost({ id: param, ...body })
 
-    if (!post) {
+    if (!result.success) {
       return NextResponse.json(
-        { success: false, error: "Post not found" },
+        { success: false, error: result.error.message },
         { status: 404 }
       )
     }
 
-    const indexing = await notifyPublishedBlogPost(post)
-    return NextResponse.json({ success: true, data: post, indexing })
+    const indexing = await notifyPublishedBlogPost(result.data)
+    return NextResponse.json({ success: true, data: result.data, indexing })
   } catch (error) {
     return NextResponse.json(
       { success: false, error: "Failed to update post" },
@@ -52,11 +52,11 @@ export async function DELETE(request, { params }) {
 
   try {
     const { param } = await params
-    const deleted = await deletePost(param)
+    const result = await deleteBlogPost({ id: param })
 
-    if (!deleted) {
+    if (!result.success) {
       return NextResponse.json(
-        { success: false, error: "Post not found" },
+        { success: false, error: result.error.message },
         { status: 404 }
       )
     }

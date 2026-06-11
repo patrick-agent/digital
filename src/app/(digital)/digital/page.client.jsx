@@ -3,37 +3,37 @@
 import { useEffect, useRef, useState } from 'react'
 import dynamic from 'next/dynamic'
 
-const AnotherMeHero = dynamic(() => import('@/components/another-me/AnotherMeHero'), {
+const DigitalHero = dynamic(() => import('@/components/digital/DigitalHero'), {
   ssr: false,
   loading: () => <div style={{ height: '100vh', background: '#0a0a0f' }} />,
 })
 
-const AnotherMeSocialProof = dynamic(() => import('@/components/another-me/AnotherMeSocialProof'), {
+const DigitalSocialProof = dynamic(() => import('@/components/digital/DigitalSocialProof'), {
   ssr: false,
   loading: () => <div style={{ height: '100vh', background: '#0a0a0f' }} />,
 })
 
-const AnotherMeTransition = dynamic(() => import('@/components/another-me/AnotherMeTransition'), {
+const DigitalTransition = dynamic(() => import('@/components/digital/DigitalTransition'), {
   ssr: false,
   loading: () => null,
 })
 
-const AnotherMeTimeline = dynamic(() => import('@/components/another-me/AnotherMeTimeline'), {
+const DigitalTimeline = dynamic(() => import('@/components/digital/DigitalTimeline'), {
   ssr: false,
   loading: () => <div style={{ height: '100vh', background: '#0a0a0f' }} />,
 })
 
-const AnotherMeSkills = dynamic(() => import('@/components/another-me/AnotherMeSkills'), {
+const DigitalSkills = dynamic(() => import('@/components/digital/DigitalSkills'), {
   ssr: false,
   loading: () => <div style={{ height: '60vh', background: '#0a0a0f' }} />,
 })
 
-const AnotherMeServices = dynamic(() => import('@/components/another-me/AnotherMeServices'), {
+const DigitalServices = dynamic(() => import('@/components/digital/DigitalServices'), {
   ssr: false,
   loading: () => <div style={{ height: '80vh', background: '#0a0a0f' }} />,
 })
 
-const AnotherMeContact = dynamic(() => import('@/components/another-me/AnotherMeContact'), {
+const DigitalContact = dynamic(() => import('@/components/digital/DigitalContact'), {
   ssr: false,
   loading: () => <div style={{ height: '50vh', background: '#0a0a0f' }} />,
 })
@@ -73,27 +73,27 @@ function LazyMount({ children, minHeight = '80vh', rootMargin = '350px 0px' }) {
   return <div ref={ref}><SectionPlaceholder minHeight={minHeight} /></div>
 }
 
-export default function AnotherMePageContent() {
+export default function DigitalPageContent() {
   return (
     <>
-      <AnotherMeHero />
+      <DigitalHero />
       <LazyMount minHeight="100vh">
-        <AnotherMeSocialProof />
+        <DigitalSocialProof />
       </LazyMount>
       <LazyMount minHeight="40vh" rootMargin="250px 0px">
-        <AnotherMeTransition />
+        <DigitalTransition />
       </LazyMount>
       <LazyMount minHeight="100vh" rootMargin="300px 0px">
-        <AnotherMeTimeline />
+        <DigitalTimeline />
       </LazyMount>
       <LazyMount minHeight="60vh" rootMargin="250px 0px">
-        <AnotherMeSkills />
+        <DigitalSkills />
       </LazyMount>
       <LazyMount minHeight="80vh" rootMargin="250px 0px">
-        <AnotherMeServices />
+        <DigitalServices />
       </LazyMount>
       <LazyMount minHeight="50vh" rootMargin="200px 0px">
-        <AnotherMeContact />
+        <DigitalContact />
       </LazyMount>
     </>
   )

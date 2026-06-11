@@ -35,7 +35,7 @@ export default function ErrorBoundary({ error, reset, title = "Something went wr
         fontSize: '1.25rem',
         fontWeight: 600,
         color: '#fff',
-        fontFamily: 'var(--font-inter, sans-serif)',
+        fontFamily: 'var(--font-body)',
       }}>
         {title}
       </h2>
@@ -43,7 +43,7 @@ export default function ErrorBoundary({ error, reset, title = "Something went wr
         fontSize: '0.875rem',
         color: 'rgba(255,255,255,0.5)',
         maxWidth: 400,
-        fontFamily: 'var(--font-inter, sans-serif)',
+        fontFamily: 'var(--font-body)',
       }}>
         {error?.message || 'An unexpected error occurred'}
       </p>
@@ -59,7 +59,7 @@ export default function ErrorBoundary({ error, reset, title = "Something went wr
             color: '#fff',
             fontSize: '0.875rem',
             cursor: 'pointer',
-            fontFamily: 'var(--font-inter, sans-serif)',
+            fontFamily: 'var(--font-body)',
           }}
         >
           Try again

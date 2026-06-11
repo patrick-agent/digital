@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono, Caveat } from "next/font/google";
 import Script from "next/script";
+import SkipLink from "@/components/ui/SkipLink";
 import "./globals.css";
 
 const siteDescription =
@@ -76,8 +77,9 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${geistSans.variable} ${geistMono.variable} ${caveat.variable}`}>
+    <html lang="vi" suppressHydrationWarning className={`${geistSans.variable} ${geistMono.variable} ${caveat.variable}`}>
       <body suppressHydrationWarning>
+        <SkipLink href="#main-content">Bỏ qua điều hướng tới nội dung chính</SkipLink>
         <link rel="preconnect" href="https://prod.spline.design" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link rel="dns-prefetch" href="https://prod.spline.design" />
@@ -89,7 +91,7 @@ export default function RootLayout({ children }) {
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
-        {children}
+        <div id="main-content">{children}</div>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

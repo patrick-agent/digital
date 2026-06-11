@@ -1,6 +1,7 @@
 import { siteMetadata } from "@/lib/seo"
 import Navbar from "@/components/layout/Navbar"
 import Footer from "@/components/layout/Footer"
+import SkipLink from "@/components/ui/SkipLink"
 
 export const metadata = {
   title: "Blog — Tachy",
@@ -17,8 +18,9 @@ export const metadata = {
 export default function BlogLayout({ children }) {
   return (
     <>
+      <SkipLink href="#blog-content">Bỏ qua điều hướng tới blog</SkipLink>
       <Navbar />
-      <main style={{ paddingBottom: 220 }}>{children}</main>
+      <main id="blog-content" style={{ paddingBottom: 220 }}>{children}</main>
       <Footer />
     </>
   )

@@ -1,14 +1,9 @@
 import { google } from "googleapis"
 import path from "path"
-import { fileURLToPath, pathToFileURL } from "url"
+import { fileURLToPath } from "url"
 import { existsSync } from "fs"
 import { readFile } from "fs/promises"
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url))
-
-const DB_URL = pathToFileURL(path.join(__dirname, "..", "src", "lib", "db.js")).href
-
-const { createPost, updatePost, readPost, readPosts } = await import(DB_URL)
+import { createPost, updatePost, readPost, readPosts } from "../src/lib/db-cli.mjs"
 
 const SHEET_STATUS_PUBLIC = "public"
 const BLOG_PERSONA = "artist"

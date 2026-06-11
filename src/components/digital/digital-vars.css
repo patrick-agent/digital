@@ -1,0 +1,19 @@
+@import '../../styles/design-tokens.css';
+
+:root {
+  --am-bg: #0a0a0f;
+  --am-cyan: var(--brand-primary);
+  --am-amber: var(--brand-secondary);
+  --am-purple: var(--brand-primary);
+  --am-rose: var(--brand-tertiary);
+  --am-green: #818cf8;
+  --am-text: #f0ede8;
+  --am-muted: #6b7280;
+  --am-border: rgba(var(--brand-primary-rgb), 0.15);
+  --am-glass: rgba(255, 255, 255, 0.04);
+
+  --am-font-display: var(--font-sans-ui);
+  --am-font-body: var(--font-sans-ui);
+}
+
+/* GPU-accelerated animation optimizations */

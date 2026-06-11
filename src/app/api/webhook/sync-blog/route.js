@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server"
 import { validateApiKey } from "@/lib/api-auth"
-import { createPost, updatePost, readPosts } from "@/lib/db"
+import { createBlogPost, updateBlogPost, listBlogPosts } from "@/lib/blog/service"
 import { notifyPublishedBlogPost } from "@/lib/blog-indexing"
 
 const SHEET_STATUS_PUBLIC = "public"
@@ -71,7 +71,8 @@ export async function POST(request) {
     }
 
     const results = { created: 0, updated: 0, skipped: 0, indexed: 0, indexSkipped: 0, indexErrors: 0, errors: [] }
-    const existingPosts = (await readPosts({ persona: BLOG_PERSONA })).data
+    const existingResult = await listBlogPosts({ persona: BLOG_PERSONA, limit: 9999 })
+    const existingPosts = existingResult.success ? existingResult.data.items : []
 
     for (const row of rows) {
       try {
@@ -89,14 +90,18 @@ export async function POST(request) {
 
         if (existing) {
           console.log('Final post content length:', postData.content?.length, '| slug:', slug)
-          const post = await updatePost(existing.id, { ...postData, slug: existing.slug })
+          const result = await updateBlogPost({ id: existing.id, ...postData, slug: existing.slug })
+          if (!result.success) throw new Error(result.error.message)
+          const post = result.data
           const indexing = await notifyPublishedBlogPost(post)
           if (indexing.success) results.indexed++
           else if (indexing.skipped) results.indexSkipped++
           else results.indexErrors++
           results.updated++
         } else {
-          const post = await createPost(postData)
+          const result = await createBlogPost(postData)
+          if (!result.success) throw new Error(result.error.message)
+          const post = result.data
           const indexing = await notifyPublishedBlogPost(post)
           if (indexing.success) results.indexed++
           else if (indexing.skipped) results.indexSkipped++

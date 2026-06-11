@@ -7,8 +7,17 @@ export default function LoadingScreen() {
   const { isLoading, progress } = useLoading();
   const [fadeOut, setFadeOut] = useState(false);
   const [revealed, setRevealed] = useState(false);
+  const [reducedMotion, setReducedMotion] = useState(false);
   const canvasRef = useRef(null);
   const animRef = useRef(null);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
+    setReducedMotion(mq.matches);
+    const handler = (e) => setReducedMotion(e.matches);
+    mq.addEventListener("change", handler);
+    return () => mq.removeEventListener("change", handler);
+  }, []);
 
   useEffect(() => {
     if (!isLoading) {
@@ -19,7 +28,7 @@ export default function LoadingScreen() {
   }, [isLoading]);
 
   useEffect(() => {
-    if (revealed || !canvasRef.current) return;
+    if (revealed || !canvasRef.current || reducedMotion) return;
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
     let w, h, particles = [];
@@ -98,12 +107,13 @@ export default function LoadingScreen() {
 
       {/* Logo with rotation */}
       <div
+        className="ls-logo"
         style={{
           position: "relative",
           width: 80,
           height: 80,
           marginBottom: 32,
-          animation: "ls-spin 2s linear infinite",
+          animation: reducedMotion ? "none" : "ls-spin 2s linear infinite",
         }}
       >
         <img
@@ -151,6 +161,9 @@ export default function LoadingScreen() {
       <style>{`
         @keyframes ls-spin {
           to { transform: rotate(360deg); }
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .ls-logo { animation: none !important; }
         }
       `}</style>
     </div>

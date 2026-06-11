@@ -7,9 +7,11 @@ import CategoryNav from "./CategoryNav"
 import PostGrid from "./PostGrid"
 import Breadcrumb from "./Breadcrumb"
 import styles from "./BlogClient.module.css"
+import { useReducedMotion } from "framer-motion"
 
 export default function BlogClient({ initialPosts, categories, featuredPost, initialActiveCategory = null, pageTitle, categoryDescriptions = {} }) {
   const [activeCategory, setActiveCategory] = useState(initialActiveCategory)
+  const reducedMotion = useReducedMotion()
 
   const filteredPosts = useMemo(() => {
     if (!activeCategory) return initialPosts
@@ -56,9 +58,9 @@ export default function BlogClient({ initialPosts, categories, featuredPost, ini
         <AnimatePresence mode="wait">
           <motion.div
             key={activeCategory || "all"}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
+            initial={reducedMotion ? false : { opacity: 0, y: 20 }}
+            animate={reducedMotion ? {} : { opacity: 1, y: 0 }}
+            exit={reducedMotion ? undefined : { opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
           >
             <PostGrid posts={filteredPosts} />

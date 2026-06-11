@@ -28,16 +28,16 @@ studio-3d/
 │   │   ├── layout.js                 # Root layout (Inter font added)
 │   │   └── globals.css               # Global styles
 │   └── components/
-│       ├── another-me/
-│       │   ├── another-me.vars.css   # Theme variables (purple theme, Inter font)
-│       │   ├── AnotherMeHero.jsx     # Section 1: Hero + Spline
-│       │   ├── AnotherMeSocialProof.jsx # Section 2: Social Proof (replaced Intro)
-│       │   ├── AnotherMeTransition.jsx # Scroll transition: SocialProof → Timeline
-│       │   ├── AnotherMeTimeline.jsx # Section 3: Timeline (fiber + rocket)
-│       │   ├── AnotherMeSkills.jsx   # Section 4: Skills (carousel + canvas)
-│       │   ├── AnotherMeServices.jsx # Section 5: Services (features grid)
-│       │   ├── AnotherMeContact.jsx  # Section 6: Contact (final CTA)
-│       │   ├── AnotherMeFooter.jsx   # Section 7: Footer
+│       ├── digital/
+│       │   ├── digital-vars.css      # Theme variables (purple theme)
+│       │   ├── DigitalHero.jsx       # Section 1: Hero + Spline
+│       │   ├── DigitalSocialProof.jsx # Section 2: Social Proof (replaced Intro)
+│       │   ├── DigitalTransition.jsx  # Scroll transition: SocialProof → Timeline
+│       │   ├── DigitalTimeline.jsx   # Section 3: Timeline (fiber + rocket)
+│       │   ├── DigitalSkills.jsx     # Section 4: Skills (carousel + canvas)
+│       │   ├── DigitalServices.jsx   # Section 5: Services (features grid)
+│       │   ├── DigitalContact.jsx    # Section 6: Contact (final CTA)
+│       │   ├── DigitalFooter.jsx     # Section 7: Footer
 │       │   ├── TextFlip.jsx          # Text flip animation
 │       │   ├── CompanyLogos.jsx      # Auto-scroll logos
 │       │   └── BubbleTransition.jsx  # (unused)
@@ -62,7 +62,7 @@ studio-3d/
 
 ---
 
-## THEME VARIABLES (`another-me.vars.css`)
+## THEME VARIABLES (`digital-vars.css`)
 
 ```css
 --am-bg: #0a0a0f;          /* Dark background */
@@ -98,7 +98,7 @@ studio-3d/
 
 ## SECTION DETAILS
 
-### 1. AnotherMeHero
+### 1. DigitalHero
 - Spline 3D background (bubbles scene)
 - Headline: "10 năm. 3650 ngày. Biến dữ liệu thành cảm xúc."
 - GSAP character-by-character reveal
@@ -107,7 +107,7 @@ studio-3d/
 - Mouse trigger hoạt động trên Spline canvas
 - Text/content: `pointer-events: none` để cursor pass-through
 
-### 2. AnotherMeSocialProof (REPLACED Intro)
+### 2. DigitalSocialProof (REPLACED Intro)
 - 2-column flex layout: text (left) + Spline (right)
 - **Glassmorphism card** bao quanh toàn bộ content bên trái:
   - `background: rgba(255,255,255,0.03)`, `backdrop-filter: blur(20px)`
@@ -121,7 +121,7 @@ studio-3d/
   - `.galaxyBg` căn giữa tuyệt đối, `opacity: 0.4`
 - Spline overlay block interaction (pointer-events: none trên overlay + canvas)
 
-### 3. AnotherMeTransition
+### 3. DigitalTransition
 - Fixed overlay (`z-index: 50`) giữa SocialProof và Timeline
 - Spline rocket model bay từ dưới lên theo scroll
 - Trigger: `30% top` của `#social-proof` section
@@ -129,7 +129,7 @@ studio-3d/
 - CSS scale: `scale(1.5)`, container `100vw x 100vh`, `overflow: visible`
 - Layer fade-in (`opacity: 0 → 1`) khi trigger
 
-### 4. AnotherMeTimeline
+### 4. DigitalTimeline
 - 2-column layout: left (year/era/headline) + right (company/achievement/stat)
 - Center: fiber line + dots + Spline rocket model
 - **Fiber line**: SVG line với `stroke-dashoffset` scroll-driven, từ dot đầu → dot cuối
@@ -153,7 +153,7 @@ studio-3d/
   - `hueShift={280}`, `density={1.0}`, `glowIntensity={0.35}`, `saturation={0.5}`
   - Liên kết với SocialProof (chênh 10° hueShift cho chuyển tiếp mượt)
 
-### 5. AnotherMeSkills (CLONED: @aceternity/canvas-reveal-effect-demo)
+### 5. DigitalSkills (CLONED: @aceternity/canvas-reveal-effect-demo)
 - **Header**: "THE ARSENAL" / "Bộ công cụ của tôi" / "Swipe để khám phá"
 - **Carousel**: 3 cards cùng lúc, swipe (pointer events), dots navigation
   - Card structure: border + corner icons (+), title centered (border + radius)
@@ -174,7 +174,7 @@ studio-3d/
   - `mouseInteraction={true}`, `mouseInteractionRadius={1.5}`
   - `.rippleBg` fill `100% width/height` của section
 
-### 6. AnotherMeServices (CLONED: @aceternity/features-section-demo-2)
+### 6. DigitalServices (CLONED: @aceternity/features-section-demo-2)
 - **Header**: "WHAT I OFFER" / "Dịch vụ của tôi" / "Giải pháp toàn diện..."
 - **Grid**: 4 cột (desktop) → 2 (tablet) → 1 (mobile)
 - **Card layout** (clone Aceternity):
@@ -197,7 +197,7 @@ studio-3d/
 - **Animation**: GSAP header fade-in on scroll
 - **db/services.json**: Hiện tại rỗng `[]`, fallback hardcode
 
-### 7. AnotherMeContact (REBUILT: Final CTA)
+### 7. DigitalContact (REBUILT: Final CTA)
 - **Layout**: Dark `#0d0d0d` background, min-height `100vh`, centered content
 - **LiquidEther background** (Three.js fluid simulation):
   - Colors: `['#5b4fd6', '#7c6fea', '#4a3fbf']` — tone tím đồng bộ theme
@@ -212,7 +212,7 @@ studio-3d/
 - **GSAP animation**: Stagger animate badge → heading → subtext → buttons từ `top 75%`
 - Links: `/digital/contact`, `/digital/case-studies`
 
-### 8. AnotherMeFooter
+### 8. DigitalFooter
 - 2-column layout: left (video + branding) + right (glassmorphism card)
 - **Left**: Video overlay với purple gradient, logo Tachy, tagline, social icons
 - **Right**: Navigation cols, subscribe form, copyright

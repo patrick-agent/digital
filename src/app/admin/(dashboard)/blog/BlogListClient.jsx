@@ -210,7 +210,7 @@ export default function BlogListClient({ posts: initialPosts }) {
                     })}
                   </td>
                   <td className="text-right">
-                    <div className="flex items-center justify-end gap-0.5">
+                    <div className="flex items-center justify-start gap-0.5">
                       <ActionLink
                         icon={ExternalLink}
                         href={`/blog/${post.slug}`}

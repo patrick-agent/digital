@@ -1,11 +1,11 @@
 'use client';
 
 import Link from 'next/link';
-import { BlogThemeProvider } from '@/components/another-me/digital-blog/BlogThemeProvider';
-import FlickeringGrid from '@/components/another-me/digital-blog/FlickeringGrid';
-import { getRelatedPosts } from '@/components/another-me/digital-blog/blog-posts';
-import BlogCard from '@/components/another-me/digital-blog/BlogCard';
-import '@/components/another-me/digital-blog/blog.css';
+import { BlogThemeProvider } from '@/components/digital/digital-blog/BlogThemeProvider';
+import FlickeringGrid from '@/components/digital/digital-blog/FlickeringGrid';
+import { getRelatedPosts } from '@/components/digital/digital-blog/blog-posts';
+import BlogCard from '@/components/digital/digital-blog/BlogCard';
+import '@/components/digital/digital-blog/blog.css';
 
 const formatDate = (dateStr) => {
   return new Date(dateStr).toLocaleDateString('en-US', {

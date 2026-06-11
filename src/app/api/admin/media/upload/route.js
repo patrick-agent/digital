@@ -3,7 +3,7 @@ import path from "path"
 import { put } from "@vercel/blob"
 import { NextResponse } from "next/server"
 import { auth } from "@/lib/auth"
-import { createMediaItem } from "@/lib/db"
+import { createMedia } from "@/lib/media/service"
 
 function safeSegment(value, fallback) {
   return String(value || fallback)
@@ -61,7 +61,7 @@ export async function POST(request) {
       url = `/uploads/${folder}/${filename}`
     }
 
-    const item = await createMediaItem({
+    const result = await createMedia({
       url,
       filename,
       folder,
@@ -71,7 +71,8 @@ export async function POST(request) {
       size: file.size || 0,
     })
 
-    return NextResponse.json(item, { status: 201 })
+    if (!result.success) return NextResponse.json({ error: result.error.message }, { status: 500 })
+    return NextResponse.json(result.data, { status: 201 })
   } catch (error) {
     return NextResponse.json(
       { error: error?.message || "Upload failed" },

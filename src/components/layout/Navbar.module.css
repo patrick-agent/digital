@@ -118,13 +118,13 @@
 
 .navLink:hover {
   color: var(--text-primary);
-  background: rgba(168, 85, 247, 0.08);
+  background: rgba(var(--brand-primary-rgb), 0.08);
 }
 
 .navLinkActive {
   color: var(--text-primary);
-  background: rgba(168, 85, 247, 0.15);
-  box-shadow: 0 0 10px rgba(168, 85, 247, 0.15);
+  background: rgba(var(--brand-primary-rgb), 0.15);
+  box-shadow: 0 0 10px rgba(var(--brand-primary-rgb), 0.15);
 }
 
 .hamburger {
@@ -144,8 +144,8 @@
 }
 
 .hamburger:hover {
-  background: rgba(168, 85, 247, 0.1);
-  border-color: rgba(168, 85, 247, 0.3);
+  background: rgba(var(--brand-primary-rgb), 0.1);
+  border-color: rgba(var(--brand-primary-rgb), 0.3);
   box-shadow: var(--glow-purple);
 }
 
@@ -203,7 +203,7 @@
 .cta:hover {
   color: white;
   transform: translateY(-1px);
-  box-shadow: 0 4px 20px rgba(168, 85, 247, 0.4), 0 0 40px rgba(168, 85, 247, 0.15);
+  box-shadow: 0 4px 20px rgba(var(--brand-primary-rgb), 0.4), 0 0 40px rgba(var(--brand-primary-rgb), 0.15);
 }
 
 .cta:hover::before {
@@ -267,7 +267,7 @@
   background: rgba(12, 12, 18, 0.98);
   backdrop-filter: blur(32px);
   -webkit-backdrop-filter: blur(32px);
-  border-left: 1px solid rgba(168, 85, 247, 0.15);
+  border-left: 1px solid rgba(var(--brand-primary-rgb), 0.15);
   transform: translateX(100%);
   transition: transform var(--transition-slow);
   z-index: 2;
@@ -301,12 +301,12 @@
 
 .drawerLink:hover {
   color: var(--text-primary);
-  background: rgba(168, 85, 247, 0.08);
+  background: rgba(var(--brand-primary-rgb), 0.08);
 }
 
 .drawerLinkActive {
   color: var(--text-primary);
-  background: rgba(168, 85, 247, 0.12);
+  background: rgba(var(--brand-primary-rgb), 0.12);
 }
 
 .drawerLink::before {
@@ -341,13 +341,13 @@
   border-radius: var(--radius-full);
   text-decoration: none;
   transition: all var(--transition-base);
-  box-shadow: 0 4px 20px rgba(168, 85, 247, 0.25);
+  box-shadow: 0 4px 20px rgba(var(--brand-primary-rgb), 0.25);
 }
 
 .drawerCta:hover {
   color: white;
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(168, 85, 247, 0.4);
+  box-shadow: 0 8px 30px rgba(var(--brand-primary-rgb), 0.4);
 }
 
 @media (max-width: 1024px) {

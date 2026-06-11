@@ -88,10 +88,20 @@ export default function NeonButton({
         textDecoration: "none",
         transition: "box-shadow 0.3s ease, transform 0.1s ease",
         boxShadow: `0 4px 20px ${v.glow}`,
+        outline: "none",
         ...style,
       }}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
+      onFocus={(e) => {
+        if (e.target.matches(":focus-visible")) {
+          e.target.style.outline = "2px solid var(--brand-primary)";
+          e.target.style.outlineOffset = "3px";
+        }
+      }}
+      onBlur={(e) => {
+        e.target.style.outline = "none";
+      }}
       {...props}
     >
       {icon && <span style={{ display: "flex" }}>{icon}</span>}

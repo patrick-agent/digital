@@ -273,7 +273,7 @@
 
 .socialLink:hover .socialIcon {
   background: rgba(168, 85, 247, 0.2);
-  border-color: #a855f7;
+  border-color: var(--brand-primary);
   box-shadow: 0 0 20px rgba(168, 85, 247, 0.3);
   color: #fff;
 }
@@ -344,8 +344,8 @@
 
 .formGroup input:focus,
 .formGroup textarea:focus {
-  border-color: #ff00ff;
-  box-shadow: 0 0 15px rgba(255, 0, 255, 0.2);
+  border-color: var(--accent-warm);
+  box-shadow: 0 0 15px rgba(245, 158, 11, 0.2);
   background: rgba(6, 6, 12, 0.95);
 }
 
@@ -377,8 +377,8 @@
 }
 
 .submitBtn:hover {
-  background: linear-gradient(135deg, #e879f9, #c026d3);
-  box-shadow: 0 0 25px rgba(192, 132, 252, 0.5);
+  filter: brightness(1.1);
+  box-shadow: 0 0 25px rgba(245, 158, 11, 0.3);
   transform: translateY(-2px);
 }
 
@@ -467,7 +467,7 @@
 
 .scrollCard:hover .socialIcon {
   background: rgba(168, 85, 247, 0.2);
-  border-color: #a855f7;
+  border-color: var(--brand-primary);
   box-shadow: 0 0 20px rgba(168, 85, 247, 0.3);
   color: #fff;
 }

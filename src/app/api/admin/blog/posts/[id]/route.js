@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server"
-import { readPost, updatePost, deletePost, duplicatePost } from "@/lib/db"
+import { getBlogPost, updateBlogPost, deleteBlogPost, duplicateBlogPost } from "@/lib/blog/service"
 import { auth } from "@/lib/auth"
 import { notifyPublishedBlogPost } from "@/lib/blog-indexing"
 
@@ -10,13 +10,9 @@ export async function GET(request, { params }) {
   }
 
   const { id } = await params
-  const post = await readPost(id)
-
-  if (!post) {
-    return NextResponse.json({ error: "Not found" }, { status: 404 })
-  }
-
-  return NextResponse.json(post)
+  const result = await getBlogPost({ id })
+  if (!result.success) return NextResponse.json({ error: result.error.message }, { status: 404 })
+  return NextResponse.json(result.data)
 }
 
 export async function PATCH(request, { params }) {
@@ -28,14 +24,10 @@ export async function PATCH(request, { params }) {
   try {
     const { id } = await params
     const body = await request.json()
-    const post = await updatePost(id, body)
-
-    if (!post) {
-      return NextResponse.json({ error: "Not found" }, { status: 404 })
-    }
-
-    const indexing = await notifyPublishedBlogPost(post)
-    return NextResponse.json({ ...post, indexing })
+    const result = await updateBlogPost({ id, ...body })
+    if (!result.success) return NextResponse.json({ error: result.error.message }, { status: 404 })
+    const indexing = await notifyPublishedBlogPost(result.data)
+    return NextResponse.json({ ...result.data, indexing })
   } catch (error) {
     return NextResponse.json(
       { error: "Failed to update post" },
@@ -52,12 +44,8 @@ export async function DELETE(request, { params }) {
 
   try {
     const { id } = await params
-    const deleted = await deletePost(id)
-
-    if (!deleted) {
-      return NextResponse.json({ error: "Not found" }, { status: 404 })
-    }
-
+    const result = await deleteBlogPost({ id })
+    if (!result.success) return NextResponse.json({ error: result.error.message }, { status: 404 })
     return NextResponse.json({ success: true })
   } catch (error) {
     return NextResponse.json(
@@ -79,11 +67,9 @@ export async function POST(request, { params }) {
     const action = searchParams.get("action")
 
     if (action === "duplicate") {
-      const duplicated = await duplicatePost(id)
-      if (!duplicated) {
-        return NextResponse.json({ error: "Not found" }, { status: 404 })
-      }
-      return NextResponse.json(duplicated, { status: 201 })
+      const result = await duplicateBlogPost({ id })
+      if (!result.success) return NextResponse.json({ error: result.error.message }, { status: 404 })
+      return NextResponse.json(result.data, { status: 201 })
     }
 
     return NextResponse.json({ error: "Unknown action" }, { status: 400 })

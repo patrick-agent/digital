@@ -1,41 +1,43 @@
 import Link from "next/link"
 import Image from "next/image"
 import { notFound } from "next/navigation"
-import { readProducts, readProduct } from "@/lib/db"
+import {
+  getPublicProduct,
+  getRelatedProducts,
+  listPublicProducts,
+} from "@/lib/shop/public-catalog"
+import {
+  formatProductPrice,
+  getPrimaryProductImage,
+  stripHtml,
+} from "@/lib/shop/presentation"
 import { siteMetadata } from "@/lib/seo"
+import ProductCard from "@/components/shop/ProductCard"
+import cardStyles from "@/app/shop/shop-card.module.css"
 import styles from "@/app/shop/shop.module.css"
 
 export const revalidate = 300
 
 export async function generateStaticParams() {
-  const { data } = await readProducts({ status: "active", limit: 1000 })
-  return data.map((product) => ({ slug: product.slug }))
-}
-
-function stripHtml(html) {
-  return html?.replace(/<[^>]*>/g, "").trim() || ""
-}
-
-function formatPrice(price, currency) {
-  const symbols = { USD: "$", EUR: "\u20ac" }
-  const sym = symbols[currency] || currency + " "
-  if (currency === "VND") return Number(price).toLocaleString("vi-VN") + " VNĐ"
-  return sym + Number(price).toFixed(2)
+  const result = await listPublicProducts({ limit: 1000 })
+  if (!result.success) return []
+  return result.data.products.map((product) => ({ slug: product.slug }))
 }
 
 export async function generateMetadata({ params }) {
   const { slug } = await params
-  const product = await readProduct(slug)
+  const result = await getPublicProduct({ slug })
+  const product = result.success ? result.data.product : null
 
   if (!product) {
-    return { title: "Product Not Found — Tachy Artist" }
+    return { title: "Không tìm thấy sản phẩm | Tachy" }
   }
 
-  const title = product.seoTitle || `${product.name} — Tachy Artist Shop`
+  const title = product.seoTitle || `${product.name} | Shop Home Studio Tachy`
   const description =
     product.seoDescription ||
     stripHtml(product.description).slice(0, 160) ||
-    `Buy ${product.name} recommended by Tachy.`
+    `Xem giá tham khảo, đặc điểm nổi bật và lý do Tachy gợi ý ${product.name}.`
 
   return {
     title,
@@ -60,24 +62,33 @@ export async function generateMetadata({ params }) {
 
 export default async function ProductDetailPage({ params }) {
   const { slug } = await params
-  const product = await readProduct(slug)
+  const productResult = await getPublicProduct({ slug })
+  const product = productResult.success ? productResult.data.product : null
 
-  if (!product || product.status !== "active") {
+  if (!product) {
     notFound()
   }
 
-  const { data: allProducts } = await readProducts({ status: "active" })
-  const related = allProducts
-    .filter((p) => p.id !== product.id && p.category === product.category)
-    .slice(0, 3)
+  const relatedResult = await getRelatedProducts({
+    productId: product.id,
+    category: product.category,
+    limit: 3,
+  })
+  const related = relatedResult.success ? relatedResult.data.products : []
 
   const productJsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
     name: product.name,
     description: stripHtml(product.description),
-    image: product.images?.[0] || undefined,
+    image: getPrimaryProductImage(product) || undefined,
     category: product.category || undefined,
+    brand: product.brand
+      ? {
+          "@type": "Brand",
+          name: product.brand,
+        }
+      : undefined,
     url: `${siteMetadata.siteUrl}/shop/${product.slug}`,
     offers: {
       "@type": "Offer",
@@ -123,38 +134,45 @@ export default async function ProductDetailPage({ params }) {
       )}
 
       <Link href="/shop" className={styles.backLink}>
-        &larr; Back to Shop
+        &larr; Quay lại shop
       </Link>
 
-      {/* ─── Hero ─── */}
       <div className={styles.detailGrid}>
-        <div className={styles.detailImageWrap}>
-          {product.images?.[0] ? (
-            <Image
-              src={product.images[0]}
-              alt={product.name}
-              fill
-              priority
-              sizes="(max-width: 768px) 100vw, 50vw"
-              className={styles.detailImage}
-            />
-          ) : (
-            <div style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", color: "var(--text-muted)", fontSize: "var(--fs-sm)", fontFamily: "var(--font-mono)" }}>
-              no image
-            </div>
-          )}
+        <div className={styles.detailMedia}>
+          <div className={styles.detailImageWrap}>
+            {getPrimaryProductImage(product) ? (
+              <Image
+                src={getPrimaryProductImage(product)}
+                alt={product.name}
+                fill
+                priority
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className={styles.detailImage}
+              />
+            ) : (
+              <div className={cardStyles.imageFallback}>Chưa có ảnh</div>
+            )}
+          </div>
         </div>
 
         <div className={styles.detailInfo}>
-          {product.category && (
-            <span className={styles.detailCategory}>{product.category}</span>
+          {(product.category || product.brand) && (
+            <div className={styles.detailMetaRow}>
+              {product.category && (
+                <span className={styles.detailCategory}>{product.category}</span>
+              )}
+
+              {product.brand && (
+                <span className={styles.detailBrand}>{product.brand}</span>
+              )}
+            </div>
           )}
 
           <h1 className={styles.detailName}>{product.name}</h1>
 
           {product.price > 0 && (
             <span className={styles.detailPrice}>
-              {formatPrice(product.price, product.currency)}
+              {formatProductPrice(product.price, product.currency)}
             </span>
           )}
 
@@ -178,28 +196,30 @@ export default async function ProductDetailPage({ params }) {
             {product.affiliateUrl ? (
               <>
                 <a href={product.affiliateUrl} target="_blank" rel="noopener noreferrer sponsored" className={styles.affiliateBtn}>
-                  Buy on Shopee
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  Mua qua Shopee
+                  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
                     <polyline points="15 3 21 3 21 9" />
                     <line x1="10" y1="14" x2="21" y2="3" />
                   </svg>
-                </a>              
+                </a>
+                <p className={styles.affiliateDisclosure}>
+                  Link affiliate giúp hỗ trợ Tachy mà không làm tăng giá bạn phải trả.
+                </p>
               </>
             ) : (
-              <span style={{ color: "var(--text-muted)", fontSize: "var(--fs-sm)" }}>
-                This product is currently not available for purchase.
+              <span className={styles.mutedNote}>
+                Hiện chưa có link mua phù hợp cho sản phẩm này.
               </span>
             )}
           </div>
         </div>
       </div>
 
-      {/* ─── Key Features ─── */}
       {product.features?.length > 0 && (
         <section className={styles.contentSection}>
           <div className={styles.sectionDivider} />
-          <h2 className={styles.sectionTitle}>Key Features</h2>
+          <h2 className={styles.sectionTitle}>Điểm Nổi Bật</h2>
           <ul className={styles.featuresList}>
             {product.features.map((feature, i) => (
               <li key={i} className={styles.featureItem}>{feature}</li>
@@ -208,36 +228,33 @@ export default async function ProductDetailPage({ params }) {
         </section>
       )}
 
-      {/* ─── Why Tachy Recommends ─── */}
       {product.whyRecommend && (
         <section className={styles.contentSection}>
           <div className={styles.sectionDivider} />
-          <h2 className={styles.sectionTitle}>Why Tachy Recommends This</h2>
+          <h2 className={styles.sectionTitle}>Vì Sao Tachy Gợi Ý Món Này</h2>
           <div className={styles.recommendContent} dangerouslySetInnerHTML={{ __html: product.whyRecommend }} />
         </section>
       )}
 
-      {/* ─── FAQ ─── */}
       {product.faq?.length > 0 && (
         <section className={styles.contentSection}>
           <div className={styles.sectionDivider} />
-          <h2 className={styles.sectionTitle}>Frequently Asked Questions</h2>
+          <h2 className={styles.sectionTitle}>Câu Hỏi Thường Gặp</h2>
           <div className={styles.faqList}>
             {product.faq.map((item, i) => (
               <details key={i} className={styles.faqItem}>
                 <summary className={styles.faqQuestion}>{item.question}</summary>
-                <p className={styles.faqAnswer} dangerouslySetInnerHTML={{ __html: item.answer }} />
+                <div className={styles.faqAnswer} dangerouslySetInnerHTML={{ __html: item.answer }} />
               </details>
             ))}
           </div>
         </section>
       )}
 
-      {/* ─── Related Articles ─── */}
       {product.relatedArticles?.length > 0 && (
         <section className={styles.contentSection}>
           <div className={styles.sectionDivider} />
-          <h2 className={styles.sectionTitle}>Related Articles</h2>
+          <h2 className={styles.sectionTitle}>Bài Viết Liên Quan</h2>
           <ul className={styles.relatedArticlesList}>
             {product.relatedArticles.map((article, i) => (
               <li key={i}>
@@ -250,51 +267,21 @@ export default async function ProductDetailPage({ params }) {
         </section>
       )}
 
-      {/* ─── Related Products ─── */}
       {related.length > 0 && (
         <section className={styles.relatedSection}>
           <div className={styles.sectionDivider} />
-          <h2 className={styles.sectionTitle}>Related Products</h2>
-          <div className={styles.grid}>
-            {related.map((rp) => (
-              <article key={rp.id} className={styles.card}>
-                <Link href={`/shop/${rp.slug}`} className={styles.cardImageWrap}>
-                  {rp.images?.[0] ? (
-                    <Image
-                      src={rp.images[0]}
-                      alt={rp.name}
-                      fill
-                      sizes="(max-width: 768px) 100vw, 33vw"
-                      className={styles.cardImage}
-                    />
-                  ) : (
-                    <div style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", color: "var(--text-muted)", fontSize: "var(--fs-sm)", fontFamily: "var(--font-mono)" }}>
-                      no image
-                    </div>
-                  )}
-                </Link>
-                <div className={styles.cardBody}>
-                  {rp.category && <span className={styles.cardCategory}>{rp.category}</span>}
-                  <h3 className={styles.cardName}>
-                    <Link href={`/shop/${rp.slug}`} style={{ color: "inherit", textDecoration: "none" }}>
-                      {rp.name}
-                    </Link>
-                  </h3>
-                  <p className={styles.cardExcerpt}>{stripHtml(rp.description).slice(0, 120)}</p>
-                  <div className={styles.cardFooter}>
-                    <span className={styles.cardPrice}>{formatPrice(rp.price, rp.currency)}</span>
-                    {rp.affiliateUrl ? (
-                      <a href={rp.affiliateUrl} target="_blank" rel="noopener noreferrer sponsored" className={`${styles.cardLink} ${styles.affiliateBtnSmall}`}>
-                        Buy Now
-                      </a>
-                    ) : (
-                      <Link href={`/shop/${rp.slug}`} className={`${styles.cardLink} ${styles.affiliateBtnSmall}`}>
-                        View
-                      </Link>
-                    )}
-                  </div>
-                </div>
-              </article>
+          <h2 className={styles.sectionTitle}>Sản Phẩm Liên Quan</h2>
+          <div className={cardStyles.grid}>
+            {related.map((rp, index) => (
+              <ProductCard
+                key={rp.id}
+                product={rp}
+                headingLevel="h3"
+                excerptLength={120}
+                compact={true}
+                imageSizes="(max-width: 768px) 100vw, 33vw"
+                index={index}
+              />
             ))}
           </div>
         </section>

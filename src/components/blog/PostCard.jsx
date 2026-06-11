@@ -2,13 +2,16 @@
 
 import { useRef, useCallback } from "react"
 import Image from "next/image"
+import { useReducedMotion } from "framer-motion"
 import { postUrl } from "@/lib/post-utils"
 import styles from "./PostCard.module.css"
 
 export default function PostCard({ post, featured = false }) {
   const cardRef = useRef(null)
+  const reducedMotion = useReducedMotion()
 
   const handleMouseMove = useCallback((e) => {
+    if (reducedMotion) return
     const card = cardRef.current
     if (!card) return
     const rect = card.getBoundingClientRect()
@@ -20,7 +23,7 @@ export default function PostCard({ post, featured = false }) {
     const rotateY = ((x - centerX) / centerX) * 8
     card.style.setProperty("--rotate-x", `${rotateX}deg`)
     card.style.setProperty("--rotate-y", `${rotateY}deg`)
-  }, [])
+  }, [reducedMotion])
 
   const handleMouseLeave = useCallback(() => {
     const card = cardRef.current

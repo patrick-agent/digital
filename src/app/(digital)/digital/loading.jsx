@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 
-export default function AnotherMeLoading() {
+export default function DigitalLoading() {
   const [show, setShow] = useState(false)
 
   useEffect(() => {

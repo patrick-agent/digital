@@ -1,0 +1,71 @@
+@import './digital-vars.css';
+
+.wrapper {
+  margin-top: 3rem;
+  width: 100%;
+  max-width: 520px;
+}
+
+.label {
+  font-family: var(--am-font-body);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  color: var(--am-muted);
+  text-transform: uppercase;
+  margin: 0 0 1.25rem;
+}
+
+.scrollContainer {
+  width: 100%;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.track {
+  display: flex;
+  gap: 2rem;
+  will-change: transform;
+}
+
+.logoSet {
+  display: flex;
+  gap: 2rem;
+  flex-shrink: 0;
+}
+
+.logoItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.logoItem:hover {
+  background: var(--am-glass);
+}
+
+.logoImg {
+  width: auto;
+  height: 36px;
+  object-fit: contain;
+  filter: brightness(0) invert(1) opacity(0.5);
+  transition: filter 0.3s ease;
+}
+
+.logoItem:hover .logoImg {
+  filter: brightness(0) invert(1) opacity(0.9);
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    margin-top: 2rem;
+  }
+
+  .logoImg {
+    height: 28px;
+  }
+}

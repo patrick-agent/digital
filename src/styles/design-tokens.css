@@ -1,0 +1,20 @@
+:root {
+  --brand-primary: #a855f7;
+  --brand-primary-strong: #7c3aed;
+  --brand-primary-rgb: 168 85 247;
+
+  --brand-secondary: #6366f1;
+  --brand-secondary-strong: #4f46e5;
+  --brand-secondary-rgb: 99 102 241;
+
+  --brand-tertiary: #ec4899;
+  --brand-tertiary-strong: #db2777;
+  --brand-tertiary-rgb: 236 72 153;
+
+  --font-sans-ui: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono-ui: var(--font-geist-mono), "JetBrains Mono", "Fira Code", monospace;
+  --font-script-ui: var(--font-caveat), "Caveat", cursive;
+
+  /* Backward-compatible alias for older UI code. */
+  --font-inter: var(--font-sans-ui);
+}

@@ -1,6 +1,7 @@
 import { revalidatePath } from "next/cache"
 import { siteMetadata } from "@/lib/seo"
 import { publishGoogleIndexingNotification } from "@/lib/google-indexing"
+import { submitSitemap } from "@/lib/search-console/service"
 
 function siteUrl() {
   return process.env.NEXT_PUBLIC_SITE_URL || process.env.SITE_URL || siteMetadata.siteUrl
@@ -34,11 +35,26 @@ export async function notifyPublishedBlogPost(post) {
   revalidateBlogPost(post)
 
   const url = getBlogPostIndexingUrl(post)
-  const result = await publishGoogleIndexingNotification(url)
+  const results = []
 
-  if (!result.success && !result.skipped) {
-    console.error("Google Indexing API failed:", result.error)
+  const indexingResult = await publishGoogleIndexingNotification(url)
+  results.push({ layer: "indexing-api", ...indexingResult })
+
+  if (!indexingResult.success && !indexingResult.skipped) {
+    console.error("Google Indexing API failed:", indexingResult.error)
   }
 
-  return result
+  const sitemapUrl = `${siteUrl()}/sitemap.xml`
+  const sitemapResult = await submitSitemap({ sitemapUrl })
+  results.push({ layer: "search-console", ...sitemapResult })
+
+  const overallSuccess = results.some((r) => r.success)
+  const allSkipped = results.every((r) => r.skipped)
+
+  return {
+    success: overallSuccess,
+    skipped: allSkipped,
+    url,
+    results,
+  }
 }

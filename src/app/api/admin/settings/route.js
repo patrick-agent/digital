@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server"
-import { readSettings, updateSettings } from "@/lib/db"
+import { getSettings, updateSettings } from "@/lib/settings/service/index.js"
 import { auth } from "@/lib/auth"
 
 export async function GET() {
@@ -8,8 +8,9 @@ export async function GET() {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
   }
 
-  const settings = await readSettings()
-  return NextResponse.json(settings)
+  const result = await getSettings()
+  if (!result.success) return NextResponse.json({ error: result.error.message }, { status: 500 })
+  return NextResponse.json(result.data)
 }
 
 export async function PATCH(request) {
@@ -18,14 +19,8 @@ export async function PATCH(request) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
   }
 
-  try {
-    const body = await request.json()
-    const settings = await updateSettings(body)
-    return NextResponse.json(settings)
-  } catch (error) {
-    return NextResponse.json(
-      { error: "Failed to update settings" },
-      { status: 500 }
-    )
-  }
+  const body = await request.json()
+  const result = await updateSettings(body)
+  if (!result.success) return NextResponse.json({ error: result.error.message }, { status: 500 })
+  return NextResponse.json(result.data)
 }

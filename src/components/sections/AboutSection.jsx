@@ -47,6 +47,15 @@ export default function AboutSection() {
   const [isAboutVisible, setIsAboutVisible] = useState(false);
   const { isMobile, isTablet } = useCanvasOptimizer();
   const isSmall = isMobile || isTablet;
+  const [reducedMotion, setReducedMotion] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
+    setReducedMotion(mq.matches);
+    const handler = (e) => setReducedMotion(e.matches);
+    mq.addEventListener("change", handler);
+    return () => mq.removeEventListener("change", handler);
+  }, []);
 
   const autoScrollRef = useRef(null);
   const scrollPosRef = useRef(0);
@@ -151,7 +160,7 @@ export default function AboutSection() {
   }, []);
 
   useEffect(() => {
-    if (!gsapObj.ready || !charReady || !sectionRef.current || isSmall) return;
+    if (!gsapObj.ready || !charReady || !sectionRef.current || isSmall || reducedMotion) return;
     const { gsap, ScrollTrigger } = gsapObj;
     const group = characterRef.current?.current;
     if (!group) return;
@@ -165,36 +174,23 @@ export default function AboutSection() {
           start: "top 80%",
           end: "center center",
           scrub: 2.5,
-          onEnter: () => { if (heroEl) gsap.to(heroEl, { opacity: 0, duration: 1 }); },
-          onLeaveBack: () => { if (heroEl) gsap.to(heroEl, { opacity: 1, duration: 1 }); },
+          onEnter: () => { if (heroEl) gsap.set(heroEl, { opacity: 0 }); },
+          onLeaveBack: () => { if (heroEl) gsap.set(heroEl, { opacity: 1 }); },
         },
       });
 
-      tl.to(group.position, { ...CHAR_CONFIG.endPos, ease: "power2.out" }, 0);
-      tl.to(group.rotation, { ...CHAR_CONFIG.endRot, ease: "power2.out" }, 0);
-      tl.to(group.scale, { ...CHAR_CONFIG.endScale, ease: "power2.out" }, 0);
+      tl.set(group.position, { ...CHAR_CONFIG.endPos }, 0);
+      tl.set(group.rotation, { ...CHAR_CONFIG.endRot }, 0);
+      tl.set(group.scale, { ...CHAR_CONFIG.endScale }, 0);
 
       boxRefs.current.forEach((box, i) => {
         if (!box) return;
-        gsap.fromTo(box,
-          { opacity: 0, x: i < 3 ? -50 : 50, filter: "blur(5px)" },
-          {
-            opacity: 1, x: 0, filter: "blur(0px)",
-            ease: "power3.out",
-            immediateRender: false,
-            scrollTrigger: {
-              trigger: box,
-              start: "top 85%",
-              end: "top 60%",
-              scrub: 1,
-            },
-          }
-        );
+        gsap.set(box, { opacity: 1, x: 0, filter: "blur(0px)" });
       });
     });
 
     return () => ctx.revert();
-  }, [gsapObj, charReady, isSmall]);
+  }, [gsapObj, charReady, isSmall, reducedMotion]);
 
   const allPanels = [...leftPanelData, ...rightPanelData];
 
@@ -214,9 +210,23 @@ export default function AboutSection() {
           <div
             ref={scrollTrackRef}
             className={styles.scrollTrack}
+            tabIndex={0}
+            role="region"
+            aria-label="Thông tin về Tachy — cuộn ngang để xem thêm"
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
+            onKeyDown={(e) => {
+              if (!scrollTrackRef.current) return;
+              const scrollAmount = 200;
+              if (e.key === "ArrowRight") {
+                e.preventDefault();
+                scrollTrackRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
+              } else if (e.key === "ArrowLeft") {
+                e.preventDefault();
+                scrollTrackRef.current.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+              }
+            }}
           >
             <div className={styles.scrollTrackInner}>
               {allPanels.map((item, idx) => (
@@ -228,6 +238,7 @@ export default function AboutSection() {
                   rotatingBorder
                   enableHover
                   className={styles.scrollCard}
+                  tabIndex={-1}
                 >
                   <div className={styles.cyberContent}>
                     <span className={styles.cyberLabel}>{item.label}</span>

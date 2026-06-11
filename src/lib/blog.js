@@ -1,106 +1,63 @@
-import { readPosts, readPost } from "@/lib/db"
-
-const POSTS_PER_PAGE = 9
+import {
+  listPublishedPosts,
+  getPublishedPost,
+  getRelatedPublishedPosts,
+  getBlogCategories,
+  getAllPublishedSlugs as getPublicAllSlugs,
+  getAllBlogTags,
+  getFeaturedPublishedPost,
+  estimateReadTime,
+} from "@/lib/blog/public-catalog"
 
 export async function getAllPublishedPosts(options = {}) {
-  const { page = 1, limit = POSTS_PER_PAGE, category, tag } = options
-
-  const result = await readPosts({ status: "published", page: 1, limit: 9999 })
-  let posts = result.data
-
-  if (category) {
-    posts = posts.filter((p) => p.category === category)
+  const { page = 1, limit = 9, category, tag } = options
+  const result = await listPublishedPosts({ category, tag, page, limit })
+  if (!result.success) return { posts: [], meta: { page, limit, total: 0, totalPages: 0 } }
+  return {
+    posts: result.data.posts,
+    meta: { ...result.data.meta, totalPages: Math.ceil(result.data.meta.total / limit) },
   }
-
-  if (tag) {
-    posts = posts.filter((p) => p.tags?.includes(tag))
-  }
-
-  posts.sort((a, b) => new Date(b.publishedAt || b.createdAt) - new Date(a.publishedAt || a.createdAt))
-
-  const total = posts.length
-  const totalPages = Math.ceil(total / limit)
-  const offset = (page - 1) * limit
-  const data = posts.slice(offset, offset + limit)
-
-  return { posts: data, meta: { page, limit, total, totalPages } }
 }
 
 export function getPostBySlug(category, slug) {
-  return readPost(slug).then((post) => {
-    if (!post || post.status !== "published") return null
-    if (category && post.category !== category) return null
-    return post
+  return getPublishedPost({ slug, category }).then((result) => {
+    if (!result.success) return null
+    return result.data.post
   })
 }
 
 export function getPostBySlugOnly(slug) {
-  return readPost(slug).then((post) => {
-    if (!post || post.status !== "published") return null
-    return post
+  return getPublishedPost({ slug }).then((result) => {
+    if (!result.success) return null
+    return result.data.post
   })
 }
 
-
-
 export async function getRelatedPosts(post, limit = 3) {
-  const result = await readPosts({ status: "published", page: 1, limit: 9999 })
-  const candidates = result.data.filter((p) => p.id !== post.id)
-
-  const sameCategory = candidates.filter((p) => p.category === post.category)
-  const sharedTag = candidates.filter(
-    (p) => Array.isArray(p.tags) && Array.isArray(post.tags) && p.tags.some((t) => post.tags.includes(t))
-  )
-
-  const combined = [...sameCategory]
-  for (const p of sharedTag) {
-    if (!combined.find((c) => c.id === p.id)) {
-      combined.push(p)
-    }
-    if (combined.length >= limit) break
-  }
-
-  for (const p of candidates) {
-    if (!combined.find((c) => c.id === p.id)) {
-      combined.push(p)
-    }
-    if (combined.length >= limit) break
-  }
-
-  return combined.slice(0, limit)
+  const result = await getRelatedPublishedPosts({
+    postId: post.id,
+    category: post.category,
+    tags: post.tags || [],
+    limit,
+  })
+  if (!result.success) return []
+  return result.data.posts
 }
 
 export async function getAllCategories() {
-  const result = await readPosts({ status: "published", page: 1, limit: 9999 })
-  const cats = [...new Set(result.data.map((p) => p.category).filter(Boolean))]
-  return cats.sort()
+  return getBlogCategories()
 }
 
 export async function getAllTags() {
-  const result = await readPosts({ status: "published", page: 1, limit: 9999 })
-  const tags = [...new Set(result.data.flatMap((p) => p.tags || []))].filter(Boolean)
-  return tags.sort()
+  return getAllBlogTags()
 }
 
 export async function getFeaturedPost() {
-  const result = await readPosts({ status: "published", page: 1, limit: 9999 })
-  const sorted = [...result.data].sort((a, b) => new Date(b.publishedAt || b.createdAt) - new Date(a.publishedAt || a.createdAt))
-  return sorted[0] || null
+  return getFeaturedPublishedPost()
 }
 
 export async function getAllPublishedSlugs() {
-  const result = await readPosts({ status: "published", page: 1, limit: 9999 })
-  return result.data.map((p) => ({
-    category: p.category,
-    slug: p.slug,
-    updatedAt: p.updatedAt || p.publishedAt || new Date().toISOString(),
-    publishedAt: p.publishedAt || p.createdAt,
-  }))
+  return getPublicAllSlugs()
 }
 
-export function estimateReadTime(content) {
-  if (!content) return 1
-  const text = content.replace(/<[^>]*>/g, "")
-  const words = text.split(/\s+/).filter(Boolean).length
-  return Math.max(1, Math.ceil(words / 200))
-}
+export { estimateReadTime }

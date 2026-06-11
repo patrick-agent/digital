@@ -48,7 +48,7 @@
 ## 🔍 What Was Kept (Still Used)
 
 ✅ **Components Used in Production**:
-- `CanvasRevealEffect` - Used in AnotherMeSkills.jsx
+- `CanvasRevealEffect` - Used in DigitalSkills.jsx
 - `CometCard` - Used in ReleaseShelf3D.tsx (kept both UI + usage)
 - `ProgressTracker` - Used in main page.js
 - All canvas components (CharacterCanvas, AboutCharacterCanvas, etc.)

@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server"
 import { validateApiKey } from "@/lib/api-auth"
-import { readPosts, createPost } from "@/lib/db"
+import { listBlogPosts, createBlogPost } from "@/lib/blog/service"
 import { notifyPublishedBlogPost } from "@/lib/blog-indexing"
 
 export async function GET(request) {
@@ -12,12 +12,13 @@ export async function GET(request) {
   const page = parseInt(searchParams.get("page") || "1", 10)
   const limit = parseInt(searchParams.get("limit") || "50", 10)
 
-  const { data, meta } = await readPosts({ status, page, limit })
+  const result = await listBlogPosts({ status, page, limit })
+  if (!result.success) return NextResponse.json({ success: false, error: result.error.message }, { status: 500 })
 
   return NextResponse.json({
     success: true,
-    data,
-    meta,
+    data: result.data.items,
+    meta: result.data.meta,
   })
 }
 
@@ -27,11 +28,12 @@ export async function POST(request) {
 
   try {
     const body = await request.json()
-    const post = await createPost(body)
-    const indexing = await notifyPublishedBlogPost(post)
+    const result = await createBlogPost(body)
+    if (!result.success) return NextResponse.json({ success: false, error: result.error.message }, { status: 500 })
+    const indexing = await notifyPublishedBlogPost(result.data)
 
     return NextResponse.json(
-      { success: true, data: post, indexing },
+      { success: true, data: result.data, indexing },
       { status: 201 }
     )
   } catch (error) {

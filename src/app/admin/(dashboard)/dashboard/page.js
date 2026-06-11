@@ -82,7 +82,7 @@ export default async function AdminDashboardPage() {
       />
 
       {/* Stats Grid — 4 cols desktop, 2 tablet, 1 mobile */}
-      <div className="mb-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mb-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4" style={{ marginTop: 16 }}>
         {stats.map((stat) => (
           <StatCard key={stat.label} {...stat} />
         ))}
@@ -92,7 +92,7 @@ export default async function AdminDashboardPage() {
       <div className="admin-bottom-grid grid gap-6 lg:grid-cols-[2fr_1fr]">
 
         {/* ===== LEFT COLUMN ===== */}
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-3">
 
           {/* Upcoming Events */}
           <SectionCard
@@ -147,6 +147,7 @@ export default async function AdminDashboardPage() {
                     key={item.href}
                     href={item.href}
                     className="admin-action-card"
+                    style={{ padding: 4 }}
                   >
                     <div className="action-icon">
                       <Icon />
@@ -163,7 +164,7 @@ export default async function AdminDashboardPage() {
         </div>
 
         {/* ===== RIGHT COLUMN ===== */}
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-3">
 
           {/* Newsletter */}
           <SectionCard title="Newsletter">
@@ -176,9 +177,11 @@ export default async function AdminDashboardPage() {
                 <div className="mt-0.5 text-sm font-semibold text-text-muted">New subscribers this week</div>
               </div>
             </div>
-            <div className="admin-newsletter-row flex items-center justify-between rounded-xl border border-border bg-gray-50 px-4 py-3.5">
+            <div className="admin-newsletter-row flex items-center justify-between rounded-xl border border-border bg-gray-50 px-4 py-3.5" style={{ padding: "4px 16px" }}>
               <div>
-                <div className="text-xs font-medium text-text-muted">Total active</div>
+                <div className="text-xs font-medium text-text-muted">
+                  Total active
+                </div>
                 <div className="text-base font-bold text-text-primary">{activeSubscribers}</div>
               </div>
               <Link

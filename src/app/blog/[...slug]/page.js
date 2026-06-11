@@ -1,12 +1,11 @@
 import { notFound, permanentRedirect } from "next/navigation"
 import {
-  getAllPublishedPosts,
-  getAllCategories,
-  getPostBySlug,
-  getPostBySlugOnly,
+  listPublishedPosts,
+  getBlogCategories,
+  getPublishedPost,
   getAllPublishedSlugs,
-  getRelatedPosts,
-} from "@/lib/blog"
+  getRelatedPublishedPosts,
+} from "@/lib/blog/public-catalog"
 import { siteMetadata } from "@/lib/seo"
 import { canonicalUrl as getCanonicalUrl, postUrl } from "@/lib/post-utils"
 import ArticleHero from "@/components/blog/ArticleHero"
@@ -28,7 +27,7 @@ export async function generateStaticParams() {
   const slugs = await getAllPublishedSlugs()
   const params = slugs.map(({ slug }) => ({ slug: [slug] }))
 
-  const categories = await getAllCategories()
+  const categories = await getBlogCategories()
   for (const cat of categories) {
     if (!params.some((p) => p.slug.length === 1 && p.slug[0] === cat)) {
       params.push({ slug: [cat] })
@@ -83,14 +82,14 @@ export async function generateMetadata({ params }) {
 
   if (segments.length === 1) {
     const [first] = segments
-    const post = await getPostBySlugOnly(first)
+    const result = await getPublishedPost({ slug: first })
 
-    if (post) {
-      return getPostMetadata(post)
+    if (result.success) {
+      return getPostMetadata(result.data.post)
     }
 
     const decoded = decodeURIComponent(first)
-    const categories = await getAllCategories()
+    const categories = await getBlogCategories()
 
     if (categories.includes(decoded)) {
       return {
@@ -106,10 +105,10 @@ export async function generateMetadata({ params }) {
 
   if (segments.length >= 2) {
     const [categoryRaw, ...rest] = segments
-    const post = await getPostBySlug(categoryRaw, rest.join("/"))
-    if (!post) return {}
+    const result = await getPublishedPost({ slug: rest.join("/"), category: categoryRaw })
+    if (!result.success) return {}
 
-    return getPostMetadata(post)
+    return getPostMetadata(result.data.post)
   }
 
   return {}
@@ -121,21 +120,27 @@ export default async function BlogCatchAllPage({ params }) {
 
   if (segments.length === 1) {
     const [first] = segments
-    const post = await getPostBySlugOnly(first)
+    const result = await getPublishedPost({ slug: first })
 
-    if (post) {
-      const related = await getRelatedPosts(post, 3)
+    if (result.success) {
+      const post = result.data.post
+      const relatedResult = await getRelatedPublishedPosts({
+        postId: post.id,
+        category: post.category,
+        tags: post.tags || [],
+        limit: 3,
+      })
+      const related = relatedResult.success ? relatedResult.data.posts : []
       return renderArticlePage(post, related)
     }
 
     const decoded = decodeURIComponent(first)
-    const categories = await getAllCategories()
+    const categories = await getBlogCategories()
 
     if (categories.includes(decoded)) {
-      const [{ posts }, allCategories] = await Promise.all([
-        getAllPublishedPosts({ category: decoded, page: 1, limit: 9999 }),
-        getAllCategories(),
-      ])
+      const listResult = await listPublishedPosts({ category: decoded, page: 1, limit: 9999 })
+      const posts = listResult.success ? listResult.data.posts : []
+      const allCategories = listResult.success ? listResult.data.categories : await getBlogCategories()
 
       const categoryDescriptions = {
         tutorials: "Hướng dẫn chi tiết về sản xuất âm nhạc, home studio, và các kỹ thuật phòng thu.",
@@ -164,10 +169,10 @@ export default async function BlogCatchAllPage({ params }) {
 
   if (segments.length >= 2) {
     const [categoryRaw, ...rest] = segments
-    const post = await getPostBySlug(categoryRaw, rest.join("/"))
-    if (!post) notFound()
+    const result = await getPublishedPost({ slug: rest.join("/"), category: categoryRaw })
+    if (!result.success) notFound()
 
-    permanentRedirect(postUrl(post))
+    permanentRedirect(postUrl(result.data.post))
   }
 
   notFound()

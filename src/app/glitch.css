@@ -102,3 +102,15 @@
   0%, 100% { opacity: 0; transform: translateY(0); }
   50% { opacity: 0.4; transform: translateY(10px); }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .glitch-text,
+  .glitch-text-shadow,
+  .glitch-text-shadow-2,
+  .glitch-message,
+  .glitch-subtitle,
+  .glitch-line-1,
+  .glitch-line-2 {
+    animation: none !important;
+  }
+}

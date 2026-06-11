@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import styles from "./Navbar.module.css";
 import { enabledItems, mergeSiteSettings } from "@/lib/site-defaults";
 
@@ -11,6 +11,8 @@ export default function Navbar({ settings }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("hero");
+  const drawerRef = useRef(null);
+  const hamburgerRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -55,11 +57,38 @@ export default function Navbar({ settings }) {
     const handleEsc = (e) => {
       if (e.key === "Escape" && isMenuOpen) {
         setIsMenuOpen(false);
+        hamburgerRef.current?.focus();
       }
     };
     window.addEventListener("keydown", handleEsc);
     return () => window.removeEventListener("keydown", handleEsc);
   }, [isMenuOpen]);
+
+  useEffect(() => {
+    if (isMenuOpen && drawerRef.current) {
+      const firstFocusable = drawerRef.current.querySelector('a, button, [tabindex]:not([tabindex="-1"])');
+      if (firstFocusable) {
+        firstFocusable.focus();
+      }
+    }
+  }, [isMenuOpen]);
+
+  const handleDrawerKeyDown = useCallback((e) => {
+    if (e.key !== "Tab") return;
+    const drawer = drawerRef.current;
+    if (!drawer) return;
+    const focusable = drawer.querySelectorAll('a, button, [tabindex]:not([tabindex="-1"])');
+    if (focusable.length === 0) return;
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (e.shiftKey && document.activeElement === first) {
+      e.preventDefault();
+      last.focus();
+    } else if (!e.shiftKey && document.activeElement === last) {
+      e.preventDefault();
+      first.focus();
+    }
+  }, []);
 
   const handleNavClick = () => {
     setIsMenuOpen(false);
@@ -102,6 +131,7 @@ export default function Navbar({ settings }) {
         </div>
 
         <button
+          ref={hamburgerRef}
           id="nav-hamburger"
           className={`${styles.hamburger} ${isMenuOpen ? styles.open : ""}`}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -135,10 +165,12 @@ export default function Navbar({ settings }) {
       />
 
       <div
+        ref={drawerRef}
         className={`${styles.drawer} ${isMenuOpen ? styles.drawerOpen : ""}`}
         role="dialog"
         aria-modal="true"
         aria-label="Navigation menu"
+        onKeyDown={handleDrawerKeyDown}
       >
         <div className={styles.drawerContent}>
           {navLinks.map((link) => (

@@ -20,7 +20,7 @@
   left: 35%;
   width: 60vw;
   height: 60vw;
-  background: radial-gradient(circle, rgba(168, 85, 247, 0.2) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(var(--brand-primary-rgb), 0.2) 0%, transparent 70%);
   transform: translate(-50%, -50%);
   z-index: 0;
   pointer-events: none;
@@ -185,8 +185,8 @@
   display: flex;
   align-items: center;
   gap: 15px;
-  background: rgba(168, 85, 247, 0.05);
-  border: 1px solid rgba(168, 85, 247, 0.2);
+  background: rgba(var(--brand-primary-rgb), 0.05);
+  border: 1px solid rgba(var(--brand-primary-rgb), 0.2);
   border-radius: 12px;
   padding: 15px;
   transition: all 0.3s ease;
@@ -197,7 +197,7 @@
 .cryptoCard:hover {
   border-color: #ff00ff;
   box-shadow: 0 0 15px rgba(255, 0, 255, 0.2);
-  background: rgba(168, 85, 247, 0.15);
+  background: rgba(var(--brand-primary-rgb), 0.15);
   transform: translateY(-2px);
 }
 
