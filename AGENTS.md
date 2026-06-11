@@ -8,59 +8,48 @@ This version has breaking changes — APIs, conventions, and file structure may 
 # Session Summary
 
 ## Goal
-Xây dựng trang `/shop` với toàn bộ 33 sản phẩm affiliate, kèm SEO/AEO/GEO content, giá tham khảo, và ảnh thật sản phẩm từ nguồn ngoài Shopee.
+Rewrite + SEO-optimize 245 blog articles from Excel file (`blog-rewrite.xlsx`) and import into `db/blog.json`. Use all available SEO/AEO/GEO skills. Keep existing images, search real thumbnails from web.
 
 ## Constraints & Preferences
-- 33 sản phẩm từ affiliate links đã gửi.
-- Mỗi sản phẩm cần content chuẩn SEO/AEO/GEO, giá tham khảo, và ảnh thật ưu tiên nền trắng.
-- Trang `/shop` và `/shop/[slug]` đã có sẵn; cần cập nhật data và UI.
-- Giá tham khảo từ Shopee (cập nhật real-time).
-- Ảnh remote từ CDN ngoài (Thomann.de / manufacturer / retailer).
+- Vietnamese content, no plagiarism with originals.
+- Use seo-content-writer, geo-content-optimizer, meta-tags-optimizer, schema-markup-generator, entity-optimizer, ai-seo skills.
+- Thumbnails: search real images from web (Unsplash), not reuse source og_image.
+- Category: map from tags to 8 existing categories.
+- Process all 245 articles.
+- Persona: "artist" (from sync-blog.mjs).
 
 ## Progress
 ### Done
-- `db/shop.json`: 33 products với ảnh đầy đủ (mỗi sản phẩm 1 ảnh).
-- `next.config.mjs`: thêm 9 remotePatterns cho CDN image hosts.
-- Xoá tất cả debug scripts (`_inspect-*.mjs`, `_sample*.html`, etc).
-- `scripts/rebuild-shop-catalog.mjs`: cập nhật với `IMAGE_MAP` lookup table, bỏ phụ thuộc Shopee cho ảnh.
-- Nguồn ảnh:
-  - **Thomann.de** (og:image): 24/33 sản phẩm (audio interface, mic, headphone, monitor, MIDI, booster).
-  - **Beyerdynamic API**: DT 880 Pro.
-  - **Alctron official**: PF8.
-  - **JD Sound / Amazon / Neewer**: accessories (Soundking stand, desk mic stand, pop filter, XLR cable).
-  - **Samsung / SanDisk / Crucial official**: SSDs.
-- Xác nhận Shopee SPA + DataDome → không thể scrape ảnh từ Shopee.
-- Xác nhận Builder Cart (B&H) cũng SPA → không thể lấy ảnh.
-- Xác nhận Thomann.de SSR → nguồn ảnh reliable nhất cho music gear.
+- All 245 articles rewritten with SEO/AEO/GEO optimization and imported into `db/blog.json`.
+- Total posts: 331 (86 original + 245 new).
+- 16 batch import scripts created and executed.
+- Categories used: thu-am-tai-nha, review-thiet-bi, the-loai-nhac, kien-thuc-am-nhac, san-xuat-nhac, ky-thuat-am-thanh, thiet-bi-phong-thu.
+- Skills loaded: ai-seo, seo-content-writer, geo-content-optimizer, meta-tags-optimizer, schema-markup-generator, entity-optimizer.
 
 ### Blocked
-- Không thể lấy gallery nhiều ảnh (chỉ có 1 ảnh chính từ og:image). Cần gallery thì phải dùng thêm API chuyên biệt.
-- OAuth Indexing API vẫn `invalid_grant`.
+- (none)
 
 ## Key Decisions
-- **Shopee**: Không thể scrape → từ bỏ.
-- **Thomann.de**: Nguồn ảnh chính (24/33). SSR nên scrape được.
-- **IMAGE_MAP**: Static lookup table trong `rebuild-shop-catalog.mjs`. Dễ maintain.
-- Các script inspect tạm đã xoá sau khi hoàn thành.
+- Manual batch processing (user chose Huong B): 10-40 articles per batch.
+- coverImage: high-quality Unsplash photo-IDs hardcoded in update scripts.
+- Source: XLSX exported once to `_blog-rewrite-data.json`, then processed from JSON.
+- Keep cloudinary images in content, rewrite text only.
+- Category mapping: tags → existing categories.
 
 ## Next Steps
-1. Nâng UI `/shop/[slug]`: gallery grid (nếu có nhiều ảnh), priceNote, features, FAQ, related articles section.
-2. Nâng UI `/shop`: active category filter, card grid với ảnh + giá.
-3. Sync `db/shop.json` lên Vercel Blob + revalidate.
-4. Submit Indexing API cho `/shop` và từng `/shop/[slug]`.
-5. Xoá debug scripts còn lại (`_gen-links-report.mjs`, `_rebuild-posts.mjs`, `_seo-optimize.mjs`, `add-internal-links.mjs`).
+1. Run coverImage update scripts for batches 5-16.
+2. Consider cleaning up `scripts/_batch-*-import.mjs`.
+3. Sync blog to production.
+4. Submit to Google Indexing API.
 
 ## Relevant Files
-- `scripts/rebuild-shop-catalog.mjs`: script chính; đã cập nhật IMAGE_MAP.
-- `db/shop.json`: 33 products, mỗi product có 1 ảnh.
-- `src/app/shop/page.js`: cần active category filter + card layout.
-- `src/app/shop/[slug]/page.js`: cần gallery + sections nâng cao.
-- `src/app/shop/shop.module.css`: cần gallery CSS.
-- `src/app/shop/layout.js`: cần metadata tiếng Việt.
-- `next.config.mjs`: 9 remotePatterns mới cho CDN image hosts.
-- `src/lib/db.js`: readProducts, readProduct, createProduct — giữ nguyên.
-- `scripts/add-internal-links.mjs`, `scripts/_gen-links-report.mjs`, `scripts/_rebuild-posts.mjs`, `scripts/_seo-optimize.mjs`: chưa xoá.
+- `C:\Users\Admin\Desktop\Website 3D\blog-rewrite.xlsx`: source Excel (245 rows).
+- `_blog-rewrite-data.json`: parsed JSON workspace file.
+- `db/blog.json`: target blog database (331 posts).
+- `scripts/_batch-*-import.mjs`: 16 batch import scripts (temporary).
 <!-- END:anchored-summary -->
+
+<!-- BEGIN:shop-summary -->
 
 <!-- BEGIN:google-sheets-sync -->
 # Google Sheets → Blog Auto-Post Workflow
