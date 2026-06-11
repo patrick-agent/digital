@@ -82,11 +82,11 @@ export default function AnotherMeFooter() {
                 <a href="#timeline">My Journey</a>
                 <a href="#skills">Skills</a>
                 <a href="#services">Services</a>
-                <a href="#contact">Contact</a>
+                <a href="/contact">Contact</a>
               </div>
               <div className={styles.footerCol}>
                 <p className={styles.footerColTitle}>Other</p>
-                <a href="/digital">Another Me</a>
+                <a href="/">Another Me</a>
                 <a href="/digital/blog">Blog</a>
                 <a href="/terms">Terms and Condition</a>
                 <a href="/privacy">Privacy Policy</a>

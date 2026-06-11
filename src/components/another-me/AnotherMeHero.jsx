@@ -2,7 +2,7 @@
 
 import { useRef, useEffect, useState } from 'react'
 import dynamic from 'next/dynamic'
-import { useDeviceType, useVisibilityLoader } from '@/hooks/useVisibilityLoader'
+import { useVisibilityLoader } from '@/hooks/useVisibilityLoader'
 import styles from './AnotherMeHero.module.css'
 
 const SplineScene = dynamic(
@@ -16,16 +16,15 @@ export default function AnotherMeHero() {
   const taglineRef = useRef(null)
   const ctaRef = useRef(null)
   const { ref: visibilityRef, isVisible } = useVisibilityLoader({ rootMargin: '0px' })
-  const deviceType = useDeviceType()
   const [allowSpline, setAllowSpline] = useState(false)
 
   useEffect(() => {
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
     const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection
     const isSlowNetwork = ['slow-2g', '2g', '3g'].includes(connection?.effectiveType)
-    const isDesktopViewport = window.innerWidth >= 1024
-    setAllowSpline(!reduceMotion && !isSlowNetwork && deviceType === 'desktop' && isDesktopViewport)
-  }, [deviceType])
+    const shouldSaveData = connection?.saveData === true
+    setAllowSpline(!reduceMotion && !isSlowNetwork && !shouldSaveData)
+  }, [])
 
   useEffect(() => {
     let ctx

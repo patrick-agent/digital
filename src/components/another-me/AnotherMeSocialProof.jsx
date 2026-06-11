@@ -119,7 +119,7 @@ export default function AnotherMeSocialProof() {
               </p>
 
               <div className={styles.buttonRow}>
-                <Link href="https://drive.google.com/file/d/1GfAVzjAmbqgNoa1g3tPWdSZ3RBDL4p2D/view?usp=sharing" className={`${styles.btn} ${styles.btnSecondary}`}>
+                <Link href="https://drive.google.com/file/d/18NdT1ygCIZdYxzHPWU85uUkVxLfeTACq/view?usp=sharing" className={`${styles.btn} ${styles.btnSecondary}`}>
                   Download my Resume
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M9 18l6-6-6-6" />
