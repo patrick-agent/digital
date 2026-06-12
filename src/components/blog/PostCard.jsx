@@ -1,12 +1,14 @@
 "use client"
 
 import { useRef, useCallback } from "react"
+import Link from "next/link"
 import Image from "next/image"
 import { useReducedMotion } from "framer-motion"
 import { postUrl } from "@/lib/post-utils"
+import { formatBlogCategoryLabel } from "@/lib/blog/category-meta"
 import styles from "./PostCard.module.css"
 
-export default function PostCard({ post, featured = false }) {
+export default function PostCard({ post, featured = false, imageSizes, compact = false, mobileCompact = false }) {
   const cardRef = useRef(null)
   const reducedMotion = useReducedMotion()
 
@@ -35,20 +37,20 @@ export default function PostCard({ post, featured = false }) {
   const readTime = post.readTime || Math.max(1, Math.ceil((post.content?.replace(/<[^>]*>/g, "").split(/\s+/).filter(Boolean).length || 0) / 200))
 
   return (
-    <a
-      href={postUrl(post)}
-      className={`${styles.card} ${featured ? styles.featured : ""}`}
-      ref={cardRef}
-      onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}
-    >
+      <Link
+        href={postUrl(post)}
+        className={`${styles.card} ${featured ? styles.featured : ""} ${compact ? styles.compact : ""} ${mobileCompact ? styles.mobileCompact : ""}`}
+        ref={cardRef}
+        onMouseMove={handleMouseMove}
+        onMouseLeave={handleMouseLeave}
+      >
       <div className={styles.imageWrapper}>
         {post.coverImage ? (
           <Image
             src={post.coverImage}
             alt={post.title}
             fill
-            sizes={featured ? "(max-width: 768px) 100vw, 50vw" : "(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"}
+            sizes={imageSizes || (featured ? "(max-width: 768px) 100vw, 50vw" : "(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw")}
             className={styles.image}
           />
         ) : (
@@ -58,21 +60,21 @@ export default function PostCard({ post, featured = false }) {
       </div>
       <div className={styles.content}>
         {post.category && (
-          <span className={styles.categoryBadge}>{post.category}</span>
+          <span className={styles.categoryBadge}>{formatBlogCategoryLabel(post.category)}</span>
         )}
         <h3 className={styles.title}>{post.title}</h3>
         {post.excerpt && <p className={styles.excerpt}>{post.excerpt}</p>}
         <div className={styles.meta}>
           <time dateTime={post.publishedAt}>
-            {new Date(post.publishedAt || post.createdAt).toLocaleDateString("en-US", {
+            {new Date(post.publishedAt || post.createdAt).toLocaleDateString("vi-VN", {
               year: "numeric",
               month: "short",
               day: "numeric",
             })}
           </time>
-          <span className={styles.readTime}>{readTime} min read</span>
+          <span className={styles.readTime}>{readTime} phút đọc</span>
         </div>
       </div>
-    </a>
+    </Link>
   )
 }

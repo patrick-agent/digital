@@ -471,19 +471,29 @@ Primary source:
 - `src/app/blog/page.js`
 - `src/components/blog/*`
 - `src/app/blog/[...slug]/article-page.module.css`
+- `src/app/blog/[...slug]/category-page.module.css`
 
 Blog tone is more readable and editorial than the homepage, but it still sits inside the same dark public system.
 
 Signature traits:
 
+- category-based discovery hub on `/blog`
+- glass filter deck with keyword search and category chips
+- 10-post previews for each visible category inside a horizontal swipe shelf
 - dark article shell
 - glowing radial atmosphere behind content
 - large glass body wrapper
 - mono tags and utility labels
 - futuristic but readable article detail page
+- category archive pages with 20-post pagination
+- mobile category archives use 2 compact cards per row for faster scanning
+- article pages can surface affiliate-linked shop cards in a right rail on desktop and a swipe shelf before related posts on mobile/tablet
 
 Rules:
 
+- `/blog` should feel like a discovery surface, not a flat post dump.
+- Search and filter controls should stay premium and lightweight; they frame the content, not overpower it.
+- Category archive pages should make scanability and pagination clarity obvious before decoration.
 - Reading comfort takes priority over spectacle.
 - Decorative glow should sit outside the text column.
 - Article body should remain the calmest public reading surface.

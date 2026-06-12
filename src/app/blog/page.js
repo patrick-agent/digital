@@ -26,10 +26,17 @@ export const metadata = {
   robots: { index: true, follow: true },
 }
 
-export default async function BlogPage() {
+function normalizeQueryParam(value) {
+  return typeof value === "string" ? value.trim() : ""
+}
+
+export default async function BlogPage({ searchParams }) {
+  const resolvedSearchParams = (await searchParams) || {}
   let posts = []
   let categories = []
   let featuredPost = null
+  let initialActiveCategory = null
+  let initialSearchQuery = normalizeQueryParam(resolvedSearchParams.q)
 
   try {
     const [listResult, categoriesData, featured] = await Promise.all([
@@ -40,14 +47,16 @@ export default async function BlogPage() {
     posts = listResult.success ? listResult.data.posts : []
     categories = categoriesData || []
     featuredPost = featured || null
-    if (featuredPost) {
-      posts = posts.filter((p) => p.id !== featuredPost.id)
-    }
+    initialActiveCategory = categories.includes(resolvedSearchParams.category)
+      ? resolvedSearchParams.category
+      : null
   } catch (error) {
     console.error("Error loading blog data:", error)
     posts = []
     categories = []
     featuredPost = null
+    initialActiveCategory = null
+    initialSearchQuery = ""
   }
 
   return (
@@ -55,6 +64,8 @@ export default async function BlogPage() {
       initialPosts={posts}
       categories={categories}
       featuredPost={featuredPost}
+      initialActiveCategory={initialActiveCategory}
+      initialSearchQuery={initialSearchQuery}
     />
   )
 }

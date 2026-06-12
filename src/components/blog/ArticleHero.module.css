@@ -49,6 +49,8 @@
   padding: var(--space-4xl) var(--space-xl) var(--space-3xl);
   margin: 0 auto;
   width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .categoryBadge {
@@ -84,6 +86,7 @@
 .meta {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: var(--space-md);
   font-family: var(--font-mono);
   font-size: var(--fs-sm);
@@ -134,5 +137,9 @@
 
   .content {
     padding: var(--space-2xl) var(--space-md) var(--space-xl);
+  }
+
+  .meta {
+    gap: 0.5rem 0.9rem;
   }
 }

@@ -3,25 +3,33 @@
 import { useRef } from "react"
 import styles from "./CategoryNav.module.css"
 
-export default function CategoryNav({ categories, active, onSelect }) {
+export default function CategoryNav({ categories, active, counts = {}, labels = {}, onSelect }) {
   const scrollRef = useRef(null)
 
+  const totalCount = Object.values(counts).reduce((total, value) => total + value, 0)
+
   return (
-    <nav className={styles.wrapper} ref={scrollRef}>
+    <nav className={styles.wrapper} ref={scrollRef} aria-label="Lọc blog theo danh mục">
       <div className={styles.track}>
         <button
+          type="button"
           className={`${styles.pill} ${active === null ? styles.active : ""}`}
+          aria-pressed={active === null}
           onClick={() => onSelect(null)}
         >
-          All
+          <span className={styles.label}>Tất cả</span>
+          <span className={styles.count}>{totalCount}</span>
         </button>
         {categories.map((cat) => (
           <button
             key={cat}
+            type="button"
             className={`${styles.pill} ${active === cat ? styles.active : ""}`}
+            aria-pressed={active === cat}
             onClick={() => onSelect(cat)}
           >
-            {cat}
+            <span className={styles.label}>{labels[cat] || cat}</span>
+            <span className={styles.count}>{counts[cat] || 0}</span>
           </button>
         ))}
       </div>

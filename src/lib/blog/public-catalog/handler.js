@@ -15,18 +15,25 @@ import {
 
 const POSTS_PER_PAGE = 9
 
+function normalizeSearchValue(value) {
+  return String(value || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+}
+
 function getCategories(posts) {
   return [...new Set(posts.map((p) => p.category).filter(Boolean))].sort((a, b) => a.localeCompare(b, "vi"))
 }
 
 function matchesSearch(post, query) {
   if (!query) return true
-  const haystack = [
+  const haystack = normalizeSearchValue([
     post.title,
     post.excerpt,
     post.category,
     ...(post.tags || []),
-  ].filter(Boolean).join(" ").toLowerCase()
+  ].filter(Boolean).join(" "))
   return haystack.includes(query)
 }
 
@@ -53,7 +60,7 @@ export class PublicBlogHandler {
       }
 
       if (q) {
-        const normalizedQuery = q.toLowerCase()
+        const normalizedQuery = normalizeSearchValue(q)
         posts = posts.filter((p) => matchesSearch(p, normalizedQuery))
       }
 

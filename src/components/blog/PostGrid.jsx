@@ -4,7 +4,7 @@ import { useRef, useEffect, useState } from "react"
 import PostCard from "./PostCard"
 import styles from "./PostGrid.module.css"
 
-export default function PostGrid({ posts, columns = 3 }) {
+export default function PostGrid({ posts, columns = 3, imageSizes, mobileCompact = false }) {
   const gridRef = useRef(null)
   const [gsapReady, setGsapReady] = useState(false)
 
@@ -77,7 +77,7 @@ export default function PostGrid({ posts, columns = 3 }) {
     >
       {posts.map((post) => (
         <div key={post.id} className={styles.cardWrapper}>
-          <PostCard post={post} />
+          <PostCard post={post} imageSizes={imageSizes} mobileCompact={mobileCompact} />
         </div>
       ))}
     </div>
