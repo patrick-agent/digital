@@ -3,28 +3,17 @@ import Footer from "@/components/layout/Footer";
 import HeroAbout from "@/components/artist/about/HeroAbout";
 import BioSection from "@/components/artist/about/BioSection";
 import StreamingBar from "@/components/artist/about/StreamingBar";
+import { buildPageMetadata } from "@/lib/seo";
 
 /** @type {import('next').Metadata} */
-export const metadata = {
-  title: "About — Tachy Artist",
+export const metadata = buildPageMetadata({
+  title: "Giới Thiệu Tachy | Indie Artist, Music Producer & Songwriter",
   description:
-    "Tachy is an independent RnB, Trapchill & Hip-hop artist and music producer — writing, producing, and recording everything on his own.",
-  openGraph: {
-    title: "About — Tachy Artist",
-    description: "Tachy is an independent RnB, Trapchill & Hip-hop artist and music producer — writing, producing, and recording everything on his own.",
-    type: "profile",
-    images: [{ url: "/images/tachy-about.jpg", width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "About — Tachy Artist",
-    description: "Tachy is an independent RnB, Trapchill & Hip-hop artist and music producer.",
-    images: ["/images/tachy-about.jpg"],
-  },
-  alternates: {
-    canonical: "https://tachy.io.vn/about",
-  },
-};
+    "Tìm hiểu về Tachy, indie artist và music producer tự sáng tác, thu âm, phát hành nhạc và xây dựng workflow sáng tạo độc lập.",
+  path: "/about",
+  keywords: ["Tachy", "giới thiệu Tachy", "indie artist", "music producer", "songwriter"],
+  type: "profile",
+})
 
 export default function AboutPage() {
   return (

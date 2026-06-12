@@ -37,6 +37,8 @@ export default function ArticleSchema({ post }) {
     },
     datePublished: publishedAt,
     dateModified: modifiedAt,
+    inLanguage: "vi-VN",
+    isAccessibleForFree: true,
     keywords: (Array.isArray(post.seoKeywords) ? post.seoKeywords : []).join(", ") || (Array.isArray(post.tags) ? post.tags : []).join(", ") || "",
     articleSection: post.category,
     wordCount: plainText.split(/\s+/).filter(Boolean).length,

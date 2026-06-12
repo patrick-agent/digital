@@ -11,7 +11,7 @@ import {
   getPrimaryProductImage,
   stripHtml,
 } from "@/lib/shop/presentation"
-import { siteMetadata } from "@/lib/seo"
+import { buildPageMetadata, defaultRobots, siteMetadata } from "@/lib/seo"
 import ProductCard from "@/components/shop/ProductCard"
 import cardStyles from "@/app/shop/shop-card.module.css"
 import styles from "@/app/shop/shop.module.css"
@@ -40,23 +40,14 @@ export async function generateMetadata({ params }) {
     `Xem giá tham khảo, đặc điểm nổi bật và lý do Tachy gợi ý ${product.name}.`
 
   return {
-    title,
-    description,
-    openGraph: {
+    ...buildPageMetadata({
       title,
       description,
-      type: "website",
-      images: product.images?.[0] ? [{ url: product.images[0] }] : [],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title,
-      description,
-      images: product.images?.[0] ? [product.images[0]] : [],
-    },
-    alternates: {
-      canonical: `${siteMetadata.siteUrl}/shop/${product.slug}`,
-    },
+      path: `/shop/${product.slug}`,
+      image: product.images?.[0],
+      keywords: [product.name, product.category, product.brand, ...(product.tags || [])].filter(Boolean),
+    }),
+    robots: defaultRobots,
   }
 }
 
@@ -90,14 +81,18 @@ export default async function ProductDetailPage({ params }) {
         }
       : undefined,
     url: `${siteMetadata.siteUrl}/shop/${product.slug}`,
-    offers: {
-      "@type": "Offer",
-      price: product.price,
-      priceCurrency: product.currency || "USD",
-      url: product.affiliateUrl || `${siteMetadata.siteUrl}/shop/${product.slug}`,
-      availability: "https://schema.org/InStock",
-      priceValidUntil: new Date(Date.now() + 365 * 24 * 60 * 60 * 1000).toISOString(),
-    },
+    inLanguage: "vi-VN",
+    mainEntityOfPage: `${siteMetadata.siteUrl}/shop/${product.slug}`,
+    offers: product.price > 0
+      ? {
+          "@type": "Offer",
+          price: product.price,
+          priceCurrency: product.currency || "USD",
+          url: product.affiliateUrl || `${siteMetadata.siteUrl}/shop/${product.slug}`,
+          availability: "https://schema.org/InStock",
+          priceValidUntil: new Date(Date.now() + 365 * 24 * 60 * 60 * 1000).toISOString(),
+        }
+      : undefined,
   }
 
   const breadcrumbJsonLd = {
@@ -106,7 +101,7 @@ export default async function ProductDetailPage({ params }) {
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: siteMetadata.siteUrl },
       { "@type": "ListItem", position: 2, name: "Shop", item: `${siteMetadata.siteUrl}/shop` },
-      { "@type": "ListItem", position: 3, name: product.name },
+      { "@type": "ListItem", position: 3, name: product.name, item: `${siteMetadata.siteUrl}/shop/${product.slug}` },
     ],
   }
 
@@ -119,7 +114,7 @@ export default async function ProductDetailPage({ params }) {
           name: item.question,
           acceptedAnswer: {
             "@type": "Answer",
-            text: item.answer,
+            text: stripHtml(item.answer),
           },
         })),
       }

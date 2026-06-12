@@ -1,10 +1,10 @@
 import { Geist, Geist_Mono, Caveat } from "next/font/google";
 import Script from "next/script";
 import SkipLink from "@/components/ui/SkipLink";
+import { absoluteUrl, defaultRobots, siteMetadata } from "@/lib/seo";
 import "./globals.css";
 
-const siteDescription =
-  "Tachy là nghệ sĩ Indie RnB, Trapchill & Hip-hop. Sáng tác, sản xuất âm nhạc, chia sẻ kiến thức studio và chiến lược sáng tạo.";
+const siteDescription = siteMetadata.description;
 
 /**
  * Optimized font loading with display settings for better performance
@@ -35,9 +35,10 @@ const caveat = Caveat({
 
 export const metadata = {
   metadataBase: new URL('https://tachy.io.vn'),
-  title: "Tachy — An Indie Artist",
+  title: "Tachy | Indie Artist, Music Producer & Home Studio Blog",
   description: siteDescription,
-  keywords: ["music", "portfolio", "3D", "interactive", "studio", "artist", "Tachy", "indie"],
+  keywords: ["Tachy", "indie artist Việt Nam", "music producer", "home studio", "music production", "audio gear", "blog âm nhạc", "creative strategy"],
+  robots: defaultRobots,
   icons: {
     icon: [
       { url: "/favicon.png", type: "image/png", sizes: "256x256" },
@@ -51,20 +52,20 @@ export const metadata = {
     google: "rmZiW-EkmfQCHQr7kdW4m4G7Ie9_Dzlu3hpc_KCsrho",
   },
   openGraph: {
-    title: "Tachy — An Indie Artist",
+    title: "Tachy | Indie Artist, Music Producer & Home Studio Blog",
     description: siteDescription,
     type: "website",
     url: "https://tachy.io.vn",
     siteName: "Tachy",
     images: [
-      { url: "/images/tachy-about.jpg", width: 1200, height: 630 },
+      { url: absoluteUrl("/images/tachy-about.jpg"), width: 1200, height: 630 },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tachy — An Indie Artist",
+    title: "Tachy | Indie Artist, Music Producer & Home Studio Blog",
     description: siteDescription,
-    images: ["/images/tachy-about.jpg"],
+    images: [absoluteUrl("/images/tachy-about.jpg")],
   },
 };
 
@@ -107,7 +108,7 @@ export default function RootLayout({ children }) {
                     "@type": "SearchAction",
                     target: {
                       "@type": "EntryPoint",
-                      urlTemplate: "https://tachy.io.vn/search?q={search_term_string}",
+                      urlTemplate: "https://tachy.io.vn/blog?q={search_term_string}",
                     },
                     "query-input": "required name=search_term_string",
                   },

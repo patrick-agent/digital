@@ -7,7 +7,7 @@ import {
   getAllPublishedSlugs,
   getRelatedPublishedPosts,
 } from "@/lib/blog/public-catalog"
-import { siteMetadata } from "@/lib/seo"
+import { buildPageMetadata, defaultRobots, siteMetadata } from "@/lib/seo"
 import { canonicalUrl as getCanonicalUrl, postUrl } from "@/lib/post-utils"
 import { formatBlogCategoryLabel, getBlogCategoryHref, getBlogCategoryMeta } from "@/lib/blog/category-meta"
 import ArticleHero from "@/components/blog/ArticleHero"
@@ -80,12 +80,57 @@ function getPostMetadata(post) {
       images: [image],
     },
     alternates: { canonical },
-    robots: {
-      index: true,
-      follow: true,
-      "max-snippet": -1,
-      "max-image-preview": "large",
-      "max-video-preview": -1,
+    robots: defaultRobots,
+  }
+}
+
+function buildCategoryPageMetadata(category, currentPage) {
+  const categoryMeta = getBlogCategoryMeta(category)
+  const title = currentPage > 1
+    ? `${categoryMeta.label} - Trang ${currentPage} | Blog Tachy`
+    : `${categoryMeta.label} | Blog Tachy`
+  const description = currentPage > 1
+    ? `${categoryMeta.description} Trang ${currentPage} trong archive của ${categoryMeta.label}.`
+    : categoryMeta.description
+
+  return {
+    ...buildPageMetadata({
+      title,
+      description,
+      path: getBlogCategoryHref(category, currentPage),
+      keywords: [categoryMeta.label, "blog Tachy", "music production", "home studio"],
+    }),
+    robots: defaultRobots,
+  }
+}
+
+function buildCategoryCollectionSchema(category, posts, currentPage) {
+  const categoryMeta = getBlogCategoryMeta(category)
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: currentPage > 1
+      ? `${categoryMeta.label} - Trang ${currentPage} | Blog Tachy`
+      : `${categoryMeta.label} | Blog Tachy`,
+    description: categoryMeta.description,
+    url: `${siteMetadata.siteUrl}${getBlogCategoryHref(category, currentPage)}`,
+    inLanguage: "vi-VN",
+    isPartOf: {
+      "@type": "Blog",
+      name: "Tachy Blog",
+      url: `${siteMetadata.siteUrl}/blog`,
+    },
+    mainEntity: {
+      "@type": "ItemList",
+      itemListOrder: "https://schema.org/ItemListOrderDescending",
+      numberOfItems: posts.length,
+      itemListElement: posts.map((post, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        url: `${siteMetadata.siteUrl}${postUrl(post)}`,
+        name: post.title,
+      })),
     },
   }
 }
@@ -107,18 +152,8 @@ export async function generateMetadata({ params, searchParams }) {
 
     if (categories.includes(decoded)) {
       const currentPage = normalizePageParam(((await searchParams) || {}).page)
-      const categoryMeta = getBlogCategoryMeta(decoded)
 
-      return {
-        title: currentPage > 1
-          ? `${categoryMeta.label} - Trang ${currentPage} | Blog Tachy`
-          : `${categoryMeta.label} | Blog Tachy`,
-        description: currentPage > 1
-          ? `${categoryMeta.description} Trang ${currentPage} trong archive của ${categoryMeta.label}.`
-          : categoryMeta.description,
-        alternates: { canonical: `${siteMetadata.siteUrl}${getBlogCategoryHref(decoded, currentPage)}` },
-        robots: { index: true, follow: true },
-      }
+      return buildCategoryPageMetadata(decoded, currentPage)
     }
 
     return {}
@@ -251,6 +286,7 @@ function renderCategoryPage({ category, posts, meta, categories, currentPage }) 
   const categoryMeta = getBlogCategoryMeta(category)
   const firstItemIndex = posts.length > 0 ? ((currentPage - 1) * CATEGORY_ARCHIVE_PAGE_SIZE) + 1 : 0
   const lastItemIndex = posts.length > 0 ? firstItemIndex + posts.length - 1 : 0
+  const categoryCollectionJsonLd = buildCategoryCollectionSchema(category, posts, currentPage)
 
   const breadcrumbItems = [
     { label: "Home", href: "/" },
@@ -260,6 +296,10 @@ function renderCategoryPage({ category, posts, meta, categories, currentPage }) 
 
   return (
     <div className={archiveStyles.page}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(categoryCollectionJsonLd).replace(/</g, "\\u003c") }}
+      />
       <section className={archiveStyles.hero}>
         <div className={archiveStyles.heroPanel}>
           <div className={archiveStyles.heroContent}>

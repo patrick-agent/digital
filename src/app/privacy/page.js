@@ -1,28 +1,15 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { buildPageMetadata } from "@/lib/seo";
 import styles from "@/app/legal.module.css";
 
-export const metadata = {
-  title: "Privacy Policy — Tachy Artist",
+export const metadata = buildPageMetadata({
+  title: "Privacy Policy | Tachy",
   description:
-    "Privacy policy for the Tachy Artist website. Learn how we collect, use, and protect your personal data.",
-  openGraph: {
-    title: "Privacy Policy — Tachy Artist",
-    description:
-      "Privacy policy for the Tachy Artist website.",
-    type: "website",
-    images: [{ url: "/images/tachy-about.jpg", width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Privacy Policy — Tachy Artist",
-    description: "Privacy policy for the Tachy Artist website.",
-    images: ["/images/tachy-about.jpg"],
-  },
-  alternates: {
-    canonical: "https://tachy.io.vn/privacy",
-  },
-};
+    "Chính sách quyền riêng tư của Tachy, bao gồm cách thu thập, sử dụng và bảo vệ dữ liệu cá nhân khi bạn sử dụng website.",
+  path: "/privacy",
+  keywords: ["privacy policy", "chính sách quyền riêng tư", "Tachy"],
+})
 
 export default function PrivacyPage() {
   return (

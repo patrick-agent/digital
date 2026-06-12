@@ -1,28 +1,15 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { buildPageMetadata } from "@/lib/seo";
 import styles from "@/app/legal.module.css";
 
-export const metadata = {
-  title: "Terms & Conditions — Tachy Artist",
+export const metadata = buildPageMetadata({
+  title: "Terms & Conditions | Tachy",
   description:
-    "Terms and conditions for using the Tachy Artist website, including content usage, intellectual property, and disclaimers.",
-  openGraph: {
-    title: "Terms & Conditions — Tachy Artist",
-    description:
-      "Terms and conditions for using the Tachy Artist website.",
-    type: "website",
-    images: [{ url: "/images/tachy-about.jpg", width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Terms & Conditions — Tachy Artist",
-    description: "Terms and conditions for using the Tachy Artist website.",
-    images: ["/images/tachy-about.jpg"],
-  },
-  alternates: {
-    canonical: "https://tachy.io.vn/terms",
-  },
-};
+    "Điều khoản và điều kiện sử dụng website Tachy, bao gồm quyền nội dung, liên kết bên thứ ba, tuyên bố miễn trừ và trách nhiệm pháp lý.",
+  path: "/terms",
+  keywords: ["terms and conditions", "điều khoản sử dụng", "Tachy"],
+})
 
 export default function TermsPage() {
   return (

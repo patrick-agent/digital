@@ -1,13 +1,13 @@
 import ContactPageClient from "@/components/contact/ContactPage"
+import { buildPageMetadata } from "@/lib/seo"
 
-export const metadata = {
-  title: "Contact — Tachy Artist",
+export const metadata = buildPageMetadata({
+  title: "Liên Hệ Tachy | Booking, Hợp Tác & Tư Vấn",
   description:
-    "Get in touch with Tachy. Send a message, book a consultation, or connect on social media.",
-  alternates: {
-    canonical: "https://tachy.io.vn/contact",
-  },
-}
+    "Liên hệ Tachy để booking, hợp tác sáng tạo, tư vấn home studio hoặc trao đổi về music production và digital projects.",
+  path: "/contact",
+  keywords: ["liên hệ Tachy", "booking nghệ sĩ", "hợp tác âm nhạc", "tư vấn home studio"],
+})
 
 export default function ContactPage() {
   return <ContactPageClient />

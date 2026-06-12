@@ -2,7 +2,7 @@ import Link from "next/link"
 import { Suspense } from "react"
 import { listPublicProducts } from "@/lib/shop/public-catalog"
 import { buildShopHref, SHOP_PRICE_RANGE_LABELS, SHOP_SORT_LABELS } from "@/lib/shop/query"
-import { siteMetadata } from "@/lib/seo"
+import { buildPageMetadata, defaultRobots, siteMetadata } from "@/lib/seo"
 import ProductCard from "@/components/shop/ProductCard"
 import FilterSelect from "./FilterSelect"
 import cardStyles from "./shop-card.module.css"
@@ -10,22 +10,68 @@ import styles from "./shop.module.css"
 
 export const revalidate = 300
 
-export const metadata = {
-  title: "Shop Home Studio Cho Producer | Tachy",
-  description:
-    "Khám phá catalog gear home studio do Tachy chọn lọc: audio interface, mic, tai nghe, monitor, phụ kiện và SSD với giá tham khảo cùng link affiliate minh bạch.",
-  openGraph: {
-    title: "Shop Home Studio Cho Producer | Tachy",
-    description: "Gear, phụ kiện và storage do Tachy chọn lọc cho producer và home studio.",
-    type: "website",
-  },
-  alternates: {
-    canonical: `${siteMetadata.siteUrl}/shop`,
-  },
-}
+const SHOP_TITLE = "Shop Home Studio Gear | Audio Interface, Mic & Monitor | Tachy"
+const SHOP_DESCRIPTION = "Khám phá gear home studio do Tachy chọn lọc: audio interface, micro, tai nghe, loa kiểm âm, SSD và phụ kiện cho producer."
 
 function normalizeSearchParam(value) {
   return typeof value === "string" ? value : ""
+}
+
+export async function generateMetadata({ searchParams }) {
+  const resolvedSearchParams = (await searchParams) || {}
+  const category = normalizeSearchParam(resolvedSearchParams.category)
+  const priceRange = normalizeSearchParam(resolvedSearchParams.priceRange)
+  const sort = normalizeSearchParam(resolvedSearchParams.sort)
+  const q = normalizeSearchParam(resolvedSearchParams.q)
+  const hasFilters = Boolean(category || priceRange || sort || q)
+
+  return {
+    ...buildPageMetadata({
+      title: SHOP_TITLE,
+      description: SHOP_DESCRIPTION,
+      path: "/shop",
+      keywords: ["shop home studio", "audio interface", "micro thu âm", "loa kiểm âm", "tai nghe studio", "Tachy"],
+    }),
+    robots: hasFilters ? { ...defaultRobots, index: false } : defaultRobots,
+  }
+}
+
+function buildShopCollectionSchema(products, totalCount) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: SHOP_TITLE,
+    description: SHOP_DESCRIPTION,
+    url: `${siteMetadata.siteUrl}/shop`,
+    inLanguage: "vi-VN",
+    isPartOf: {
+      "@type": "WebSite",
+      name: siteMetadata.title,
+      url: siteMetadata.siteUrl,
+    },
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: totalCount || products.length,
+      itemListElement: products.map((p, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Product",
+          name: p.name,
+          url: `${siteMetadata.siteUrl}/shop/${p.slug}`,
+          category: p.category,
+          offers: p.price
+            ? {
+                "@type": "Offer",
+                price: p.price,
+                priceCurrency: p.currency || "USD",
+                url: p.affiliateUrl || `${siteMetadata.siteUrl}/shop/${p.slug}`,
+              }
+            : undefined,
+        },
+      })),
+    },
+  }
 }
 
 function getActiveFilters({ category, priceRange, sort, q }) {
@@ -69,38 +115,13 @@ export default async function ShopPage({ searchParams }) {
   const activeFilters = getActiveFilters({ category, priceRange, sort, q })
   const hasFilters = activeFilters.length > 0
 
-  const itemListJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    name: "Shop Home Studio Tachy",
-    description: "Catalog gear, phụ kiện và storage Tachy chọn lọc cho producer và home studio.",
-    url: `${siteMetadata.siteUrl}/shop`,
-    numberOfItems: products.length,
-    itemListElement: products.map((p, i) => ({
-      "@type": "ListItem",
-      position: i + 1,
-      item: {
-        "@type": "Product",
-        name: p.name,
-        url: `${siteMetadata.siteUrl}/shop/${p.slug}`,
-        category: p.category,
-        offers: p.price
-          ? {
-              "@type": "Offer",
-              price: p.price,
-              priceCurrency: p.currency || "USD",
-              url: p.affiliateUrl || `${siteMetadata.siteUrl}/shop/${p.slug}`,
-            }
-          : undefined,
-      },
-    })),
-  }
+  const shopCollectionJsonLd = buildShopCollectionSchema(products, totalCount)
 
   return (
     <div className={styles.page}>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(shopCollectionJsonLd).replace(/</g, "\\u003c") }}
       />
 
       <section className={styles.hero}>

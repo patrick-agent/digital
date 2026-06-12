@@ -1,24 +1,13 @@
 import { Suspense } from 'react';
 import BlogClient from './BlogClient';
+import { buildPageMetadata } from '@/lib/seo';
 
-export const metadata = {
-  title: 'Blog — Another Me',
-  description: 'Digital Marketing insights, chiến lược, và kiến thức từ Tachy.',
-  openGraph: {
-    title: 'Blog — Another Me',
-    description: 'Digital Marketing insights, chiến lược, và kiến thức từ Tachy.',
-    type: 'website',
-    url: 'https://tachy.io.vn/digital/blog',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Blog — Another Me',
-    description: 'Digital Marketing insights, chiến lược, và kiến thức từ Tachy.',
-  },
-  alternates: {
-    canonical: 'https://tachy.io.vn/digital/blog',
-  },
-};
+export const metadata = buildPageMetadata({
+  title: 'Blog Digital Marketing & Creative Strategy | Another Me',
+  description: 'Bài viết về digital marketing, content strategy, SEO và hệ thống tăng trưởng từ góc nhìn thực chiến của Tachy.',
+  path: '/digital/blog',
+  keywords: ['digital marketing', 'content strategy', 'SEO', 'growth systems', 'Another Me'],
+});
 
 export default function DigitalBlogPage() {
   return (

@@ -1,5 +1,5 @@
 import { readMusic } from "@/lib/db"
-import { siteMetadata } from "@/lib/seo"
+import { buildPageMetadata, siteMetadata } from "@/lib/seo"
 import ReleaseShelf3D from "@/components/artist/bio-music/ReleaseShelf3D"
 import ReleaseCard from "@/components/artist/bio-music/ReleaseCard"
 import SpotlightCard from "@/components/canvas/SpotlightCard"
@@ -7,26 +7,13 @@ import styles from "./page.module.css"
 
 export const revalidate = 300
 
-export const metadata = {
-  title: "Bio Music — Tachy Artist",
+export const metadata = buildPageMetadata({
+  title: "Nhạc Của Tachy | Singles, EP & Discography",
   description:
-    "All releases by Tachy — RnB, Trapchill & Hip-hop singles and EPs. Listen on Spotify, Apple Music, YouTube and more.",
-  openGraph: {
-    title: "Bio Music — Tachy Artist",
-    description: "Complete discography of indie artist Tachy — RnB, Trapchill & Hip-hop.",
-    type: "website",
-    images: [{ url: "/images/tachy-about.jpg", width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Bio Music — Tachy Artist",
-    description: "Complete discography of indie artist Tachy — RnB, Trapchill & Hip-hop.",
-    images: ["/images/tachy-about.jpg"],
-  },
-  alternates: {
-    canonical: "https://tachy.io.vn/bio-music",
-  },
-}
+    "Nghe toàn bộ discography của Tachy gồm single, EP và các bản phát hành Indie RnB, Trapchill, Hip-hop trên nhiều nền tảng.",
+  path: "/bio-music",
+  keywords: ["Tachy music", "discography", "single", "EP", "indie RnB", "trapchill"],
+})
 
 export default async function BioMusicPage() {
   let releases = []

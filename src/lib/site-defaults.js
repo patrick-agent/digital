@@ -1,9 +1,9 @@
 export const defaultSiteSettings = {
   siteTitle: "Studio 3D",
-  seoTitle: "Tachy — Indie Artist & 3D Creator",
+  seoTitle: "Tachy | Indie Artist, Music Producer & Home Studio Blog",
   seoDescription:
-    "Tachy là một nghệ sĩ độc lập tự sáng tác và phân phối sản phẩm âm nhạc của chính mình lên đa nền tảng âm nhạc số. Với triết lý “âm nhạc là sự thật của cảm xúc”, các tác phẩm của nghệ sĩ Indie Tachy thường mang màu sắc sâu lắng, mộng mị nhưng vẫn hiện đại và giàu sáng tạo. ",
-  seoKeywords: ["Tachy", "indie artist", "3D portfolio", "music producer", "web development", "cyberpunk"],
+    "Khám phá nhạc của Tachy, kinh nghiệm home studio, music production, audio gear và chiến lược sáng tạo dành cho artist, producer và creator.",
+  seoKeywords: ["Tachy", "indie artist Việt Nam", "music producer", "home studio", "music production", "audio gear", "blog âm nhạc", "creative strategy"],
   branding: {
     siteName: "Tachy",
     siteSubtitle: "An Indie Artist",
@@ -56,6 +56,7 @@ export const defaultSiteSettings = {
     ],
     otherLinks: [
       { label: "Another Me", href: "/digital", enabled: true },
+      { label: "Digital Blog", href: "/digital/blog", enabled: true },
       { label: "Blog", href: "/blog", enabled: true },
       { label: "About Tachy", href: "/about", enabled: true },
       { label: "Shop", href: "/shop", enabled: true },

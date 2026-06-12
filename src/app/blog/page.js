@@ -1,29 +1,63 @@
 import { listPublishedPosts, getBlogCategories, getFeaturedPublishedPost } from "@/lib/blog/public-catalog"
-import { siteMetadata } from "@/lib/seo"
+import { canonicalUrl } from "@/lib/post-utils"
+import { formatBlogCategoryLabel, getBlogCategoryHref } from "@/lib/blog/category-meta"
+import { buildPageMetadata, defaultRobots, siteMetadata } from "@/lib/seo"
 import BlogClient from "@/components/blog/BlogClient"
 
 export const dynamic = "force-dynamic"
 
-export const metadata = {
-  title: "Blog — Tachy",
-  description: "Read articles on music production, home studio gear, SEO, and creative strategy from Tachy.",
-  openGraph: {
-    title: "Blog — Tachy",
-    description: "Khám phá các bài viết về sản xuất âm nhạc, thiết bị phòng thu, SEO và chiến lược sáng tạo từ Tachy.",
-    type: "website",
+const BLOG_TITLE = "Blog Music Production, Home Studio & Audio Gear | Tachy"
+const BLOG_DESCRIPTION = "Hướng dẫn music production, home studio, mixing, audio gear và workflow sáng tạo dành cho producer, artist và creator."
+
+export async function generateMetadata({ searchParams }) {
+  const resolvedSearchParams = (await searchParams) || {}
+  const category = normalizeQueryParam(resolvedSearchParams.category)
+  const q = normalizeQueryParam(resolvedSearchParams.q)
+  const hasFilters = Boolean(category || q)
+
+  return {
+    ...buildPageMetadata({
+      title: BLOG_TITLE,
+      description: BLOG_DESCRIPTION,
+      path: "/blog",
+      keywords: ["music production", "home studio", "mixing", "audio gear", "blog âm nhạc", "Tachy"],
+    }),
+    robots: hasFilters ? { ...defaultRobots, index: false } : defaultRobots,
+  }
+}
+
+function buildBlogCollectionSchema(posts, categories) {
+  const previewPosts = posts.slice(0, 24)
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: BLOG_TITLE,
+    description: BLOG_DESCRIPTION,
     url: `${siteMetadata.siteUrl}/blog`,
-    images: [{ url: "/images/tachy-about.jpg", width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Blog — Tachy",
-    description: "Music production, home studio gear, SEO, and creative strategy from Tachy.",
-    images: ["/images/tachy-about.jpg"],
-  },
-  alternates: {
-    canonical: `${siteMetadata.siteUrl}/blog`,
-  },
-  robots: { index: true, follow: true },
+    inLanguage: "vi-VN",
+    isPartOf: {
+      "@type": "WebSite",
+      name: siteMetadata.title,
+      url: siteMetadata.siteUrl,
+    },
+    hasPart: categories.map((category) => ({
+      "@type": "WebPage",
+      name: formatBlogCategoryLabel(category),
+      url: `${siteMetadata.siteUrl}${getBlogCategoryHref(category)}`,
+    })),
+    mainEntity: {
+      "@type": "ItemList",
+      itemListOrder: "https://schema.org/ItemListOrderDescending",
+      numberOfItems: previewPosts.length,
+      itemListElement: previewPosts.map((post, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        url: `${siteMetadata.siteUrl}${canonicalUrl(post)}`,
+        name: post.title,
+      })),
+    },
+  }
 }
 
 function normalizeQueryParam(value) {
@@ -59,13 +93,21 @@ export default async function BlogPage({ searchParams }) {
     initialSearchQuery = ""
   }
 
+  const blogCollectionJsonLd = buildBlogCollectionSchema(posts, categories)
+
   return (
-    <BlogClient
-      initialPosts={posts}
-      categories={categories}
-      featuredPost={featuredPost}
-      initialActiveCategory={initialActiveCategory}
-      initialSearchQuery={initialSearchQuery}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogCollectionJsonLd).replace(/</g, "\\u003c") }}
+      />
+      <BlogClient
+        initialPosts={posts}
+        categories={categories}
+        featuredPost={featuredPost}
+        initialActiveCategory={initialActiveCategory}
+        initialSearchQuery={initialSearchQuery}
+      />
+    </>
   )
 }
