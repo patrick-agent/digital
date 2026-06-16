@@ -3,13 +3,21 @@
 import { useRef } from "react"
 import styles from "./CategoryNav.module.css"
 
-export default function CategoryNav({ categories, active, counts = {}, labels = {}, onSelect }) {
+export default function CategoryNav({
+  categories,
+  active,
+  counts = {},
+  labels = {},
+  onSelect,
+  ariaLabel = "Lọc blog theo danh mục",
+  forceVisible = false,
+}) {
   const scrollRef = useRef(null)
 
   const totalCount = Object.values(counts).reduce((total, value) => total + value, 0)
 
   return (
-    <nav className={styles.wrapper} ref={scrollRef} aria-label="Lọc blog theo danh mục">
+    <nav className={styles.wrapper} ref={scrollRef} aria-label={ariaLabel} style={forceVisible ? { display: "block" } : undefined}>
       <div className={styles.track}>
         <button
           type="button"

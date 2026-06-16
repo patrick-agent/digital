@@ -10,6 +10,7 @@ import {
 import { buildPageMetadata, defaultRobots, siteMetadata } from "@/lib/seo"
 import { canonicalUrl as getCanonicalUrl, postUrl } from "@/lib/post-utils"
 import { formatBlogCategoryLabel, getBlogCategoryHref, getBlogCategoryMeta } from "@/lib/blog/category-meta"
+import { getRedirectedBlogSlug } from "@/lib/blog/canonical-slugs"
 import ArticleHero from "@/components/blog/ArticleHero"
 import ArticleBody, { ArticleSummary } from "@/components/blog/ArticleBody"
 import ArticleSchema from "@/components/blog/ArticleSchema"
@@ -141,6 +142,13 @@ export async function generateMetadata({ params, searchParams }) {
 
   if (segments.length === 1) {
     const [first] = segments
+    const redirectedSlug = getRedirectedBlogSlug(first)
+
+    if (redirectedSlug) {
+      const redirectedResult = await getPublishedPost({ slug: redirectedSlug })
+      return redirectedResult.success ? getPostMetadata(redirectedResult.data.post) : {}
+    }
+
     const result = await getPublishedPost({ slug: first })
 
     if (result.success) {
@@ -161,7 +169,15 @@ export async function generateMetadata({ params, searchParams }) {
 
   if (segments.length >= 2) {
     const [categoryRaw, ...rest] = segments
-    const result = await getPublishedPost({ slug: rest.join("/"), category: categoryRaw })
+    const lookupSlug = rest.join("/")
+    const redirectedSlug = getRedirectedBlogSlug(lookupSlug)
+
+    if (redirectedSlug) {
+      const redirectedResult = await getPublishedPost({ slug: redirectedSlug })
+      return redirectedResult.success ? getPostMetadata(redirectedResult.data.post) : {}
+    }
+
+    const result = await getPublishedPost({ slug: lookupSlug, category: categoryRaw })
     if (!result.success) return {}
 
     return getPostMetadata(result.data.post)
@@ -176,6 +192,12 @@ export default async function BlogCatchAllPage({ params, searchParams }) {
 
   if (segments.length === 1) {
     const [first] = segments
+    const redirectedSlug = getRedirectedBlogSlug(first)
+
+    if (redirectedSlug) {
+      permanentRedirect(`/blog/${redirectedSlug}`)
+    }
+
     const result = await getPublishedPost({ slug: first })
 
     if (result.success) {
@@ -218,7 +240,14 @@ export default async function BlogCatchAllPage({ params, searchParams }) {
 
   if (segments.length >= 2) {
     const [categoryRaw, ...rest] = segments
-    const result = await getPublishedPost({ slug: rest.join("/"), category: categoryRaw })
+    const lookupSlug = rest.join("/")
+    const redirectedSlug = getRedirectedBlogSlug(lookupSlug)
+
+    if (redirectedSlug) {
+      permanentRedirect(`/blog/${redirectedSlug}`)
+    }
+
+    const result = await getPublishedPost({ slug: lookupSlug, category: categoryRaw })
     if (!result.success) notFound()
 
     permanentRedirect(postUrl(result.data.post))

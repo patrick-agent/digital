@@ -66,6 +66,34 @@ async function generateTintedFavicon(inputBuffer, size) {
   }).png().toBuffer();
 }
 
+async function createIcoFromPngBuffer(inputBuffer) {
+  const pngBuffer = await sharp(inputBuffer)
+    .resize(32, 32, { fit: "cover" })
+    .png()
+    .toBuffer();
+
+  const metadata = await sharp(pngBuffer).metadata();
+  const width = metadata.width || 32;
+  const height = metadata.height || 32;
+
+  const iconDir = Buffer.alloc(6);
+  iconDir.writeUInt16LE(0, 0);
+  iconDir.writeUInt16LE(1, 2);
+  iconDir.writeUInt16LE(1, 4);
+
+  const iconEntry = Buffer.alloc(16);
+  iconEntry.writeUInt8(width >= 256 ? 0 : width, 0);
+  iconEntry.writeUInt8(height >= 256 ? 0 : height, 1);
+  iconEntry.writeUInt8(0, 2);
+  iconEntry.writeUInt8(0, 3);
+  iconEntry.writeUInt16LE(1, 4);
+  iconEntry.writeUInt16LE(32, 6);
+  iconEntry.writeUInt32LE(pngBuffer.length, 8);
+  iconEntry.writeUInt32LE(iconDir.length + iconEntry.length, 12);
+
+  return Buffer.concat([iconDir, iconEntry, pngBuffer]);
+}
+
 async function generateFavicon() {
   // Verify input exists
   if (!fs.existsSync(inputLogo)) {
@@ -75,25 +103,35 @@ async function generateFavicon() {
 
   const inputBuffer = fs.readFileSync(inputLogo);
 
-  // ── 1. Favicon PNG (256×256) with purple accent tint ──
+  // ── 1. Public favicon PNG (512×512) with purple accent tint ──
   const faviconPngPath = path.join(publicDir, "favicon.png");
   const favicon256 = await generateTintedFavicon(inputBuffer, 512);
   await sharp(favicon256).png({ compressionLevel: 9 }).toFile(faviconPngPath);
-  console.log("✓ Generated public/favicon.png (256x256) — purple accent tint, white bg removed");
+  console.log("✓ Generated public/favicon.png (512x512) — purple accent tint, white bg removed");
 
-  // ── 2. Favicon ICO (32×32) with purple accent tint ──
+  // ── 2. App Router icon.png (512×512) for file-based metadata ──
+  const appIconPath = path.join(appDir, "icon.png");
+  fs.writeFileSync(appIconPath, favicon256);
+  console.log("✓ Generated src/app/icon.png (512x512) for App Router metadata");
+
+  // ── 3. Favicon ICO (32×32) as a real .ico file ──
   const faviconIcoPath = path.join(appDir, "favicon.ico");
-  const favicon32 = await generateTintedFavicon(inputBuffer, 50);
-  await sharp(favicon32).toFile(faviconIcoPath);
-  console.log("✓ Generated src/app/favicon.ico (32x32) — purple accent tint, white bg removed");
+  const favicon32 = await generateTintedFavicon(inputBuffer, 32);
+  const faviconIco = await createIcoFromPngBuffer(favicon32);
+  fs.writeFileSync(faviconIcoPath, faviconIco);
+  console.log("✓ Generated src/app/favicon.ico (32x32) as a valid ICO file");
 
-  // ── 3. Apple touch icon (180×180) with purple accent tint ──
+  // ── 4. Apple touch icon (180×180) for public + App Router ──
   const appleTouchPath = path.join(publicDir, "apple-touch-icon.png");
   const apple180 = await generateTintedFavicon(inputBuffer, 180);
   await sharp(apple180).png({ compressionLevel: 9 }).toFile(appleTouchPath);
   console.log("✓ Generated public/apple-touch-icon.png (180x180) — purple accent tint, white bg removed");
 
-  // ── 4. Navbar logo (100×100) — larger, no color change ──
+  const appAppleIconPath = path.join(appDir, "apple-icon.png");
+  fs.writeFileSync(appAppleIconPath, apple180);
+  console.log("✓ Generated src/app/apple-icon.png (180x180) for App Router metadata");
+
+  // ── 5. Navbar logo (100×100) — larger, no color change ──
   const logoPath = path.join(publicDir, "logo.png");
   await sharp(inputBuffer)
     .resize(100, 100, { fit: "contain", background: { r: 0, g: 0, b: 0, alpha: 0 } })

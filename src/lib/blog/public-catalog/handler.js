@@ -12,6 +12,7 @@ import {
   PublicBlogPostSchema,
   createPublicBlogFailure,
 } from "./spec.js"
+import { filterCanonicalBlogPosts } from "../canonical-slugs.js"
 
 const POSTS_PER_PAGE = 9
 
@@ -49,7 +50,8 @@ export class PublicBlogHandler {
     try {
       const { category, tag, q, page = 1, limit = POSTS_PER_PAGE } = parsed.data
       const result = await readPosts({ status: "published", page: 1, limit: 9999 })
-      let posts = result.data
+      const canonicalPosts = filterCanonicalBlogPosts(result.data)
+      let posts = canonicalPosts
 
       if (category) {
         posts = posts.filter((p) => p.category === category)
@@ -71,7 +73,7 @@ export class PublicBlogHandler {
       const offset = (page - 1) * limit
       const data = posts.slice(offset, offset + limit)
 
-      const categories = getCategories(result.data)
+      const categories = getCategories(canonicalPosts)
 
       return PublicBlogListResultSchema.parse(
         PublicBlogListSuccessSchema.parse({
@@ -154,7 +156,8 @@ export class PublicBlogHandler {
 
     try {
       const result = await readPosts({ status: "published", page: 1, limit: 9999 })
-      const candidates = result.data.filter((p) => p.id !== postId)
+      const canonicalPosts = filterCanonicalBlogPosts(result.data)
+      const candidates = canonicalPosts.filter((p) => p.id !== postId)
 
       const sameCategory = category
         ? candidates.filter((p) => p.category === category)
@@ -199,7 +202,7 @@ export class PublicBlogHandler {
   async categories() {
     try {
       const result = await readPosts({ status: "published", page: 1, limit: 9999 })
-      return getCategories(result.data)
+      return getCategories(filterCanonicalBlogPosts(result.data))
     } catch {
       return []
     }
@@ -208,7 +211,7 @@ export class PublicBlogHandler {
   async featured() {
     try {
       const result = await readPosts({ status: "published", page: 1, limit: 9999 })
-      const sorted = [...result.data].sort(
+      const sorted = [...filterCanonicalBlogPosts(result.data)].sort(
         (a, b) => new Date(b.publishedAt || b.createdAt) - new Date(a.publishedAt || a.createdAt)
       )
       return sorted[0] || null
@@ -220,7 +223,7 @@ export class PublicBlogHandler {
   async allSlugs() {
     try {
       const result = await readPosts({ status: "published", page: 1, limit: 9999 })
-      return result.data.map((p) => ({
+      return filterCanonicalBlogPosts(result.data).map((p) => ({
         category: p.category,
         slug: p.slug,
         updatedAt: p.updatedAt || p.publishedAt || new Date().toISOString(),
@@ -234,7 +237,7 @@ export class PublicBlogHandler {
   async allTags() {
     try {
       const result = await readPosts({ status: "published", page: 1, limit: 9999 })
-      const tags = [...new Set(result.data.flatMap((p) => p.tags || []))].filter(Boolean)
+      const tags = [...new Set(filterCanonicalBlogPosts(result.data).flatMap((p) => p.tags || []))].filter(Boolean)
       return tags.sort()
     } catch {
       return []

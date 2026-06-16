@@ -1,11 +1,7 @@
-import Link from "next/link"
-import { Suspense } from "react"
 import { listPublicProducts } from "@/lib/shop/public-catalog"
-import { buildShopHref, SHOP_PRICE_RANGE_LABELS, SHOP_SORT_LABELS } from "@/lib/shop/query"
+import { SHOP_PRICE_RANGE_LABELS, SHOP_SORT_LABELS } from "@/lib/shop/query"
 import { buildPageMetadata, defaultRobots, siteMetadata } from "@/lib/seo"
-import ProductCard from "@/components/shop/ProductCard"
-import FilterSelect from "./FilterSelect"
-import cardStyles from "./shop-card.module.css"
+import ShopClient from "@/components/shop/ShopClient"
 import styles from "./shop.module.css"
 
 export const revalidate = 300
@@ -14,7 +10,7 @@ const SHOP_TITLE = "Shop Home Studio Gear | Audio Interface, Mic & Monitor | Tac
 const SHOP_DESCRIPTION = "Khám phá gear home studio do Tachy chọn lọc: audio interface, micro, tai nghe, loa kiểm âm, SSD và phụ kiện cho producer."
 
 function normalizeSearchParam(value) {
-  return typeof value === "string" ? value : ""
+  return typeof value === "string" ? value.trim() : ""
 }
 
 export async function generateMetadata({ searchParams }) {
@@ -74,22 +70,15 @@ function buildShopCollectionSchema(products, totalCount) {
   }
 }
 
-function getActiveFilters({ category, priceRange, sort, q }) {
-  return [
-    category ? `Danh mục: ${category}` : null,
-    priceRange && SHOP_PRICE_RANGE_LABELS[priceRange]
-      ? `Giá: ${SHOP_PRICE_RANGE_LABELS[priceRange]}`
-      : null,
-    sort && SHOP_SORT_LABELS[sort] ? `Sắp xếp: ${SHOP_SORT_LABELS[sort]}` : null,
-    q ? `Từ khóa: “${q}”` : null,
-  ].filter(Boolean)
+function normalizeSelectValue(value, labels) {
+  return value && Object.hasOwn(labels, value) ? value : ""
 }
 
 export default async function ShopPage({ searchParams }) {
   const resolvedSearchParams = (await searchParams) || {}
   const category = normalizeSearchParam(resolvedSearchParams.category)
-  const priceRange = normalizeSearchParam(resolvedSearchParams.priceRange)
-  const sort = normalizeSearchParam(resolvedSearchParams.sort)
+  const priceRange = normalizeSelectValue(normalizeSearchParam(resolvedSearchParams.priceRange), SHOP_PRICE_RANGE_LABELS)
+  const sort = normalizeSelectValue(normalizeSearchParam(resolvedSearchParams.sort), SHOP_SORT_LABELS)
   const q = normalizeSearchParam(resolvedSearchParams.q)
 
   let products = []
@@ -98,7 +87,7 @@ export default async function ShopPage({ searchParams }) {
   let catalogError = ""
 
   try {
-    const result = await listPublicProducts({ category, priceRange, sort, q })
+    const result = await listPublicProducts()
 
     if (result.success) {
       products = result.data.products
@@ -112,8 +101,7 @@ export default async function ShopPage({ searchParams }) {
     catalogError = "Không thể tải catalog shop lúc này."
   }
 
-  const activeFilters = getActiveFilters({ category, priceRange, sort, q })
-  const hasFilters = activeFilters.length > 0
+  const initialActiveCategory = categories.includes(category) ? category : null
 
   const shopCollectionJsonLd = buildShopCollectionSchema(products, totalCount)
 
@@ -150,61 +138,15 @@ export default async function ShopPage({ searchParams }) {
         </div>
       </section>
 
-      {categories.length > 0 && (
-        <nav className={cardStyles.categoryRail} aria-label="Lọc shop theo danh mục">
-          <Link
-            href={buildShopHref(resolvedSearchParams, { category: "" })}
-            className={`${cardStyles.categoryChip} ${!category ? cardStyles.categoryChipActive : ""}`}
-          >
-            Tất cả
-          </Link>
-          {categories.map((item) => (
-            <Link
-              key={item}
-              href={buildShopHref(resolvedSearchParams, { category: item })}
-              className={`${cardStyles.categoryChip} ${category === item ? cardStyles.categoryChipActive : ""}`}
-            >
-              {item}
-            </Link>
-          ))}
-        </nav>
-      )}
-
-      <Suspense fallback={<div className={styles.filterBar}><p className={cardStyles.empty}>Đang tải bộ lọc…</p></div>}>
-        <FilterSelect />
-      </Suspense>
-
-      <div className={styles.filterDivider} />
-
-      <div className={styles.resultsBar} aria-live="polite">
-        <div className={styles.resultsMeta}>
-          <p className={styles.resultsCount}>{products.length} sản phẩm phù hợp</p>
-          <p className={styles.resultsSummary}>
-            {hasFilters
-              ? activeFilters.join(" · ")
-              : "Đang hiển thị toàn bộ catalog shop do Tachy chọn lọc cho workflow thu, mix và sản xuất tại nhà."}
-          </p>
-        </div>
-        {hasFilters && (
-          <Link href="/shop" className={styles.clearFilters}>
-            Xóa bộ lọc
-          </Link>
-        )}
-      </div>
-
-      <section className={cardStyles.gridSection}>
-        {products.length === 0 ? (
-          <p className={cardStyles.empty}>
-            {catalogError || "Chưa có sản phẩm phù hợp với bộ lọc hiện tại. Hãy thử nới rộng tiêu chí tìm kiếm."}
-          </p>
-        ) : (
-          <div className={cardStyles.grid}>
-            {products.map((product, index) => (
-              <ProductCard key={product.id} product={product} index={index} />
-            ))}
-          </div>
-        )}
-      </section>
+      <ShopClient
+        initialProducts={products}
+        categories={categories}
+        catalogError={catalogError}
+        initialActiveCategory={initialActiveCategory}
+        initialPriceRange={priceRange}
+        initialSort={sort}
+        initialSearchQuery={q}
+      />
     </div>
   )
 }

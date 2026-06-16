@@ -39,15 +39,6 @@ export const metadata = {
   description: siteDescription,
   keywords: ["Tachy", "indie artist Việt Nam", "music producer", "home studio", "music production", "audio gear", "blog âm nhạc", "creative strategy"],
   robots: defaultRobots,
-  icons: {
-    icon: [
-      { url: "/favicon.png", type: "image/png", sizes: "256x256" },
-      { url: "/favicon.ico", sizes: "32x32" },
-    ],
-    apple: [
-      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
-    ],
-  },
   verification: {
     google: "rmZiW-EkmfQCHQr7kdW4m4G7Ie9_Dzlu3hpc_KCsrho",
   },
