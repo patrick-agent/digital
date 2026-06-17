@@ -1,0 +1,63 @@
+{
+  "projectRoot": "C:\\Users\\Admin\\Desktop\\Website 3D\\studio-3d",
+  "batchFiles": [
+    {
+      "path": "src/components/sections/AboutSection.jsx",
+      "language": "javascript",
+      "sizeLines": 304,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/sections/AuroraBackground.jsx",
+      "language": "javascript",
+      "sizeLines": 142,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/sections/LatestEPSection.jsx",
+      "language": "javascript",
+      "sizeLines": 170,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/sections/MusicSection.jsx",
+      "language": "javascript",
+      "sizeLines": 246,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/GlassPanel.jsx",
+      "language": "javascript",
+      "sizeLines": 103,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/SectionTitle.jsx",
+      "language": "javascript",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/components/sections/AboutSection.jsx": [
+      "src/components/sections/AboutSection.module.css",
+      "src/components/ui/GlassPanel.jsx",
+      "src/components/ui/SectionTitle.jsx"
+    ],
+    "src/components/sections/AuroraBackground.jsx": [],
+    "src/components/sections/LatestEPSection.jsx": [
+      "src/components/sections/AuroraBackground.jsx",
+      "src/components/sections/LatestEPSection.module.css",
+      "src/components/ui/GlassPanel.jsx",
+      "src/components/ui/SectionTitle.jsx"
+    ],
+    "src/components/sections/MusicSection.jsx": [
+      "src/components/sections/AuroraBackground.jsx",
+      "src/components/sections/MusicSection.module.css",
+      "src/components/ui/GlassPanel.jsx",
+      "src/components/ui/SectionTitle.jsx"
+    ],
+    "src/components/ui/GlassPanel.jsx": [],
+    "src/components/ui/SectionTitle.jsx": []
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "projectRoot": "C:\\Users\\Admin\\Desktop\\Website 3D\\studio-3d",
+  "batchFiles": [
+    {
+      "path": "src/components/digital/DigitalNavbar.jsx",
+      "language": "javascript",
+      "sizeLines": 231,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/digital/digital-blog/BlogThemeProvider.jsx",
+      "language": "javascript",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/digital/digital-blog/ThemeToggle.jsx",
+      "language": "javascript",
+      "sizeLines": 84,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/digital/digital-blog/blog-theme.js",
+      "language": "javascript",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/components/digital/DigitalNavbar.jsx": [
+      "src/components/digital/digital-blog/ThemeToggle.jsx",
+      "src/components/digital/DigitalNavbar.module.css"
+    ],
+    "src/components/digital/digital-blog/BlogThemeProvider.jsx": [
+      "src/components/digital/digital-blog/blog-theme.js"
+    ],
+    "src/components/digital/digital-blog/ThemeToggle.jsx": [
+      "src/components/digital/digital-blog/blog-theme.js"
+    ],
+    "src/components/digital/digital-blog/blog-theme.js": []
+  }
+}

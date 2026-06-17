@@ -1,0 +1,112 @@
+{
+  "projectRoot": "C:\\Users\\Admin\\Desktop\\Website 3D\\studio-3d",
+  "batchFiles": [
+    {
+      "path": "src/components/blog/AffiliateProducts.module.css",
+      "language": "css",
+      "sizeLines": 85,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/blog/ArticleBody.module.css",
+      "language": "css",
+      "sizeLines": 388,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/blog/ArticleHero.module.css",
+      "language": "css",
+      "sizeLines": 145,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/blog/AuthorBox.module.css",
+      "language": "css",
+      "sizeLines": 96,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/blog/BlogClient.module.css",
+      "language": "css",
+      "sizeLines": 319,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/blog/BlogHero.module.css",
+      "language": "css",
+      "sizeLines": 294,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/blog/Breadcrumb.module.css",
+      "language": "css",
+      "sizeLines": 51,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/blog/CategoryNav.module.css",
+      "language": "css",
+      "sizeLines": 75,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/blog/PostCard.module.css",
+      "language": "css",
+      "sizeLines": 248,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/blog/PostGrid.module.css",
+      "language": "css",
+      "sizeLines": 23,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/blog/PostShelf.module.css",
+      "language": "css",
+      "sizeLines": 222,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/blog/ReadingProgress.module.css",
+      "language": "css",
+      "sizeLines": 20,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/blog/RelatedPosts.module.css",
+      "language": "css",
+      "sizeLines": 38,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/blog/ShareSection.module.css",
+      "language": "css",
+      "sizeLines": 47,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/blog/TableOfContents.module.css",
+      "language": "css",
+      "sizeLines": 138,
+      "fileCategory": "markup"
+    }
+  ],
+  "batchImportData": {
+    "src/components/blog/AffiliateProducts.module.css": [],
+    "src/components/blog/ArticleBody.module.css": [],
+    "src/components/blog/ArticleHero.module.css": [],
+    "src/components/blog/AuthorBox.module.css": [],
+    "src/components/blog/BlogClient.module.css": [],
+    "src/components/blog/BlogHero.module.css": [],
+    "src/components/blog/Breadcrumb.module.css": [],
+    "src/components/blog/CategoryNav.module.css": [],
+    "src/components/blog/PostCard.module.css": [],
+    "src/components/blog/PostGrid.module.css": [],
+    "src/components/blog/PostShelf.module.css": [],
+    "src/components/blog/ReadingProgress.module.css": [],
+    "src/components/blog/RelatedPosts.module.css": [],
+    "src/components/blog/ShareSection.module.css": [],
+    "src/components/blog/TableOfContents.module.css": []
+  }
+}

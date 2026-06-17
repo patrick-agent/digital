@@ -1,0 +1,34 @@
+{
+  "projectRoot": "C:\\Users\\Admin\\Desktop\\Website 3D\\studio-3d",
+  "batchFiles": [
+    {
+      "path": "src/components/artist/bio-music/PlatformIcons.tsx",
+      "language": "typescript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/artist/bio-music/PlatformLink.tsx",
+      "language": "typescript",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/artist/bio-music/PlatformLinksCard.tsx",
+      "language": "typescript",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/components/artist/bio-music/PlatformIcons.tsx": [],
+    "src/components/artist/bio-music/PlatformLink.tsx": [
+      "src/components/artist/bio-music/PlatformIcons.tsx",
+      "src/components/artist/bio-music/PlatformLink.module.css"
+    ],
+    "src/components/artist/bio-music/PlatformLinksCard.tsx": [
+      "src/components/artist/bio-music/PlatformLink.tsx",
+      "src/components/artist/bio-music/PlatformLinksCard.module.css"
+    ]
+  }
+}

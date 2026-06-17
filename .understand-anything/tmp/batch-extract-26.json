@@ -1,0 +1,79 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 9,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/components/ui/Galaxy.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 5,
+      "nonEmptyLines": 5,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/ui/GradientText.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 54,
+      "nonEmptyLines": 50,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/ui/GridScan.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 44,
+      "nonEmptyLines": 41,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/ui/LightPillar.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 21,
+      "nonEmptyLines": 20,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/ui/LightRays.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 8,
+      "nonEmptyLines": 8,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/ui/LiquidEther.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 7,
+      "nonEmptyLines": 7,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/ui/RippleGrid.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 6,
+      "nonEmptyLines": 6,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/ui/RotatingText.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 36,
+      "nonEmptyLines": 31,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/ui/SoftAurora.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 4,
+      "nonEmptyLines": 4,
+      "metrics": {}
+    }
+  ]
+}

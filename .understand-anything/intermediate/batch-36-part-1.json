@@ -1,0 +1,964 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/components/admin/PressKitForm.jsx",
+      "type": "file",
+      "name": "PressKitForm.jsx",
+      "filePath": "src/components/admin/PressKitForm.jsx",
+      "summary": "PressKitForm.jsx: Source file, 2 functions.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/admin/PressKitForm.jsx:createInitialForm",
+      "type": "function",
+      "name": "createInitialForm",
+      "filePath": "src/components/admin/PressKitForm.jsx",
+      "lineRange": [
+        6,
+        23
+      ],
+      "summary": "Function createInitialForm with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/admin/PressKitForm.jsx:PressKitForm",
+      "type": "function",
+      "name": "PressKitForm",
+      "filePath": "src/components/admin/PressKitForm.jsx",
+      "lineRange": [
+        25,
+        117
+      ],
+      "summary": "Function PressKitForm with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/admin/QuickActionButton.jsx",
+      "type": "file",
+      "name": "QuickActionButton.jsx",
+      "filePath": "src/components/admin/QuickActionButton.jsx",
+      "summary": "QuickActionButton.jsx: Source file, 1 function.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/admin/QuickActionButton.jsx:QuickActionButton",
+      "type": "function",
+      "name": "QuickActionButton",
+      "filePath": "src/components/admin/QuickActionButton.jsx",
+      "lineRange": [
+        3,
+        25
+      ],
+      "summary": "Function QuickActionButton with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/admin/SectionCard.jsx",
+      "type": "file",
+      "name": "SectionCard.jsx",
+      "filePath": "src/components/admin/SectionCard.jsx",
+      "summary": "SectionCard.jsx: Source file, 1 function.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/admin/SectionCard.jsx:SectionCard",
+      "type": "function",
+      "name": "SectionCard",
+      "filePath": "src/components/admin/SectionCard.jsx",
+      "lineRange": [
+        4,
+        22
+      ],
+      "summary": "Function SectionCard with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/admin/ServicesForm.jsx",
+      "type": "file",
+      "name": "ServicesForm.jsx",
+      "filePath": "src/components/admin/ServicesForm.jsx",
+      "summary": "ServicesForm.jsx: Source file, 2 functions.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/admin/ServicesForm.jsx:createInitialForm",
+      "type": "function",
+      "name": "createInitialForm",
+      "filePath": "src/components/admin/ServicesForm.jsx",
+      "lineRange": [
+        11,
+        26
+      ],
+      "summary": "Function createInitialForm with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/admin/ServicesForm.jsx:ServicesForm",
+      "type": "function",
+      "name": "ServicesForm",
+      "filePath": "src/components/admin/ServicesForm.jsx",
+      "lineRange": [
+        28,
+        130
+      ],
+      "summary": "Function ServicesForm with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/admin/Sidebar.jsx",
+      "type": "file",
+      "name": "Sidebar.jsx",
+      "filePath": "src/components/admin/Sidebar.jsx",
+      "summary": "Sidebar.jsx: Source file, 2 functions.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/admin/Sidebar.jsx:NavItem",
+      "type": "function",
+      "name": "NavItem",
+      "filePath": "src/components/admin/Sidebar.jsx",
+      "lineRange": [
+        70,
+        100
+      ],
+      "summary": "Function NavItem with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/admin/Sidebar.jsx:SidebarAdmin",
+      "type": "function",
+      "name": "SidebarAdmin",
+      "filePath": "src/components/admin/Sidebar.jsx",
+      "lineRange": [
+        102,
+        165
+      ],
+      "summary": "Function SidebarAdmin with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/admin/StatCard.jsx",
+      "type": "file",
+      "name": "StatCard.jsx",
+      "filePath": "src/components/admin/StatCard.jsx",
+      "summary": "StatCard.jsx: Source file, 1 function.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/admin/StatCard.jsx:StatCard",
+      "type": "function",
+      "name": "StatCard",
+      "filePath": "src/components/admin/StatCard.jsx",
+      "lineRange": [
+        12,
+        26
+      ],
+      "summary": "Function StatCard with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/artist/about/AboutCanvas.jsx",
+      "type": "file",
+      "name": "AboutCanvas.jsx",
+      "filePath": "src/components/artist/about/AboutCanvas.jsx",
+      "summary": "AboutCanvas.jsx: Source file, 1 function.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/artist/about/AboutCanvas.jsx:AboutCanvas",
+      "type": "function",
+      "name": "AboutCanvas",
+      "filePath": "src/components/artist/about/AboutCanvas.jsx",
+      "lineRange": [
+        5,
+        18
+      ],
+      "summary": "Function AboutCanvas with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/artist/about/BioSection.jsx",
+      "type": "file",
+      "name": "BioSection.jsx",
+      "filePath": "src/components/artist/about/BioSection.jsx",
+      "summary": "BioSection.jsx: Source file, 1 function, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/artist/about/BioSection.jsx:BioSection",
+      "type": "function",
+      "name": "BioSection",
+      "filePath": "src/components/artist/about/BioSection.jsx",
+      "lineRange": [
+        22,
+        166
+      ],
+      "summary": "Function BioSection with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/artist/about/HeroAbout.jsx",
+      "type": "file",
+      "name": "HeroAbout.jsx",
+      "filePath": "src/components/artist/about/HeroAbout.jsx",
+      "summary": "HeroAbout.jsx: Source file, 1 function, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/artist/about/HeroAbout.jsx:HeroAbout",
+      "type": "function",
+      "name": "HeroAbout",
+      "filePath": "src/components/artist/about/HeroAbout.jsx",
+      "lineRange": [
+        13,
+        55
+      ],
+      "summary": "Function HeroAbout with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/artist/about/StreamingBar.jsx",
+      "type": "file",
+      "name": "StreamingBar.jsx",
+      "filePath": "src/components/artist/about/StreamingBar.jsx",
+      "summary": "StreamingBar.jsx: Source file, 1 function, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/artist/about/StreamingBar.jsx:StreamingBar",
+      "type": "function",
+      "name": "StreamingBar",
+      "filePath": "src/components/artist/about/StreamingBar.jsx",
+      "lineRange": [
+        26,
+        81
+      ],
+      "summary": "Function StreamingBar with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/artist/bio-music/BioDetailBackground.tsx",
+      "type": "file",
+      "name": "BioDetailBackground.tsx",
+      "filePath": "src/components/artist/bio-music/BioDetailBackground.tsx",
+      "summary": "BioDetailBackground.tsx: Source file, 3 functions, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/artist/bio-music/BioDetailBackground.tsx:FloatingRing",
+      "type": "function",
+      "name": "FloatingRing",
+      "filePath": "src/components/artist/bio-music/BioDetailBackground.tsx",
+      "lineRange": [
+        8,
+        31
+      ],
+      "summary": "Function FloatingRing with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/artist/bio-music/BioDetailBackground.tsx:FloatingSphere",
+      "type": "function",
+      "name": "FloatingSphere",
+      "filePath": "src/components/artist/bio-music/BioDetailBackground.tsx",
+      "lineRange": [
+        33,
+        57
+      ],
+      "summary": "Function FloatingSphere with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/artist/bio-music/BioDetailBackground.tsx:BioDetailBackground",
+      "type": "function",
+      "name": "BioDetailBackground",
+      "filePath": "src/components/artist/bio-music/BioDetailBackground.tsx",
+      "lineRange": [
+        59,
+        75
+      ],
+      "summary": "Function BioDetailBackground with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/artist/bio-music/ReleaseCard.tsx",
+      "type": "file",
+      "name": "ReleaseCard.tsx",
+      "filePath": "src/components/artist/bio-music/ReleaseCard.tsx",
+      "summary": "ReleaseCard.tsx: Source file, 1 function, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/artist/bio-music/ReleaseCard.tsx:ReleaseCard",
+      "type": "function",
+      "name": "ReleaseCard",
+      "filePath": "src/components/artist/bio-music/ReleaseCard.tsx",
+      "lineRange": [
+        18,
+        47
+      ],
+      "summary": "Function ReleaseCard with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/artist/bio-music/ReleaseShelf3D.tsx",
+      "type": "file",
+      "name": "ReleaseShelf3D.tsx",
+      "filePath": "src/components/artist/bio-music/ReleaseShelf3D.tsx",
+      "summary": "ReleaseShelf3D.tsx: Source file, 1 function, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/artist/bio-music/ReleaseShelf3D.tsx:ReleaseShelf3D",
+      "type": "function",
+      "name": "ReleaseShelf3D",
+      "filePath": "src/components/artist/bio-music/ReleaseShelf3D.tsx",
+      "lineRange": [
+        22,
+        105
+      ],
+      "summary": "Function ReleaseShelf3D with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/blog/AffiliateProducts.jsx",
+      "type": "file",
+      "name": "AffiliateProducts.jsx",
+      "filePath": "src/components/blog/AffiliateProducts.jsx",
+      "summary": "AffiliateProducts.jsx: Source file, 1 function, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/blog/AffiliateProducts.jsx:AffiliateProducts",
+      "type": "function",
+      "name": "AffiliateProducts",
+      "filePath": "src/components/blog/AffiliateProducts.jsx",
+      "lineRange": [
+        4,
+        34
+      ],
+      "summary": "Function AffiliateProducts with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/blog/ArticleBody.jsx",
+      "type": "file",
+      "name": "ArticleBody.jsx",
+      "filePath": "src/components/blog/ArticleBody.jsx",
+      "summary": "ArticleBody.jsx: Source file, 10 functions, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/components/blog/ArticleBody.jsx:injectHeadingIds",
+      "type": "function",
+      "name": "injectHeadingIds",
+      "filePath": "src/components/blog/ArticleBody.jsx",
+      "lineRange": [
+        93,
+        104
+      ],
+      "summary": "Function injectHeadingIds with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/blog/ArticleBody.jsx:withAttribute",
+      "type": "function",
+      "name": "withAttribute",
+      "filePath": "src/components/blog/ArticleBody.jsx",
+      "lineRange": [
+        106,
+        109
+      ],
+      "summary": "Function withAttribute with 3 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/blog/ArticleBody.jsx:enhanceImages",
+      "type": "function",
+      "name": "enhanceImages",
+      "filePath": "src/components/blog/ArticleBody.jsx",
+      "lineRange": [
+        111,
+        121
+      ],
+      "summary": "Function enhanceImages with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/blog/ArticleBody.jsx:wrapTables",
+      "type": "function",
+      "name": "wrapTables",
+      "filePath": "src/components/blog/ArticleBody.jsx",
+      "lineRange": [
+        123,
+        129
+      ],
+      "summary": "Function wrapTables with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/components/admin/PressKitForm.jsx",
+      "target": "function:src/components/admin/PressKitForm.jsx:createInitialForm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/admin/PressKitForm.jsx",
+      "target": "function:src/components/admin/PressKitForm.jsx:PressKitForm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/admin/PressKitForm.jsx",
+      "target": "function:src/components/admin/PressKitForm.jsx:PressKitForm",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/admin/PressKitForm.jsx",
+      "target": "function:src/components/admin/PressKitForm.jsx:createInitialForm",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/admin/QuickActionButton.jsx",
+      "target": "function:src/components/admin/QuickActionButton.jsx:QuickActionButton",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/admin/QuickActionButton.jsx",
+      "target": "function:src/components/admin/QuickActionButton.jsx:QuickActionButton",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/admin/SectionCard.jsx",
+      "target": "function:src/components/admin/SectionCard.jsx:SectionCard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/admin/SectionCard.jsx",
+      "target": "function:src/components/admin/SectionCard.jsx:SectionCard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/admin/ServicesForm.jsx",
+      "target": "function:src/components/admin/ServicesForm.jsx:createInitialForm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/admin/ServicesForm.jsx",
+      "target": "function:src/components/admin/ServicesForm.jsx:ServicesForm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/admin/ServicesForm.jsx",
+      "target": "function:src/components/admin/ServicesForm.jsx:ServicesForm",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/admin/ServicesForm.jsx",
+      "target": "function:src/components/admin/ServicesForm.jsx:createInitialForm",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/admin/Sidebar.jsx",
+      "target": "function:src/components/admin/Sidebar.jsx:NavItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/admin/Sidebar.jsx",
+      "target": "function:src/components/admin/Sidebar.jsx:SidebarAdmin",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/admin/Sidebar.jsx",
+      "target": "function:src/components/admin/Sidebar.jsx:SidebarAdmin",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/admin/StatCard.jsx",
+      "target": "function:src/components/admin/StatCard.jsx:StatCard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/admin/StatCard.jsx",
+      "target": "function:src/components/admin/StatCard.jsx:StatCard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/artist/about/AboutCanvas.jsx",
+      "target": "function:src/components/artist/about/AboutCanvas.jsx:AboutCanvas",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/artist/about/AboutCanvas.jsx",
+      "target": "function:src/components/artist/about/AboutCanvas.jsx:AboutCanvas",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/artist/about/BioSection.jsx",
+      "target": "function:src/components/artist/about/BioSection.jsx:BioSection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/artist/about/BioSection.jsx",
+      "target": "function:src/components/artist/about/BioSection.jsx:BioSection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/artist/about/BioSection.jsx",
+      "target": "file:src/components/artist/about/BioSection.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/artist/about/HeroAbout.jsx",
+      "target": "function:src/components/artist/about/HeroAbout.jsx:HeroAbout",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/artist/about/HeroAbout.jsx",
+      "target": "function:src/components/artist/about/HeroAbout.jsx:HeroAbout",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/artist/about/HeroAbout.jsx",
+      "target": "file:src/components/artist/about/HeroAbout.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/artist/about/StreamingBar.jsx",
+      "target": "function:src/components/artist/about/StreamingBar.jsx:StreamingBar",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/artist/about/StreamingBar.jsx",
+      "target": "function:src/components/artist/about/StreamingBar.jsx:StreamingBar",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/artist/about/StreamingBar.jsx",
+      "target": "file:src/components/artist/about/StreamingBar.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/artist/bio-music/BioDetailBackground.tsx",
+      "target": "function:src/components/artist/bio-music/BioDetailBackground.tsx:FloatingRing",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/artist/bio-music/BioDetailBackground.tsx",
+      "target": "function:src/components/artist/bio-music/BioDetailBackground.tsx:FloatingSphere",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/artist/bio-music/BioDetailBackground.tsx",
+      "target": "function:src/components/artist/bio-music/BioDetailBackground.tsx:BioDetailBackground",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/artist/bio-music/BioDetailBackground.tsx",
+      "target": "function:src/components/artist/bio-music/BioDetailBackground.tsx:BioDetailBackground",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/artist/bio-music/BioDetailBackground.tsx",
+      "target": "file:src/components/artist/bio-music/BioDetailBackground.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/artist/bio-music/ReleaseCard.tsx",
+      "target": "function:src/components/artist/bio-music/ReleaseCard.tsx:ReleaseCard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/artist/bio-music/ReleaseCard.tsx",
+      "target": "function:src/components/artist/bio-music/ReleaseCard.tsx:ReleaseCard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/artist/bio-music/ReleaseCard.tsx",
+      "target": "file:src/components/artist/bio-music/ReleaseCard.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/artist/bio-music/ReleaseShelf3D.tsx",
+      "target": "function:src/components/artist/bio-music/ReleaseShelf3D.tsx:ReleaseShelf3D",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/artist/bio-music/ReleaseShelf3D.tsx",
+      "target": "function:src/components/artist/bio-music/ReleaseShelf3D.tsx:ReleaseShelf3D",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/artist/bio-music/ReleaseShelf3D.tsx",
+      "target": "file:src/components/artist/bio-music/ReleaseShelf3D.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/blog/AffiliateProducts.jsx",
+      "target": "function:src/components/blog/AffiliateProducts.jsx:AffiliateProducts",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/blog/AffiliateProducts.jsx",
+      "target": "function:src/components/blog/AffiliateProducts.jsx:AffiliateProducts",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/blog/AffiliateProducts.jsx",
+      "target": "file:src/components/blog/AffiliateProducts.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "function:src/components/blog/ArticleBody.jsx:injectHeadingIds",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "function:src/components/blog/ArticleBody.jsx:withAttribute",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "function:src/components/blog/ArticleBody.jsx:enhanceImages",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "function:src/components/blog/ArticleBody.jsx:wrapTables",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "function:src/components/blog/ArticleBody.jsx:mergeAdjacentLists",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "function:src/components/blog/ArticleBody.jsx:splitInlineLabels",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "function:src/components/blog/ArticleBody.jsx:sanitizeArticleHtml",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "function:src/components/blog/ArticleBody.jsx:renderTable",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "function:src/components/blog/ArticleBody.jsx:ArticleBody",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "function:src/components/blog/ArticleBody.jsx:ArticleBody",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "function:src/components/blog/ArticleBody.jsx:ArticleSummary",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "function:src/components/blog/ArticleBody.jsx:ArticleSummary",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "file:src/components/blog/ArticleBody.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "function:src/components/blog/ArticleBody.jsx:withAttribute",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "function:src/components/blog/ArticleBody.jsx:withAttribute",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "function:src/components/blog/ArticleBody.jsx:withAttribute",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "function:src/components/blog/ArticleBody.jsx:wrapTables",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "function:src/components/blog/ArticleBody.jsx:enhanceImages",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "function:src/components/blog/ArticleBody.jsx:splitInlineLabels",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "function:src/components/blog/ArticleBody.jsx:mergeAdjacentLists",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "function:src/components/blog/ArticleBody.jsx:injectHeadingIds",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "function:src/components/blog/ArticleBody.jsx:sanitizeArticleHtml",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

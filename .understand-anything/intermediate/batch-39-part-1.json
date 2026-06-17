@@ -1,0 +1,2107 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/components/ui/select.jsx",
+      "type": "file",
+      "name": "select.jsx",
+      "filePath": "src/components/ui/select.jsx",
+      "summary": "select.jsx: Source file.",
+      "tags": [
+        "component",
+        "type-definition"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/ui/separator.jsx",
+      "type": "file",
+      "name": "separator.jsx",
+      "filePath": "src/components/ui/separator.jsx",
+      "summary": "separator.jsx: Source file.",
+      "tags": [
+        "component",
+        "type-definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/ui/SkipLink.jsx",
+      "type": "file",
+      "name": "SkipLink.jsx",
+      "filePath": "src/components/ui/SkipLink.jsx",
+      "summary": "SkipLink.jsx: Source file, 1 function.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/SkipLink.jsx:SkipLink",
+      "type": "function",
+      "name": "SkipLink",
+      "filePath": "src/components/ui/SkipLink.jsx",
+      "lineRange": [
+        5,
+        39
+      ],
+      "summary": "Function SkipLink with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/ui/SoftAurora.jsx",
+      "type": "file",
+      "name": "SoftAurora.jsx",
+      "filePath": "src/components/ui/SoftAurora.jsx",
+      "summary": "SoftAurora.jsx: Source file, 2 functions, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/components/ui/SoftAurora.jsx:hexToVec3",
+      "type": "function",
+      "name": "hexToVec3",
+      "filePath": "src/components/ui/SoftAurora.jsx",
+      "lineRange": [
+        6,
+        13
+      ],
+      "summary": "Function hexToVec3 with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/SoftAurora.jsx:SoftAurora",
+      "type": "function",
+      "name": "SoftAurora",
+      "filePath": "src/components/ui/SoftAurora.jsx",
+      "lineRange": [
+        148,
+        264
+      ],
+      "summary": "Function SoftAurora with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/ui/sonner.jsx",
+      "type": "file",
+      "name": "sonner.jsx",
+      "filePath": "src/components/ui/sonner.jsx",
+      "summary": "sonner.jsx: Source file, 1 function.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/sonner.jsx:Toaster",
+      "type": "function",
+      "name": "Toaster",
+      "filePath": "src/components/ui/sonner.jsx",
+      "lineRange": [
+        12,
+        41
+      ],
+      "summary": "Function Toaster with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/ui/table.jsx",
+      "type": "file",
+      "name": "table.jsx",
+      "filePath": "src/components/ui/table.jsx",
+      "summary": "table.jsx: Source file.",
+      "tags": [
+        "component",
+        "type-definition"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/ui/textarea.jsx",
+      "type": "file",
+      "name": "textarea.jsx",
+      "filePath": "src/components/ui/textarea.jsx",
+      "summary": "textarea.jsx: Source file.",
+      "tags": [
+        "component",
+        "type-definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/context/LoadingContext.jsx",
+      "type": "file",
+      "name": "LoadingContext.jsx",
+      "filePath": "src/context/LoadingContext.jsx",
+      "summary": "LoadingContext.jsx: Source file, 2 functions.",
+      "tags": [
+        "context"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/context/LoadingContext.jsx:LoadingProvider",
+      "type": "function",
+      "name": "LoadingProvider",
+      "filePath": "src/context/LoadingContext.jsx",
+      "lineRange": [
+        16,
+        98
+      ],
+      "summary": "Function LoadingProvider with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/context/LoadingContext.jsx:useLoading",
+      "type": "function",
+      "name": "useLoading",
+      "filePath": "src/context/LoadingContext.jsx",
+      "lineRange": [
+        100,
+        102
+      ],
+      "summary": "Function useLoading with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/hooks/useAudioAnalyzer.js",
+      "type": "file",
+      "name": "useAudioAnalyzer.js",
+      "filePath": "src/hooks/useAudioAnalyzer.js",
+      "summary": "useAudioAnalyzer.js: Source file, 1 function.",
+      "tags": [
+        "hook"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/hooks/useAudioAnalyzer.js:useAudioAnalyzer",
+      "type": "function",
+      "name": "useAudioAnalyzer",
+      "filePath": "src/hooks/useAudioAnalyzer.js",
+      "lineRange": [
+        13,
+        30
+      ],
+      "summary": "Function useAudioAnalyzer with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/hooks/useCanvasOptimizer.js",
+      "type": "file",
+      "name": "useCanvasOptimizer.js",
+      "filePath": "src/hooks/useCanvasOptimizer.js",
+      "summary": "useCanvasOptimizer.js: Source file, 3 functions.",
+      "tags": [
+        "hook"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/hooks/useCanvasOptimizer.js:getDeviceType",
+      "type": "function",
+      "name": "getDeviceType",
+      "filePath": "src/hooks/useCanvasOptimizer.js",
+      "lineRange": [
+        4,
+        10
+      ],
+      "summary": "Function getDeviceType with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/hooks/useCanvasOptimizer.js:useCanvasOptimizer",
+      "type": "function",
+      "name": "useCanvasOptimizer",
+      "filePath": "src/hooks/useCanvasOptimizer.js",
+      "lineRange": [
+        12,
+        122
+      ],
+      "summary": "Function useCanvasOptimizer with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/hooks/useCanvasOptimizer.js:useFpsMonitor",
+      "type": "function",
+      "name": "useFpsMonitor",
+      "filePath": "src/hooks/useCanvasOptimizer.js",
+      "lineRange": [
+        124,
+        147
+      ],
+      "summary": "Function useFpsMonitor with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/hooks/useHydrated.js",
+      "type": "file",
+      "name": "useHydrated.js",
+      "filePath": "src/hooks/useHydrated.js",
+      "summary": "useHydrated.js: Source file, 4 functions.",
+      "tags": [
+        "hook"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/hooks/useHydrated.js:subscribe",
+      "type": "function",
+      "name": "subscribe",
+      "filePath": "src/hooks/useHydrated.js",
+      "lineRange": [
+        5,
+        7
+      ],
+      "summary": "Function subscribe with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/hooks/useHydrated.js:getClientSnapshot",
+      "type": "function",
+      "name": "getClientSnapshot",
+      "filePath": "src/hooks/useHydrated.js",
+      "lineRange": [
+        9,
+        11
+      ],
+      "summary": "Function getClientSnapshot with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/hooks/useHydrated.js:getServerSnapshot",
+      "type": "function",
+      "name": "getServerSnapshot",
+      "filePath": "src/hooks/useHydrated.js",
+      "lineRange": [
+        13,
+        15
+      ],
+      "summary": "Function getServerSnapshot with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/hooks/useHydrated.js:useHydrated",
+      "type": "function",
+      "name": "useHydrated",
+      "filePath": "src/hooks/useHydrated.js",
+      "lineRange": [
+        17,
+        19
+      ],
+      "summary": "Function useHydrated with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/hooks/useModelLoader.js",
+      "type": "file",
+      "name": "useModelLoader.js",
+      "filePath": "src/hooks/useModelLoader.js",
+      "summary": "useModelLoader.js: Source file, 6 functions.",
+      "tags": [
+        "hook"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/hooks/useModelLoader.js:getDeviceTier",
+      "type": "function",
+      "name": "getDeviceTier",
+      "filePath": "src/hooks/useModelLoader.js",
+      "lineRange": [
+        45,
+        59
+      ],
+      "summary": "Function getDeviceTier with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/hooks/useModelLoader.js:useModelLoader",
+      "type": "function",
+      "name": "useModelLoader",
+      "filePath": "src/hooks/useModelLoader.js",
+      "lineRange": [
+        67,
+        221
+      ],
+      "summary": "Function useModelLoader with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/hooks/useModelLoader.js:clearModelCache",
+      "type": "function",
+      "name": "clearModelCache",
+      "filePath": "src/hooks/useModelLoader.js",
+      "lineRange": [
+        226,
+        229
+      ],
+      "summary": "Function clearModelCache with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/hooks/useModelLoader.js:getCurrentDeviceTier",
+      "type": "function",
+      "name": "getCurrentDeviceTier",
+      "filePath": "src/hooks/useModelLoader.js",
+      "lineRange": [
+        234,
+        236
+      ],
+      "summary": "Function getCurrentDeviceTier with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/hooks/useModelLoader.js:getDeviceConfig",
+      "type": "function",
+      "name": "getDeviceConfig",
+      "filePath": "src/hooks/useModelLoader.js",
+      "lineRange": [
+        241,
+        244
+      ],
+      "summary": "Function getDeviceConfig with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/hooks/useModelLoader.js:preloadModel",
+      "type": "function",
+      "name": "preloadModel",
+      "filePath": "src/hooks/useModelLoader.js",
+      "lineRange": [
+        249,
+        270
+      ],
+      "summary": "Function preloadModel with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/hooks/usePrefersReducedMotion.js",
+      "type": "file",
+      "name": "usePrefersReducedMotion.js",
+      "filePath": "src/hooks/usePrefersReducedMotion.js",
+      "summary": "usePrefersReducedMotion.js: Source file, 4 functions.",
+      "tags": [
+        "hook"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/hooks/usePrefersReducedMotion.js:subscribe",
+      "type": "function",
+      "name": "subscribe",
+      "filePath": "src/hooks/usePrefersReducedMotion.js",
+      "lineRange": [
+        5,
+        13
+      ],
+      "summary": "Function subscribe with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/hooks/usePrefersReducedMotion.js:getSnapshot",
+      "type": "function",
+      "name": "getSnapshot",
+      "filePath": "src/hooks/usePrefersReducedMotion.js",
+      "lineRange": [
+        15,
+        18
+      ],
+      "summary": "Function getSnapshot with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/hooks/usePrefersReducedMotion.js:getServerSnapshot",
+      "type": "function",
+      "name": "getServerSnapshot",
+      "filePath": "src/hooks/usePrefersReducedMotion.js",
+      "lineRange": [
+        20,
+        22
+      ],
+      "summary": "Function getServerSnapshot with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/hooks/usePrefersReducedMotion.js:usePrefersReducedMotion",
+      "type": "function",
+      "name": "usePrefersReducedMotion",
+      "filePath": "src/hooks/usePrefersReducedMotion.js",
+      "lineRange": [
+        24,
+        26
+      ],
+      "summary": "Function usePrefersReducedMotion with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/hooks/useScrollAnimation.js",
+      "type": "file",
+      "name": "useScrollAnimation.js",
+      "filePath": "src/hooks/useScrollAnimation.js",
+      "summary": "useScrollAnimation.js: Source file, 1 function.",
+      "tags": [
+        "hook"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/hooks/useScrollAnimation.js:useScrollAnimation",
+      "type": "function",
+      "name": "useScrollAnimation",
+      "filePath": "src/hooks/useScrollAnimation.js",
+      "lineRange": [
+        12,
+        41
+      ],
+      "summary": "Function useScrollAnimation with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/hooks/useScrollObserver.js",
+      "type": "file",
+      "name": "useScrollObserver.js",
+      "filePath": "src/hooks/useScrollObserver.js",
+      "summary": "useScrollObserver.js: Source file, 2 functions.",
+      "tags": [
+        "hook"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/hooks/useScrollObserver.js:useScrollObserver",
+      "type": "function",
+      "name": "useScrollObserver",
+      "filePath": "src/hooks/useScrollObserver.js",
+      "lineRange": [
+        5,
+        52
+      ],
+      "summary": "Function useScrollObserver with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/hooks/useScrollObserver.js:useScrollProgress",
+      "type": "function",
+      "name": "useScrollProgress",
+      "filePath": "src/hooks/useScrollObserver.js",
+      "lineRange": [
+        54,
+        79
+      ],
+      "summary": "Function useScrollProgress with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/hooks/useVisibilityLoader.js",
+      "type": "file",
+      "name": "useVisibilityLoader.js",
+      "filePath": "src/hooks/useVisibilityLoader.js",
+      "summary": "useVisibilityLoader.js: Source file, 3 functions.",
+      "tags": [
+        "hook"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/hooks/useVisibilityLoader.js:useVisibilityLoader",
+      "type": "function",
+      "name": "useVisibilityLoader",
+      "filePath": "src/hooks/useVisibilityLoader.js",
+      "lineRange": [
+        5,
+        46
+      ],
+      "summary": "Function useVisibilityLoader with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/hooks/useVisibilityLoader.js:getDeviceType",
+      "type": "function",
+      "name": "getDeviceType",
+      "filePath": "src/hooks/useVisibilityLoader.js",
+      "lineRange": [
+        48,
+        54
+      ],
+      "summary": "Function getDeviceType with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/hooks/useVisibilityLoader.js:useDeviceType",
+      "type": "function",
+      "name": "useDeviceType",
+      "filePath": "src/hooks/useVisibilityLoader.js",
+      "lineRange": [
+        56,
+        67
+      ],
+      "summary": "Function useDeviceType with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/hooks/useWebGLContextLimit.js",
+      "type": "file",
+      "name": "useWebGLContextLimit.js",
+      "filePath": "src/hooks/useWebGLContextLimit.js",
+      "summary": "useWebGLContextLimit.js: Source file, 4 functions.",
+      "tags": [
+        "hook"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/hooks/useWebGLContextLimit.js:notifyListeners",
+      "type": "function",
+      "name": "notifyListeners",
+      "filePath": "src/hooks/useWebGLContextLimit.js",
+      "lineRange": [
+        8,
+        10
+      ],
+      "summary": "Function notifyListeners with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/hooks/useWebGLContextLimit.js:requestContextSlot",
+      "type": "function",
+      "name": "requestContextSlot",
+      "filePath": "src/hooks/useWebGLContextLimit.js",
+      "lineRange": [
+        12,
+        18
+      ],
+      "summary": "Function requestContextSlot with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/hooks/useWebGLContextLimit.js:releaseContextSlot",
+      "type": "function",
+      "name": "releaseContextSlot",
+      "filePath": "src/hooks/useWebGLContextLimit.js",
+      "lineRange": [
+        20,
+        25
+      ],
+      "summary": "Function releaseContextSlot with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/hooks/useWebGLContextLimit.js:useWebGLContextSlot",
+      "type": "function",
+      "name": "useWebGLContextSlot",
+      "filePath": "src/hooks/useWebGLContextLimit.js",
+      "lineRange": [
+        27,
+        67
+      ],
+      "summary": "Function useWebGLContextSlot with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/api-auth.js",
+      "type": "file",
+      "name": "api-auth.js",
+      "filePath": "src/lib/api-auth.js",
+      "summary": "api-auth.js: Source file, 1 function.",
+      "tags": [
+        "api-handler",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/api-auth.js:validateApiKey",
+      "type": "function",
+      "name": "validateApiKey",
+      "filePath": "src/lib/api-auth.js",
+      "lineRange": [
+        3,
+        17
+      ],
+      "summary": "Function validateApiKey with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/article-content.js",
+      "type": "file",
+      "name": "article-content.js",
+      "filePath": "src/lib/article-content.js",
+      "summary": "article-content.js: Source file, 36 functions.",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/lib/article-content.js:stripTags",
+      "type": "function",
+      "name": "stripTags",
+      "filePath": "src/lib/article-content.js",
+      "lineRange": [
+        1,
+        3
+      ],
+      "summary": "Function stripTags with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/article-content.js:escapeHtml",
+      "type": "function",
+      "name": "escapeHtml",
+      "filePath": "src/lib/article-content.js",
+      "lineRange": [
+        5,
+        12
+      ],
+      "summary": "Function escapeHtml with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/article-content.js:escapeAttribute",
+      "type": "function",
+      "name": "escapeAttribute",
+      "filePath": "src/lib/article-content.js",
+      "lineRange": [
+        14,
+        16
+      ],
+      "summary": "Function escapeAttribute with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/article-content.js:decodeHtml",
+      "type": "function",
+      "name": "decodeHtml",
+      "filePath": "src/lib/article-content.js",
+      "lineRange": [
+        18,
+        27
+      ],
+      "summary": "Function decodeHtml with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/components/ui/SkipLink.jsx",
+      "target": "function:src/components/ui/SkipLink.jsx:SkipLink",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/ui/SkipLink.jsx",
+      "target": "function:src/components/ui/SkipLink.jsx:SkipLink",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ui/SoftAurora.jsx",
+      "target": "function:src/components/ui/SoftAurora.jsx:hexToVec3",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/ui/SoftAurora.jsx",
+      "target": "function:src/components/ui/SoftAurora.jsx:SoftAurora",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/ui/SoftAurora.jsx",
+      "target": "function:src/components/ui/SoftAurora.jsx:SoftAurora",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ui/SoftAurora.jsx",
+      "target": "file:src/components/ui/SoftAurora.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/ui/SoftAurora.jsx",
+      "target": "function:src/components/ui/SoftAurora.jsx:hexToVec3",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ui/SoftAurora.jsx",
+      "target": "function:src/components/ui/SoftAurora.jsx:hexToVec3",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ui/sonner.jsx",
+      "target": "function:src/components/ui/sonner.jsx:Toaster",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/ui/sonner.jsx",
+      "target": "function:src/components/ui/sonner.jsx:Toaster",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/context/LoadingContext.jsx",
+      "target": "function:src/context/LoadingContext.jsx:LoadingProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/context/LoadingContext.jsx",
+      "target": "function:src/context/LoadingContext.jsx:LoadingProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/context/LoadingContext.jsx",
+      "target": "function:src/context/LoadingContext.jsx:useLoading",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/context/LoadingContext.jsx",
+      "target": "function:src/context/LoadingContext.jsx:useLoading",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/hooks/useAudioAnalyzer.js",
+      "target": "function:src/hooks/useAudioAnalyzer.js:useAudioAnalyzer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/hooks/useAudioAnalyzer.js",
+      "target": "function:src/hooks/useAudioAnalyzer.js:useAudioAnalyzer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/hooks/useCanvasOptimizer.js",
+      "target": "function:src/hooks/useCanvasOptimizer.js:getDeviceType",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/hooks/useCanvasOptimizer.js",
+      "target": "function:src/hooks/useCanvasOptimizer.js:useCanvasOptimizer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/hooks/useCanvasOptimizer.js",
+      "target": "function:src/hooks/useCanvasOptimizer.js:useCanvasOptimizer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/hooks/useCanvasOptimizer.js",
+      "target": "function:src/hooks/useCanvasOptimizer.js:useFpsMonitor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/hooks/useCanvasOptimizer.js",
+      "target": "function:src/hooks/useCanvasOptimizer.js:useFpsMonitor",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/hooks/useCanvasOptimizer.js",
+      "target": "function:src/hooks/useCanvasOptimizer.js:getDeviceType",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/hooks/useCanvasOptimizer.js",
+      "target": "function:src/hooks/useCanvasOptimizer.js:getDeviceType",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/hooks/useHydrated.js",
+      "target": "function:src/hooks/useHydrated.js:subscribe",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/hooks/useHydrated.js",
+      "target": "function:src/hooks/useHydrated.js:getClientSnapshot",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/hooks/useHydrated.js",
+      "target": "function:src/hooks/useHydrated.js:getServerSnapshot",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/hooks/useHydrated.js",
+      "target": "function:src/hooks/useHydrated.js:useHydrated",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/hooks/useHydrated.js",
+      "target": "function:src/hooks/useHydrated.js:useHydrated",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/hooks/useModelLoader.js",
+      "target": "function:src/hooks/useModelLoader.js:getDeviceTier",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/hooks/useModelLoader.js",
+      "target": "function:src/hooks/useModelLoader.js:useModelLoader",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/hooks/useModelLoader.js",
+      "target": "function:src/hooks/useModelLoader.js:useModelLoader",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/hooks/useModelLoader.js",
+      "target": "function:src/hooks/useModelLoader.js:clearModelCache",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/hooks/useModelLoader.js",
+      "target": "function:src/hooks/useModelLoader.js:clearModelCache",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/hooks/useModelLoader.js",
+      "target": "function:src/hooks/useModelLoader.js:getCurrentDeviceTier",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/hooks/useModelLoader.js",
+      "target": "function:src/hooks/useModelLoader.js:getCurrentDeviceTier",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/hooks/useModelLoader.js",
+      "target": "function:src/hooks/useModelLoader.js:getDeviceConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/hooks/useModelLoader.js",
+      "target": "function:src/hooks/useModelLoader.js:getDeviceConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/hooks/useModelLoader.js",
+      "target": "function:src/hooks/useModelLoader.js:preloadModel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/hooks/useModelLoader.js",
+      "target": "function:src/hooks/useModelLoader.js:preloadModel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/hooks/useModelLoader.js",
+      "target": "function:src/hooks/useModelLoader.js:getDeviceTier",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/hooks/useModelLoader.js",
+      "target": "function:src/hooks/useModelLoader.js:getDeviceTier",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/hooks/useModelLoader.js",
+      "target": "function:src/hooks/useModelLoader.js:getDeviceTier",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/hooks/useModelLoader.js",
+      "target": "function:src/hooks/useModelLoader.js:getDeviceTier",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/hooks/useModelLoader.js",
+      "target": "function:src/hooks/useModelLoader.js:getDeviceTier",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/hooks/usePrefersReducedMotion.js",
+      "target": "function:src/hooks/usePrefersReducedMotion.js:subscribe",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/hooks/usePrefersReducedMotion.js",
+      "target": "function:src/hooks/usePrefersReducedMotion.js:getSnapshot",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/hooks/usePrefersReducedMotion.js",
+      "target": "function:src/hooks/usePrefersReducedMotion.js:getServerSnapshot",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/hooks/usePrefersReducedMotion.js",
+      "target": "function:src/hooks/usePrefersReducedMotion.js:usePrefersReducedMotion",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/hooks/usePrefersReducedMotion.js",
+      "target": "function:src/hooks/usePrefersReducedMotion.js:usePrefersReducedMotion",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/hooks/useScrollAnimation.js",
+      "target": "function:src/hooks/useScrollAnimation.js:useScrollAnimation",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/hooks/useScrollAnimation.js",
+      "target": "function:src/hooks/useScrollAnimation.js:useScrollAnimation",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/hooks/useScrollObserver.js",
+      "target": "function:src/hooks/useScrollObserver.js:useScrollObserver",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/hooks/useScrollObserver.js",
+      "target": "function:src/hooks/useScrollObserver.js:useScrollObserver",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/hooks/useScrollObserver.js",
+      "target": "function:src/hooks/useScrollObserver.js:useScrollProgress",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/hooks/useScrollObserver.js",
+      "target": "function:src/hooks/useScrollObserver.js:useScrollProgress",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/hooks/useVisibilityLoader.js",
+      "target": "function:src/hooks/useVisibilityLoader.js:useVisibilityLoader",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/hooks/useVisibilityLoader.js",
+      "target": "function:src/hooks/useVisibilityLoader.js:useVisibilityLoader",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/hooks/useVisibilityLoader.js",
+      "target": "function:src/hooks/useVisibilityLoader.js:getDeviceType",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/hooks/useVisibilityLoader.js",
+      "target": "function:src/hooks/useVisibilityLoader.js:getDeviceType",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/hooks/useVisibilityLoader.js",
+      "target": "function:src/hooks/useVisibilityLoader.js:useDeviceType",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/hooks/useVisibilityLoader.js",
+      "target": "function:src/hooks/useVisibilityLoader.js:useDeviceType",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/hooks/useVisibilityLoader.js",
+      "target": "function:src/hooks/useVisibilityLoader.js:getDeviceType",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/hooks/useWebGLContextLimit.js",
+      "target": "function:src/hooks/useWebGLContextLimit.js:notifyListeners",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/hooks/useWebGLContextLimit.js",
+      "target": "function:src/hooks/useWebGLContextLimit.js:requestContextSlot",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/hooks/useWebGLContextLimit.js",
+      "target": "function:src/hooks/useWebGLContextLimit.js:requestContextSlot",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/hooks/useWebGLContextLimit.js",
+      "target": "function:src/hooks/useWebGLContextLimit.js:releaseContextSlot",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/hooks/useWebGLContextLimit.js",
+      "target": "function:src/hooks/useWebGLContextLimit.js:releaseContextSlot",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/hooks/useWebGLContextLimit.js",
+      "target": "function:src/hooks/useWebGLContextLimit.js:useWebGLContextSlot",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/hooks/useWebGLContextLimit.js",
+      "target": "function:src/hooks/useWebGLContextLimit.js:useWebGLContextSlot",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/hooks/useWebGLContextLimit.js",
+      "target": "function:src/hooks/useWebGLContextLimit.js:notifyListeners",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/hooks/useWebGLContextLimit.js",
+      "target": "function:src/hooks/useWebGLContextLimit.js:releaseContextSlot",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/hooks/useWebGLContextLimit.js",
+      "target": "function:src/hooks/useWebGLContextLimit.js:requestContextSlot",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/hooks/useWebGLContextLimit.js",
+      "target": "function:src/hooks/useWebGLContextLimit.js:requestContextSlot",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/hooks/useWebGLContextLimit.js",
+      "target": "function:src/hooks/useWebGLContextLimit.js:releaseContextSlot",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/api-auth.js",
+      "target": "function:src/lib/api-auth.js:validateApiKey",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/api-auth.js",
+      "target": "function:src/lib/api-auth.js:validateApiKey",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:stripTags",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:escapeHtml",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:escapeAttribute",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:decodeHtml",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:slugifyHeading",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:slugifyHeading",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:parseArticleFrontmatter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:looksLikeHtml",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:looksLikeEscapedHtml",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:looksLikeMarkdown",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:sanitizeUrl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:parseInlineMarkdown",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:isTableDelimiter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:isTableStart",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:splitTableRow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:tableAlignment",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:renderTable",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:isListItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:renderList",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:isBlockStart",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:markdownToHtml",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:parseEmbeddedTable",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:renderTableHtml",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:preprocessEmbeddedTables",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:preprocessEmbeddedHeadings",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:prepareArticleContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:detectArticleRenderMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:getArticleSource",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:getArticleSource",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:getArticleRenderMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:getArticleRenderMode",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:normalizeArticleContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:uniqueId",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:extractArticleHeadings",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:getArticleHeadings",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:getArticleHeadings",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:withAttribute",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:enhanceImages",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:enhanceTables",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:enhanceArticleContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:enhanceArticleContent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:escapeHtml",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:decodeHtml",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:escapeHtml",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:escapeHtml",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:escapeAttribute",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:sanitizeUrl",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:escapeAttribute",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:escapeAttribute",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:escapeAttribute",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:sanitizeUrl",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:escapeAttribute",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:isTableDelimiter",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:splitTableRow",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:splitTableRow",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:splitTableRow",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:parseInlineMarkdown",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:parseInlineMarkdown",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:parseInlineMarkdown",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:isListItem",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:isTableStart",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:escapeAttribute",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:escapeHtml",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:isTableStart",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:renderTable",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:parseInlineMarkdown",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:markdownToHtml",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:isListItem",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:renderList",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:isBlockStart",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:parseInlineMarkdown",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:isTableDelimiter",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:splitTableRow",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:splitTableRow",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:splitTableRow",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:parseInlineMarkdown",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:parseInlineMarkdown",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:parseEmbeddedTable",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:renderTableHtml",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:parseInlineMarkdown",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:parseInlineMarkdown",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:parseArticleFrontmatter",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:looksLikeHtml",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:looksLikeEscapedHtml",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:decodeHtml",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:preprocessEmbeddedTables",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:preprocessEmbeddedHeadings",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:looksLikeHtml",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:looksLikeMarkdown",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:prepareArticleContent",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:detectArticleRenderMode",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:prepareArticleContent",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:prepareArticleContent",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:detectArticleRenderMode",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:markdownToHtml",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:decodeHtml",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:stripTags",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:slugifyHeading",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:uniqueId",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:extractArticleHeadings",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:normalizeArticleContent",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:withAttribute",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:withAttribute",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:withAttribute",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:normalizeArticleContent",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:extractArticleHeadings",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:decodeHtml",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:stripTags",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:enhanceTables",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:enhanceImages",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

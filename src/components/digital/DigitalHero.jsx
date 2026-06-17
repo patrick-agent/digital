@@ -1,8 +1,9 @@
 'use client'
 
-import { useRef, useEffect, useState } from 'react'
+import { useRef, useEffect, useMemo } from 'react'
 import dynamic from 'next/dynamic'
 import { useVisibilityLoader } from '@/hooks/useVisibilityLoader'
+import { useHydrated } from '@/hooks/useHydrated'
 import styles from './DigitalHero.module.css'
 
 const SplineScene = dynamic(
@@ -16,15 +17,15 @@ export default function DigitalHero() {
   const taglineRef = useRef(null)
   const ctaRef = useRef(null)
   const { ref: visibilityRef, isVisible } = useVisibilityLoader({ rootMargin: '0px' })
-  const [allowSpline, setAllowSpline] = useState(false)
-
-  useEffect(() => {
+  const hydrated = useHydrated()
+  const allowSpline = useMemo(() => {
+    if (!hydrated) return false
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
     const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection
     const isSlowNetwork = ['slow-2g', '2g', '3g'].includes(connection?.effectiveType)
     const shouldSaveData = connection?.saveData === true
-    setAllowSpline(!reduceMotion && !isSlowNetwork && !shouldSaveData)
-  }, [])
+    return !reduceMotion && !isSlowNetwork && !shouldSaveData
+  }, [hydrated])
 
   useEffect(() => {
     let ctx

@@ -1,31 +1,23 @@
-import { NextResponse } from "next/server"
 import { listMusicItems, createMusicItem } from "@/lib/music/service"
-import { auth } from "@/lib/auth"
+import { requireAdmin, fromResult } from "@/lib/admin-route"
 
 export async function GET(request) {
-  const session = await auth()
-  if (!session) return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
+  const session = await requireAdmin()
+  if (session instanceof Response) return session
 
   const { searchParams } = new URL(request.url)
   const result = await listMusicItems({
     type: searchParams.get("type") || "",
     search: searchParams.get("search") || "",
   })
-
-  if (!result.success) return NextResponse.json({ error: result.error.message }, { status: 500 })
-  return NextResponse.json({ data: result.data.items, meta: result.data.meta })
+  return fromResult(result, { list: true })
 }
 
 export async function POST(request) {
-  const session = await auth()
-  if (!session) return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
+  const session = await requireAdmin()
+  if (session instanceof Response) return session
 
-  try {
-    const body = await request.json()
-    const result = await createMusicItem(body)
-    if (!result.success) return NextResponse.json({ error: result.error.message }, { status: 500 })
-    return NextResponse.json(result.data, { status: 201 })
-  } catch {
-    return NextResponse.json({ error: "Failed to create" }, { status: 500 })
-  }
+  const body = await request.json()
+  const result = await createMusicItem(body)
+  return fromResult(result, { status: 201 })
 }

@@ -1,0 +1,147 @@
+{
+  "projectRoot": "C:\\Users\\Admin\\Desktop\\Website 3D\\studio-3d",
+  "batchFiles": [
+    {
+      "path": "AGENTS.md",
+      "language": "markdown",
+      "sizeLines": 345,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "CLAUDE.md",
+      "language": "markdown",
+      "sizeLines": 1,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "CONTEXT.md",
+      "language": "markdown",
+      "sizeLines": 33,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "DESIGN.md",
+      "language": "markdown",
+      "sizeLines": 728,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "MOBILE_OPTIMIZATION_FIXES.md",
+      "language": "markdown",
+      "sizeLines": 197,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "MOBILE_TROUBLESHOOTING.md",
+      "language": "markdown",
+      "sizeLines": 193,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "OPTIMIZATION_CLEANUP.md",
+      "language": "markdown",
+      "sizeLines": 176,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "OPTIMIZATION_SUMMARY.md",
+      "language": "markdown",
+      "sizeLines": 309,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "PERFORMANCE.md",
+      "language": "markdown",
+      "sizeLines": 308,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "QUICK_REFERENCE.md",
+      "language": "markdown",
+      "sizeLines": 267,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "sizeLines": 99,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "SEO_CANNIBALIZATION_AUDIT_2026-06-16.md",
+      "language": "markdown",
+      "sizeLines": 258,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "SHADER_ERROR_FIX.md",
+      "language": "markdown",
+      "sizeLines": 287,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "SHOP_PRICE_FULFILLMENT.md",
+      "language": "markdown",
+      "sizeLines": 110,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TACHY_ARTIST_CONTEXT.md",
+      "language": "markdown",
+      "sizeLines": 318,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "_affiliate-products-need-links.md",
+      "language": "markdown",
+      "sizeLines": 1241,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "components.json",
+      "language": "json",
+      "sizeLines": 20,
+      "fileCategory": "config"
+    },
+    {
+      "path": "jsconfig.json",
+      "language": "json",
+      "sizeLines": 7,
+      "fileCategory": "config"
+    },
+    {
+      "path": "package.json",
+      "language": "json",
+      "sizeLines": 100,
+      "fileCategory": "config"
+    },
+    {
+      "path": "tachy_artist_version.md",
+      "language": "markdown",
+      "sizeLines": 6,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    "AGENTS.md": [],
+    "CLAUDE.md": [],
+    "CONTEXT.md": [],
+    "DESIGN.md": [],
+    "MOBILE_OPTIMIZATION_FIXES.md": [],
+    "MOBILE_TROUBLESHOOTING.md": [],
+    "OPTIMIZATION_CLEANUP.md": [],
+    "OPTIMIZATION_SUMMARY.md": [],
+    "PERFORMANCE.md": [],
+    "QUICK_REFERENCE.md": [],
+    "README.md": [],
+    "SEO_CANNIBALIZATION_AUDIT_2026-06-16.md": [],
+    "SHADER_ERROR_FIX.md": [],
+    "SHOP_PRICE_FULFILLMENT.md": [],
+    "TACHY_ARTIST_CONTEXT.md": [],
+    "_affiliate-products-need-links.md": [],
+    "components.json": [],
+    "jsconfig.json": [],
+    "package.json": [],
+    "tachy_artist_version.md": []
+  }
+}

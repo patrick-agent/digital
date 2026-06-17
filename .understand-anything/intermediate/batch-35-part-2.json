@@ -1,0 +1,707 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/app/shop/shop-card.module.css",
+      "type": "file",
+      "name": "shop-card.module.css",
+      "filePath": "src/app/shop/shop-card.module.css",
+      "summary": "shop-card.module.css: Source file.",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/app/shop/shop.module.css",
+      "type": "file",
+      "name": "shop.module.css",
+      "filePath": "src/app/shop/shop.module.css",
+      "summary": "shop.module.css: Source file.",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/app/sitemap.js",
+      "type": "file",
+      "name": "sitemap.js",
+      "filePath": "src/app/sitemap.js",
+      "summary": "sitemap.js: Source file, 1 function.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/app/sitemap.js:sitemap",
+      "type": "function",
+      "name": "sitemap",
+      "filePath": "src/app/sitemap.js",
+      "lineRange": [
+        25,
+        111
+      ],
+      "summary": "Function sitemap with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/app/terms/page.js",
+      "type": "file",
+      "name": "page.js",
+      "filePath": "src/app/terms/page.js",
+      "summary": "page.js: Source file, 1 function.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/app/terms/page.js:TermsPage",
+      "type": "function",
+      "name": "TermsPage",
+      "filePath": "src/app/terms/page.js",
+      "lineRange": [
+        14,
+        104
+      ],
+      "summary": "Function TermsPage with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/admin/AdminCard.jsx",
+      "type": "file",
+      "name": "AdminCard.jsx",
+      "filePath": "src/components/admin/AdminCard.jsx",
+      "summary": "AdminCard.jsx: Source file, 2 functions.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/admin/AdminCard.jsx:AdminCard",
+      "type": "function",
+      "name": "AdminCard",
+      "filePath": "src/components/admin/AdminCard.jsx",
+      "lineRange": [
+        3,
+        9
+      ],
+      "summary": "Function AdminCard with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/admin/AdminCard.jsx:AdminCardHeader",
+      "type": "function",
+      "name": "AdminCardHeader",
+      "filePath": "src/components/admin/AdminCard.jsx",
+      "lineRange": [
+        11,
+        18
+      ],
+      "summary": "Function AdminCardHeader with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/admin/AdminPageContainer.jsx",
+      "type": "file",
+      "name": "AdminPageContainer.jsx",
+      "filePath": "src/components/admin/AdminPageContainer.jsx",
+      "summary": "AdminPageContainer.jsx: Source file, 1 function.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/admin/AdminPageContainer.jsx:AdminPageContainer",
+      "type": "function",
+      "name": "AdminPageContainer",
+      "filePath": "src/components/admin/AdminPageContainer.jsx",
+      "lineRange": [
+        3,
+        9
+      ],
+      "summary": "Function AdminPageContainer with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/admin/AdminShell.jsx",
+      "type": "file",
+      "name": "AdminShell.jsx",
+      "filePath": "src/components/admin/AdminShell.jsx",
+      "summary": "AdminShell.jsx: Source file, 1 function.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/admin/AdminShell.jsx:AdminShell",
+      "type": "function",
+      "name": "AdminShell",
+      "filePath": "src/components/admin/AdminShell.jsx",
+      "lineRange": [
+        17,
+        109
+      ],
+      "summary": "Function AdminShell with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/admin/AdminToolbar.jsx",
+      "type": "file",
+      "name": "AdminToolbar.jsx",
+      "filePath": "src/components/admin/AdminToolbar.jsx",
+      "summary": "AdminToolbar.jsx: Source file, 3 functions.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/admin/AdminToolbar.jsx:AdminToolbar",
+      "type": "function",
+      "name": "AdminToolbar",
+      "filePath": "src/components/admin/AdminToolbar.jsx",
+      "lineRange": [
+        3,
+        9
+      ],
+      "summary": "Function AdminToolbar with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/admin/AdminToolbar.jsx:SearchInput",
+      "type": "function",
+      "name": "SearchInput",
+      "filePath": "src/components/admin/AdminToolbar.jsx",
+      "lineRange": [
+        11,
+        37
+      ],
+      "summary": "Function SearchInput with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/admin/AdminToolbar.jsx:SelectFilter",
+      "type": "function",
+      "name": "SelectFilter",
+      "filePath": "src/components/admin/AdminToolbar.jsx",
+      "lineRange": [
+        39,
+        56
+      ],
+      "summary": "Function SelectFilter with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/admin/CaseStudiesForm.jsx",
+      "type": "file",
+      "name": "CaseStudiesForm.jsx",
+      "filePath": "src/components/admin/CaseStudiesForm.jsx",
+      "summary": "CaseStudiesForm.jsx: Source file, 2 functions.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/admin/CaseStudiesForm.jsx:createInitialForm",
+      "type": "function",
+      "name": "createInitialForm",
+      "filePath": "src/components/admin/CaseStudiesForm.jsx",
+      "lineRange": [
+        12,
+        32
+      ],
+      "summary": "Function createInitialForm with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/admin/CaseStudiesForm.jsx:CaseStudiesForm",
+      "type": "function",
+      "name": "CaseStudiesForm",
+      "filePath": "src/components/admin/CaseStudiesForm.jsx",
+      "lineRange": [
+        34,
+        159
+      ],
+      "summary": "Function CaseStudiesForm with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/admin/EmptyState.jsx",
+      "type": "file",
+      "name": "EmptyState.jsx",
+      "filePath": "src/components/admin/EmptyState.jsx",
+      "summary": "EmptyState.jsx: Source file, 1 function.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/admin/EmptyState.jsx:EmptyState",
+      "type": "function",
+      "name": "EmptyState",
+      "filePath": "src/components/admin/EmptyState.jsx",
+      "lineRange": [
+        3,
+        25
+      ],
+      "summary": "Function EmptyState with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/admin/EventsForm.jsx",
+      "type": "file",
+      "name": "EventsForm.jsx",
+      "filePath": "src/components/admin/EventsForm.jsx",
+      "summary": "EventsForm.jsx: Source file, 2 functions.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/admin/EventsForm.jsx:createInitialForm",
+      "type": "function",
+      "name": "createInitialForm",
+      "filePath": "src/components/admin/EventsForm.jsx",
+      "lineRange": [
+        12,
+        26
+      ],
+      "summary": "Function createInitialForm with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/admin/EventsForm.jsx:EventsForm",
+      "type": "function",
+      "name": "EventsForm",
+      "filePath": "src/components/admin/EventsForm.jsx",
+      "lineRange": [
+        28,
+        115
+      ],
+      "summary": "Function EventsForm with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/admin/GalleryForm.jsx",
+      "type": "file",
+      "name": "GalleryForm.jsx",
+      "filePath": "src/components/admin/GalleryForm.jsx",
+      "summary": "GalleryForm.jsx: Source file, 2 functions.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/admin/GalleryForm.jsx:createInitialForm",
+      "type": "function",
+      "name": "createInitialForm",
+      "filePath": "src/components/admin/GalleryForm.jsx",
+      "lineRange": [
+        12,
+        26
+      ],
+      "summary": "Function createInitialForm with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/admin/GalleryForm.jsx:GalleryForm",
+      "type": "function",
+      "name": "GalleryForm",
+      "filePath": "src/components/admin/GalleryForm.jsx",
+      "lineRange": [
+        28,
+        114
+      ],
+      "summary": "Function GalleryForm with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/admin/MusicForm.jsx",
+      "type": "file",
+      "name": "MusicForm.jsx",
+      "filePath": "src/components/admin/MusicForm.jsx",
+      "summary": "MusicForm.jsx: Source file, 2 functions.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/components/admin/MusicForm.jsx:createInitialForm",
+      "type": "function",
+      "name": "createInitialForm",
+      "filePath": "src/components/admin/MusicForm.jsx",
+      "lineRange": [
+        33,
+        60
+      ],
+      "summary": "Function createInitialForm with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/admin/MusicForm.jsx:MusicForm",
+      "type": "function",
+      "name": "MusicForm",
+      "filePath": "src/components/admin/MusicForm.jsx",
+      "lineRange": [
+        62,
+        262
+      ],
+      "summary": "Function MusicForm with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/admin/PageHeader.jsx",
+      "type": "file",
+      "name": "PageHeader.jsx",
+      "filePath": "src/components/admin/PageHeader.jsx",
+      "summary": "PageHeader.jsx: Source file, 1 function.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/admin/PageHeader.jsx:PageHeader",
+      "type": "function",
+      "name": "PageHeader",
+      "filePath": "src/components/admin/PageHeader.jsx",
+      "lineRange": [
+        3,
+        17
+      ],
+      "summary": "Function PageHeader with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/app/sitemap.js",
+      "target": "function:src/app/sitemap.js:sitemap",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/sitemap.js",
+      "target": "function:src/app/sitemap.js:sitemap",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/terms/page.js",
+      "target": "function:src/app/terms/page.js:TermsPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/terms/page.js",
+      "target": "function:src/app/terms/page.js:TermsPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/admin/AdminCard.jsx",
+      "target": "function:src/components/admin/AdminCard.jsx:AdminCard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/admin/AdminCard.jsx",
+      "target": "function:src/components/admin/AdminCard.jsx:AdminCard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/admin/AdminCard.jsx",
+      "target": "function:src/components/admin/AdminCard.jsx:AdminCardHeader",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/admin/AdminCard.jsx",
+      "target": "function:src/components/admin/AdminCard.jsx:AdminCardHeader",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/admin/AdminPageContainer.jsx",
+      "target": "function:src/components/admin/AdminPageContainer.jsx:AdminPageContainer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/admin/AdminPageContainer.jsx",
+      "target": "function:src/components/admin/AdminPageContainer.jsx:AdminPageContainer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/admin/AdminShell.jsx",
+      "target": "function:src/components/admin/AdminShell.jsx:AdminShell",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/admin/AdminShell.jsx",
+      "target": "function:src/components/admin/AdminShell.jsx:AdminShell",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/admin/AdminToolbar.jsx",
+      "target": "function:src/components/admin/AdminToolbar.jsx:AdminToolbar",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/admin/AdminToolbar.jsx",
+      "target": "function:src/components/admin/AdminToolbar.jsx:AdminToolbar",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/admin/AdminToolbar.jsx",
+      "target": "function:src/components/admin/AdminToolbar.jsx:SearchInput",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/admin/AdminToolbar.jsx",
+      "target": "function:src/components/admin/AdminToolbar.jsx:SearchInput",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/admin/AdminToolbar.jsx",
+      "target": "function:src/components/admin/AdminToolbar.jsx:SelectFilter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/admin/AdminToolbar.jsx",
+      "target": "function:src/components/admin/AdminToolbar.jsx:SelectFilter",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/admin/CaseStudiesForm.jsx",
+      "target": "function:src/components/admin/CaseStudiesForm.jsx:createInitialForm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/admin/CaseStudiesForm.jsx",
+      "target": "function:src/components/admin/CaseStudiesForm.jsx:CaseStudiesForm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/admin/CaseStudiesForm.jsx",
+      "target": "function:src/components/admin/CaseStudiesForm.jsx:CaseStudiesForm",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/admin/CaseStudiesForm.jsx",
+      "target": "function:src/components/admin/CaseStudiesForm.jsx:createInitialForm",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/admin/EmptyState.jsx",
+      "target": "function:src/components/admin/EmptyState.jsx:EmptyState",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/admin/EmptyState.jsx",
+      "target": "function:src/components/admin/EmptyState.jsx:EmptyState",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/admin/EventsForm.jsx",
+      "target": "function:src/components/admin/EventsForm.jsx:createInitialForm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/admin/EventsForm.jsx",
+      "target": "function:src/components/admin/EventsForm.jsx:EventsForm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/admin/EventsForm.jsx",
+      "target": "function:src/components/admin/EventsForm.jsx:EventsForm",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/admin/EventsForm.jsx",
+      "target": "function:src/components/admin/EventsForm.jsx:createInitialForm",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/admin/GalleryForm.jsx",
+      "target": "function:src/components/admin/GalleryForm.jsx:createInitialForm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/admin/GalleryForm.jsx",
+      "target": "function:src/components/admin/GalleryForm.jsx:GalleryForm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/admin/GalleryForm.jsx",
+      "target": "function:src/components/admin/GalleryForm.jsx:GalleryForm",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/admin/GalleryForm.jsx",
+      "target": "function:src/components/admin/GalleryForm.jsx:createInitialForm",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/admin/MusicForm.jsx",
+      "target": "function:src/components/admin/MusicForm.jsx:createInitialForm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/admin/MusicForm.jsx",
+      "target": "function:src/components/admin/MusicForm.jsx:MusicForm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/admin/MusicForm.jsx",
+      "target": "function:src/components/admin/MusicForm.jsx:MusicForm",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/admin/MusicForm.jsx",
+      "target": "function:src/components/admin/MusicForm.jsx:createInitialForm",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/admin/PageHeader.jsx",
+      "target": "function:src/components/admin/PageHeader.jsx:PageHeader",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/admin/PageHeader.jsx",
+      "target": "function:src/components/admin/PageHeader.jsx:PageHeader",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

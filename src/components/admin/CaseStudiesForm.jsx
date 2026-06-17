@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect, useCallback } from "react"
+import { useState, useCallback } from "react"
 import { useRouter } from "next/navigation"
 import RichTextEditor from "@/components/admin/RichTextEditor"
 
@@ -9,34 +9,36 @@ const STATUS_OPTIONS = [
   { value: "published", label: "Published" },
 ]
 
+function createInitialForm(item) {
+  if (!item) {
+    return {
+      title: "", slug: "", clientName: "", industry: "",
+      challenge: "", solution: "", resultsRaw: "",
+      metricsRaw: "", coverImage: "", testimonialQuote: "",
+      testimonialAuthor: "", tags: "", publishedAt: "", status: "draft",
+    }
+  }
+
+  return {
+    title: item.title || "", slug: item.slug || "", clientName: item.clientName || "",
+    industry: item.industry || "", challenge: item.challenge || "", solution: item.solution || "",
+    resultsRaw: (item.results || []).join("\n"),
+    metricsRaw: JSON.stringify(item.metrics || {}, null, 2),
+    coverImage: item.coverImage || "", testimonialQuote: item.testimonialQuote || "",
+    testimonialAuthor: item.testimonialAuthor || "", tags: (item.tags || []).join(", "),
+    publishedAt: item.publishedAt ? item.publishedAt.slice(0, 16) : "",
+    status: item.status || "draft",
+  }
+}
+
 export default function CaseStudiesForm({ item }) {
   const router = useRouter()
   const isEditing = !!item
 
-  const [form, setForm] = useState({
-    title: "", slug: "", clientName: "", industry: "",
-    challenge: "", solution: "", resultsRaw: "",
-    metricsRaw: "", coverImage: "", testimonialQuote: "",
-    testimonialAuthor: "", tags: "", publishedAt: "", status: "draft",
-  })
+  const [form, setForm] = useState(() => createInitialForm(item))
   const [slugManuallyEdited, setSlugManuallyEdited] = useState(false)
   const [saving, setSaving] = useState(false)
   const [error, setError] = useState("")
-
-  useEffect(() => {
-    if (item) {
-      setForm({
-        title: item.title || "", slug: item.slug || "", clientName: item.clientName || "",
-        industry: item.industry || "", challenge: item.challenge || "", solution: item.solution || "",
-        resultsRaw: (item.results || []).join("\n"),
-        metricsRaw: JSON.stringify(item.metrics || {}, null, 2),
-        coverImage: item.coverImage || "", testimonialQuote: item.testimonialQuote || "",
-        testimonialAuthor: item.testimonialAuthor || "", tags: (item.tags || []).join(", "),
-        publishedAt: item.publishedAt ? item.publishedAt.slice(0, 16) : "",
-        status: item.status || "draft",
-      })
-    }
-  }, [item])
 
   const handleChange = useCallback((field, value) => {
     setForm((prev) => {

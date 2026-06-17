@@ -1,0 +1,42 @@
+{
+  "projectRoot": "C:\\Users\\Admin\\Desktop\\Website 3D\\studio-3d",
+  "batchFiles": [
+    {
+      "path": "src/components/artist/bio-music/BioDetailBackground.module.css",
+      "language": "css",
+      "sizeLines": 7,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/artist/bio-music/PlatformLink.module.css",
+      "language": "css",
+      "sizeLines": 50,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/artist/bio-music/PlatformLinksCard.module.css",
+      "language": "css",
+      "sizeLines": 12,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/artist/bio-music/ReleaseCard.module.css",
+      "language": "css",
+      "sizeLines": 101,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/artist/bio-music/ReleaseShelf3D.module.css",
+      "language": "css",
+      "sizeLines": 209,
+      "fileCategory": "markup"
+    }
+  ],
+  "batchImportData": {
+    "src/components/artist/bio-music/BioDetailBackground.module.css": [],
+    "src/components/artist/bio-music/PlatformLink.module.css": [],
+    "src/components/artist/bio-music/PlatformLinksCard.module.css": [],
+    "src/components/artist/bio-music/ReleaseCard.module.css": [],
+    "src/components/artist/bio-music/ReleaseShelf3D.module.css": []
+  }
+}

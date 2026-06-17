@@ -1,0 +1,466 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/components/digital/DigitalNavbar.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 231,
+      "nonEmptyLines": 213,
+      "functions": [
+        {
+          "name": "DigitalNavbar",
+          "startLine": 20,
+          "endLine": 231,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "DigitalNavbar",
+          "line": 20,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "DigitalNavbar",
+          "callee": "useRouter",
+          "lineNumber": 21
+        },
+        {
+          "caller": "DigitalNavbar",
+          "callee": "useState",
+          "lineNumber": 22
+        },
+        {
+          "caller": "DigitalNavbar",
+          "callee": "useState",
+          "lineNumber": 23
+        },
+        {
+          "caller": "DigitalNavbar",
+          "callee": "useState",
+          "lineNumber": 24
+        },
+        {
+          "caller": "DigitalNavbar",
+          "callee": "useState",
+          "lineNumber": 25
+        },
+        {
+          "caller": "DigitalNavbar",
+          "callee": "useEffect",
+          "lineNumber": 27
+        },
+        {
+          "caller": "onScroll",
+          "callee": "requestAnimationFrame",
+          "lineNumber": 32
+        },
+        {
+          "caller": "onScroll",
+          "callee": "setScrolled",
+          "lineNumber": 34
+        },
+        {
+          "caller": "onScroll",
+          "callee": "setHidden",
+          "lineNumber": 35
+        },
+        {
+          "caller": "DigitalNavbar",
+          "callee": "window.addEventListener",
+          "lineNumber": 42
+        },
+        {
+          "caller": "DigitalNavbar",
+          "callee": "window.removeEventListener",
+          "lineNumber": 43
+        },
+        {
+          "caller": "DigitalNavbar",
+          "callee": "useEffect",
+          "lineNumber": 46
+        },
+        {
+          "caller": "DigitalNavbar",
+          "callee": "entries.forEach",
+          "lineNumber": 49
+        },
+        {
+          "caller": "DigitalNavbar",
+          "callee": "setActiveSection",
+          "lineNumber": 51
+        },
+        {
+          "caller": "DigitalNavbar",
+          "callee": "sections.forEach",
+          "lineNumber": 58
+        },
+        {
+          "caller": "DigitalNavbar",
+          "callee": "document.querySelector",
+          "lineNumber": 60
+        },
+        {
+          "caller": "DigitalNavbar",
+          "callee": "observer.observe",
+          "lineNumber": 61
+        },
+        {
+          "caller": "DigitalNavbar",
+          "callee": "observer.disconnect",
+          "lineNumber": 64
+        },
+        {
+          "caller": "DigitalNavbar",
+          "callee": "useEffect",
+          "lineNumber": 67
+        },
+        {
+          "caller": "onResize",
+          "callee": "setIsOpen",
+          "lineNumber": 70
+        },
+        {
+          "caller": "DigitalNavbar",
+          "callee": "window.addEventListener",
+          "lineNumber": 73
+        },
+        {
+          "caller": "DigitalNavbar",
+          "callee": "window.removeEventListener",
+          "lineNumber": 74
+        },
+        {
+          "caller": "DigitalNavbar",
+          "callee": "window.location.pathname.startsWith",
+          "lineNumber": 77
+        },
+        {
+          "caller": "closeMenu",
+          "callee": "setIsOpen",
+          "lineNumber": 79
+        },
+        {
+          "caller": "scrollToSection",
+          "callee": "router.push",
+          "lineNumber": 83
+        },
+        {
+          "caller": "scrollToSection",
+          "callee": "document.querySelector",
+          "lineNumber": 86
+        },
+        {
+          "caller": "scrollToSection",
+          "callee": "el.scrollIntoView",
+          "lineNumber": 88
+        },
+        {
+          "caller": "scrollToSection",
+          "callee": "closeMenu",
+          "lineNumber": 90
+        },
+        {
+          "caller": "handleNavClick",
+          "callee": "closeMenu",
+          "lineNumber": 95
+        },
+        {
+          "caller": "handleNavClick",
+          "callee": "e.preventDefault",
+          "lineNumber": 98
+        },
+        {
+          "caller": "handleNavClick",
+          "callee": "scrollToSection",
+          "lineNumber": 99
+        },
+        {
+          "caller": "DigitalNavbar",
+          "callee": "sections.map",
+          "lineNumber": 127
+        },
+        {
+          "caller": "DigitalNavbar",
+          "callee": "handleNavClick",
+          "lineNumber": 142
+        },
+        {
+          "caller": "DigitalNavbar",
+          "callee": "e.preventDefault",
+          "lineNumber": 156
+        },
+        {
+          "caller": "DigitalNavbar",
+          "callee": "scrollToSection",
+          "lineNumber": 157
+        },
+        {
+          "caller": "DigitalNavbar",
+          "callee": "setIsOpen",
+          "lineNumber": 173
+        },
+        {
+          "caller": "DigitalNavbar",
+          "callee": "sections.map",
+          "lineNumber": 188
+        },
+        {
+          "caller": "DigitalNavbar",
+          "callee": "handleNavClick",
+          "lineNumber": 203
+        },
+        {
+          "caller": "DigitalNavbar",
+          "callee": "e.preventDefault",
+          "lineNumber": 216
+        },
+        {
+          "caller": "DigitalNavbar",
+          "callee": "scrollToSection",
+          "lineNumber": 217
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/digital/digital-blog/BlogThemeProvider.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 43,
+      "nonEmptyLines": 35,
+      "functions": [
+        {
+          "name": "useBlogTheme",
+          "startLine": 9,
+          "endLine": 11,
+          "params": []
+        },
+        {
+          "name": "BlogThemeProvider",
+          "startLine": 13,
+          "endLine": 43,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "useBlogTheme",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "BlogThemeProvider",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "useBlogTheme",
+          "callee": "useContext",
+          "lineNumber": 10
+        },
+        {
+          "caller": "BlogThemeProvider",
+          "callee": "useHydrated",
+          "lineNumber": 14
+        },
+        {
+          "caller": "BlogThemeProvider",
+          "callee": "useState",
+          "lineNumber": 15
+        },
+        {
+          "caller": "BlogThemeProvider",
+          "callee": "getStoredTheme",
+          "lineNumber": 15
+        },
+        {
+          "caller": "BlogThemeProvider",
+          "callee": "useEffect",
+          "lineNumber": 17
+        },
+        {
+          "caller": "handler",
+          "callee": "setTheme",
+          "lineNumber": 19
+        },
+        {
+          "caller": "BlogThemeProvider",
+          "callee": "window.addEventListener",
+          "lineNumber": 21
+        },
+        {
+          "caller": "BlogThemeProvider",
+          "callee": "window.removeEventListener",
+          "lineNumber": 22
+        },
+        {
+          "caller": "toggleTheme",
+          "callee": "setTheme",
+          "lineNumber": 26
+        },
+        {
+          "caller": "toggleTheme",
+          "callee": "setStoredTheme",
+          "lineNumber": 28
+        },
+        {
+          "caller": "toggleTheme",
+          "callee": "window.dispatchEvent",
+          "lineNumber": 29
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/digital/digital-blog/ThemeToggle.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 84,
+      "nonEmptyLines": 77,
+      "functions": [
+        {
+          "name": "ThemeToggle",
+          "startLine": 7,
+          "endLine": 84,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ThemeToggle",
+          "line": 7,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ThemeToggle",
+          "callee": "useHydrated",
+          "lineNumber": 8
+        },
+        {
+          "caller": "ThemeToggle",
+          "callee": "useState",
+          "lineNumber": 9
+        },
+        {
+          "caller": "ThemeToggle",
+          "callee": "getStoredTheme",
+          "lineNumber": 9
+        },
+        {
+          "caller": "ThemeToggle",
+          "callee": "useEffect",
+          "lineNumber": 11
+        },
+        {
+          "caller": "handler",
+          "callee": "setTheme",
+          "lineNumber": 13
+        },
+        {
+          "caller": "ThemeToggle",
+          "callee": "window.addEventListener",
+          "lineNumber": 16
+        },
+        {
+          "caller": "ThemeToggle",
+          "callee": "window.removeEventListener",
+          "lineNumber": 17
+        },
+        {
+          "caller": "toggle",
+          "callee": "setTheme",
+          "lineNumber": 22
+        },
+        {
+          "caller": "toggle",
+          "callee": "setStoredTheme",
+          "lineNumber": 23
+        },
+        {
+          "caller": "toggle",
+          "callee": "window.dispatchEvent",
+          "lineNumber": 24
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/digital/digital-blog/blog-theme.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 17,
+      "nonEmptyLines": 15,
+      "functions": [
+        {
+          "name": "getStoredTheme",
+          "startLine": 3,
+          "endLine": 11,
+          "params": []
+        },
+        {
+          "name": "setStoredTheme",
+          "startLine": 13,
+          "endLine": 17,
+          "params": [
+            "theme"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getStoredTheme",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "setStoredTheme",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getStoredTheme",
+          "callee": "localStorage.getItem",
+          "lineNumber": 6
+        },
+        {
+          "caller": "setStoredTheme",
+          "callee": "localStorage.setItem",
+          "lineNumber": 15
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    }
+  ]
+}

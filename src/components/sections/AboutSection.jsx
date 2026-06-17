@@ -4,8 +4,8 @@ import { useRef, useEffect, useState, useCallback } from "react";
 import dynamic from "next/dynamic";
 import styles from "./AboutSection.module.css";
 import GlassPanel from "../ui/GlassPanel";
-import SectionTitle from "../ui/SectionTitle";
 import { useCanvasOptimizer } from "@/hooks/useCanvasOptimizer";
+import { usePrefersReducedMotion } from "@/hooks/usePrefersReducedMotion";
 
 const AboutCharacterCanvas = dynamic(
   () => import("../canvas/AboutCharacterCanvas"),
@@ -47,15 +47,7 @@ export default function AboutSection() {
   const [isAboutVisible, setIsAboutVisible] = useState(false);
   const { isMobile, isTablet } = useCanvasOptimizer();
   const isSmall = isMobile || isTablet;
-  const [reducedMotion, setReducedMotion] = useState(false);
-
-  useEffect(() => {
-    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
-    setReducedMotion(mq.matches);
-    const handler = (e) => setReducedMotion(e.matches);
-    mq.addEventListener("change", handler);
-    return () => mq.removeEventListener("change", handler);
-  }, []);
+  const reducedMotion = usePrefersReducedMotion();
 
   const autoScrollRef = useRef(null);
   const scrollPosRef = useRef(0);
@@ -138,7 +130,7 @@ export default function AboutSection() {
 
   useEffect(() => {
     let cancelled = false;
-    const load = async () => {
+    (async () => {
       try {
         const [g, s] = await Promise.all([import("gsap"), import("gsap/ScrollTrigger")]);
         const gsapInstance = g.default;
@@ -147,8 +139,7 @@ export default function AboutSection() {
         gsapInstance.registerPlugin(ScrollTriggerInstance);
         if (!cancelled) setGsapObj({ gsap: gsapInstance, ScrollTrigger: ScrollTriggerInstance, ready: true });
       } catch (e) { console.error("GSAP error:", e); }
-    };
-    load();
+    })();
     return () => { cancelled = true; };
   }, []);
 
@@ -191,8 +182,6 @@ export default function AboutSection() {
 
     return () => ctx.revert();
   }, [gsapObj, charReady, isSmall, reducedMotion]);
-
-  const allPanels = [...leftPanelData, ...rightPanelData];
 
   return (
     <section

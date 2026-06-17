@@ -8,6 +8,7 @@ export default function TableOfContents({ content }) {
   const headings = useMemo(() => getArticleHeadings(content), [content])
   const [activeId, setActiveId] = useState(null)
   const [isOpen, setIsOpen] = useState(true)
+  const currentActiveId = activeId || headings[0]?.id || null
 
   function handleClick(e, id) {
     e.preventDefault()
@@ -20,7 +21,6 @@ export default function TableOfContents({ content }) {
 
   useEffect(() => {
     if (headings.length === 0) return
-    setActiveId(headings[0].id)
 
     const ids = headings.map((h) => h.id)
     const observer = new IntersectionObserver(
@@ -58,7 +58,7 @@ export default function TableOfContents({ content }) {
             <li key={h.id} className={styles[`h${h.level}`] || styles.h3}>
               <a
                 href={`#${h.id}`}
-                className={`${styles.link} ${activeId === h.id ? styles.active : ""}`}
+                className={`${styles.link} ${currentActiveId === h.id ? styles.active : ""}`}
                 onClick={(e) => handleClick(e, h.id)}
               >
                 {h.text}

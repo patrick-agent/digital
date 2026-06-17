@@ -1,0 +1,36 @@
+{
+  "projectRoot": "C:\\Users\\Admin\\Desktop\\Website 3D\\studio-3d",
+  "batchFiles": [
+    {
+      "path": "src/components/digital/CompanyLogos.jsx",
+      "language": "javascript",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/digital/DigitalIntro.jsx",
+      "language": "javascript",
+      "sizeLines": 166,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/digital/TextFlip.jsx",
+      "language": "javascript",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/components/digital/CompanyLogos.jsx": [
+      "src/components/digital/CompanyLogos.module.css"
+    ],
+    "src/components/digital/DigitalIntro.jsx": [
+      "src/components/digital/CompanyLogos.jsx",
+      "src/components/digital/DigitalIntro.module.css",
+      "src/components/digital/TextFlip.jsx"
+    ],
+    "src/components/digital/TextFlip.jsx": [
+      "src/components/digital/TextFlip.module.css"
+    ]
+  }
+}

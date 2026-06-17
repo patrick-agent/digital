@@ -1,0 +1,41 @@
+{
+  "projectRoot": "C:\\Users\\Admin\\Desktop\\Website 3D\\studio-3d",
+  "batchFiles": [
+    {
+      "path": "scripts/rebuild-shop-catalog.mjs",
+      "language": "javascript",
+      "sizeLines": 55,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/shop-data/content-builder.mjs",
+      "language": "javascript",
+      "sizeLines": 214,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/shop-data/products.mjs",
+      "language": "javascript",
+      "sizeLines": 1060,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/shop-data/shopee-scraper.mjs",
+      "language": "javascript",
+      "sizeLines": 92,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "scripts/rebuild-shop-catalog.mjs": [
+      "scripts/shop-data/content-builder.mjs",
+      "scripts/shop-data/products.mjs",
+      "scripts/shop-data/shopee-scraper.mjs"
+    ],
+    "scripts/shop-data/content-builder.mjs": [],
+    "scripts/shop-data/products.mjs": [],
+    "scripts/shop-data/shopee-scraper.mjs": [
+      "scripts/shop-data/content-builder.mjs"
+    ]
+  }
+}

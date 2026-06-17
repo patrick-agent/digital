@@ -1,0 +1,1010 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 7,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/lib/db/events.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 148,
+      "nonEmptyLines": 124,
+      "functions": [
+        {
+          "name": "trimString",
+          "startLine": 4,
+          "endLine": 6,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "normalizeEventStatus",
+          "startLine": 8,
+          "endLine": 14,
+          "params": [
+            "status"
+          ]
+        },
+        {
+          "name": "normalizeTimestamp",
+          "startLine": 16,
+          "endLine": 19,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "normalizeEvent",
+          "startLine": 21,
+          "endLine": 40,
+          "params": []
+        },
+        {
+          "name": "matchesSearch",
+          "startLine": 42,
+          "endLine": 55,
+          "params": [
+            "event",
+            "query"
+          ]
+        },
+        {
+          "name": "readAllEvents",
+          "startLine": 57,
+          "endLine": 61,
+          "params": []
+        },
+        {
+          "name": "readEvents",
+          "startLine": 63,
+          "endLine": 83,
+          "params": []
+        },
+        {
+          "name": "createEvent",
+          "startLine": 85,
+          "endLine": 109,
+          "params": [
+            "data"
+          ]
+        },
+        {
+          "name": "readEvent",
+          "startLine": 111,
+          "endLine": 114,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "updateEvent",
+          "startLine": 116,
+          "endLine": 138,
+          "params": [
+            "id",
+            "data"
+          ]
+        },
+        {
+          "name": "deleteEvent",
+          "startLine": 140,
+          "endLine": 148,
+          "params": [
+            "id"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "readEvents",
+          "line": 63,
+          "isDefault": false
+        },
+        {
+          "name": "createEvent",
+          "line": 85,
+          "isDefault": false
+        },
+        {
+          "name": "readEvent",
+          "line": 111,
+          "isDefault": false
+        },
+        {
+          "name": "updateEvent",
+          "line": 116,
+          "isDefault": false
+        },
+        {
+          "name": "deleteEvent",
+          "line": 140,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "trimString",
+          "callee": "value.trim",
+          "lineNumber": 5
+        },
+        {
+          "caller": "normalizeEventStatus",
+          "callee": "trimString(status).toLowerCase",
+          "lineNumber": 9
+        },
+        {
+          "caller": "normalizeEventStatus",
+          "callee": "trimString",
+          "lineNumber": 9
+        },
+        {
+          "caller": "normalizeEventStatus",
+          "callee": "[\"upcoming\", \"past\", \"cancelled\"].includes",
+          "lineNumber": 10
+        },
+        {
+          "caller": "normalizeTimestamp",
+          "callee": "Date.parse",
+          "lineNumber": 17
+        },
+        {
+          "caller": "normalizeTimestamp",
+          "callee": "Number.isFinite",
+          "lineNumber": 18
+        },
+        {
+          "caller": "normalizeEvent",
+          "callee": "trimString",
+          "lineNumber": 22
+        },
+        {
+          "caller": "normalizeEvent",
+          "callee": "trimString",
+          "lineNumber": 22
+        },
+        {
+          "caller": "normalizeEvent",
+          "callee": "trimString",
+          "lineNumber": 23
+        },
+        {
+          "caller": "normalizeEvent",
+          "callee": "trimString",
+          "lineNumber": 23
+        },
+        {
+          "caller": "normalizeEvent",
+          "callee": "trimString",
+          "lineNumber": 24
+        },
+        {
+          "caller": "normalizeEvent",
+          "callee": "trimString",
+          "lineNumber": 27
+        },
+        {
+          "caller": "normalizeEvent",
+          "callee": "crypto.randomUUID",
+          "lineNumber": 27
+        },
+        {
+          "caller": "normalizeEvent",
+          "callee": "trimString",
+          "lineNumber": 29
+        },
+        {
+          "caller": "normalizeEvent",
+          "callee": "slugify",
+          "lineNumber": 29
+        },
+        {
+          "caller": "normalizeEvent",
+          "callee": "trimString",
+          "lineNumber": 30
+        },
+        {
+          "caller": "normalizeEvent",
+          "callee": "trimString",
+          "lineNumber": 31
+        },
+        {
+          "caller": "normalizeEvent",
+          "callee": "trimString",
+          "lineNumber": 31
+        },
+        {
+          "caller": "normalizeEvent",
+          "callee": "trimString",
+          "lineNumber": 32
+        },
+        {
+          "caller": "normalizeEvent",
+          "callee": "trimString",
+          "lineNumber": 34
+        },
+        {
+          "caller": "normalizeEvent",
+          "callee": "trimString",
+          "lineNumber": 35
+        },
+        {
+          "caller": "normalizeEvent",
+          "callee": "trimString",
+          "lineNumber": 35
+        },
+        {
+          "caller": "normalizeEvent",
+          "callee": "normalizeEventStatus",
+          "lineNumber": 36
+        },
+        {
+          "caller": "normalizeEvent",
+          "callee": "trimString",
+          "lineNumber": 38
+        },
+        {
+          "caller": "matchesSearch",
+          "callee": "[\n    event.eventName,\n    event.venue,\n    event.city,\n    event.country,\n    event.slug,\n  ]\n    .filter(Boolean)\n    .join(\" \")\n    .toLowerCase",
+          "lineNumber": 43
+        },
+        {
+          "caller": "matchesSearch",
+          "callee": "[\n    event.eventName,\n    event.venue,\n    event.city,\n    event.country,\n    event.slug,\n  ]\n    .filter(Boolean)\n    .join",
+          "lineNumber": 43
+        },
+        {
+          "caller": "matchesSearch",
+          "callee": "[\n    event.eventName,\n    event.venue,\n    event.city,\n    event.country,\n    event.slug,\n  ]\n    .filter",
+          "lineNumber": 43
+        },
+        {
+          "caller": "matchesSearch",
+          "callee": "haystack.includes",
+          "lineNumber": 54
+        },
+        {
+          "caller": "readAllEvents",
+          "callee": "readJSON",
+          "lineNumber": 58
+        },
+        {
+          "caller": "readAllEvents",
+          "callee": "Array.isArray",
+          "lineNumber": 59
+        },
+        {
+          "caller": "readAllEvents",
+          "callee": "items.map",
+          "lineNumber": 60
+        },
+        {
+          "caller": "readAllEvents",
+          "callee": "normalizeEvent",
+          "lineNumber": 60
+        },
+        {
+          "caller": "readEvents",
+          "callee": "readAllEvents",
+          "lineNumber": 64
+        },
+        {
+          "caller": "readEvents",
+          "callee": "items.filter",
+          "lineNumber": 67
+        },
+        {
+          "caller": "readEvents",
+          "callee": "search.toLowerCase",
+          "lineNumber": 70
+        },
+        {
+          "caller": "readEvents",
+          "callee": "items.filter",
+          "lineNumber": 71
+        },
+        {
+          "caller": "readEvents",
+          "callee": "matchesSearch",
+          "lineNumber": 71
+        },
+        {
+          "caller": "readEvents",
+          "callee": "items.sort",
+          "lineNumber": 74
+        },
+        {
+          "caller": "readEvents",
+          "callee": "normalizeTimestamp",
+          "lineNumber": 75
+        },
+        {
+          "caller": "readEvents",
+          "callee": "normalizeTimestamp",
+          "lineNumber": 75
+        },
+        {
+          "caller": "readEvents",
+          "callee": "items.slice",
+          "lineNumber": 80
+        },
+        {
+          "caller": "createEvent",
+          "callee": "readAllEvents",
+          "lineNumber": 86
+        },
+        {
+          "caller": "createEvent",
+          "callee": "trimString",
+          "lineNumber": 87
+        },
+        {
+          "caller": "createEvent",
+          "callee": "trimString",
+          "lineNumber": 87
+        },
+        {
+          "caller": "createEvent",
+          "callee": "generateUniqueSlug",
+          "lineNumber": 88
+        },
+        {
+          "caller": "createEvent",
+          "callee": "slugify",
+          "lineNumber": 88
+        },
+        {
+          "caller": "createEvent",
+          "callee": "new Date().toISOString",
+          "lineNumber": 89
+        },
+        {
+          "caller": "createEvent",
+          "callee": "normalizeEvent",
+          "lineNumber": 91
+        },
+        {
+          "caller": "createEvent",
+          "callee": "crypto.randomUUID",
+          "lineNumber": 92
+        },
+        {
+          "caller": "createEvent",
+          "callee": "items.push",
+          "lineNumber": 106
+        },
+        {
+          "caller": "createEvent",
+          "callee": "writeJSON",
+          "lineNumber": 107
+        },
+        {
+          "caller": "readEvent",
+          "callee": "readAllEvents",
+          "lineNumber": 112
+        },
+        {
+          "caller": "readEvent",
+          "callee": "items.find",
+          "lineNumber": 113
+        },
+        {
+          "caller": "updateEvent",
+          "callee": "readAllEvents",
+          "lineNumber": 117
+        },
+        {
+          "caller": "updateEvent",
+          "callee": "items.findIndex",
+          "lineNumber": 118
+        },
+        {
+          "caller": "updateEvent",
+          "callee": "trimString",
+          "lineNumber": 122
+        },
+        {
+          "caller": "updateEvent",
+          "callee": "trimString",
+          "lineNumber": 123
+        },
+        {
+          "caller": "updateEvent",
+          "callee": "slugify",
+          "lineNumber": 123
+        },
+        {
+          "caller": "updateEvent",
+          "callee": "generateUniqueSlug",
+          "lineNumber": 124
+        },
+        {
+          "caller": "updateEvent",
+          "callee": "normalizeEvent",
+          "lineNumber": 126
+        },
+        {
+          "caller": "updateEvent",
+          "callee": "new Date().toISOString",
+          "lineNumber": 133
+        },
+        {
+          "caller": "updateEvent",
+          "callee": "writeJSON",
+          "lineNumber": 136
+        },
+        {
+          "caller": "deleteEvent",
+          "callee": "readAllEvents",
+          "lineNumber": 141
+        },
+        {
+          "caller": "deleteEvent",
+          "callee": "items.findIndex",
+          "lineNumber": 142
+        },
+        {
+          "caller": "deleteEvent",
+          "callee": "items.splice",
+          "lineNumber": 145
+        },
+        {
+          "caller": "deleteEvent",
+          "callee": "writeJSON",
+          "lineNumber": 146
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 5,
+        "functionCount": 11,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/events/service/handler.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 131,
+      "nonEmptyLines": 116,
+      "functions": [
+        {
+          "name": "inputFailure",
+          "startLine": 28,
+          "endLine": 33,
+          "params": [
+            "resultSchema",
+            "error",
+            "fallbackMessage"
+          ]
+        },
+        {
+          "name": "unknownFailure",
+          "startLine": 35,
+          "endLine": 43,
+          "params": [
+            "resultSchema",
+            "error",
+            "fallbackMessage"
+          ]
+        },
+        {
+          "name": "notFoundFailure",
+          "startLine": 45,
+          "endLine": 49,
+          "params": [
+            "resultSchema",
+            "id"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "EventHandler",
+          "startLine": 51,
+          "endLine": 131,
+          "methods": [
+            "constructor",
+            "list",
+            "get",
+            "create",
+            "update",
+            "remove"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "EventHandler",
+          "line": 51,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "inputFailure",
+          "callee": "error?.issues?.map((issue) => issue.message).join",
+          "lineNumber": 29
+        },
+        {
+          "caller": "inputFailure",
+          "callee": "error?.issues?.map",
+          "lineNumber": 29
+        },
+        {
+          "caller": "inputFailure",
+          "callee": "resultSchema.parse",
+          "lineNumber": 30
+        },
+        {
+          "caller": "inputFailure",
+          "callee": "createEventFailure",
+          "lineNumber": 31
+        },
+        {
+          "caller": "unknownFailure",
+          "callee": "resultSchema.parse",
+          "lineNumber": 36
+        },
+        {
+          "caller": "unknownFailure",
+          "callee": "createEventFailure",
+          "lineNumber": 37
+        },
+        {
+          "caller": "notFoundFailure",
+          "callee": "resultSchema.parse",
+          "lineNumber": 46
+        },
+        {
+          "caller": "notFoundFailure",
+          "callee": "createEventFailure",
+          "lineNumber": 47
+        },
+        {
+          "caller": "list",
+          "callee": "ListEventInputSchema.safeParse",
+          "lineNumber": 57
+        },
+        {
+          "caller": "list",
+          "callee": "inputFailure",
+          "lineNumber": 59
+        },
+        {
+          "caller": "list",
+          "callee": "this.store.list",
+          "lineNumber": 63
+        },
+        {
+          "caller": "list",
+          "callee": "EventListResultSchema.parse",
+          "lineNumber": 64
+        },
+        {
+          "caller": "list",
+          "callee": "unknownFailure",
+          "lineNumber": 66
+        },
+        {
+          "caller": "get",
+          "callee": "LookupEventInputSchema.safeParse",
+          "lineNumber": 71
+        },
+        {
+          "caller": "get",
+          "callee": "inputFailure",
+          "lineNumber": 73
+        },
+        {
+          "caller": "get",
+          "callee": "this.store.get",
+          "lineNumber": 78
+        },
+        {
+          "caller": "get",
+          "callee": "notFoundFailure",
+          "lineNumber": 79
+        },
+        {
+          "caller": "get",
+          "callee": "EventSingleResultSchema.parse",
+          "lineNumber": 80
+        },
+        {
+          "caller": "get",
+          "callee": "unknownFailure",
+          "lineNumber": 82
+        },
+        {
+          "caller": "create",
+          "callee": "CreateEventInputSchema.safeParse",
+          "lineNumber": 87
+        },
+        {
+          "caller": "create",
+          "callee": "inputFailure",
+          "lineNumber": 89
+        },
+        {
+          "caller": "create",
+          "callee": "this.store.create",
+          "lineNumber": 93
+        },
+        {
+          "caller": "create",
+          "callee": "EventSingleResultSchema.parse",
+          "lineNumber": 94
+        },
+        {
+          "caller": "create",
+          "callee": "unknownFailure",
+          "lineNumber": 96
+        },
+        {
+          "caller": "update",
+          "callee": "UpdateEventInputSchema.safeParse",
+          "lineNumber": 101
+        },
+        {
+          "caller": "update",
+          "callee": "inputFailure",
+          "lineNumber": 103
+        },
+        {
+          "caller": "update",
+          "callee": "this.store.update",
+          "lineNumber": 108
+        },
+        {
+          "caller": "update",
+          "callee": "notFoundFailure",
+          "lineNumber": 109
+        },
+        {
+          "caller": "update",
+          "callee": "EventSingleResultSchema.parse",
+          "lineNumber": 110
+        },
+        {
+          "caller": "update",
+          "callee": "unknownFailure",
+          "lineNumber": 112
+        },
+        {
+          "caller": "remove",
+          "callee": "LookupEventInputSchema.safeParse",
+          "lineNumber": 117
+        },
+        {
+          "caller": "remove",
+          "callee": "inputFailure",
+          "lineNumber": 119
+        },
+        {
+          "caller": "remove",
+          "callee": "this.store.remove",
+          "lineNumber": 124
+        },
+        {
+          "caller": "remove",
+          "callee": "notFoundFailure",
+          "lineNumber": 125
+        },
+        {
+          "caller": "remove",
+          "callee": "EventDeleteResultSchema.parse",
+          "lineNumber": 126
+        },
+        {
+          "caller": "remove",
+          "callee": "unknownFailure",
+          "lineNumber": 128
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/lib/events/service/handler.test.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 99,
+      "nonEmptyLines": 85,
+      "functions": [
+        {
+          "name": "createStore",
+          "startLine": 6,
+          "endLine": 46,
+          "params": []
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/events/service/http.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 9,
+      "functions": [
+        {
+          "name": "getEventErrorStatus",
+          "startLine": 9,
+          "endLine": 11,
+          "params": [
+            "code"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getEventErrorStatus",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/events/service/index.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 13,
+      "nonEmptyLines": 10,
+      "functions": [
+        {
+          "name": "listEvents",
+          "startLine": 5,
+          "endLine": 5,
+          "params": [
+            "input"
+          ]
+        },
+        {
+          "name": "getEvent",
+          "startLine": 6,
+          "endLine": 6,
+          "params": [
+            "input"
+          ]
+        },
+        {
+          "name": "createEvent",
+          "startLine": 7,
+          "endLine": 7,
+          "params": [
+            "input"
+          ]
+        },
+        {
+          "name": "updateEvent",
+          "startLine": 8,
+          "endLine": 8,
+          "params": [
+            "input"
+          ]
+        },
+        {
+          "name": "deleteEvent",
+          "startLine": 9,
+          "endLine": 9,
+          "params": [
+            "input"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "eventHandler",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "listEvents",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "getEvent",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "createEvent",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "updateEvent",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "deleteEvent",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "EventHandler",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "listEvents",
+          "callee": "eventHandler.list",
+          "lineNumber": 5
+        },
+        {
+          "caller": "getEvent",
+          "callee": "eventHandler.get",
+          "lineNumber": 6
+        },
+        {
+          "caller": "createEvent",
+          "callee": "eventHandler.create",
+          "lineNumber": 7
+        },
+        {
+          "caller": "updateEvent",
+          "callee": "eventHandler.update",
+          "lineNumber": 8
+        },
+        {
+          "caller": "deleteEvent",
+          "callee": "eventHandler.remove",
+          "lineNumber": 9
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 7,
+        "functionCount": 5,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/events/service/spec.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 116,
+      "nonEmptyLines": 102,
+      "functions": [
+        {
+          "name": "createEventFailure",
+          "startLine": 91,
+          "endLine": 96,
+          "params": [
+            "code",
+            "message"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "EventSchema",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "CreateEventInputSchema",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "UpdateEventInputSchema",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "ListEventInputSchema",
+          "line": 59,
+          "isDefault": false
+        },
+        {
+          "name": "LookupEventInputSchema",
+          "line": 63,
+          "isDefault": false
+        },
+        {
+          "name": "EventErrorCode",
+          "line": 67,
+          "isDefault": false
+        },
+        {
+          "name": "EventErrorCodeSchema",
+          "line": 73,
+          "isDefault": false
+        },
+        {
+          "name": "EventListSuccessSchema",
+          "line": 79,
+          "isDefault": false
+        },
+        {
+          "name": "EventSingleSuccessSchema",
+          "line": 80,
+          "isDefault": false
+        },
+        {
+          "name": "EventDeleteSuccessSchema",
+          "line": 81,
+          "isDefault": false
+        },
+        {
+          "name": "EventFailureSchema",
+          "line": 82,
+          "isDefault": false
+        },
+        {
+          "name": "createEventFailure",
+          "line": 91,
+          "isDefault": false
+        },
+        {
+          "name": "EventResultSchema",
+          "line": 98,
+          "isDefault": false
+        },
+        {
+          "name": "EventListResultSchema",
+          "line": 105,
+          "isDefault": false
+        },
+        {
+          "name": "EventSingleResultSchema",
+          "line": 106,
+          "isDefault": false
+        },
+        {
+          "name": "EventDeleteResultSchema",
+          "line": 107,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createEventFailure",
+          "callee": "EventFailureSchema.parse",
+          "lineNumber": 92
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 16,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/events/service/spec.test.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 46,
+      "nonEmptyLines": 39,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

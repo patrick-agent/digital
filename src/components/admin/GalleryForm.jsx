@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect, useCallback } from "react"
+import { useState, useCallback } from "react"
 import { useRouter } from "next/navigation"
 
 const TYPE_OPTIONS = [
@@ -9,27 +9,29 @@ const TYPE_OPTIONS = [
   { value: "reel", label: "Reel" },
 ]
 
+function createInitialForm(item) {
+  if (!item) {
+    return {
+      title: "", mediaType: "photo", fileUrl: "", thumbnail: "",
+      altText: "", caption: "", tags: "", eventRef: "",
+    }
+  }
+
+  return {
+    title: item.title || "", mediaType: item.mediaType || "photo",
+    fileUrl: item.fileUrl || "", thumbnail: item.thumbnail || "",
+    altText: item.altText || "", caption: item.caption || "",
+    tags: (item.tags || []).join(", "), eventRef: item.eventRef || "",
+  }
+}
+
 export default function GalleryForm({ item }) {
   const router = useRouter()
   const isEditing = !!item
 
-  const [form, setForm] = useState({
-    title: "", mediaType: "photo", fileUrl: "", thumbnail: "",
-    altText: "", caption: "", tags: "", eventRef: "",
-  })
+  const [form, setForm] = useState(() => createInitialForm(item))
   const [saving, setSaving] = useState(false)
   const [error, setError] = useState("")
-
-  useEffect(() => {
-    if (item) {
-      setForm({
-        title: item.title || "", mediaType: item.mediaType || "photo",
-        fileUrl: item.fileUrl || "", thumbnail: item.thumbnail || "",
-        altText: item.altText || "", caption: item.caption || "",
-        tags: (item.tags || []).join(", "), eventRef: item.eventRef || "",
-      })
-    }
-  }, [item])
 
   const handleChange = useCallback((field, value) => {
     setForm((prev) => ({ ...prev, [field]: value }))

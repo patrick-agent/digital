@@ -16,6 +16,12 @@ import ProductCard from "@/components/shop/ProductCard"
 import cardStyles from "@/app/shop/shop-card.module.css"
 import styles from "@/app/shop/shop.module.css"
 
+function getPriceValidUntil(baseDate) {
+  const sourceDate = new Date(baseDate || "2026-01-01T00:00:00.000Z")
+  sourceDate.setUTCFullYear(sourceDate.getUTCFullYear() + 1)
+  return sourceDate.toISOString()
+}
+
 export const revalidate = 300
 
 export async function generateStaticParams() {
@@ -90,7 +96,7 @@ export default async function ProductDetailPage({ params }) {
           priceCurrency: product.currency || "USD",
           url: product.affiliateUrl || `${siteMetadata.siteUrl}/shop/${product.slug}`,
           availability: "https://schema.org/InStock",
-          priceValidUntil: new Date(Date.now() + 365 * 24 * 60 * 60 * 1000).toISOString(),
+          priceValidUntil: getPriceValidUntil(product.updatedAt || product.createdAt),
         }
       : undefined,
   }

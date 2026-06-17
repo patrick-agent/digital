@@ -1,0 +1,1960 @@
+{
+  "nodes": [
+    {
+      "id": "function:src/lib/article-content.js:slugifyHeading",
+      "type": "function",
+      "name": "slugifyHeading",
+      "filePath": "src/lib/article-content.js",
+      "lineRange": [
+        29,
+        42
+      ],
+      "summary": "Function slugifyHeading with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/article-content.js:parseArticleFrontmatter",
+      "type": "function",
+      "name": "parseArticleFrontmatter",
+      "filePath": "src/lib/article-content.js",
+      "lineRange": [
+        44,
+        70
+      ],
+      "summary": "Function parseArticleFrontmatter with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/article-content.js:looksLikeHtml",
+      "type": "function",
+      "name": "looksLikeHtml",
+      "filePath": "src/lib/article-content.js",
+      "lineRange": [
+        72,
+        74
+      ],
+      "summary": "Function looksLikeHtml with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/article-content.js:looksLikeEscapedHtml",
+      "type": "function",
+      "name": "looksLikeEscapedHtml",
+      "filePath": "src/lib/article-content.js",
+      "lineRange": [
+        76,
+        78
+      ],
+      "summary": "Function looksLikeEscapedHtml with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/article-content.js:looksLikeMarkdown",
+      "type": "function",
+      "name": "looksLikeMarkdown",
+      "filePath": "src/lib/article-content.js",
+      "lineRange": [
+        80,
+        88
+      ],
+      "summary": "Function looksLikeMarkdown with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/article-content.js:sanitizeUrl",
+      "type": "function",
+      "name": "sanitizeUrl",
+      "filePath": "src/lib/article-content.js",
+      "lineRange": [
+        90,
+        93
+      ],
+      "summary": "Function sanitizeUrl with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/article-content.js:parseInlineMarkdown",
+      "type": "function",
+      "name": "parseInlineMarkdown",
+      "filePath": "src/lib/article-content.js",
+      "lineRange": [
+        95,
+        146
+      ],
+      "summary": "Function parseInlineMarkdown with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/lib/article-content.js:isTableDelimiter",
+      "type": "function",
+      "name": "isTableDelimiter",
+      "filePath": "src/lib/article-content.js",
+      "lineRange": [
+        148,
+        151
+      ],
+      "summary": "Function isTableDelimiter with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/article-content.js:isTableStart",
+      "type": "function",
+      "name": "isTableStart",
+      "filePath": "src/lib/article-content.js",
+      "lineRange": [
+        153,
+        159
+      ],
+      "summary": "Function isTableStart with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/article-content.js:splitTableRow",
+      "type": "function",
+      "name": "splitTableRow",
+      "filePath": "src/lib/article-content.js",
+      "lineRange": [
+        161,
+        163
+      ],
+      "summary": "Function splitTableRow with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/article-content.js:tableAlignment",
+      "type": "function",
+      "name": "tableAlignment",
+      "filePath": "src/lib/article-content.js",
+      "lineRange": [
+        165,
+        170
+      ],
+      "summary": "Function tableAlignment with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/article-content.js:renderTable",
+      "type": "function",
+      "name": "renderTable",
+      "filePath": "src/lib/article-content.js",
+      "lineRange": [
+        172,
+        200
+      ],
+      "summary": "Function renderTable with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/article-content.js:isListItem",
+      "type": "function",
+      "name": "isListItem",
+      "filePath": "src/lib/article-content.js",
+      "lineRange": [
+        202,
+        204
+      ],
+      "summary": "Function isListItem with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/article-content.js:renderList",
+      "type": "function",
+      "name": "renderList",
+      "filePath": "src/lib/article-content.js",
+      "lineRange": [
+        206,
+        224
+      ],
+      "summary": "Function renderList with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/article-content.js:isBlockStart",
+      "type": "function",
+      "name": "isBlockStart",
+      "filePath": "src/lib/article-content.js",
+      "lineRange": [
+        226,
+        239
+      ],
+      "summary": "Function isBlockStart with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/article-content.js:markdownToHtml",
+      "type": "function",
+      "name": "markdownToHtml",
+      "filePath": "src/lib/article-content.js",
+      "lineRange": [
+        241,
+        331
+      ],
+      "summary": "Function markdownToHtml with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/lib/article-content.js:parseEmbeddedTable",
+      "type": "function",
+      "name": "parseEmbeddedTable",
+      "filePath": "src/lib/article-content.js",
+      "lineRange": [
+        333,
+        368
+      ],
+      "summary": "Function parseEmbeddedTable with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/article-content.js:renderTableHtml",
+      "type": "function",
+      "name": "renderTableHtml",
+      "filePath": "src/lib/article-content.js",
+      "lineRange": [
+        370,
+        381
+      ],
+      "summary": "Function renderTableHtml with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/article-content.js:preprocessEmbeddedTables",
+      "type": "function",
+      "name": "preprocessEmbeddedTables",
+      "filePath": "src/lib/article-content.js",
+      "lineRange": [
+        383,
+        388
+      ],
+      "summary": "Function preprocessEmbeddedTables with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/article-content.js:preprocessEmbeddedHeadings",
+      "type": "function",
+      "name": "preprocessEmbeddedHeadings",
+      "filePath": "src/lib/article-content.js",
+      "lineRange": [
+        390,
+        407
+      ],
+      "summary": "Function preprocessEmbeddedHeadings with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/article-content.js:prepareArticleContent",
+      "type": "function",
+      "name": "prepareArticleContent",
+      "filePath": "src/lib/article-content.js",
+      "lineRange": [
+        409,
+        419
+      ],
+      "summary": "Function prepareArticleContent with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/article-content.js:detectArticleRenderMode",
+      "type": "function",
+      "name": "detectArticleRenderMode",
+      "filePath": "src/lib/article-content.js",
+      "lineRange": [
+        421,
+        432
+      ],
+      "summary": "Function detectArticleRenderMode with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/article-content.js:getArticleSource",
+      "type": "function",
+      "name": "getArticleSource",
+      "filePath": "src/lib/article-content.js",
+      "lineRange": [
+        434,
+        436
+      ],
+      "summary": "Function getArticleSource with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/article-content.js:getArticleRenderMode",
+      "type": "function",
+      "name": "getArticleRenderMode",
+      "filePath": "src/lib/article-content.js",
+      "lineRange": [
+        438,
+        440
+      ],
+      "summary": "Function getArticleRenderMode with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/article-content.js:normalizeArticleContent",
+      "type": "function",
+      "name": "normalizeArticleContent",
+      "filePath": "src/lib/article-content.js",
+      "lineRange": [
+        442,
+        446
+      ],
+      "summary": "Function normalizeArticleContent with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/article-content.js:uniqueId",
+      "type": "function",
+      "name": "uniqueId",
+      "filePath": "src/lib/article-content.js",
+      "lineRange": [
+        448,
+        452
+      ],
+      "summary": "Function uniqueId with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/article-content.js:extractArticleHeadings",
+      "type": "function",
+      "name": "extractArticleHeadings",
+      "filePath": "src/lib/article-content.js",
+      "lineRange": [
+        454,
+        478
+      ],
+      "summary": "Function extractArticleHeadings with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/article-content.js:getArticleHeadings",
+      "type": "function",
+      "name": "getArticleHeadings",
+      "filePath": "src/lib/article-content.js",
+      "lineRange": [
+        480,
+        482
+      ],
+      "summary": "Function getArticleHeadings with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/article-content.js:withAttribute",
+      "type": "function",
+      "name": "withAttribute",
+      "filePath": "src/lib/article-content.js",
+      "lineRange": [
+        484,
+        487
+      ],
+      "summary": "Function withAttribute with 3 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/article-content.js:enhanceImages",
+      "type": "function",
+      "name": "enhanceImages",
+      "filePath": "src/lib/article-content.js",
+      "lineRange": [
+        489,
+        498
+      ],
+      "summary": "Function enhanceImages with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/article-content.js:enhanceTables",
+      "type": "function",
+      "name": "enhanceTables",
+      "filePath": "src/lib/article-content.js",
+      "lineRange": [
+        500,
+        506
+      ],
+      "summary": "Function enhanceTables with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/article-content.js:enhanceArticleContent",
+      "type": "function",
+      "name": "enhanceArticleContent",
+      "filePath": "src/lib/article-content.js",
+      "lineRange": [
+        508,
+        530
+      ],
+      "summary": "Function enhanceArticleContent with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/auth.config.js",
+      "type": "file",
+      "name": "auth.config.js",
+      "filePath": "src/lib/auth.config.js",
+      "summary": "auth.config.js: Source file.",
+      "tags": [
+        "utility",
+        "type-definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/auth.js",
+      "type": "file",
+      "name": "auth.js",
+      "filePath": "src/lib/auth.js",
+      "summary": "auth.js: Source file, 1 import.",
+      "tags": [
+        "utility",
+        "type-definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/blog-indexing.js",
+      "type": "file",
+      "name": "blog-indexing.js",
+      "filePath": "src/lib/blog-indexing.js",
+      "summary": "blog-indexing.js: Source file, 5 functions.",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/lib/blog-indexing.js:siteUrl",
+      "type": "function",
+      "name": "siteUrl",
+      "filePath": "src/lib/blog-indexing.js",
+      "lineRange": [
+        6,
+        8
+      ],
+      "summary": "Function siteUrl with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/blog-indexing.js:getBlogPostIndexingPath",
+      "type": "function",
+      "name": "getBlogPostIndexingPath",
+      "filePath": "src/lib/blog-indexing.js",
+      "lineRange": [
+        10,
+        13
+      ],
+      "summary": "Function getBlogPostIndexingPath with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/blog-indexing.js:getBlogPostIndexingUrl",
+      "type": "function",
+      "name": "getBlogPostIndexingUrl",
+      "filePath": "src/lib/blog-indexing.js",
+      "lineRange": [
+        15,
+        19
+      ],
+      "summary": "Function getBlogPostIndexingUrl with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/blog-indexing.js:revalidateBlogPost",
+      "type": "function",
+      "name": "revalidateBlogPost",
+      "filePath": "src/lib/blog-indexing.js",
+      "lineRange": [
+        21,
+        28
+      ],
+      "summary": "Function revalidateBlogPost with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/blog-indexing.js:notifyPublishedBlogPost",
+      "type": "function",
+      "name": "notifyPublishedBlogPost",
+      "filePath": "src/lib/blog-indexing.js",
+      "lineRange": [
+        30,
+        60
+      ],
+      "summary": "Function notifyPublishedBlogPost with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/blog.js",
+      "type": "file",
+      "name": "blog.js",
+      "filePath": "src/lib/blog.js",
+      "summary": "blog.js: Source file, 8 functions.",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/lib/blog.js:getAllPublishedPosts",
+      "type": "function",
+      "name": "getAllPublishedPosts",
+      "filePath": "src/lib/blog.js",
+      "lineRange": [
+        12,
+        20
+      ],
+      "summary": "Function getAllPublishedPosts with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/blog.js:getPostBySlug",
+      "type": "function",
+      "name": "getPostBySlug",
+      "filePath": "src/lib/blog.js",
+      "lineRange": [
+        22,
+        27
+      ],
+      "summary": "Function getPostBySlug with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/blog.js:getPostBySlugOnly",
+      "type": "function",
+      "name": "getPostBySlugOnly",
+      "filePath": "src/lib/blog.js",
+      "lineRange": [
+        29,
+        34
+      ],
+      "summary": "Function getPostBySlugOnly with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/blog.js:getRelatedPosts",
+      "type": "function",
+      "name": "getRelatedPosts",
+      "filePath": "src/lib/blog.js",
+      "lineRange": [
+        36,
+        45
+      ],
+      "summary": "Function getRelatedPosts with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/blog.js:getAllCategories",
+      "type": "function",
+      "name": "getAllCategories",
+      "filePath": "src/lib/blog.js",
+      "lineRange": [
+        47,
+        49
+      ],
+      "summary": "Function getAllCategories with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/blog.js:getAllTags",
+      "type": "function",
+      "name": "getAllTags",
+      "filePath": "src/lib/blog.js",
+      "lineRange": [
+        51,
+        53
+      ],
+      "summary": "Function getAllTags with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/blog.js:getFeaturedPost",
+      "type": "function",
+      "name": "getFeaturedPost",
+      "filePath": "src/lib/blog.js",
+      "lineRange": [
+        55,
+        57
+      ],
+      "summary": "Function getFeaturedPost with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/blog.js:getAllPublishedSlugs",
+      "type": "function",
+      "name": "getAllPublishedSlugs",
+      "filePath": "src/lib/blog.js",
+      "lineRange": [
+        59,
+        61
+      ],
+      "summary": "Function getAllPublishedSlugs with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/blog/affiliate-products.js",
+      "type": "file",
+      "name": "affiliate-products.js",
+      "filePath": "src/lib/blog/affiliate-products.js",
+      "summary": "affiliate-products.js: Source file, 3 functions.",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/lib/blog/affiliate-products.js:normalizeAffiliateUrl",
+      "type": "function",
+      "name": "normalizeAffiliateUrl",
+      "filePath": "src/lib/blog/affiliate-products.js",
+      "lineRange": [
+        3,
+        32
+      ],
+      "summary": "Function normalizeAffiliateUrl with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/blog/affiliate-products.js:extractArticleLinks",
+      "type": "function",
+      "name": "extractArticleLinks",
+      "filePath": "src/lib/blog/affiliate-products.js",
+      "lineRange": [
+        34,
+        56
+      ],
+      "summary": "Function extractArticleLinks with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/blog/affiliate-products.js:getAffiliateProductsForArticle",
+      "type": "function",
+      "name": "getAffiliateProductsForArticle",
+      "filePath": "src/lib/blog/affiliate-products.js",
+      "lineRange": [
+        58,
+        81
+      ],
+      "summary": "Function getAffiliateProductsForArticle with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/blog/category-meta.js",
+      "type": "file",
+      "name": "category-meta.js",
+      "filePath": "src/lib/blog/category-meta.js",
+      "summary": "category-meta.js: Source file, 4 functions.",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/lib/blog/category-meta.js:humanizeCategory",
+      "type": "function",
+      "name": "humanizeCategory",
+      "filePath": "src/lib/blog/category-meta.js",
+      "lineRange": [
+        32,
+        40
+      ],
+      "summary": "Function humanizeCategory with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/blog/category-meta.js:getBlogCategoryMeta",
+      "type": "function",
+      "name": "getBlogCategoryMeta",
+      "filePath": "src/lib/blog/category-meta.js",
+      "lineRange": [
+        42,
+        51
+      ],
+      "summary": "Function getBlogCategoryMeta with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/blog/category-meta.js:formatBlogCategoryLabel",
+      "type": "function",
+      "name": "formatBlogCategoryLabel",
+      "filePath": "src/lib/blog/category-meta.js",
+      "lineRange": [
+        53,
+        55
+      ],
+      "summary": "Function formatBlogCategoryLabel with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/blog/category-meta.js:getBlogCategoryHref",
+      "type": "function",
+      "name": "getBlogCategoryHref",
+      "filePath": "src/lib/blog/category-meta.js",
+      "lineRange": [
+        57,
+        62
+      ],
+      "summary": "Function getBlogCategoryHref with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:stripTags",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:escapeHtml",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:escapeAttribute",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:decodeHtml",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:slugifyHeading",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:slugifyHeading",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:parseArticleFrontmatter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:looksLikeHtml",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:looksLikeEscapedHtml",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:looksLikeMarkdown",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:sanitizeUrl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:parseInlineMarkdown",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:isTableDelimiter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:isTableStart",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:splitTableRow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:tableAlignment",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:renderTable",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:isListItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:renderList",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:isBlockStart",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:markdownToHtml",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:parseEmbeddedTable",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:renderTableHtml",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:preprocessEmbeddedTables",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:preprocessEmbeddedHeadings",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:prepareArticleContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:detectArticleRenderMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:getArticleSource",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:getArticleSource",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:getArticleRenderMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:getArticleRenderMode",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:normalizeArticleContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:uniqueId",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:extractArticleHeadings",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:getArticleHeadings",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:getArticleHeadings",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:withAttribute",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:enhanceImages",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:enhanceTables",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:enhanceArticleContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:enhanceArticleContent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:escapeHtml",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:decodeHtml",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:escapeHtml",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:escapeHtml",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:escapeAttribute",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:sanitizeUrl",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:escapeAttribute",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:escapeAttribute",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:escapeAttribute",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:sanitizeUrl",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:escapeAttribute",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:isTableDelimiter",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:splitTableRow",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:splitTableRow",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:splitTableRow",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:parseInlineMarkdown",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:parseInlineMarkdown",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:parseInlineMarkdown",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:isListItem",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:isTableStart",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:escapeAttribute",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:escapeHtml",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:isTableStart",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:renderTable",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:parseInlineMarkdown",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:markdownToHtml",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:isListItem",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:renderList",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:isBlockStart",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:parseInlineMarkdown",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:isTableDelimiter",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:splitTableRow",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:splitTableRow",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:splitTableRow",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:parseInlineMarkdown",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:parseInlineMarkdown",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:parseEmbeddedTable",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:renderTableHtml",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:parseInlineMarkdown",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:parseInlineMarkdown",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:parseArticleFrontmatter",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:looksLikeHtml",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:looksLikeEscapedHtml",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:decodeHtml",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:preprocessEmbeddedTables",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:preprocessEmbeddedHeadings",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:looksLikeHtml",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:looksLikeMarkdown",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:prepareArticleContent",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:detectArticleRenderMode",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:prepareArticleContent",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:prepareArticleContent",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:detectArticleRenderMode",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:markdownToHtml",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:decodeHtml",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:stripTags",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:slugifyHeading",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:uniqueId",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:extractArticleHeadings",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:normalizeArticleContent",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:withAttribute",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:withAttribute",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:withAttribute",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:normalizeArticleContent",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:extractArticleHeadings",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:decodeHtml",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:stripTags",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:enhanceTables",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/article-content.js",
+      "target": "function:src/lib/article-content.js:enhanceImages",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/auth.js",
+      "target": "file:src/lib/auth.config.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/blog-indexing.js",
+      "target": "function:src/lib/blog-indexing.js:siteUrl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/blog-indexing.js",
+      "target": "function:src/lib/blog-indexing.js:getBlogPostIndexingPath",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/blog-indexing.js",
+      "target": "function:src/lib/blog-indexing.js:getBlogPostIndexingPath",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog-indexing.js",
+      "target": "function:src/lib/blog-indexing.js:getBlogPostIndexingUrl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/blog-indexing.js",
+      "target": "function:src/lib/blog-indexing.js:getBlogPostIndexingUrl",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog-indexing.js",
+      "target": "function:src/lib/blog-indexing.js:revalidateBlogPost",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/blog-indexing.js",
+      "target": "function:src/lib/blog-indexing.js:revalidateBlogPost",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog-indexing.js",
+      "target": "function:src/lib/blog-indexing.js:notifyPublishedBlogPost",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/blog-indexing.js",
+      "target": "function:src/lib/blog-indexing.js:notifyPublishedBlogPost",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog-indexing.js",
+      "target": "function:src/lib/blog-indexing.js:getBlogPostIndexingPath",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog-indexing.js",
+      "target": "function:src/lib/blog-indexing.js:siteUrl",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog-indexing.js",
+      "target": "function:src/lib/blog-indexing.js:getBlogPostIndexingPath",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog-indexing.js",
+      "target": "function:src/lib/blog-indexing.js:revalidateBlogPost",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog-indexing.js",
+      "target": "function:src/lib/blog-indexing.js:getBlogPostIndexingUrl",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog-indexing.js",
+      "target": "function:src/lib/blog-indexing.js:siteUrl",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog.js",
+      "target": "function:src/lib/blog.js:getAllPublishedPosts",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/blog.js",
+      "target": "function:src/lib/blog.js:getAllPublishedPosts",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog.js",
+      "target": "function:src/lib/blog.js:getPostBySlug",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/blog.js",
+      "target": "function:src/lib/blog.js:getPostBySlug",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog.js",
+      "target": "function:src/lib/blog.js:getPostBySlugOnly",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/blog.js",
+      "target": "function:src/lib/blog.js:getPostBySlugOnly",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog.js",
+      "target": "function:src/lib/blog.js:getRelatedPosts",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/blog.js",
+      "target": "function:src/lib/blog.js:getRelatedPosts",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog.js",
+      "target": "function:src/lib/blog.js:getAllCategories",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/blog.js",
+      "target": "function:src/lib/blog.js:getAllCategories",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog.js",
+      "target": "function:src/lib/blog.js:getAllTags",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/blog.js",
+      "target": "function:src/lib/blog.js:getAllTags",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog.js",
+      "target": "function:src/lib/blog.js:getFeaturedPost",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/blog.js",
+      "target": "function:src/lib/blog.js:getFeaturedPost",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog.js",
+      "target": "function:src/lib/blog.js:getAllPublishedSlugs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/blog.js",
+      "target": "function:src/lib/blog.js:getAllPublishedSlugs",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog/affiliate-products.js",
+      "target": "function:src/lib/blog/affiliate-products.js:normalizeAffiliateUrl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/blog/affiliate-products.js",
+      "target": "function:src/lib/blog/affiliate-products.js:extractArticleLinks",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/blog/affiliate-products.js",
+      "target": "function:src/lib/blog/affiliate-products.js:getAffiliateProductsForArticle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/blog/affiliate-products.js",
+      "target": "function:src/lib/blog/affiliate-products.js:getAffiliateProductsForArticle",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog/affiliate-products.js",
+      "target": "function:src/lib/blog/affiliate-products.js:extractArticleLinks",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog/affiliate-products.js",
+      "target": "function:src/lib/blog/affiliate-products.js:normalizeAffiliateUrl",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog/affiliate-products.js",
+      "target": "function:src/lib/blog/affiliate-products.js:normalizeAffiliateUrl",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog/category-meta.js",
+      "target": "function:src/lib/blog/category-meta.js:humanizeCategory",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/blog/category-meta.js",
+      "target": "function:src/lib/blog/category-meta.js:getBlogCategoryMeta",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/blog/category-meta.js",
+      "target": "function:src/lib/blog/category-meta.js:getBlogCategoryMeta",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog/category-meta.js",
+      "target": "function:src/lib/blog/category-meta.js:formatBlogCategoryLabel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/blog/category-meta.js",
+      "target": "function:src/lib/blog/category-meta.js:formatBlogCategoryLabel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog/category-meta.js",
+      "target": "function:src/lib/blog/category-meta.js:getBlogCategoryHref",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/blog/category-meta.js",
+      "target": "function:src/lib/blog/category-meta.js:getBlogCategoryHref",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog/category-meta.js",
+      "target": "function:src/lib/blog/category-meta.js:humanizeCategory",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog/category-meta.js",
+      "target": "function:src/lib/blog/category-meta.js:getBlogCategoryMeta",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

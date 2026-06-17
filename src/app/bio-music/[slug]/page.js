@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { notFound } from "next/navigation"
 import Image from "next/image"
 import { readMusic, readMusicItem } from "@/lib/db"
@@ -157,9 +158,9 @@ export default async function BioMusicDetailPage({ params }) {
 
         {/* Back Link */}
         <div className={styles.backWrapper}>
-          <a href="/bio-music" className={styles.backLink}>
+          <Link href="/bio-music" className={styles.backLink}>
             ← Back to all releases
-          </a>
+          </Link>
         </div>
 
         {/* Footer note */}

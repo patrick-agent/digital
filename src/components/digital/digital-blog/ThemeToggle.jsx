@@ -2,15 +2,19 @@
 
 import { useState, useEffect } from 'react';
 import { getStoredTheme, setStoredTheme } from './blog-theme';
+import { useHydrated } from '@/hooks/useHydrated';
 
 export default function ThemeToggle({ className }) {
-  const [theme, setTheme] = useState('dark');
-  const [mounted, setMounted] = useState(false);
+  const hydrated = useHydrated();
+  const [theme, setTheme] = useState(() => getStoredTheme());
 
   useEffect(() => {
-    setMounted(true);
-    const stored = getStoredTheme();
-    setTheme(stored);
+    const handler = (e) => {
+      setTheme(e.detail);
+    };
+
+    window.addEventListener('blog-theme-change', handler);
+    return () => window.removeEventListener('blog-theme-change', handler);
   }, []);
 
   const toggle = () => {
@@ -20,7 +24,7 @@ export default function ThemeToggle({ className }) {
     window.dispatchEvent(new CustomEvent('blog-theme-change', { detail: next }));
   };
 
-  if (!mounted) {
+  if (!hydrated) {
     return (
       <button className={`theme-toggle-btn ${className || ''}`} aria-label="Toggle theme" disabled style={{ opacity: 0.4, cursor: 'not-allowed' }}>
         <svg className="theme-toggle-icon sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ width: 16, height: 16 }}>

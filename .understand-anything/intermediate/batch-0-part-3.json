@@ -1,0 +1,1390 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/lib/gallery/service/handler.js",
+      "type": "file",
+      "name": "handler.js",
+      "filePath": "src/lib/gallery/service/handler.js",
+      "summary": "handler.js: Source file, 1 class, 3 imports.",
+      "tags": [
+        "service",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/lib/gallery/service/handler.js:GalleryHandler",
+      "type": "class",
+      "name": "GalleryHandler",
+      "filePath": "src/lib/gallery/service/handler.js",
+      "lineRange": [
+        12,
+        81
+      ],
+      "summary": "Class GalleryHandler with 6 methods and 0 properties.",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/lib/gallery/service/index.js",
+      "type": "file",
+      "name": "index.js",
+      "filePath": "src/lib/gallery/service/index.js",
+      "summary": "index.js: Module entry point, 6 functions, 1 import.",
+      "tags": [
+        "barrel",
+        "entry-point",
+        "service",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/lib/gallery/service/index.js:listGalleryItems",
+      "type": "function",
+      "name": "listGalleryItems",
+      "filePath": "src/lib/gallery/service/index.js",
+      "lineRange": [
+        5,
+        5
+      ],
+      "summary": "Function listGalleryItems with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/gallery/service/index.js:getGalleryItem",
+      "type": "function",
+      "name": "getGalleryItem",
+      "filePath": "src/lib/gallery/service/index.js",
+      "lineRange": [
+        6,
+        6
+      ],
+      "summary": "Function getGalleryItem with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/gallery/service/index.js:createGalleryItem",
+      "type": "function",
+      "name": "createGalleryItem",
+      "filePath": "src/lib/gallery/service/index.js",
+      "lineRange": [
+        7,
+        7
+      ],
+      "summary": "Function createGalleryItem with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/gallery/service/index.js:bulkCreateGalleryItems",
+      "type": "function",
+      "name": "bulkCreateGalleryItems",
+      "filePath": "src/lib/gallery/service/index.js",
+      "lineRange": [
+        8,
+        8
+      ],
+      "summary": "Function bulkCreateGalleryItems with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/gallery/service/index.js:updateGalleryItem",
+      "type": "function",
+      "name": "updateGalleryItem",
+      "filePath": "src/lib/gallery/service/index.js",
+      "lineRange": [
+        9,
+        9
+      ],
+      "summary": "Function updateGalleryItem with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/gallery/service/index.js:deleteGalleryItem",
+      "type": "function",
+      "name": "deleteGalleryItem",
+      "filePath": "src/lib/gallery/service/index.js",
+      "lineRange": [
+        10,
+        10
+      ],
+      "summary": "Function deleteGalleryItem with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/gallery/service/spec.js",
+      "type": "file",
+      "name": "spec.js",
+      "filePath": "src/lib/gallery/service/spec.js",
+      "summary": "spec.js: Source file, 1 import.",
+      "tags": [
+        "service",
+        "utility",
+        "exports",
+        "type-definition"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/lib/music/service/handler.js",
+      "type": "file",
+      "name": "handler.js",
+      "filePath": "src/lib/music/service/handler.js",
+      "summary": "handler.js: Source file, 3 functions, 1 class, 2 imports.",
+      "tags": [
+        "service",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/lib/music/service/handler.js:inputFailure",
+      "type": "function",
+      "name": "inputFailure",
+      "filePath": "src/lib/music/service/handler.js",
+      "lineRange": [
+        28,
+        33
+      ],
+      "summary": "Function inputFailure with 3 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/music/service/handler.js:unknownFailure",
+      "type": "function",
+      "name": "unknownFailure",
+      "filePath": "src/lib/music/service/handler.js",
+      "lineRange": [
+        35,
+        43
+      ],
+      "summary": "Function unknownFailure with 3 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/music/service/handler.js:notFoundFailure",
+      "type": "function",
+      "name": "notFoundFailure",
+      "filePath": "src/lib/music/service/handler.js",
+      "lineRange": [
+        45,
+        49
+      ],
+      "summary": "Function notFoundFailure with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/lib/music/service/handler.js:MusicHandler",
+      "type": "class",
+      "name": "MusicHandler",
+      "filePath": "src/lib/music/service/handler.js",
+      "lineRange": [
+        51,
+        131
+      ],
+      "summary": "Class MusicHandler with 6 methods and 0 properties.",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/lib/music/service/handler.test.mjs",
+      "type": "file",
+      "name": "handler.test.mjs",
+      "filePath": "src/lib/music/service/handler.test.mjs",
+      "summary": "handler.test.mjs: Source file, 1 function, 1 import.",
+      "tags": [
+        "test",
+        "service",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/lib/music/service/handler.test.mjs:createStore",
+      "type": "function",
+      "name": "createStore",
+      "filePath": "src/lib/music/service/handler.test.mjs",
+      "lineRange": [
+        6,
+        50
+      ],
+      "summary": "Function createStore with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/music/service/http.js",
+      "type": "file",
+      "name": "http.js",
+      "filePath": "src/lib/music/service/http.js",
+      "summary": "http.js: Source file, 1 function, 1 import.",
+      "tags": [
+        "service",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/music/service/http.js:getMusicErrorStatus",
+      "type": "function",
+      "name": "getMusicErrorStatus",
+      "filePath": "src/lib/music/service/http.js",
+      "lineRange": [
+        9,
+        11
+      ],
+      "summary": "Function getMusicErrorStatus with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/music/service/index.js",
+      "type": "file",
+      "name": "index.js",
+      "filePath": "src/lib/music/service/index.js",
+      "summary": "index.js: Module entry point, 5 functions, 1 import.",
+      "tags": [
+        "barrel",
+        "entry-point",
+        "service",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/music/service/index.js:listMusicItems",
+      "type": "function",
+      "name": "listMusicItems",
+      "filePath": "src/lib/music/service/index.js",
+      "lineRange": [
+        5,
+        5
+      ],
+      "summary": "Function listMusicItems with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/music/service/index.js:getMusicItem",
+      "type": "function",
+      "name": "getMusicItem",
+      "filePath": "src/lib/music/service/index.js",
+      "lineRange": [
+        6,
+        6
+      ],
+      "summary": "Function getMusicItem with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/music/service/index.js:createMusicItem",
+      "type": "function",
+      "name": "createMusicItem",
+      "filePath": "src/lib/music/service/index.js",
+      "lineRange": [
+        7,
+        7
+      ],
+      "summary": "Function createMusicItem with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/music/service/index.js:updateMusicItem",
+      "type": "function",
+      "name": "updateMusicItem",
+      "filePath": "src/lib/music/service/index.js",
+      "lineRange": [
+        8,
+        8
+      ],
+      "summary": "Function updateMusicItem with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/music/service/index.js:deleteMusicItem",
+      "type": "function",
+      "name": "deleteMusicItem",
+      "filePath": "src/lib/music/service/index.js",
+      "lineRange": [
+        9,
+        9
+      ],
+      "summary": "Function deleteMusicItem with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/music/service/spec.js",
+      "type": "file",
+      "name": "spec.js",
+      "filePath": "src/lib/music/service/spec.js",
+      "summary": "spec.js: Source file, 1 function, 1 import.",
+      "tags": [
+        "service",
+        "utility",
+        "exports"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/lib/music/service/spec.js:createMusicFailure",
+      "type": "function",
+      "name": "createMusicFailure",
+      "filePath": "src/lib/music/service/spec.js",
+      "lineRange": [
+        133,
+        138
+      ],
+      "summary": "Function createMusicFailure with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/music/service/spec.test.mjs",
+      "type": "file",
+      "name": "spec.test.mjs",
+      "filePath": "src/lib/music/service/spec.test.mjs",
+      "summary": "spec.test.mjs: Source file, 1 import.",
+      "tags": [
+        "test",
+        "service",
+        "utility",
+        "type-definition"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/lib/services/service/handler.js",
+      "type": "file",
+      "name": "handler.js",
+      "filePath": "src/lib/services/service/handler.js",
+      "summary": "handler.js: Source file, 3 functions, 1 class, 2 imports.",
+      "tags": [
+        "service",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/lib/services/service/handler.js:inputFailure",
+      "type": "function",
+      "name": "inputFailure",
+      "filePath": "src/lib/services/service/handler.js",
+      "lineRange": [
+        28,
+        33
+      ],
+      "summary": "Function inputFailure with 3 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/services/service/handler.js:unknownFailure",
+      "type": "function",
+      "name": "unknownFailure",
+      "filePath": "src/lib/services/service/handler.js",
+      "lineRange": [
+        35,
+        43
+      ],
+      "summary": "Function unknownFailure with 3 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/services/service/handler.js:notFoundFailure",
+      "type": "function",
+      "name": "notFoundFailure",
+      "filePath": "src/lib/services/service/handler.js",
+      "lineRange": [
+        45,
+        49
+      ],
+      "summary": "Function notFoundFailure with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/lib/services/service/handler.js:ServiceHandler",
+      "type": "class",
+      "name": "ServiceHandler",
+      "filePath": "src/lib/services/service/handler.js",
+      "lineRange": [
+        51,
+        131
+      ],
+      "summary": "Class ServiceHandler with 6 methods and 0 properties.",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/lib/services/service/handler.test.mjs",
+      "type": "file",
+      "name": "handler.test.mjs",
+      "filePath": "src/lib/services/service/handler.test.mjs",
+      "summary": "handler.test.mjs: Source file, 1 function, 1 import.",
+      "tags": [
+        "test",
+        "service",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/lib/services/service/handler.test.mjs:createStore",
+      "type": "function",
+      "name": "createStore",
+      "filePath": "src/lib/services/service/handler.test.mjs",
+      "lineRange": [
+        6,
+        50
+      ],
+      "summary": "Function createStore with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/services/service/index.js",
+      "type": "file",
+      "name": "index.js",
+      "filePath": "src/lib/services/service/index.js",
+      "summary": "index.js: Module entry point, 5 functions, 1 import.",
+      "tags": [
+        "barrel",
+        "entry-point",
+        "service",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/services/service/index.js:listServices",
+      "type": "function",
+      "name": "listServices",
+      "filePath": "src/lib/services/service/index.js",
+      "lineRange": [
+        5,
+        5
+      ],
+      "summary": "Function listServices with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/services/service/index.js:getService",
+      "type": "function",
+      "name": "getService",
+      "filePath": "src/lib/services/service/index.js",
+      "lineRange": [
+        6,
+        6
+      ],
+      "summary": "Function getService with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/services/service/index.js:createService",
+      "type": "function",
+      "name": "createService",
+      "filePath": "src/lib/services/service/index.js",
+      "lineRange": [
+        7,
+        7
+      ],
+      "summary": "Function createService with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/services/service/index.js:updateService",
+      "type": "function",
+      "name": "updateService",
+      "filePath": "src/lib/services/service/index.js",
+      "lineRange": [
+        8,
+        8
+      ],
+      "summary": "Function updateService with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/services/service/index.js:deleteService",
+      "type": "function",
+      "name": "deleteService",
+      "filePath": "src/lib/services/service/index.js",
+      "lineRange": [
+        9,
+        9
+      ],
+      "summary": "Function deleteService with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/site-defaults.js",
+      "type": "file",
+      "name": "site-defaults.js",
+      "filePath": "src/lib/site-defaults.js",
+      "summary": "site-defaults.js: Source file, 4 functions.",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/lib/site-defaults.js:isPlainObject",
+      "type": "function",
+      "name": "isPlainObject",
+      "filePath": "src/lib/site-defaults.js",
+      "lineRange": [
+        89,
+        91
+      ],
+      "summary": "Function isPlainObject with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/site-defaults.js:mergeDeep",
+      "type": "function",
+      "name": "mergeDeep",
+      "filePath": "src/lib/site-defaults.js",
+      "lineRange": [
+        93,
+        105
+      ],
+      "summary": "Function mergeDeep with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/site-defaults.js:mergeSiteSettings",
+      "type": "function",
+      "name": "mergeSiteSettings",
+      "filePath": "src/lib/site-defaults.js",
+      "lineRange": [
+        107,
+        109
+      ],
+      "summary": "Function mergeSiteSettings with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/site-defaults.js:enabledItems",
+      "type": "function",
+      "name": "enabledItems",
+      "filePath": "src/lib/site-defaults.js",
+      "lineRange": [
+        111,
+        113
+      ],
+      "summary": "Function enabledItems with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/lib/gallery/service/handler.js",
+      "target": "class:src/lib/gallery/service/handler.js:GalleryHandler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/gallery/service/handler.js",
+      "target": "class:src/lib/gallery/service/handler.js:GalleryHandler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/gallery/service/handler.js",
+      "target": "file:src/lib/contract/base.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/gallery/service/handler.js",
+      "target": "file:src/lib/db/gallery.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/gallery/service/handler.js",
+      "target": "file:src/lib/gallery/service/spec.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/gallery/service/index.js",
+      "target": "function:src/lib/gallery/service/index.js:listGalleryItems",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/gallery/service/index.js",
+      "target": "function:src/lib/gallery/service/index.js:listGalleryItems",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/gallery/service/index.js",
+      "target": "function:src/lib/gallery/service/index.js:getGalleryItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/gallery/service/index.js",
+      "target": "function:src/lib/gallery/service/index.js:getGalleryItem",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/gallery/service/index.js",
+      "target": "function:src/lib/gallery/service/index.js:createGalleryItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/gallery/service/index.js",
+      "target": "function:src/lib/gallery/service/index.js:createGalleryItem",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/gallery/service/index.js",
+      "target": "function:src/lib/gallery/service/index.js:bulkCreateGalleryItems",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/gallery/service/index.js",
+      "target": "function:src/lib/gallery/service/index.js:bulkCreateGalleryItems",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/gallery/service/index.js",
+      "target": "function:src/lib/gallery/service/index.js:updateGalleryItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/gallery/service/index.js",
+      "target": "function:src/lib/gallery/service/index.js:updateGalleryItem",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/gallery/service/index.js",
+      "target": "function:src/lib/gallery/service/index.js:deleteGalleryItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/gallery/service/index.js",
+      "target": "function:src/lib/gallery/service/index.js:deleteGalleryItem",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/gallery/service/index.js",
+      "target": "file:src/lib/gallery/service/handler.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/gallery/service/spec.js",
+      "target": "file:src/lib/contract/base.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/music/service/handler.js",
+      "target": "function:src/lib/music/service/handler.js:inputFailure",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/music/service/handler.js",
+      "target": "function:src/lib/music/service/handler.js:unknownFailure",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/music/service/handler.js",
+      "target": "function:src/lib/music/service/handler.js:notFoundFailure",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/music/service/handler.js",
+      "target": "class:src/lib/music/service/handler.js:MusicHandler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/music/service/handler.js",
+      "target": "class:src/lib/music/service/handler.js:MusicHandler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/music/service/handler.js",
+      "target": "file:src/lib/db/music.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/music/service/handler.js",
+      "target": "file:src/lib/music/service/spec.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/music/service/handler.js",
+      "target": "function:src/lib/music/service/handler.js:inputFailure",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/music/service/handler.js",
+      "target": "function:src/lib/music/service/handler.js:unknownFailure",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/music/service/handler.js",
+      "target": "function:src/lib/music/service/handler.js:inputFailure",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/music/service/handler.js",
+      "target": "function:src/lib/music/service/handler.js:notFoundFailure",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/music/service/handler.js",
+      "target": "function:src/lib/music/service/handler.js:unknownFailure",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/music/service/handler.js",
+      "target": "function:src/lib/music/service/handler.js:inputFailure",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/music/service/handler.js",
+      "target": "function:src/lib/music/service/handler.js:unknownFailure",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/music/service/handler.js",
+      "target": "function:src/lib/music/service/handler.js:inputFailure",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/music/service/handler.js",
+      "target": "function:src/lib/music/service/handler.js:notFoundFailure",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/music/service/handler.js",
+      "target": "function:src/lib/music/service/handler.js:unknownFailure",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/music/service/handler.js",
+      "target": "function:src/lib/music/service/handler.js:inputFailure",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/music/service/handler.js",
+      "target": "function:src/lib/music/service/handler.js:notFoundFailure",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/music/service/handler.js",
+      "target": "function:src/lib/music/service/handler.js:unknownFailure",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/music/service/handler.test.mjs",
+      "target": "function:src/lib/music/service/handler.test.mjs:createStore",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/music/service/handler.test.mjs",
+      "target": "file:src/lib/music/service/handler.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/music/service/http.js",
+      "target": "function:src/lib/music/service/http.js:getMusicErrorStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/music/service/http.js",
+      "target": "function:src/lib/music/service/http.js:getMusicErrorStatus",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/music/service/http.js",
+      "target": "file:src/lib/music/service/spec.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/music/service/index.js",
+      "target": "function:src/lib/music/service/index.js:listMusicItems",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/music/service/index.js",
+      "target": "function:src/lib/music/service/index.js:listMusicItems",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/music/service/index.js",
+      "target": "function:src/lib/music/service/index.js:getMusicItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/music/service/index.js",
+      "target": "function:src/lib/music/service/index.js:getMusicItem",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/music/service/index.js",
+      "target": "function:src/lib/music/service/index.js:createMusicItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/music/service/index.js",
+      "target": "function:src/lib/music/service/index.js:createMusicItem",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/music/service/index.js",
+      "target": "function:src/lib/music/service/index.js:updateMusicItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/music/service/index.js",
+      "target": "function:src/lib/music/service/index.js:updateMusicItem",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/music/service/index.js",
+      "target": "function:src/lib/music/service/index.js:deleteMusicItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/music/service/index.js",
+      "target": "function:src/lib/music/service/index.js:deleteMusicItem",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/music/service/index.js",
+      "target": "file:src/lib/music/service/handler.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/music/service/spec.js",
+      "target": "function:src/lib/music/service/spec.js:createMusicFailure",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/music/service/spec.js",
+      "target": "function:src/lib/music/service/spec.js:createMusicFailure",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/music/service/spec.js",
+      "target": "file:src/lib/contract/base.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/music/service/spec.test.mjs",
+      "target": "file:src/lib/music/service/spec.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/services/service/handler.js",
+      "target": "function:src/lib/services/service/handler.js:inputFailure",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/services/service/handler.js",
+      "target": "function:src/lib/services/service/handler.js:unknownFailure",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/services/service/handler.js",
+      "target": "function:src/lib/services/service/handler.js:notFoundFailure",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/services/service/handler.js",
+      "target": "class:src/lib/services/service/handler.js:ServiceHandler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/services/service/handler.js",
+      "target": "class:src/lib/services/service/handler.js:ServiceHandler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/services/service/handler.js",
+      "target": "file:src/lib/db/services.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/services/service/handler.js",
+      "target": "file:src/lib/services/service/spec.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/services/service/handler.js",
+      "target": "function:src/lib/services/service/handler.js:inputFailure",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/services/service/handler.js",
+      "target": "function:src/lib/services/service/handler.js:unknownFailure",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/services/service/handler.js",
+      "target": "function:src/lib/services/service/handler.js:inputFailure",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/services/service/handler.js",
+      "target": "function:src/lib/services/service/handler.js:notFoundFailure",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/services/service/handler.js",
+      "target": "function:src/lib/services/service/handler.js:unknownFailure",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/services/service/handler.js",
+      "target": "function:src/lib/services/service/handler.js:inputFailure",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/services/service/handler.js",
+      "target": "function:src/lib/services/service/handler.js:unknownFailure",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/services/service/handler.js",
+      "target": "function:src/lib/services/service/handler.js:inputFailure",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/services/service/handler.js",
+      "target": "function:src/lib/services/service/handler.js:notFoundFailure",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/services/service/handler.js",
+      "target": "function:src/lib/services/service/handler.js:unknownFailure",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/services/service/handler.js",
+      "target": "function:src/lib/services/service/handler.js:inputFailure",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/services/service/handler.js",
+      "target": "function:src/lib/services/service/handler.js:notFoundFailure",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/services/service/handler.js",
+      "target": "function:src/lib/services/service/handler.js:unknownFailure",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/services/service/handler.test.mjs",
+      "target": "function:src/lib/services/service/handler.test.mjs:createStore",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/services/service/handler.test.mjs",
+      "target": "file:src/lib/services/service/handler.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/services/service/index.js",
+      "target": "function:src/lib/services/service/index.js:listServices",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/services/service/index.js",
+      "target": "function:src/lib/services/service/index.js:listServices",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/services/service/index.js",
+      "target": "function:src/lib/services/service/index.js:getService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/services/service/index.js",
+      "target": "function:src/lib/services/service/index.js:getService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/services/service/index.js",
+      "target": "function:src/lib/services/service/index.js:createService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/services/service/index.js",
+      "target": "function:src/lib/services/service/index.js:createService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/services/service/index.js",
+      "target": "function:src/lib/services/service/index.js:updateService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/services/service/index.js",
+      "target": "function:src/lib/services/service/index.js:updateService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/services/service/index.js",
+      "target": "function:src/lib/services/service/index.js:deleteService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/services/service/index.js",
+      "target": "function:src/lib/services/service/index.js:deleteService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/services/service/index.js",
+      "target": "file:src/lib/services/service/handler.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/site-defaults.js",
+      "target": "function:src/lib/site-defaults.js:isPlainObject",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/site-defaults.js",
+      "target": "function:src/lib/site-defaults.js:mergeDeep",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/site-defaults.js",
+      "target": "function:src/lib/site-defaults.js:mergeDeep",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/site-defaults.js",
+      "target": "function:src/lib/site-defaults.js:mergeSiteSettings",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/site-defaults.js",
+      "target": "function:src/lib/site-defaults.js:mergeSiteSettings",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/site-defaults.js",
+      "target": "function:src/lib/site-defaults.js:enabledItems",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/site-defaults.js",
+      "target": "function:src/lib/site-defaults.js:enabledItems",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/site-defaults.js",
+      "target": "function:src/lib/site-defaults.js:isPlainObject",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/site-defaults.js",
+      "target": "function:src/lib/site-defaults.js:isPlainObject",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/site-defaults.js",
+      "target": "function:src/lib/site-defaults.js:mergeDeep",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/site-defaults.js",
+      "target": "function:src/lib/site-defaults.js:mergeDeep",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

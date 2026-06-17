@@ -1,0 +1,1071 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/lib/db/events.js",
+      "type": "file",
+      "name": "events.js",
+      "filePath": "src/lib/db/events.js",
+      "summary": "events.js: Source file, 11 functions, 2 imports.",
+      "tags": [
+        "utility",
+        "database"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/lib/db/events.js:trimString",
+      "type": "function",
+      "name": "trimString",
+      "filePath": "src/lib/db/events.js",
+      "lineRange": [
+        4,
+        6
+      ],
+      "summary": "Function trimString with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/events.js:normalizeEventStatus",
+      "type": "function",
+      "name": "normalizeEventStatus",
+      "filePath": "src/lib/db/events.js",
+      "lineRange": [
+        8,
+        14
+      ],
+      "summary": "Function normalizeEventStatus with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/events.js:normalizeTimestamp",
+      "type": "function",
+      "name": "normalizeTimestamp",
+      "filePath": "src/lib/db/events.js",
+      "lineRange": [
+        16,
+        19
+      ],
+      "summary": "Function normalizeTimestamp with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/events.js:normalizeEvent",
+      "type": "function",
+      "name": "normalizeEvent",
+      "filePath": "src/lib/db/events.js",
+      "lineRange": [
+        21,
+        40
+      ],
+      "summary": "Function normalizeEvent with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/events.js:matchesSearch",
+      "type": "function",
+      "name": "matchesSearch",
+      "filePath": "src/lib/db/events.js",
+      "lineRange": [
+        42,
+        55
+      ],
+      "summary": "Function matchesSearch with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/events.js:readAllEvents",
+      "type": "function",
+      "name": "readAllEvents",
+      "filePath": "src/lib/db/events.js",
+      "lineRange": [
+        57,
+        61
+      ],
+      "summary": "Function readAllEvents with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/events.js:readEvents",
+      "type": "function",
+      "name": "readEvents",
+      "filePath": "src/lib/db/events.js",
+      "lineRange": [
+        63,
+        83
+      ],
+      "summary": "Function readEvents with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/events.js:createEvent",
+      "type": "function",
+      "name": "createEvent",
+      "filePath": "src/lib/db/events.js",
+      "lineRange": [
+        85,
+        109
+      ],
+      "summary": "Function createEvent with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/events.js:readEvent",
+      "type": "function",
+      "name": "readEvent",
+      "filePath": "src/lib/db/events.js",
+      "lineRange": [
+        111,
+        114
+      ],
+      "summary": "Function readEvent with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/events.js:updateEvent",
+      "type": "function",
+      "name": "updateEvent",
+      "filePath": "src/lib/db/events.js",
+      "lineRange": [
+        116,
+        138
+      ],
+      "summary": "Function updateEvent with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/events.js:deleteEvent",
+      "type": "function",
+      "name": "deleteEvent",
+      "filePath": "src/lib/db/events.js",
+      "lineRange": [
+        140,
+        148
+      ],
+      "summary": "Function deleteEvent with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/events/service/handler.js",
+      "type": "file",
+      "name": "handler.js",
+      "filePath": "src/lib/events/service/handler.js",
+      "summary": "handler.js: Source file, 3 functions, 1 class, 2 imports.",
+      "tags": [
+        "service",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/lib/events/service/handler.js:inputFailure",
+      "type": "function",
+      "name": "inputFailure",
+      "filePath": "src/lib/events/service/handler.js",
+      "lineRange": [
+        28,
+        33
+      ],
+      "summary": "Function inputFailure with 3 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/events/service/handler.js:unknownFailure",
+      "type": "function",
+      "name": "unknownFailure",
+      "filePath": "src/lib/events/service/handler.js",
+      "lineRange": [
+        35,
+        43
+      ],
+      "summary": "Function unknownFailure with 3 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/events/service/handler.js:notFoundFailure",
+      "type": "function",
+      "name": "notFoundFailure",
+      "filePath": "src/lib/events/service/handler.js",
+      "lineRange": [
+        45,
+        49
+      ],
+      "summary": "Function notFoundFailure with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/lib/events/service/handler.js:EventHandler",
+      "type": "class",
+      "name": "EventHandler",
+      "filePath": "src/lib/events/service/handler.js",
+      "lineRange": [
+        51,
+        131
+      ],
+      "summary": "Class EventHandler with 6 methods and 0 properties.",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/lib/events/service/handler.test.mjs",
+      "type": "file",
+      "name": "handler.test.mjs",
+      "filePath": "src/lib/events/service/handler.test.mjs",
+      "summary": "handler.test.mjs: Source file, 1 function, 1 import.",
+      "tags": [
+        "test",
+        "service",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/lib/events/service/handler.test.mjs:createStore",
+      "type": "function",
+      "name": "createStore",
+      "filePath": "src/lib/events/service/handler.test.mjs",
+      "lineRange": [
+        6,
+        46
+      ],
+      "summary": "Function createStore with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/events/service/http.js",
+      "type": "file",
+      "name": "http.js",
+      "filePath": "src/lib/events/service/http.js",
+      "summary": "http.js: Source file, 1 function, 1 import.",
+      "tags": [
+        "service",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/events/service/http.js:getEventErrorStatus",
+      "type": "function",
+      "name": "getEventErrorStatus",
+      "filePath": "src/lib/events/service/http.js",
+      "lineRange": [
+        9,
+        11
+      ],
+      "summary": "Function getEventErrorStatus with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/events/service/index.js",
+      "type": "file",
+      "name": "index.js",
+      "filePath": "src/lib/events/service/index.js",
+      "summary": "index.js: Module entry point, 5 functions, 1 import.",
+      "tags": [
+        "barrel",
+        "entry-point",
+        "service",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/events/service/index.js:listEvents",
+      "type": "function",
+      "name": "listEvents",
+      "filePath": "src/lib/events/service/index.js",
+      "lineRange": [
+        5,
+        5
+      ],
+      "summary": "Function listEvents with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/events/service/index.js:getEvent",
+      "type": "function",
+      "name": "getEvent",
+      "filePath": "src/lib/events/service/index.js",
+      "lineRange": [
+        6,
+        6
+      ],
+      "summary": "Function getEvent with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/events/service/index.js:createEvent",
+      "type": "function",
+      "name": "createEvent",
+      "filePath": "src/lib/events/service/index.js",
+      "lineRange": [
+        7,
+        7
+      ],
+      "summary": "Function createEvent with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/events/service/index.js:updateEvent",
+      "type": "function",
+      "name": "updateEvent",
+      "filePath": "src/lib/events/service/index.js",
+      "lineRange": [
+        8,
+        8
+      ],
+      "summary": "Function updateEvent with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/events/service/index.js:deleteEvent",
+      "type": "function",
+      "name": "deleteEvent",
+      "filePath": "src/lib/events/service/index.js",
+      "lineRange": [
+        9,
+        9
+      ],
+      "summary": "Function deleteEvent with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/events/service/spec.js",
+      "type": "file",
+      "name": "spec.js",
+      "filePath": "src/lib/events/service/spec.js",
+      "summary": "spec.js: Source file, 1 function, 1 import.",
+      "tags": [
+        "service",
+        "utility",
+        "exports"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/lib/events/service/spec.js:createEventFailure",
+      "type": "function",
+      "name": "createEventFailure",
+      "filePath": "src/lib/events/service/spec.js",
+      "lineRange": [
+        91,
+        96
+      ],
+      "summary": "Function createEventFailure with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/events/service/spec.test.mjs",
+      "type": "file",
+      "name": "spec.test.mjs",
+      "filePath": "src/lib/events/service/spec.test.mjs",
+      "summary": "spec.test.mjs: Source file, 1 import.",
+      "tags": [
+        "test",
+        "service",
+        "utility",
+        "type-definition"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:trimString",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:normalizeEventStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:normalizeTimestamp",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:normalizeEvent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:matchesSearch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:readAllEvents",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:readEvents",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:readEvents",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:createEvent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:createEvent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:readEvent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:readEvent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:updateEvent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:updateEvent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:deleteEvent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:deleteEvent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "file:src/lib/db/io.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "file:src/lib/db/slug.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:normalizeEventStatus",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:normalizeEvent",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:readAllEvents",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:matchesSearch",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:normalizeTimestamp",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:normalizeTimestamp",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:readAllEvents",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:normalizeEvent",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:readAllEvents",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:readAllEvents",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:normalizeEvent",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/events.js",
+      "target": "function:src/lib/db/events.js:readAllEvents",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/events/service/handler.js",
+      "target": "function:src/lib/events/service/handler.js:inputFailure",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/events/service/handler.js",
+      "target": "function:src/lib/events/service/handler.js:unknownFailure",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/events/service/handler.js",
+      "target": "function:src/lib/events/service/handler.js:notFoundFailure",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/events/service/handler.js",
+      "target": "class:src/lib/events/service/handler.js:EventHandler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/events/service/handler.js",
+      "target": "class:src/lib/events/service/handler.js:EventHandler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/events/service/handler.js",
+      "target": "file:src/lib/db/events.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/events/service/handler.js",
+      "target": "file:src/lib/events/service/spec.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/events/service/handler.js",
+      "target": "function:src/lib/events/service/handler.js:inputFailure",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/events/service/handler.js",
+      "target": "function:src/lib/events/service/handler.js:unknownFailure",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/events/service/handler.js",
+      "target": "function:src/lib/events/service/handler.js:inputFailure",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/events/service/handler.js",
+      "target": "function:src/lib/events/service/handler.js:notFoundFailure",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/events/service/handler.js",
+      "target": "function:src/lib/events/service/handler.js:unknownFailure",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/events/service/handler.js",
+      "target": "function:src/lib/events/service/handler.js:inputFailure",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/events/service/handler.js",
+      "target": "function:src/lib/events/service/handler.js:unknownFailure",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/events/service/handler.js",
+      "target": "function:src/lib/events/service/handler.js:inputFailure",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/events/service/handler.js",
+      "target": "function:src/lib/events/service/handler.js:notFoundFailure",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/events/service/handler.js",
+      "target": "function:src/lib/events/service/handler.js:unknownFailure",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/events/service/handler.js",
+      "target": "function:src/lib/events/service/handler.js:inputFailure",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/events/service/handler.js",
+      "target": "function:src/lib/events/service/handler.js:notFoundFailure",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/events/service/handler.js",
+      "target": "function:src/lib/events/service/handler.js:unknownFailure",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/events/service/handler.test.mjs",
+      "target": "function:src/lib/events/service/handler.test.mjs:createStore",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/events/service/handler.test.mjs",
+      "target": "file:src/lib/events/service/handler.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/events/service/http.js",
+      "target": "function:src/lib/events/service/http.js:getEventErrorStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/events/service/http.js",
+      "target": "function:src/lib/events/service/http.js:getEventErrorStatus",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/events/service/http.js",
+      "target": "file:src/lib/events/service/spec.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/events/service/index.js",
+      "target": "function:src/lib/events/service/index.js:listEvents",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/events/service/index.js",
+      "target": "function:src/lib/events/service/index.js:listEvents",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/events/service/index.js",
+      "target": "function:src/lib/events/service/index.js:getEvent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/events/service/index.js",
+      "target": "function:src/lib/events/service/index.js:getEvent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/events/service/index.js",
+      "target": "function:src/lib/events/service/index.js:createEvent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/events/service/index.js",
+      "target": "function:src/lib/events/service/index.js:createEvent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/events/service/index.js",
+      "target": "function:src/lib/events/service/index.js:updateEvent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/events/service/index.js",
+      "target": "function:src/lib/events/service/index.js:updateEvent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/events/service/index.js",
+      "target": "function:src/lib/events/service/index.js:deleteEvent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/events/service/index.js",
+      "target": "function:src/lib/events/service/index.js:deleteEvent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/events/service/index.js",
+      "target": "file:src/lib/events/service/handler.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/events/service/spec.js",
+      "target": "function:src/lib/events/service/spec.js:createEventFailure",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/events/service/spec.js",
+      "target": "function:src/lib/events/service/spec.js:createEventFailure",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/events/service/spec.js",
+      "target": "file:src/lib/contract/base.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/events/service/spec.test.mjs",
+      "target": "file:src/lib/events/service/spec.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

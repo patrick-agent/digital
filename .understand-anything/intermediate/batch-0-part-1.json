@@ -1,0 +1,1516 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/lib/blog/service/handler.js",
+      "type": "file",
+      "name": "handler.js",
+      "filePath": "src/lib/blog/service/handler.js",
+      "summary": "handler.js: Source file, 1 class, 3 imports.",
+      "tags": [
+        "service",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/lib/blog/service/handler.js:BlogHandler",
+      "type": "class",
+      "name": "BlogHandler",
+      "filePath": "src/lib/blog/service/handler.js",
+      "lineRange": [
+        11,
+        79
+      ],
+      "summary": "Class BlogHandler with 6 methods and 0 properties.",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/lib/blog/service/index.js",
+      "type": "file",
+      "name": "index.js",
+      "filePath": "src/lib/blog/service/index.js",
+      "summary": "index.js: Module entry point, 6 functions, 1 import.",
+      "tags": [
+        "barrel",
+        "entry-point",
+        "service",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/lib/blog/service/index.js:listBlogPosts",
+      "type": "function",
+      "name": "listBlogPosts",
+      "filePath": "src/lib/blog/service/index.js",
+      "lineRange": [
+        5,
+        5
+      ],
+      "summary": "Function listBlogPosts with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/blog/service/index.js:getBlogPost",
+      "type": "function",
+      "name": "getBlogPost",
+      "filePath": "src/lib/blog/service/index.js",
+      "lineRange": [
+        6,
+        6
+      ],
+      "summary": "Function getBlogPost with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/blog/service/index.js:createBlogPost",
+      "type": "function",
+      "name": "createBlogPost",
+      "filePath": "src/lib/blog/service/index.js",
+      "lineRange": [
+        7,
+        7
+      ],
+      "summary": "Function createBlogPost with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/blog/service/index.js:updateBlogPost",
+      "type": "function",
+      "name": "updateBlogPost",
+      "filePath": "src/lib/blog/service/index.js",
+      "lineRange": [
+        8,
+        8
+      ],
+      "summary": "Function updateBlogPost with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/blog/service/index.js:deleteBlogPost",
+      "type": "function",
+      "name": "deleteBlogPost",
+      "filePath": "src/lib/blog/service/index.js",
+      "lineRange": [
+        9,
+        9
+      ],
+      "summary": "Function deleteBlogPost with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/blog/service/index.js:duplicateBlogPost",
+      "type": "function",
+      "name": "duplicateBlogPost",
+      "filePath": "src/lib/blog/service/index.js",
+      "lineRange": [
+        10,
+        10
+      ],
+      "summary": "Function duplicateBlogPost with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/blog/service/spec.js",
+      "type": "file",
+      "name": "spec.js",
+      "filePath": "src/lib/blog/service/spec.js",
+      "summary": "spec.js: Source file, 1 import.",
+      "tags": [
+        "service",
+        "utility",
+        "exports",
+        "type-definition"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/lib/case-studies/service/handler.js",
+      "type": "file",
+      "name": "handler.js",
+      "filePath": "src/lib/case-studies/service/handler.js",
+      "summary": "handler.js: Source file, 1 class, 3 imports.",
+      "tags": [
+        "service",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/lib/case-studies/service/handler.js:CaseStudyHandler",
+      "type": "class",
+      "name": "CaseStudyHandler",
+      "filePath": "src/lib/case-studies/service/handler.js",
+      "lineRange": [
+        9,
+        65
+      ],
+      "summary": "Class CaseStudyHandler with 5 methods and 0 properties.",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/lib/case-studies/service/index.js",
+      "type": "file",
+      "name": "index.js",
+      "filePath": "src/lib/case-studies/service/index.js",
+      "summary": "index.js: Module entry point, 5 functions, 1 import.",
+      "tags": [
+        "barrel",
+        "entry-point",
+        "service",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/case-studies/service/index.js:listCaseStudies",
+      "type": "function",
+      "name": "listCaseStudies",
+      "filePath": "src/lib/case-studies/service/index.js",
+      "lineRange": [
+        5,
+        5
+      ],
+      "summary": "Function listCaseStudies with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/case-studies/service/index.js:getCaseStudy",
+      "type": "function",
+      "name": "getCaseStudy",
+      "filePath": "src/lib/case-studies/service/index.js",
+      "lineRange": [
+        6,
+        6
+      ],
+      "summary": "Function getCaseStudy with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/case-studies/service/index.js:createCaseStudy",
+      "type": "function",
+      "name": "createCaseStudy",
+      "filePath": "src/lib/case-studies/service/index.js",
+      "lineRange": [
+        7,
+        7
+      ],
+      "summary": "Function createCaseStudy with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/case-studies/service/index.js:updateCaseStudy",
+      "type": "function",
+      "name": "updateCaseStudy",
+      "filePath": "src/lib/case-studies/service/index.js",
+      "lineRange": [
+        8,
+        8
+      ],
+      "summary": "Function updateCaseStudy with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/case-studies/service/index.js:deleteCaseStudy",
+      "type": "function",
+      "name": "deleteCaseStudy",
+      "filePath": "src/lib/case-studies/service/index.js",
+      "lineRange": [
+        9,
+        9
+      ],
+      "summary": "Function deleteCaseStudy with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/case-studies/service/spec.js",
+      "type": "file",
+      "name": "spec.js",
+      "filePath": "src/lib/case-studies/service/spec.js",
+      "summary": "spec.js: Source file, 1 import.",
+      "tags": [
+        "service",
+        "utility",
+        "exports",
+        "type-definition"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/lib/db/blog.js",
+      "type": "file",
+      "name": "blog.js",
+      "filePath": "src/lib/db/blog.js",
+      "summary": "blog.js: Source file, 6 functions, 2 imports.",
+      "tags": [
+        "utility",
+        "database"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/lib/db/blog.js:readPosts",
+      "type": "function",
+      "name": "readPosts",
+      "filePath": "src/lib/db/blog.js",
+      "lineRange": [
+        4,
+        28
+      ],
+      "summary": "Function readPosts with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/blog.js:readPost",
+      "type": "function",
+      "name": "readPost",
+      "filePath": "src/lib/db/blog.js",
+      "lineRange": [
+        30,
+        33
+      ],
+      "summary": "Function readPost with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/blog.js:createPost",
+      "type": "function",
+      "name": "createPost",
+      "filePath": "src/lib/db/blog.js",
+      "lineRange": [
+        35,
+        66
+      ],
+      "summary": "Function createPost with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/blog.js:updatePost",
+      "type": "function",
+      "name": "updatePost",
+      "filePath": "src/lib/db/blog.js",
+      "lineRange": [
+        68,
+        91
+      ],
+      "summary": "Function updatePost with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/blog.js:deletePost",
+      "type": "function",
+      "name": "deletePost",
+      "filePath": "src/lib/db/blog.js",
+      "lineRange": [
+        93,
+        101
+      ],
+      "summary": "Function deletePost with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/blog.js:duplicatePost",
+      "type": "function",
+      "name": "duplicatePost",
+      "filePath": "src/lib/db/blog.js",
+      "lineRange": [
+        103,
+        113
+      ],
+      "summary": "Function duplicatePost with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/db/case-studies.js",
+      "type": "file",
+      "name": "case-studies.js",
+      "filePath": "src/lib/db/case-studies.js",
+      "summary": "case-studies.js: Source file, 5 functions, 2 imports.",
+      "tags": [
+        "utility",
+        "database"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/lib/db/case-studies.js:readCaseStudies",
+      "type": "function",
+      "name": "readCaseStudies",
+      "filePath": "src/lib/db/case-studies.js",
+      "lineRange": [
+        4,
+        16
+      ],
+      "summary": "Function readCaseStudies with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/case-studies.js:createCaseStudy",
+      "type": "function",
+      "name": "createCaseStudy",
+      "filePath": "src/lib/db/case-studies.js",
+      "lineRange": [
+        18,
+        38
+      ],
+      "summary": "Function createCaseStudy with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/case-studies.js:readCaseStudy",
+      "type": "function",
+      "name": "readCaseStudy",
+      "filePath": "src/lib/db/case-studies.js",
+      "lineRange": [
+        40,
+        43
+      ],
+      "summary": "Function readCaseStudy with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/case-studies.js:updateCaseStudy",
+      "type": "function",
+      "name": "updateCaseStudy",
+      "filePath": "src/lib/db/case-studies.js",
+      "lineRange": [
+        45,
+        53
+      ],
+      "summary": "Function updateCaseStudy with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/case-studies.js:deleteCaseStudy",
+      "type": "function",
+      "name": "deleteCaseStudy",
+      "filePath": "src/lib/db/case-studies.js",
+      "lineRange": [
+        55,
+        62
+      ],
+      "summary": "Function deleteCaseStudy with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/db/gallery.js",
+      "type": "file",
+      "name": "gallery.js",
+      "filePath": "src/lib/db/gallery.js",
+      "summary": "gallery.js: Source file, 6 functions, 2 imports.",
+      "tags": [
+        "utility",
+        "database"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/lib/db/gallery.js:readGallery",
+      "type": "function",
+      "name": "readGallery",
+      "filePath": "src/lib/db/gallery.js",
+      "lineRange": [
+        4,
+        27
+      ],
+      "summary": "Function readGallery with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/gallery.js:createGalleryItem",
+      "type": "function",
+      "name": "createGalleryItem",
+      "filePath": "src/lib/db/gallery.js",
+      "lineRange": [
+        29,
+        49
+      ],
+      "summary": "Function createGalleryItem with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/gallery.js:bulkCreateGalleryItems",
+      "type": "function",
+      "name": "bulkCreateGalleryItems",
+      "filePath": "src/lib/db/gallery.js",
+      "lineRange": [
+        51,
+        75
+      ],
+      "summary": "Function bulkCreateGalleryItems with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/gallery.js:readGalleryItem",
+      "type": "function",
+      "name": "readGalleryItem",
+      "filePath": "src/lib/db/gallery.js",
+      "lineRange": [
+        77,
+        80
+      ],
+      "summary": "Function readGalleryItem with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/gallery.js:updateGalleryItem",
+      "type": "function",
+      "name": "updateGalleryItem",
+      "filePath": "src/lib/db/gallery.js",
+      "lineRange": [
+        82,
+        90
+      ],
+      "summary": "Function updateGalleryItem with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/gallery.js:deleteGalleryItem",
+      "type": "function",
+      "name": "deleteGalleryItem",
+      "filePath": "src/lib/db/gallery.js",
+      "lineRange": [
+        92,
+        99
+      ],
+      "summary": "Function deleteGalleryItem with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/db/io.js",
+      "type": "file",
+      "name": "io.js",
+      "filePath": "src/lib/db/io.js",
+      "summary": "io.js: Source file, 13 functions.",
+      "tags": [
+        "utility",
+        "database"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/lib/db/io.js:blobToken",
+      "type": "function",
+      "name": "blobToken",
+      "filePath": "src/lib/db/io.js",
+      "lineRange": [
+        10,
+        12
+      ],
+      "summary": "Function blobToken with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/io.js:blobStoreId",
+      "type": "function",
+      "name": "blobStoreId",
+      "filePath": "src/lib/db/io.js",
+      "lineRange": [
+        14,
+        21
+      ],
+      "summary": "Function blobStoreId with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/io.js:blobReadUrl",
+      "type": "function",
+      "name": "blobReadUrl",
+      "filePath": "src/lib/db/io.js",
+      "lineRange": [
+        23,
+        26
+      ],
+      "summary": "Function blobReadUrl with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/io.js:blobWriteUrl",
+      "type": "function",
+      "name": "blobWriteUrl",
+      "filePath": "src/lib/db/io.js",
+      "lineRange": [
+        28,
+        30
+      ],
+      "summary": "Function blobWriteUrl with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/io.js:blobAuthHeaders",
+      "type": "function",
+      "name": "blobAuthHeaders",
+      "filePath": "src/lib/db/io.js",
+      "lineRange": [
+        32,
+        35
+      ],
+      "summary": "Function blobAuthHeaders with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/io.js:blobPath",
+      "type": "function",
+      "name": "blobPath",
+      "filePath": "src/lib/db/io.js",
+      "lineRange": [
+        37,
+        39
+      ],
+      "summary": "Function blobPath with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/io.js:ensureDbDir",
+      "type": "function",
+      "name": "ensureDbDir",
+      "filePath": "src/lib/db/io.js",
+      "lineRange": [
+        41,
+        46
+      ],
+      "summary": "Function ensureDbDir with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/io.js:readBlob",
+      "type": "function",
+      "name": "readBlob",
+      "filePath": "src/lib/db/io.js",
+      "lineRange": [
+        48,
+        66
+      ],
+      "summary": "Function readBlob with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/lib/blog/service/handler.js",
+      "target": "class:src/lib/blog/service/handler.js:BlogHandler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/blog/service/handler.js",
+      "target": "class:src/lib/blog/service/handler.js:BlogHandler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog/service/handler.js",
+      "target": "file:src/lib/blog/service/spec.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/blog/service/handler.js",
+      "target": "file:src/lib/contract/base.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/blog/service/handler.js",
+      "target": "file:src/lib/db/blog.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/blog/service/index.js",
+      "target": "function:src/lib/blog/service/index.js:listBlogPosts",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/blog/service/index.js",
+      "target": "function:src/lib/blog/service/index.js:listBlogPosts",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog/service/index.js",
+      "target": "function:src/lib/blog/service/index.js:getBlogPost",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/blog/service/index.js",
+      "target": "function:src/lib/blog/service/index.js:getBlogPost",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog/service/index.js",
+      "target": "function:src/lib/blog/service/index.js:createBlogPost",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/blog/service/index.js",
+      "target": "function:src/lib/blog/service/index.js:createBlogPost",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog/service/index.js",
+      "target": "function:src/lib/blog/service/index.js:updateBlogPost",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/blog/service/index.js",
+      "target": "function:src/lib/blog/service/index.js:updateBlogPost",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog/service/index.js",
+      "target": "function:src/lib/blog/service/index.js:deleteBlogPost",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/blog/service/index.js",
+      "target": "function:src/lib/blog/service/index.js:deleteBlogPost",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog/service/index.js",
+      "target": "function:src/lib/blog/service/index.js:duplicateBlogPost",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/blog/service/index.js",
+      "target": "function:src/lib/blog/service/index.js:duplicateBlogPost",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog/service/index.js",
+      "target": "file:src/lib/blog/service/handler.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/blog/service/spec.js",
+      "target": "file:src/lib/contract/base.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/case-studies/service/handler.js",
+      "target": "class:src/lib/case-studies/service/handler.js:CaseStudyHandler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/case-studies/service/handler.js",
+      "target": "class:src/lib/case-studies/service/handler.js:CaseStudyHandler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/case-studies/service/handler.js",
+      "target": "file:src/lib/case-studies/service/spec.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/case-studies/service/handler.js",
+      "target": "file:src/lib/contract/base.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/case-studies/service/handler.js",
+      "target": "file:src/lib/db/case-studies.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/case-studies/service/index.js",
+      "target": "function:src/lib/case-studies/service/index.js:listCaseStudies",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/case-studies/service/index.js",
+      "target": "function:src/lib/case-studies/service/index.js:listCaseStudies",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/case-studies/service/index.js",
+      "target": "function:src/lib/case-studies/service/index.js:getCaseStudy",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/case-studies/service/index.js",
+      "target": "function:src/lib/case-studies/service/index.js:getCaseStudy",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/case-studies/service/index.js",
+      "target": "function:src/lib/case-studies/service/index.js:createCaseStudy",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/case-studies/service/index.js",
+      "target": "function:src/lib/case-studies/service/index.js:createCaseStudy",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/case-studies/service/index.js",
+      "target": "function:src/lib/case-studies/service/index.js:updateCaseStudy",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/case-studies/service/index.js",
+      "target": "function:src/lib/case-studies/service/index.js:updateCaseStudy",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/case-studies/service/index.js",
+      "target": "function:src/lib/case-studies/service/index.js:deleteCaseStudy",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/case-studies/service/index.js",
+      "target": "function:src/lib/case-studies/service/index.js:deleteCaseStudy",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/case-studies/service/index.js",
+      "target": "file:src/lib/case-studies/service/handler.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/case-studies/service/spec.js",
+      "target": "file:src/lib/contract/base.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/db/blog.js",
+      "target": "function:src/lib/db/blog.js:readPosts",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/blog.js",
+      "target": "function:src/lib/db/blog.js:readPosts",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/blog.js",
+      "target": "function:src/lib/db/blog.js:readPost",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/blog.js",
+      "target": "function:src/lib/db/blog.js:readPost",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/blog.js",
+      "target": "function:src/lib/db/blog.js:createPost",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/blog.js",
+      "target": "function:src/lib/db/blog.js:createPost",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/blog.js",
+      "target": "function:src/lib/db/blog.js:updatePost",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/blog.js",
+      "target": "function:src/lib/db/blog.js:updatePost",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/blog.js",
+      "target": "function:src/lib/db/blog.js:deletePost",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/blog.js",
+      "target": "function:src/lib/db/blog.js:deletePost",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/blog.js",
+      "target": "function:src/lib/db/blog.js:duplicatePost",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/blog.js",
+      "target": "function:src/lib/db/blog.js:duplicatePost",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/blog.js",
+      "target": "file:src/lib/db/io.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/db/blog.js",
+      "target": "file:src/lib/db/slug.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/db/blog.js",
+      "target": "function:src/lib/db/blog.js:readPost",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/blog.js",
+      "target": "function:src/lib/db/blog.js:createPost",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/case-studies.js",
+      "target": "function:src/lib/db/case-studies.js:readCaseStudies",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/case-studies.js",
+      "target": "function:src/lib/db/case-studies.js:readCaseStudies",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/case-studies.js",
+      "target": "function:src/lib/db/case-studies.js:createCaseStudy",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/case-studies.js",
+      "target": "function:src/lib/db/case-studies.js:createCaseStudy",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/case-studies.js",
+      "target": "function:src/lib/db/case-studies.js:readCaseStudy",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/case-studies.js",
+      "target": "function:src/lib/db/case-studies.js:readCaseStudy",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/case-studies.js",
+      "target": "function:src/lib/db/case-studies.js:updateCaseStudy",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/case-studies.js",
+      "target": "function:src/lib/db/case-studies.js:updateCaseStudy",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/case-studies.js",
+      "target": "function:src/lib/db/case-studies.js:deleteCaseStudy",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/case-studies.js",
+      "target": "function:src/lib/db/case-studies.js:deleteCaseStudy",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/case-studies.js",
+      "target": "file:src/lib/db/io.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/db/case-studies.js",
+      "target": "file:src/lib/db/slug.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/db/gallery.js",
+      "target": "function:src/lib/db/gallery.js:readGallery",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/gallery.js",
+      "target": "function:src/lib/db/gallery.js:readGallery",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/gallery.js",
+      "target": "function:src/lib/db/gallery.js:createGalleryItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/gallery.js",
+      "target": "function:src/lib/db/gallery.js:createGalleryItem",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/gallery.js",
+      "target": "function:src/lib/db/gallery.js:bulkCreateGalleryItems",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/gallery.js",
+      "target": "function:src/lib/db/gallery.js:bulkCreateGalleryItems",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/gallery.js",
+      "target": "function:src/lib/db/gallery.js:readGalleryItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/gallery.js",
+      "target": "function:src/lib/db/gallery.js:readGalleryItem",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/gallery.js",
+      "target": "function:src/lib/db/gallery.js:updateGalleryItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/gallery.js",
+      "target": "function:src/lib/db/gallery.js:updateGalleryItem",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/gallery.js",
+      "target": "function:src/lib/db/gallery.js:deleteGalleryItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/gallery.js",
+      "target": "function:src/lib/db/gallery.js:deleteGalleryItem",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/gallery.js",
+      "target": "file:src/lib/db/io.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/db/gallery.js",
+      "target": "file:src/lib/db/slug.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:blobToken",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:blobStoreId",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:blobReadUrl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:blobWriteUrl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:blobAuthHeaders",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:blobPath",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:ensureDbDir",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:readBlob",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:writeBlob",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:readJSON",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:readJSON",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:writeJSON",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:writeJSON",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:readFileJSON",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:readFileJSON",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:writeFileJSON",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:writeFileJSON",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:blobToken",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:blobStoreId",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:blobPath",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:blobPath",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:blobToken",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:blobReadUrl",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:blobToken",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:blobAuthHeaders",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:blobToken",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:blobStoreId",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:blobPath",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:blobToken",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:readBlob",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:writeBlob",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:blobToken",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:ensureDbDir",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:blobToken",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:readBlob",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:writeBlob",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:blobToken",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:ensureDbDir",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

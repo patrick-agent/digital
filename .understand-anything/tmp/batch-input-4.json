@@ -1,0 +1,86 @@
+{
+  "projectRoot": "C:\\Users\\Admin\\Desktop\\Website 3D\\studio-3d",
+  "batchFiles": [
+    {
+      "path": "src/components/blog/BlogClient.jsx",
+      "language": "javascript",
+      "sizeLines": 283,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/blog/BlogHero.jsx",
+      "language": "javascript",
+      "sizeLines": 81,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/blog/Breadcrumb.jsx",
+      "language": "javascript",
+      "sizeLines": 52,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/blog/CategoryNav.jsx",
+      "language": "javascript",
+      "sizeLines": 46,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/blog/PostCard.jsx",
+      "language": "javascript",
+      "sizeLines": 80,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/blog/PostGrid.jsx",
+      "language": "javascript",
+      "sizeLines": 85,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/blog/PostShelf.jsx",
+      "language": "javascript",
+      "sizeLines": 124,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/blog/RelatedPosts.jsx",
+      "language": "javascript",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/components/blog/BlogClient.jsx": [
+      "src/components/blog/BlogClient.module.css",
+      "src/components/blog/BlogHero.jsx",
+      "src/components/blog/Breadcrumb.jsx",
+      "src/components/blog/CategoryNav.jsx",
+      "src/components/blog/PostShelf.jsx"
+    ],
+    "src/components/blog/BlogHero.jsx": [
+      "src/components/blog/BlogHero.module.css"
+    ],
+    "src/components/blog/Breadcrumb.jsx": [
+      "src/components/blog/Breadcrumb.module.css"
+    ],
+    "src/components/blog/CategoryNav.jsx": [
+      "src/components/blog/CategoryNav.module.css"
+    ],
+    "src/components/blog/PostCard.jsx": [
+      "src/components/blog/PostCard.module.css"
+    ],
+    "src/components/blog/PostGrid.jsx": [
+      "src/components/blog/PostCard.jsx",
+      "src/components/blog/PostGrid.module.css"
+    ],
+    "src/components/blog/PostShelf.jsx": [
+      "src/components/blog/PostCard.jsx",
+      "src/components/blog/PostShelf.module.css"
+    ],
+    "src/components/blog/RelatedPosts.jsx": [
+      "src/components/blog/PostCard.jsx",
+      "src/components/blog/RelatedPosts.module.css"
+    ]
+  }
+}

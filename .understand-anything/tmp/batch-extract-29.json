@@ -1,0 +1,207 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "public/images/blog/so-sanh-midi-mini-arturia-minilab-3-flkey-mini-oxygen-pro-mini-inside.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 382,
+      "nonEmptyLines": 382,
+      "metrics": {}
+    },
+    {
+      "path": "public/images/blog/so-sanh-midi-mini-arturia-minilab-3-flkey-mini-oxygen-pro-mini.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 353,
+      "nonEmptyLines": 352,
+      "metrics": {}
+    },
+    {
+      "path": "public/images/blog/so-sanh-rode-nt1-5th-gen-lewitt-lct-440-pure-aston-origin-inside.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 122,
+      "nonEmptyLines": 122,
+      "metrics": {}
+    },
+    {
+      "path": "public/images/blog/so-sanh-rode-nt1-5th-gen-lewitt-lct-440-pure-aston-origin.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 122,
+      "nonEmptyLines": 121,
+      "metrics": {}
+    },
+    {
+      "path": "public/images/blog/so-sanh-tai-nghe-closed-back-m40x-mdr7506-hd280pro-inside.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 228,
+      "nonEmptyLines": 227,
+      "metrics": {}
+    },
+    {
+      "path": "public/images/blog/so-sanh-tai-nghe-closed-back-m40x-mdr7506-hd280pro.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 77,
+      "nonEmptyLines": 77,
+      "metrics": {}
+    },
+    {
+      "path": "public/images/blog/so-sanh-tai-nghe-open-back-k702-hd560s-dt880pro-inside.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 412,
+      "nonEmptyLines": 411,
+      "metrics": {}
+    },
+    {
+      "path": "public/images/blog/so-sanh-tai-nghe-open-back-k702-hd560s-dt880pro.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 77,
+      "nonEmptyLines": 77,
+      "metrics": {}
+    },
+    {
+      "path": "public/images/blog/ssd-ngoai-cho-producer-samsung-t7-sandisk-extreme-crucial-x9-inside.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 412,
+      "nonEmptyLines": 411,
+      "metrics": {}
+    },
+    {
+      "path": "public/images/blog/ssd-ngoai-cho-producer-samsung-t7-sandisk-extreme-crucial-x9.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 366,
+      "nonEmptyLines": 366,
+      "metrics": {}
+    },
+    {
+      "path": "public/images/blog/top-10-vst-plugin-mien-phi-2026.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 83,
+      "nonEmptyLines": 83,
+      "metrics": {}
+    },
+    {
+      "path": "public/images/blog/top-5-daw-mien-phi-thu-am-tai-nha.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 82,
+      "nonEmptyLines": 81,
+      "metrics": {}
+    },
+    {
+      "path": "public/images/releases/cant-stop.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 766,
+      "nonEmptyLines": 763,
+      "metrics": {}
+    },
+    {
+      "path": "public/images/releases/ep-the-love.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 708,
+      "nonEmptyLines": 706,
+      "metrics": {}
+    },
+    {
+      "path": "public/images/releases/lets-get-drunk.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 425,
+      "nonEmptyLines": 423,
+      "metrics": {}
+    },
+    {
+      "path": "public/images/releases/like-me.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 276,
+      "nonEmptyLines": 274,
+      "metrics": {}
+    },
+    {
+      "path": "public/images/releases/not-me.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 901,
+      "nonEmptyLines": 901,
+      "metrics": {}
+    },
+    {
+      "path": "public/images/releases/tsunami.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 370,
+      "nonEmptyLines": 369,
+      "metrics": {}
+    },
+    {
+      "path": "public/images/ZaloPay_logo.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 31,
+      "nonEmptyLines": 31,
+      "metrics": {}
+    },
+    {
+      "path": "public/llms.txt",
+      "language": "txt",
+      "fileCategory": "docs",
+      "totalLines": 16,
+      "nonEmptyLines": 11,
+      "metrics": {}
+    },
+    {
+      "path": "public/models/breakdance-freezes.glb",
+      "language": "glb",
+      "fileCategory": "code",
+      "totalLines": 40454,
+      "nonEmptyLines": 40211,
+      "metrics": {}
+    },
+    {
+      "path": "public/models/bye.glb",
+      "language": "glb",
+      "fileCategory": "code",
+      "totalLines": 40180,
+      "nonEmptyLines": 39936,
+      "metrics": {}
+    },
+    {
+      "path": "public/models/Floating.glb",
+      "language": "glb",
+      "fileCategory": "code",
+      "totalLines": 40335,
+      "nonEmptyLines": 40090,
+      "metrics": {}
+    },
+    {
+      "path": "public/models/pointing-to-the-right-hologram.glb",
+      "language": "glb",
+      "fileCategory": "code",
+      "totalLines": 40178,
+      "nonEmptyLines": 39937,
+      "metrics": {}
+    },
+    {
+      "path": "public/models/rumba-dancing.glb",
+      "language": "glb",
+      "fileCategory": "code",
+      "totalLines": 40305,
+      "nonEmptyLines": 40061,
+      "metrics": {}
+    }
+  ]
+}

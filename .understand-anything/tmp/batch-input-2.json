@@ -1,0 +1,183 @@
+{
+  "projectRoot": "C:\\Users\\Admin\\Desktop\\Website 3D\\studio-3d",
+  "batchFiles": [
+    {
+      "path": "src/components/canvas/AboutCharacterCanvas.jsx",
+      "language": "javascript",
+      "sizeLines": 165,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/BreakdanceCharacterCanvas.jsx",
+      "language": "javascript",
+      "sizeLines": 180,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/FloatingGeometries.jsx",
+      "language": "javascript",
+      "sizeLines": 89,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/GlowBackground.jsx",
+      "language": "javascript",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/ParticleField.jsx",
+      "language": "javascript",
+      "sizeLines": 71,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/PointingCharacterCanvas.jsx",
+      "language": "javascript",
+      "sizeLines": 116,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/PostProcessing.jsx",
+      "language": "javascript",
+      "sizeLines": 99,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/RumbaDancingCanvas.jsx",
+      "language": "javascript",
+      "sizeLines": 121,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/StudioCanvas.jsx",
+      "language": "javascript",
+      "sizeLines": 118,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/StudioLights.jsx",
+      "language": "javascript",
+      "sizeLines": 41,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/TeleportBeam.jsx",
+      "language": "javascript",
+      "sizeLines": 160,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/WalkingCharacterCanvas.jsx",
+      "language": "javascript",
+      "sizeLines": 101,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/WaveCharacterCanvas.jsx",
+      "language": "javascript",
+      "sizeLines": 126,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/contact/ContactPage.jsx",
+      "language": "javascript",
+      "sizeLines": 297,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/icons/SocialIcons.jsx",
+      "language": "javascript",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/layout/Footer.jsx",
+      "language": "javascript",
+      "sizeLines": 134,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/layout/FooterEffects.jsx",
+      "language": "javascript",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/sections/ContactSection.jsx",
+      "language": "javascript",
+      "sizeLines": 439,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/sections/DonationSection.jsx",
+      "language": "javascript",
+      "sizeLines": 161,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/components/canvas/AboutCharacterCanvas.jsx": [
+      "src/components/canvas/FloatingGeometries.jsx",
+      "src/components/canvas/GlowBackground.jsx",
+      "src/components/canvas/ParticleField.jsx",
+      "src/components/canvas/TeleportBeam.jsx"
+    ],
+    "src/components/canvas/BreakdanceCharacterCanvas.jsx": [
+      "src/components/canvas/GlowBackground.jsx"
+    ],
+    "src/components/canvas/FloatingGeometries.jsx": [],
+    "src/components/canvas/GlowBackground.jsx": [],
+    "src/components/canvas/ParticleField.jsx": [],
+    "src/components/canvas/PointingCharacterCanvas.jsx": [
+      "src/components/canvas/FloatingGeometries.jsx",
+      "src/components/canvas/GlowBackground.jsx",
+      "src/components/canvas/ParticleField.jsx",
+      "src/components/canvas/TeleportBeam.jsx"
+    ],
+    "src/components/canvas/PostProcessing.jsx": [],
+    "src/components/canvas/RumbaDancingCanvas.jsx": [
+      "src/components/canvas/PostProcessing.jsx"
+    ],
+    "src/components/canvas/StudioCanvas.jsx": [
+      "src/components/canvas/GlowBackground.jsx",
+      "src/components/canvas/PostProcessing.jsx",
+      "src/components/canvas/StudioLights.jsx"
+    ],
+    "src/components/canvas/StudioLights.jsx": [],
+    "src/components/canvas/TeleportBeam.jsx": [],
+    "src/components/canvas/WalkingCharacterCanvas.jsx": [
+      "src/components/canvas/GlowBackground.jsx"
+    ],
+    "src/components/canvas/WaveCharacterCanvas.jsx": [
+      "src/components/canvas/FloatingGeometries.jsx",
+      "src/components/canvas/ParticleField.jsx",
+      "src/components/canvas/PostProcessing.jsx"
+    ],
+    "src/components/contact/ContactPage.jsx": [
+      "src/components/contact/ContactPage.module.css",
+      "src/components/icons/SocialIcons.jsx"
+    ],
+    "src/components/icons/SocialIcons.jsx": [],
+    "src/components/layout/Footer.jsx": [
+      "src/components/icons/SocialIcons.jsx",
+      "src/components/layout/Footer.module.css"
+    ],
+    "src/components/layout/FooterEffects.jsx": [
+      "src/components/canvas/ParticleField.jsx"
+    ],
+    "src/components/sections/ContactSection.jsx": [
+      "src/components/canvas/FloatingGeometries.jsx",
+      "src/components/canvas/ParticleField.jsx",
+      "src/components/icons/SocialIcons.jsx",
+      "src/components/sections/ContactSection.module.css",
+      "src/components/ui/GlassPanel.jsx"
+    ],
+    "src/components/sections/DonationSection.jsx": [
+      "src/components/canvas/FloatingGeometries.jsx",
+      "src/components/canvas/ParticleField.jsx",
+      "src/components/sections/DonationSection.module.css",
+      "src/components/ui/GlassPanel.jsx"
+    ]
+  }
+}

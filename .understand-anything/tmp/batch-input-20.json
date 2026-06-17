@@ -1,0 +1,28 @@
+{
+  "projectRoot": "C:\\Users\\Admin\\Desktop\\Website 3D\\studio-3d",
+  "batchFiles": [
+    {
+      "path": "src/components/artist/about/BioSection.module.css",
+      "language": "css",
+      "sizeLines": 205,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/artist/about/HeroAbout.module.css",
+      "language": "css",
+      "sizeLines": 70,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/artist/about/StreamingBar.module.css",
+      "language": "css",
+      "sizeLines": 58,
+      "fileCategory": "markup"
+    }
+  ],
+  "batchImportData": {
+    "src/components/artist/about/BioSection.module.css": [],
+    "src/components/artist/about/HeroAbout.module.css": [],
+    "src/components/artist/about/StreamingBar.module.css": []
+  }
+}

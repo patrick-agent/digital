@@ -1,0 +1,1006 @@
+{
+  "nodes": [
+    {
+      "id": "function:src/components/blog/ArticleBody.jsx:mergeAdjacentLists",
+      "type": "function",
+      "name": "mergeAdjacentLists",
+      "filePath": "src/components/blog/ArticleBody.jsx",
+      "lineRange": [
+        131,
+        147
+      ],
+      "summary": "Function mergeAdjacentLists with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/blog/ArticleBody.jsx:splitInlineLabels",
+      "type": "function",
+      "name": "splitInlineLabels",
+      "filePath": "src/components/blog/ArticleBody.jsx",
+      "lineRange": [
+        149,
+        151
+      ],
+      "summary": "Function splitInlineLabels with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/blog/ArticleBody.jsx:sanitizeArticleHtml",
+      "type": "function",
+      "name": "sanitizeArticleHtml",
+      "filePath": "src/components/blog/ArticleBody.jsx",
+      "lineRange": [
+        153,
+        156
+      ],
+      "summary": "Function sanitizeArticleHtml with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/blog/ArticleBody.jsx:renderTable",
+      "type": "function",
+      "name": "renderTable",
+      "filePath": "src/components/blog/ArticleBody.jsx",
+      "lineRange": [
+        158,
+        165
+      ],
+      "summary": "Function renderTable with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/blog/ArticleBody.jsx:ArticleBody",
+      "type": "function",
+      "name": "ArticleBody",
+      "filePath": "src/components/blog/ArticleBody.jsx",
+      "lineRange": [
+        167,
+        234
+      ],
+      "summary": "Function ArticleBody with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/blog/ArticleBody.jsx:ArticleSummary",
+      "type": "function",
+      "name": "ArticleSummary",
+      "filePath": "src/components/blog/ArticleBody.jsx",
+      "lineRange": [
+        236,
+        244
+      ],
+      "summary": "Function ArticleSummary with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/blog/ArticleHero.jsx",
+      "type": "file",
+      "name": "ArticleHero.jsx",
+      "filePath": "src/components/blog/ArticleHero.jsx",
+      "summary": "ArticleHero.jsx: Source file, 1 function, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/blog/ArticleHero.jsx:ArticleHero",
+      "type": "function",
+      "name": "ArticleHero",
+      "filePath": "src/components/blog/ArticleHero.jsx",
+      "lineRange": [
+        7,
+        95
+      ],
+      "summary": "Function ArticleHero with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/blog/ArticleSchema.jsx",
+      "type": "file",
+      "name": "ArticleSchema.jsx",
+      "filePath": "src/components/blog/ArticleSchema.jsx",
+      "summary": "ArticleSchema.jsx: Source file, 2 functions.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/blog/ArticleSchema.jsx:absoluteUrl",
+      "type": "function",
+      "name": "absoluteUrl",
+      "filePath": "src/components/blog/ArticleSchema.jsx",
+      "lineRange": [
+        8,
+        11
+      ],
+      "summary": "Function absoluteUrl with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/blog/ArticleSchema.jsx:ArticleSchema",
+      "type": "function",
+      "name": "ArticleSchema",
+      "filePath": "src/components/blog/ArticleSchema.jsx",
+      "lineRange": [
+        13,
+        57
+      ],
+      "summary": "Function ArticleSchema with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/blog/AuthorBox.jsx",
+      "type": "file",
+      "name": "AuthorBox.jsx",
+      "filePath": "src/components/blog/AuthorBox.jsx",
+      "summary": "AuthorBox.jsx: Source file, 1 function, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/blog/AuthorBox.jsx:AuthorBox",
+      "type": "function",
+      "name": "AuthorBox",
+      "filePath": "src/components/blog/AuthorBox.jsx",
+      "lineRange": [
+        4,
+        28
+      ],
+      "summary": "Function AuthorBox with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/blog/ReadingProgress.jsx",
+      "type": "file",
+      "name": "ReadingProgress.jsx",
+      "filePath": "src/components/blog/ReadingProgress.jsx",
+      "summary": "ReadingProgress.jsx: Source file, 1 function, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/blog/ReadingProgress.jsx:ReadingProgress",
+      "type": "function",
+      "name": "ReadingProgress",
+      "filePath": "src/components/blog/ReadingProgress.jsx",
+      "lineRange": [
+        6,
+        43
+      ],
+      "summary": "Function ReadingProgress with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/blog/ShareSection.jsx",
+      "type": "file",
+      "name": "ShareSection.jsx",
+      "filePath": "src/components/blog/ShareSection.jsx",
+      "summary": "ShareSection.jsx: Source file, 1 function, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/blog/ShareSection.jsx:ShareSection",
+      "type": "function",
+      "name": "ShareSection",
+      "filePath": "src/components/blog/ShareSection.jsx",
+      "lineRange": [
+        6,
+        55
+      ],
+      "summary": "Function ShareSection with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/blog/TableOfContents.jsx",
+      "type": "file",
+      "name": "TableOfContents.jsx",
+      "filePath": "src/components/blog/TableOfContents.jsx",
+      "summary": "TableOfContents.jsx: Source file, 1 function, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/blog/TableOfContents.jsx:TableOfContents",
+      "type": "function",
+      "name": "TableOfContents",
+      "filePath": "src/components/blog/TableOfContents.jsx",
+      "lineRange": [
+        7,
+        72
+      ],
+      "summary": "Function TableOfContents with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/canvas/BackgroundEffects.jsx",
+      "type": "file",
+      "name": "BackgroundEffects.jsx",
+      "filePath": "src/components/canvas/BackgroundEffects.jsx",
+      "summary": "BackgroundEffects.jsx: Source file, 5 functions.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/canvas/BackgroundEffects.jsx:FloatingParticles",
+      "type": "function",
+      "name": "FloatingParticles",
+      "filePath": "src/components/canvas/BackgroundEffects.jsx",
+      "lineRange": [
+        12,
+        57
+      ],
+      "summary": "Function FloatingParticles with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/canvas/BackgroundEffects.jsx:GridFloor",
+      "type": "function",
+      "name": "GridFloor",
+      "filePath": "src/components/canvas/BackgroundEffects.jsx",
+      "lineRange": [
+        60,
+        74
+      ],
+      "summary": "Function GridFloor with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/canvas/BackgroundEffects.jsx:GlowingOrbs",
+      "type": "function",
+      "name": "GlowingOrbs",
+      "filePath": "src/components/canvas/BackgroundEffects.jsx",
+      "lineRange": [
+        77,
+        99
+      ],
+      "summary": "Function GlowingOrbs with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/canvas/BackgroundEffects.jsx:WaveRings",
+      "type": "function",
+      "name": "WaveRings",
+      "filePath": "src/components/canvas/BackgroundEffects.jsx",
+      "lineRange": [
+        102,
+        126
+      ],
+      "summary": "Function WaveRings with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/canvas/BackgroundEffects.jsx:BackgroundEffects",
+      "type": "function",
+      "name": "BackgroundEffects",
+      "filePath": "src/components/canvas/BackgroundEffects.jsx",
+      "lineRange": [
+        128,
+        142
+      ],
+      "summary": "Function BackgroundEffects with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/canvas/BorderGlow.jsx",
+      "type": "file",
+      "name": "BorderGlow.jsx",
+      "filePath": "src/components/canvas/BorderGlow.jsx",
+      "summary": "BorderGlow.jsx: Source file, 7 functions, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/canvas/BorderGlow.jsx:parseHSL",
+      "type": "function",
+      "name": "parseHSL",
+      "filePath": "src/components/canvas/BorderGlow.jsx",
+      "lineRange": [
+        4,
+        8
+      ],
+      "summary": "Function parseHSL with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/canvas/BorderGlow.jsx:buildGlowVars",
+      "type": "function",
+      "name": "buildGlowVars",
+      "filePath": "src/components/canvas/BorderGlow.jsx",
+      "lineRange": [
+        10,
+        20
+      ],
+      "summary": "Function buildGlowVars with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/canvas/BorderGlow.jsx:buildGradientVars",
+      "type": "function",
+      "name": "buildGradientVars",
+      "filePath": "src/components/canvas/BorderGlow.jsx",
+      "lineRange": [
+        26,
+        34
+      ],
+      "summary": "Function buildGradientVars with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/canvas/BorderGlow.jsx:easeOutCubic",
+      "type": "function",
+      "name": "easeOutCubic",
+      "filePath": "src/components/canvas/BorderGlow.jsx",
+      "lineRange": [
+        36,
+        36
+      ],
+      "summary": "Function easeOutCubic with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/canvas/BorderGlow.jsx:easeInCubic",
+      "type": "function",
+      "name": "easeInCubic",
+      "filePath": "src/components/canvas/BorderGlow.jsx",
+      "lineRange": [
+        37,
+        37
+      ],
+      "summary": "Function easeInCubic with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/canvas/BorderGlow.jsx:animateValue",
+      "type": "function",
+      "name": "animateValue",
+      "filePath": "src/components/canvas/BorderGlow.jsx",
+      "lineRange": [
+        39,
+        49
+      ],
+      "summary": "Function animateValue with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/canvas/BorderGlow.jsx:BorderGlow",
+      "type": "function",
+      "name": "BorderGlow",
+      "filePath": "src/components/canvas/BorderGlow.jsx",
+      "lineRange": [
+        51,
+        154
+      ],
+      "summary": "Function BorderGlow with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/canvas/ByeCharacterCanvas.jsx",
+      "type": "file",
+      "name": "ByeCharacterCanvas.jsx",
+      "filePath": "src/components/canvas/ByeCharacterCanvas.jsx",
+      "summary": "ByeCharacterCanvas.jsx: Source file, 3 functions.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/canvas/ByeCharacterCanvas.jsx:ByeModel",
+      "type": "function",
+      "name": "ByeModel",
+      "filePath": "src/components/canvas/ByeCharacterCanvas.jsx",
+      "lineRange": [
+        7,
+        52
+      ],
+      "summary": "Function ByeModel with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/canvas/ByeCharacterCanvas.jsx:Scene",
+      "type": "function",
+      "name": "Scene",
+      "filePath": "src/components/canvas/ByeCharacterCanvas.jsx",
+      "lineRange": [
+        56,
+        72
+      ],
+      "summary": "Function Scene with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/canvas/ByeCharacterCanvas.jsx:ByeCharacterCanvas",
+      "type": "function",
+      "name": "ByeCharacterCanvas",
+      "filePath": "src/components/canvas/ByeCharacterCanvas.jsx",
+      "lineRange": [
+        74,
+        97
+      ],
+      "summary": "Function ByeCharacterCanvas with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/canvas/DotField.jsx",
+      "type": "file",
+      "name": "DotField.jsx",
+      "filePath": "src/components/canvas/DotField.jsx",
+      "summary": "DotField.jsx: Source file, 1 import.",
+      "tags": [
+        "component",
+        "type-definition"
+      ],
+      "complexity": "complex"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "function:src/components/blog/ArticleBody.jsx:injectHeadingIds",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "function:src/components/blog/ArticleBody.jsx:withAttribute",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "function:src/components/blog/ArticleBody.jsx:enhanceImages",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "function:src/components/blog/ArticleBody.jsx:wrapTables",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "function:src/components/blog/ArticleBody.jsx:mergeAdjacentLists",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "function:src/components/blog/ArticleBody.jsx:splitInlineLabels",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "function:src/components/blog/ArticleBody.jsx:sanitizeArticleHtml",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "function:src/components/blog/ArticleBody.jsx:renderTable",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "function:src/components/blog/ArticleBody.jsx:ArticleBody",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "function:src/components/blog/ArticleBody.jsx:ArticleBody",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "function:src/components/blog/ArticleBody.jsx:ArticleSummary",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "function:src/components/blog/ArticleBody.jsx:ArticleSummary",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "file:src/components/blog/ArticleBody.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "function:src/components/blog/ArticleBody.jsx:withAttribute",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "function:src/components/blog/ArticleBody.jsx:withAttribute",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "function:src/components/blog/ArticleBody.jsx:withAttribute",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "function:src/components/blog/ArticleBody.jsx:wrapTables",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "function:src/components/blog/ArticleBody.jsx:enhanceImages",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "function:src/components/blog/ArticleBody.jsx:splitInlineLabels",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "function:src/components/blog/ArticleBody.jsx:mergeAdjacentLists",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "function:src/components/blog/ArticleBody.jsx:injectHeadingIds",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/blog/ArticleBody.jsx",
+      "target": "function:src/components/blog/ArticleBody.jsx:sanitizeArticleHtml",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/blog/ArticleHero.jsx",
+      "target": "function:src/components/blog/ArticleHero.jsx:ArticleHero",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/blog/ArticleHero.jsx",
+      "target": "function:src/components/blog/ArticleHero.jsx:ArticleHero",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/blog/ArticleHero.jsx",
+      "target": "file:src/components/blog/ArticleHero.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/blog/ArticleSchema.jsx",
+      "target": "function:src/components/blog/ArticleSchema.jsx:absoluteUrl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/blog/ArticleSchema.jsx",
+      "target": "function:src/components/blog/ArticleSchema.jsx:ArticleSchema",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/blog/ArticleSchema.jsx",
+      "target": "function:src/components/blog/ArticleSchema.jsx:ArticleSchema",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/blog/ArticleSchema.jsx",
+      "target": "function:src/components/blog/ArticleSchema.jsx:absoluteUrl",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/blog/AuthorBox.jsx",
+      "target": "function:src/components/blog/AuthorBox.jsx:AuthorBox",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/blog/AuthorBox.jsx",
+      "target": "function:src/components/blog/AuthorBox.jsx:AuthorBox",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/blog/AuthorBox.jsx",
+      "target": "file:src/components/blog/AuthorBox.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/blog/ReadingProgress.jsx",
+      "target": "function:src/components/blog/ReadingProgress.jsx:ReadingProgress",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/blog/ReadingProgress.jsx",
+      "target": "function:src/components/blog/ReadingProgress.jsx:ReadingProgress",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/blog/ReadingProgress.jsx",
+      "target": "file:src/components/blog/ReadingProgress.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/blog/ShareSection.jsx",
+      "target": "function:src/components/blog/ShareSection.jsx:ShareSection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/blog/ShareSection.jsx",
+      "target": "function:src/components/blog/ShareSection.jsx:ShareSection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/blog/ShareSection.jsx",
+      "target": "file:src/components/blog/ShareSection.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/blog/TableOfContents.jsx",
+      "target": "function:src/components/blog/TableOfContents.jsx:TableOfContents",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/blog/TableOfContents.jsx",
+      "target": "function:src/components/blog/TableOfContents.jsx:TableOfContents",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/blog/TableOfContents.jsx",
+      "target": "file:src/components/blog/TableOfContents.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/canvas/BackgroundEffects.jsx",
+      "target": "function:src/components/canvas/BackgroundEffects.jsx:FloatingParticles",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/canvas/BackgroundEffects.jsx",
+      "target": "function:src/components/canvas/BackgroundEffects.jsx:GridFloor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/canvas/BackgroundEffects.jsx",
+      "target": "function:src/components/canvas/BackgroundEffects.jsx:GlowingOrbs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/canvas/BackgroundEffects.jsx",
+      "target": "function:src/components/canvas/BackgroundEffects.jsx:WaveRings",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/canvas/BackgroundEffects.jsx",
+      "target": "function:src/components/canvas/BackgroundEffects.jsx:BackgroundEffects",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/canvas/BackgroundEffects.jsx",
+      "target": "function:src/components/canvas/BackgroundEffects.jsx:BackgroundEffects",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/canvas/BorderGlow.jsx",
+      "target": "function:src/components/canvas/BorderGlow.jsx:parseHSL",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/canvas/BorderGlow.jsx",
+      "target": "function:src/components/canvas/BorderGlow.jsx:buildGlowVars",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/canvas/BorderGlow.jsx",
+      "target": "function:src/components/canvas/BorderGlow.jsx:buildGradientVars",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/canvas/BorderGlow.jsx",
+      "target": "function:src/components/canvas/BorderGlow.jsx:easeOutCubic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/canvas/BorderGlow.jsx",
+      "target": "function:src/components/canvas/BorderGlow.jsx:easeInCubic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/canvas/BorderGlow.jsx",
+      "target": "function:src/components/canvas/BorderGlow.jsx:animateValue",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/canvas/BorderGlow.jsx",
+      "target": "function:src/components/canvas/BorderGlow.jsx:BorderGlow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/canvas/BorderGlow.jsx",
+      "target": "file:src/components/canvas/BorderGlow.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/canvas/BorderGlow.jsx",
+      "target": "function:src/components/canvas/BorderGlow.jsx:parseHSL",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/canvas/BorderGlow.jsx",
+      "target": "function:src/components/canvas/BorderGlow.jsx:animateValue",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/canvas/BorderGlow.jsx",
+      "target": "function:src/components/canvas/BorderGlow.jsx:animateValue",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/canvas/BorderGlow.jsx",
+      "target": "function:src/components/canvas/BorderGlow.jsx:animateValue",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/canvas/BorderGlow.jsx",
+      "target": "function:src/components/canvas/BorderGlow.jsx:animateValue",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/canvas/BorderGlow.jsx",
+      "target": "function:src/components/canvas/BorderGlow.jsx:buildGlowVars",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/canvas/BorderGlow.jsx",
+      "target": "function:src/components/canvas/BorderGlow.jsx:buildGradientVars",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/canvas/ByeCharacterCanvas.jsx",
+      "target": "function:src/components/canvas/ByeCharacterCanvas.jsx:ByeModel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/canvas/ByeCharacterCanvas.jsx",
+      "target": "function:src/components/canvas/ByeCharacterCanvas.jsx:Scene",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/canvas/ByeCharacterCanvas.jsx",
+      "target": "function:src/components/canvas/ByeCharacterCanvas.jsx:ByeCharacterCanvas",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/canvas/ByeCharacterCanvas.jsx",
+      "target": "function:src/components/canvas/ByeCharacterCanvas.jsx:ByeCharacterCanvas",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/canvas/DotField.jsx",
+      "target": "file:src/components/canvas/DotField.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

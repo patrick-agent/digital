@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect, useCallback } from "react"
+import { useState, useCallback } from "react"
 import { useRouter } from "next/navigation"
 import Link from "next/link"
 import { Copy, Eye } from "lucide-react"
@@ -12,6 +12,44 @@ const STATUS_OPTIONS = [
   { value: "published", label: "Published" },
   { value: "scheduled", label: "Scheduled" },
 ]
+
+function createInitialForm(post) {
+  if (!post) {
+    return {
+      title: "",
+      slug: "",
+      persona: "artist",
+      content: "",
+      excerpt: "",
+      coverImage: "",
+      tags: "",
+      category: "",
+      status: "draft",
+      publishedAt: "",
+      seoTitle: "",
+      seoDescription: "",
+      seoKeywords: "",
+    }
+  }
+
+  return {
+    title: post.title || "",
+    slug: post.slug || "",
+    persona: post.persona || "artist",
+    content: post.content || "",
+    excerpt: post.excerpt || "",
+    coverImage: post.coverImage || "",
+    tags: (post.tags || []).join(", "),
+    category: post.category || "",
+    status: post.status || "draft",
+    publishedAt: post.publishedAt
+      ? new Date(post.publishedAt).toISOString().slice(0, 16)
+      : "",
+    seoTitle: post.seoTitle || "",
+    seoDescription: post.seoDescription || "",
+    seoKeywords: (post.seoKeywords || []).join(", "),
+  }
+}
 
 function SEOIndicator({ data }) {
   const { score, checks } = calculateSEOScore(data)
@@ -65,46 +103,10 @@ export default function BlogForm({ post }) {
   const router = useRouter()
   const isEditing = !!post
 
-  const [form, setForm] = useState({
-    title: "",
-    slug: "",
-    persona: "artist",
-    content: "",
-    excerpt: "",
-    coverImage: "",
-    tags: "",
-    category: "",
-    status: "draft",
-    publishedAt: "",
-    seoTitle: "",
-    seoDescription: "",
-    seoKeywords: "",
-  })
+  const [form, setForm] = useState(() => createInitialForm(post))
   const [slugManuallyEdited, setSlugManuallyEdited] = useState(false)
   const [saving, setSaving] = useState(false)
   const [error, setError] = useState("")
-
-  useEffect(() => {
-    if (post) {
-      setForm({
-        title: post.title || "",
-        slug: post.slug || "",
-        persona: post.persona || "artist",
-        content: post.content || "",
-        excerpt: post.excerpt || "",
-        coverImage: post.coverImage || "",
-        tags: (post.tags || []).join(", "),
-        category: post.category || "",
-        status: post.status || "draft",
-        publishedAt: post.publishedAt
-          ? new Date(post.publishedAt).toISOString().slice(0, 16)
-          : "",
-        seoTitle: post.seoTitle || "",
-        seoDescription: post.seoDescription || "",
-        seoKeywords: (post.seoKeywords || []).join(", "),
-      })
-    }
-  }, [post])
 
   const handleChange = useCallback(
     (field, value) => {

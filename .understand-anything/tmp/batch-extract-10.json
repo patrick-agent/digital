@@ -1,0 +1,182 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 3,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/app/(digital)/digital/loading.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 47,
+      "nonEmptyLines": 42,
+      "functions": [
+        {
+          "name": "DigitalLoading",
+          "startLine": 5,
+          "endLine": 47,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "DigitalLoading",
+          "line": 5,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "DigitalLoading",
+          "callee": "useState",
+          "lineNumber": 6
+        },
+        {
+          "caller": "DigitalLoading",
+          "callee": "useEffect",
+          "lineNumber": 8
+        },
+        {
+          "caller": "DigitalLoading",
+          "callee": "setTimeout",
+          "lineNumber": 9
+        },
+        {
+          "caller": "DigitalLoading",
+          "callee": "setShow",
+          "lineNumber": 9
+        },
+        {
+          "caller": "DigitalLoading",
+          "callee": "clearTimeout",
+          "lineNumber": 10
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/(digital)/digital/page.client.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 100,
+      "nonEmptyLines": 84,
+      "functions": [
+        {
+          "name": "SectionPlaceholder",
+          "startLine": 41,
+          "endLine": 43,
+          "params": []
+        },
+        {
+          "name": "LazyMount",
+          "startLine": 45,
+          "endLine": 74,
+          "params": []
+        },
+        {
+          "name": "DigitalPageContent",
+          "startLine": 76,
+          "endLine": 100,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "DigitalPageContent",
+          "line": 76,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "LazyMount",
+          "callee": "useRef",
+          "lineNumber": 46
+        },
+        {
+          "caller": "LazyMount",
+          "callee": "useState",
+          "lineNumber": 47
+        },
+        {
+          "caller": "LazyMount",
+          "callee": "useEffect",
+          "lineNumber": 49
+        },
+        {
+          "caller": "LazyMount",
+          "callee": "setShouldRender",
+          "lineNumber": 53
+        },
+        {
+          "caller": "LazyMount",
+          "callee": "setShouldRender",
+          "lineNumber": 60
+        },
+        {
+          "caller": "LazyMount",
+          "callee": "observer.disconnect",
+          "lineNumber": 61
+        },
+        {
+          "caller": "LazyMount",
+          "callee": "observer.observe",
+          "lineNumber": 67
+        },
+        {
+          "caller": "LazyMount",
+          "callee": "observer.disconnect",
+          "lineNumber": 68
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/(digital)/digital/page.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 25,
+      "nonEmptyLines": 22,
+      "functions": [
+        {
+          "name": "DigitalPage",
+          "startLine": 19,
+          "endLine": 25,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "metadata",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "viewport",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "DigitalPage",
+          "line": 19,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 3,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    }
+  ]
+}

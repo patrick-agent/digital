@@ -1,0 +1,53 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/components/canvas/BorderGlow.css",
+      "type": "file",
+      "name": "BorderGlow.css",
+      "filePath": "src/components/canvas/BorderGlow.css",
+      "summary": "BorderGlow.css: Source file.",
+      "tags": [
+        "markup",
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/canvas/DotField.css",
+      "type": "file",
+      "name": "DotField.css",
+      "filePath": "src/components/canvas/DotField.css",
+      "summary": "DotField.css: Source file.",
+      "tags": [
+        "markup",
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/canvas/GradientBlinds.css",
+      "type": "file",
+      "name": "GradientBlinds.css",
+      "filePath": "src/components/canvas/GradientBlinds.css",
+      "summary": "GradientBlinds.css: Source file.",
+      "tags": [
+        "markup",
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/canvas/SpotlightCard.css",
+      "type": "file",
+      "name": "SpotlightCard.css",
+      "filePath": "src/components/canvas/SpotlightCard.css",
+      "summary": "SpotlightCard.css: Source file.",
+      "tags": [
+        "markup",
+        "component"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": []
+}

@@ -1,0 +1,49 @@
+{
+  "projectRoot": "C:\\Users\\Admin\\Desktop\\Website 3D\\studio-3d",
+  "batchFiles": [
+    {
+      "path": "src/components/sections/AboutSection.module.css",
+      "language": "css",
+      "sizeLines": 388,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/sections/ContactSection.module.css",
+      "language": "css",
+      "sizeLines": 673,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/sections/DonationSection.module.css",
+      "language": "css",
+      "sizeLines": 487,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/sections/HeroSection.module.css",
+      "language": "css",
+      "sizeLines": 463,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/sections/LatestEPSection.module.css",
+      "language": "css",
+      "sizeLines": 265,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/sections/MusicSection.module.css",
+      "language": "css",
+      "sizeLines": 454,
+      "fileCategory": "markup"
+    }
+  ],
+  "batchImportData": {
+    "src/components/sections/AboutSection.module.css": [],
+    "src/components/sections/ContactSection.module.css": [],
+    "src/components/sections/DonationSection.module.css": [],
+    "src/components/sections/HeroSection.module.css": [],
+    "src/components/sections/LatestEPSection.module.css": [],
+    "src/components/sections/MusicSection.module.css": []
+  }
+}

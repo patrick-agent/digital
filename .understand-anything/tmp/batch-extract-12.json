@@ -1,0 +1,162 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 3,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/components/artist/bio-music/PlatformIcons.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 24,
+      "nonEmptyLines": 21,
+      "functions": [
+        {
+          "name": "AmazonMusicIcon",
+          "startLine": 8,
+          "endLine": 16,
+          "params": [
+            "{ size = 24, className = \"\" }"
+          ]
+        },
+        {
+          "name": "DeezerIcon",
+          "startLine": 18,
+          "endLine": 24,
+          "params": [
+            "{ size = 24, className = \"\" }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "AmazonMusicIcon",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "DeezerIcon",
+          "line": 18,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/artist/bio-music/PlatformLink.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 58,
+      "nonEmptyLines": 52,
+      "functions": [
+        {
+          "name": "PlatformLink",
+          "startLine": 40,
+          "endLine": 58,
+          "params": [
+            "{ platform, url }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "PLATFORM_CONFIGS",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "PlatformLink",
+          "line": 40,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/artist/bio-music/PlatformLinksCard.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 62,
+      "nonEmptyLines": 52,
+      "functions": [
+        {
+          "name": "PlatformLinksCard",
+          "startLine": 13,
+          "endLine": 62,
+          "params": [
+            "{ streamingLinks }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "PlatformLinksCard",
+          "line": 13,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "PlatformLinksCard",
+          "callee": "useRef",
+          "lineNumber": 14
+        },
+        {
+          "caller": "PlatformLinksCard",
+          "callee": "PLATFORM_CONFIGS.filter",
+          "lineNumber": 17
+        },
+        {
+          "caller": "PlatformLinksCard",
+          "callee": "useEffect",
+          "lineNumber": 22
+        },
+        {
+          "caller": "PlatformLinksCard",
+          "callee": "window.matchMedia",
+          "lineNumber": 25
+        },
+        {
+          "caller": "PlatformLinksCard",
+          "callee": "cardRef.current.querySelectorAll",
+          "lineNumber": 30
+        },
+        {
+          "caller": "PlatformLinksCard",
+          "callee": "gsap.context",
+          "lineNumber": 33
+        },
+        {
+          "caller": "PlatformLinksCard",
+          "callee": "gsap.fromTo",
+          "lineNumber": 34
+        },
+        {
+          "caller": "PlatformLinksCard",
+          "callee": "ctx.revert",
+          "lineNumber": 47
+        },
+        {
+          "caller": "PlatformLinksCard",
+          "callee": "activePlatforms.map",
+          "lineNumber": 52
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    }
+  ]
+}

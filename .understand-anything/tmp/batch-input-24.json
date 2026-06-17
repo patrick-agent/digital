@@ -1,0 +1,98 @@
+{
+  "projectRoot": "C:\\Users\\Admin\\Desktop\\Website 3D\\studio-3d",
+  "batchFiles": [
+    {
+      "path": "src/components/digital/CompanyLogos.module.css",
+      "language": "css",
+      "sizeLines": 71,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/digital/DigitalContact.module.css",
+      "language": "css",
+      "sizeLines": 156,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/digital/DigitalFooter.module.css",
+      "language": "css",
+      "sizeLines": 396,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/digital/DigitalHero.module.css",
+      "language": "css",
+      "sizeLines": 157,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/digital/DigitalIntro.module.css",
+      "language": "css",
+      "sizeLines": 190,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/digital/DigitalNavbar.module.css",
+      "language": "css",
+      "sizeLines": 270,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/digital/DigitalServices.module.css",
+      "language": "css",
+      "sizeLines": 276,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/digital/DigitalSkills.module.css",
+      "language": "css",
+      "sizeLines": 424,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/digital/DigitalSocialProof.module.css",
+      "language": "css",
+      "sizeLines": 371,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/digital/DigitalTimeline.module.css",
+      "language": "css",
+      "sizeLines": 438,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/digital/DigitalTransition.module.css",
+      "language": "css",
+      "sizeLines": 51,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/digital/TextFlip.module.css",
+      "language": "css",
+      "sizeLines": 35,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/digital/digital-vars.css",
+      "language": "css",
+      "sizeLines": 19,
+      "fileCategory": "markup"
+    }
+  ],
+  "batchImportData": {
+    "src/components/digital/CompanyLogos.module.css": [],
+    "src/components/digital/DigitalContact.module.css": [],
+    "src/components/digital/DigitalFooter.module.css": [],
+    "src/components/digital/DigitalHero.module.css": [],
+    "src/components/digital/DigitalIntro.module.css": [],
+    "src/components/digital/DigitalNavbar.module.css": [],
+    "src/components/digital/DigitalServices.module.css": [],
+    "src/components/digital/DigitalSkills.module.css": [],
+    "src/components/digital/DigitalSocialProof.module.css": [],
+    "src/components/digital/DigitalTimeline.module.css": [],
+    "src/components/digital/DigitalTransition.module.css": [],
+    "src/components/digital/TextFlip.module.css": [],
+    "src/components/digital/digital-vars.css": []
+  }
+}

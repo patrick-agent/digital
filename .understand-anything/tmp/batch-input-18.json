@@ -1,0 +1,84 @@
+{
+  "projectRoot": "C:\\Users\\Admin\\Desktop\\Website 3D\\studio-3d",
+  "batchFiles": [
+    {
+      "path": "db/blog.json",
+      "language": "json",
+      "sizeLines": 9528,
+      "fileCategory": "config"
+    },
+    {
+      "path": "db/case-studies.json",
+      "language": "json",
+      "sizeLines": 83,
+      "fileCategory": "config"
+    },
+    {
+      "path": "db/events.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "db/gallery.json",
+      "language": "json",
+      "sizeLines": 74,
+      "fileCategory": "config"
+    },
+    {
+      "path": "db/music.json",
+      "language": "json",
+      "sizeLines": 152,
+      "fileCategory": "config"
+    },
+    {
+      "path": "db/newsletter.json",
+      "language": "json",
+      "sizeLines": 1,
+      "fileCategory": "config"
+    },
+    {
+      "path": "db/press-kit.json",
+      "language": "json",
+      "sizeLines": 14,
+      "fileCategory": "config"
+    },
+    {
+      "path": "db/seo.json",
+      "language": "json",
+      "sizeLines": 33,
+      "fileCategory": "config"
+    },
+    {
+      "path": "db/services.json",
+      "language": "json",
+      "sizeLines": 78,
+      "fileCategory": "config"
+    },
+    {
+      "path": "db/settings.json",
+      "language": "json",
+      "sizeLines": 170,
+      "fileCategory": "config"
+    },
+    {
+      "path": "db/shop.json",
+      "language": "json",
+      "sizeLines": 1937,
+      "fileCategory": "config"
+    }
+  ],
+  "batchImportData": {
+    "db/blog.json": [],
+    "db/case-studies.json": [],
+    "db/events.json": [],
+    "db/gallery.json": [],
+    "db/music.json": [],
+    "db/newsletter.json": [],
+    "db/press-kit.json": [],
+    "db/seo.json": [],
+    "db/services.json": [],
+    "db/settings.json": [],
+    "db/shop.json": []
+  }
+}

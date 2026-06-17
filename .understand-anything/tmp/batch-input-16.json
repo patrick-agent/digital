@@ -1,0 +1,34 @@
+{
+  "projectRoot": "C:\\Users\\Admin\\Desktop\\Website 3D\\studio-3d",
+  "batchFiles": [
+    {
+      "path": "src/lib/services/service/http.js",
+      "language": "javascript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/services/service/spec.js",
+      "language": "javascript",
+      "sizeLines": 134,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/services/service/spec.test.mjs",
+      "language": "javascript",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/lib/services/service/http.js": [
+      "src/lib/services/service/spec.js"
+    ],
+    "src/lib/services/service/spec.js": [
+      "src/lib/contract/base.js"
+    ],
+    "src/lib/services/service/spec.test.mjs": [
+      "src/lib/services/service/spec.js"
+    ]
+  }
+}

@@ -1,0 +1,3431 @@
+{
+  "projectRoot": "C:\\Users\\Admin\\Desktop\\Website 3D\\studio-3d",
+  "files": [
+    {
+      "path": "_affiliate-products-need-links.md",
+      "language": "markdown",
+      "sizeLines": 1241,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".learnings/ERRORS.md",
+      "language": "markdown",
+      "sizeLines": 57,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".learnings/LEARNINGS.md",
+      "language": "markdown",
+      "sizeLines": 27,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".opencode/plans/architecture-refactor-plan.md",
+      "language": "markdown",
+      "sizeLines": 205,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".understand-anything/.understandignore",
+      "language": "unknown",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".understand-anything/config.json",
+      "language": "json",
+      "sizeLines": 4,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".vercelignore",
+      "language": "unknown",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "AGENTS.md",
+      "language": "markdown",
+      "sizeLines": 345,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "CLAUDE.md",
+      "language": "markdown",
+      "sizeLines": 1,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "components.json",
+      "language": "json",
+      "sizeLines": 20,
+      "fileCategory": "config"
+    },
+    {
+      "path": "CONTEXT.md",
+      "language": "markdown",
+      "sizeLines": 33,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "db/blog.json",
+      "language": "json",
+      "sizeLines": 9528,
+      "fileCategory": "config"
+    },
+    {
+      "path": "db/case-studies.json",
+      "language": "json",
+      "sizeLines": 83,
+      "fileCategory": "config"
+    },
+    {
+      "path": "db/events.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "db/gallery.json",
+      "language": "json",
+      "sizeLines": 74,
+      "fileCategory": "config"
+    },
+    {
+      "path": "db/music.json",
+      "language": "json",
+      "sizeLines": 152,
+      "fileCategory": "config"
+    },
+    {
+      "path": "db/newsletter.json",
+      "language": "json",
+      "sizeLines": 1,
+      "fileCategory": "config"
+    },
+    {
+      "path": "db/press-kit.json",
+      "language": "json",
+      "sizeLines": 14,
+      "fileCategory": "config"
+    },
+    {
+      "path": "db/seo.json",
+      "language": "json",
+      "sizeLines": 33,
+      "fileCategory": "config"
+    },
+    {
+      "path": "db/services.json",
+      "language": "json",
+      "sizeLines": 78,
+      "fileCategory": "config"
+    },
+    {
+      "path": "db/settings.json",
+      "language": "json",
+      "sizeLines": 170,
+      "fileCategory": "config"
+    },
+    {
+      "path": "db/shop.json",
+      "language": "json",
+      "sizeLines": 1937,
+      "fileCategory": "config"
+    },
+    {
+      "path": "DESIGN.md",
+      "language": "markdown",
+      "sizeLines": 728,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/adr/0001-admin-crud-spec-handler-http-adapter.md",
+      "language": "markdown",
+      "sizeLines": 63,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "eslint.config.mjs",
+      "language": "javascript",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "jsconfig.json",
+      "language": "json",
+      "sizeLines": 7,
+      "fileCategory": "config"
+    },
+    {
+      "path": "MOBILE_OPTIMIZATION_FIXES.md",
+      "language": "markdown",
+      "sizeLines": 197,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "MOBILE_TROUBLESHOOTING.md",
+      "language": "markdown",
+      "sizeLines": 193,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "next.config.mjs",
+      "language": "javascript",
+      "sizeLines": 148,
+      "fileCategory": "code"
+    },
+    {
+      "path": "OPTIMIZATION_CLEANUP.md",
+      "language": "markdown",
+      "sizeLines": 176,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "OPTIMIZATION_SUMMARY.md",
+      "language": "markdown",
+      "sizeLines": 309,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "package.json",
+      "language": "json",
+      "sizeLines": 100,
+      "fileCategory": "config"
+    },
+    {
+      "path": "PERFORMANCE.md",
+      "language": "markdown",
+      "sizeLines": 308,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "postcss.config.mjs",
+      "language": "javascript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/bo-gear-thu-rap-vocal-tai-nha-cho-phong-chua-xu-ly-am-inside.webp",
+      "language": "webp",
+      "sizeLines": 150,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/bo-gear-thu-rap-vocal-tai-nha-cho-phong-chua-xu-ly-am.webp",
+      "language": "webp",
+      "sizeLines": 332,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/cach-lam-beat-fl-studio-co-ban.webp",
+      "language": "webp",
+      "sizeLines": 73,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/cach-mix-vocal-tai-nha.webp",
+      "language": "webp",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/chon-micro-thu-am-tai-nha-condenser-dynamic.webp",
+      "language": "webp",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/co-can-booster-gain-cloudlifter-fethead-cho-micro-dynamic-inside.webp",
+      "language": "webp",
+      "sizeLines": 164,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/co-can-booster-gain-cloudlifter-fethead-cho-micro-dynamic.webp",
+      "language": "webp",
+      "sizeLines": 121,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/co-nen-mua-micro-usb-xlr-hybrid-mv7-podmic-usb-q9u-inside.webp",
+      "language": "webp",
+      "sizeLines": 121,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/co-nen-mua-micro-usb-xlr-hybrid-mv7-podmic-usb-q9u.webp",
+      "language": "webp",
+      "sizeLines": 130,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/co-nen-mua-reflection-filter-cho-phong-ngu-thu-vocal-inside.webp",
+      "language": "webp",
+      "sizeLines": 187,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/co-nen-mua-reflection-filter-cho-phong-ngu-thu-vocal.webp",
+      "language": "webp",
+      "sizeLines": 171,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/combo-home-studio-duoi-10-trieu-cho-singer-songwriter-inside.webp",
+      "language": "webp",
+      "sizeLines": 187,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/combo-home-studio-duoi-10-trieu-cho-singer-songwriter.webp",
+      "language": "webp",
+      "sizeLines": 182,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/combo-home-studio-duoi-20-trieu-cho-producer-ban-chuyen-inside.webp",
+      "language": "webp",
+      "sizeLines": 363,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/combo-home-studio-duoi-20-trieu-cho-producer-ban-chuyen.webp",
+      "language": "webp",
+      "sizeLines": 182,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/danh-gia-focusrite-scarlett-2i2.webp",
+      "language": "webp",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/edm-la-gi-lich-su-nhac-dien-tu.webp",
+      "language": "webp",
+      "sizeLines": 67,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/fl-studio-cheatsheet-pdf.webp",
+      "language": "webp",
+      "sizeLines": 82,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/house-la-gi.webp",
+      "language": "webp",
+      "sizeLines": 82,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/huong-dan-su-dung-compressor-mixing.webp",
+      "language": "webp",
+      "sizeLines": 82,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/loa-kiem-am-cho-phong-duoi-15m2-nen-chon-kich-thuoc-nao-inside.webp",
+      "language": "webp",
+      "sizeLines": 233,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/loa-kiem-am-cho-phong-duoi-15m2-nen-chon-kich-thuoc-nao.webp",
+      "language": "webp",
+      "sizeLines": 236,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/monitor-isolation-pad-chan-loa-ke-loa-phu-kien-dang-nang-cap-inside.webp",
+      "language": "webp",
+      "sizeLines": 187,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/monitor-isolation-pad-chan-loa-ke-loa-phu-kien-dang-nang-cap.webp",
+      "language": "webp",
+      "sizeLines": 236,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/nang-cap-home-studio-mua-gi-truoc-de-nghe-hay-hon-inside.webp",
+      "language": "webp",
+      "sizeLines": 263,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/nang-cap-home-studio-mua-gi-truoc-de-nghe-hay-hon.webp",
+      "language": "webp",
+      "sizeLines": 182,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/nhip-tempo-bpm-la-gi.webp",
+      "language": "webp",
+      "sizeLines": 74,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/review-audient-id14-mkii-cho-home-studio-ban-chuyen-inside.webp",
+      "language": "webp",
+      "sizeLines": 411,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/review-audient-id14-mkii-cho-home-studio-ban-chuyen.webp",
+      "language": "webp",
+      "sizeLines": 393,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/review-kali-lp6-v2-cho-phong-nho-inside.webp",
+      "language": "webp",
+      "sizeLines": 363,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/review-kali-lp6-v2-cho-phong-nho.webp",
+      "language": "webp",
+      "sizeLines": 236,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/review-lewitt-lct-440-pure-co-dang-mua-inside.webp",
+      "language": "webp",
+      "sizeLines": 233,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/review-lewitt-lct-440-pure-co-dang-mua.webp",
+      "language": "webp",
+      "sizeLines": 121,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/setup-phong-thu-am-tai-nha-diy.webp",
+      "language": "webp",
+      "sizeLines": 80,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/so-sanh-audient-id14-mkii-motu-m2-ssl2-plus-inside.webp",
+      "language": "webp",
+      "sizeLines": 233,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/so-sanh-audient-id14-mkii-motu-m2-ssl2-plus.webp",
+      "language": "webp",
+      "sizeLines": 393,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/so-sanh-jbl-305p-mkii-kali-lp6-v2-adam-t5v-inside.webp",
+      "language": "webp",
+      "sizeLines": 270,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/so-sanh-jbl-305p-mkii-kali-lp6-v2-adam-t5v.webp",
+      "language": "webp",
+      "sizeLines": 236,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/so-sanh-midi-49-phim-keylab-launchkey-a49-inside.webp",
+      "language": "webp",
+      "sizeLines": 411,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/so-sanh-midi-49-phim-keylab-launchkey-a49.webp",
+      "language": "webp",
+      "sizeLines": 352,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/so-sanh-midi-mini-arturia-minilab-3-flkey-mini-oxygen-pro-mini-inside.webp",
+      "language": "webp",
+      "sizeLines": 381,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/so-sanh-midi-mini-arturia-minilab-3-flkey-mini-oxygen-pro-mini.webp",
+      "language": "webp",
+      "sizeLines": 352,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/so-sanh-rode-nt1-5th-gen-lewitt-lct-440-pure-aston-origin-inside.webp",
+      "language": "webp",
+      "sizeLines": 121,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/so-sanh-rode-nt1-5th-gen-lewitt-lct-440-pure-aston-origin.webp",
+      "language": "webp",
+      "sizeLines": 121,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/so-sanh-tai-nghe-closed-back-m40x-mdr7506-hd280pro-inside.webp",
+      "language": "webp",
+      "sizeLines": 227,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/so-sanh-tai-nghe-closed-back-m40x-mdr7506-hd280pro.webp",
+      "language": "webp",
+      "sizeLines": 76,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/so-sanh-tai-nghe-open-back-k702-hd560s-dt880pro-inside.webp",
+      "language": "webp",
+      "sizeLines": 411,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/so-sanh-tai-nghe-open-back-k702-hd560s-dt880pro.webp",
+      "language": "webp",
+      "sizeLines": 76,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/ssd-ngoai-cho-producer-samsung-t7-sandisk-extreme-crucial-x9-inside.webp",
+      "language": "webp",
+      "sizeLines": 411,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/ssd-ngoai-cho-producer-samsung-t7-sandisk-extreme-crucial-x9.webp",
+      "language": "webp",
+      "sizeLines": 365,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/top-10-vst-plugin-mien-phi-2026.webp",
+      "language": "webp",
+      "sizeLines": 82,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/top-5-daw-mien-phi-thu-am-tai-nha.webp",
+      "language": "webp",
+      "sizeLines": 81,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/releases/cant-stop.webp",
+      "language": "webp",
+      "sizeLines": 765,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/releases/ep-the-love.webp",
+      "language": "webp",
+      "sizeLines": 707,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/releases/lets-get-drunk.webp",
+      "language": "webp",
+      "sizeLines": 424,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/releases/like-me.webp",
+      "language": "webp",
+      "sizeLines": 275,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/releases/not-me.webp",
+      "language": "webp",
+      "sizeLines": 900,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/releases/tsunami.webp",
+      "language": "webp",
+      "sizeLines": 369,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/ZaloPay_logo.webp",
+      "language": "webp",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/llms.txt",
+      "language": "txt",
+      "sizeLines": 16,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "public/models/breakdance-freezes.glb",
+      "language": "glb",
+      "sizeLines": 40453,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/models/bye.glb",
+      "language": "glb",
+      "sizeLines": 40179,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/models/Floating.glb",
+      "language": "glb",
+      "sizeLines": 40334,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/models/pointing-to-the-right-hologram.glb",
+      "language": "glb",
+      "sizeLines": 40177,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/models/rumba-dancing.glb",
+      "language": "glb",
+      "sizeLines": 40304,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/models/Walking.glb",
+      "language": "glb",
+      "sizeLines": 40205,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/models/wave-hiphop-dance.glb",
+      "language": "glb",
+      "sizeLines": 40932,
+      "fileCategory": "code"
+    },
+    {
+      "path": "QUICK_REFERENCE.md",
+      "language": "markdown",
+      "sizeLines": 267,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "sizeLines": 99,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "scripts/_generate-gear-report.mjs",
+      "language": "javascript",
+      "sizeLines": 323,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/analyze-bundle.mjs",
+      "language": "javascript",
+      "sizeLines": 174,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/audit-affiliate-products.mjs",
+      "language": "javascript",
+      "sizeLines": 199,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/backlink-assets/social-posts.md",
+      "language": "markdown",
+      "sizeLines": 36,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "scripts/compress-models.mjs",
+      "language": "javascript",
+      "sizeLines": 127,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/extract-music-cover-art.mjs",
+      "language": "javascript",
+      "sizeLines": 66,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/fbx2glb.cjs",
+      "language": "javascript",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/fix-headings.mjs",
+      "language": "javascript",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/fix-tables.mjs",
+      "language": "javascript",
+      "sizeLines": 89,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/generate-favicon.mjs",
+      "language": "javascript",
+      "sizeLines": 145,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/google-indexing-oauth.mjs",
+      "language": "javascript",
+      "sizeLines": 139,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/index-urls.mjs",
+      "language": "javascript",
+      "sizeLines": 94,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/indexing-api.mjs",
+      "language": "javascript",
+      "sizeLines": 258,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/publish-shopee-affiliate-cluster.mjs",
+      "language": "javascript",
+      "sizeLines": 1778,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/rebuild-shop-catalog.mjs",
+      "language": "javascript",
+      "sizeLines": 55,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/seed-music.mjs",
+      "language": "javascript",
+      "sizeLines": 108,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/shop-data/content-builder.mjs",
+      "language": "javascript",
+      "sizeLines": 214,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/shop-data/products.mjs",
+      "language": "javascript",
+      "sizeLines": 1060,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/shop-data/shopee-scraper.mjs",
+      "language": "javascript",
+      "sizeLines": 92,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/sync-blog.mjs",
+      "language": "javascript",
+      "sizeLines": 207,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/sync-db-from-vercel.mjs",
+      "language": "javascript",
+      "sizeLines": 188,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/sync-to-vercel.mjs",
+      "language": "javascript",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/verify-tables.mjs",
+      "language": "javascript",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "SEO_CANNIBALIZATION_AUDIT_2026-06-16.md",
+      "language": "markdown",
+      "sizeLines": 258,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "SHADER_ERROR_FIX.md",
+      "language": "markdown",
+      "sizeLines": 287,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "SHOP_PRICE_FULFILLMENT.md",
+      "language": "markdown",
+      "sizeLines": 110,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/app/(digital)/digital/blog/[slug]/BlogPostClient.jsx",
+      "language": "javascript",
+      "sizeLines": 205,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/(digital)/digital/blog/[slug]/page.jsx",
+      "language": "javascript",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/(digital)/digital/blog/BlogClient.jsx",
+      "language": "javascript",
+      "sizeLines": 97,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/(digital)/digital/blog/page.jsx",
+      "language": "javascript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/(digital)/digital/loading.jsx",
+      "language": "javascript",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/(digital)/digital/page.client.jsx",
+      "language": "javascript",
+      "sizeLines": 100,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/(digital)/digital/page.jsx",
+      "language": "javascript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/(digital)/layout.jsx",
+      "language": "javascript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/about/error.js",
+      "language": "javascript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/about/loading.js",
+      "language": "javascript",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/about/page.jsx",
+      "language": "javascript",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(auth)/layout.js",
+      "language": "javascript",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(auth)/login/page.js",
+      "language": "javascript",
+      "sizeLines": 140,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/blog/[id]/edit/page.js",
+      "language": "javascript",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/blog/BlogListClient.jsx",
+      "language": "javascript",
+      "sizeLines": 265,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/blog/new/page.js",
+      "language": "javascript",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/blog/page.js",
+      "language": "javascript",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/case-studies/[id]/edit/page.js",
+      "language": "javascript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/case-studies/CaseStudiesListClient.jsx",
+      "language": "javascript",
+      "sizeLines": 81,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/case-studies/new/page.js",
+      "language": "javascript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/case-studies/page.js",
+      "language": "javascript",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/dashboard/page.js",
+      "language": "javascript",
+      "sizeLines": 221,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/error.js",
+      "language": "javascript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/events/[id]/edit/page.js",
+      "language": "javascript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/events/EventsListClient.jsx",
+      "language": "javascript",
+      "sizeLines": 86,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/events/new/page.js",
+      "language": "javascript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/events/page.js",
+      "language": "javascript",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/gallery/[id]/edit/page.js",
+      "language": "javascript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/gallery/GalleryListClient.jsx",
+      "language": "javascript",
+      "sizeLines": 91,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/gallery/new/page.js",
+      "language": "javascript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/gallery/page.js",
+      "language": "javascript",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/layout.js",
+      "language": "javascript",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/loading.js",
+      "language": "javascript",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/media/MediaLibraryClient.jsx",
+      "language": "javascript",
+      "sizeLines": 157,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/media/page.js",
+      "language": "javascript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/music/[id]/edit/page.js",
+      "language": "javascript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/music/MusicListClient.jsx",
+      "language": "javascript",
+      "sizeLines": 113,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/music/new/page.js",
+      "language": "javascript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/music/page.js",
+      "language": "javascript",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/newsletter/NewsletterClient.jsx",
+      "language": "javascript",
+      "sizeLines": 114,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/newsletter/page.js",
+      "language": "javascript",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/page.js",
+      "language": "javascript",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/pages/page.js",
+      "language": "javascript",
+      "sizeLines": 52,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/press-kit/page.js",
+      "language": "javascript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/seo/page.js",
+      "language": "javascript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/seo/SEOClient.jsx",
+      "language": "javascript",
+      "sizeLines": 125,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/services/[id]/edit/page.js",
+      "language": "javascript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/services/new/page.js",
+      "language": "javascript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/services/page.js",
+      "language": "javascript",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/services/ServicesListClient.jsx",
+      "language": "javascript",
+      "sizeLines": 83,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/settings/page.js",
+      "language": "javascript",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/settings/SettingsForm.jsx",
+      "language": "javascript",
+      "sizeLines": 130,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/shop/[id]/edit/page.js",
+      "language": "javascript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/shop/new/page.js",
+      "language": "javascript",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/shop/page.js",
+      "language": "javascript",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/shop/ShopListClient.jsx",
+      "language": "javascript",
+      "sizeLines": 142,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/website/page.js",
+      "language": "javascript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/website/WebsiteBuilderClient.jsx",
+      "language": "javascript",
+      "sizeLines": 366,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/globals.css",
+      "language": "css",
+      "sizeLines": 797,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/app/admin/layout.js",
+      "language": "javascript",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/api/admin/blog/posts/[id]/route.js",
+      "language": "javascript",
+      "sizeLines": 82,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/api/admin/blog/posts/route.js",
+      "language": "javascript",
+      "sizeLines": 40,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/api/admin/case-studies/[id]/route.js",
+      "language": "javascript",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/api/admin/case-studies/route.js",
+      "language": "javascript",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/api/admin/events/[id]/route.js",
+      "language": "javascript",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/api/admin/events/route.js",
+      "language": "javascript",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/api/admin/gallery/[id]/route.js",
+      "language": "javascript",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/api/admin/gallery/route.js",
+      "language": "javascript",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/api/admin/media/[id]/route.js",
+      "language": "javascript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/api/admin/media/route.js",
+      "language": "javascript",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/api/admin/media/upload/route.js",
+      "language": "javascript",
+      "sizeLines": 82,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/api/admin/music/[id]/route.js",
+      "language": "javascript",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/api/admin/music/route.js",
+      "language": "javascript",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/api/admin/newsletter/route.js",
+      "language": "javascript",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/api/admin/press-kit/route.js",
+      "language": "javascript",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/api/admin/seo/route.js",
+      "language": "javascript",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/api/admin/services/[id]/route.js",
+      "language": "javascript",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/api/admin/services/route.js",
+      "language": "javascript",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/api/admin/settings/route.js",
+      "language": "javascript",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/api/admin/shop/products/[id]/route.js",
+      "language": "javascript",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/api/admin/shop/products/route.js",
+      "language": "javascript",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/api/auth/[...nextauth]/route.js",
+      "language": "javascript",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/api/contact/route.js",
+      "language": "javascript",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/api/v1/blog/posts/[param]/route.js",
+      "language": "javascript",
+      "sizeLines": 71,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/api/v1/blog/posts/route.js",
+      "language": "javascript",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/api/v1/shop/products/[param]/route.js",
+      "language": "javascript",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/api/v1/shop/products/route.js",
+      "language": "javascript",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/api/webhook/sync-blog/route.js",
+      "language": "javascript",
+      "sizeLines": 124,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/bio-music/[slug]/page.js",
+      "language": "javascript",
+      "sizeLines": 172,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/bio-music/[slug]/page.module.css",
+      "language": "css",
+      "sizeLines": 145,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/app/bio-music/error.js",
+      "language": "javascript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/bio-music/layout.js",
+      "language": "javascript",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/bio-music/loading.js",
+      "language": "javascript",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/bio-music/page.js",
+      "language": "javascript",
+      "sizeLines": 95,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/bio-music/page.module.css",
+      "language": "css",
+      "sizeLines": 142,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/app/blog/[...slug]/article-page.module.css",
+      "language": "css",
+      "sizeLines": 207,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/app/blog/[...slug]/category-page.module.css",
+      "language": "css",
+      "sizeLines": 249,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/app/blog/[...slug]/page.js",
+      "language": "javascript",
+      "sizeLines": 411,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/blog/error.js",
+      "language": "javascript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/blog/layout.js",
+      "language": "javascript",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/blog/page.js",
+      "language": "javascript",
+      "sizeLines": 113,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/contact/error.js",
+      "language": "javascript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/contact/layout.js",
+      "language": "javascript",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/contact/loading.js",
+      "language": "javascript",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/contact/page.js",
+      "language": "javascript",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/glitch.css",
+      "language": "css",
+      "sizeLines": 116,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/app/global-error.js",
+      "language": "javascript",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/globals.css",
+      "language": "css",
+      "sizeLines": 440,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/app/layout.js",
+      "language": "javascript",
+      "sizeLines": 136,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/legal.module.css",
+      "language": "css",
+      "sizeLines": 89,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/app/llms.txt/route.js",
+      "language": "javascript",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/not-found.js",
+      "language": "javascript",
+      "sizeLines": 157,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/page.js",
+      "language": "javascript",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/page.module.css",
+      "language": "css",
+      "sizeLines": 95,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/app/post_sitemap.xml/route.js",
+      "language": "javascript",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/privacy/page.js",
+      "language": "javascript",
+      "sizeLines": 130,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/robots.txt/route.js",
+      "language": "javascript",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/shop/[slug]/page.js",
+      "language": "javascript",
+      "sizeLines": 286,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/shop/error.js",
+      "language": "javascript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/shop/FilterSelect.js",
+      "language": "javascript",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/shop/layout.js",
+      "language": "javascript",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/shop/loading.js",
+      "language": "javascript",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/shop/page.js",
+      "language": "javascript",
+      "sizeLines": 152,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/shop/shop-card.module.css",
+      "language": "css",
+      "sizeLines": 400,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/app/shop/shop.module.css",
+      "language": "css",
+      "sizeLines": 609,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/app/sitemap.js",
+      "language": "javascript",
+      "sizeLines": 111,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/terms/page.js",
+      "language": "javascript",
+      "sizeLines": 104,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/admin/AdminCard.jsx",
+      "language": "javascript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/admin/AdminPageContainer.jsx",
+      "language": "javascript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/admin/AdminShell.jsx",
+      "language": "javascript",
+      "sizeLines": 109,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/admin/AdminToolbar.jsx",
+      "language": "javascript",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/admin/BlogForm.jsx",
+      "language": "javascript",
+      "sizeLines": 430,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/admin/CaseStudiesForm.jsx",
+      "language": "javascript",
+      "sizeLines": 159,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/admin/EmptyState.jsx",
+      "language": "javascript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/admin/EventsForm.jsx",
+      "language": "javascript",
+      "sizeLines": 115,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/admin/GalleryForm.jsx",
+      "language": "javascript",
+      "sizeLines": 114,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/admin/MusicForm.jsx",
+      "language": "javascript",
+      "sizeLines": 262,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/admin/PageHeader.jsx",
+      "language": "javascript",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/admin/PressKitForm.jsx",
+      "language": "javascript",
+      "sizeLines": 117,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/admin/QuickActionButton.jsx",
+      "language": "javascript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/admin/RichTextEditor.jsx",
+      "language": "javascript",
+      "sizeLines": 409,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/admin/SectionCard.jsx",
+      "language": "javascript",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/admin/ServicesForm.jsx",
+      "language": "javascript",
+      "sizeLines": 130,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/admin/ShopForm.jsx",
+      "language": "javascript",
+      "sizeLines": 436,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/admin/Sidebar.jsx",
+      "language": "javascript",
+      "sizeLines": 165,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/admin/StatCard.jsx",
+      "language": "javascript",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/artist/about/AboutCanvas.jsx",
+      "language": "javascript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/artist/about/BioSection.jsx",
+      "language": "javascript",
+      "sizeLines": 166,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/artist/about/BioSection.module.css",
+      "language": "css",
+      "sizeLines": 205,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/artist/about/HeroAbout.jsx",
+      "language": "javascript",
+      "sizeLines": 55,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/artist/about/HeroAbout.module.css",
+      "language": "css",
+      "sizeLines": 70,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/artist/about/StreamingBar.jsx",
+      "language": "javascript",
+      "sizeLines": 81,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/artist/about/StreamingBar.module.css",
+      "language": "css",
+      "sizeLines": 58,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/artist/bio-music/BioDetailBackground.module.css",
+      "language": "css",
+      "sizeLines": 7,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/artist/bio-music/BioDetailBackground.tsx",
+      "language": "typescript",
+      "sizeLines": 75,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/artist/bio-music/PlatformIcons.tsx",
+      "language": "typescript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/artist/bio-music/PlatformLink.module.css",
+      "language": "css",
+      "sizeLines": 50,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/artist/bio-music/PlatformLink.tsx",
+      "language": "typescript",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/artist/bio-music/PlatformLinksCard.module.css",
+      "language": "css",
+      "sizeLines": 12,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/artist/bio-music/PlatformLinksCard.tsx",
+      "language": "typescript",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/artist/bio-music/ReleaseCard.module.css",
+      "language": "css",
+      "sizeLines": 101,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/artist/bio-music/ReleaseCard.tsx",
+      "language": "typescript",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/artist/bio-music/ReleaseShelf3D.module.css",
+      "language": "css",
+      "sizeLines": 209,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/artist/bio-music/ReleaseShelf3D.tsx",
+      "language": "typescript",
+      "sizeLines": 105,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/blog/AffiliateProducts.jsx",
+      "language": "javascript",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/blog/AffiliateProducts.module.css",
+      "language": "css",
+      "sizeLines": 85,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/blog/ArticleBody.jsx",
+      "language": "javascript",
+      "sizeLines": 244,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/blog/ArticleBody.module.css",
+      "language": "css",
+      "sizeLines": 388,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/blog/ArticleHero.jsx",
+      "language": "javascript",
+      "sizeLines": 95,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/blog/ArticleHero.module.css",
+      "language": "css",
+      "sizeLines": 145,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/blog/ArticleSchema.jsx",
+      "language": "javascript",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/blog/AuthorBox.jsx",
+      "language": "javascript",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/blog/AuthorBox.module.css",
+      "language": "css",
+      "sizeLines": 96,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/blog/BlogClient.jsx",
+      "language": "javascript",
+      "sizeLines": 283,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/blog/BlogClient.module.css",
+      "language": "css",
+      "sizeLines": 319,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/blog/BlogHero.jsx",
+      "language": "javascript",
+      "sizeLines": 81,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/blog/BlogHero.module.css",
+      "language": "css",
+      "sizeLines": 294,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/blog/Breadcrumb.jsx",
+      "language": "javascript",
+      "sizeLines": 52,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/blog/Breadcrumb.module.css",
+      "language": "css",
+      "sizeLines": 51,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/blog/CategoryNav.jsx",
+      "language": "javascript",
+      "sizeLines": 46,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/blog/CategoryNav.module.css",
+      "language": "css",
+      "sizeLines": 75,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/blog/PostCard.jsx",
+      "language": "javascript",
+      "sizeLines": 80,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/blog/PostCard.module.css",
+      "language": "css",
+      "sizeLines": 248,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/blog/PostGrid.jsx",
+      "language": "javascript",
+      "sizeLines": 85,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/blog/PostGrid.module.css",
+      "language": "css",
+      "sizeLines": 23,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/blog/PostShelf.jsx",
+      "language": "javascript",
+      "sizeLines": 124,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/blog/PostShelf.module.css",
+      "language": "css",
+      "sizeLines": 222,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/blog/ReadingProgress.jsx",
+      "language": "javascript",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/blog/ReadingProgress.module.css",
+      "language": "css",
+      "sizeLines": 20,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/blog/RelatedPosts.jsx",
+      "language": "javascript",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/blog/RelatedPosts.module.css",
+      "language": "css",
+      "sizeLines": 38,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/blog/ShareSection.jsx",
+      "language": "javascript",
+      "sizeLines": 55,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/blog/ShareSection.module.css",
+      "language": "css",
+      "sizeLines": 47,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/blog/TableOfContents.jsx",
+      "language": "javascript",
+      "sizeLines": 72,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/blog/TableOfContents.module.css",
+      "language": "css",
+      "sizeLines": 138,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/canvas/AboutCharacterCanvas.jsx",
+      "language": "javascript",
+      "sizeLines": 165,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/BackgroundEffects.jsx",
+      "language": "javascript",
+      "sizeLines": 140,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/BorderGlow.css",
+      "language": "css",
+      "sizeLines": 138,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/canvas/BorderGlow.jsx",
+      "language": "javascript",
+      "sizeLines": 156,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/BreakdanceCharacterCanvas.jsx",
+      "language": "javascript",
+      "sizeLines": 180,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/ByeCharacterCanvas.jsx",
+      "language": "javascript",
+      "sizeLines": 94,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/CharacterCanvas.jsx",
+      "language": "javascript",
+      "sizeLines": 174,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/CharacterModel.jsx",
+      "language": "javascript",
+      "sizeLines": 136,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/DotField.css",
+      "language": "css",
+      "sizeLines": 5,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/canvas/DotField.jsx",
+      "language": "javascript",
+      "sizeLines": 274,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/FloatingGeometries.jsx",
+      "language": "javascript",
+      "sizeLines": 89,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/GlowBackground.jsx",
+      "language": "javascript",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/GradientBlinds.css",
+      "language": "css",
+      "sizeLines": 6,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/canvas/GradientBlinds.jsx",
+      "language": "javascript",
+      "sizeLines": 362,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/HeroCanvas.jsx",
+      "language": "javascript",
+      "sizeLines": 82,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/ParticleField.jsx",
+      "language": "javascript",
+      "sizeLines": 71,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/Particles.jsx",
+      "language": "javascript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/PointingCharacterCanvas.jsx",
+      "language": "javascript",
+      "sizeLines": 116,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/PostProcessing.jsx",
+      "language": "javascript",
+      "sizeLines": 99,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/RumbaDancingCanvas.jsx",
+      "language": "javascript",
+      "sizeLines": 121,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/Scene3D.jsx",
+      "language": "javascript",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/SpotlightCard.css",
+      "language": "css",
+      "sizeLines": 49,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/canvas/SpotlightCard.jsx",
+      "language": "javascript",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/StudioCanvas.jsx",
+      "language": "javascript",
+      "sizeLines": 118,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/StudioLights.jsx",
+      "language": "javascript",
+      "sizeLines": 41,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/StudioModel.jsx",
+      "language": "javascript",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/TeleportBeam.jsx",
+      "language": "javascript",
+      "sizeLines": 160,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/WalkingCharacterCanvas.jsx",
+      "language": "javascript",
+      "sizeLines": 101,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/WaveCharacterCanvas.jsx",
+      "language": "javascript",
+      "sizeLines": 126,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/Canvas3DFallback.jsx",
+      "language": "javascript",
+      "sizeLines": 66,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/contact/ContactPage.jsx",
+      "language": "javascript",
+      "sizeLines": 297,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/contact/ContactPage.module.css",
+      "language": "css",
+      "sizeLines": 474,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/digital/CompanyLogos.jsx",
+      "language": "javascript",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/digital/CompanyLogos.module.css",
+      "language": "css",
+      "sizeLines": 71,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/digital/digital-blog/blog-posts.js",
+      "language": "javascript",
+      "sizeLines": 315,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/digital/digital-blog/blog-theme.js",
+      "language": "javascript",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/digital/digital-blog/blog.css",
+      "language": "css",
+      "sizeLines": 948,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/digital/digital-blog/BlogCard.jsx",
+      "language": "javascript",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/digital/digital-blog/BlogThemeProvider.jsx",
+      "language": "javascript",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/digital/digital-blog/FlickeringGrid.jsx",
+      "language": "javascript",
+      "sizeLines": 168,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/digital/digital-blog/TagFilter.jsx",
+      "language": "javascript",
+      "sizeLines": 71,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/digital/digital-blog/ThemeToggle.jsx",
+      "language": "javascript",
+      "sizeLines": 84,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/digital/digital-vars.css",
+      "language": "css",
+      "sizeLines": 19,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/digital/DigitalContact.jsx",
+      "language": "javascript",
+      "sizeLines": 49,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/digital/DigitalContact.module.css",
+      "language": "css",
+      "sizeLines": 156,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/digital/DigitalFooter.jsx",
+      "language": "javascript",
+      "sizeLines": 119,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/digital/DigitalFooter.module.css",
+      "language": "css",
+      "sizeLines": 396,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/digital/DigitalHero.jsx",
+      "language": "javascript",
+      "sizeLines": 101,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/digital/DigitalHero.module.css",
+      "language": "css",
+      "sizeLines": 157,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/digital/DigitalIntro.jsx",
+      "language": "javascript",
+      "sizeLines": 166,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/digital/DigitalIntro.module.css",
+      "language": "css",
+      "sizeLines": 190,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/digital/DigitalNavbar.jsx",
+      "language": "javascript",
+      "sizeLines": 231,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/digital/DigitalNavbar.module.css",
+      "language": "css",
+      "sizeLines": 270,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/digital/DigitalServices.jsx",
+      "language": "javascript",
+      "sizeLines": 140,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/digital/DigitalServices.module.css",
+      "language": "css",
+      "sizeLines": 276,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/digital/DigitalSkills.jsx",
+      "language": "javascript",
+      "sizeLines": 249,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/digital/DigitalSkills.module.css",
+      "language": "css",
+      "sizeLines": 424,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/digital/DigitalSocialProof.jsx",
+      "language": "javascript",
+      "sizeLines": 162,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/digital/DigitalSocialProof.module.css",
+      "language": "css",
+      "sizeLines": 371,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/digital/DigitalTimeline.jsx",
+      "language": "javascript",
+      "sizeLines": 359,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/digital/DigitalTimeline.module.css",
+      "language": "css",
+      "sizeLines": 438,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/digital/DigitalTransition.jsx",
+      "language": "javascript",
+      "sizeLines": 92,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/digital/DigitalTransition.module.css",
+      "language": "css",
+      "sizeLines": 51,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/digital/GalaxyBackground.jsx",
+      "language": "javascript",
+      "sizeLines": 187,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/digital/TextFlip.jsx",
+      "language": "javascript",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/digital/TextFlip.module.css",
+      "language": "css",
+      "sizeLines": 35,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/ErrorBoundary.jsx",
+      "language": "javascript",
+      "sizeLines": 89,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/HomeLazySections.jsx",
+      "language": "javascript",
+      "sizeLines": 105,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/icons/SocialIcons.jsx",
+      "language": "javascript",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/layout/Footer.jsx",
+      "language": "javascript",
+      "sizeLines": 134,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/layout/Footer.module.css",
+      "language": "css",
+      "sizeLines": 400,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/layout/FooterEffects.jsx",
+      "language": "javascript",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/layout/Navbar.jsx",
+      "language": "javascript",
+      "sizeLines": 205,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/layout/Navbar.module.css",
+      "language": "css",
+      "sizeLines": 443,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/LoadingScreen.jsx",
+      "language": "javascript",
+      "sizeLines": 163,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/PreloadModels.jsx",
+      "language": "javascript",
+      "sizeLines": 77,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ProgressTracker.jsx",
+      "language": "javascript",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/sections/AboutSection.jsx",
+      "language": "javascript",
+      "sizeLines": 304,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/sections/AboutSection.module.css",
+      "language": "css",
+      "sizeLines": 388,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/sections/AuroraBackground.jsx",
+      "language": "javascript",
+      "sizeLines": 142,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/sections/ContactSection.jsx",
+      "language": "javascript",
+      "sizeLines": 439,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/sections/ContactSection.module.css",
+      "language": "css",
+      "sizeLines": 673,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/sections/DonationSection.jsx",
+      "language": "javascript",
+      "sizeLines": 161,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/sections/DonationSection.module.css",
+      "language": "css",
+      "sizeLines": 487,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/sections/GallerySection.jsx",
+      "language": "javascript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/sections/HeroSection.jsx",
+      "language": "javascript",
+      "sizeLines": 127,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/sections/HeroSection.module.css",
+      "language": "css",
+      "sizeLines": 463,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/sections/LatestEPSection.jsx",
+      "language": "javascript",
+      "sizeLines": 170,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/sections/LatestEPSection.module.css",
+      "language": "css",
+      "sizeLines": 265,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/sections/MusicSection.jsx",
+      "language": "javascript",
+      "sizeLines": 246,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/sections/MusicSection.module.css",
+      "language": "css",
+      "sizeLines": 454,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/shop/ProductCard.jsx",
+      "language": "javascript",
+      "sizeLines": 80,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/shop/ProductShelf.jsx",
+      "language": "javascript",
+      "sizeLines": 126,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/shop/ProductShelf.module.css",
+      "language": "css",
+      "sizeLines": 185,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/shop/ShopClient.jsx",
+      "language": "javascript",
+      "sizeLines": 402,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/shop/ShopClient.module.css",
+      "language": "css",
+      "sizeLines": 337,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/ui/badge.jsx",
+      "language": "javascript",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/button.jsx",
+      "language": "javascript",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/canvas-reveal-effect.jsx",
+      "language": "javascript",
+      "sizeLines": 264,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/comet-card.jsx",
+      "language": "javascript",
+      "sizeLines": 92,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/dialog.jsx",
+      "language": "javascript",
+      "sizeLines": 96,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/ErrorBoundary.jsx",
+      "language": "javascript",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/Galaxy.css",
+      "language": "css",
+      "sizeLines": 5,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/ui/Galaxy.jsx",
+      "language": "javascript",
+      "sizeLines": 333,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/GlassPanel.jsx",
+      "language": "javascript",
+      "sizeLines": 103,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/GradientText.css",
+      "language": "css",
+      "sizeLines": 54,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/ui/GradientText.jsx",
+      "language": "javascript",
+      "sizeLines": 96,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/GridScan.css",
+      "language": "css",
+      "sizeLines": 44,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/ui/GridScan.jsx",
+      "language": "javascript",
+      "sizeLines": 895,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/input.jsx",
+      "language": "javascript",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/label.jsx",
+      "language": "javascript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/LightPillar.css",
+      "language": "css",
+      "sizeLines": 21,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/ui/LightPillar.jsx",
+      "language": "javascript",
+      "sizeLines": 387,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/LightRays.css",
+      "language": "css",
+      "sizeLines": 8,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/ui/LightRays.jsx",
+      "language": "javascript",
+      "sizeLines": 402,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/LiquidEther.css",
+      "language": "css",
+      "sizeLines": 7,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/ui/LiquidEther.jsx",
+      "language": "javascript",
+      "sizeLines": 1167,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/LoadingSpinner.jsx",
+      "language": "javascript",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/NeonButton.jsx",
+      "language": "javascript",
+      "sizeLines": 111,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/RippleGrid.css",
+      "language": "css",
+      "sizeLines": 6,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/ui/RippleGrid.jsx",
+      "language": "javascript",
+      "sizeLines": 276,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/RotatingText.css",
+      "language": "css",
+      "sizeLines": 36,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/ui/RotatingText.jsx",
+      "language": "javascript",
+      "sizeLines": 186,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/SectionTitle.jsx",
+      "language": "javascript",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/select.jsx",
+      "language": "javascript",
+      "sizeLines": 122,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/separator.jsx",
+      "language": "javascript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/SkipLink.jsx",
+      "language": "javascript",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/SoftAurora.css",
+      "language": "css",
+      "sizeLines": 4,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/ui/SoftAurora.jsx",
+      "language": "javascript",
+      "sizeLines": 264,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/sonner.jsx",
+      "language": "javascript",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/table.jsx",
+      "language": "javascript",
+      "sizeLines": 83,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/textarea.jsx",
+      "language": "javascript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/context/LoadingContext.jsx",
+      "language": "javascript",
+      "sizeLines": 102,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/hooks/useAudioAnalyzer.js",
+      "language": "javascript",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/hooks/useCanvasOptimizer.js",
+      "language": "javascript",
+      "sizeLines": 147,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/hooks/useHydrated.js",
+      "language": "javascript",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/hooks/useModelLoader.js",
+      "language": "javascript",
+      "sizeLines": 270,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/hooks/usePrefersReducedMotion.js",
+      "language": "javascript",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/hooks/useScrollAnimation.js",
+      "language": "javascript",
+      "sizeLines": 41,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/hooks/useScrollObserver.js",
+      "language": "javascript",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/hooks/useVisibilityLoader.js",
+      "language": "javascript",
+      "sizeLines": 67,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/hooks/useWebGLContextLimit.js",
+      "language": "javascript",
+      "sizeLines": 67,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/api-auth.js",
+      "language": "javascript",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/article-content.js",
+      "language": "javascript",
+      "sizeLines": 530,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/auth.config.js",
+      "language": "javascript",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/auth.js",
+      "language": "javascript",
+      "sizeLines": 40,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/blog-indexing.js",
+      "language": "javascript",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/blog.js",
+      "language": "javascript",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/blog/affiliate-products.js",
+      "language": "javascript",
+      "sizeLines": 81,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/blog/canonical-slugs.js",
+      "language": "javascript",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/blog/category-meta.js",
+      "language": "javascript",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/blog/public-catalog/handler.js",
+      "language": "javascript",
+      "sizeLines": 253,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/blog/public-catalog/index.js",
+      "language": "javascript",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/blog/public-catalog/spec.js",
+      "language": "javascript",
+      "sizeLines": 117,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/blog/service/handler.js",
+      "language": "javascript",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/blog/service/index.js",
+      "language": "javascript",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/blog/service/spec.js",
+      "language": "javascript",
+      "sizeLines": 88,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/case-studies/service/handler.js",
+      "language": "javascript",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/case-studies/service/index.js",
+      "language": "javascript",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/case-studies/service/spec.js",
+      "language": "javascript",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/constants.js",
+      "language": "javascript",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/contract/base.js",
+      "language": "javascript",
+      "sizeLines": 88,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/data/releases.ts",
+      "language": "typescript",
+      "sizeLines": 130,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/db-cli.mjs",
+      "language": "javascript",
+      "sizeLines": 112,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/db.js",
+      "language": "javascript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/db/blog.js",
+      "language": "javascript",
+      "sizeLines": 113,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/db/case-studies.js",
+      "language": "javascript",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/db/events.js",
+      "language": "javascript",
+      "sizeLines": 148,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/db/gallery.js",
+      "language": "javascript",
+      "sizeLines": 99,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/db/index.js",
+      "language": "javascript",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/db/io.js",
+      "language": "javascript",
+      "sizeLines": 183,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/db/media.js",
+      "language": "javascript",
+      "sizeLines": 73,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/db/music.js",
+      "language": "javascript",
+      "sizeLines": 169,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/db/newsletter.js",
+      "language": "javascript",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/db/press-kit.js",
+      "language": "javascript",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/db/seo.js",
+      "language": "javascript",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/db/services.js",
+      "language": "javascript",
+      "sizeLines": 180,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/db/settings.js",
+      "language": "javascript",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/db/shop.js",
+      "language": "javascript",
+      "sizeLines": 104,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/db/slug.js",
+      "language": "javascript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/deviceDetection.js",
+      "language": "javascript",
+      "sizeLines": 169,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/events/service/handler.js",
+      "language": "javascript",
+      "sizeLines": 131,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/events/service/handler.test.mjs",
+      "language": "javascript",
+      "sizeLines": 99,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/events/service/http.js",
+      "language": "javascript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/events/service/index.js",
+      "language": "javascript",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/events/service/spec.js",
+      "language": "javascript",
+      "sizeLines": 116,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/events/service/spec.test.mjs",
+      "language": "javascript",
+      "sizeLines": 46,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/gallery/service/handler.js",
+      "language": "javascript",
+      "sizeLines": 81,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/gallery/service/index.js",
+      "language": "javascript",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/gallery/service/spec.js",
+      "language": "javascript",
+      "sizeLines": 75,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/google-indexing.js",
+      "language": "javascript",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/helpers.js",
+      "language": "javascript",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/media/service/handler.js",
+      "language": "javascript",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/media/service/index.js",
+      "language": "javascript",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/media/service/spec.js",
+      "language": "javascript",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/music/service/handler.js",
+      "language": "javascript",
+      "sizeLines": 131,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/music/service/handler.test.mjs",
+      "language": "javascript",
+      "sizeLines": 103,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/music/service/http.js",
+      "language": "javascript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/music/service/index.js",
+      "language": "javascript",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/music/service/spec.js",
+      "language": "javascript",
+      "sizeLines": 158,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/music/service/spec.test.mjs",
+      "language": "javascript",
+      "sizeLines": 55,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/newsletter/service/handler.js",
+      "language": "javascript",
+      "sizeLines": 55,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/newsletter/service/index.js",
+      "language": "javascript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/newsletter/service/spec.js",
+      "language": "javascript",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/performance.js",
+      "language": "javascript",
+      "sizeLines": 117,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/post-utils.js",
+      "language": "javascript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/press-kit/service/handler.js",
+      "language": "javascript",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/press-kit/service/index.js",
+      "language": "javascript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/press-kit/service/spec.js",
+      "language": "javascript",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/search-console/service/handler.js",
+      "language": "javascript",
+      "sizeLines": 99,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/search-console/service/index.js",
+      "language": "javascript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/search-console/service/spec.js",
+      "language": "javascript",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/seeded-random.js",
+      "language": "javascript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/seo-score.js",
+      "language": "javascript",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/seo.ts",
+      "language": "typescript",
+      "sizeLines": 71,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/seo/service/handler.js",
+      "language": "javascript",
+      "sizeLines": 48,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/seo/service/index.js",
+      "language": "javascript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/seo/service/spec.js",
+      "language": "javascript",
+      "sizeLines": 61,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/services.js",
+      "language": "javascript",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/services/service/handler.js",
+      "language": "javascript",
+      "sizeLines": 131,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/services/service/handler.test.mjs",
+      "language": "javascript",
+      "sizeLines": 103,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/services/service/http.js",
+      "language": "javascript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/services/service/index.js",
+      "language": "javascript",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/services/service/spec.js",
+      "language": "javascript",
+      "sizeLines": 134,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/services/service/spec.test.mjs",
+      "language": "javascript",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/settings/service/handler.js",
+      "language": "javascript",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/settings/service/index.js",
+      "language": "javascript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/settings/service/spec.js",
+      "language": "javascript",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/shader-utils.js",
+      "language": "javascript",
+      "sizeLines": 213,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/shop/presentation.js",
+      "language": "javascript",
+      "sizeLines": 67,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/shop/public-catalog/handler.js",
+      "language": "javascript",
+      "sizeLines": 218,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/shop/public-catalog/index.js",
+      "language": "javascript",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/shop/public-catalog/spec.js",
+      "language": "javascript",
+      "sizeLines": 150,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/shop/query.js",
+      "language": "javascript",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/shop/service/handler.js",
+      "language": "javascript",
+      "sizeLines": 67,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/shop/service/index.js",
+      "language": "javascript",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/shop/service/spec.js",
+      "language": "javascript",
+      "sizeLines": 108,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/site-defaults.js",
+      "language": "javascript",
+      "sizeLines": 113,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/utils.js",
+      "language": "javascript",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/webglDetector.js",
+      "language": "javascript",
+      "sizeLines": 83,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/proxy.js",
+      "language": "javascript",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/styles/design-tokens.css",
+      "language": "css",
+      "sizeLines": 20,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/types/post.d.ts",
+      "language": "typescript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TACHY_ARTIST_CONTEXT.md",
+      "language": "markdown",
+      "sizeLines": 318,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "tachy_artist_version.md",
+      "language": "markdown",
+      "sizeLines": 6,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "vercel.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "webhook-blog-sample.json",
+      "language": "json",
+      "sizeLines": 50,
+      "fileCategory": "config"
+    }
+  ]
+}

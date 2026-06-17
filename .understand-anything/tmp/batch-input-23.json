@@ -1,0 +1,35 @@
+{
+  "projectRoot": "C:\\Users\\Admin\\Desktop\\Website 3D\\studio-3d",
+  "batchFiles": [
+    {
+      "path": "src/components/canvas/BorderGlow.css",
+      "language": "css",
+      "sizeLines": 138,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/canvas/DotField.css",
+      "language": "css",
+      "sizeLines": 5,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/canvas/GradientBlinds.css",
+      "language": "css",
+      "sizeLines": 6,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/canvas/SpotlightCard.css",
+      "language": "css",
+      "sizeLines": 49,
+      "fileCategory": "markup"
+    }
+  ],
+  "batchImportData": {
+    "src/components/canvas/BorderGlow.css": [],
+    "src/components/canvas/DotField.css": [],
+    "src/components/canvas/GradientBlinds.css": [],
+    "src/components/canvas/SpotlightCard.css": []
+  }
+}

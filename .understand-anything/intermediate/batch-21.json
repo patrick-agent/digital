@@ -1,0 +1,65 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/components/artist/bio-music/BioDetailBackground.module.css",
+      "type": "file",
+      "name": "BioDetailBackground.module.css",
+      "filePath": "src/components/artist/bio-music/BioDetailBackground.module.css",
+      "summary": "BioDetailBackground.module.css: Source file.",
+      "tags": [
+        "markup",
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/artist/bio-music/PlatformLink.module.css",
+      "type": "file",
+      "name": "PlatformLink.module.css",
+      "filePath": "src/components/artist/bio-music/PlatformLink.module.css",
+      "summary": "PlatformLink.module.css: Source file.",
+      "tags": [
+        "markup",
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/artist/bio-music/PlatformLinksCard.module.css",
+      "type": "file",
+      "name": "PlatformLinksCard.module.css",
+      "filePath": "src/components/artist/bio-music/PlatformLinksCard.module.css",
+      "summary": "PlatformLinksCard.module.css: Source file.",
+      "tags": [
+        "markup",
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/artist/bio-music/ReleaseCard.module.css",
+      "type": "file",
+      "name": "ReleaseCard.module.css",
+      "filePath": "src/components/artist/bio-music/ReleaseCard.module.css",
+      "summary": "ReleaseCard.module.css: Source file.",
+      "tags": [
+        "markup",
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/artist/bio-music/ReleaseShelf3D.module.css",
+      "type": "file",
+      "name": "ReleaseShelf3D.module.css",
+      "filePath": "src/components/artist/bio-music/ReleaseShelf3D.module.css",
+      "summary": "ReleaseShelf3D.module.css: Source file.",
+      "tags": [
+        "markup",
+        "component"
+      ],
+      "complexity": "complex"
+    }
+  ],
+  "edges": []
+}

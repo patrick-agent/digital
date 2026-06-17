@@ -1,0 +1,40 @@
+{
+  "projectRoot": "C:\\Users\\Admin\\Desktop\\Website 3D\\studio-3d",
+  "batchFiles": [
+    {
+      "path": "src/components/canvas/CharacterCanvas.jsx",
+      "language": "javascript",
+      "sizeLines": 174,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/CharacterModel.jsx",
+      "language": "javascript",
+      "sizeLines": 136,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/HeroCanvas.jsx",
+      "language": "javascript",
+      "sizeLines": 82,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/StudioModel.jsx",
+      "language": "javascript",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/components/canvas/CharacterCanvas.jsx": [
+      "src/components/canvas/CharacterModel.jsx"
+    ],
+    "src/components/canvas/CharacterModel.jsx": [],
+    "src/components/canvas/HeroCanvas.jsx": [
+      "src/components/canvas/CharacterModel.jsx",
+      "src/components/canvas/StudioModel.jsx"
+    ],
+    "src/components/canvas/StudioModel.jsx": []
+  }
+}

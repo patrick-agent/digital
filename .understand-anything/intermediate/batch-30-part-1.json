@@ -1,0 +1,1326 @@
+{
+  "nodes": [
+    {
+      "id": "file:public/models/Walking.glb",
+      "type": "file",
+      "name": "Walking.glb",
+      "filePath": "public/models/Walking.glb",
+      "summary": "Walking.glb: Source file.",
+      "tags": [
+        "data-model"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:public/models/wave-hiphop-dance.glb",
+      "type": "file",
+      "name": "wave-hiphop-dance.glb",
+      "filePath": "public/models/wave-hiphop-dance.glb",
+      "summary": "wave-hiphop-dance.glb: Source file.",
+      "tags": [
+        "data-model"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:scripts/_generate-gear-report.mjs",
+      "type": "file",
+      "name": "_generate-gear-report.mjs",
+      "filePath": "scripts/_generate-gear-report.mjs",
+      "summary": "_generate-gear-report.mjs: Source file, 1 function.",
+      "tags": [],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:scripts/_generate-gear-report.mjs:buildRegex",
+      "type": "function",
+      "name": "buildRegex",
+      "filePath": "scripts/_generate-gear-report.mjs",
+      "lineRange": [
+        182,
+        191
+      ],
+      "summary": "Function buildRegex with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/analyze-bundle.mjs",
+      "type": "file",
+      "name": "analyze-bundle.mjs",
+      "filePath": "scripts/analyze-bundle.mjs",
+      "summary": "analyze-bundle.mjs: Source file, 5 functions.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/analyze-bundle.mjs:formatBytes",
+      "type": "function",
+      "name": "formatBytes",
+      "filePath": "scripts/analyze-bundle.mjs",
+      "lineRange": [
+        29,
+        35
+      ],
+      "summary": "Function formatBytes with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/analyze-bundle.mjs:getColoredSize",
+      "type": "function",
+      "name": "getColoredSize",
+      "filePath": "scripts/analyze-bundle.mjs",
+      "lineRange": [
+        37,
+        44
+      ],
+      "summary": "Function getColoredSize with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/analyze-bundle.mjs:getGzipSize",
+      "type": "function",
+      "name": "getGzipSize",
+      "filePath": "scripts/analyze-bundle.mjs",
+      "lineRange": [
+        46,
+        54
+      ],
+      "summary": "Function getGzipSize with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/analyze-bundle.mjs:analyzeDirectory",
+      "type": "function",
+      "name": "analyzeDirectory",
+      "filePath": "scripts/analyze-bundle.mjs",
+      "lineRange": [
+        56,
+        103
+      ],
+      "summary": "Function analyzeDirectory with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/analyze-bundle.mjs:printSummary",
+      "type": "function",
+      "name": "printSummary",
+      "filePath": "scripts/analyze-bundle.mjs",
+      "lineRange": [
+        105,
+        166
+      ],
+      "summary": "Function printSummary with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:scripts/audit-affiliate-products.mjs",
+      "type": "file",
+      "name": "audit-affiliate-products.mjs",
+      "filePath": "scripts/audit-affiliate-products.mjs",
+      "summary": "audit-affiliate-products.mjs: Source file, 1 function.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/audit-affiliate-products.mjs:buildPatterns",
+      "type": "function",
+      "name": "buildPatterns",
+      "filePath": "scripts/audit-affiliate-products.mjs",
+      "lineRange": [
+        35,
+        63
+      ],
+      "summary": "Function buildPatterns with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:scripts/backlink-assets/social-posts.md",
+      "type": "document",
+      "name": "social-posts.md",
+      "filePath": "scripts/backlink-assets/social-posts.md",
+      "summary": "Documentation file: social-posts.md.",
+      "tags": [
+        "documentation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/compress-models.mjs",
+      "type": "file",
+      "name": "compress-models.mjs",
+      "filePath": "scripts/compress-models.mjs",
+      "summary": "compress-models.mjs: Source file, 3 functions.",
+      "tags": [
+        "data-model"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/compress-models.mjs:formatSize",
+      "type": "function",
+      "name": "formatSize",
+      "filePath": "scripts/compress-models.mjs",
+      "lineRange": [
+        33,
+        37
+      ],
+      "summary": "Function formatSize with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/compress-models.mjs:analyzeModels",
+      "type": "function",
+      "name": "analyzeModels",
+      "filePath": "scripts/compress-models.mjs",
+      "lineRange": [
+        39,
+        71
+      ],
+      "summary": "Function analyzeModels with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/compress-models.mjs:compressGlbFiles",
+      "type": "function",
+      "name": "compressGlbFiles",
+      "filePath": "scripts/compress-models.mjs",
+      "lineRange": [
+        73,
+        113
+      ],
+      "summary": "Function compressGlbFiles with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/extract-music-cover-art.mjs",
+      "type": "file",
+      "name": "extract-music-cover-art.mjs",
+      "filePath": "scripts/extract-music-cover-art.mjs",
+      "summary": "extract-music-cover-art.mjs: Source file, 2 functions.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/extract-music-cover-art.mjs:parseDataUrl",
+      "type": "function",
+      "name": "parseDataUrl",
+      "filePath": "scripts/extract-music-cover-art.mjs",
+      "lineRange": [
+        11,
+        19
+      ],
+      "summary": "Function parseDataUrl with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/extract-music-cover-art.mjs:safeSlug",
+      "type": "function",
+      "name": "safeSlug",
+      "filePath": "scripts/extract-music-cover-art.mjs",
+      "lineRange": [
+        21,
+        30
+      ],
+      "summary": "Function safeSlug with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/fbx2glb.cjs",
+      "type": "file",
+      "name": "fbx2glb.cjs",
+      "filePath": "scripts/fbx2glb.cjs",
+      "summary": "fbx2glb.cjs: Source file, 1 function.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/fbx2glb.cjs:convertFbxToGlb",
+      "type": "function",
+      "name": "convertFbxToGlb",
+      "filePath": "scripts/fbx2glb.cjs",
+      "lineRange": [
+        10,
+        54
+      ],
+      "summary": "Function convertFbxToGlb with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/fix-headings.mjs",
+      "type": "file",
+      "name": "fix-headings.mjs",
+      "filePath": "scripts/fix-headings.mjs",
+      "summary": "fix-headings.mjs: Source file.",
+      "tags": [
+        "type-definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/fix-tables.mjs",
+      "type": "file",
+      "name": "fix-tables.mjs",
+      "filePath": "scripts/fix-tables.mjs",
+      "summary": "fix-tables.mjs: Source file, 5 functions.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/fix-tables.mjs:isTableDelimiter",
+      "type": "function",
+      "name": "isTableDelimiter",
+      "filePath": "scripts/fix-tables.mjs",
+      "lineRange": [
+        9,
+        12
+      ],
+      "summary": "Function isTableDelimiter with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/fix-tables.mjs:splitTableRow",
+      "type": "function",
+      "name": "splitTableRow",
+      "filePath": "scripts/fix-tables.mjs",
+      "lineRange": [
+        14,
+        16
+      ],
+      "summary": "Function splitTableRow with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/fix-tables.mjs:tableAlignment",
+      "type": "function",
+      "name": "tableAlignment",
+      "filePath": "scripts/fix-tables.mjs",
+      "lineRange": [
+        18,
+        23
+      ],
+      "summary": "Function tableAlignment with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/fix-tables.mjs:parseEmbeddedTable",
+      "type": "function",
+      "name": "parseEmbeddedTable",
+      "filePath": "scripts/fix-tables.mjs",
+      "lineRange": [
+        25,
+        58
+      ],
+      "summary": "Function parseEmbeddedTable with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/fix-tables.mjs:renderTableHtml",
+      "type": "function",
+      "name": "renderTableHtml",
+      "filePath": "scripts/fix-tables.mjs",
+      "lineRange": [
+        60,
+        73
+      ],
+      "summary": "Function renderTableHtml with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/generate-favicon.mjs",
+      "type": "file",
+      "name": "generate-favicon.mjs",
+      "filePath": "scripts/generate-favicon.mjs",
+      "summary": "generate-favicon.mjs: Source file, 3 functions.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/generate-favicon.mjs:generateTintedFavicon",
+      "type": "function",
+      "name": "generateTintedFavicon",
+      "filePath": "scripts/generate-favicon.mjs",
+      "lineRange": [
+        24,
+        67
+      ],
+      "summary": "Function generateTintedFavicon with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/generate-favicon.mjs:createIcoFromPngBuffer",
+      "type": "function",
+      "name": "createIcoFromPngBuffer",
+      "filePath": "scripts/generate-favicon.mjs",
+      "lineRange": [
+        69,
+        95
+      ],
+      "summary": "Function createIcoFromPngBuffer with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/generate-favicon.mjs:generateFavicon",
+      "type": "function",
+      "name": "generateFavicon",
+      "filePath": "scripts/generate-favicon.mjs",
+      "lineRange": [
+        97,
+        143
+      ],
+      "summary": "Function generateFavicon with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/google-indexing-oauth.mjs",
+      "type": "file",
+      "name": "google-indexing-oauth.mjs",
+      "filePath": "scripts/google-indexing-oauth.mjs",
+      "summary": "google-indexing-oauth.mjs: Source file, 7 functions.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/google-indexing-oauth.mjs:getArgValue",
+      "type": "function",
+      "name": "getArgValue",
+      "filePath": "scripts/google-indexing-oauth.mjs",
+      "lineRange": [
+        14,
+        23
+      ],
+      "summary": "Function getArgValue with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/google-indexing-oauth.mjs:loadEnvText",
+      "type": "function",
+      "name": "loadEnvText",
+      "filePath": "scripts/google-indexing-oauth.mjs",
+      "lineRange": [
+        25,
+        28
+      ],
+      "summary": "Function loadEnvText with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/google-indexing-oauth.mjs:parseEnv",
+      "type": "function",
+      "name": "parseEnv",
+      "filePath": "scripts/google-indexing-oauth.mjs",
+      "lineRange": [
+        30,
+        51
+      ],
+      "summary": "Function parseEnv with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/google-indexing-oauth.mjs:setEnvValue",
+      "type": "function",
+      "name": "setEnvValue",
+      "filePath": "scripts/google-indexing-oauth.mjs",
+      "lineRange": [
+        53,
+        60
+      ],
+      "summary": "Function setEnvValue with 3 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/google-indexing-oauth.mjs:loadClientJson",
+      "type": "function",
+      "name": "loadClientJson",
+      "filePath": "scripts/google-indexing-oauth.mjs",
+      "lineRange": [
+        62,
+        76
+      ],
+      "summary": "Function loadClientJson with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/google-indexing-oauth.mjs:getClient",
+      "type": "function",
+      "name": "getClient",
+      "filePath": "scripts/google-indexing-oauth.mjs",
+      "lineRange": [
+        78,
+        88
+      ],
+      "summary": "Function getClient with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/google-indexing-oauth.mjs:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "scripts/google-indexing-oauth.mjs",
+      "lineRange": [
+        90,
+        134
+      ],
+      "summary": "Function main with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/index-urls.mjs",
+      "type": "file",
+      "name": "index-urls.mjs",
+      "filePath": "scripts/index-urls.mjs",
+      "summary": "index-urls.mjs: Source file, 4 functions.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/index-urls.mjs:getAuth",
+      "type": "function",
+      "name": "getAuth",
+      "filePath": "scripts/index-urls.mjs",
+      "lineRange": [
+        8,
+        20
+      ],
+      "summary": "Function getAuth with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/index-urls.mjs:submitViaSearchConsole",
+      "type": "function",
+      "name": "submitViaSearchConsole",
+      "filePath": "scripts/index-urls.mjs",
+      "lineRange": [
+        22,
+        47
+      ],
+      "summary": "Function submitViaSearchConsole with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/index-urls.mjs:pingGoogle",
+      "type": "function",
+      "name": "pingGoogle",
+      "filePath": "scripts/index-urls.mjs",
+      "lineRange": [
+        49,
+        66
+      ],
+      "summary": "Function pingGoogle with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/index-urls.mjs:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "scripts/index-urls.mjs",
+      "lineRange": [
+        68,
+        89
+      ],
+      "summary": "Function main with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/indexing-api.mjs",
+      "type": "file",
+      "name": "indexing-api.mjs",
+      "filePath": "scripts/indexing-api.mjs",
+      "summary": "indexing-api.mjs: Source file, 12 functions.",
+      "tags": [
+        "api-handler"
+      ],
+      "complexity": "complex"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:scripts/_generate-gear-report.mjs",
+      "target": "function:scripts/_generate-gear-report.mjs:buildRegex",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/analyze-bundle.mjs",
+      "target": "function:scripts/analyze-bundle.mjs:formatBytes",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/analyze-bundle.mjs",
+      "target": "function:scripts/analyze-bundle.mjs:getColoredSize",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/analyze-bundle.mjs",
+      "target": "function:scripts/analyze-bundle.mjs:getGzipSize",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/analyze-bundle.mjs",
+      "target": "function:scripts/analyze-bundle.mjs:analyzeDirectory",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/analyze-bundle.mjs",
+      "target": "function:scripts/analyze-bundle.mjs:printSummary",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/analyze-bundle.mjs",
+      "target": "function:scripts/analyze-bundle.mjs:formatBytes",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/analyze-bundle.mjs",
+      "target": "function:scripts/analyze-bundle.mjs:analyzeDirectory",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/analyze-bundle.mjs",
+      "target": "function:scripts/analyze-bundle.mjs:getGzipSize",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/analyze-bundle.mjs",
+      "target": "function:scripts/analyze-bundle.mjs:analyzeDirectory",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/analyze-bundle.mjs",
+      "target": "function:scripts/analyze-bundle.mjs:getColoredSize",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/analyze-bundle.mjs",
+      "target": "function:scripts/analyze-bundle.mjs:getColoredSize",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/analyze-bundle.mjs",
+      "target": "function:scripts/analyze-bundle.mjs:getColoredSize",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/analyze-bundle.mjs",
+      "target": "function:scripts/analyze-bundle.mjs:formatBytes",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/analyze-bundle.mjs",
+      "target": "function:scripts/analyze-bundle.mjs:getColoredSize",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/analyze-bundle.mjs",
+      "target": "function:scripts/analyze-bundle.mjs:getColoredSize",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/audit-affiliate-products.mjs",
+      "target": "function:scripts/audit-affiliate-products.mjs:buildPatterns",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/compress-models.mjs",
+      "target": "function:scripts/compress-models.mjs:formatSize",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/compress-models.mjs",
+      "target": "function:scripts/compress-models.mjs:analyzeModels",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/compress-models.mjs",
+      "target": "function:scripts/compress-models.mjs:compressGlbFiles",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/compress-models.mjs",
+      "target": "function:scripts/compress-models.mjs:formatSize",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/compress-models.mjs",
+      "target": "function:scripts/compress-models.mjs:formatSize",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/extract-music-cover-art.mjs",
+      "target": "function:scripts/extract-music-cover-art.mjs:parseDataUrl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/extract-music-cover-art.mjs",
+      "target": "function:scripts/extract-music-cover-art.mjs:safeSlug",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/fbx2glb.cjs",
+      "target": "function:scripts/fbx2glb.cjs:convertFbxToGlb",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/fix-tables.mjs",
+      "target": "function:scripts/fix-tables.mjs:isTableDelimiter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/fix-tables.mjs",
+      "target": "function:scripts/fix-tables.mjs:splitTableRow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/fix-tables.mjs",
+      "target": "function:scripts/fix-tables.mjs:tableAlignment",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/fix-tables.mjs",
+      "target": "function:scripts/fix-tables.mjs:parseEmbeddedTable",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/fix-tables.mjs",
+      "target": "function:scripts/fix-tables.mjs:renderTableHtml",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/fix-tables.mjs",
+      "target": "function:scripts/fix-tables.mjs:isTableDelimiter",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/fix-tables.mjs",
+      "target": "function:scripts/fix-tables.mjs:splitTableRow",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/fix-tables.mjs",
+      "target": "function:scripts/fix-tables.mjs:splitTableRow",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/fix-tables.mjs",
+      "target": "function:scripts/fix-tables.mjs:splitTableRow",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/generate-favicon.mjs",
+      "target": "function:scripts/generate-favicon.mjs:generateTintedFavicon",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/generate-favicon.mjs",
+      "target": "function:scripts/generate-favicon.mjs:createIcoFromPngBuffer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/generate-favicon.mjs",
+      "target": "function:scripts/generate-favicon.mjs:generateFavicon",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/generate-favicon.mjs",
+      "target": "function:scripts/generate-favicon.mjs:generateTintedFavicon",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/generate-favicon.mjs",
+      "target": "function:scripts/generate-favicon.mjs:generateTintedFavicon",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/generate-favicon.mjs",
+      "target": "function:scripts/generate-favicon.mjs:createIcoFromPngBuffer",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/generate-favicon.mjs",
+      "target": "function:scripts/generate-favicon.mjs:generateTintedFavicon",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/google-indexing-oauth.mjs",
+      "target": "function:scripts/google-indexing-oauth.mjs:getArgValue",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/google-indexing-oauth.mjs",
+      "target": "function:scripts/google-indexing-oauth.mjs:loadEnvText",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/google-indexing-oauth.mjs",
+      "target": "function:scripts/google-indexing-oauth.mjs:parseEnv",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/google-indexing-oauth.mjs",
+      "target": "function:scripts/google-indexing-oauth.mjs:setEnvValue",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/google-indexing-oauth.mjs",
+      "target": "function:scripts/google-indexing-oauth.mjs:loadClientJson",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/google-indexing-oauth.mjs",
+      "target": "function:scripts/google-indexing-oauth.mjs:getClient",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/google-indexing-oauth.mjs",
+      "target": "function:scripts/google-indexing-oauth.mjs:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/google-indexing-oauth.mjs",
+      "target": "function:scripts/google-indexing-oauth.mjs:loadEnvText",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/google-indexing-oauth.mjs",
+      "target": "function:scripts/google-indexing-oauth.mjs:parseEnv",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/google-indexing-oauth.mjs",
+      "target": "function:scripts/google-indexing-oauth.mjs:getArgValue",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/google-indexing-oauth.mjs",
+      "target": "function:scripts/google-indexing-oauth.mjs:loadClientJson",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/google-indexing-oauth.mjs",
+      "target": "function:scripts/google-indexing-oauth.mjs:setEnvValue",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/google-indexing-oauth.mjs",
+      "target": "function:scripts/google-indexing-oauth.mjs:setEnvValue",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/google-indexing-oauth.mjs",
+      "target": "function:scripts/google-indexing-oauth.mjs:setEnvValue",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/google-indexing-oauth.mjs",
+      "target": "function:scripts/google-indexing-oauth.mjs:parseEnv",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/google-indexing-oauth.mjs",
+      "target": "function:scripts/google-indexing-oauth.mjs:getClient",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/google-indexing-oauth.mjs",
+      "target": "function:scripts/google-indexing-oauth.mjs:getArgValue",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/google-indexing-oauth.mjs",
+      "target": "function:scripts/google-indexing-oauth.mjs:loadEnvText",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/google-indexing-oauth.mjs",
+      "target": "function:scripts/google-indexing-oauth.mjs:setEnvValue",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/index-urls.mjs",
+      "target": "function:scripts/index-urls.mjs:getAuth",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/index-urls.mjs",
+      "target": "function:scripts/index-urls.mjs:submitViaSearchConsole",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/index-urls.mjs",
+      "target": "function:scripts/index-urls.mjs:pingGoogle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/index-urls.mjs",
+      "target": "function:scripts/index-urls.mjs:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/index-urls.mjs",
+      "target": "function:scripts/index-urls.mjs:getAuth",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/index-urls.mjs",
+      "target": "function:scripts/index-urls.mjs:submitViaSearchConsole",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/index-urls.mjs",
+      "target": "function:scripts/index-urls.mjs:pingGoogle",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:getArgValue",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:loadEnv",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:decodeXml",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:unique",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:fetchSitemapUrls",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:getExplicitUrls",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:assertAbsoluteUrls",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:getServiceAccountCredentials",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:getOAuthCredentials",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:getAuth",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:notifyUrls",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:unique",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:decodeXml",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:fetchSitemapUrls",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:unique",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:getArgValue",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:getArgValue",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:unique",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:getServiceAccountCredentials",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:getOAuthCredentials",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:loadEnv",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:getArgValue",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:getArgValue",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:getArgValue",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:getArgValue",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:getExplicitUrls",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:fetchSitemapUrls",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:unique",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:assertAbsoluteUrls",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:getAuth",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:notifyUrls",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

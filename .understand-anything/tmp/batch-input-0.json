@@ -1,0 +1,268 @@
+{
+  "projectRoot": "C:\\Users\\Admin\\Desktop\\Website 3D\\studio-3d",
+  "batchFiles": [
+    {
+      "path": "src/lib/blog/service/handler.js",
+      "language": "javascript",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/blog/service/index.js",
+      "language": "javascript",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/blog/service/spec.js",
+      "language": "javascript",
+      "sizeLines": 88,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/case-studies/service/handler.js",
+      "language": "javascript",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/case-studies/service/index.js",
+      "language": "javascript",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/case-studies/service/spec.js",
+      "language": "javascript",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/db/blog.js",
+      "language": "javascript",
+      "sizeLines": 113,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/db/case-studies.js",
+      "language": "javascript",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/db/gallery.js",
+      "language": "javascript",
+      "sizeLines": 99,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/db/io.js",
+      "language": "javascript",
+      "sizeLines": 183,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/db/music.js",
+      "language": "javascript",
+      "sizeLines": 169,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/db/services.js",
+      "language": "javascript",
+      "sizeLines": 180,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/db/settings.js",
+      "language": "javascript",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/db/shop.js",
+      "language": "javascript",
+      "sizeLines": 104,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/db/slug.js",
+      "language": "javascript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/gallery/service/handler.js",
+      "language": "javascript",
+      "sizeLines": 81,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/gallery/service/index.js",
+      "language": "javascript",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/gallery/service/spec.js",
+      "language": "javascript",
+      "sizeLines": 75,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/music/service/handler.js",
+      "language": "javascript",
+      "sizeLines": 131,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/music/service/handler.test.mjs",
+      "language": "javascript",
+      "sizeLines": 103,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/music/service/http.js",
+      "language": "javascript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/music/service/index.js",
+      "language": "javascript",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/music/service/spec.js",
+      "language": "javascript",
+      "sizeLines": 158,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/music/service/spec.test.mjs",
+      "language": "javascript",
+      "sizeLines": 55,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/services/service/handler.js",
+      "language": "javascript",
+      "sizeLines": 131,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/services/service/handler.test.mjs",
+      "language": "javascript",
+      "sizeLines": 103,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/services/service/index.js",
+      "language": "javascript",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/site-defaults.js",
+      "language": "javascript",
+      "sizeLines": 113,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/lib/blog/service/handler.js": [
+      "src/lib/blog/service/spec.js",
+      "src/lib/contract/base.js",
+      "src/lib/db/blog.js"
+    ],
+    "src/lib/blog/service/index.js": [
+      "src/lib/blog/service/handler.js"
+    ],
+    "src/lib/blog/service/spec.js": [
+      "src/lib/contract/base.js"
+    ],
+    "src/lib/case-studies/service/handler.js": [
+      "src/lib/case-studies/service/spec.js",
+      "src/lib/contract/base.js",
+      "src/lib/db/case-studies.js"
+    ],
+    "src/lib/case-studies/service/index.js": [
+      "src/lib/case-studies/service/handler.js"
+    ],
+    "src/lib/case-studies/service/spec.js": [
+      "src/lib/contract/base.js"
+    ],
+    "src/lib/db/blog.js": [
+      "src/lib/db/io.js",
+      "src/lib/db/slug.js"
+    ],
+    "src/lib/db/case-studies.js": [
+      "src/lib/db/io.js",
+      "src/lib/db/slug.js"
+    ],
+    "src/lib/db/gallery.js": [
+      "src/lib/db/io.js",
+      "src/lib/db/slug.js"
+    ],
+    "src/lib/db/io.js": [],
+    "src/lib/db/music.js": [
+      "src/lib/db/io.js",
+      "src/lib/db/slug.js"
+    ],
+    "src/lib/db/services.js": [
+      "src/lib/db/io.js",
+      "src/lib/db/slug.js"
+    ],
+    "src/lib/db/settings.js": [
+      "src/lib/db/io.js",
+      "src/lib/site-defaults.js"
+    ],
+    "src/lib/db/shop.js": [
+      "src/lib/db/io.js",
+      "src/lib/db/slug.js"
+    ],
+    "src/lib/db/slug.js": [],
+    "src/lib/gallery/service/handler.js": [
+      "src/lib/contract/base.js",
+      "src/lib/db/gallery.js",
+      "src/lib/gallery/service/spec.js"
+    ],
+    "src/lib/gallery/service/index.js": [
+      "src/lib/gallery/service/handler.js"
+    ],
+    "src/lib/gallery/service/spec.js": [
+      "src/lib/contract/base.js"
+    ],
+    "src/lib/music/service/handler.js": [
+      "src/lib/db/music.js",
+      "src/lib/music/service/spec.js"
+    ],
+    "src/lib/music/service/handler.test.mjs": [
+      "src/lib/music/service/handler.js"
+    ],
+    "src/lib/music/service/http.js": [
+      "src/lib/music/service/spec.js"
+    ],
+    "src/lib/music/service/index.js": [
+      "src/lib/music/service/handler.js"
+    ],
+    "src/lib/music/service/spec.js": [
+      "src/lib/contract/base.js"
+    ],
+    "src/lib/music/service/spec.test.mjs": [
+      "src/lib/music/service/spec.js"
+    ],
+    "src/lib/services/service/handler.js": [
+      "src/lib/db/services.js",
+      "src/lib/services/service/spec.js"
+    ],
+    "src/lib/services/service/handler.test.mjs": [
+      "src/lib/services/service/handler.js"
+    ],
+    "src/lib/services/service/index.js": [
+      "src/lib/services/service/handler.js"
+    ],
+    "src/lib/site-defaults.js": []
+  }
+}

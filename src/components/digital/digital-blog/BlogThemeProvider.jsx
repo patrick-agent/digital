@@ -2,6 +2,7 @@
 
 import { createContext, useContext, useEffect, useState } from 'react';
 import { getStoredTheme, setStoredTheme } from './blog-theme';
+import { useHydrated } from '@/hooks/useHydrated';
 
 const BlogThemeContext = createContext(null);
 
@@ -10,13 +11,10 @@ export function useBlogTheme() {
 }
 
 export function BlogThemeProvider({ children }) {
-  const [theme, setTheme] = useState('dark');
-  const [mounted, setMounted] = useState(false);
+  const hydrated = useHydrated();
+  const [theme, setTheme] = useState(() => getStoredTheme());
 
   useEffect(() => {
-    setMounted(true);
-    setTheme(getStoredTheme());
-
     const handler = (e) => {
       setTheme(e.detail);
     };
@@ -33,7 +31,7 @@ export function BlogThemeProvider({ children }) {
     });
   };
 
-  if (!mounted) {
+  if (!hydrated) {
     return <div className="blog-wrapper dark">{children}</div>;
   }
 

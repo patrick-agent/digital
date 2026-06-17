@@ -1,0 +1,161 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/components/digital/CompanyLogos.jsx",
+      "type": "file",
+      "name": "CompanyLogos.jsx",
+      "filePath": "src/components/digital/CompanyLogos.jsx",
+      "summary": "CompanyLogos.jsx: Source file, 1 function, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/digital/CompanyLogos.jsx:CompanyLogos",
+      "type": "function",
+      "name": "CompanyLogos",
+      "filePath": "src/components/digital/CompanyLogos.jsx",
+      "lineRange": [
+        16,
+        69
+      ],
+      "summary": "Function CompanyLogos with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/digital/DigitalIntro.jsx",
+      "type": "file",
+      "name": "DigitalIntro.jsx",
+      "filePath": "src/components/digital/DigitalIntro.jsx",
+      "summary": "DigitalIntro.jsx: Source file, 1 function, 3 imports.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/digital/DigitalIntro.jsx:DigitalIntro",
+      "type": "function",
+      "name": "DigitalIntro",
+      "filePath": "src/components/digital/DigitalIntro.jsx",
+      "lineRange": [
+        14,
+        166
+      ],
+      "summary": "Function DigitalIntro with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/digital/TextFlip.jsx",
+      "type": "file",
+      "name": "TextFlip.jsx",
+      "filePath": "src/components/digital/TextFlip.jsx",
+      "summary": "TextFlip.jsx: Source file, 1 function, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/digital/TextFlip.jsx:TextFlip",
+      "type": "function",
+      "name": "TextFlip",
+      "filePath": "src/components/digital/TextFlip.jsx",
+      "lineRange": [
+        6,
+        35
+      ],
+      "summary": "Function TextFlip with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/components/digital/CompanyLogos.jsx",
+      "target": "function:src/components/digital/CompanyLogos.jsx:CompanyLogos",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/digital/CompanyLogos.jsx",
+      "target": "function:src/components/digital/CompanyLogos.jsx:CompanyLogos",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/digital/CompanyLogos.jsx",
+      "target": "file:src/components/digital/CompanyLogos.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/digital/DigitalIntro.jsx",
+      "target": "function:src/components/digital/DigitalIntro.jsx:DigitalIntro",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/digital/DigitalIntro.jsx",
+      "target": "function:src/components/digital/DigitalIntro.jsx:DigitalIntro",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/digital/DigitalIntro.jsx",
+      "target": "file:src/components/digital/CompanyLogos.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/digital/DigitalIntro.jsx",
+      "target": "file:src/components/digital/DigitalIntro.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/digital/DigitalIntro.jsx",
+      "target": "file:src/components/digital/TextFlip.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/digital/TextFlip.jsx",
+      "target": "function:src/components/digital/TextFlip.jsx:TextFlip",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/digital/TextFlip.jsx",
+      "target": "function:src/components/digital/TextFlip.jsx:TextFlip",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/digital/TextFlip.jsx",
+      "target": "file:src/components/digital/TextFlip.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

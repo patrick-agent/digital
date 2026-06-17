@@ -1,0 +1,198 @@
+{
+  "projectRoot": "C:\\Users\\Admin\\Desktop\\Website 3D\\studio-3d",
+  "batchFiles": [
+    {
+      "path": "src/components/LoadingScreen.jsx",
+      "language": "javascript",
+      "sizeLines": 163,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/PreloadModels.jsx",
+      "language": "javascript",
+      "sizeLines": 77,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ProgressTracker.jsx",
+      "language": "javascript",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/sections/GallerySection.jsx",
+      "language": "javascript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/sections/HeroSection.jsx",
+      "language": "javascript",
+      "sizeLines": 127,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/shop/ProductShelf.module.css",
+      "language": "css",
+      "sizeLines": 185,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/shop/ShopClient.module.css",
+      "language": "css",
+      "sizeLines": 337,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/ui/badge.jsx",
+      "language": "javascript",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/button.jsx",
+      "language": "javascript",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/canvas-reveal-effect.jsx",
+      "language": "javascript",
+      "sizeLines": 264,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/comet-card.jsx",
+      "language": "javascript",
+      "sizeLines": 92,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/dialog.jsx",
+      "language": "javascript",
+      "sizeLines": 96,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/ErrorBoundary.jsx",
+      "language": "javascript",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/Galaxy.jsx",
+      "language": "javascript",
+      "sizeLines": 333,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/GradientText.jsx",
+      "language": "javascript",
+      "sizeLines": 96,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/GridScan.jsx",
+      "language": "javascript",
+      "sizeLines": 895,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/input.jsx",
+      "language": "javascript",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/label.jsx",
+      "language": "javascript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/LightPillar.jsx",
+      "language": "javascript",
+      "sizeLines": 387,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/LightRays.jsx",
+      "language": "javascript",
+      "sizeLines": 402,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/LiquidEther.jsx",
+      "language": "javascript",
+      "sizeLines": 1167,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/LoadingSpinner.jsx",
+      "language": "javascript",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/NeonButton.jsx",
+      "language": "javascript",
+      "sizeLines": 111,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/RippleGrid.jsx",
+      "language": "javascript",
+      "sizeLines": 276,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/RotatingText.jsx",
+      "language": "javascript",
+      "sizeLines": 186,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/components/LoadingScreen.jsx": [],
+    "src/components/PreloadModels.jsx": [],
+    "src/components/ProgressTracker.jsx": [],
+    "src/components/sections/GallerySection.jsx": [],
+    "src/components/sections/HeroSection.jsx": [
+      "src/components/sections/HeroSection.module.css"
+    ],
+    "src/components/shop/ProductShelf.module.css": [],
+    "src/components/shop/ShopClient.module.css": [],
+    "src/components/ui/badge.jsx": [],
+    "src/components/ui/button.jsx": [],
+    "src/components/ui/canvas-reveal-effect.jsx": [],
+    "src/components/ui/comet-card.jsx": [],
+    "src/components/ui/dialog.jsx": [],
+    "src/components/ui/ErrorBoundary.jsx": [],
+    "src/components/ui/Galaxy.jsx": [
+      "src/components/ui/Galaxy.css"
+    ],
+    "src/components/ui/GradientText.jsx": [
+      "src/components/ui/GradientText.css"
+    ],
+    "src/components/ui/GridScan.jsx": [
+      "src/components/ui/GridScan.css"
+    ],
+    "src/components/ui/input.jsx": [],
+    "src/components/ui/label.jsx": [],
+    "src/components/ui/LightPillar.jsx": [
+      "src/components/ui/LightPillar.css"
+    ],
+    "src/components/ui/LightRays.jsx": [
+      "src/components/ui/LightRays.css"
+    ],
+    "src/components/ui/LiquidEther.jsx": [
+      "src/components/ui/LiquidEther.css"
+    ],
+    "src/components/ui/LoadingSpinner.jsx": [],
+    "src/components/ui/NeonButton.jsx": [],
+    "src/components/ui/RippleGrid.jsx": [
+      "src/components/ui/RippleGrid.css"
+    ],
+    "src/components/ui/RotatingText.jsx": []
+  }
+}

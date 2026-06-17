@@ -1,8 +1,20 @@
 'use client';
 
-import { useRef, useEffect, useState } from 'react';
+import { useRef, useEffect } from 'react';
 import * as THREE from 'three';
+import { useHydrated } from '@/hooks/useHydrated';
 import './LightPillar.css';
+
+function canUseWebGL() {
+  if (typeof document === 'undefined') return true;
+
+  try {
+    const canvas = document.createElement('canvas');
+    return Boolean(canvas.getContext('webgl') || canvas.getContext('experimental-webgl'));
+  } catch {
+    return false;
+  }
+}
 
 const LightPillar = ({
   topColor = '#5227FF',
@@ -29,15 +41,8 @@ const LightPillar = ({
   const mouseRef = useRef(new THREE.Vector2(0, 0));
   const timeRef = useRef(0);
   const rotationSpeedRef = useRef(rotationSpeed);
-  const [webGLSupported, setWebGLSupported] = useState(true);
-
-  useEffect(() => {
-    const canvas = document.createElement('canvas');
-    const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
-    if (!gl) {
-      setWebGLSupported(false);
-    }
-  }, []);
+  const hydrated = useHydrated();
+  const webGLSupported = !hydrated || canUseWebGL();
 
   useEffect(() => {
     if (!containerRef.current || !webGLSupported) return;
@@ -83,7 +88,7 @@ const LightPillar = ({
         depth: false
       });
     } catch (error) {
-      setWebGLSupported(false);
+      console.error('Failed to initialize LightPillar renderer', error);
       return;
     }
 

@@ -1,0 +1,190 @@
+{
+  "projectRoot": "C:\\Users\\Admin\\Desktop\\Website 3D\\studio-3d",
+  "batchFiles": [
+    {
+      "path": "src/app/about/error.js",
+      "language": "javascript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/about/loading.js",
+      "language": "javascript",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/about/page.jsx",
+      "language": "javascript",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(auth)/layout.js",
+      "language": "javascript",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(auth)/login/page.js",
+      "language": "javascript",
+      "sizeLines": 140,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/blog/[id]/edit/page.js",
+      "language": "javascript",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/blog/BlogListClient.jsx",
+      "language": "javascript",
+      "sizeLines": 265,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/blog/new/page.js",
+      "language": "javascript",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/blog/page.js",
+      "language": "javascript",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/case-studies/[id]/edit/page.js",
+      "language": "javascript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/case-studies/CaseStudiesListClient.jsx",
+      "language": "javascript",
+      "sizeLines": 81,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/case-studies/new/page.js",
+      "language": "javascript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/case-studies/page.js",
+      "language": "javascript",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/dashboard/page.js",
+      "language": "javascript",
+      "sizeLines": 221,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/error.js",
+      "language": "javascript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/events/[id]/edit/page.js",
+      "language": "javascript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/events/EventsListClient.jsx",
+      "language": "javascript",
+      "sizeLines": 86,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/events/new/page.js",
+      "language": "javascript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/events/page.js",
+      "language": "javascript",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/gallery/[id]/edit/page.js",
+      "language": "javascript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/gallery/GalleryListClient.jsx",
+      "language": "javascript",
+      "sizeLines": 91,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/gallery/new/page.js",
+      "language": "javascript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/gallery/page.js",
+      "language": "javascript",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/layout.js",
+      "language": "javascript",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/loading.js",
+      "language": "javascript",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/app/about/error.js": [],
+    "src/app/about/loading.js": [],
+    "src/app/about/page.jsx": [],
+    "src/app/admin/(auth)/layout.js": [],
+    "src/app/admin/(auth)/login/page.js": [],
+    "src/app/admin/(dashboard)/blog/[id]/edit/page.js": [],
+    "src/app/admin/(dashboard)/blog/BlogListClient.jsx": [],
+    "src/app/admin/(dashboard)/blog/new/page.js": [],
+    "src/app/admin/(dashboard)/blog/page.js": [
+      "src/app/admin/(dashboard)/blog/BlogListClient.jsx"
+    ],
+    "src/app/admin/(dashboard)/case-studies/[id]/edit/page.js": [],
+    "src/app/admin/(dashboard)/case-studies/CaseStudiesListClient.jsx": [],
+    "src/app/admin/(dashboard)/case-studies/new/page.js": [],
+    "src/app/admin/(dashboard)/case-studies/page.js": [
+      "src/app/admin/(dashboard)/case-studies/CaseStudiesListClient.jsx"
+    ],
+    "src/app/admin/(dashboard)/dashboard/page.js": [],
+    "src/app/admin/(dashboard)/error.js": [],
+    "src/app/admin/(dashboard)/events/[id]/edit/page.js": [],
+    "src/app/admin/(dashboard)/events/EventsListClient.jsx": [],
+    "src/app/admin/(dashboard)/events/new/page.js": [],
+    "src/app/admin/(dashboard)/events/page.js": [
+      "src/app/admin/(dashboard)/events/EventsListClient.jsx"
+    ],
+    "src/app/admin/(dashboard)/gallery/[id]/edit/page.js": [],
+    "src/app/admin/(dashboard)/gallery/GalleryListClient.jsx": [],
+    "src/app/admin/(dashboard)/gallery/new/page.js": [],
+    "src/app/admin/(dashboard)/gallery/page.js": [
+      "src/app/admin/(dashboard)/gallery/GalleryListClient.jsx"
+    ],
+    "src/app/admin/(dashboard)/layout.js": [],
+    "src/app/admin/(dashboard)/loading.js": []
+  }
+}

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState, useEffect, useRef, useCallback } from "react";
 import styles from "./Navbar.module.css";
 import { enabledItems, mergeSiteSettings } from "@/lib/site-defaults";
@@ -100,7 +101,7 @@ export default function Navbar({ settings }) {
       className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`}
     >
       <nav className={styles.nav}>
-        <a href="/" className={styles.brand} id="nav-brand">
+        <Link href="/" className={styles.brand} id="nav-brand">
           <div className={styles.logoMark}>
             <img
               src={branding.logoUrl || "/logo.png"}
@@ -116,7 +117,7 @@ export default function Navbar({ settings }) {
             <span className={styles.brandName}>{branding.siteName}</span>
             <span className={styles.brandSub}>{branding.siteSubtitle}</span>
           </div>
-        </a>
+        </Link>
 
         <div className={styles.desktopLinks}>
           {navLinks.map((link) => (

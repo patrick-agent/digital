@@ -1,0 +1,1895 @@
+{
+  "nodes": [
+    {
+      "id": "function:src/lib/db/io.js:writeBlob",
+      "type": "function",
+      "name": "writeBlob",
+      "filePath": "src/lib/db/io.js",
+      "lineRange": [
+        68,
+        98
+      ],
+      "summary": "Function writeBlob with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/io.js:readJSON",
+      "type": "function",
+      "name": "readJSON",
+      "filePath": "src/lib/db/io.js",
+      "lineRange": [
+        100,
+        132
+      ],
+      "summary": "Function readJSON with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/io.js:writeJSON",
+      "type": "function",
+      "name": "writeJSON",
+      "filePath": "src/lib/db/io.js",
+      "lineRange": [
+        134,
+        152
+      ],
+      "summary": "Function writeJSON with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/io.js:readFileJSON",
+      "type": "function",
+      "name": "readFileJSON",
+      "filePath": "src/lib/db/io.js",
+      "lineRange": [
+        154,
+        164
+      ],
+      "summary": "Function readFileJSON with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/io.js:writeFileJSON",
+      "type": "function",
+      "name": "writeFileJSON",
+      "filePath": "src/lib/db/io.js",
+      "lineRange": [
+        166,
+        183
+      ],
+      "summary": "Function writeFileJSON with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/db/music.js",
+      "type": "file",
+      "name": "music.js",
+      "filePath": "src/lib/db/music.js",
+      "summary": "music.js: Source file, 14 functions, 2 imports.",
+      "tags": [
+        "utility",
+        "database"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/lib/db/music.js:trimString",
+      "type": "function",
+      "name": "trimString",
+      "filePath": "src/lib/db/music.js",
+      "lineRange": [
+        4,
+        6
+      ],
+      "summary": "Function trimString with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/music.js:normalizeTimestamp",
+      "type": "function",
+      "name": "normalizeTimestamp",
+      "filePath": "src/lib/db/music.js",
+      "lineRange": [
+        8,
+        11
+      ],
+      "summary": "Function normalizeTimestamp with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/music.js:normalizeMusicType",
+      "type": "function",
+      "name": "normalizeMusicType",
+      "filePath": "src/lib/db/music.js",
+      "lineRange": [
+        13,
+        17
+      ],
+      "summary": "Function normalizeMusicType with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/music.js:normalizeMusicStatus",
+      "type": "function",
+      "name": "normalizeMusicStatus",
+      "filePath": "src/lib/db/music.js",
+      "lineRange": [
+        19,
+        23
+      ],
+      "summary": "Function normalizeMusicStatus with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/music.js:normalizeFeatured",
+      "type": "function",
+      "name": "normalizeFeatured",
+      "filePath": "src/lib/db/music.js",
+      "lineRange": [
+        25,
+        29
+      ],
+      "summary": "Function normalizeFeatured with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/music.js:normalizeTracklist",
+      "type": "function",
+      "name": "normalizeTracklist",
+      "filePath": "src/lib/db/music.js",
+      "lineRange": [
+        31,
+        34
+      ],
+      "summary": "Function normalizeTracklist with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/music.js:normalizeStreamingLinks",
+      "type": "function",
+      "name": "normalizeStreamingLinks",
+      "filePath": "src/lib/db/music.js",
+      "lineRange": [
+        36,
+        46
+      ],
+      "summary": "Function normalizeStreamingLinks with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/music.js:normalizeMusicItem",
+      "type": "function",
+      "name": "normalizeMusicItem",
+      "filePath": "src/lib/db/music.js",
+      "lineRange": [
+        48,
+        68
+      ],
+      "summary": "Function normalizeMusicItem with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/music.js:readAllMusic",
+      "type": "function",
+      "name": "readAllMusic",
+      "filePath": "src/lib/db/music.js",
+      "lineRange": [
+        70,
+        74
+      ],
+      "summary": "Function readAllMusic with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/music.js:readMusic",
+      "type": "function",
+      "name": "readMusic",
+      "filePath": "src/lib/db/music.js",
+      "lineRange": [
+        76,
+        102
+      ],
+      "summary": "Function readMusic with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/music.js:readMusicItem",
+      "type": "function",
+      "name": "readMusicItem",
+      "filePath": "src/lib/db/music.js",
+      "lineRange": [
+        104,
+        107
+      ],
+      "summary": "Function readMusicItem with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/music.js:createMusic",
+      "type": "function",
+      "name": "createMusic",
+      "filePath": "src/lib/db/music.js",
+      "lineRange": [
+        109,
+        135
+      ],
+      "summary": "Function createMusic with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/music.js:updateMusic",
+      "type": "function",
+      "name": "updateMusic",
+      "filePath": "src/lib/db/music.js",
+      "lineRange": [
+        137,
+        159
+      ],
+      "summary": "Function updateMusic with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/music.js:deleteMusic",
+      "type": "function",
+      "name": "deleteMusic",
+      "filePath": "src/lib/db/music.js",
+      "lineRange": [
+        161,
+        169
+      ],
+      "summary": "Function deleteMusic with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/db/services.js",
+      "type": "file",
+      "name": "services.js",
+      "filePath": "src/lib/db/services.js",
+      "summary": "services.js: Source file, 15 functions, 2 imports.",
+      "tags": [
+        "service",
+        "utility",
+        "database"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/lib/db/services.js:trimString",
+      "type": "function",
+      "name": "trimString",
+      "filePath": "src/lib/db/services.js",
+      "lineRange": [
+        4,
+        6
+      ],
+      "summary": "Function trimString with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/services.js:normalizeFeatures",
+      "type": "function",
+      "name": "normalizeFeatures",
+      "filePath": "src/lib/db/services.js",
+      "lineRange": [
+        8,
+        11
+      ],
+      "summary": "Function normalizeFeatures with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/services.js:normalizeStatus",
+      "type": "function",
+      "name": "normalizeStatus",
+      "filePath": "src/lib/db/services.js",
+      "lineRange": [
+        13,
+        17
+      ],
+      "summary": "Function normalizeStatus with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/services.js:normalizePriceRange",
+      "type": "function",
+      "name": "normalizePriceRange",
+      "filePath": "src/lib/db/services.js",
+      "lineRange": [
+        19,
+        29
+      ],
+      "summary": "Function normalizePriceRange with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/services.js:normalizeDisplayOrder",
+      "type": "function",
+      "name": "normalizeDisplayOrder",
+      "filePath": "src/lib/db/services.js",
+      "lineRange": [
+        31,
+        35
+      ],
+      "summary": "Function normalizeDisplayOrder with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/services.js:normalizeTimestamp",
+      "type": "function",
+      "name": "normalizeTimestamp",
+      "filePath": "src/lib/db/services.js",
+      "lineRange": [
+        37,
+        40
+      ],
+      "summary": "Function normalizeTimestamp with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/services.js:normalizeService",
+      "type": "function",
+      "name": "normalizeService",
+      "filePath": "src/lib/db/services.js",
+      "lineRange": [
+        42,
+        62
+      ],
+      "summary": "Function normalizeService with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/services.js:matchesSearch",
+      "type": "function",
+      "name": "matchesSearch",
+      "filePath": "src/lib/db/services.js",
+      "lineRange": [
+        64,
+        77
+      ],
+      "summary": "Function matchesSearch with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/services.js:readAllServices",
+      "type": "function",
+      "name": "readAllServices",
+      "filePath": "src/lib/db/services.js",
+      "lineRange": [
+        79,
+        83
+      ],
+      "summary": "Function readAllServices with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/services.js:nextDisplayOrder",
+      "type": "function",
+      "name": "nextDisplayOrder",
+      "filePath": "src/lib/db/services.js",
+      "lineRange": [
+        85,
+        87
+      ],
+      "summary": "Function nextDisplayOrder with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/services.js:readServices",
+      "type": "function",
+      "name": "readServices",
+      "filePath": "src/lib/db/services.js",
+      "lineRange": [
+        89,
+        113
+      ],
+      "summary": "Function readServices with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/services.js:createService",
+      "type": "function",
+      "name": "createService",
+      "filePath": "src/lib/db/services.js",
+      "lineRange": [
+        115,
+        141
+      ],
+      "summary": "Function createService with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/services.js:readService",
+      "type": "function",
+      "name": "readService",
+      "filePath": "src/lib/db/services.js",
+      "lineRange": [
+        143,
+        146
+      ],
+      "summary": "Function readService with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/services.js:updateService",
+      "type": "function",
+      "name": "updateService",
+      "filePath": "src/lib/db/services.js",
+      "lineRange": [
+        148,
+        170
+      ],
+      "summary": "Function updateService with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/services.js:deleteService",
+      "type": "function",
+      "name": "deleteService",
+      "filePath": "src/lib/db/services.js",
+      "lineRange": [
+        172,
+        180
+      ],
+      "summary": "Function deleteService with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/db/settings.js",
+      "type": "file",
+      "name": "settings.js",
+      "filePath": "src/lib/db/settings.js",
+      "summary": "settings.js: Source file, 2 functions, 2 imports.",
+      "tags": [
+        "utility",
+        "database"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/settings.js:readSettings",
+      "type": "function",
+      "name": "readSettings",
+      "filePath": "src/lib/db/settings.js",
+      "lineRange": [
+        4,
+        7
+      ],
+      "summary": "Function readSettings with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/settings.js:updateSettings",
+      "type": "function",
+      "name": "updateSettings",
+      "filePath": "src/lib/db/settings.js",
+      "lineRange": [
+        9,
+        14
+      ],
+      "summary": "Function updateSettings with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/db/shop.js",
+      "type": "file",
+      "name": "shop.js",
+      "filePath": "src/lib/db/shop.js",
+      "summary": "shop.js: Source file, 5 functions, 2 imports.",
+      "tags": [
+        "utility",
+        "database"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/lib/db/shop.js:readProducts",
+      "type": "function",
+      "name": "readProducts",
+      "filePath": "src/lib/db/shop.js",
+      "lineRange": [
+        4,
+        27
+      ],
+      "summary": "Function readProducts with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/shop.js:readProduct",
+      "type": "function",
+      "name": "readProduct",
+      "filePath": "src/lib/db/shop.js",
+      "lineRange": [
+        29,
+        32
+      ],
+      "summary": "Function readProduct with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/shop.js:createProduct",
+      "type": "function",
+      "name": "createProduct",
+      "filePath": "src/lib/db/shop.js",
+      "lineRange": [
+        34,
+        69
+      ],
+      "summary": "Function createProduct with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/shop.js:updateProduct",
+      "type": "function",
+      "name": "updateProduct",
+      "filePath": "src/lib/db/shop.js",
+      "lineRange": [
+        71,
+        94
+      ],
+      "summary": "Function updateProduct with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/shop.js:deleteProduct",
+      "type": "function",
+      "name": "deleteProduct",
+      "filePath": "src/lib/db/shop.js",
+      "lineRange": [
+        96,
+        104
+      ],
+      "summary": "Function deleteProduct with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/db/slug.js",
+      "type": "file",
+      "name": "slug.js",
+      "filePath": "src/lib/db/slug.js",
+      "summary": "slug.js: Source file, 2 functions.",
+      "tags": [
+        "utility",
+        "database"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/slug.js:slugify",
+      "type": "function",
+      "name": "slugify",
+      "filePath": "src/lib/db/slug.js",
+      "lineRange": [
+        1,
+        11
+      ],
+      "summary": "Function slugify with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/slug.js:generateUniqueSlug",
+      "type": "function",
+      "name": "generateUniqueSlug",
+      "filePath": "src/lib/db/slug.js",
+      "lineRange": [
+        13,
+        25
+      ],
+      "summary": "Function generateUniqueSlug with 3 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:blobToken",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:blobStoreId",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:blobReadUrl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:blobWriteUrl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:blobAuthHeaders",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:blobPath",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:ensureDbDir",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:readBlob",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:writeBlob",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:readJSON",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:readJSON",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:writeJSON",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:writeJSON",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:readFileJSON",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:readFileJSON",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:writeFileJSON",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:writeFileJSON",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:blobToken",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:blobStoreId",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:blobPath",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:blobPath",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:blobToken",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:blobReadUrl",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:blobToken",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:blobAuthHeaders",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:blobToken",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:blobStoreId",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:blobPath",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:blobToken",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:readBlob",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:writeBlob",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:blobToken",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:ensureDbDir",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:blobToken",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:readBlob",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:writeBlob",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:blobToken",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/io.js",
+      "target": "function:src/lib/db/io.js:ensureDbDir",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:trimString",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:normalizeTimestamp",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:normalizeMusicType",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:normalizeMusicStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:normalizeFeatured",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:normalizeTracklist",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:normalizeStreamingLinks",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:normalizeMusicItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:readAllMusic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:readMusic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:readMusic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:readMusicItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:readMusicItem",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:createMusic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:createMusic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:updateMusic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:updateMusic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:deleteMusic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:deleteMusic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "file:src/lib/db/io.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "file:src/lib/db/slug.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:normalizeMusicType",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:normalizeStreamingLinks",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:normalizeTracklist",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:normalizeFeatured",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:normalizeMusicStatus",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:normalizeMusicItem",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:readAllMusic",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:normalizeTimestamp",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:normalizeTimestamp",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:readAllMusic",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:readAllMusic",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:normalizeMusicItem",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:readAllMusic",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:normalizeMusicItem",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/music.js",
+      "target": "function:src/lib/db/music.js:readAllMusic",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:trimString",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:normalizeFeatures",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:normalizeStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:normalizePriceRange",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:normalizeDisplayOrder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:normalizeTimestamp",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:normalizeService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:matchesSearch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:readAllServices",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:nextDisplayOrder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:readServices",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:readServices",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:createService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:createService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:readService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:readService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:updateService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:updateService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:deleteService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:deleteService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "file:src/lib/db/io.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "file:src/lib/db/slug.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:normalizeFeatures",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:normalizePriceRange",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:normalizeStatus",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:normalizeDisplayOrder",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:normalizeService",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:readAllServices",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:matchesSearch",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:normalizeTimestamp",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:normalizeTimestamp",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:readAllServices",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:normalizeService",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:nextDisplayOrder",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:readAllServices",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:readAllServices",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:trimString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:normalizeService",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/services.js",
+      "target": "function:src/lib/db/services.js:readAllServices",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/settings.js",
+      "target": "function:src/lib/db/settings.js:readSettings",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/settings.js",
+      "target": "function:src/lib/db/settings.js:readSettings",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/settings.js",
+      "target": "function:src/lib/db/settings.js:updateSettings",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/settings.js",
+      "target": "function:src/lib/db/settings.js:updateSettings",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/settings.js",
+      "target": "file:src/lib/db/io.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/db/settings.js",
+      "target": "file:src/lib/site-defaults.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/db/settings.js",
+      "target": "function:src/lib/db/settings.js:readSettings",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/shop.js",
+      "target": "function:src/lib/db/shop.js:readProducts",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/shop.js",
+      "target": "function:src/lib/db/shop.js:readProducts",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/shop.js",
+      "target": "function:src/lib/db/shop.js:readProduct",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/shop.js",
+      "target": "function:src/lib/db/shop.js:readProduct",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/shop.js",
+      "target": "function:src/lib/db/shop.js:createProduct",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/shop.js",
+      "target": "function:src/lib/db/shop.js:createProduct",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/shop.js",
+      "target": "function:src/lib/db/shop.js:updateProduct",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/shop.js",
+      "target": "function:src/lib/db/shop.js:updateProduct",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/shop.js",
+      "target": "function:src/lib/db/shop.js:deleteProduct",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/shop.js",
+      "target": "function:src/lib/db/shop.js:deleteProduct",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/shop.js",
+      "target": "file:src/lib/db/io.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/db/shop.js",
+      "target": "file:src/lib/db/slug.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/db/slug.js",
+      "target": "function:src/lib/db/slug.js:slugify",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/slug.js",
+      "target": "function:src/lib/db/slug.js:slugify",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/slug.js",
+      "target": "function:src/lib/db/slug.js:generateUniqueSlug",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/slug.js",
+      "target": "function:src/lib/db/slug.js:generateUniqueSlug",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

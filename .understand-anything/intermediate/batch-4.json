@@ -1,0 +1,525 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/components/blog/BlogClient.jsx",
+      "type": "file",
+      "name": "BlogClient.jsx",
+      "filePath": "src/components/blog/BlogClient.jsx",
+      "summary": "BlogClient.jsx: Source file, 3 functions, 5 imports.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/components/blog/BlogClient.jsx:normalizeSearchValue",
+      "type": "function",
+      "name": "normalizeSearchValue",
+      "filePath": "src/components/blog/BlogClient.jsx",
+      "lineRange": [
+        13,
+        18
+      ],
+      "summary": "Function normalizeSearchValue with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/blog/BlogClient.jsx:matchesSearch",
+      "type": "function",
+      "name": "matchesSearch",
+      "filePath": "src/components/blog/BlogClient.jsx",
+      "lineRange": [
+        20,
+        32
+      ],
+      "summary": "Function matchesSearch with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/blog/BlogClient.jsx:BlogClient",
+      "type": "function",
+      "name": "BlogClient",
+      "filePath": "src/components/blog/BlogClient.jsx",
+      "lineRange": [
+        34,
+        283
+      ],
+      "summary": "Function BlogClient with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/blog/BlogHero.jsx",
+      "type": "file",
+      "name": "BlogHero.jsx",
+      "filePath": "src/components/blog/BlogHero.jsx",
+      "summary": "BlogHero.jsx: Source file, 1 function, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/blog/BlogHero.jsx:BlogHero",
+      "type": "function",
+      "name": "BlogHero",
+      "filePath": "src/components/blog/BlogHero.jsx",
+      "lineRange": [
+        9,
+        81
+      ],
+      "summary": "Function BlogHero with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/blog/Breadcrumb.jsx",
+      "type": "file",
+      "name": "Breadcrumb.jsx",
+      "filePath": "src/components/blog/Breadcrumb.jsx",
+      "summary": "Breadcrumb.jsx: Source file, 2 functions, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/blog/Breadcrumb.jsx:absoluteHref",
+      "type": "function",
+      "name": "absoluteHref",
+      "filePath": "src/components/blog/Breadcrumb.jsx",
+      "lineRange": [
+        7,
+        10
+      ],
+      "summary": "Function absoluteHref with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/blog/Breadcrumb.jsx:Breadcrumb",
+      "type": "function",
+      "name": "Breadcrumb",
+      "filePath": "src/components/blog/Breadcrumb.jsx",
+      "lineRange": [
+        12,
+        52
+      ],
+      "summary": "Function Breadcrumb with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/blog/CategoryNav.jsx",
+      "type": "file",
+      "name": "CategoryNav.jsx",
+      "filePath": "src/components/blog/CategoryNav.jsx",
+      "summary": "CategoryNav.jsx: Source file, 1 function, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/blog/CategoryNav.jsx:CategoryNav",
+      "type": "function",
+      "name": "CategoryNav",
+      "filePath": "src/components/blog/CategoryNav.jsx",
+      "lineRange": [
+        6,
+        46
+      ],
+      "summary": "Function CategoryNav with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/blog/PostCard.jsx",
+      "type": "file",
+      "name": "PostCard.jsx",
+      "filePath": "src/components/blog/PostCard.jsx",
+      "summary": "PostCard.jsx: Source file, 1 function, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/blog/PostCard.jsx:PostCard",
+      "type": "function",
+      "name": "PostCard",
+      "filePath": "src/components/blog/PostCard.jsx",
+      "lineRange": [
+        11,
+        80
+      ],
+      "summary": "Function PostCard with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/blog/PostGrid.jsx",
+      "type": "file",
+      "name": "PostGrid.jsx",
+      "filePath": "src/components/blog/PostGrid.jsx",
+      "summary": "PostGrid.jsx: Source file, 1 function, 2 imports.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/blog/PostGrid.jsx:PostGrid",
+      "type": "function",
+      "name": "PostGrid",
+      "filePath": "src/components/blog/PostGrid.jsx",
+      "lineRange": [
+        7,
+        85
+      ],
+      "summary": "Function PostGrid with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/blog/PostShelf.jsx",
+      "type": "file",
+      "name": "PostShelf.jsx",
+      "filePath": "src/components/blog/PostShelf.jsx",
+      "summary": "PostShelf.jsx: Source file, 1 function, 2 imports.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/blog/PostShelf.jsx:PostShelf",
+      "type": "function",
+      "name": "PostShelf",
+      "filePath": "src/components/blog/PostShelf.jsx",
+      "lineRange": [
+        8,
+        124
+      ],
+      "summary": "Function PostShelf with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/blog/RelatedPosts.jsx",
+      "type": "file",
+      "name": "RelatedPosts.jsx",
+      "filePath": "src/components/blog/RelatedPosts.jsx",
+      "summary": "RelatedPosts.jsx: Source file, 1 function, 2 imports.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/blog/RelatedPosts.jsx:RelatedPosts",
+      "type": "function",
+      "name": "RelatedPosts",
+      "filePath": "src/components/blog/RelatedPosts.jsx",
+      "lineRange": [
+        4,
+        19
+      ],
+      "summary": "Function RelatedPosts with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/components/blog/BlogClient.jsx",
+      "target": "function:src/components/blog/BlogClient.jsx:normalizeSearchValue",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/blog/BlogClient.jsx",
+      "target": "function:src/components/blog/BlogClient.jsx:matchesSearch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/blog/BlogClient.jsx",
+      "target": "function:src/components/blog/BlogClient.jsx:BlogClient",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/blog/BlogClient.jsx",
+      "target": "function:src/components/blog/BlogClient.jsx:BlogClient",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/blog/BlogClient.jsx",
+      "target": "file:src/components/blog/BlogClient.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/blog/BlogClient.jsx",
+      "target": "file:src/components/blog/BlogHero.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/blog/BlogClient.jsx",
+      "target": "file:src/components/blog/Breadcrumb.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/blog/BlogClient.jsx",
+      "target": "file:src/components/blog/CategoryNav.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/blog/BlogClient.jsx",
+      "target": "file:src/components/blog/PostShelf.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/blog/BlogClient.jsx",
+      "target": "function:src/components/blog/BlogClient.jsx:normalizeSearchValue",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/blog/BlogClient.jsx",
+      "target": "function:src/components/blog/BlogClient.jsx:normalizeSearchValue",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/blog/BlogClient.jsx",
+      "target": "function:src/components/blog/BlogClient.jsx:matchesSearch",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/blog/BlogHero.jsx",
+      "target": "function:src/components/blog/BlogHero.jsx:BlogHero",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/blog/BlogHero.jsx",
+      "target": "function:src/components/blog/BlogHero.jsx:BlogHero",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/blog/BlogHero.jsx",
+      "target": "file:src/components/blog/BlogHero.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/blog/Breadcrumb.jsx",
+      "target": "function:src/components/blog/Breadcrumb.jsx:absoluteHref",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/blog/Breadcrumb.jsx",
+      "target": "function:src/components/blog/Breadcrumb.jsx:Breadcrumb",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/blog/Breadcrumb.jsx",
+      "target": "function:src/components/blog/Breadcrumb.jsx:Breadcrumb",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/blog/Breadcrumb.jsx",
+      "target": "file:src/components/blog/Breadcrumb.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/blog/Breadcrumb.jsx",
+      "target": "function:src/components/blog/Breadcrumb.jsx:absoluteHref",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/blog/CategoryNav.jsx",
+      "target": "function:src/components/blog/CategoryNav.jsx:CategoryNav",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/blog/CategoryNav.jsx",
+      "target": "function:src/components/blog/CategoryNav.jsx:CategoryNav",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/blog/CategoryNav.jsx",
+      "target": "file:src/components/blog/CategoryNav.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/blog/PostCard.jsx",
+      "target": "function:src/components/blog/PostCard.jsx:PostCard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/blog/PostCard.jsx",
+      "target": "function:src/components/blog/PostCard.jsx:PostCard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/blog/PostCard.jsx",
+      "target": "file:src/components/blog/PostCard.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/blog/PostGrid.jsx",
+      "target": "function:src/components/blog/PostGrid.jsx:PostGrid",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/blog/PostGrid.jsx",
+      "target": "function:src/components/blog/PostGrid.jsx:PostGrid",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/blog/PostGrid.jsx",
+      "target": "file:src/components/blog/PostCard.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/blog/PostGrid.jsx",
+      "target": "file:src/components/blog/PostGrid.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/blog/PostShelf.jsx",
+      "target": "function:src/components/blog/PostShelf.jsx:PostShelf",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/blog/PostShelf.jsx",
+      "target": "function:src/components/blog/PostShelf.jsx:PostShelf",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/blog/PostShelf.jsx",
+      "target": "file:src/components/blog/PostCard.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/blog/PostShelf.jsx",
+      "target": "file:src/components/blog/PostShelf.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/blog/RelatedPosts.jsx",
+      "target": "function:src/components/blog/RelatedPosts.jsx:RelatedPosts",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/blog/RelatedPosts.jsx",
+      "target": "function:src/components/blog/RelatedPosts.jsx:RelatedPosts",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/blog/RelatedPosts.jsx",
+      "target": "file:src/components/blog/PostCard.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/blog/RelatedPosts.jsx",
+      "target": "file:src/components/blog/RelatedPosts.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

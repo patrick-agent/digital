@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect, useCallback } from "react"
+import { useState, useCallback } from "react"
 import { useRouter } from "next/navigation"
 
 const STATUS_OPTIONS = [
@@ -9,27 +9,29 @@ const STATUS_OPTIONS = [
   { value: "cancelled", label: "Cancelled" },
 ]
 
+function createInitialForm(item) {
+  if (!item) {
+    return {
+      eventName: "", venue: "", city: "", country: "", date: "",
+      ticketUrl: "", posterImage: "", status: "upcoming",
+    }
+  }
+
+  return {
+    eventName: item.eventName || "", venue: item.venue || "", city: item.city || "",
+    country: item.country || "", date: item.date ? item.date.slice(0, 10) : "",
+    ticketUrl: item.ticketUrl || "", posterImage: item.posterImage || "",
+    status: item.status || "upcoming",
+  }
+}
+
 export default function EventsForm({ item }) {
   const router = useRouter()
   const isEditing = !!item
 
-  const [form, setForm] = useState({
-    eventName: "", venue: "", city: "", country: "", date: "",
-    ticketUrl: "", posterImage: "", status: "upcoming",
-  })
+  const [form, setForm] = useState(() => createInitialForm(item))
   const [saving, setSaving] = useState(false)
   const [error, setError] = useState("")
-
-  useEffect(() => {
-    if (item) {
-      setForm({
-        eventName: item.eventName || "", venue: item.venue || "", city: item.city || "",
-        country: item.country || "", date: item.date ? item.date.slice(0, 10) : "",
-        ticketUrl: item.ticketUrl || "", posterImage: item.posterImage || "",
-        status: item.status || "upcoming",
-      })
-    }
-  }, [item])
 
   const handleChange = useCallback((field, value) => {
     setForm((prev) => ({ ...prev, [field]: value }))

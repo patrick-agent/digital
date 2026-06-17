@@ -1,0 +1,680 @@
+{
+  "nodes": [
+    {
+      "id": "file:scripts/rebuild-shop-catalog.mjs",
+      "type": "file",
+      "name": "rebuild-shop-catalog.mjs",
+      "filePath": "scripts/rebuild-shop-catalog.mjs",
+      "summary": "rebuild-shop-catalog.mjs: Source file, 1 function, 3 imports.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/rebuild-shop-catalog.mjs:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "scripts/rebuild-shop-catalog.mjs",
+      "lineRange": [
+        7,
+        50
+      ],
+      "summary": "Function main with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/shop-data/content-builder.mjs",
+      "type": "file",
+      "name": "content-builder.mjs",
+      "filePath": "scripts/shop-data/content-builder.mjs",
+      "summary": "content-builder.mjs: Source file, 12 functions.",
+      "tags": [
+        "exports"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:scripts/shop-data/content-builder.mjs:slugify",
+      "type": "function",
+      "name": "slugify",
+      "filePath": "scripts/shop-data/content-builder.mjs",
+      "lineRange": [
+        1,
+        9
+      ],
+      "summary": "Function slugify with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/shop-data/content-builder.mjs:formatPrice",
+      "type": "function",
+      "name": "formatPrice",
+      "filePath": "scripts/shop-data/content-builder.mjs",
+      "lineRange": [
+        11,
+        13
+      ],
+      "summary": "Function formatPrice with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/shop-data/content-builder.mjs:decodeHtml",
+      "type": "function",
+      "name": "decodeHtml",
+      "filePath": "scripts/shop-data/content-builder.mjs",
+      "lineRange": [
+        15,
+        22
+      ],
+      "summary": "Function decodeHtml with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/shop-data/content-builder.mjs:normalizeImageUrl",
+      "type": "function",
+      "name": "normalizeImageUrl",
+      "filePath": "scripts/shop-data/content-builder.mjs",
+      "lineRange": [
+        24,
+        29
+      ],
+      "summary": "Function normalizeImageUrl with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/shop-data/content-builder.mjs:uniq",
+      "type": "function",
+      "name": "uniq",
+      "filePath": "scripts/shop-data/content-builder.mjs",
+      "lineRange": [
+        31,
+        33
+      ],
+      "summary": "Function uniq with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/shop-data/content-builder.mjs:joinArticleLinks",
+      "type": "function",
+      "name": "joinArticleLinks",
+      "filePath": "scripts/shop-data/content-builder.mjs",
+      "lineRange": [
+        35,
+        41
+      ],
+      "summary": "Function joinArticleLinks with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/shop-data/content-builder.mjs:buildDescription",
+      "type": "function",
+      "name": "buildDescription",
+      "filePath": "scripts/shop-data/content-builder.mjs",
+      "lineRange": [
+        43,
+        53
+      ],
+      "summary": "Function buildDescription with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/shop-data/content-builder.mjs:buildWhyRecommend",
+      "type": "function",
+      "name": "buildWhyRecommend",
+      "filePath": "scripts/shop-data/content-builder.mjs",
+      "lineRange": [
+        55,
+        60
+      ],
+      "summary": "Function buildWhyRecommend with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/shop-data/content-builder.mjs:buildPriceNote",
+      "type": "function",
+      "name": "buildPriceNote",
+      "filePath": "scripts/shop-data/content-builder.mjs",
+      "lineRange": [
+        62,
+        70
+      ],
+      "summary": "Function buildPriceNote with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/shop-data/content-builder.mjs:buildSeoTitle",
+      "type": "function",
+      "name": "buildSeoTitle",
+      "filePath": "scripts/shop-data/content-builder.mjs",
+      "lineRange": [
+        72,
+        74
+      ],
+      "summary": "Function buildSeoTitle with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/shop-data/content-builder.mjs:buildSeoDescription",
+      "type": "function",
+      "name": "buildSeoDescription",
+      "filePath": "scripts/shop-data/content-builder.mjs",
+      "lineRange": [
+        76,
+        78
+      ],
+      "summary": "Function buildSeoDescription with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/shop-data/content-builder.mjs:buildFaq",
+      "type": "function",
+      "name": "buildFaq",
+      "filePath": "scripts/shop-data/content-builder.mjs",
+      "lineRange": [
+        80,
+        214
+      ],
+      "summary": "Function buildFaq with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:scripts/shop-data/products.mjs",
+      "type": "file",
+      "name": "products.mjs",
+      "filePath": "scripts/shop-data/products.mjs",
+      "summary": "products.mjs: Source file, 1 function.",
+      "tags": [],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:scripts/shop-data/products.mjs:blog",
+      "type": "function",
+      "name": "blog",
+      "filePath": "scripts/shop-data/products.mjs",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "Function blog with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/shop-data/shopee-scraper.mjs",
+      "type": "file",
+      "name": "shopee-scraper.mjs",
+      "filePath": "scripts/shop-data/shopee-scraper.mjs",
+      "summary": "shopee-scraper.mjs: Source file, 6 functions, 1 import.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/shop-data/shopee-scraper.mjs:parsePrice",
+      "type": "function",
+      "name": "parsePrice",
+      "filePath": "scripts/shop-data/shopee-scraper.mjs",
+      "lineRange": [
+        3,
+        9
+      ],
+      "summary": "Function parsePrice with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/shop-data/shopee-scraper.mjs:parseJsonLdBlocks",
+      "type": "function",
+      "name": "parseJsonLdBlocks",
+      "filePath": "scripts/shop-data/shopee-scraper.mjs",
+      "lineRange": [
+        11,
+        24
+      ],
+      "summary": "Function parseJsonLdBlocks with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/shop-data/shopee-scraper.mjs:flattenNodes",
+      "type": "function",
+      "name": "flattenNodes",
+      "filePath": "scripts/shop-data/shopee-scraper.mjs",
+      "lineRange": [
+        26,
+        33
+      ],
+      "summary": "Function flattenNodes with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/shop-data/shopee-scraper.mjs:findProductSchema",
+      "type": "function",
+      "name": "findProductSchema",
+      "filePath": "scripts/shop-data/shopee-scraper.mjs",
+      "lineRange": [
+        35,
+        42
+      ],
+      "summary": "Function findProductSchema with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/shop-data/shopee-scraper.mjs:extractShopeeData",
+      "type": "function",
+      "name": "extractShopeeData",
+      "filePath": "scripts/shop-data/shopee-scraper.mjs",
+      "lineRange": [
+        44,
+        66
+      ],
+      "summary": "Function extractShopeeData with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/shop-data/shopee-scraper.mjs:fetchShopeeMeta",
+      "type": "function",
+      "name": "fetchShopeeMeta",
+      "filePath": "scripts/shop-data/shopee-scraper.mjs",
+      "lineRange": [
+        68,
+        92
+      ],
+      "summary": "Function fetchShopeeMeta with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:scripts/rebuild-shop-catalog.mjs",
+      "target": "function:scripts/rebuild-shop-catalog.mjs:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/rebuild-shop-catalog.mjs",
+      "target": "file:scripts/shop-data/content-builder.mjs",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:scripts/rebuild-shop-catalog.mjs",
+      "target": "file:scripts/shop-data/products.mjs",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:scripts/rebuild-shop-catalog.mjs",
+      "target": "file:scripts/shop-data/shopee-scraper.mjs",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:scripts/shop-data/content-builder.mjs",
+      "target": "function:scripts/shop-data/content-builder.mjs:slugify",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/shop-data/content-builder.mjs",
+      "target": "function:scripts/shop-data/content-builder.mjs:slugify",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/shop-data/content-builder.mjs",
+      "target": "function:scripts/shop-data/content-builder.mjs:formatPrice",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/shop-data/content-builder.mjs",
+      "target": "function:scripts/shop-data/content-builder.mjs:formatPrice",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/shop-data/content-builder.mjs",
+      "target": "function:scripts/shop-data/content-builder.mjs:decodeHtml",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/shop-data/content-builder.mjs",
+      "target": "function:scripts/shop-data/content-builder.mjs:decodeHtml",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/shop-data/content-builder.mjs",
+      "target": "function:scripts/shop-data/content-builder.mjs:normalizeImageUrl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/shop-data/content-builder.mjs",
+      "target": "function:scripts/shop-data/content-builder.mjs:normalizeImageUrl",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/shop-data/content-builder.mjs",
+      "target": "function:scripts/shop-data/content-builder.mjs:uniq",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/shop-data/content-builder.mjs",
+      "target": "function:scripts/shop-data/content-builder.mjs:uniq",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/shop-data/content-builder.mjs",
+      "target": "function:scripts/shop-data/content-builder.mjs:joinArticleLinks",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/shop-data/content-builder.mjs",
+      "target": "function:scripts/shop-data/content-builder.mjs:buildDescription",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/shop-data/content-builder.mjs",
+      "target": "function:scripts/shop-data/content-builder.mjs:buildDescription",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/shop-data/content-builder.mjs",
+      "target": "function:scripts/shop-data/content-builder.mjs:buildWhyRecommend",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/shop-data/content-builder.mjs",
+      "target": "function:scripts/shop-data/content-builder.mjs:buildWhyRecommend",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/shop-data/content-builder.mjs",
+      "target": "function:scripts/shop-data/content-builder.mjs:buildPriceNote",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/shop-data/content-builder.mjs",
+      "target": "function:scripts/shop-data/content-builder.mjs:buildPriceNote",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/shop-data/content-builder.mjs",
+      "target": "function:scripts/shop-data/content-builder.mjs:buildSeoTitle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/shop-data/content-builder.mjs",
+      "target": "function:scripts/shop-data/content-builder.mjs:buildSeoTitle",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/shop-data/content-builder.mjs",
+      "target": "function:scripts/shop-data/content-builder.mjs:buildSeoDescription",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/shop-data/content-builder.mjs",
+      "target": "function:scripts/shop-data/content-builder.mjs:buildSeoDescription",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/shop-data/content-builder.mjs",
+      "target": "function:scripts/shop-data/content-builder.mjs:buildFaq",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/shop-data/content-builder.mjs",
+      "target": "function:scripts/shop-data/content-builder.mjs:buildFaq",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/shop-data/content-builder.mjs",
+      "target": "function:scripts/shop-data/content-builder.mjs:decodeHtml",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/shop-data/content-builder.mjs",
+      "target": "function:scripts/shop-data/content-builder.mjs:joinArticleLinks",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/shop-data/content-builder.mjs",
+      "target": "function:scripts/shop-data/content-builder.mjs:formatPrice",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/shop-data/content-builder.mjs",
+      "target": "function:scripts/shop-data/content-builder.mjs:joinArticleLinks",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/shop-data/products.mjs",
+      "target": "function:scripts/shop-data/products.mjs:blog",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/shop-data/products.mjs",
+      "target": "function:scripts/shop-data/products.mjs:blog",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/shop-data/shopee-scraper.mjs",
+      "target": "function:scripts/shop-data/shopee-scraper.mjs:parsePrice",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/shop-data/shopee-scraper.mjs",
+      "target": "function:scripts/shop-data/shopee-scraper.mjs:parseJsonLdBlocks",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/shop-data/shopee-scraper.mjs",
+      "target": "function:scripts/shop-data/shopee-scraper.mjs:flattenNodes",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/shop-data/shopee-scraper.mjs",
+      "target": "function:scripts/shop-data/shopee-scraper.mjs:findProductSchema",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/shop-data/shopee-scraper.mjs",
+      "target": "function:scripts/shop-data/shopee-scraper.mjs:extractShopeeData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/shop-data/shopee-scraper.mjs",
+      "target": "function:scripts/shop-data/shopee-scraper.mjs:fetchShopeeMeta",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/shop-data/shopee-scraper.mjs",
+      "target": "function:scripts/shop-data/shopee-scraper.mjs:fetchShopeeMeta",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/shop-data/shopee-scraper.mjs",
+      "target": "file:scripts/shop-data/content-builder.mjs",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:scripts/shop-data/shopee-scraper.mjs",
+      "target": "function:scripts/shop-data/shopee-scraper.mjs:parseJsonLdBlocks",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/shop-data/shopee-scraper.mjs",
+      "target": "function:scripts/shop-data/shopee-scraper.mjs:findProductSchema",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/shop-data/shopee-scraper.mjs",
+      "target": "function:scripts/shop-data/shopee-scraper.mjs:parsePrice",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/shop-data/shopee-scraper.mjs",
+      "target": "function:scripts/shop-data/shopee-scraper.mjs:parsePrice",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/shop-data/shopee-scraper.mjs",
+      "target": "function:scripts/shop-data/shopee-scraper.mjs:parsePrice",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/shop-data/shopee-scraper.mjs",
+      "target": "function:scripts/shop-data/shopee-scraper.mjs:extractShopeeData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/shop-data/shopee-scraper.mjs",
+      "target": "function:scripts/shop-data/shopee-scraper.mjs:fetchShopeeMeta",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

@@ -3,6 +3,7 @@ import { Suspense, useEffect, useRef, useState, useCallback } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import CharacterModel from "./CharacterModel";
 import { useCanvasOptimizer } from "@/hooks/useCanvasOptimizer";
+import { useHydrated } from "@/hooks/useHydrated";
 import * as THREE from "three";
 
 function toNorm(clientX, clientY, rect) {
@@ -27,16 +28,11 @@ export default function CharacterCanvas() {
   const wrapRef = useRef(null);
   const canvasRef = useRef(null);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
-  const [scrollProgress, setScrollProgress] = useState(0);
-  const [mounted, setMounted] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(() => (typeof window === "undefined" ? 0 : calcScroll()));
   const [contextLost, setContextLost] = useState(false);
   const scrollTick = useRef(0);
   const { isMobile, isTablet } = useCanvasOptimizer();
-
-  useEffect(() => {
-    setMounted(true);
-    setScrollProgress(calcScroll());
-  }, []);
+  const hydrated = useHydrated();
 
   const onMouseMove = useCallback((e) => {
     const rect = wrapRef.current?.getBoundingClientRect();
@@ -66,7 +62,7 @@ export default function CharacterCanvas() {
   }, []);
 
   useEffect(() => {
-    if (!mounted) return;
+    if (!hydrated) return;
 
     const canvas = canvasRef.current;
     if (canvas) {
@@ -89,9 +85,9 @@ export default function CharacterCanvas() {
       window.removeEventListener("mouseleave", onMouseLeave);
       window.removeEventListener("scroll", onScroll);
     };
-  }, [mounted, onMouseMove, onMouseLeave, onScroll, isMobile, handleContextLoss, handleContextRestore]);
+  }, [hydrated, onMouseMove, onMouseLeave, onScroll, isMobile, handleContextLoss, handleContextRestore]);
 
-  if (!mounted || contextLost) {
+  if (!hydrated || contextLost) {
     return (
       <div
         ref={wrapRef}

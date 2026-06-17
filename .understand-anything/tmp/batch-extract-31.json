@@ -1,0 +1,1560 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/app/about/error.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "AboutError",
+          "startLine": 5,
+          "endLine": 7,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AboutError",
+          "line": 5,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/about/loading.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 5,
+      "nonEmptyLines": 4,
+      "functions": [
+        {
+          "name": "AboutLoading",
+          "startLine": 3,
+          "endLine": 5,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AboutLoading",
+          "line": 3,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/about/page.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 30,
+      "nonEmptyLines": 28,
+      "functions": [
+        {
+          "name": "AboutPage",
+          "startLine": 18,
+          "endLine": 30,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "metadata",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "AboutPage",
+          "line": 18,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(auth)/layout.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 3,
+      "nonEmptyLines": 3,
+      "functions": [
+        {
+          "name": "AuthLayout",
+          "startLine": 1,
+          "endLine": 3,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AuthLayout",
+          "line": 1,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(auth)/login/page.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 140,
+      "nonEmptyLines": 126,
+      "functions": [
+        {
+          "name": "AdminLoginPage",
+          "startLine": 7,
+          "endLine": 140,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AdminLoginPage",
+          "line": 7,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AdminLoginPage",
+          "callee": "useRouter",
+          "lineNumber": 8
+        },
+        {
+          "caller": "AdminLoginPage",
+          "callee": "useState",
+          "lineNumber": 9
+        },
+        {
+          "caller": "AdminLoginPage",
+          "callee": "useState",
+          "lineNumber": 10
+        },
+        {
+          "caller": "AdminLoginPage",
+          "callee": "useState",
+          "lineNumber": 11
+        },
+        {
+          "caller": "AdminLoginPage",
+          "callee": "useState",
+          "lineNumber": 12
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "e.preventDefault",
+          "lineNumber": 55
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setLoading",
+          "lineNumber": 56
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setError",
+          "lineNumber": 57
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "signIn",
+          "lineNumber": 59
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setError",
+          "lineNumber": 66
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setLoading",
+          "lineNumber": 67
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "router.push",
+          "lineNumber": 71
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "router.refresh",
+          "lineNumber": 72
+        },
+        {
+          "caller": "AdminLoginPage",
+          "callee": "setEmail",
+          "lineNumber": 91
+        },
+        {
+          "caller": "AdminLoginPage",
+          "callee": "setPassword",
+          "lineNumber": 106
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/blog/[id]/edit/page.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 27,
+      "nonEmptyLines": 23,
+      "functions": [
+        {
+          "name": "EditBlogPostPage",
+          "startLine": 9,
+          "endLine": 27,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "EditBlogPostPage",
+          "line": 9,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "EditBlogPostPage",
+          "callee": "readPost",
+          "lineNumber": 11
+        },
+        {
+          "caller": "EditBlogPostPage",
+          "callee": "notFound",
+          "lineNumber": 14
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/blog/BlogListClient.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 265,
+      "nonEmptyLines": 249,
+      "functions": [
+        {
+          "name": "SEOScoreBadge",
+          "startLine": 28,
+          "endLine": 32,
+          "params": []
+        },
+        {
+          "name": "ActionIcon",
+          "startLine": 34,
+          "endLine": 45,
+          "params": []
+        },
+        {
+          "name": "ActionLink",
+          "startLine": 47,
+          "endLine": 58,
+          "params": []
+        },
+        {
+          "name": "BlogListClient",
+          "startLine": 60,
+          "endLine": 265,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "BlogListClient",
+          "line": 60,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "SEOScoreBadge",
+          "callee": "calculateSEOScore",
+          "lineNumber": 29
+        },
+        {
+          "caller": "BlogListClient",
+          "callee": "useRouter",
+          "lineNumber": 61
+        },
+        {
+          "caller": "BlogListClient",
+          "callee": "useState",
+          "lineNumber": 62
+        },
+        {
+          "caller": "BlogListClient",
+          "callee": "useState",
+          "lineNumber": 63
+        },
+        {
+          "caller": "BlogListClient",
+          "callee": "useState",
+          "lineNumber": 64
+        },
+        {
+          "caller": "BlogListClient",
+          "callee": "useState",
+          "lineNumber": 65
+        },
+        {
+          "caller": "BlogListClient",
+          "callee": "useState",
+          "lineNumber": 66
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "confirm",
+          "lineNumber": 69
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "fetch",
+          "lineNumber": 70
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "setPosts",
+          "lineNumber": 72
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "prev.filter",
+          "lineNumber": 72
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "router.refresh",
+          "lineNumber": 73
+        },
+        {
+          "caller": "handleDuplicate",
+          "callee": "fetch",
+          "lineNumber": 78
+        },
+        {
+          "caller": "handleDuplicate",
+          "callee": "res.json",
+          "lineNumber": 80
+        },
+        {
+          "caller": "handleDuplicate",
+          "callee": "router.push",
+          "lineNumber": 81
+        },
+        {
+          "caller": "handleDuplicate",
+          "callee": "router.refresh",
+          "lineNumber": 82
+        },
+        {
+          "caller": "BlogListClient",
+          "callee": "posts.filter",
+          "lineNumber": 86
+        },
+        {
+          "caller": "BlogListClient",
+          "callee": "post.title.toLowerCase().includes",
+          "lineNumber": 87
+        },
+        {
+          "caller": "BlogListClient",
+          "callee": "post.title.toLowerCase",
+          "lineNumber": 87
+        },
+        {
+          "caller": "BlogListClient",
+          "callee": "search.toLowerCase",
+          "lineNumber": 87
+        },
+        {
+          "caller": "BlogListClient",
+          "callee": "Math.max",
+          "lineNumber": 93
+        },
+        {
+          "caller": "BlogListClient",
+          "callee": "Math.ceil",
+          "lineNumber": 93
+        },
+        {
+          "caller": "BlogListClient",
+          "callee": "Math.min",
+          "lineNumber": 94
+        },
+        {
+          "caller": "BlogListClient",
+          "callee": "filtered.slice",
+          "lineNumber": 97
+        },
+        {
+          "caller": "BlogListClient",
+          "callee": "setSearch",
+          "lineNumber": 109
+        },
+        {
+          "caller": "BlogListClient",
+          "callee": "setCurrentPage",
+          "lineNumber": 110
+        },
+        {
+          "caller": "BlogListClient",
+          "callee": "setPersonaFilter",
+          "lineNumber": 119
+        },
+        {
+          "caller": "BlogListClient",
+          "callee": "setCurrentPage",
+          "lineNumber": 120
+        },
+        {
+          "caller": "BlogListClient",
+          "callee": "setStatusFilter",
+          "lineNumber": 131
+        },
+        {
+          "caller": "BlogListClient",
+          "callee": "setCurrentPage",
+          "lineNumber": 132
+        },
+        {
+          "caller": "BlogListClient",
+          "callee": "paginatedPosts.map",
+          "lineNumber": 168
+        },
+        {
+          "caller": "BlogListClient",
+          "callee": "new Date(post.updatedAt).toLocaleDateString",
+          "lineNumber": 203
+        },
+        {
+          "caller": "BlogListClient",
+          "callee": "handleDuplicate",
+          "lineNumber": 216
+        },
+        {
+          "caller": "BlogListClient",
+          "callee": "handleDelete",
+          "lineNumber": 220
+        },
+        {
+          "caller": "BlogListClient",
+          "callee": "Math.min",
+          "lineNumber": 238
+        },
+        {
+          "caller": "BlogListClient",
+          "callee": "setCurrentPage",
+          "lineNumber": 243
+        },
+        {
+          "caller": "BlogListClient",
+          "callee": "Math.max",
+          "lineNumber": 243
+        },
+        {
+          "caller": "BlogListClient",
+          "callee": "setCurrentPage",
+          "lineNumber": 254
+        },
+        {
+          "caller": "BlogListClient",
+          "callee": "Math.min",
+          "lineNumber": 254
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 4,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/blog/new/page.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 14,
+      "functions": [
+        {
+          "name": "NewBlogPostPage",
+          "startLine": 5,
+          "endLine": 15,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "NewBlogPostPage",
+          "line": 5,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/blog/page.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 36,
+      "nonEmptyLines": 31,
+      "functions": [
+        {
+          "name": "AdminBlogPage",
+          "startLine": 10,
+          "endLine": 36,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "AdminBlogPage",
+          "line": 10,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AdminBlogPage",
+          "callee": "readPosts",
+          "lineNumber": 16
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/case-studies/[id]/edit/page.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 9,
+      "functions": [
+        {
+          "name": "EditCaseStudiesPage",
+          "startLine": 6,
+          "endLine": 11,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "EditCaseStudiesPage",
+          "line": 6,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "EditCaseStudiesPage",
+          "callee": "readCaseStudy",
+          "lineNumber": 8
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/case-studies/CaseStudiesListClient.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 81,
+      "nonEmptyLines": 74,
+      "functions": [
+        {
+          "name": "CaseStudiesListClient",
+          "startLine": 14,
+          "endLine": 81,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "CaseStudiesListClient",
+          "line": 14,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "CaseStudiesListClient",
+          "callee": "useRouter",
+          "lineNumber": 15
+        },
+        {
+          "caller": "CaseStudiesListClient",
+          "callee": "useState",
+          "lineNumber": 16
+        },
+        {
+          "caller": "CaseStudiesListClient",
+          "callee": "useState",
+          "lineNumber": 17
+        },
+        {
+          "caller": "CaseStudiesListClient",
+          "callee": "useState",
+          "lineNumber": 18
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "confirm",
+          "lineNumber": 21
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "fetch",
+          "lineNumber": 22
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "setItems",
+          "lineNumber": 23
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "prev.filter",
+          "lineNumber": 23
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "router.refresh",
+          "lineNumber": 23
+        },
+        {
+          "caller": "CaseStudiesListClient",
+          "callee": "items.filter",
+          "lineNumber": 26
+        },
+        {
+          "caller": "CaseStudiesListClient",
+          "callee": "item.title.toLowerCase().includes",
+          "lineNumber": 27
+        },
+        {
+          "caller": "CaseStudiesListClient",
+          "callee": "item.title.toLowerCase",
+          "lineNumber": 27
+        },
+        {
+          "caller": "CaseStudiesListClient",
+          "callee": "search.toLowerCase",
+          "lineNumber": 27
+        },
+        {
+          "caller": "CaseStudiesListClient",
+          "callee": "item.clientName?.toLowerCase().includes",
+          "lineNumber": 27
+        },
+        {
+          "caller": "CaseStudiesListClient",
+          "callee": "item.clientName?.toLowerCase",
+          "lineNumber": 27
+        },
+        {
+          "caller": "CaseStudiesListClient",
+          "callee": "search.toLowerCase",
+          "lineNumber": 27
+        },
+        {
+          "caller": "CaseStudiesListClient",
+          "callee": "setSearch",
+          "lineNumber": 37
+        },
+        {
+          "caller": "CaseStudiesListClient",
+          "callee": "setStatusFilter",
+          "lineNumber": 39
+        },
+        {
+          "caller": "CaseStudiesListClient",
+          "callee": "filtered.map",
+          "lineNumber": 61
+        },
+        {
+          "caller": "CaseStudiesListClient",
+          "callee": "handleDelete",
+          "lineNumber": 70
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/case-studies/new/page.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "NewCaseStudiesPage",
+          "startLine": 5,
+          "endLine": 7,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "NewCaseStudiesPage",
+          "line": 5,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/case-studies/page.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 30,
+      "nonEmptyLines": 27,
+      "functions": [
+        {
+          "name": "AdminCaseStudiesPage",
+          "startLine": 8,
+          "endLine": 30,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "AdminCaseStudiesPage",
+          "line": 8,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AdminCaseStudiesPage",
+          "callee": "readCaseStudies",
+          "lineNumber": 10
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/dashboard/page.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 221,
+      "nonEmptyLines": 207,
+      "functions": [
+        {
+          "name": "AdminDashboardPage",
+          "startLine": 28,
+          "endLine": 221,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "AdminDashboardPage",
+          "line": 28,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AdminDashboardPage",
+          "callee": "readPosts",
+          "lineNumber": 29
+        },
+        {
+          "caller": "AdminDashboardPage",
+          "callee": "readProducts",
+          "lineNumber": 30
+        },
+        {
+          "caller": "AdminDashboardPage",
+          "callee": "readEvents",
+          "lineNumber": 31
+        },
+        {
+          "caller": "AdminDashboardPage",
+          "callee": "readSubscribers",
+          "lineNumber": 32
+        },
+        {
+          "caller": "AdminDashboardPage",
+          "callee": "readMusic",
+          "lineNumber": 33
+        },
+        {
+          "caller": "AdminDashboardPage",
+          "callee": "readServices",
+          "lineNumber": 34
+        },
+        {
+          "caller": "AdminDashboardPage",
+          "callee": "readCaseStudies",
+          "lineNumber": 35
+        },
+        {
+          "caller": "AdminDashboardPage",
+          "callee": "readGallery",
+          "lineNumber": 36
+        },
+        {
+          "caller": "AdminDashboardPage",
+          "callee": "allPosts.filter",
+          "lineNumber": 38
+        },
+        {
+          "caller": "AdminDashboardPage",
+          "callee": "products.filter",
+          "lineNumber": 40
+        },
+        {
+          "caller": "AdminDashboardPage",
+          "callee": "events.filter",
+          "lineNumber": 41
+        },
+        {
+          "caller": "AdminDashboardPage",
+          "callee": "upcomingEvents.slice",
+          "lineNumber": 42
+        },
+        {
+          "caller": "AdminDashboardPage",
+          "callee": "subscribers.filter",
+          "lineNumber": 43
+        },
+        {
+          "caller": "AdminDashboardPage",
+          "callee": "now.getTime",
+          "lineNumber": 45
+        },
+        {
+          "caller": "AdminDashboardPage",
+          "callee": "subscribers.filter",
+          "lineNumber": 46
+        },
+        {
+          "caller": "AdminDashboardPage",
+          "callee": "musicItems.filter",
+          "lineNumber": 49
+        },
+        {
+          "caller": "AdminDashboardPage",
+          "callee": "services.filter",
+          "lineNumber": 50
+        },
+        {
+          "caller": "AdminDashboardPage",
+          "callee": "caseStudies.filter",
+          "lineNumber": 51
+        },
+        {
+          "caller": "AdminDashboardPage",
+          "callee": "stats.map",
+          "lineNumber": 86
+        },
+        {
+          "caller": "AdminDashboardPage",
+          "callee": "nextThreeEvents.map",
+          "lineNumber": 104
+        },
+        {
+          "caller": "AdminDashboardPage",
+          "callee": "new Date(event.date).toLocaleDateString",
+          "lineNumber": 114
+        },
+        {
+          "caller": "AdminDashboardPage",
+          "callee": "quickActions.map",
+          "lineNumber": 143
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/error.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "AdminError",
+          "startLine": 5,
+          "endLine": 7,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AdminError",
+          "line": 5,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/events/[id]/edit/page.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 9,
+      "functions": [
+        {
+          "name": "EditEventsPage",
+          "startLine": 6,
+          "endLine": 11,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "EditEventsPage",
+          "line": 6,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "EditEventsPage",
+          "callee": "readEvent",
+          "lineNumber": 8
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/events/EventsListClient.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 86,
+      "nonEmptyLines": 79,
+      "functions": [
+        {
+          "name": "EventsListClient",
+          "startLine": 15,
+          "endLine": 86,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "EventsListClient",
+          "line": 15,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "EventsListClient",
+          "callee": "useRouter",
+          "lineNumber": 16
+        },
+        {
+          "caller": "EventsListClient",
+          "callee": "useState",
+          "lineNumber": 17
+        },
+        {
+          "caller": "EventsListClient",
+          "callee": "useState",
+          "lineNumber": 18
+        },
+        {
+          "caller": "EventsListClient",
+          "callee": "useState",
+          "lineNumber": 19
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "confirm",
+          "lineNumber": 22
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "fetch",
+          "lineNumber": 23
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "setItems",
+          "lineNumber": 24
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "prev.filter",
+          "lineNumber": 24
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "router.refresh",
+          "lineNumber": 24
+        },
+        {
+          "caller": "EventsListClient",
+          "callee": "items.filter",
+          "lineNumber": 27
+        },
+        {
+          "caller": "EventsListClient",
+          "callee": "item.eventName.toLowerCase().includes",
+          "lineNumber": 28
+        },
+        {
+          "caller": "EventsListClient",
+          "callee": "item.eventName.toLowerCase",
+          "lineNumber": 28
+        },
+        {
+          "caller": "EventsListClient",
+          "callee": "search.toLowerCase",
+          "lineNumber": 28
+        },
+        {
+          "caller": "EventsListClient",
+          "callee": "item.city?.toLowerCase().includes",
+          "lineNumber": 28
+        },
+        {
+          "caller": "EventsListClient",
+          "callee": "item.city?.toLowerCase",
+          "lineNumber": 28
+        },
+        {
+          "caller": "EventsListClient",
+          "callee": "search.toLowerCase",
+          "lineNumber": 28
+        },
+        {
+          "caller": "EventsListClient",
+          "callee": "setSearch",
+          "lineNumber": 38
+        },
+        {
+          "caller": "EventsListClient",
+          "callee": "setStatusFilter",
+          "lineNumber": 40
+        },
+        {
+          "caller": "EventsListClient",
+          "callee": "filtered.map",
+          "lineNumber": 64
+        },
+        {
+          "caller": "EventsListClient",
+          "callee": "new Date(item.date).toLocaleDateString",
+          "lineNumber": 69
+        },
+        {
+          "caller": "EventsListClient",
+          "callee": "handleDelete",
+          "lineNumber": 75
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/events/new/page.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "NewEventsPage",
+          "startLine": 5,
+          "endLine": 7,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "NewEventsPage",
+          "line": 5,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/events/page.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 30,
+      "nonEmptyLines": 27,
+      "functions": [
+        {
+          "name": "AdminEventsPage",
+          "startLine": 8,
+          "endLine": 30,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "AdminEventsPage",
+          "line": 8,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AdminEventsPage",
+          "callee": "readEvents",
+          "lineNumber": 10
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/gallery/[id]/edit/page.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 9,
+      "functions": [
+        {
+          "name": "EditGalleryPage",
+          "startLine": 6,
+          "endLine": 11,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "EditGalleryPage",
+          "line": 6,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "EditGalleryPage",
+          "callee": "readGalleryItem",
+          "lineNumber": 8
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/gallery/GalleryListClient.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 91,
+      "nonEmptyLines": 84,
+      "functions": [
+        {
+          "name": "GalleryListClient",
+          "startLine": 16,
+          "endLine": 91,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "GalleryListClient",
+          "line": 16,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "GalleryListClient",
+          "callee": "useRouter",
+          "lineNumber": 17
+        },
+        {
+          "caller": "GalleryListClient",
+          "callee": "useState",
+          "lineNumber": 18
+        },
+        {
+          "caller": "GalleryListClient",
+          "callee": "useState",
+          "lineNumber": 19
+        },
+        {
+          "caller": "GalleryListClient",
+          "callee": "useState",
+          "lineNumber": 20
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "confirm",
+          "lineNumber": 23
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "fetch",
+          "lineNumber": 24
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "setItems",
+          "lineNumber": 25
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "prev.filter",
+          "lineNumber": 25
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "router.refresh",
+          "lineNumber": 25
+        },
+        {
+          "caller": "GalleryListClient",
+          "callee": "items.filter",
+          "lineNumber": 28
+        },
+        {
+          "caller": "GalleryListClient",
+          "callee": "item.title.toLowerCase().includes",
+          "lineNumber": 29
+        },
+        {
+          "caller": "GalleryListClient",
+          "callee": "item.title.toLowerCase",
+          "lineNumber": 29
+        },
+        {
+          "caller": "GalleryListClient",
+          "callee": "search.toLowerCase",
+          "lineNumber": 29
+        },
+        {
+          "caller": "GalleryListClient",
+          "callee": "item.caption?.toLowerCase().includes",
+          "lineNumber": 29
+        },
+        {
+          "caller": "GalleryListClient",
+          "callee": "item.caption?.toLowerCase",
+          "lineNumber": 29
+        },
+        {
+          "caller": "GalleryListClient",
+          "callee": "search.toLowerCase",
+          "lineNumber": 29
+        },
+        {
+          "caller": "GalleryListClient",
+          "callee": "setSearch",
+          "lineNumber": 39
+        },
+        {
+          "caller": "GalleryListClient",
+          "callee": "setTypeFilter",
+          "lineNumber": 41
+        },
+        {
+          "caller": "GalleryListClient",
+          "callee": "filtered.map",
+          "lineNumber": 64
+        },
+        {
+          "caller": "GalleryListClient",
+          "callee": "handleDelete",
+          "lineNumber": 79
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/gallery/new/page.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "NewGalleryPage",
+          "startLine": 5,
+          "endLine": 7,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "NewGalleryPage",
+          "line": 5,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/gallery/page.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 30,
+      "nonEmptyLines": 27,
+      "functions": [
+        {
+          "name": "AdminGalleryPage",
+          "startLine": 8,
+          "endLine": 30,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "AdminGalleryPage",
+          "line": 8,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AdminGalleryPage",
+          "callee": "readGallery",
+          "lineNumber": 10
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/layout.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 13,
+      "nonEmptyLines": 10,
+      "functions": [
+        {
+          "name": "DashboardLayout",
+          "startLine": 5,
+          "endLine": 13,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "DashboardLayout",
+          "line": 5,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "DashboardLayout",
+          "callee": "auth",
+          "lineNumber": 6
+        },
+        {
+          "caller": "DashboardLayout",
+          "callee": "redirect",
+          "lineNumber": 9
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/loading.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 5,
+      "nonEmptyLines": 4,
+      "functions": [
+        {
+          "name": "AdminLoading",
+          "startLine": 3,
+          "endLine": 5,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AdminLoading",
+          "line": 3,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    }
+  ]
+}

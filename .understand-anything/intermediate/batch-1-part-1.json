@@ -1,0 +1,1027 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/lib/contract/base.js",
+      "type": "file",
+      "name": "base.js",
+      "filePath": "src/lib/contract/base.js",
+      "summary": "base.js: Source file, 9 functions.",
+      "tags": [
+        "utility",
+        "exports"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/lib/contract/base.js:stringField",
+      "type": "function",
+      "name": "stringField",
+      "filePath": "src/lib/contract/base.js",
+      "lineRange": [
+        15,
+        15
+      ],
+      "summary": "Function stringField with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/contract/base.js:numberField",
+      "type": "function",
+      "name": "numberField",
+      "filePath": "src/lib/contract/base.js",
+      "lineRange": [
+        16,
+        16
+      ],
+      "summary": "Function numberField with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/contract/base.js:booleanField",
+      "type": "function",
+      "name": "booleanField",
+      "filePath": "src/lib/contract/base.js",
+      "lineRange": [
+        17,
+        17
+      ],
+      "summary": "Function booleanField with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/contract/base.js:createListInputSchema",
+      "type": "function",
+      "name": "createListInputSchema",
+      "filePath": "src/lib/contract/base.js",
+      "lineRange": [
+        19,
+        27
+      ],
+      "summary": "Function createListInputSchema with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/contract/base.js:createFailure",
+      "type": "function",
+      "name": "createFailure",
+      "filePath": "src/lib/contract/base.js",
+      "lineRange": [
+        38,
+        43
+      ],
+      "summary": "Function createFailure with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/contract/base.js:createSingleSuccessSchema",
+      "type": "function",
+      "name": "createSingleSuccessSchema",
+      "filePath": "src/lib/contract/base.js",
+      "lineRange": [
+        45,
+        50
+      ],
+      "summary": "Function createSingleSuccessSchema with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/contract/base.js:createListSuccessSchema",
+      "type": "function",
+      "name": "createListSuccessSchema",
+      "filePath": "src/lib/contract/base.js",
+      "lineRange": [
+        52,
+        64
+      ],
+      "summary": "Function createListSuccessSchema with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/contract/base.js:createDeleteSuccessSchema",
+      "type": "function",
+      "name": "createDeleteSuccessSchema",
+      "filePath": "src/lib/contract/base.js",
+      "lineRange": [
+        66,
+        73
+      ],
+      "summary": "Function createDeleteSuccessSchema with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/contract/base.js:safeCatch",
+      "type": "function",
+      "name": "safeCatch",
+      "filePath": "src/lib/contract/base.js",
+      "lineRange": [
+        79,
+        88
+      ],
+      "summary": "Function safeCatch with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/db/media.js",
+      "type": "file",
+      "name": "media.js",
+      "filePath": "src/lib/db/media.js",
+      "summary": "media.js: Source file, 4 functions, 1 import.",
+      "tags": [
+        "utility",
+        "database"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/lib/db/media.js:readMedia",
+      "type": "function",
+      "name": "readMedia",
+      "filePath": "src/lib/db/media.js",
+      "lineRange": [
+        3,
+        25
+      ],
+      "summary": "Function readMedia with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/media.js:createMediaItem",
+      "type": "function",
+      "name": "createMediaItem",
+      "filePath": "src/lib/db/media.js",
+      "lineRange": [
+        27,
+        46
+      ],
+      "summary": "Function createMediaItem with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/media.js:updateMediaItem",
+      "type": "function",
+      "name": "updateMediaItem",
+      "filePath": "src/lib/db/media.js",
+      "lineRange": [
+        48,
+        63
+      ],
+      "summary": "Function updateMediaItem with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/media.js:deleteMediaItem",
+      "type": "function",
+      "name": "deleteMediaItem",
+      "filePath": "src/lib/db/media.js",
+      "lineRange": [
+        65,
+        73
+      ],
+      "summary": "Function deleteMediaItem with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/db/newsletter.js",
+      "type": "file",
+      "name": "newsletter.js",
+      "filePath": "src/lib/db/newsletter.js",
+      "summary": "newsletter.js: Source file, 3 functions, 1 import.",
+      "tags": [
+        "utility",
+        "database"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/lib/db/newsletter.js:readSubscribers",
+      "type": "function",
+      "name": "readSubscribers",
+      "filePath": "src/lib/db/newsletter.js",
+      "lineRange": [
+        3,
+        25
+      ],
+      "summary": "Function readSubscribers with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/newsletter.js:unsubscribeSubscriber",
+      "type": "function",
+      "name": "unsubscribeSubscriber",
+      "filePath": "src/lib/db/newsletter.js",
+      "lineRange": [
+        27,
+        36
+      ],
+      "summary": "Function unsubscribeSubscriber with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/newsletter.js:addSubscriber",
+      "type": "function",
+      "name": "addSubscriber",
+      "filePath": "src/lib/db/newsletter.js",
+      "lineRange": [
+        38,
+        58
+      ],
+      "summary": "Function addSubscriber with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/db/press-kit.js",
+      "type": "file",
+      "name": "press-kit.js",
+      "filePath": "src/lib/db/press-kit.js",
+      "summary": "press-kit.js: Source file, 2 functions, 1 import.",
+      "tags": [
+        "utility",
+        "database"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/press-kit.js:readPressKit",
+      "type": "function",
+      "name": "readPressKit",
+      "filePath": "src/lib/db/press-kit.js",
+      "lineRange": [
+        3,
+        16
+      ],
+      "summary": "Function readPressKit with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/press-kit.js:updatePressKit",
+      "type": "function",
+      "name": "updatePressKit",
+      "filePath": "src/lib/db/press-kit.js",
+      "lineRange": [
+        18,
+        23
+      ],
+      "summary": "Function updatePressKit with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/db/seo.js",
+      "type": "file",
+      "name": "seo.js",
+      "filePath": "src/lib/db/seo.js",
+      "summary": "seo.js: Source file, 3 functions, 1 import.",
+      "tags": [
+        "utility",
+        "database"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/seo.js:readSEOMetadata",
+      "type": "function",
+      "name": "readSEOMetadata",
+      "filePath": "src/lib/db/seo.js",
+      "lineRange": [
+        3,
+        7
+      ],
+      "summary": "Function readSEOMetadata with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/seo.js:updateSEOMetadata",
+      "type": "function",
+      "name": "updateSEOMetadata",
+      "filePath": "src/lib/db/seo.js",
+      "lineRange": [
+        9,
+        21
+      ],
+      "summary": "Function updateSEOMetadata with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db/seo.js:getAllRoutes",
+      "type": "function",
+      "name": "getAllRoutes",
+      "filePath": "src/lib/db/seo.js",
+      "lineRange": [
+        23,
+        36
+      ],
+      "summary": "Function getAllRoutes with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/media/service/handler.js",
+      "type": "file",
+      "name": "handler.js",
+      "filePath": "src/lib/media/service/handler.js",
+      "summary": "handler.js: Source file, 1 class, 3 imports.",
+      "tags": [
+        "service",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/lib/media/service/handler.js:MediaHandler",
+      "type": "class",
+      "name": "MediaHandler",
+      "filePath": "src/lib/media/service/handler.js",
+      "lineRange": [
+        11,
+        68
+      ],
+      "summary": "Class MediaHandler with 5 methods and 0 properties.",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/lib/media/service/index.js",
+      "type": "file",
+      "name": "index.js",
+      "filePath": "src/lib/media/service/index.js",
+      "summary": "index.js: Module entry point, 5 functions, 1 import.",
+      "tags": [
+        "barrel",
+        "entry-point",
+        "service",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/media/service/index.js:listMedia",
+      "type": "function",
+      "name": "listMedia",
+      "filePath": "src/lib/media/service/index.js",
+      "lineRange": [
+        5,
+        5
+      ],
+      "summary": "Function listMedia with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/media/service/index.js:getMedia",
+      "type": "function",
+      "name": "getMedia",
+      "filePath": "src/lib/media/service/index.js",
+      "lineRange": [
+        6,
+        6
+      ],
+      "summary": "Function getMedia with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/media/service/index.js:createMedia",
+      "type": "function",
+      "name": "createMedia",
+      "filePath": "src/lib/media/service/index.js",
+      "lineRange": [
+        7,
+        7
+      ],
+      "summary": "Function createMedia with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/media/service/index.js:updateMedia",
+      "type": "function",
+      "name": "updateMedia",
+      "filePath": "src/lib/media/service/index.js",
+      "lineRange": [
+        8,
+        8
+      ],
+      "summary": "Function updateMedia with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/media/service/index.js:deleteMedia",
+      "type": "function",
+      "name": "deleteMedia",
+      "filePath": "src/lib/media/service/index.js",
+      "lineRange": [
+        9,
+        9
+      ],
+      "summary": "Function deleteMedia with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/media/service/spec.js",
+      "type": "file",
+      "name": "spec.js",
+      "filePath": "src/lib/media/service/spec.js",
+      "summary": "spec.js: Source file, 1 import.",
+      "tags": [
+        "service",
+        "utility",
+        "exports",
+        "type-definition"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/lib/newsletter/service/handler.js",
+      "type": "file",
+      "name": "handler.js",
+      "filePath": "src/lib/newsletter/service/handler.js",
+      "summary": "handler.js: Source file, 1 class, 3 imports.",
+      "tags": [
+        "service",
+        "utility"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/lib/contract/base.js",
+      "target": "function:src/lib/contract/base.js:stringField",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/contract/base.js",
+      "target": "function:src/lib/contract/base.js:stringField",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/contract/base.js",
+      "target": "function:src/lib/contract/base.js:numberField",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/contract/base.js",
+      "target": "function:src/lib/contract/base.js:numberField",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/contract/base.js",
+      "target": "function:src/lib/contract/base.js:booleanField",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/contract/base.js",
+      "target": "function:src/lib/contract/base.js:booleanField",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/contract/base.js",
+      "target": "function:src/lib/contract/base.js:createListInputSchema",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/contract/base.js",
+      "target": "function:src/lib/contract/base.js:createListInputSchema",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/contract/base.js",
+      "target": "function:src/lib/contract/base.js:createFailure",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/contract/base.js",
+      "target": "function:src/lib/contract/base.js:createFailure",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/contract/base.js",
+      "target": "function:src/lib/contract/base.js:createSingleSuccessSchema",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/contract/base.js",
+      "target": "function:src/lib/contract/base.js:createSingleSuccessSchema",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/contract/base.js",
+      "target": "function:src/lib/contract/base.js:createListSuccessSchema",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/contract/base.js",
+      "target": "function:src/lib/contract/base.js:createListSuccessSchema",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/contract/base.js",
+      "target": "function:src/lib/contract/base.js:createDeleteSuccessSchema",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/contract/base.js",
+      "target": "function:src/lib/contract/base.js:createDeleteSuccessSchema",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/contract/base.js",
+      "target": "function:src/lib/contract/base.js:safeCatch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/contract/base.js",
+      "target": "function:src/lib/contract/base.js:safeCatch",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/contract/base.js",
+      "target": "function:src/lib/contract/base.js:createFailure",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/contract/base.js",
+      "target": "function:src/lib/contract/base.js:createFailure",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/media.js",
+      "target": "function:src/lib/db/media.js:readMedia",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/media.js",
+      "target": "function:src/lib/db/media.js:readMedia",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/media.js",
+      "target": "function:src/lib/db/media.js:createMediaItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/media.js",
+      "target": "function:src/lib/db/media.js:createMediaItem",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/media.js",
+      "target": "function:src/lib/db/media.js:updateMediaItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/media.js",
+      "target": "function:src/lib/db/media.js:updateMediaItem",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/media.js",
+      "target": "function:src/lib/db/media.js:deleteMediaItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/media.js",
+      "target": "function:src/lib/db/media.js:deleteMediaItem",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/media.js",
+      "target": "file:src/lib/db/io.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/db/newsletter.js",
+      "target": "function:src/lib/db/newsletter.js:readSubscribers",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/newsletter.js",
+      "target": "function:src/lib/db/newsletter.js:readSubscribers",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/newsletter.js",
+      "target": "function:src/lib/db/newsletter.js:unsubscribeSubscriber",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/newsletter.js",
+      "target": "function:src/lib/db/newsletter.js:unsubscribeSubscriber",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/newsletter.js",
+      "target": "function:src/lib/db/newsletter.js:addSubscriber",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/newsletter.js",
+      "target": "function:src/lib/db/newsletter.js:addSubscriber",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/newsletter.js",
+      "target": "file:src/lib/db/io.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/db/press-kit.js",
+      "target": "function:src/lib/db/press-kit.js:readPressKit",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/press-kit.js",
+      "target": "function:src/lib/db/press-kit.js:readPressKit",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/press-kit.js",
+      "target": "function:src/lib/db/press-kit.js:updatePressKit",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/press-kit.js",
+      "target": "function:src/lib/db/press-kit.js:updatePressKit",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/press-kit.js",
+      "target": "file:src/lib/db/io.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/db/press-kit.js",
+      "target": "function:src/lib/db/press-kit.js:readPressKit",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/seo.js",
+      "target": "function:src/lib/db/seo.js:readSEOMetadata",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/seo.js",
+      "target": "function:src/lib/db/seo.js:readSEOMetadata",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/seo.js",
+      "target": "function:src/lib/db/seo.js:updateSEOMetadata",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/seo.js",
+      "target": "function:src/lib/db/seo.js:updateSEOMetadata",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/seo.js",
+      "target": "function:src/lib/db/seo.js:getAllRoutes",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db/seo.js",
+      "target": "function:src/lib/db/seo.js:getAllRoutes",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db/seo.js",
+      "target": "file:src/lib/db/io.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/db/seo.js",
+      "target": "function:src/lib/db/seo.js:readSEOMetadata",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/media/service/handler.js",
+      "target": "class:src/lib/media/service/handler.js:MediaHandler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/media/service/handler.js",
+      "target": "class:src/lib/media/service/handler.js:MediaHandler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/media/service/handler.js",
+      "target": "file:src/lib/contract/base.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/media/service/handler.js",
+      "target": "file:src/lib/db/media.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/media/service/handler.js",
+      "target": "file:src/lib/media/service/spec.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/media/service/index.js",
+      "target": "function:src/lib/media/service/index.js:listMedia",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/media/service/index.js",
+      "target": "function:src/lib/media/service/index.js:listMedia",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/media/service/index.js",
+      "target": "function:src/lib/media/service/index.js:getMedia",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/media/service/index.js",
+      "target": "function:src/lib/media/service/index.js:getMedia",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/media/service/index.js",
+      "target": "function:src/lib/media/service/index.js:createMedia",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/media/service/index.js",
+      "target": "function:src/lib/media/service/index.js:createMedia",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/media/service/index.js",
+      "target": "function:src/lib/media/service/index.js:updateMedia",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/media/service/index.js",
+      "target": "function:src/lib/media/service/index.js:updateMedia",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/media/service/index.js",
+      "target": "function:src/lib/media/service/index.js:deleteMedia",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/media/service/index.js",
+      "target": "function:src/lib/media/service/index.js:deleteMedia",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/media/service/index.js",
+      "target": "file:src/lib/media/service/handler.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/media/service/spec.js",
+      "target": "file:src/lib/contract/base.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/newsletter/service/handler.js",
+      "target": "class:src/lib/newsletter/service/handler.js:NewsletterHandler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/newsletter/service/handler.js",
+      "target": "class:src/lib/newsletter/service/handler.js:NewsletterHandler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/newsletter/service/handler.js",
+      "target": "file:src/lib/contract/base.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/newsletter/service/handler.js",
+      "target": "file:src/lib/db/newsletter.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/newsletter/service/handler.js",
+      "target": "file:src/lib/newsletter/service/spec.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/components/artist/bio-music/PlatformIcons.tsx",
+      "type": "file",
+      "name": "PlatformIcons.tsx",
+      "filePath": "src/components/artist/bio-music/PlatformIcons.tsx",
+      "summary": "PlatformIcons.tsx: Source file, 2 functions.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/artist/bio-music/PlatformIcons.tsx:AmazonMusicIcon",
+      "type": "function",
+      "name": "AmazonMusicIcon",
+      "filePath": "src/components/artist/bio-music/PlatformIcons.tsx",
+      "lineRange": [
+        8,
+        16
+      ],
+      "summary": "Function AmazonMusicIcon with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/artist/bio-music/PlatformIcons.tsx:DeezerIcon",
+      "type": "function",
+      "name": "DeezerIcon",
+      "filePath": "src/components/artist/bio-music/PlatformIcons.tsx",
+      "lineRange": [
+        18,
+        24
+      ],
+      "summary": "Function DeezerIcon with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/artist/bio-music/PlatformLink.tsx",
+      "type": "file",
+      "name": "PlatformLink.tsx",
+      "filePath": "src/components/artist/bio-music/PlatformLink.tsx",
+      "summary": "PlatformLink.tsx: Source file, 1 function, 2 imports.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/artist/bio-music/PlatformLink.tsx:PlatformLink",
+      "type": "function",
+      "name": "PlatformLink",
+      "filePath": "src/components/artist/bio-music/PlatformLink.tsx",
+      "lineRange": [
+        40,
+        58
+      ],
+      "summary": "Function PlatformLink with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/artist/bio-music/PlatformLinksCard.tsx",
+      "type": "file",
+      "name": "PlatformLinksCard.tsx",
+      "filePath": "src/components/artist/bio-music/PlatformLinksCard.tsx",
+      "summary": "PlatformLinksCard.tsx: Source file, 1 function, 2 imports.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/artist/bio-music/PlatformLinksCard.tsx:PlatformLinksCard",
+      "type": "function",
+      "name": "PlatformLinksCard",
+      "filePath": "src/components/artist/bio-music/PlatformLinksCard.tsx",
+      "lineRange": [
+        13,
+        62
+      ],
+      "summary": "Function PlatformLinksCard with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/components/artist/bio-music/PlatformIcons.tsx",
+      "target": "function:src/components/artist/bio-music/PlatformIcons.tsx:AmazonMusicIcon",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/artist/bio-music/PlatformIcons.tsx",
+      "target": "function:src/components/artist/bio-music/PlatformIcons.tsx:AmazonMusicIcon",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/artist/bio-music/PlatformIcons.tsx",
+      "target": "function:src/components/artist/bio-music/PlatformIcons.tsx:DeezerIcon",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/artist/bio-music/PlatformIcons.tsx",
+      "target": "function:src/components/artist/bio-music/PlatformIcons.tsx:DeezerIcon",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/artist/bio-music/PlatformLink.tsx",
+      "target": "function:src/components/artist/bio-music/PlatformLink.tsx:PlatformLink",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/artist/bio-music/PlatformLink.tsx",
+      "target": "function:src/components/artist/bio-music/PlatformLink.tsx:PlatformLink",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/artist/bio-music/PlatformLink.tsx",
+      "target": "file:src/components/artist/bio-music/PlatformIcons.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/artist/bio-music/PlatformLink.tsx",
+      "target": "file:src/components/artist/bio-music/PlatformLink.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/artist/bio-music/PlatformLinksCard.tsx",
+      "target": "function:src/components/artist/bio-music/PlatformLinksCard.tsx:PlatformLinksCard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/artist/bio-music/PlatformLinksCard.tsx",
+      "target": "function:src/components/artist/bio-music/PlatformLinksCard.tsx:PlatformLinksCard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/artist/bio-music/PlatformLinksCard.tsx",
+      "target": "file:src/components/artist/bio-music/PlatformLink.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/artist/bio-music/PlatformLinksCard.tsx",
+      "target": "file:src/components/artist/bio-music/PlatformLinksCard.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

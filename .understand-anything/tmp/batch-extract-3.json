@@ -1,0 +1,2336 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 10,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "scripts/publish-shopee-affiliate-cluster.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 1778,
+      "nonEmptyLines": 1739,
+      "functions": [
+        {
+          "name": "link",
+          "startLine": 69,
+          "endLine": 69,
+          "params": [
+            "slug",
+            "text"
+          ]
+        },
+        {
+          "name": "escapeHtml",
+          "startLine": 71,
+          "endLine": 77,
+          "params": [
+            "text"
+          ]
+        },
+        {
+          "name": "p",
+          "startLine": 79,
+          "endLine": 81,
+          "params": [
+            "text"
+          ]
+        },
+        {
+          "name": "h2",
+          "startLine": 83,
+          "endLine": 85,
+          "params": [
+            "text"
+          ]
+        },
+        {
+          "name": "h3",
+          "startLine": 87,
+          "endLine": 89,
+          "params": [
+            "text"
+          ]
+        },
+        {
+          "name": "ul",
+          "startLine": 91,
+          "endLine": 93,
+          "params": [
+            "items"
+          ]
+        },
+        {
+          "name": "ol",
+          "startLine": 95,
+          "endLine": 97,
+          "params": [
+            "items"
+          ]
+        },
+        {
+          "name": "table",
+          "startLine": 99,
+          "endLine": 105,
+          "params": [
+            "headers",
+            "rows"
+          ]
+        },
+        {
+          "name": "imageBlock",
+          "startLine": 107,
+          "endLine": 109,
+          "params": [
+            "src",
+            "alt",
+            "caption"
+          ]
+        },
+        {
+          "name": "externalLink",
+          "startLine": 111,
+          "endLine": 113,
+          "params": [
+            "url",
+            "text"
+          ]
+        },
+        {
+          "name": "getAffiliateLink",
+          "startLine": 115,
+          "endLine": 117,
+          "params": [
+            "name"
+          ]
+        },
+        {
+          "name": "renderAffiliateSection",
+          "startLine": 119,
+          "endLine": 128,
+          "params": [
+            "article"
+          ]
+        },
+        {
+          "name": "renderFaq",
+          "startLine": 130,
+          "endLine": 138,
+          "params": []
+        },
+        {
+          "name": "renderRelated",
+          "startLine": 140,
+          "endLine": 143,
+          "params": []
+        },
+        {
+          "name": "renderArticle",
+          "startLine": 145,
+          "endLine": 176,
+          "params": [
+            "article",
+            "images"
+          ]
+        },
+        {
+          "name": "fetchBuffer",
+          "startLine": 178,
+          "endLine": 191,
+          "params": [
+            "url"
+          ]
+        },
+        {
+          "name": "generateFallback",
+          "startLine": 193,
+          "endLine": 215,
+          "params": [
+            "filename",
+            "label",
+            "width",
+            "height"
+          ]
+        },
+        {
+          "name": "createImage",
+          "startLine": 217,
+          "endLine": 237,
+          "params": [
+            "filename",
+            "sourceKey",
+            "label",
+            "width",
+            "height"
+          ]
+        },
+        {
+          "name": "upsertArticle",
+          "startLine": 1738,
+          "endLine": 1768,
+          "params": [
+            "article",
+            "index"
+          ]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "escapeHtml",
+          "callee": "String(text)\n    .replace(/&/g, \"&amp;\")\n    .replace(/</g, \"&lt;\")\n    .replace(/>/g, \"&gt;\")\n    .replace",
+          "lineNumber": 72
+        },
+        {
+          "caller": "escapeHtml",
+          "callee": "String(text)\n    .replace(/&/g, \"&amp;\")\n    .replace(/</g, \"&lt;\")\n    .replace",
+          "lineNumber": 72
+        },
+        {
+          "caller": "escapeHtml",
+          "callee": "String(text)\n    .replace(/&/g, \"&amp;\")\n    .replace",
+          "lineNumber": 72
+        },
+        {
+          "caller": "escapeHtml",
+          "callee": "String(text)\n    .replace",
+          "lineNumber": 72
+        },
+        {
+          "caller": "escapeHtml",
+          "callee": "String",
+          "lineNumber": 72
+        },
+        {
+          "caller": "ul",
+          "callee": "items.map(item => `<li>${item}</li>`).join",
+          "lineNumber": 92
+        },
+        {
+          "caller": "ul",
+          "callee": "items.map",
+          "lineNumber": 92
+        },
+        {
+          "caller": "ol",
+          "callee": "items.map(item => `<li>${item}</li>`).join",
+          "lineNumber": 96
+        },
+        {
+          "caller": "ol",
+          "callee": "items.map",
+          "lineNumber": 96
+        },
+        {
+          "caller": "table",
+          "callee": "headers.map(cell => `<th>${cell}</th>`).join",
+          "lineNumber": 100
+        },
+        {
+          "caller": "table",
+          "callee": "headers.map",
+          "lineNumber": 100
+        },
+        {
+          "caller": "table",
+          "callee": "rows\n    .map(row => `<tr>${row.map(cell => `<td>${cell}</td>`).join(\"\")}</tr>`)\n    .join",
+          "lineNumber": 101
+        },
+        {
+          "caller": "table",
+          "callee": "rows\n    .map",
+          "lineNumber": 101
+        },
+        {
+          "caller": "table",
+          "callee": "row.map(cell => `<td>${cell}</td>`).join",
+          "lineNumber": 102
+        },
+        {
+          "caller": "table",
+          "callee": "row.map",
+          "lineNumber": 102
+        },
+        {
+          "caller": "imageBlock",
+          "callee": "escapeHtml",
+          "lineNumber": 108
+        },
+        {
+          "caller": "imageBlock",
+          "callee": "p",
+          "lineNumber": 108
+        },
+        {
+          "caller": "getAffiliateLink",
+          "callee": "String(name).toLowerCase",
+          "lineNumber": 116
+        },
+        {
+          "caller": "getAffiliateLink",
+          "callee": "String",
+          "lineNumber": 116
+        },
+        {
+          "caller": "renderAffiliateSection",
+          "callee": "names\n    .map(name => ({ name, url: getAffiliateLink(name) }))\n    .filter(item => item.url)\n    .map",
+          "lineNumber": 121
+        },
+        {
+          "caller": "renderAffiliateSection",
+          "callee": "names\n    .map(name => ({ name, url: getAffiliateLink(name) }))\n    .filter",
+          "lineNumber": 121
+        },
+        {
+          "caller": "renderAffiliateSection",
+          "callee": "names\n    .map",
+          "lineNumber": 121
+        },
+        {
+          "caller": "renderAffiliateSection",
+          "callee": "getAffiliateLink",
+          "lineNumber": 122
+        },
+        {
+          "caller": "renderAffiliateSection",
+          "callee": "externalLink",
+          "lineNumber": 124
+        },
+        {
+          "caller": "renderAffiliateSection",
+          "callee": "escapeHtml",
+          "lineNumber": 124
+        },
+        {
+          "caller": "renderAffiliateSection",
+          "callee": "h2",
+          "lineNumber": 127
+        },
+        {
+          "caller": "renderAffiliateSection",
+          "callee": "items.join",
+          "lineNumber": 127
+        },
+        {
+          "caller": "renderFaq",
+          "callee": "h2",
+          "lineNumber": 132
+        },
+        {
+          "caller": "renderFaq",
+          "callee": "parts.push",
+          "lineNumber": 134
+        },
+        {
+          "caller": "renderFaq",
+          "callee": "h3",
+          "lineNumber": 134
+        },
+        {
+          "caller": "renderFaq",
+          "callee": "parts.push",
+          "lineNumber": 135
+        },
+        {
+          "caller": "renderFaq",
+          "callee": "p",
+          "lineNumber": 135
+        },
+        {
+          "caller": "renderFaq",
+          "callee": "parts.join",
+          "lineNumber": 137
+        },
+        {
+          "caller": "renderRelated",
+          "callee": "h2",
+          "lineNumber": 142
+        },
+        {
+          "caller": "renderRelated",
+          "callee": "related.map(item => `<li>${link(item.slug, item.text)}</li>`).join",
+          "lineNumber": 142
+        },
+        {
+          "caller": "renderRelated",
+          "callee": "related.map",
+          "lineNumber": 142
+        },
+        {
+          "caller": "renderRelated",
+          "callee": "link",
+          "lineNumber": 142
+        },
+        {
+          "caller": "renderArticle",
+          "callee": "parts.push",
+          "lineNumber": 148
+        },
+        {
+          "caller": "renderArticle",
+          "callee": "h2",
+          "lineNumber": 148
+        },
+        {
+          "caller": "renderArticle",
+          "callee": "parts.push",
+          "lineNumber": 149
+        },
+        {
+          "caller": "renderArticle",
+          "callee": "p",
+          "lineNumber": 149
+        },
+        {
+          "caller": "renderArticle",
+          "callee": "parts.push",
+          "lineNumber": 150
+        },
+        {
+          "caller": "renderArticle",
+          "callee": "imageBlock",
+          "lineNumber": 150
+        },
+        {
+          "caller": "renderArticle",
+          "callee": "parts.push",
+          "lineNumber": 153
+        },
+        {
+          "caller": "renderArticle",
+          "callee": "h2",
+          "lineNumber": 153
+        },
+        {
+          "caller": "renderArticle",
+          "callee": "parts.push",
+          "lineNumber": 154
+        },
+        {
+          "caller": "renderArticle",
+          "callee": "ul",
+          "lineNumber": 154
+        },
+        {
+          "caller": "renderArticle",
+          "callee": "parts.push",
+          "lineNumber": 157
+        },
+        {
+          "caller": "renderArticle",
+          "callee": "renderAffiliateSection",
+          "lineNumber": 157
+        },
+        {
+          "caller": "renderArticle",
+          "callee": "parts.push",
+          "lineNumber": 160
+        },
+        {
+          "caller": "renderArticle",
+          "callee": "h2",
+          "lineNumber": 160
+        },
+        {
+          "caller": "renderArticle",
+          "callee": "parts.push",
+          "lineNumber": 161
+        },
+        {
+          "caller": "renderArticle",
+          "callee": "table",
+          "lineNumber": 161
+        },
+        {
+          "caller": "renderArticle",
+          "callee": "parts.push",
+          "lineNumber": 165
+        },
+        {
+          "caller": "renderArticle",
+          "callee": "h3",
+          "lineNumber": 165
+        },
+        {
+          "caller": "renderArticle",
+          "callee": "h2",
+          "lineNumber": 165
+        },
+        {
+          "caller": "renderArticle",
+          "callee": "parts.push",
+          "lineNumber": 166
+        },
+        {
+          "caller": "renderArticle",
+          "callee": "p",
+          "lineNumber": 166
+        },
+        {
+          "caller": "renderArticle",
+          "callee": "parts.push",
+          "lineNumber": 167
+        },
+        {
+          "caller": "renderArticle",
+          "callee": "ul",
+          "lineNumber": 167
+        },
+        {
+          "caller": "renderArticle",
+          "callee": "parts.push",
+          "lineNumber": 168
+        },
+        {
+          "caller": "renderArticle",
+          "callee": "ol",
+          "lineNumber": 168
+        },
+        {
+          "caller": "renderArticle",
+          "callee": "parts.push",
+          "lineNumber": 169
+        },
+        {
+          "caller": "renderArticle",
+          "callee": "table",
+          "lineNumber": 169
+        },
+        {
+          "caller": "renderArticle",
+          "callee": "parts.push",
+          "lineNumber": 172
+        },
+        {
+          "caller": "renderArticle",
+          "callee": "renderFaq",
+          "lineNumber": 172
+        },
+        {
+          "caller": "renderArticle",
+          "callee": "parts.push",
+          "lineNumber": 173
+        },
+        {
+          "caller": "renderArticle",
+          "callee": "renderRelated",
+          "lineNumber": 173
+        },
+        {
+          "caller": "renderArticle",
+          "callee": "parts.join",
+          "lineNumber": 175
+        },
+        {
+          "caller": "fetchBuffer",
+          "callee": "imageCache.has",
+          "lineNumber": 179
+        },
+        {
+          "caller": "fetchBuffer",
+          "callee": "imageCache.get",
+          "lineNumber": 179
+        },
+        {
+          "caller": "fetchBuffer",
+          "callee": "fetch",
+          "lineNumber": 180
+        },
+        {
+          "caller": "fetchBuffer",
+          "callee": "Buffer.from",
+          "lineNumber": 188
+        },
+        {
+          "caller": "fetchBuffer",
+          "callee": "res.arrayBuffer",
+          "lineNumber": 188
+        },
+        {
+          "caller": "fetchBuffer",
+          "callee": "imageCache.set",
+          "lineNumber": 189
+        },
+        {
+          "caller": "generateFallback",
+          "callee": "path.join",
+          "lineNumber": 194
+        },
+        {
+          "caller": "generateFallback",
+          "callee": "String(label).split",
+          "lineNumber": 195
+        },
+        {
+          "caller": "generateFallback",
+          "callee": "String",
+          "lineNumber": 195
+        },
+        {
+          "caller": "generateFallback",
+          "callee": "`${current} ${word}`.trim",
+          "lineNumber": 199
+        },
+        {
+          "caller": "generateFallback",
+          "callee": "safeLines.push",
+          "lineNumber": 203
+        },
+        {
+          "caller": "generateFallback",
+          "callee": "safeLines.push",
+          "lineNumber": 207
+        },
+        {
+          "caller": "generateFallback",
+          "callee": "safeLines\n    .slice(0, 4)\n    .map((line, index) => `<text x=\"600\" y=\"${220 + index * 60}\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"44\" font-weight=\"700\" fill=\"white\" text-anchor=\"middle\">${escapeHtml(line)}</text>`)\n    .join",
+          "lineNumber": 208
+        },
+        {
+          "caller": "generateFallback",
+          "callee": "safeLines\n    .slice(0, 4)\n    .map",
+          "lineNumber": 208
+        },
+        {
+          "caller": "generateFallback",
+          "callee": "safeLines\n    .slice",
+          "lineNumber": 208
+        },
+        {
+          "caller": "generateFallback",
+          "callee": "escapeHtml",
+          "lineNumber": 210
+        },
+        {
+          "caller": "generateFallback",
+          "callee": "sharp(Buffer.from(svg)).webp({ quality: 86 }).toFile",
+          "lineNumber": 213
+        },
+        {
+          "caller": "generateFallback",
+          "callee": "sharp(Buffer.from(svg)).webp",
+          "lineNumber": 213
+        },
+        {
+          "caller": "generateFallback",
+          "callee": "sharp",
+          "lineNumber": 213
+        },
+        {
+          "caller": "generateFallback",
+          "callee": "Buffer.from",
+          "lineNumber": 213
+        },
+        {
+          "caller": "createImage",
+          "callee": "mkdir",
+          "lineNumber": 218
+        },
+        {
+          "caller": "createImage",
+          "callee": "path.join",
+          "lineNumber": 219
+        },
+        {
+          "caller": "createImage",
+          "callee": "existsSync",
+          "lineNumber": 220
+        },
+        {
+          "caller": "createImage",
+          "callee": "fetchBuffer",
+          "lineNumber": 224
+        },
+        {
+          "caller": "createImage",
+          "callee": "sharp(buffer).rotate",
+          "lineNumber": 225
+        },
+        {
+          "caller": "createImage",
+          "callee": "sharp",
+          "lineNumber": 225
+        },
+        {
+          "caller": "createImage",
+          "callee": "image.resize",
+          "lineNumber": 227
+        },
+        {
+          "caller": "createImage",
+          "callee": "image.resize",
+          "lineNumber": 229
+        },
+        {
+          "caller": "createImage",
+          "callee": "image.webp({ quality: 86 }).toFile",
+          "lineNumber": 231
+        },
+        {
+          "caller": "createImage",
+          "callee": "image.webp",
+          "lineNumber": 231
+        },
+        {
+          "caller": "createImage",
+          "callee": "console.warn",
+          "lineNumber": 234
+        },
+        {
+          "caller": "createImage",
+          "callee": "generateFallback",
+          "lineNumber": 235
+        },
+        {
+          "caller": "upsertArticle",
+          "callee": "createImage",
+          "lineNumber": 1739
+        },
+        {
+          "caller": "upsertArticle",
+          "callee": "createImage",
+          "lineNumber": 1740
+        },
+        {
+          "caller": "upsertArticle",
+          "callee": "renderArticle",
+          "lineNumber": 1741
+        },
+        {
+          "caller": "upsertArticle",
+          "callee": "new Date(Date.UTC(2026, 5, 10, 1, index * 10, 0)).toISOString",
+          "lineNumber": 1742
+        },
+        {
+          "caller": "upsertArticle",
+          "callee": "Date.UTC",
+          "lineNumber": 1742
+        },
+        {
+          "caller": "upsertArticle",
+          "callee": "readPost",
+          "lineNumber": 1760
+        },
+        {
+          "caller": "upsertArticle",
+          "callee": "updatePost",
+          "lineNumber": 1762
+        },
+        {
+          "caller": "upsertArticle",
+          "callee": "createPost",
+          "lineNumber": 1766
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 19,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/blog/canonical-slugs.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 20,
+      "nonEmptyLines": 17,
+      "functions": [
+        {
+          "name": "getRedirectedBlogSlug",
+          "startLine": 9,
+          "endLine": 12,
+          "params": [
+            "slug"
+          ]
+        },
+        {
+          "name": "isRedirectedBlogSlug",
+          "startLine": 14,
+          "endLine": 16,
+          "params": [
+            "slug"
+          ]
+        },
+        {
+          "name": "filterCanonicalBlogPosts",
+          "startLine": 18,
+          "endLine": 20,
+          "params": [
+            "posts"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "BLOG_SLUG_REDIRECTS",
+          "line": 1,
+          "isDefault": false
+        },
+        {
+          "name": "getRedirectedBlogSlug",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "isRedirectedBlogSlug",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "filterCanonicalBlogPosts",
+          "line": 18,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "isRedirectedBlogSlug",
+          "callee": "Boolean",
+          "lineNumber": 15
+        },
+        {
+          "caller": "isRedirectedBlogSlug",
+          "callee": "getRedirectedBlogSlug",
+          "lineNumber": 15
+        },
+        {
+          "caller": "filterCanonicalBlogPosts",
+          "callee": "posts.filter",
+          "lineNumber": 19
+        },
+        {
+          "caller": "filterCanonicalBlogPosts",
+          "callee": "isRedirectedBlogSlug",
+          "lineNumber": 19
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/blog/public-catalog/handler.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 253,
+      "nonEmptyLines": 222,
+      "functions": [
+        {
+          "name": "normalizeSearchValue",
+          "startLine": 19,
+          "endLine": 24,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "getCategories",
+          "startLine": 26,
+          "endLine": 28,
+          "params": [
+            "posts"
+          ]
+        },
+        {
+          "name": "matchesSearch",
+          "startLine": 30,
+          "endLine": 39,
+          "params": [
+            "post",
+            "query"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "PublicBlogHandler",
+          "startLine": 41,
+          "endLine": 253,
+          "methods": [
+            "list",
+            "get",
+            "related",
+            "categories",
+            "featured",
+            "allSlugs",
+            "allTags",
+            "estimateReadTime"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "PublicBlogHandler",
+          "line": 41,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "normalizeSearchValue",
+          "callee": "String(value || \"\")\n    .normalize(\"NFD\")\n    .replace(/[\\u0300-\\u036f]/g, \"\")\n    .toLowerCase",
+          "lineNumber": 20
+        },
+        {
+          "caller": "normalizeSearchValue",
+          "callee": "String(value || \"\")\n    .normalize(\"NFD\")\n    .replace",
+          "lineNumber": 20
+        },
+        {
+          "caller": "normalizeSearchValue",
+          "callee": "String(value || \"\")\n    .normalize",
+          "lineNumber": 20
+        },
+        {
+          "caller": "normalizeSearchValue",
+          "callee": "String",
+          "lineNumber": 20
+        },
+        {
+          "caller": "getCategories",
+          "callee": "[...new Set(posts.map((p) => p.category).filter(Boolean))].sort",
+          "lineNumber": 27
+        },
+        {
+          "caller": "getCategories",
+          "callee": "posts.map((p) => p.category).filter",
+          "lineNumber": 27
+        },
+        {
+          "caller": "getCategories",
+          "callee": "posts.map",
+          "lineNumber": 27
+        },
+        {
+          "caller": "getCategories",
+          "callee": "a.localeCompare",
+          "lineNumber": 27
+        },
+        {
+          "caller": "matchesSearch",
+          "callee": "normalizeSearchValue",
+          "lineNumber": 32
+        },
+        {
+          "caller": "matchesSearch",
+          "callee": "[\n    post.title,\n    post.excerpt,\n    post.category,\n    ...(post.tags || []),\n  ].filter(Boolean).join",
+          "lineNumber": 32
+        },
+        {
+          "caller": "matchesSearch",
+          "callee": "[\n    post.title,\n    post.excerpt,\n    post.category,\n    ...(post.tags || []),\n  ].filter",
+          "lineNumber": 32
+        },
+        {
+          "caller": "matchesSearch",
+          "callee": "haystack.includes",
+          "lineNumber": 38
+        },
+        {
+          "caller": "list",
+          "callee": "PublicBlogListInputSchema.safeParse",
+          "lineNumber": 43
+        },
+        {
+          "caller": "list",
+          "callee": "PublicBlogListResultSchema.parse",
+          "lineNumber": 45
+        },
+        {
+          "caller": "list",
+          "callee": "createPublicBlogFailure",
+          "lineNumber": 46
+        },
+        {
+          "caller": "list",
+          "callee": "readPosts",
+          "lineNumber": 52
+        },
+        {
+          "caller": "list",
+          "callee": "filterCanonicalBlogPosts",
+          "lineNumber": 53
+        },
+        {
+          "caller": "list",
+          "callee": "posts.filter",
+          "lineNumber": 57
+        },
+        {
+          "caller": "list",
+          "callee": "posts.filter",
+          "lineNumber": 61
+        },
+        {
+          "caller": "list",
+          "callee": "p.tags?.includes",
+          "lineNumber": 61
+        },
+        {
+          "caller": "list",
+          "callee": "normalizeSearchValue",
+          "lineNumber": 65
+        },
+        {
+          "caller": "list",
+          "callee": "posts.filter",
+          "lineNumber": 66
+        },
+        {
+          "caller": "list",
+          "callee": "matchesSearch",
+          "lineNumber": 66
+        },
+        {
+          "caller": "list",
+          "callee": "posts.sort",
+          "lineNumber": 69
+        },
+        {
+          "caller": "list",
+          "callee": "Math.ceil",
+          "lineNumber": 72
+        },
+        {
+          "caller": "list",
+          "callee": "posts.slice",
+          "lineNumber": 74
+        },
+        {
+          "caller": "list",
+          "callee": "getCategories",
+          "lineNumber": 76
+        },
+        {
+          "caller": "list",
+          "callee": "PublicBlogListResultSchema.parse",
+          "lineNumber": 78
+        },
+        {
+          "caller": "list",
+          "callee": "PublicBlogListSuccessSchema.parse",
+          "lineNumber": 79
+        },
+        {
+          "caller": "list",
+          "callee": "PublicBlogListResultSchema.parse",
+          "lineNumber": 89
+        },
+        {
+          "caller": "list",
+          "callee": "createPublicBlogFailure",
+          "lineNumber": 90
+        },
+        {
+          "caller": "get",
+          "callee": "PublicBlogPostLookupInputSchema.safeParse",
+          "lineNumber": 100
+        },
+        {
+          "caller": "get",
+          "callee": "PublicBlogPostResultSchema.parse",
+          "lineNumber": 102
+        },
+        {
+          "caller": "get",
+          "callee": "createPublicBlogFailure",
+          "lineNumber": 103
+        },
+        {
+          "caller": "get",
+          "callee": "readPost",
+          "lineNumber": 108
+        },
+        {
+          "caller": "get",
+          "callee": "PublicBlogPostResultSchema.parse",
+          "lineNumber": 110
+        },
+        {
+          "caller": "get",
+          "callee": "createPublicBlogFailure",
+          "lineNumber": 111
+        },
+        {
+          "caller": "get",
+          "callee": "PublicBlogPostResultSchema.parse",
+          "lineNumber": 116
+        },
+        {
+          "caller": "get",
+          "callee": "createPublicBlogFailure",
+          "lineNumber": 117
+        },
+        {
+          "caller": "get",
+          "callee": "PublicBlogPostResultSchema.parse",
+          "lineNumber": 121
+        },
+        {
+          "caller": "get",
+          "callee": "PublicBlogPostSuccessSchema.parse",
+          "lineNumber": 122
+        },
+        {
+          "caller": "get",
+          "callee": "PublicBlogPostSchema.parse",
+          "lineNumber": 124
+        },
+        {
+          "caller": "get",
+          "callee": "PublicBlogPostResultSchema.parse",
+          "lineNumber": 128
+        },
+        {
+          "caller": "get",
+          "callee": "createPublicBlogFailure",
+          "lineNumber": 129
+        },
+        {
+          "caller": "related",
+          "callee": "PublicBlogRelatedInputSchema.safeParse",
+          "lineNumber": 139
+        },
+        {
+          "caller": "related",
+          "callee": "PublicBlogRelatedResultSchema.parse",
+          "lineNumber": 141
+        },
+        {
+          "caller": "related",
+          "callee": "createPublicBlogFailure",
+          "lineNumber": 142
+        },
+        {
+          "caller": "related",
+          "callee": "PublicBlogRelatedResultSchema.parse",
+          "lineNumber": 149
+        },
+        {
+          "caller": "related",
+          "callee": "PublicBlogRelatedSuccessSchema.parse",
+          "lineNumber": 150
+        },
+        {
+          "caller": "related",
+          "callee": "readPosts",
+          "lineNumber": 158
+        },
+        {
+          "caller": "related",
+          "callee": "filterCanonicalBlogPosts",
+          "lineNumber": 159
+        },
+        {
+          "caller": "related",
+          "callee": "canonicalPosts.filter",
+          "lineNumber": 160
+        },
+        {
+          "caller": "related",
+          "callee": "candidates.filter",
+          "lineNumber": 163
+        },
+        {
+          "caller": "related",
+          "callee": "candidates.filter",
+          "lineNumber": 167
+        },
+        {
+          "caller": "related",
+          "callee": "Array.isArray",
+          "lineNumber": 167
+        },
+        {
+          "caller": "related",
+          "callee": "p.tags.some",
+          "lineNumber": 167
+        },
+        {
+          "caller": "related",
+          "callee": "tags.includes",
+          "lineNumber": 167
+        },
+        {
+          "caller": "related",
+          "callee": "combined.find",
+          "lineNumber": 172
+        },
+        {
+          "caller": "related",
+          "callee": "combined.push",
+          "lineNumber": 173
+        },
+        {
+          "caller": "related",
+          "callee": "combined.find",
+          "lineNumber": 179
+        },
+        {
+          "caller": "related",
+          "callee": "combined.push",
+          "lineNumber": 180
+        },
+        {
+          "caller": "related",
+          "callee": "PublicBlogRelatedResultSchema.parse",
+          "lineNumber": 185
+        },
+        {
+          "caller": "related",
+          "callee": "PublicBlogRelatedSuccessSchema.parse",
+          "lineNumber": 186
+        },
+        {
+          "caller": "related",
+          "callee": "combined.slice",
+          "lineNumber": 188
+        },
+        {
+          "caller": "related",
+          "callee": "PublicBlogRelatedResultSchema.parse",
+          "lineNumber": 192
+        },
+        {
+          "caller": "related",
+          "callee": "createPublicBlogFailure",
+          "lineNumber": 193
+        },
+        {
+          "caller": "categories",
+          "callee": "readPosts",
+          "lineNumber": 204
+        },
+        {
+          "caller": "categories",
+          "callee": "getCategories",
+          "lineNumber": 205
+        },
+        {
+          "caller": "categories",
+          "callee": "filterCanonicalBlogPosts",
+          "lineNumber": 205
+        },
+        {
+          "caller": "featured",
+          "callee": "readPosts",
+          "lineNumber": 213
+        },
+        {
+          "caller": "featured",
+          "callee": "[...filterCanonicalBlogPosts(result.data)].sort",
+          "lineNumber": 214
+        },
+        {
+          "caller": "featured",
+          "callee": "filterCanonicalBlogPosts",
+          "lineNumber": 214
+        },
+        {
+          "caller": "allSlugs",
+          "callee": "readPosts",
+          "lineNumber": 225
+        },
+        {
+          "caller": "allSlugs",
+          "callee": "filterCanonicalBlogPosts(result.data).map",
+          "lineNumber": 226
+        },
+        {
+          "caller": "allSlugs",
+          "callee": "filterCanonicalBlogPosts",
+          "lineNumber": 226
+        },
+        {
+          "caller": "allSlugs",
+          "callee": "new Date().toISOString",
+          "lineNumber": 229
+        },
+        {
+          "caller": "allTags",
+          "callee": "readPosts",
+          "lineNumber": 239
+        },
+        {
+          "caller": "allTags",
+          "callee": "[...new Set(filterCanonicalBlogPosts(result.data).flatMap((p) => p.tags || []))].filter",
+          "lineNumber": 240
+        },
+        {
+          "caller": "allTags",
+          "callee": "filterCanonicalBlogPosts(result.data).flatMap",
+          "lineNumber": 240
+        },
+        {
+          "caller": "allTags",
+          "callee": "filterCanonicalBlogPosts",
+          "lineNumber": 240
+        },
+        {
+          "caller": "allTags",
+          "callee": "tags.sort",
+          "lineNumber": 241
+        },
+        {
+          "caller": "estimateReadTime",
+          "callee": "content.replace",
+          "lineNumber": 249
+        },
+        {
+          "caller": "estimateReadTime",
+          "callee": "text.split(/\\s+/).filter",
+          "lineNumber": 250
+        },
+        {
+          "caller": "estimateReadTime",
+          "callee": "text.split",
+          "lineNumber": 250
+        },
+        {
+          "caller": "estimateReadTime",
+          "callee": "Math.max",
+          "lineNumber": 251
+        },
+        {
+          "caller": "estimateReadTime",
+          "callee": "Math.ceil",
+          "lineNumber": 251
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/lib/blog/public-catalog/index.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 35,
+      "nonEmptyLines": 26,
+      "functions": [
+        {
+          "name": "listPublishedPosts",
+          "startLine": 5,
+          "endLine": 7,
+          "params": [
+            "input"
+          ]
+        },
+        {
+          "name": "getPublishedPost",
+          "startLine": 9,
+          "endLine": 11,
+          "params": [
+            "input"
+          ]
+        },
+        {
+          "name": "getRelatedPublishedPosts",
+          "startLine": 13,
+          "endLine": 15,
+          "params": [
+            "input"
+          ]
+        },
+        {
+          "name": "getBlogCategories",
+          "startLine": 17,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "getFeaturedPublishedPost",
+          "startLine": 21,
+          "endLine": 23,
+          "params": []
+        },
+        {
+          "name": "getAllPublishedSlugs",
+          "startLine": 25,
+          "endLine": 27,
+          "params": []
+        },
+        {
+          "name": "getAllBlogTags",
+          "startLine": 29,
+          "endLine": 31,
+          "params": []
+        },
+        {
+          "name": "estimateReadTime",
+          "startLine": 33,
+          "endLine": 35,
+          "params": [
+            "content"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "listPublishedPosts",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "getPublishedPost",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "getRelatedPublishedPosts",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "getBlogCategories",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "getFeaturedPublishedPost",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "getAllPublishedSlugs",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "getAllBlogTags",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "estimateReadTime",
+          "line": 33,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "listPublishedPosts",
+          "callee": "blogHandler.list",
+          "lineNumber": 6
+        },
+        {
+          "caller": "getPublishedPost",
+          "callee": "blogHandler.get",
+          "lineNumber": 10
+        },
+        {
+          "caller": "getRelatedPublishedPosts",
+          "callee": "blogHandler.related",
+          "lineNumber": 14
+        },
+        {
+          "caller": "getBlogCategories",
+          "callee": "blogHandler.categories",
+          "lineNumber": 18
+        },
+        {
+          "caller": "getFeaturedPublishedPost",
+          "callee": "blogHandler.featured",
+          "lineNumber": 22
+        },
+        {
+          "caller": "getAllPublishedSlugs",
+          "callee": "blogHandler.allSlugs",
+          "lineNumber": 26
+        },
+        {
+          "caller": "getAllBlogTags",
+          "callee": "blogHandler.allTags",
+          "lineNumber": 30
+        },
+        {
+          "caller": "estimateReadTime",
+          "callee": "blogHandler.estimateReadTime",
+          "lineNumber": 34
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 8,
+        "functionCount": 8,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/blog/public-catalog/spec.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 117,
+      "nonEmptyLines": 102,
+      "functions": [
+        {
+          "name": "createPublicBlogFailure",
+          "startLine": 112,
+          "endLine": 117,
+          "params": [
+            "code",
+            "message"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "PublicBlogListInputSchema",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "PublicBlogPostLookupInputSchema",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "PublicBlogRelatedInputSchema",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "PublicBlogPostSchema",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "PublicBlogErrorCodeSchema",
+          "line": 54,
+          "isDefault": false
+        },
+        {
+          "name": "PublicBlogFailureSchema",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "PublicBlogListSuccessSchema",
+          "line": 69,
+          "isDefault": false
+        },
+        {
+          "name": "PublicBlogPostSuccessSchema",
+          "line": 83,
+          "isDefault": false
+        },
+        {
+          "name": "PublicBlogRelatedSuccessSchema",
+          "line": 90,
+          "isDefault": false
+        },
+        {
+          "name": "PublicBlogListResultSchema",
+          "line": 97,
+          "isDefault": false
+        },
+        {
+          "name": "PublicBlogPostResultSchema",
+          "line": 102,
+          "isDefault": false
+        },
+        {
+          "name": "PublicBlogRelatedResultSchema",
+          "line": 107,
+          "isDefault": false
+        },
+        {
+          "name": "createPublicBlogFailure",
+          "line": 112,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createPublicBlogFailure",
+          "callee": "PublicBlogFailureSchema.parse",
+          "lineNumber": 113
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 13,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/db.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/shop/presentation.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 67,
+      "nonEmptyLines": 53,
+      "functions": [
+        {
+          "name": "stripHtml",
+          "startLine": 1,
+          "endLine": 3,
+          "params": [
+            "html"
+          ]
+        },
+        {
+          "name": "formatProductPriceText",
+          "startLine": 5,
+          "endLine": 17,
+          "params": [
+            "price"
+          ]
+        },
+        {
+          "name": "syncDescriptionPrice",
+          "startLine": 19,
+          "endLine": 29,
+          "params": [
+            "html",
+            "price"
+          ]
+        },
+        {
+          "name": "clampText",
+          "startLine": 31,
+          "endLine": 35,
+          "params": [
+            "text"
+          ]
+        },
+        {
+          "name": "getProductExcerpt",
+          "startLine": 37,
+          "endLine": 39,
+          "params": [
+            "html"
+          ]
+        },
+        {
+          "name": "getPrimaryProductImage",
+          "startLine": 41,
+          "endLine": 43,
+          "params": [
+            "product"
+          ]
+        },
+        {
+          "name": "formatProductPrice",
+          "startLine": 51,
+          "endLine": 67,
+          "params": [
+            "price"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "stripHtml",
+          "line": 1,
+          "isDefault": false
+        },
+        {
+          "name": "formatProductPriceText",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "syncDescriptionPrice",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "clampText",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "getProductExcerpt",
+          "line": 37,
+          "isDefault": false
+        },
+        {
+          "name": "getPrimaryProductImage",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "formatProductPrice",
+          "line": 51,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "stripHtml",
+          "callee": "html?.replace(/<[^>]*>/g, \" \").replace(/\\s+/g, \" \").trim",
+          "lineNumber": 2
+        },
+        {
+          "caller": "stripHtml",
+          "callee": "html?.replace(/<[^>]*>/g, \" \").replace",
+          "lineNumber": 2
+        },
+        {
+          "caller": "stripHtml",
+          "callee": "html?.replace",
+          "lineNumber": 2
+        },
+        {
+          "caller": "formatProductPriceText",
+          "callee": "Number",
+          "lineNumber": 6
+        },
+        {
+          "caller": "formatProductPriceText",
+          "callee": "Number.isFinite",
+          "lineNumber": 8
+        },
+        {
+          "caller": "formatProductPriceText",
+          "callee": "new Intl.NumberFormat(\"vi-VN\").format",
+          "lineNumber": 13
+        },
+        {
+          "caller": "formatProductPriceText",
+          "callee": "formatProductPrice",
+          "lineNumber": 16
+        },
+        {
+          "caller": "syncDescriptionPrice",
+          "callee": "formatProductPriceText",
+          "lineNumber": 22
+        },
+        {
+          "caller": "syncDescriptionPrice",
+          "callee": "html.replace",
+          "lineNumber": 25
+        },
+        {
+          "caller": "clampText",
+          "callee": "text.slice(0, maxLength).trimEnd",
+          "lineNumber": 34
+        },
+        {
+          "caller": "clampText",
+          "callee": "text.slice",
+          "lineNumber": 34
+        },
+        {
+          "caller": "getProductExcerpt",
+          "callee": "clampText",
+          "lineNumber": 38
+        },
+        {
+          "caller": "getProductExcerpt",
+          "callee": "stripHtml",
+          "lineNumber": 38
+        },
+        {
+          "caller": "formatProductPrice",
+          "callee": "Number",
+          "lineNumber": 52
+        },
+        {
+          "caller": "formatProductPrice",
+          "callee": "Number.isFinite",
+          "lineNumber": 54
+        },
+        {
+          "caller": "formatProductPrice",
+          "callee": "new Intl.NumberFormat(CURRENCY_LOCALES[currency] || \"en-US\", {\n      style: \"currency\",\n      currency,\n      maximumFractionDigits: currency === \"VND\" ? 0 : 2,\n    }).format",
+          "lineNumber": 59
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 7,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/shop/public-catalog/handler.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 218,
+      "nonEmptyLines": 185,
+      "functions": [
+        {
+          "name": "getCategories",
+          "startLine": 19,
+          "endLine": 21,
+          "params": [
+            "products"
+          ]
+        },
+        {
+          "name": "parsePriceRange",
+          "startLine": 23,
+          "endLine": 31,
+          "params": [
+            "priceRange"
+          ]
+        },
+        {
+          "name": "matchesSearch",
+          "startLine": 33,
+          "endLine": 48,
+          "params": [
+            "product",
+            "searchQuery"
+          ]
+        },
+        {
+          "name": "sortProducts",
+          "startLine": 50,
+          "endLine": 64,
+          "params": [
+            "products",
+            "sort"
+          ]
+        },
+        {
+          "name": "readAllPublicProducts",
+          "startLine": 66,
+          "endLine": 72,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "PublicCatalogHandler",
+          "startLine": 74,
+          "endLine": 218,
+          "methods": [
+            "list",
+            "get",
+            "related"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "PublicCatalogHandler",
+          "line": 74,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getCategories",
+          "callee": "[...new Set(products.map((product) => product.category).filter(Boolean))].sort",
+          "lineNumber": 20
+        },
+        {
+          "caller": "getCategories",
+          "callee": "products.map((product) => product.category).filter",
+          "lineNumber": 20
+        },
+        {
+          "caller": "getCategories",
+          "callee": "products.map",
+          "lineNumber": 20
+        },
+        {
+          "caller": "getCategories",
+          "callee": "left.localeCompare",
+          "lineNumber": 20
+        },
+        {
+          "caller": "parsePriceRange",
+          "callee": "priceRange.split",
+          "lineNumber": 26
+        },
+        {
+          "caller": "parsePriceRange",
+          "callee": "Number",
+          "lineNumber": 27
+        },
+        {
+          "caller": "parsePriceRange",
+          "callee": "Number",
+          "lineNumber": 28
+        },
+        {
+          "caller": "matchesSearch",
+          "callee": "[\n    product.name,\n    product.brand,\n    product.category,\n    stripHtml(product.description),\n    ...(product.tags || []),\n  ]\n    .filter(Boolean)\n    .join(\" \")\n    .toLowerCase",
+          "lineNumber": 36
+        },
+        {
+          "caller": "matchesSearch",
+          "callee": "[\n    product.name,\n    product.brand,\n    product.category,\n    stripHtml(product.description),\n    ...(product.tags || []),\n  ]\n    .filter(Boolean)\n    .join",
+          "lineNumber": 36
+        },
+        {
+          "caller": "matchesSearch",
+          "callee": "[\n    product.name,\n    product.brand,\n    product.category,\n    stripHtml(product.description),\n    ...(product.tags || []),\n  ]\n    .filter",
+          "lineNumber": 36
+        },
+        {
+          "caller": "matchesSearch",
+          "callee": "stripHtml",
+          "lineNumber": 40
+        },
+        {
+          "caller": "matchesSearch",
+          "callee": "haystack.includes",
+          "lineNumber": 47
+        },
+        {
+          "caller": "sortProducts",
+          "callee": "sortedProducts.sort",
+          "lineNumber": 54
+        },
+        {
+          "caller": "sortProducts",
+          "callee": "sortedProducts.sort",
+          "lineNumber": 56
+        },
+        {
+          "caller": "sortProducts",
+          "callee": "sortedProducts.sort",
+          "lineNumber": 58
+        },
+        {
+          "caller": "sortProducts",
+          "callee": "(left.name || \"\").localeCompare",
+          "lineNumber": 58
+        },
+        {
+          "caller": "sortProducts",
+          "callee": "sortedProducts.sort",
+          "lineNumber": 60
+        },
+        {
+          "caller": "sortProducts",
+          "callee": "(right.name || \"\").localeCompare",
+          "lineNumber": 60
+        },
+        {
+          "caller": "readAllPublicProducts",
+          "callee": "readProducts",
+          "lineNumber": 67
+        },
+        {
+          "caller": "readAllPublicProducts",
+          "callee": "PublicProductSchema.array().parse(data || []).map",
+          "lineNumber": 68
+        },
+        {
+          "caller": "readAllPublicProducts",
+          "callee": "PublicProductSchema.array().parse",
+          "lineNumber": 68
+        },
+        {
+          "caller": "readAllPublicProducts",
+          "callee": "PublicProductSchema.array",
+          "lineNumber": 68
+        },
+        {
+          "caller": "readAllPublicProducts",
+          "callee": "syncDescriptionPrice",
+          "lineNumber": 70
+        },
+        {
+          "caller": "list",
+          "callee": "PublicCatalogListInputSchema.safeParse",
+          "lineNumber": 76
+        },
+        {
+          "caller": "list",
+          "callee": "PublicCatalogListResultSchema.parse",
+          "lineNumber": 79
+        },
+        {
+          "caller": "list",
+          "callee": "createPublicCatalogFailure",
+          "lineNumber": 80
+        },
+        {
+          "caller": "list",
+          "callee": "readAllPublicProducts",
+          "lineNumber": 85
+        },
+        {
+          "caller": "list",
+          "callee": "getCategories",
+          "lineNumber": 86
+        },
+        {
+          "caller": "list",
+          "callee": "filteredProducts.filter",
+          "lineNumber": 92
+        },
+        {
+          "caller": "list",
+          "callee": "parsePriceRange",
+          "lineNumber": 95
+        },
+        {
+          "caller": "list",
+          "callee": "filteredProducts.filter",
+          "lineNumber": 97
+        },
+        {
+          "caller": "list",
+          "callee": "q.toLowerCase",
+          "lineNumber": 103
+        },
+        {
+          "caller": "list",
+          "callee": "filteredProducts.filter",
+          "lineNumber": 104
+        },
+        {
+          "caller": "list",
+          "callee": "matchesSearch",
+          "lineNumber": 104
+        },
+        {
+          "caller": "list",
+          "callee": "sortProducts",
+          "lineNumber": 107
+        },
+        {
+          "caller": "list",
+          "callee": "filteredProducts.slice",
+          "lineNumber": 110
+        },
+        {
+          "caller": "list",
+          "callee": "PublicCatalogListResultSchema.parse",
+          "lineNumber": 113
+        },
+        {
+          "caller": "list",
+          "callee": "PublicCatalogListSuccessSchema.parse",
+          "lineNumber": 114
+        },
+        {
+          "caller": "list",
+          "callee": "PublicCatalogListResultSchema.parse",
+          "lineNumber": 124
+        },
+        {
+          "caller": "list",
+          "callee": "createPublicCatalogFailure",
+          "lineNumber": 125
+        },
+        {
+          "caller": "get",
+          "callee": "PublicProductLookupInputSchema.safeParse",
+          "lineNumber": 135
+        },
+        {
+          "caller": "get",
+          "callee": "PublicCatalogProductResultSchema.parse",
+          "lineNumber": 138
+        },
+        {
+          "caller": "get",
+          "callee": "createPublicCatalogFailure",
+          "lineNumber": 139
+        },
+        {
+          "caller": "get",
+          "callee": "readProduct",
+          "lineNumber": 144
+        },
+        {
+          "caller": "get",
+          "callee": "PublicCatalogProductResultSchema.parse",
+          "lineNumber": 147
+        },
+        {
+          "caller": "get",
+          "callee": "createPublicCatalogFailure",
+          "lineNumber": 148
+        },
+        {
+          "caller": "get",
+          "callee": "PublicCatalogProductResultSchema.parse",
+          "lineNumber": 152
+        },
+        {
+          "caller": "get",
+          "callee": "PublicCatalogProductSuccessSchema.parse",
+          "lineNumber": 153
+        },
+        {
+          "caller": "get",
+          "callee": "PublicProductSchema.parse",
+          "lineNumber": 157
+        },
+        {
+          "caller": "get",
+          "callee": "syncDescriptionPrice",
+          "lineNumber": 158
+        },
+        {
+          "caller": "get",
+          "callee": "PublicCatalogProductResultSchema.parse",
+          "lineNumber": 164
+        },
+        {
+          "caller": "get",
+          "callee": "createPublicCatalogFailure",
+          "lineNumber": 165
+        },
+        {
+          "caller": "related",
+          "callee": "RelatedProductsInputSchema.safeParse",
+          "lineNumber": 175
+        },
+        {
+          "caller": "related",
+          "callee": "PublicCatalogRelatedResultSchema.parse",
+          "lineNumber": 178
+        },
+        {
+          "caller": "related",
+          "callee": "createPublicCatalogFailure",
+          "lineNumber": 179
+        },
+        {
+          "caller": "related",
+          "callee": "PublicCatalogRelatedResultSchema.parse",
+          "lineNumber": 186
+        },
+        {
+          "caller": "related",
+          "callee": "PublicCatalogRelatedSuccessSchema.parse",
+          "lineNumber": 187
+        },
+        {
+          "caller": "related",
+          "callee": "readAllPublicProducts",
+          "lineNumber": 195
+        },
+        {
+          "caller": "related",
+          "callee": "products\n        .filter((product) => product.id !== productId && product.category === category)\n        .slice",
+          "lineNumber": 196
+        },
+        {
+          "caller": "related",
+          "callee": "products\n        .filter",
+          "lineNumber": 196
+        },
+        {
+          "caller": "related",
+          "callee": "PublicCatalogRelatedResultSchema.parse",
+          "lineNumber": 200
+        },
+        {
+          "caller": "related",
+          "callee": "PublicCatalogRelatedSuccessSchema.parse",
+          "lineNumber": 201
+        },
+        {
+          "caller": "related",
+          "callee": "PublicCatalogRelatedResultSchema.parse",
+          "lineNumber": 209
+        },
+        {
+          "caller": "related",
+          "callee": "createPublicCatalogFailure",
+          "lineNumber": 210
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/lib/shop/public-catalog/index.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 11,
+      "functions": [
+        {
+          "name": "listPublicProducts",
+          "startLine": 5,
+          "endLine": 7,
+          "params": [
+            "input"
+          ]
+        },
+        {
+          "name": "getPublicProduct",
+          "startLine": 9,
+          "endLine": 11,
+          "params": [
+            "input"
+          ]
+        },
+        {
+          "name": "getRelatedProducts",
+          "startLine": 13,
+          "endLine": 15,
+          "params": [
+            "input"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "listPublicProducts",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "getPublicProduct",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "getRelatedProducts",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "listPublicProducts",
+          "callee": "publicCatalogHandler.list",
+          "lineNumber": 6
+        },
+        {
+          "caller": "getPublicProduct",
+          "callee": "publicCatalogHandler.get",
+          "lineNumber": 10
+        },
+        {
+          "caller": "getRelatedProducts",
+          "callee": "publicCatalogHandler.related",
+          "lineNumber": 14
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/shop/public-catalog/spec.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 150,
+      "nonEmptyLines": 128,
+      "functions": [
+        {
+          "name": "createPublicCatalogFailure",
+          "startLine": 134,
+          "endLine": 143,
+          "params": [
+            "code",
+            "message"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "PublicCatalogListInputSchema",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "PublicProductLookupInputSchema",
+          "line": 37,
+          "isDefault": false
+        },
+        {
+          "name": "RelatedProductsInputSchema",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "PublicProductSchema",
+          "line": 57,
+          "isDefault": false
+        },
+        {
+          "name": "PublicCatalogErrorCodeSchema",
+          "line": 81,
+          "isDefault": false
+        },
+        {
+          "name": "PublicCatalogFailureSchema",
+          "line": 87,
+          "isDefault": false
+        },
+        {
+          "name": "PublicCatalogListSuccessSchema",
+          "line": 96,
+          "isDefault": false
+        },
+        {
+          "name": "PublicCatalogProductSuccessSchema",
+          "line": 105,
+          "isDefault": false
+        },
+        {
+          "name": "PublicCatalogRelatedSuccessSchema",
+          "line": 112,
+          "isDefault": false
+        },
+        {
+          "name": "PublicCatalogListResultSchema",
+          "line": 119,
+          "isDefault": false
+        },
+        {
+          "name": "PublicCatalogProductResultSchema",
+          "line": 124,
+          "isDefault": false
+        },
+        {
+          "name": "PublicCatalogRelatedResultSchema",
+          "line": 129,
+          "isDefault": false
+        },
+        {
+          "name": "createPublicCatalogFailure",
+          "line": 134,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createPublicCatalogFailure",
+          "callee": "PublicCatalogFailureSchema.parse",
+          "lineNumber": 135
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 13,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    }
+  ]
+}

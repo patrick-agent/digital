@@ -1,0 +1,186 @@
+{
+  "projectRoot": "C:\\Users\\Admin\\Desktop\\Website 3D\\studio-3d",
+  "batchFiles": [
+    {
+      "path": "src/components/ui/select.jsx",
+      "language": "javascript",
+      "sizeLines": 122,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/separator.jsx",
+      "language": "javascript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/SkipLink.jsx",
+      "language": "javascript",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/SoftAurora.jsx",
+      "language": "javascript",
+      "sizeLines": 264,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/sonner.jsx",
+      "language": "javascript",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/table.jsx",
+      "language": "javascript",
+      "sizeLines": 83,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ui/textarea.jsx",
+      "language": "javascript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/context/LoadingContext.jsx",
+      "language": "javascript",
+      "sizeLines": 102,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/hooks/useAudioAnalyzer.js",
+      "language": "javascript",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/hooks/useCanvasOptimizer.js",
+      "language": "javascript",
+      "sizeLines": 147,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/hooks/useHydrated.js",
+      "language": "javascript",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/hooks/useModelLoader.js",
+      "language": "javascript",
+      "sizeLines": 270,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/hooks/usePrefersReducedMotion.js",
+      "language": "javascript",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/hooks/useScrollAnimation.js",
+      "language": "javascript",
+      "sizeLines": 41,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/hooks/useScrollObserver.js",
+      "language": "javascript",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/hooks/useVisibilityLoader.js",
+      "language": "javascript",
+      "sizeLines": 67,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/hooks/useWebGLContextLimit.js",
+      "language": "javascript",
+      "sizeLines": 67,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/api-auth.js",
+      "language": "javascript",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/article-content.js",
+      "language": "javascript",
+      "sizeLines": 530,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/auth.config.js",
+      "language": "javascript",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/auth.js",
+      "language": "javascript",
+      "sizeLines": 40,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/blog-indexing.js",
+      "language": "javascript",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/blog.js",
+      "language": "javascript",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/blog/affiliate-products.js",
+      "language": "javascript",
+      "sizeLines": 81,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/blog/category-meta.js",
+      "language": "javascript",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/components/ui/select.jsx": [],
+    "src/components/ui/separator.jsx": [],
+    "src/components/ui/SkipLink.jsx": [],
+    "src/components/ui/SoftAurora.jsx": [
+      "src/components/ui/SoftAurora.css"
+    ],
+    "src/components/ui/sonner.jsx": [],
+    "src/components/ui/table.jsx": [],
+    "src/components/ui/textarea.jsx": [],
+    "src/context/LoadingContext.jsx": [],
+    "src/hooks/useAudioAnalyzer.js": [],
+    "src/hooks/useCanvasOptimizer.js": [],
+    "src/hooks/useHydrated.js": [],
+    "src/hooks/useModelLoader.js": [],
+    "src/hooks/usePrefersReducedMotion.js": [],
+    "src/hooks/useScrollAnimation.js": [],
+    "src/hooks/useScrollObserver.js": [],
+    "src/hooks/useVisibilityLoader.js": [],
+    "src/hooks/useWebGLContextLimit.js": [],
+    "src/lib/api-auth.js": [],
+    "src/lib/article-content.js": [],
+    "src/lib/auth.config.js": [],
+    "src/lib/auth.js": [
+      "src/lib/auth.config.js"
+    ],
+    "src/lib/blog-indexing.js": [],
+    "src/lib/blog.js": [],
+    "src/lib/blog/affiliate-products.js": [],
+    "src/lib/blog/category-meta.js": []
+  }
+}

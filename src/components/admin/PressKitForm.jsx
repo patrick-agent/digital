@@ -1,30 +1,32 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import { useRouter } from "next/navigation"
+
+function createInitialForm(data) {
+  if (!data) {
+    return {
+      bioShort: "", bioLong: "", contactBookingEmail: "",
+      riderPdf: "", techSpecPdf: "",
+      headshotsRaw: "", logosRaw: "", pressReleasesRaw: "",
+    }
+  }
+
+  return {
+    bioShort: data.bioShort || "", bioLong: data.bioLong || "",
+    contactBookingEmail: data.contactBookingEmail || "",
+    riderPdf: data.riderPdf || "", techSpecPdf: data.techSpecPdf || "",
+    headshotsRaw: (data.headshots || []).join("\n"),
+    logosRaw: (data.logos || []).join("\n"),
+    pressReleasesRaw: (data.pressReleases || []).map((p) => `${p.title}|${p.url}`).join("\n"),
+  }
+}
 
 export default function PressKitForm({ data }) {
   const router = useRouter()
-  const [form, setForm] = useState({
-    bioShort: "", bioLong: "", contactBookingEmail: "",
-    riderPdf: "", techSpecPdf: "",
-    headshotsRaw: "", logosRaw: "", pressReleasesRaw: "",
-  })
+  const [form, setForm] = useState(() => createInitialForm(data))
   const [saving, setSaving] = useState(false)
   const [error, setError] = useState("")
-
-  useEffect(() => {
-    if (data) {
-      setForm({
-        bioShort: data.bioShort || "", bioLong: data.bioLong || "",
-        contactBookingEmail: data.contactBookingEmail || "",
-        riderPdf: data.riderPdf || "", techSpecPdf: data.techSpecPdf || "",
-        headshotsRaw: (data.headshots || []).join("\n"),
-        logosRaw: (data.logos || []).join("\n"),
-        pressReleasesRaw: (data.pressReleases || []).map((p) => `${p.title}|${p.url}`).join("\n"),
-      })
-    }
-  }, [data])
 
   const handleChange = (field, value) => setForm((prev) => ({ ...prev, [field]: value }))
 

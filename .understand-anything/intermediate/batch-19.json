@@ -1,0 +1,49 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/app/glitch.css",
+      "type": "file",
+      "name": "glitch.css",
+      "filePath": "src/app/glitch.css",
+      "summary": "glitch.css: Source file.",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/app/globals.css",
+      "type": "file",
+      "name": "globals.css",
+      "filePath": "src/app/globals.css",
+      "summary": "globals.css: Source file.",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/app/legal.module.css",
+      "type": "file",
+      "name": "legal.module.css",
+      "filePath": "src/app/legal.module.css",
+      "summary": "legal.module.css: Source file.",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/app/page.module.css",
+      "type": "file",
+      "name": "page.module.css",
+      "filePath": "src/app/page.module.css",
+      "summary": "page.module.css: Source file.",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": []
+}

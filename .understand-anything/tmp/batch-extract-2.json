@@ -1,0 +1,2525 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 19,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/components/canvas/AboutCharacterCanvas.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 165,
+      "nonEmptyLines": 150,
+      "functions": [
+        {
+          "name": "CharacterRimLights",
+          "startLine": 14,
+          "endLine": 23,
+          "params": []
+        },
+        {
+          "name": "HologramBase",
+          "startLine": 25,
+          "endLine": 60,
+          "params": []
+        },
+        {
+          "name": "CharacterModel",
+          "startLine": 62,
+          "endLine": 111,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "HologramBase",
+          "callee": "useRef",
+          "lineNumber": 26
+        },
+        {
+          "caller": "HologramBase",
+          "callee": "useEffect",
+          "lineNumber": 28
+        },
+        {
+          "caller": "HologramBase",
+          "callee": "useFrame",
+          "lineNumber": 35
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "useGLTF",
+          "lineNumber": 63
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "useRef",
+          "lineNumber": 64
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "useRef",
+          "lineNumber": 65
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "useRef",
+          "lineNumber": 66
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "useRef",
+          "lineNumber": 67
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "useEffect",
+          "lineNumber": 69
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "scene.traverse",
+          "lineNumber": 72
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "mixerRef.current.clipAction(animations[0]).setLoop(THREE.LoopRepeat).play",
+          "lineNumber": 88
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "mixerRef.current.clipAction(animations[0]).setLoop",
+          "lineNumber": 88
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "mixerRef.current.clipAction",
+          "lineNumber": 88
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "console.error",
+          "lineNumber": 90
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "mixerRef.current.stopAllAction",
+          "lineNumber": 91
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "useFrame",
+          "lineNumber": 94
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "mixerRef.current.update",
+          "lineNumber": 95
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "Math.min",
+          "lineNumber": 96
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 0,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/canvas/BreakdanceCharacterCanvas.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 182,
+      "nonEmptyLines": 165,
+      "functions": [
+        {
+          "name": "MouseParticles",
+          "startLine": 11,
+          "endLine": 64,
+          "params": []
+        },
+        {
+          "name": "BreakdanceModel",
+          "startLine": 66,
+          "endLine": 108,
+          "params": []
+        },
+        {
+          "name": "RotatingLightRing",
+          "startLine": 110,
+          "endLine": 132,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "MouseParticles",
+          "callee": "useRef",
+          "lineNumber": 12
+        },
+        {
+          "caller": "MouseParticles",
+          "callee": "useRef",
+          "lineNumber": 13
+        },
+        {
+          "caller": "MouseParticles",
+          "callee": "useRef",
+          "lineNumber": 14
+        },
+        {
+          "caller": "MouseParticles",
+          "callee": "useEffect",
+          "lineNumber": 16
+        },
+        {
+          "caller": "MouseParticles",
+          "callee": "window.addEventListener",
+          "lineNumber": 21
+        },
+        {
+          "caller": "MouseParticles",
+          "callee": "window.removeEventListener",
+          "lineNumber": 22
+        },
+        {
+          "caller": "MouseParticles",
+          "callee": "useEffect",
+          "lineNumber": 25
+        },
+        {
+          "caller": "MouseParticles",
+          "callee": "arr.push",
+          "lineNumber": 29
+        },
+        {
+          "caller": "MouseParticles",
+          "callee": "Math.random",
+          "lineNumber": 31
+        },
+        {
+          "caller": "MouseParticles",
+          "callee": "Math.random",
+          "lineNumber": 32
+        },
+        {
+          "caller": "MouseParticles",
+          "callee": "Math.random",
+          "lineNumber": 33
+        },
+        {
+          "caller": "MouseParticles",
+          "callee": "Math.random",
+          "lineNumber": 35
+        },
+        {
+          "caller": "MouseParticles",
+          "callee": "Math.random",
+          "lineNumber": 36
+        },
+        {
+          "caller": "MouseParticles",
+          "callee": "useFrame",
+          "lineNumber": 42
+        },
+        {
+          "caller": "MouseParticles",
+          "callee": "Math.sin",
+          "lineNumber": 50
+        },
+        {
+          "caller": "MouseParticles",
+          "callee": "Array.from({ length: 80 }).map",
+          "lineNumber": 56
+        },
+        {
+          "caller": "MouseParticles",
+          "callee": "Array.from",
+          "lineNumber": 56
+        },
+        {
+          "caller": "BreakdanceModel",
+          "callee": "useGLTF",
+          "lineNumber": 67
+        },
+        {
+          "caller": "BreakdanceModel",
+          "callee": "useRef",
+          "lineNumber": 68
+        },
+        {
+          "caller": "BreakdanceModel",
+          "callee": "useMemo",
+          "lineNumber": 69
+        },
+        {
+          "caller": "BreakdanceModel",
+          "callee": "SkeletonUtils.clone",
+          "lineNumber": 69
+        },
+        {
+          "caller": "BreakdanceModel",
+          "callee": "useEffect",
+          "lineNumber": 71
+        },
+        {
+          "caller": "BreakdanceModel",
+          "callee": "modelScene.traverse",
+          "lineNumber": 73
+        },
+        {
+          "caller": "BreakdanceModel",
+          "callee": "new THREE.Box3().setFromObject",
+          "lineNumber": 85
+        },
+        {
+          "caller": "BreakdanceModel",
+          "callee": "box.getSize",
+          "lineNumber": 86
+        },
+        {
+          "caller": "BreakdanceModel",
+          "callee": "box.getCenter",
+          "lineNumber": 87
+        },
+        {
+          "caller": "BreakdanceModel",
+          "callee": "modelScene.position.sub",
+          "lineNumber": 88
+        },
+        {
+          "caller": "BreakdanceModel",
+          "callee": "animations.forEach",
+          "lineNumber": 93
+        },
+        {
+          "caller": "BreakdanceModel",
+          "callee": "mixerRef.current.clipAction(clip).play",
+          "lineNumber": 94
+        },
+        {
+          "caller": "BreakdanceModel",
+          "callee": "mixerRef.current.clipAction",
+          "lineNumber": 94
+        },
+        {
+          "caller": "BreakdanceModel",
+          "callee": "mixerRef.current.stopAllAction",
+          "lineNumber": 98
+        },
+        {
+          "caller": "BreakdanceModel",
+          "callee": "useFrame",
+          "lineNumber": 102
+        },
+        {
+          "caller": "BreakdanceModel",
+          "callee": "mixerRef.current.update",
+          "lineNumber": 103
+        },
+        {
+          "caller": "RotatingLightRing",
+          "callee": "useRef",
+          "lineNumber": 111
+        },
+        {
+          "caller": "RotatingLightRing",
+          "callee": "useFrame",
+          "lineNumber": 113
+        },
+        {
+          "caller": "RotatingLightRing",
+          "callee": "Math.sin",
+          "lineNumber": 116
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/canvas/FloatingGeometries.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 90,
+      "nonEmptyLines": 80,
+      "functions": [
+        {
+          "name": "FloatingGeometries",
+          "startLine": 16,
+          "endLine": 90,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "FloatingGeometries",
+          "line": 16,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "FloatingGeometries",
+          "callee": "useRef",
+          "lineNumber": 22
+        },
+        {
+          "caller": "FloatingGeometries",
+          "callee": "useMemo",
+          "lineNumber": 24
+        },
+        {
+          "caller": "FloatingGeometries",
+          "callee": "temp.push",
+          "lineNumber": 28
+        },
+        {
+          "caller": "FloatingGeometries",
+          "callee": "seededBetween",
+          "lineNumber": 31
+        },
+        {
+          "caller": "FloatingGeometries",
+          "callee": "seededBetween",
+          "lineNumber": 32
+        },
+        {
+          "caller": "FloatingGeometries",
+          "callee": "seededBetween",
+          "lineNumber": 33
+        },
+        {
+          "caller": "FloatingGeometries",
+          "callee": "seededBetween",
+          "lineNumber": 35
+        },
+        {
+          "caller": "FloatingGeometries",
+          "callee": "seededBetween",
+          "lineNumber": 35
+        },
+        {
+          "caller": "FloatingGeometries",
+          "callee": "seededBetween",
+          "lineNumber": 36
+        },
+        {
+          "caller": "FloatingGeometries",
+          "callee": "seededBetween",
+          "lineNumber": 37
+        },
+        {
+          "caller": "FloatingGeometries",
+          "callee": "seededBetween",
+          "lineNumber": 38
+        },
+        {
+          "caller": "FloatingGeometries",
+          "callee": "seededUnit",
+          "lineNumber": 39
+        },
+        {
+          "caller": "FloatingGeometries",
+          "callee": "useMemo",
+          "lineNumber": 45
+        },
+        {
+          "caller": "FloatingGeometries",
+          "callee": "useFrame",
+          "lineNumber": 47
+        },
+        {
+          "caller": "FloatingGeometries",
+          "callee": "state.clock.getElapsedTime",
+          "lineNumber": 49
+        },
+        {
+          "caller": "FloatingGeometries",
+          "callee": "groupRef.current.children.forEach",
+          "lineNumber": 51
+        },
+        {
+          "caller": "FloatingGeometries",
+          "callee": "Math.sin",
+          "lineNumber": 55
+        },
+        {
+          "caller": "FloatingGeometries",
+          "callee": "Math.cos",
+          "lineNumber": 56
+        },
+        {
+          "caller": "FloatingGeometries",
+          "callee": "items.map",
+          "lineNumber": 68
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/canvas/GlowBackground.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 68,
+      "nonEmptyLines": 58,
+      "functions": [
+        {
+          "name": "GlowBackground",
+          "startLine": 7,
+          "endLine": 68,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "GlowBackground",
+          "line": 7,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "GlowBackground",
+          "callee": "useRef",
+          "lineNumber": 8
+        },
+        {
+          "caller": "GlowBackground",
+          "callee": "useFrame",
+          "lineNumber": 10
+        },
+        {
+          "caller": "GlowBackground",
+          "callee": "state.clock.getElapsedTime",
+          "lineNumber": 12
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/canvas/ParticleField.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 72,
+      "nonEmptyLines": 63,
+      "functions": [
+        {
+          "name": "ParticleField",
+          "startLine": 8,
+          "endLine": 72,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ParticleField",
+          "line": 8,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ParticleField",
+          "callee": "useRef",
+          "lineNumber": 18
+        },
+        {
+          "caller": "ParticleField",
+          "callee": "useRef",
+          "lineNumber": 19
+        },
+        {
+          "caller": "ParticleField",
+          "callee": "useMemo",
+          "lineNumber": 21
+        },
+        {
+          "caller": "ParticleField",
+          "callee": "temp.push",
+          "lineNumber": 24
+        },
+        {
+          "caller": "ParticleField",
+          "callee": "seededBetween",
+          "lineNumber": 25
+        },
+        {
+          "caller": "ParticleField",
+          "callee": "seededBetween",
+          "lineNumber": 26
+        },
+        {
+          "caller": "ParticleField",
+          "callee": "seededBetween",
+          "lineNumber": 27
+        },
+        {
+          "caller": "ParticleField",
+          "callee": "seededBetween",
+          "lineNumber": 28
+        },
+        {
+          "caller": "ParticleField",
+          "callee": "seededBetween",
+          "lineNumber": 29
+        },
+        {
+          "caller": "ParticleField",
+          "callee": "seededBetween",
+          "lineNumber": 30
+        },
+        {
+          "caller": "ParticleField",
+          "callee": "useMemo",
+          "lineNumber": 36
+        },
+        {
+          "caller": "ParticleField",
+          "callee": "useMemo",
+          "lineNumber": 37
+        },
+        {
+          "caller": "ParticleField",
+          "callee": "useFrame",
+          "lineNumber": 39
+        },
+        {
+          "caller": "ParticleField",
+          "callee": "state.clock.getElapsedTime",
+          "lineNumber": 41
+        },
+        {
+          "caller": "ParticleField",
+          "callee": "particles.forEach",
+          "lineNumber": 48
+        },
+        {
+          "caller": "ParticleField",
+          "callee": "Math.sin",
+          "lineNumber": 49
+        },
+        {
+          "caller": "ParticleField",
+          "callee": "Math.cos",
+          "lineNumber": 50
+        },
+        {
+          "caller": "ParticleField",
+          "callee": "dummy.position.set",
+          "lineNumber": 54
+        },
+        {
+          "caller": "ParticleField",
+          "callee": "Math.sin",
+          "lineNumber": 57
+        },
+        {
+          "caller": "ParticleField",
+          "callee": "dummy.scale.setScalar",
+          "lineNumber": 59
+        },
+        {
+          "caller": "ParticleField",
+          "callee": "Math.sin",
+          "lineNumber": 59
+        },
+        {
+          "caller": "ParticleField",
+          "callee": "dummy.updateMatrix",
+          "lineNumber": 60
+        },
+        {
+          "caller": "ParticleField",
+          "callee": "mesh.current.setMatrixAt",
+          "lineNumber": 61
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/canvas/PointingCharacterCanvas.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 116,
+      "nonEmptyLines": 104,
+      "functions": [
+        {
+          "name": "SoundwaveBase",
+          "startLine": 15,
+          "endLine": 46,
+          "params": []
+        },
+        {
+          "name": "PointingModel",
+          "startLine": 48,
+          "endLine": 79,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "SoundwaveBase",
+          "callee": "useRef",
+          "lineNumber": 16
+        },
+        {
+          "caller": "SoundwaveBase",
+          "callee": "useRef",
+          "lineNumber": 17
+        },
+        {
+          "caller": "SoundwaveBase",
+          "callee": "useRef",
+          "lineNumber": 18
+        },
+        {
+          "caller": "SoundwaveBase",
+          "callee": "useFrame",
+          "lineNumber": 20
+        },
+        {
+          "caller": "PointingModel",
+          "callee": "useGLTF",
+          "lineNumber": 49
+        },
+        {
+          "caller": "PointingModel",
+          "callee": "useRef",
+          "lineNumber": 50
+        },
+        {
+          "caller": "PointingModel",
+          "callee": "useEffect",
+          "lineNumber": 52
+        },
+        {
+          "caller": "PointingModel",
+          "callee": "scene.traverse",
+          "lineNumber": 55
+        },
+        {
+          "caller": "PointingModel",
+          "callee": "mixerRef.current.clipAction",
+          "lineNumber": 68
+        },
+        {
+          "caller": "PointingModel",
+          "callee": "action.setLoop",
+          "lineNumber": 69
+        },
+        {
+          "caller": "PointingModel",
+          "callee": "action.play",
+          "lineNumber": 70
+        },
+        {
+          "caller": "PointingModel",
+          "callee": "console.error",
+          "lineNumber": 72
+        },
+        {
+          "caller": "PointingModel",
+          "callee": "mixerRef.current.stopAllAction",
+          "lineNumber": 73
+        },
+        {
+          "caller": "PointingModel",
+          "callee": "useFrame",
+          "lineNumber": 76
+        },
+        {
+          "caller": "PointingModel",
+          "callee": "mixerRef.current.update",
+          "lineNumber": 76
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 0,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/canvas/PostProcessing.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 99,
+      "nonEmptyLines": 87,
+      "functions": [
+        {
+          "name": "SafeEffectComposer",
+          "startLine": 22,
+          "endLine": 44,
+          "params": []
+        },
+        {
+          "name": "PostProcessing",
+          "startLine": 46,
+          "endLine": 99,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ComposerErrorBoundary",
+          "startLine": 8,
+          "endLine": 20,
+          "methods": [
+            "constructor",
+            "getDerivedStateFromError",
+            "render"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "PostProcessing",
+          "line": 46,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "constructor",
+          "callee": "super",
+          "lineNumber": 10
+        },
+        {
+          "caller": "SafeEffectComposer",
+          "callee": "useThree",
+          "lineNumber": 23
+        },
+        {
+          "caller": "SafeEffectComposer",
+          "callee": "gl.getContext",
+          "lineNumber": 27
+        },
+        {
+          "caller": "SafeEffectComposer",
+          "callee": "context.getContextAttributes",
+          "lineNumber": 32
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/components/canvas/RumbaDancingCanvas.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 123,
+      "nonEmptyLines": 113,
+      "functions": [
+        {
+          "name": "RumbaModel",
+          "startLine": 11,
+          "endLine": 53,
+          "params": []
+        },
+        {
+          "name": "CharacterRimLights",
+          "startLine": 55,
+          "endLine": 64,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "RumbaModel",
+          "callee": "useGLTF",
+          "lineNumber": 12
+        },
+        {
+          "caller": "RumbaModel",
+          "callee": "useRef",
+          "lineNumber": 13
+        },
+        {
+          "caller": "RumbaModel",
+          "callee": "useMemo",
+          "lineNumber": 14
+        },
+        {
+          "caller": "RumbaModel",
+          "callee": "SkeletonUtils.clone",
+          "lineNumber": 14
+        },
+        {
+          "caller": "RumbaModel",
+          "callee": "useEffect",
+          "lineNumber": 16
+        },
+        {
+          "caller": "RumbaModel",
+          "callee": "modelScene.traverse",
+          "lineNumber": 18
+        },
+        {
+          "caller": "RumbaModel",
+          "callee": "new THREE.Box3().setFromObject",
+          "lineNumber": 30
+        },
+        {
+          "caller": "RumbaModel",
+          "callee": "box.getSize",
+          "lineNumber": 31
+        },
+        {
+          "caller": "RumbaModel",
+          "callee": "box.getCenter",
+          "lineNumber": 32
+        },
+        {
+          "caller": "RumbaModel",
+          "callee": "modelScene.position.sub",
+          "lineNumber": 33
+        },
+        {
+          "caller": "RumbaModel",
+          "callee": "animations.forEach",
+          "lineNumber": 38
+        },
+        {
+          "caller": "RumbaModel",
+          "callee": "mixerRef.current.clipAction(clip).play",
+          "lineNumber": 39
+        },
+        {
+          "caller": "RumbaModel",
+          "callee": "mixerRef.current.clipAction",
+          "lineNumber": 39
+        },
+        {
+          "caller": "RumbaModel",
+          "callee": "mixerRef.current.stopAllAction",
+          "lineNumber": 43
+        },
+        {
+          "caller": "RumbaModel",
+          "callee": "useFrame",
+          "lineNumber": 47
+        },
+        {
+          "caller": "RumbaModel",
+          "callee": "mixerRef.current.update",
+          "lineNumber": 48
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/canvas/StudioCanvas.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 115,
+      "nonEmptyLines": 99,
+      "functions": [
+        {
+          "name": "CameraParallax",
+          "startLine": 12,
+          "endLine": 58,
+          "params": []
+        },
+        {
+          "name": "shouldRender3D",
+          "startLine": 60,
+          "endLine": 65,
+          "params": []
+        },
+        {
+          "name": "StudioCanvas",
+          "startLine": 67,
+          "endLine": 115,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "StudioCanvas",
+          "line": 67,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "CameraParallax",
+          "callee": "useRef",
+          "lineNumber": 13
+        },
+        {
+          "caller": "CameraParallax",
+          "callee": "useRef",
+          "lineNumber": 14
+        },
+        {
+          "caller": "CameraParallax",
+          "callee": "useRef",
+          "lineNumber": 15
+        },
+        {
+          "caller": "CameraParallax",
+          "callee": "useRef",
+          "lineNumber": 16
+        },
+        {
+          "caller": "CameraParallax",
+          "callee": "useRef",
+          "lineNumber": 17
+        },
+        {
+          "caller": "CameraParallax",
+          "callee": "useEffect",
+          "lineNumber": 19
+        },
+        {
+          "caller": "CameraParallax",
+          "callee": "camera.position.copy",
+          "lineNumber": 22
+        },
+        {
+          "caller": "CameraParallax",
+          "callee": "THREE.MathUtils.degToRad",
+          "lineNumber": 24
+        },
+        {
+          "caller": "CameraParallax",
+          "callee": "THREE.MathUtils.degToRad",
+          "lineNumber": 25
+        },
+        {
+          "caller": "CameraParallax",
+          "callee": "THREE.MathUtils.degToRad",
+          "lineNumber": 26
+        },
+        {
+          "caller": "CameraParallax",
+          "callee": "window.addEventListener",
+          "lineNumber": 34
+        },
+        {
+          "caller": "CameraParallax",
+          "callee": "window.removeEventListener",
+          "lineNumber": 35
+        },
+        {
+          "caller": "CameraParallax",
+          "callee": "useFrame",
+          "lineNumber": 38
+        },
+        {
+          "caller": "CameraParallax",
+          "callee": "Math.min",
+          "lineNumber": 42
+        },
+        {
+          "caller": "StudioCanvas",
+          "callee": "useState",
+          "lineNumber": 68
+        },
+        {
+          "caller": "StudioCanvas",
+          "callee": "useCanvasOptimizer",
+          "lineNumber": 69
+        },
+        {
+          "caller": "StudioCanvas",
+          "callee": "getPostProcessingConfig",
+          "lineNumber": 74
+        },
+        {
+          "caller": "StudioCanvas",
+          "callee": "useEffect",
+          "lineNumber": 76
+        },
+        {
+          "caller": "StudioCanvas",
+          "callee": "shouldRender3D",
+          "lineNumber": 77
+        },
+        {
+          "caller": "StudioCanvas",
+          "callee": "setTimeout",
+          "lineNumber": 78
+        },
+        {
+          "caller": "StudioCanvas",
+          "callee": "setShow3D",
+          "lineNumber": 78
+        },
+        {
+          "caller": "StudioCanvas",
+          "callee": "clearTimeout",
+          "lineNumber": 79
+        },
+        {
+          "caller": "StudioCanvas",
+          "callee": "getResponsiveFov",
+          "lineNumber": 101
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/canvas/StudioLights.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 41,
+      "nonEmptyLines": 37,
+      "functions": [
+        {
+          "name": "StudioLights",
+          "startLine": 13,
+          "endLine": 41,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "StudioLights",
+          "line": 13,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/canvas/TeleportBeam.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 161,
+      "nonEmptyLines": 146,
+      "functions": [
+        {
+          "name": "TeleportBeam",
+          "startLine": 8,
+          "endLine": 161,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "TeleportBeam",
+          "line": 8,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "TeleportBeam",
+          "callee": "useRef",
+          "lineNumber": 9
+        },
+        {
+          "caller": "TeleportBeam",
+          "callee": "useRef",
+          "lineNumber": 10
+        },
+        {
+          "caller": "TeleportBeam",
+          "callee": "useRef",
+          "lineNumber": 11
+        },
+        {
+          "caller": "TeleportBeam",
+          "callee": "useMemo",
+          "lineNumber": 13
+        },
+        {
+          "caller": "TeleportBeam",
+          "callee": "arr.push",
+          "lineNumber": 16
+        },
+        {
+          "caller": "TeleportBeam",
+          "callee": "seededUnit",
+          "lineNumber": 17
+        },
+        {
+          "caller": "TeleportBeam",
+          "callee": "seededBetween",
+          "lineNumber": 18
+        },
+        {
+          "caller": "TeleportBeam",
+          "callee": "seededBetween",
+          "lineNumber": 19
+        },
+        {
+          "caller": "TeleportBeam",
+          "callee": "seededBetween",
+          "lineNumber": 20
+        },
+        {
+          "caller": "TeleportBeam",
+          "callee": "seededBetween",
+          "lineNumber": 21
+        },
+        {
+          "caller": "TeleportBeam",
+          "callee": "seededBetween",
+          "lineNumber": 22
+        },
+        {
+          "caller": "TeleportBeam",
+          "callee": "useFrame",
+          "lineNumber": 28
+        },
+        {
+          "caller": "TeleportBeam",
+          "callee": "state.clock.getElapsedTime",
+          "lineNumber": 29
+        },
+        {
+          "caller": "TeleportBeam",
+          "callee": "sparkles.forEach",
+          "lineNumber": 41
+        },
+        {
+          "caller": "TeleportBeam",
+          "callee": "dummy.position.set",
+          "lineNumber": 44
+        },
+        {
+          "caller": "TeleportBeam",
+          "callee": "Math.cos",
+          "lineNumber": 45
+        },
+        {
+          "caller": "TeleportBeam",
+          "callee": "Math.sin",
+          "lineNumber": 47
+        },
+        {
+          "caller": "TeleportBeam",
+          "callee": "dummy.scale.setScalar",
+          "lineNumber": 49
+        },
+        {
+          "caller": "TeleportBeam",
+          "callee": "Math.sin",
+          "lineNumber": 49
+        },
+        {
+          "caller": "TeleportBeam",
+          "callee": "dummy.updateMatrix",
+          "lineNumber": 50
+        },
+        {
+          "caller": "TeleportBeam",
+          "callee": "sparklesRef.current.setMatrixAt",
+          "lineNumber": 51
+        },
+        {
+          "caller": "TeleportBeam",
+          "callee": "useMemo",
+          "lineNumber": 57
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/canvas/WalkingCharacterCanvas.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 102,
+      "nonEmptyLines": 90,
+      "functions": [
+        {
+          "name": "WalkingCharacterModel",
+          "startLine": 13,
+          "endLine": 76,
+          "params": []
+        },
+        {
+          "name": "WalkingCharacterCanvas",
+          "startLine": 78,
+          "endLine": 102,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "WalkingCharacterCanvas",
+          "line": 78,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "WalkingCharacterModel",
+          "callee": "useRef",
+          "lineNumber": 14
+        },
+        {
+          "caller": "WalkingCharacterModel",
+          "callee": "useRef",
+          "lineNumber": 15
+        },
+        {
+          "caller": "WalkingCharacterModel",
+          "callee": "useGLTF",
+          "lineNumber": 16
+        },
+        {
+          "caller": "WalkingCharacterModel",
+          "callee": "useMemo",
+          "lineNumber": 18
+        },
+        {
+          "caller": "WalkingCharacterModel",
+          "callee": "scene.clone",
+          "lineNumber": 20
+        },
+        {
+          "caller": "WalkingCharacterModel",
+          "callee": "console.error",
+          "lineNumber": 22
+        },
+        {
+          "caller": "WalkingCharacterModel",
+          "callee": "useEffect",
+          "lineNumber": 27
+        },
+        {
+          "caller": "WalkingCharacterModel",
+          "callee": "character.traverse",
+          "lineNumber": 31
+        },
+        {
+          "caller": "WalkingCharacterModel",
+          "callee": "mixerRef.current.clipAction",
+          "lineNumber": 44
+        },
+        {
+          "caller": "WalkingCharacterModel",
+          "callee": "action.play",
+          "lineNumber": 47
+        },
+        {
+          "caller": "WalkingCharacterModel",
+          "callee": "console.log",
+          "lineNumber": 48
+        },
+        {
+          "caller": "WalkingCharacterModel",
+          "callee": "console.warn",
+          "lineNumber": 50
+        },
+        {
+          "caller": "WalkingCharacterModel",
+          "callee": "console.error",
+          "lineNumber": 53
+        },
+        {
+          "caller": "WalkingCharacterModel",
+          "callee": "THREE.MathUtils.degToRad",
+          "lineNumber": 62
+        },
+        {
+          "caller": "WalkingCharacterModel",
+          "callee": "THREE.MathUtils.degToRad",
+          "lineNumber": 63
+        },
+        {
+          "caller": "WalkingCharacterModel",
+          "callee": "THREE.MathUtils.degToRad",
+          "lineNumber": 64
+        },
+        {
+          "caller": "WalkingCharacterCanvas",
+          "callee": "camera.lookAt",
+          "lineNumber": 88
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/canvas/WaveCharacterCanvas.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 128,
+      "nonEmptyLines": 118,
+      "functions": [
+        {
+          "name": "WaveModel",
+          "startLine": 13,
+          "endLine": 55,
+          "params": []
+        },
+        {
+          "name": "CharacterRimLights",
+          "startLine": 57,
+          "endLine": 66,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "WaveModel",
+          "callee": "useGLTF",
+          "lineNumber": 14
+        },
+        {
+          "caller": "WaveModel",
+          "callee": "useRef",
+          "lineNumber": 15
+        },
+        {
+          "caller": "WaveModel",
+          "callee": "useMemo",
+          "lineNumber": 16
+        },
+        {
+          "caller": "WaveModel",
+          "callee": "SkeletonUtils.clone",
+          "lineNumber": 16
+        },
+        {
+          "caller": "WaveModel",
+          "callee": "useEffect",
+          "lineNumber": 18
+        },
+        {
+          "caller": "WaveModel",
+          "callee": "modelScene.traverse",
+          "lineNumber": 20
+        },
+        {
+          "caller": "WaveModel",
+          "callee": "new THREE.Box3().setFromObject",
+          "lineNumber": 32
+        },
+        {
+          "caller": "WaveModel",
+          "callee": "box.getSize",
+          "lineNumber": 33
+        },
+        {
+          "caller": "WaveModel",
+          "callee": "box.getCenter",
+          "lineNumber": 34
+        },
+        {
+          "caller": "WaveModel",
+          "callee": "modelScene.position.sub",
+          "lineNumber": 35
+        },
+        {
+          "caller": "WaveModel",
+          "callee": "animations.forEach",
+          "lineNumber": 40
+        },
+        {
+          "caller": "WaveModel",
+          "callee": "mixerRef.current.clipAction(clip).play",
+          "lineNumber": 41
+        },
+        {
+          "caller": "WaveModel",
+          "callee": "mixerRef.current.clipAction",
+          "lineNumber": 41
+        },
+        {
+          "caller": "WaveModel",
+          "callee": "mixerRef.current.stopAllAction",
+          "lineNumber": 45
+        },
+        {
+          "caller": "WaveModel",
+          "callee": "useFrame",
+          "lineNumber": 49
+        },
+        {
+          "caller": "WaveModel",
+          "callee": "mixerRef.current.update",
+          "lineNumber": 50
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 0,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/contact/ContactPage.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 297,
+      "nonEmptyLines": 272,
+      "functions": [
+        {
+          "name": "ContactPageClient",
+          "startLine": 59,
+          "endLine": 297,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ContactPageClient",
+          "line": 59,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ContactPageClient",
+          "callee": "useState",
+          "lineNumber": 60
+        },
+        {
+          "caller": "ContactPageClient",
+          "callee": "useState",
+          "lineNumber": 61
+        },
+        {
+          "caller": "ContactPageClient",
+          "callee": "useState",
+          "lineNumber": 62
+        },
+        {
+          "caller": "ContactPageClient",
+          "callee": "useState",
+          "lineNumber": 63
+        },
+        {
+          "caller": "handleChange",
+          "callee": "setForm",
+          "lineNumber": 68
+        },
+        {
+          "caller": "handleChange",
+          "callee": "setError",
+          "lineNumber": 69
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "e.preventDefault",
+          "lineNumber": 73
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setStatus",
+          "lineNumber": 74
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setError",
+          "lineNumber": 75
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setError",
+          "lineNumber": 78
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setStatus",
+          "lineNumber": 79
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "emailRegex.test",
+          "lineNumber": 84
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setError",
+          "lineNumber": 85
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setStatus",
+          "lineNumber": 86
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "fetch",
+          "lineNumber": 91
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "JSON.stringify",
+          "lineNumber": 94
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "res.json",
+          "lineNumber": 103
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setStatus",
+          "lineNumber": 106
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setForm",
+          "lineNumber": 107
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setError",
+          "lineNumber": 109
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setStatus",
+          "lineNumber": 110
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setError",
+          "lineNumber": 113
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setStatus",
+          "lineNumber": 114
+        },
+        {
+          "caller": "handleReset",
+          "callee": "setStatus",
+          "lineNumber": 119
+        },
+        {
+          "caller": "handleReset",
+          "callee": "setForm",
+          "lineNumber": 120
+        },
+        {
+          "caller": "handleReset",
+          "callee": "setError",
+          "lineNumber": 121
+        },
+        {
+          "caller": "ContactPageClient",
+          "callee": "PERSONAS.map",
+          "lineNumber": 140
+        },
+        {
+          "caller": "ContactPageClient",
+          "callee": "setPersona",
+          "lineNumber": 148
+        },
+        {
+          "caller": "ContactPageClient",
+          "callee": "e.preventDefault",
+          "lineNumber": 151
+        },
+        {
+          "caller": "ContactPageClient",
+          "callee": "PERSONAS.findIndex",
+          "lineNumber": 152
+        },
+        {
+          "caller": "ContactPageClient",
+          "callee": "setPersona",
+          "lineNumber": 156
+        },
+        {
+          "caller": "ContactPageClient",
+          "callee": "document.getElementById(`tab-${PERSONAS[next].id}`)?.focus",
+          "lineNumber": 157
+        },
+        {
+          "caller": "ContactPageClient",
+          "callee": "document.getElementById",
+          "lineNumber": 157
+        },
+        {
+          "caller": "ContactPageClient",
+          "callee": "SOCIALS.map",
+          "lineNumber": 182
+        },
+        {
+          "caller": "ContactPageClient",
+          "callee": "content.reasonOptions.map",
+          "lineNumber": 260
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/icons/SocialIcons.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 63,
+      "nonEmptyLines": 56,
+      "functions": [
+        {
+          "name": "FacebookIcon",
+          "startLine": 1,
+          "endLine": 7,
+          "params": []
+        },
+        {
+          "name": "InstagramIcon",
+          "startLine": 9,
+          "endLine": 15,
+          "params": []
+        },
+        {
+          "name": "YouTubeIcon",
+          "startLine": 17,
+          "endLine": 23,
+          "params": []
+        },
+        {
+          "name": "TikTokIcon",
+          "startLine": 25,
+          "endLine": 31,
+          "params": []
+        },
+        {
+          "name": "SpotifyIcon",
+          "startLine": 33,
+          "endLine": 39,
+          "params": []
+        },
+        {
+          "name": "AppleMusicIcon",
+          "startLine": 41,
+          "endLine": 47,
+          "params": []
+        },
+        {
+          "name": "AmazonMusicIcon",
+          "startLine": 49,
+          "endLine": 55,
+          "params": []
+        },
+        {
+          "name": "SoundCloudIcon",
+          "startLine": 57,
+          "endLine": 63,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "FacebookIcon",
+          "line": 1,
+          "isDefault": false
+        },
+        {
+          "name": "InstagramIcon",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "YouTubeIcon",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "TikTokIcon",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "SpotifyIcon",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "AppleMusicIcon",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "AmazonMusicIcon",
+          "line": 49,
+          "isDefault": false
+        },
+        {
+          "name": "SoundCloudIcon",
+          "line": 57,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 8,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/layout/Footer.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 134,
+      "nonEmptyLines": 125,
+      "functions": [
+        {
+          "name": "ShootingStars",
+          "startLine": 37,
+          "endLine": 45,
+          "params": []
+        },
+        {
+          "name": "Footer",
+          "startLine": 47,
+          "endLine": 134,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Footer",
+          "line": 47,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ShootingStars",
+          "callee": "[...Array(20)].map",
+          "lineNumber": 40
+        },
+        {
+          "caller": "ShootingStars",
+          "callee": "Array",
+          "lineNumber": 40
+        },
+        {
+          "caller": "Footer",
+          "callee": "mergeSiteSettings",
+          "lineNumber": 48
+        },
+        {
+          "caller": "Footer",
+          "callee": "Object.entries(siteSettings.socialLinks)\n    .map(([key, url]) => ({ name: SOCIAL_LABELS[key] || key, url }))\n    .filter",
+          "lineNumber": 50
+        },
+        {
+          "caller": "Footer",
+          "callee": "Object.entries(siteSettings.socialLinks)\n    .map",
+          "lineNumber": 50
+        },
+        {
+          "caller": "Footer",
+          "callee": "Object.entries",
+          "lineNumber": 50
+        },
+        {
+          "caller": "Footer",
+          "callee": "useState",
+          "lineNumber": 53
+        },
+        {
+          "caller": "Footer",
+          "callee": "useRef",
+          "lineNumber": 54
+        },
+        {
+          "caller": "Footer",
+          "callee": "useEffect",
+          "lineNumber": 56
+        },
+        {
+          "caller": "Footer",
+          "callee": "setVisible",
+          "lineNumber": 60
+        },
+        {
+          "caller": "Footer",
+          "callee": "obs.observe",
+          "lineNumber": 63
+        },
+        {
+          "caller": "Footer",
+          "callee": "obs.disconnect",
+          "lineNumber": 64
+        },
+        {
+          "caller": "scrollToTop",
+          "callee": "window.scrollTo",
+          "lineNumber": 68
+        },
+        {
+          "caller": "Footer",
+          "callee": "footer.paragraphs.map",
+          "lineNumber": 86
+        },
+        {
+          "caller": "Footer",
+          "callee": "enabledItems(footer.navigationLinks).map",
+          "lineNumber": 93
+        },
+        {
+          "caller": "Footer",
+          "callee": "enabledItems",
+          "lineNumber": 93
+        },
+        {
+          "caller": "Footer",
+          "callee": "enabledItems(footer.otherLinks).map",
+          "lineNumber": 100
+        },
+        {
+          "caller": "Footer",
+          "callee": "enabledItems",
+          "lineNumber": 100
+        },
+        {
+          "caller": "Footer",
+          "callee": "socialLinks.map",
+          "lineNumber": 108
+        },
+        {
+          "caller": "Footer",
+          "callee": "new Date().getFullYear",
+          "lineNumber": 125
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/layout/FooterEffects.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 51,
+      "nonEmptyLines": 45,
+      "functions": [
+        {
+          "name": "ParticleBackground",
+          "startLine": 13,
+          "endLine": 36,
+          "params": []
+        },
+        {
+          "name": "FooterEffects",
+          "startLine": 38,
+          "endLine": 51,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "FooterEffects",
+          "line": 38,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ParticleBackground",
+          "callee": "useCanvasOptimizer",
+          "lineNumber": 14
+        },
+        {
+          "caller": "FooterEffects",
+          "callee": "useCanvasOptimizer",
+          "lineNumber": 39
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/sections/ContactSection.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 439,
+      "nonEmptyLines": 396,
+      "functions": [
+        {
+          "name": "degToRad",
+          "startLine": 21,
+          "endLine": 21,
+          "params": [
+            "deg"
+          ]
+        },
+        {
+          "name": "ParallaxNotes",
+          "startLine": 39,
+          "endLine": 77,
+          "params": []
+        },
+        {
+          "name": "BackgroundLayers",
+          "startLine": 85,
+          "endLine": 106,
+          "params": []
+        },
+        {
+          "name": "ContactSection",
+          "startLine": 118,
+          "endLine": 439,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ContactSection",
+          "line": 118,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ParallaxNotes",
+          "callee": "useRef",
+          "lineNumber": 40
+        },
+        {
+          "caller": "ParallaxNotes",
+          "callee": "useEffect",
+          "lineNumber": 42
+        },
+        {
+          "caller": "ParallaxNotes",
+          "callee": "layers.forEach",
+          "lineNumber": 45
+        },
+        {
+          "caller": "ParallaxNotes",
+          "callee": "NOTE_LAYERS.map",
+          "lineNumber": 54
+        },
+        {
+          "caller": "ParallaxNotes",
+          "callee": "layer.notes.map",
+          "lineNumber": 64
+        },
+        {
+          "caller": "BackgroundLayers",
+          "callee": "useCanvasOptimizer",
+          "lineNumber": 86
+        },
+        {
+          "caller": "BackgroundLayers",
+          "callee": "getResponsiveParticleCount",
+          "lineNumber": 87
+        },
+        {
+          "caller": "BackgroundLayers",
+          "callee": "Math.floor",
+          "lineNumber": 100
+        },
+        {
+          "caller": "BackgroundLayers",
+          "callee": "Math.floor",
+          "lineNumber": 101
+        },
+        {
+          "caller": "BackgroundLayers",
+          "callee": "Math.floor",
+          "lineNumber": 102
+        },
+        {
+          "caller": "ContactSection",
+          "callee": "useRef",
+          "lineNumber": 119
+        },
+        {
+          "caller": "ContactSection",
+          "callee": "useRef",
+          "lineNumber": 120
+        },
+        {
+          "caller": "ContactSection",
+          "callee": "useRef",
+          "lineNumber": 121
+        },
+        {
+          "caller": "ContactSection",
+          "callee": "useState",
+          "lineNumber": 122
+        },
+        {
+          "caller": "ContactSection",
+          "callee": "useState",
+          "lineNumber": 123
+        },
+        {
+          "caller": "ContactSection",
+          "callee": "useState",
+          "lineNumber": 124
+        },
+        {
+          "caller": "ContactSection",
+          "callee": "useCanvasOptimizer",
+          "lineNumber": 125
+        },
+        {
+          "caller": "ContactSection",
+          "callee": "useRef",
+          "lineNumber": 128
+        },
+        {
+          "caller": "ContactSection",
+          "callee": "useRef",
+          "lineNumber": 129
+        },
+        {
+          "caller": "ContactSection",
+          "callee": "useRef",
+          "lineNumber": 130
+        },
+        {
+          "caller": "ContactSection",
+          "callee": "useRef",
+          "lineNumber": 131
+        },
+        {
+          "caller": "ContactSection",
+          "callee": "useCallback",
+          "lineNumber": 133
+        },
+        {
+          "caller": "ContactSection",
+          "callee": "sectionRef.current?.getBoundingClientRect",
+          "lineNumber": 134
+        },
+        {
+          "caller": "ContactSection",
+          "callee": "setMouse",
+          "lineNumber": 136
+        },
+        {
+          "caller": "ContactSection",
+          "callee": "useCallback",
+          "lineNumber": 142
+        },
+        {
+          "caller": "animate",
+          "callee": "requestAnimationFrame",
+          "lineNumber": 151
+        },
+        {
+          "caller": "ContactSection",
+          "callee": "requestAnimationFrame",
+          "lineNumber": 154
+        },
+        {
+          "caller": "ContactSection",
+          "callee": "useCallback",
+          "lineNumber": 157
+        },
+        {
+          "caller": "ContactSection",
+          "callee": "cancelAnimationFrame",
+          "lineNumber": 159
+        },
+        {
+          "caller": "ContactSection",
+          "callee": "useCallback",
+          "lineNumber": 164
+        },
+        {
+          "caller": "ContactSection",
+          "callee": "stopAutoScroll",
+          "lineNumber": 167
+        },
+        {
+          "caller": "ContactSection",
+          "callee": "useCallback",
+          "lineNumber": 170
+        },
+        {
+          "caller": "ContactSection",
+          "callee": "useCallback",
+          "lineNumber": 181
+        },
+        {
+          "caller": "ContactSection",
+          "callee": "startAutoScroll",
+          "lineNumber": 183
+        },
+        {
+          "caller": "ContactSection",
+          "callee": "useEffect",
+          "lineNumber": 186
+        },
+        {
+          "caller": "ContactSection",
+          "callee": "setTimeout",
+          "lineNumber": 189
+        },
+        {
+          "caller": "ContactSection",
+          "callee": "startAutoScroll",
+          "lineNumber": 189
+        },
+        {
+          "caller": "ContactSection",
+          "callee": "clearTimeout",
+          "lineNumber": 190
+        },
+        {
+          "caller": "ContactSection",
+          "callee": "stopAutoScroll",
+          "lineNumber": 190
+        },
+        {
+          "caller": "ContactSection",
+          "callee": "useState",
+          "lineNumber": 193
+        },
+        {
+          "caller": "ContactSection",
+          "callee": "useState",
+          "lineNumber": 199
+        },
+        {
+          "caller": "ContactSection",
+          "callee": "useState",
+          "lineNumber": 200
+        },
+        {
+          "caller": "ContactSection",
+          "callee": "useEffect",
+          "lineNumber": 202
+        },
+        {
+          "caller": "ContactSection",
+          "callee": "setVisible",
+          "lineNumber": 206
+        },
+        {
+          "caller": "ContactSection",
+          "callee": "obs.observe",
+          "lineNumber": 209
+        },
+        {
+          "caller": "ContactSection",
+          "callee": "obs.disconnect",
+          "lineNumber": 210
+        },
+        {
+          "caller": "ContactSection",
+          "callee": "useEffect",
+          "lineNumber": 213
+        },
+        {
+          "caller": "ContactSection",
+          "callee": "setInterval",
+          "lineNumber": 215
+        },
+        {
+          "caller": "ContactSection",
+          "callee": "setCharReady",
+          "lineNumber": 216
+        },
+        {
+          "caller": "ContactSection",
+          "callee": "clearInterval",
+          "lineNumber": 216
+        },
+        {
+          "caller": "ContactSection",
+          "callee": "clearInterval",
+          "lineNumber": 218
+        },
+        {
+          "caller": "handleInputChange",
+          "callee": "setFormData",
+          "lineNumber": 223
+        },
+        {
+          "caller": "handleInputChange",
+          "callee": "setError",
+          "lineNumber": 224
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "e.preventDefault",
+          "lineNumber": 228
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setFormStatus",
+          "lineNumber": 229
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setError",
+          "lineNumber": 230
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setError",
+          "lineNumber": 233
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setFormStatus",
+          "lineNumber": 234
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "emailRegex.test",
+          "lineNumber": 239
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setError",
+          "lineNumber": 240
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setFormStatus",
+          "lineNumber": 241
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "fetch",
+          "lineNumber": 246
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "JSON.stringify",
+          "lineNumber": 249
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "response.json",
+          "lineNumber": 252
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setFormStatus",
+          "lineNumber": 255
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setFormData",
+          "lineNumber": 256
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setError",
+          "lineNumber": 258
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setFormStatus",
+          "lineNumber": 259
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setError",
+          "lineNumber": 262
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setFormStatus",
+          "lineNumber": 263
+        },
+        {
+          "caller": "ContactSection",
+          "callee": "SOCIAL_CHANNELS.map",
+          "lineNumber": 289
+        },
+        {
+          "caller": "ContactSection",
+          "callee": "SOCIAL_CHANNELS.map",
+          "lineNumber": 332
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 1,
+        "functionCount": 4,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/sections/DonationSection.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 161,
+      "nonEmptyLines": 144,
+      "functions": [
+        {
+          "name": "degToRad",
+          "startLine": 17,
+          "endLine": 17,
+          "params": [
+            "deg"
+          ]
+        },
+        {
+          "name": "BackgroundLayers",
+          "startLine": 25,
+          "endLine": 43,
+          "params": []
+        },
+        {
+          "name": "DonationSection",
+          "startLine": 45,
+          "endLine": 161,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "DonationSection",
+          "line": 45,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "BackgroundLayers",
+          "callee": "useCanvasOptimizer",
+          "lineNumber": 26
+        },
+        {
+          "caller": "BackgroundLayers",
+          "callee": "getResponsiveParticleCount",
+          "lineNumber": 27
+        },
+        {
+          "caller": "DonationSection",
+          "callee": "useRef",
+          "lineNumber": 46
+        },
+        {
+          "caller": "DonationSection",
+          "callee": "useRef",
+          "lineNumber": 47
+        },
+        {
+          "caller": "DonationSection",
+          "callee": "useState",
+          "lineNumber": 48
+        },
+        {
+          "caller": "DonationSection",
+          "callee": "useState",
+          "lineNumber": 49
+        },
+        {
+          "caller": "DonationSection",
+          "callee": "useCanvasOptimizer",
+          "lineNumber": 50
+        },
+        {
+          "caller": "DonationSection",
+          "callee": "useEffect",
+          "lineNumber": 53
+        },
+        {
+          "caller": "DonationSection",
+          "callee": "setVisible",
+          "lineNumber": 57
+        },
+        {
+          "caller": "DonationSection",
+          "callee": "obs.observe",
+          "lineNumber": 60
+        },
+        {
+          "caller": "DonationSection",
+          "callee": "obs.disconnect",
+          "lineNumber": 61
+        },
+        {
+          "caller": "DonationSection",
+          "callee": "useEffect",
+          "lineNumber": 64
+        },
+        {
+          "caller": "DonationSection",
+          "callee": "setInterval",
+          "lineNumber": 65
+        },
+        {
+          "caller": "DonationSection",
+          "callee": "setCharReady",
+          "lineNumber": 66
+        },
+        {
+          "caller": "DonationSection",
+          "callee": "clearInterval",
+          "lineNumber": 66
+        },
+        {
+          "caller": "DonationSection",
+          "callee": "clearInterval",
+          "lineNumber": 68
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    }
+  ]
+}

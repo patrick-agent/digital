@@ -1,0 +1,736 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/components/canvas/AboutCharacterCanvas.jsx",
+      "type": "file",
+      "name": "AboutCharacterCanvas.jsx",
+      "filePath": "src/components/canvas/AboutCharacterCanvas.jsx",
+      "summary": "AboutCharacterCanvas.jsx: Source file, 3 functions, 4 imports.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/canvas/AboutCharacterCanvas.jsx:CharacterRimLights",
+      "type": "function",
+      "name": "CharacterRimLights",
+      "filePath": "src/components/canvas/AboutCharacterCanvas.jsx",
+      "lineRange": [
+        14,
+        23
+      ],
+      "summary": "Function CharacterRimLights with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/canvas/AboutCharacterCanvas.jsx:HologramBase",
+      "type": "function",
+      "name": "HologramBase",
+      "filePath": "src/components/canvas/AboutCharacterCanvas.jsx",
+      "lineRange": [
+        25,
+        60
+      ],
+      "summary": "Function HologramBase with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/canvas/AboutCharacterCanvas.jsx:CharacterModel",
+      "type": "function",
+      "name": "CharacterModel",
+      "filePath": "src/components/canvas/AboutCharacterCanvas.jsx",
+      "lineRange": [
+        62,
+        111
+      ],
+      "summary": "Function CharacterModel with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/canvas/BreakdanceCharacterCanvas.jsx",
+      "type": "file",
+      "name": "BreakdanceCharacterCanvas.jsx",
+      "filePath": "src/components/canvas/BreakdanceCharacterCanvas.jsx",
+      "summary": "BreakdanceCharacterCanvas.jsx: Source file, 3 functions, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/canvas/BreakdanceCharacterCanvas.jsx:MouseParticles",
+      "type": "function",
+      "name": "MouseParticles",
+      "filePath": "src/components/canvas/BreakdanceCharacterCanvas.jsx",
+      "lineRange": [
+        11,
+        64
+      ],
+      "summary": "Function MouseParticles with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/canvas/BreakdanceCharacterCanvas.jsx:BreakdanceModel",
+      "type": "function",
+      "name": "BreakdanceModel",
+      "filePath": "src/components/canvas/BreakdanceCharacterCanvas.jsx",
+      "lineRange": [
+        66,
+        108
+      ],
+      "summary": "Function BreakdanceModel with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/canvas/BreakdanceCharacterCanvas.jsx:RotatingLightRing",
+      "type": "function",
+      "name": "RotatingLightRing",
+      "filePath": "src/components/canvas/BreakdanceCharacterCanvas.jsx",
+      "lineRange": [
+        110,
+        132
+      ],
+      "summary": "Function RotatingLightRing with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/canvas/FloatingGeometries.jsx",
+      "type": "file",
+      "name": "FloatingGeometries.jsx",
+      "filePath": "src/components/canvas/FloatingGeometries.jsx",
+      "summary": "FloatingGeometries.jsx: Source file, 1 function.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/canvas/FloatingGeometries.jsx:FloatingGeometries",
+      "type": "function",
+      "name": "FloatingGeometries",
+      "filePath": "src/components/canvas/FloatingGeometries.jsx",
+      "lineRange": [
+        16,
+        90
+      ],
+      "summary": "Function FloatingGeometries with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/canvas/GlowBackground.jsx",
+      "type": "file",
+      "name": "GlowBackground.jsx",
+      "filePath": "src/components/canvas/GlowBackground.jsx",
+      "summary": "GlowBackground.jsx: Source file, 1 function.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/canvas/GlowBackground.jsx:GlowBackground",
+      "type": "function",
+      "name": "GlowBackground",
+      "filePath": "src/components/canvas/GlowBackground.jsx",
+      "lineRange": [
+        7,
+        68
+      ],
+      "summary": "Function GlowBackground with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/canvas/ParticleField.jsx",
+      "type": "file",
+      "name": "ParticleField.jsx",
+      "filePath": "src/components/canvas/ParticleField.jsx",
+      "summary": "ParticleField.jsx: Source file, 1 function.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/canvas/ParticleField.jsx:ParticleField",
+      "type": "function",
+      "name": "ParticleField",
+      "filePath": "src/components/canvas/ParticleField.jsx",
+      "lineRange": [
+        8,
+        72
+      ],
+      "summary": "Function ParticleField with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/canvas/PointingCharacterCanvas.jsx",
+      "type": "file",
+      "name": "PointingCharacterCanvas.jsx",
+      "filePath": "src/components/canvas/PointingCharacterCanvas.jsx",
+      "summary": "PointingCharacterCanvas.jsx: Source file, 2 functions, 4 imports.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/canvas/PointingCharacterCanvas.jsx:SoundwaveBase",
+      "type": "function",
+      "name": "SoundwaveBase",
+      "filePath": "src/components/canvas/PointingCharacterCanvas.jsx",
+      "lineRange": [
+        15,
+        46
+      ],
+      "summary": "Function SoundwaveBase with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/canvas/PointingCharacterCanvas.jsx:PointingModel",
+      "type": "function",
+      "name": "PointingModel",
+      "filePath": "src/components/canvas/PointingCharacterCanvas.jsx",
+      "lineRange": [
+        48,
+        79
+      ],
+      "summary": "Function PointingModel with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/canvas/PostProcessing.jsx",
+      "type": "file",
+      "name": "PostProcessing.jsx",
+      "filePath": "src/components/canvas/PostProcessing.jsx",
+      "summary": "PostProcessing.jsx: Source file, 2 functions, 1 class.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/canvas/PostProcessing.jsx:SafeEffectComposer",
+      "type": "function",
+      "name": "SafeEffectComposer",
+      "filePath": "src/components/canvas/PostProcessing.jsx",
+      "lineRange": [
+        22,
+        44
+      ],
+      "summary": "Function SafeEffectComposer with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/canvas/PostProcessing.jsx:PostProcessing",
+      "type": "function",
+      "name": "PostProcessing",
+      "filePath": "src/components/canvas/PostProcessing.jsx",
+      "lineRange": [
+        46,
+        99
+      ],
+      "summary": "Function PostProcessing with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/components/canvas/PostProcessing.jsx:ComposerErrorBoundary",
+      "type": "class",
+      "name": "ComposerErrorBoundary",
+      "filePath": "src/components/canvas/PostProcessing.jsx",
+      "lineRange": [
+        8,
+        20
+      ],
+      "summary": "Class ComposerErrorBoundary with 3 methods and 0 properties.",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/canvas/RumbaDancingCanvas.jsx",
+      "type": "file",
+      "name": "RumbaDancingCanvas.jsx",
+      "filePath": "src/components/canvas/RumbaDancingCanvas.jsx",
+      "summary": "RumbaDancingCanvas.jsx: Source file, 2 functions, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/canvas/RumbaDancingCanvas.jsx:RumbaModel",
+      "type": "function",
+      "name": "RumbaModel",
+      "filePath": "src/components/canvas/RumbaDancingCanvas.jsx",
+      "lineRange": [
+        11,
+        53
+      ],
+      "summary": "Function RumbaModel with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/canvas/RumbaDancingCanvas.jsx:CharacterRimLights",
+      "type": "function",
+      "name": "CharacterRimLights",
+      "filePath": "src/components/canvas/RumbaDancingCanvas.jsx",
+      "lineRange": [
+        55,
+        64
+      ],
+      "summary": "Function CharacterRimLights with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/canvas/StudioCanvas.jsx",
+      "type": "file",
+      "name": "StudioCanvas.jsx",
+      "filePath": "src/components/canvas/StudioCanvas.jsx",
+      "summary": "StudioCanvas.jsx: Source file, 3 functions, 3 imports.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/canvas/StudioCanvas.jsx:CameraParallax",
+      "type": "function",
+      "name": "CameraParallax",
+      "filePath": "src/components/canvas/StudioCanvas.jsx",
+      "lineRange": [
+        12,
+        58
+      ],
+      "summary": "Function CameraParallax with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/canvas/StudioCanvas.jsx:shouldRender3D",
+      "type": "function",
+      "name": "shouldRender3D",
+      "filePath": "src/components/canvas/StudioCanvas.jsx",
+      "lineRange": [
+        60,
+        65
+      ],
+      "summary": "Function shouldRender3D with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/canvas/StudioCanvas.jsx:StudioCanvas",
+      "type": "function",
+      "name": "StudioCanvas",
+      "filePath": "src/components/canvas/StudioCanvas.jsx",
+      "lineRange": [
+        67,
+        115
+      ],
+      "summary": "Function StudioCanvas with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/canvas/StudioLights.jsx",
+      "type": "file",
+      "name": "StudioLights.jsx",
+      "filePath": "src/components/canvas/StudioLights.jsx",
+      "summary": "StudioLights.jsx: Source file, 1 function.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/canvas/StudioLights.jsx:StudioLights",
+      "type": "function",
+      "name": "StudioLights",
+      "filePath": "src/components/canvas/StudioLights.jsx",
+      "lineRange": [
+        13,
+        41
+      ],
+      "summary": "Function StudioLights with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/canvas/TeleportBeam.jsx",
+      "type": "file",
+      "name": "TeleportBeam.jsx",
+      "filePath": "src/components/canvas/TeleportBeam.jsx",
+      "summary": "TeleportBeam.jsx: Source file, 1 function.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/canvas/TeleportBeam.jsx:TeleportBeam",
+      "type": "function",
+      "name": "TeleportBeam",
+      "filePath": "src/components/canvas/TeleportBeam.jsx",
+      "lineRange": [
+        8,
+        161
+      ],
+      "summary": "Function TeleportBeam with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/components/canvas/AboutCharacterCanvas.jsx",
+      "target": "function:src/components/canvas/AboutCharacterCanvas.jsx:CharacterRimLights",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/canvas/AboutCharacterCanvas.jsx",
+      "target": "function:src/components/canvas/AboutCharacterCanvas.jsx:HologramBase",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/canvas/AboutCharacterCanvas.jsx",
+      "target": "function:src/components/canvas/AboutCharacterCanvas.jsx:CharacterModel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/canvas/AboutCharacterCanvas.jsx",
+      "target": "file:src/components/canvas/FloatingGeometries.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/canvas/AboutCharacterCanvas.jsx",
+      "target": "file:src/components/canvas/GlowBackground.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/canvas/AboutCharacterCanvas.jsx",
+      "target": "file:src/components/canvas/ParticleField.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/canvas/AboutCharacterCanvas.jsx",
+      "target": "file:src/components/canvas/TeleportBeam.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/canvas/BreakdanceCharacterCanvas.jsx",
+      "target": "function:src/components/canvas/BreakdanceCharacterCanvas.jsx:MouseParticles",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/canvas/BreakdanceCharacterCanvas.jsx",
+      "target": "function:src/components/canvas/BreakdanceCharacterCanvas.jsx:BreakdanceModel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/canvas/BreakdanceCharacterCanvas.jsx",
+      "target": "function:src/components/canvas/BreakdanceCharacterCanvas.jsx:RotatingLightRing",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/canvas/BreakdanceCharacterCanvas.jsx",
+      "target": "file:src/components/canvas/GlowBackground.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/canvas/FloatingGeometries.jsx",
+      "target": "function:src/components/canvas/FloatingGeometries.jsx:FloatingGeometries",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/canvas/FloatingGeometries.jsx",
+      "target": "function:src/components/canvas/FloatingGeometries.jsx:FloatingGeometries",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/canvas/GlowBackground.jsx",
+      "target": "function:src/components/canvas/GlowBackground.jsx:GlowBackground",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/canvas/GlowBackground.jsx",
+      "target": "function:src/components/canvas/GlowBackground.jsx:GlowBackground",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/canvas/ParticleField.jsx",
+      "target": "function:src/components/canvas/ParticleField.jsx:ParticleField",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/canvas/ParticleField.jsx",
+      "target": "function:src/components/canvas/ParticleField.jsx:ParticleField",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/canvas/PointingCharacterCanvas.jsx",
+      "target": "function:src/components/canvas/PointingCharacterCanvas.jsx:SoundwaveBase",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/canvas/PointingCharacterCanvas.jsx",
+      "target": "function:src/components/canvas/PointingCharacterCanvas.jsx:PointingModel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/canvas/PointingCharacterCanvas.jsx",
+      "target": "file:src/components/canvas/FloatingGeometries.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/canvas/PointingCharacterCanvas.jsx",
+      "target": "file:src/components/canvas/GlowBackground.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/canvas/PointingCharacterCanvas.jsx",
+      "target": "file:src/components/canvas/ParticleField.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/canvas/PointingCharacterCanvas.jsx",
+      "target": "file:src/components/canvas/TeleportBeam.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/canvas/PostProcessing.jsx",
+      "target": "function:src/components/canvas/PostProcessing.jsx:SafeEffectComposer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/canvas/PostProcessing.jsx",
+      "target": "function:src/components/canvas/PostProcessing.jsx:PostProcessing",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/canvas/PostProcessing.jsx",
+      "target": "function:src/components/canvas/PostProcessing.jsx:PostProcessing",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/canvas/PostProcessing.jsx",
+      "target": "class:src/components/canvas/PostProcessing.jsx:ComposerErrorBoundary",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/canvas/RumbaDancingCanvas.jsx",
+      "target": "function:src/components/canvas/RumbaDancingCanvas.jsx:RumbaModel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/canvas/RumbaDancingCanvas.jsx",
+      "target": "function:src/components/canvas/RumbaDancingCanvas.jsx:CharacterRimLights",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/canvas/RumbaDancingCanvas.jsx",
+      "target": "file:src/components/canvas/PostProcessing.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/canvas/StudioCanvas.jsx",
+      "target": "function:src/components/canvas/StudioCanvas.jsx:CameraParallax",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/canvas/StudioCanvas.jsx",
+      "target": "function:src/components/canvas/StudioCanvas.jsx:shouldRender3D",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/canvas/StudioCanvas.jsx",
+      "target": "function:src/components/canvas/StudioCanvas.jsx:StudioCanvas",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/canvas/StudioCanvas.jsx",
+      "target": "function:src/components/canvas/StudioCanvas.jsx:StudioCanvas",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/canvas/StudioCanvas.jsx",
+      "target": "file:src/components/canvas/GlowBackground.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/canvas/StudioCanvas.jsx",
+      "target": "file:src/components/canvas/PostProcessing.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/canvas/StudioCanvas.jsx",
+      "target": "file:src/components/canvas/StudioLights.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/canvas/StudioCanvas.jsx",
+      "target": "function:src/components/canvas/StudioCanvas.jsx:shouldRender3D",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/canvas/StudioLights.jsx",
+      "target": "function:src/components/canvas/StudioLights.jsx:StudioLights",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/canvas/StudioLights.jsx",
+      "target": "function:src/components/canvas/StudioLights.jsx:StudioLights",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/canvas/TeleportBeam.jsx",
+      "target": "function:src/components/canvas/TeleportBeam.jsx:TeleportBeam",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/canvas/TeleportBeam.jsx",
+      "target": "function:src/components/canvas/TeleportBeam.jsx:TeleportBeam",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

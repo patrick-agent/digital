@@ -1,0 +1,327 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 3,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/components/digital/CompanyLogos.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 69,
+      "nonEmptyLines": 60,
+      "functions": [
+        {
+          "name": "CompanyLogos",
+          "startLine": 16,
+          "endLine": 69,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "CompanyLogos",
+          "line": 16,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "CompanyLogos",
+          "callee": "useRef",
+          "lineNumber": 17
+        },
+        {
+          "caller": "CompanyLogos",
+          "callee": "useEffect",
+          "lineNumber": 19
+        },
+        {
+          "caller": "animate",
+          "callee": "track.querySelector",
+          "lineNumber": 29
+        },
+        {
+          "caller": "animate",
+          "callee": "Math.abs",
+          "lineNumber": 30
+        },
+        {
+          "caller": "animate",
+          "callee": "requestAnimationFrame",
+          "lineNumber": 34
+        },
+        {
+          "caller": "CompanyLogos",
+          "callee": "requestAnimationFrame",
+          "lineNumber": 37
+        },
+        {
+          "caller": "CompanyLogos",
+          "callee": "cancelAnimationFrame",
+          "lineNumber": 38
+        },
+        {
+          "caller": "renderSet",
+          "callee": "LOGOS.map",
+          "lineNumber": 43
+        },
+        {
+          "caller": "CompanyLogos",
+          "callee": "renderSet",
+          "lineNumber": 62
+        },
+        {
+          "caller": "CompanyLogos",
+          "callee": "renderSet",
+          "lineNumber": 63
+        },
+        {
+          "caller": "CompanyLogos",
+          "callee": "renderSet",
+          "lineNumber": 64
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/digital/DigitalIntro.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 166,
+      "nonEmptyLines": 146,
+      "functions": [
+        {
+          "name": "DigitalIntro",
+          "startLine": 14,
+          "endLine": 166,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "DigitalIntro",
+          "line": 14,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "DigitalIntro",
+          "callee": "useRef",
+          "lineNumber": 15
+        },
+        {
+          "caller": "DigitalIntro",
+          "callee": "useRef",
+          "lineNumber": 16
+        },
+        {
+          "caller": "DigitalIntro",
+          "callee": "useRef",
+          "lineNumber": 17
+        },
+        {
+          "caller": "DigitalIntro",
+          "callee": "useRef",
+          "lineNumber": 18
+        },
+        {
+          "caller": "DigitalIntro",
+          "callee": "useRef",
+          "lineNumber": 19
+        },
+        {
+          "caller": "DigitalIntro",
+          "callee": "useRef",
+          "lineNumber": 20
+        },
+        {
+          "caller": "DigitalIntro",
+          "callee": "useRef",
+          "lineNumber": 21
+        },
+        {
+          "caller": "DigitalIntro",
+          "callee": "useEffect",
+          "lineNumber": 23
+        },
+        {
+          "caller": "init",
+          "callee": "import",
+          "lineNumber": 26
+        },
+        {
+          "caller": "init",
+          "callee": "import",
+          "lineNumber": 27
+        },
+        {
+          "caller": "init",
+          "callee": "gsap.registerPlugin",
+          "lineNumber": 28
+        },
+        {
+          "caller": "init",
+          "callee": "gsap.context",
+          "lineNumber": 30
+        },
+        {
+          "caller": "init",
+          "callee": "gsap.timeline",
+          "lineNumber": 31
+        },
+        {
+          "caller": "init",
+          "callee": "tl.fromTo",
+          "lineNumber": 39
+        },
+        {
+          "caller": "init",
+          "callee": "tl.fromTo",
+          "lineNumber": 49
+        },
+        {
+          "caller": "init",
+          "callee": "tl.fromTo",
+          "lineNumber": 57
+        },
+        {
+          "caller": "init",
+          "callee": "tl.fromTo",
+          "lineNumber": 67
+        },
+        {
+          "caller": "init",
+          "callee": "tl.fromTo",
+          "lineNumber": 77
+        },
+        {
+          "caller": "init",
+          "callee": "tl.fromTo",
+          "lineNumber": 87
+        },
+        {
+          "caller": "init",
+          "callee": "statsRef.current.querySelectorAll",
+          "lineNumber": 97
+        },
+        {
+          "caller": "init",
+          "callee": "statEls.forEach",
+          "lineNumber": 99
+        },
+        {
+          "caller": "init",
+          "callee": "gsap.to",
+          "lineNumber": 101
+        },
+        {
+          "caller": "init",
+          "callee": "Math.floor",
+          "lineNumber": 106
+        },
+        {
+          "caller": "DigitalIntro",
+          "callee": "init",
+          "lineNumber": 113
+        },
+        {
+          "caller": "DigitalIntro",
+          "callee": "ctx?.revert",
+          "lineNumber": 114
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/digital/TextFlip.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 35,
+      "nonEmptyLines": 31,
+      "functions": [
+        {
+          "name": "TextFlip",
+          "startLine": 6,
+          "endLine": 35,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "TextFlip",
+          "line": 6,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "TextFlip",
+          "callee": "useState",
+          "lineNumber": 7
+        },
+        {
+          "caller": "TextFlip",
+          "callee": "useState",
+          "lineNumber": 8
+        },
+        {
+          "caller": "TextFlip",
+          "callee": "useRef",
+          "lineNumber": 9
+        },
+        {
+          "caller": "TextFlip",
+          "callee": "useEffect",
+          "lineNumber": 11
+        },
+        {
+          "caller": "TextFlip",
+          "callee": "setInterval",
+          "lineNumber": 12
+        },
+        {
+          "caller": "TextFlip",
+          "callee": "setIsFlipping",
+          "lineNumber": 13
+        },
+        {
+          "caller": "TextFlip",
+          "callee": "setTimeout",
+          "lineNumber": 14
+        },
+        {
+          "caller": "TextFlip",
+          "callee": "setIndex",
+          "lineNumber": 15
+        },
+        {
+          "caller": "TextFlip",
+          "callee": "setIsFlipping",
+          "lineNumber": 16
+        },
+        {
+          "caller": "TextFlip",
+          "callee": "clearInterval",
+          "lineNumber": 19
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    }
+  ]
+}

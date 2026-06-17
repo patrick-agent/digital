@@ -1,0 +1,138 @@
+{
+  "nodes": [
+    {
+      "id": "config:db/blog.json",
+      "type": "config",
+      "name": "blog.json",
+      "filePath": "db/blog.json",
+      "summary": "Configuration file for blog.json defining project settings.",
+      "tags": [
+        "configuration",
+        "database"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "config:db/case-studies.json",
+      "type": "config",
+      "name": "case-studies.json",
+      "filePath": "db/case-studies.json",
+      "summary": "Configuration file for case-studies.json defining project settings.",
+      "tags": [
+        "configuration",
+        "database"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:db/events.json",
+      "type": "config",
+      "name": "events.json",
+      "filePath": "db/events.json",
+      "summary": "Configuration file for events.json defining project settings.",
+      "tags": [
+        "configuration",
+        "database"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:db/gallery.json",
+      "type": "config",
+      "name": "gallery.json",
+      "filePath": "db/gallery.json",
+      "summary": "Configuration file for gallery.json defining project settings.",
+      "tags": [
+        "configuration",
+        "database"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:db/music.json",
+      "type": "config",
+      "name": "music.json",
+      "filePath": "db/music.json",
+      "summary": "Configuration file for music.json defining project settings.",
+      "tags": [
+        "configuration",
+        "database"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:db/newsletter.json",
+      "type": "config",
+      "name": "newsletter.json",
+      "filePath": "db/newsletter.json",
+      "summary": "Configuration file for newsletter.json defining project settings.",
+      "tags": [
+        "configuration",
+        "database"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:db/press-kit.json",
+      "type": "config",
+      "name": "press-kit.json",
+      "filePath": "db/press-kit.json",
+      "summary": "Configuration file for press-kit.json defining project settings.",
+      "tags": [
+        "configuration",
+        "database"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:db/seo.json",
+      "type": "config",
+      "name": "seo.json",
+      "filePath": "db/seo.json",
+      "summary": "Configuration file for seo.json defining project settings.",
+      "tags": [
+        "configuration",
+        "database"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:db/services.json",
+      "type": "config",
+      "name": "services.json",
+      "filePath": "db/services.json",
+      "summary": "Configuration file for services.json defining project settings.",
+      "tags": [
+        "configuration",
+        "service",
+        "database"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:db/settings.json",
+      "type": "config",
+      "name": "settings.json",
+      "filePath": "db/settings.json",
+      "summary": "Configuration file for settings.json defining project settings.",
+      "tags": [
+        "configuration",
+        "database"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:db/shop.json",
+      "type": "config",
+      "name": "shop.json",
+      "filePath": "db/shop.json",
+      "summary": "Configuration file for shop.json defining project settings.",
+      "tags": [
+        "configuration",
+        "database"
+      ],
+      "complexity": "complex"
+    }
+  ],
+  "edges": []
+}

@@ -1,0 +1,163 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 3,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/lib/services/service/http.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 9,
+      "functions": [
+        {
+          "name": "getServiceErrorStatus",
+          "startLine": 9,
+          "endLine": 11,
+          "params": [
+            "code"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getServiceErrorStatus",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/services/service/spec.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 134,
+      "nonEmptyLines": 116,
+      "functions": [
+        {
+          "name": "createServiceFailure",
+          "startLine": 109,
+          "endLine": 114,
+          "params": [
+            "code",
+            "message"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ServiceSchema",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "CreateServiceInputSchema",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "UpdateServiceInputSchema",
+          "line": 62,
+          "isDefault": false
+        },
+        {
+          "name": "ListServiceInputSchema",
+          "line": 77,
+          "isDefault": false
+        },
+        {
+          "name": "LookupServiceInputSchema",
+          "line": 81,
+          "isDefault": false
+        },
+        {
+          "name": "ServiceErrorCode",
+          "line": 85,
+          "isDefault": false
+        },
+        {
+          "name": "ServiceErrorCodeSchema",
+          "line": 91,
+          "isDefault": false
+        },
+        {
+          "name": "ServiceListSuccessSchema",
+          "line": 97,
+          "isDefault": false
+        },
+        {
+          "name": "ServiceSingleSuccessSchema",
+          "line": 98,
+          "isDefault": false
+        },
+        {
+          "name": "ServiceDeleteSuccessSchema",
+          "line": 99,
+          "isDefault": false
+        },
+        {
+          "name": "ServiceFailureSchema",
+          "line": 100,
+          "isDefault": false
+        },
+        {
+          "name": "createServiceFailure",
+          "line": 109,
+          "isDefault": false
+        },
+        {
+          "name": "ServiceResultSchema",
+          "line": 116,
+          "isDefault": false
+        },
+        {
+          "name": "ServiceListResultSchema",
+          "line": 123,
+          "isDefault": false
+        },
+        {
+          "name": "ServiceSingleResultSchema",
+          "line": 124,
+          "isDefault": false
+        },
+        {
+          "name": "ServiceDeleteResultSchema",
+          "line": 125,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createServiceFailure",
+          "callee": "ServiceFailureSchema.parse",
+          "lineNumber": 110
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 16,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/services/service/spec.test.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 50,
+      "nonEmptyLines": 43,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

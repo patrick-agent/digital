@@ -3,6 +3,7 @@
 import { useRef, useMemo } from "react";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
+import { seededBetween, seededUnit } from "@/lib/seeded-random";
 
 export default function TeleportBeam({ color = "#c084fc", height = 50, radius = 26 }) {
   const beamRef = useRef();
@@ -13,12 +14,12 @@ export default function TeleportBeam({ color = "#c084fc", height = 50, radius = 
     const arr = [];
     for (let i = 0; i < 30; i++) {
       arr.push({
-        progress: Math.random(),
-        angle: Math.random() * Math.PI * 2,
-        radius: radius * (0.3 + Math.random() * 0.7),
-        speed: 0.3 + Math.random() * 0.5,
-        size: 0.05 + Math.random() * 0.1,
-        phase: Math.random() * Math.PI * 2,
+        progress: seededUnit(i * 6 + 1),
+        angle: seededBetween(i * 6 + 2, 0, Math.PI * 2),
+        radius: radius * seededBetween(i * 6 + 3, 0.3, 1),
+        speed: seededBetween(i * 6 + 4, 0.3, 0.8),
+        size: seededBetween(i * 6 + 5, 0.05, 0.15),
+        phase: seededBetween(i * 6 + 6, 0, Math.PI * 2),
       });
     }
     return arr;

@@ -22,24 +22,23 @@ export function useCanvasOptimizer(options = {}) {
   const [isVisible, setIsVisible] = useState(!skipInitialVisibility);
   const [devicePixelRatio, setDevicePixelRatio] = useState(1);
   const [frameloop, setFrameloop] = useState("always");
-  const [deviceType, setDeviceType] = useState("desktop");
+  const [deviceType, setDeviceType] = useState(() => getDeviceType());
 
   useEffect(() => {
     const updateDevice = () => {
-      setDeviceType(getDeviceType());
+      const nextDeviceType = getDeviceType();
+      setDeviceType(nextDeviceType);
+
+      const dpr = Math.min(
+        window.devicePixelRatio,
+        nextDeviceType === "mobile" ? mobilePixelRatioCap : pixelRatioCap
+      );
+      setDevicePixelRatio(dpr);
     };
     updateDevice();
     window.addEventListener("resize", updateDevice);
     return () => window.removeEventListener("resize", updateDevice);
-  }, []);
-
-  useEffect(() => {
-    const dpr = Math.min(
-      window.devicePixelRatio,
-      deviceType === "mobile" ? mobilePixelRatioCap : pixelRatioCap
-    );
-    setDevicePixelRatio(dpr);
-  }, [pixelRatioCap, mobilePixelRatioCap, deviceType]);
+  }, [mobilePixelRatioCap, pixelRatioCap]);
 
   useEffect(() => {
     const el = containerRef.current;
@@ -125,10 +124,11 @@ export function useCanvasOptimizer(options = {}) {
 export function useFpsMonitor() {
   const fpsRef = useRef(0);
   const framesRef = useRef(0);
-  const lastTimeRef = useRef(performance.now());
+  const lastTimeRef = useRef(0);
 
   useEffect(() => {
     let rafId;
+    lastTimeRef.current = performance.now();
     const tick = () => {
       framesRef.current++;
       const now = performance.now();

@@ -1,0 +1,1092 @@
+{
+  "nodes": [
+    {
+      "id": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "type": "file",
+      "name": "publish-shopee-affiliate-cluster.mjs",
+      "filePath": "scripts/publish-shopee-affiliate-cluster.mjs",
+      "summary": "publish-shopee-affiliate-cluster.mjs: Source file, 19 functions, 1 import.",
+      "tags": [],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:scripts/publish-shopee-affiliate-cluster.mjs:link",
+      "type": "function",
+      "name": "link",
+      "filePath": "scripts/publish-shopee-affiliate-cluster.mjs",
+      "lineRange": [
+        69,
+        69
+      ],
+      "summary": "Function link with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/publish-shopee-affiliate-cluster.mjs:escapeHtml",
+      "type": "function",
+      "name": "escapeHtml",
+      "filePath": "scripts/publish-shopee-affiliate-cluster.mjs",
+      "lineRange": [
+        71,
+        77
+      ],
+      "summary": "Function escapeHtml with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/publish-shopee-affiliate-cluster.mjs:p",
+      "type": "function",
+      "name": "p",
+      "filePath": "scripts/publish-shopee-affiliate-cluster.mjs",
+      "lineRange": [
+        79,
+        81
+      ],
+      "summary": "Function p with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/publish-shopee-affiliate-cluster.mjs:h2",
+      "type": "function",
+      "name": "h2",
+      "filePath": "scripts/publish-shopee-affiliate-cluster.mjs",
+      "lineRange": [
+        83,
+        85
+      ],
+      "summary": "Function h2 with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/publish-shopee-affiliate-cluster.mjs:h3",
+      "type": "function",
+      "name": "h3",
+      "filePath": "scripts/publish-shopee-affiliate-cluster.mjs",
+      "lineRange": [
+        87,
+        89
+      ],
+      "summary": "Function h3 with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/publish-shopee-affiliate-cluster.mjs:ul",
+      "type": "function",
+      "name": "ul",
+      "filePath": "scripts/publish-shopee-affiliate-cluster.mjs",
+      "lineRange": [
+        91,
+        93
+      ],
+      "summary": "Function ul with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/publish-shopee-affiliate-cluster.mjs:ol",
+      "type": "function",
+      "name": "ol",
+      "filePath": "scripts/publish-shopee-affiliate-cluster.mjs",
+      "lineRange": [
+        95,
+        97
+      ],
+      "summary": "Function ol with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/publish-shopee-affiliate-cluster.mjs:table",
+      "type": "function",
+      "name": "table",
+      "filePath": "scripts/publish-shopee-affiliate-cluster.mjs",
+      "lineRange": [
+        99,
+        105
+      ],
+      "summary": "Function table with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/publish-shopee-affiliate-cluster.mjs:imageBlock",
+      "type": "function",
+      "name": "imageBlock",
+      "filePath": "scripts/publish-shopee-affiliate-cluster.mjs",
+      "lineRange": [
+        107,
+        109
+      ],
+      "summary": "Function imageBlock with 3 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/publish-shopee-affiliate-cluster.mjs:externalLink",
+      "type": "function",
+      "name": "externalLink",
+      "filePath": "scripts/publish-shopee-affiliate-cluster.mjs",
+      "lineRange": [
+        111,
+        113
+      ],
+      "summary": "Function externalLink with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/publish-shopee-affiliate-cluster.mjs:getAffiliateLink",
+      "type": "function",
+      "name": "getAffiliateLink",
+      "filePath": "scripts/publish-shopee-affiliate-cluster.mjs",
+      "lineRange": [
+        115,
+        117
+      ],
+      "summary": "Function getAffiliateLink with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/publish-shopee-affiliate-cluster.mjs:renderAffiliateSection",
+      "type": "function",
+      "name": "renderAffiliateSection",
+      "filePath": "scripts/publish-shopee-affiliate-cluster.mjs",
+      "lineRange": [
+        119,
+        128
+      ],
+      "summary": "Function renderAffiliateSection with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/publish-shopee-affiliate-cluster.mjs:renderFaq",
+      "type": "function",
+      "name": "renderFaq",
+      "filePath": "scripts/publish-shopee-affiliate-cluster.mjs",
+      "lineRange": [
+        130,
+        138
+      ],
+      "summary": "Function renderFaq with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/publish-shopee-affiliate-cluster.mjs:renderRelated",
+      "type": "function",
+      "name": "renderRelated",
+      "filePath": "scripts/publish-shopee-affiliate-cluster.mjs",
+      "lineRange": [
+        140,
+        143
+      ],
+      "summary": "Function renderRelated with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/publish-shopee-affiliate-cluster.mjs:renderArticle",
+      "type": "function",
+      "name": "renderArticle",
+      "filePath": "scripts/publish-shopee-affiliate-cluster.mjs",
+      "lineRange": [
+        145,
+        176
+      ],
+      "summary": "Function renderArticle with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/publish-shopee-affiliate-cluster.mjs:fetchBuffer",
+      "type": "function",
+      "name": "fetchBuffer",
+      "filePath": "scripts/publish-shopee-affiliate-cluster.mjs",
+      "lineRange": [
+        178,
+        191
+      ],
+      "summary": "Function fetchBuffer with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/publish-shopee-affiliate-cluster.mjs:generateFallback",
+      "type": "function",
+      "name": "generateFallback",
+      "filePath": "scripts/publish-shopee-affiliate-cluster.mjs",
+      "lineRange": [
+        193,
+        215
+      ],
+      "summary": "Function generateFallback with 4 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/publish-shopee-affiliate-cluster.mjs:createImage",
+      "type": "function",
+      "name": "createImage",
+      "filePath": "scripts/publish-shopee-affiliate-cluster.mjs",
+      "lineRange": [
+        217,
+        237
+      ],
+      "summary": "Function createImage with 5 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/publish-shopee-affiliate-cluster.mjs:upsertArticle",
+      "type": "function",
+      "name": "upsertArticle",
+      "filePath": "scripts/publish-shopee-affiliate-cluster.mjs",
+      "lineRange": [
+        1738,
+        1768
+      ],
+      "summary": "Function upsertArticle with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/blog/canonical-slugs.js",
+      "type": "file",
+      "name": "canonical-slugs.js",
+      "filePath": "src/lib/blog/canonical-slugs.js",
+      "summary": "canonical-slugs.js: Source file, 3 functions.",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/blog/canonical-slugs.js:getRedirectedBlogSlug",
+      "type": "function",
+      "name": "getRedirectedBlogSlug",
+      "filePath": "src/lib/blog/canonical-slugs.js",
+      "lineRange": [
+        9,
+        12
+      ],
+      "summary": "Function getRedirectedBlogSlug with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/blog/canonical-slugs.js:isRedirectedBlogSlug",
+      "type": "function",
+      "name": "isRedirectedBlogSlug",
+      "filePath": "src/lib/blog/canonical-slugs.js",
+      "lineRange": [
+        14,
+        16
+      ],
+      "summary": "Function isRedirectedBlogSlug with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/blog/canonical-slugs.js:filterCanonicalBlogPosts",
+      "type": "function",
+      "name": "filterCanonicalBlogPosts",
+      "filePath": "src/lib/blog/canonical-slugs.js",
+      "lineRange": [
+        18,
+        20
+      ],
+      "summary": "Function filterCanonicalBlogPosts with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/blog/public-catalog/handler.js",
+      "type": "file",
+      "name": "handler.js",
+      "filePath": "src/lib/blog/public-catalog/handler.js",
+      "summary": "handler.js: Source file, 3 functions, 1 class, 3 imports.",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/lib/blog/public-catalog/handler.js:normalizeSearchValue",
+      "type": "function",
+      "name": "normalizeSearchValue",
+      "filePath": "src/lib/blog/public-catalog/handler.js",
+      "lineRange": [
+        19,
+        24
+      ],
+      "summary": "Function normalizeSearchValue with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/blog/public-catalog/handler.js:getCategories",
+      "type": "function",
+      "name": "getCategories",
+      "filePath": "src/lib/blog/public-catalog/handler.js",
+      "lineRange": [
+        26,
+        28
+      ],
+      "summary": "Function getCategories with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/blog/public-catalog/handler.js:matchesSearch",
+      "type": "function",
+      "name": "matchesSearch",
+      "filePath": "src/lib/blog/public-catalog/handler.js",
+      "lineRange": [
+        30,
+        39
+      ],
+      "summary": "Function matchesSearch with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/lib/blog/public-catalog/handler.js:PublicBlogHandler",
+      "type": "class",
+      "name": "PublicBlogHandler",
+      "filePath": "src/lib/blog/public-catalog/handler.js",
+      "lineRange": [
+        41,
+        253
+      ],
+      "summary": "Class PublicBlogHandler with 8 methods and 0 properties.",
+      "tags": [
+        "class"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/lib/blog/public-catalog/index.js",
+      "type": "file",
+      "name": "index.js",
+      "filePath": "src/lib/blog/public-catalog/index.js",
+      "summary": "index.js: Module entry point, 8 functions, 1 import.",
+      "tags": [
+        "barrel",
+        "entry-point",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/lib/blog/public-catalog/index.js:listPublishedPosts",
+      "type": "function",
+      "name": "listPublishedPosts",
+      "filePath": "src/lib/blog/public-catalog/index.js",
+      "lineRange": [
+        5,
+        7
+      ],
+      "summary": "Function listPublishedPosts with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:link",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:escapeHtml",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:p",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:h2",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:h3",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:ul",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:ol",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:table",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:imageBlock",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:externalLink",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:getAffiliateLink",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:renderAffiliateSection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:renderFaq",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:renderRelated",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:renderArticle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:fetchBuffer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:generateFallback",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:createImage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:upsertArticle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "file:src/lib/db.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:escapeHtml",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:p",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:getAffiliateLink",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:externalLink",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:escapeHtml",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:h2",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:h2",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:h3",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:p",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:h2",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:link",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:h2",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:p",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:imageBlock",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:h2",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:ul",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:renderAffiliateSection",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:h2",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:table",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:h3",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:h2",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:p",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:ul",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:ol",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:table",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:renderFaq",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:renderRelated",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:escapeHtml",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:fetchBuffer",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:generateFallback",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:createImage",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:createImage",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/publish-shopee-affiliate-cluster.mjs",
+      "target": "function:scripts/publish-shopee-affiliate-cluster.mjs:renderArticle",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog/canonical-slugs.js",
+      "target": "function:src/lib/blog/canonical-slugs.js:getRedirectedBlogSlug",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/blog/canonical-slugs.js",
+      "target": "function:src/lib/blog/canonical-slugs.js:getRedirectedBlogSlug",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog/canonical-slugs.js",
+      "target": "function:src/lib/blog/canonical-slugs.js:isRedirectedBlogSlug",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/blog/canonical-slugs.js",
+      "target": "function:src/lib/blog/canonical-slugs.js:isRedirectedBlogSlug",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog/canonical-slugs.js",
+      "target": "function:src/lib/blog/canonical-slugs.js:filterCanonicalBlogPosts",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/blog/canonical-slugs.js",
+      "target": "function:src/lib/blog/canonical-slugs.js:filterCanonicalBlogPosts",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog/canonical-slugs.js",
+      "target": "function:src/lib/blog/canonical-slugs.js:getRedirectedBlogSlug",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog/canonical-slugs.js",
+      "target": "function:src/lib/blog/canonical-slugs.js:isRedirectedBlogSlug",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog/public-catalog/handler.js",
+      "target": "function:src/lib/blog/public-catalog/handler.js:normalizeSearchValue",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/blog/public-catalog/handler.js",
+      "target": "function:src/lib/blog/public-catalog/handler.js:getCategories",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/blog/public-catalog/handler.js",
+      "target": "function:src/lib/blog/public-catalog/handler.js:matchesSearch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/blog/public-catalog/handler.js",
+      "target": "class:src/lib/blog/public-catalog/handler.js:PublicBlogHandler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/blog/public-catalog/handler.js",
+      "target": "class:src/lib/blog/public-catalog/handler.js:PublicBlogHandler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog/public-catalog/handler.js",
+      "target": "file:src/lib/blog/canonical-slugs.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/blog/public-catalog/handler.js",
+      "target": "file:src/lib/blog/public-catalog/spec.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/blog/public-catalog/handler.js",
+      "target": "file:src/lib/db.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/blog/public-catalog/handler.js",
+      "target": "function:src/lib/blog/public-catalog/handler.js:normalizeSearchValue",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog/public-catalog/handler.js",
+      "target": "function:src/lib/blog/public-catalog/handler.js:normalizeSearchValue",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog/public-catalog/handler.js",
+      "target": "function:src/lib/blog/public-catalog/handler.js:matchesSearch",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog/public-catalog/handler.js",
+      "target": "function:src/lib/blog/public-catalog/handler.js:getCategories",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog/public-catalog/handler.js",
+      "target": "function:src/lib/blog/public-catalog/handler.js:getCategories",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog/public-catalog/index.js",
+      "target": "function:src/lib/blog/public-catalog/index.js:listPublishedPosts",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/blog/public-catalog/index.js",
+      "target": "function:src/lib/blog/public-catalog/index.js:listPublishedPosts",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog/public-catalog/index.js",
+      "target": "function:src/lib/blog/public-catalog/index.js:getPublishedPost",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/blog/public-catalog/index.js",
+      "target": "function:src/lib/blog/public-catalog/index.js:getPublishedPost",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog/public-catalog/index.js",
+      "target": "function:src/lib/blog/public-catalog/index.js:getRelatedPublishedPosts",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/blog/public-catalog/index.js",
+      "target": "function:src/lib/blog/public-catalog/index.js:getRelatedPublishedPosts",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog/public-catalog/index.js",
+      "target": "function:src/lib/blog/public-catalog/index.js:getBlogCategories",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/blog/public-catalog/index.js",
+      "target": "function:src/lib/blog/public-catalog/index.js:getBlogCategories",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog/public-catalog/index.js",
+      "target": "function:src/lib/blog/public-catalog/index.js:getFeaturedPublishedPost",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/blog/public-catalog/index.js",
+      "target": "function:src/lib/blog/public-catalog/index.js:getFeaturedPublishedPost",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog/public-catalog/index.js",
+      "target": "function:src/lib/blog/public-catalog/index.js:getAllPublishedSlugs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/blog/public-catalog/index.js",
+      "target": "function:src/lib/blog/public-catalog/index.js:getAllPublishedSlugs",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog/public-catalog/index.js",
+      "target": "function:src/lib/blog/public-catalog/index.js:getAllBlogTags",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/blog/public-catalog/index.js",
+      "target": "function:src/lib/blog/public-catalog/index.js:getAllBlogTags",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog/public-catalog/index.js",
+      "target": "function:src/lib/blog/public-catalog/index.js:estimateReadTime",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/blog/public-catalog/index.js",
+      "target": "function:src/lib/blog/public-catalog/index.js:estimateReadTime",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/blog/public-catalog/index.js",
+      "target": "file:src/lib/blog/public-catalog/handler.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

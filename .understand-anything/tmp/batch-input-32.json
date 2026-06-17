@@ -1,0 +1,198 @@
+{
+  "projectRoot": "C:\\Users\\Admin\\Desktop\\Website 3D\\studio-3d",
+  "batchFiles": [
+    {
+      "path": "src/app/admin/(dashboard)/media/MediaLibraryClient.jsx",
+      "language": "javascript",
+      "sizeLines": 157,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/media/page.js",
+      "language": "javascript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/music/[id]/edit/page.js",
+      "language": "javascript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/music/MusicListClient.jsx",
+      "language": "javascript",
+      "sizeLines": 113,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/music/new/page.js",
+      "language": "javascript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/music/page.js",
+      "language": "javascript",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/newsletter/NewsletterClient.jsx",
+      "language": "javascript",
+      "sizeLines": 114,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/newsletter/page.js",
+      "language": "javascript",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/page.js",
+      "language": "javascript",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/pages/page.js",
+      "language": "javascript",
+      "sizeLines": 52,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/press-kit/page.js",
+      "language": "javascript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/seo/page.js",
+      "language": "javascript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/seo/SEOClient.jsx",
+      "language": "javascript",
+      "sizeLines": 125,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/services/[id]/edit/page.js",
+      "language": "javascript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/services/new/page.js",
+      "language": "javascript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/services/page.js",
+      "language": "javascript",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/services/ServicesListClient.jsx",
+      "language": "javascript",
+      "sizeLines": 83,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/settings/page.js",
+      "language": "javascript",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/settings/SettingsForm.jsx",
+      "language": "javascript",
+      "sizeLines": 130,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/shop/[id]/edit/page.js",
+      "language": "javascript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/shop/new/page.js",
+      "language": "javascript",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/shop/page.js",
+      "language": "javascript",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/shop/ShopListClient.jsx",
+      "language": "javascript",
+      "sizeLines": 142,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/website/page.js",
+      "language": "javascript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/admin/(dashboard)/website/WebsiteBuilderClient.jsx",
+      "language": "javascript",
+      "sizeLines": 366,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/app/admin/(dashboard)/media/MediaLibraryClient.jsx": [],
+    "src/app/admin/(dashboard)/media/page.js": [
+      "src/app/admin/(dashboard)/media/MediaLibraryClient.jsx"
+    ],
+    "src/app/admin/(dashboard)/music/[id]/edit/page.js": [],
+    "src/app/admin/(dashboard)/music/MusicListClient.jsx": [],
+    "src/app/admin/(dashboard)/music/new/page.js": [],
+    "src/app/admin/(dashboard)/music/page.js": [
+      "src/app/admin/(dashboard)/music/MusicListClient.jsx"
+    ],
+    "src/app/admin/(dashboard)/newsletter/NewsletterClient.jsx": [],
+    "src/app/admin/(dashboard)/newsletter/page.js": [
+      "src/app/admin/(dashboard)/newsletter/NewsletterClient.jsx"
+    ],
+    "src/app/admin/(dashboard)/page.js": [],
+    "src/app/admin/(dashboard)/pages/page.js": [],
+    "src/app/admin/(dashboard)/press-kit/page.js": [],
+    "src/app/admin/(dashboard)/seo/page.js": [
+      "src/app/admin/(dashboard)/seo/SEOClient.jsx"
+    ],
+    "src/app/admin/(dashboard)/seo/SEOClient.jsx": [],
+    "src/app/admin/(dashboard)/services/[id]/edit/page.js": [],
+    "src/app/admin/(dashboard)/services/new/page.js": [],
+    "src/app/admin/(dashboard)/services/page.js": [
+      "src/app/admin/(dashboard)/services/ServicesListClient.jsx"
+    ],
+    "src/app/admin/(dashboard)/services/ServicesListClient.jsx": [],
+    "src/app/admin/(dashboard)/settings/page.js": [
+      "src/app/admin/(dashboard)/settings/SettingsForm.jsx"
+    ],
+    "src/app/admin/(dashboard)/settings/SettingsForm.jsx": [],
+    "src/app/admin/(dashboard)/shop/[id]/edit/page.js": [],
+    "src/app/admin/(dashboard)/shop/new/page.js": [],
+    "src/app/admin/(dashboard)/shop/page.js": [
+      "src/app/admin/(dashboard)/shop/ShopListClient.jsx"
+    ],
+    "src/app/admin/(dashboard)/shop/ShopListClient.jsx": [],
+    "src/app/admin/(dashboard)/website/page.js": [
+      "src/app/admin/(dashboard)/website/WebsiteBuilderClient.jsx"
+    ],
+    "src/app/admin/(dashboard)/website/WebsiteBuilderClient.jsx": []
+  }
+}

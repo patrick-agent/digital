@@ -1,0 +1,188 @@
+{
+  "projectRoot": "C:\\Users\\Admin\\Desktop\\Website 3D\\studio-3d",
+  "batchFiles": [
+    {
+      "path": "public/models/Walking.glb",
+      "language": "glb",
+      "sizeLines": 40205,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/models/wave-hiphop-dance.glb",
+      "language": "glb",
+      "sizeLines": 40932,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/_generate-gear-report.mjs",
+      "language": "javascript",
+      "sizeLines": 323,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/analyze-bundle.mjs",
+      "language": "javascript",
+      "sizeLines": 174,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/audit-affiliate-products.mjs",
+      "language": "javascript",
+      "sizeLines": 199,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/backlink-assets/social-posts.md",
+      "language": "markdown",
+      "sizeLines": 36,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "scripts/compress-models.mjs",
+      "language": "javascript",
+      "sizeLines": 127,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/extract-music-cover-art.mjs",
+      "language": "javascript",
+      "sizeLines": 66,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/fbx2glb.cjs",
+      "language": "javascript",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/fix-headings.mjs",
+      "language": "javascript",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/fix-tables.mjs",
+      "language": "javascript",
+      "sizeLines": 89,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/generate-favicon.mjs",
+      "language": "javascript",
+      "sizeLines": 145,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/google-indexing-oauth.mjs",
+      "language": "javascript",
+      "sizeLines": 139,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/index-urls.mjs",
+      "language": "javascript",
+      "sizeLines": 94,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/indexing-api.mjs",
+      "language": "javascript",
+      "sizeLines": 258,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/seed-music.mjs",
+      "language": "javascript",
+      "sizeLines": 108,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/sync-blog.mjs",
+      "language": "javascript",
+      "sizeLines": 207,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/sync-db-from-vercel.mjs",
+      "language": "javascript",
+      "sizeLines": 188,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/sync-to-vercel.mjs",
+      "language": "javascript",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/verify-tables.mjs",
+      "language": "javascript",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/(digital)/digital/blog/[slug]/BlogPostClient.jsx",
+      "language": "javascript",
+      "sizeLines": 205,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/(digital)/digital/blog/[slug]/page.jsx",
+      "language": "javascript",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/(digital)/digital/blog/BlogClient.jsx",
+      "language": "javascript",
+      "sizeLines": 97,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/(digital)/digital/blog/page.jsx",
+      "language": "javascript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/(digital)/layout.jsx",
+      "language": "javascript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "public/models/Walking.glb": [],
+    "public/models/wave-hiphop-dance.glb": [],
+    "scripts/_generate-gear-report.mjs": [],
+    "scripts/analyze-bundle.mjs": [],
+    "scripts/audit-affiliate-products.mjs": [],
+    "scripts/backlink-assets/social-posts.md": [],
+    "scripts/compress-models.mjs": [],
+    "scripts/extract-music-cover-art.mjs": [],
+    "scripts/fbx2glb.cjs": [],
+    "scripts/fix-headings.mjs": [],
+    "scripts/fix-tables.mjs": [],
+    "scripts/generate-favicon.mjs": [],
+    "scripts/google-indexing-oauth.mjs": [],
+    "scripts/index-urls.mjs": [],
+    "scripts/indexing-api.mjs": [],
+    "scripts/seed-music.mjs": [],
+    "scripts/sync-blog.mjs": [
+      "src/lib/db-cli.mjs"
+    ],
+    "scripts/sync-db-from-vercel.mjs": [],
+    "scripts/sync-to-vercel.mjs": [],
+    "scripts/verify-tables.mjs": [],
+    "src/app/(digital)/digital/blog/[slug]/BlogPostClient.jsx": [],
+    "src/app/(digital)/digital/blog/[slug]/page.jsx": [
+      "src/app/(digital)/digital/blog/[slug]/BlogPostClient.jsx"
+    ],
+    "src/app/(digital)/digital/blog/BlogClient.jsx": [],
+    "src/app/(digital)/digital/blog/page.jsx": [
+      "src/app/(digital)/digital/blog/BlogClient.jsx"
+    ],
+    "src/app/(digital)/layout.jsx": []
+  }
+}

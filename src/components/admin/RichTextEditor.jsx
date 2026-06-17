@@ -211,9 +211,8 @@ export default function RichTextEditor({ content, onChange }) {
   useEffect(() => {
     if (editor && content !== undefined && editor.getHTML() !== content) {
       editor.commands.setContent(content || "", false)
-      setHtmlValue(mode === "html" ? formatHtmlForEditor(content || "") : content || "")
     }
-  }, [editor, content, mode])
+  }, [editor, content])
 
   if (!editor) return null
 

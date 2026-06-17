@@ -1,16 +1,18 @@
-import React, { Suspense, useEffect, useRef } from 'react';
+import React, { Suspense, useEffect, useMemo, useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { useGLTF } from '@react-three/drei';
 import * as THREE from 'three';
+import { SkeletonUtils } from 'three-stdlib';
 
 function ByeModel() {
   const { scene, animations } = useGLTF('/models/bye.glb');
   const mixerRef = useRef(null);
+  const modelScene = useMemo(() => (scene ? SkeletonUtils.clone(scene) : null), [scene]);
 
   useEffect(() => {
-    if (!scene) return;
+    if (!modelScene) return;
 
-    scene.traverse((child) => {
+    modelScene.traverse((child) => {
       if (child.isMesh) {
         child.castShadow = true;
         child.receiveShadow = true;
@@ -23,14 +25,14 @@ function ByeModel() {
       }
     });
 
-    const box = new THREE.Box3().setFromObject(scene);
+    const box = new THREE.Box3().setFromObject(modelScene);
     const size = box.getSize(new THREE.Vector3());
     const center = box.getCenter(new THREE.Vector3());
-    scene.position.sub(center);
-    scene.position.y += size.y / 2;
+    modelScene.position.sub(center);
+    modelScene.position.y += size.y / 2;
 
     if (animations && animations.length > 0) {
-      mixerRef.current = new THREE.AnimationMixer(scene);
+      mixerRef.current = new THREE.AnimationMixer(modelScene);
       animations.forEach((clip) => {
         mixerRef.current.clipAction(clip).play();
       });
@@ -39,13 +41,14 @@ function ByeModel() {
     return () => {
       if (mixerRef.current) mixerRef.current.stopAllAction();
     };
-  }, [scene, animations]);
+  }, [modelScene, animations]);
 
   useFrame((state, delta) => {
     if (mixerRef.current) mixerRef.current.update(delta);
   });
 
-  return <primitive object={scene} />;
+  if (!modelScene) return null;
+  return <primitive object={modelScene} />;
 }
 
 const CAM_TARGET = [95, 95, 0];

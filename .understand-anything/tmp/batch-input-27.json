@@ -1,0 +1,182 @@
+{
+  "projectRoot": "C:\\Users\\Admin\\Desktop\\Website 3D\\studio-3d",
+  "batchFiles": [
+    {
+      "path": ".learnings/ERRORS.md",
+      "language": "markdown",
+      "sizeLines": 57,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".learnings/LEARNINGS.md",
+      "language": "markdown",
+      "sizeLines": 27,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".opencode/plans/architecture-refactor-plan.md",
+      "language": "markdown",
+      "sizeLines": 205,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".understand-anything/.understandignore",
+      "language": "unknown",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".understand-anything/config.json",
+      "language": "json",
+      "sizeLines": 4,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".vercelignore",
+      "language": "unknown",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "docs/adr/0001-admin-crud-spec-handler-http-adapter.md",
+      "language": "markdown",
+      "sizeLines": 63,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "eslint.config.mjs",
+      "language": "javascript",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "next.config.mjs",
+      "language": "javascript",
+      "sizeLines": 148,
+      "fileCategory": "code"
+    },
+    {
+      "path": "postcss.config.mjs",
+      "language": "javascript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/bo-gear-thu-rap-vocal-tai-nha-cho-phong-chua-xu-ly-am-inside.webp",
+      "language": "webp",
+      "sizeLines": 150,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/bo-gear-thu-rap-vocal-tai-nha-cho-phong-chua-xu-ly-am.webp",
+      "language": "webp",
+      "sizeLines": 332,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/cach-lam-beat-fl-studio-co-ban.webp",
+      "language": "webp",
+      "sizeLines": 73,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/cach-mix-vocal-tai-nha.webp",
+      "language": "webp",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/chon-micro-thu-am-tai-nha-condenser-dynamic.webp",
+      "language": "webp",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/co-can-booster-gain-cloudlifter-fethead-cho-micro-dynamic-inside.webp",
+      "language": "webp",
+      "sizeLines": 164,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/co-can-booster-gain-cloudlifter-fethead-cho-micro-dynamic.webp",
+      "language": "webp",
+      "sizeLines": 121,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/co-nen-mua-micro-usb-xlr-hybrid-mv7-podmic-usb-q9u-inside.webp",
+      "language": "webp",
+      "sizeLines": 121,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/co-nen-mua-micro-usb-xlr-hybrid-mv7-podmic-usb-q9u.webp",
+      "language": "webp",
+      "sizeLines": 130,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/co-nen-mua-reflection-filter-cho-phong-ngu-thu-vocal-inside.webp",
+      "language": "webp",
+      "sizeLines": 187,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/co-nen-mua-reflection-filter-cho-phong-ngu-thu-vocal.webp",
+      "language": "webp",
+      "sizeLines": 171,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/combo-home-studio-duoi-10-trieu-cho-singer-songwriter-inside.webp",
+      "language": "webp",
+      "sizeLines": 187,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/combo-home-studio-duoi-10-trieu-cho-singer-songwriter.webp",
+      "language": "webp",
+      "sizeLines": 182,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/combo-home-studio-duoi-20-trieu-cho-producer-ban-chuyen-inside.webp",
+      "language": "webp",
+      "sizeLines": 363,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/combo-home-studio-duoi-20-trieu-cho-producer-ban-chuyen.webp",
+      "language": "webp",
+      "sizeLines": 182,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    ".learnings/ERRORS.md": [],
+    ".learnings/LEARNINGS.md": [],
+    ".opencode/plans/architecture-refactor-plan.md": [],
+    ".understand-anything/.understandignore": [],
+    ".understand-anything/config.json": [],
+    ".vercelignore": [],
+    "docs/adr/0001-admin-crud-spec-handler-http-adapter.md": [],
+    "eslint.config.mjs": [],
+    "next.config.mjs": [],
+    "postcss.config.mjs": [],
+    "public/images/blog/bo-gear-thu-rap-vocal-tai-nha-cho-phong-chua-xu-ly-am-inside.webp": [],
+    "public/images/blog/bo-gear-thu-rap-vocal-tai-nha-cho-phong-chua-xu-ly-am.webp": [],
+    "public/images/blog/cach-lam-beat-fl-studio-co-ban.webp": [],
+    "public/images/blog/cach-mix-vocal-tai-nha.webp": [],
+    "public/images/blog/chon-micro-thu-am-tai-nha-condenser-dynamic.webp": [],
+    "public/images/blog/co-can-booster-gain-cloudlifter-fethead-cho-micro-dynamic-inside.webp": [],
+    "public/images/blog/co-can-booster-gain-cloudlifter-fethead-cho-micro-dynamic.webp": [],
+    "public/images/blog/co-nen-mua-micro-usb-xlr-hybrid-mv7-podmic-usb-q9u-inside.webp": [],
+    "public/images/blog/co-nen-mua-micro-usb-xlr-hybrid-mv7-podmic-usb-q9u.webp": [],
+    "public/images/blog/co-nen-mua-reflection-filter-cho-phong-ngu-thu-vocal-inside.webp": [],
+    "public/images/blog/co-nen-mua-reflection-filter-cho-phong-ngu-thu-vocal.webp": [],
+    "public/images/blog/combo-home-studio-duoi-10-trieu-cho-singer-songwriter-inside.webp": [],
+    "public/images/blog/combo-home-studio-duoi-10-trieu-cho-singer-songwriter.webp": [],
+    "public/images/blog/combo-home-studio-duoi-20-trieu-cho-producer-ban-chuyen-inside.webp": [],
+    "public/images/blog/combo-home-studio-duoi-20-trieu-cho-producer-ban-chuyen.webp": []
+  }
+}

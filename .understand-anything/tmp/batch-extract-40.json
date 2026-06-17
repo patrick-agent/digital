@@ -1,0 +1,2655 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 22,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/lib/constants.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 69,
+      "nonEmptyLines": 65,
+      "exports": [
+        {
+          "name": "SITE_CONFIG",
+          "line": 1,
+          "isDefault": false
+        },
+        {
+          "name": "THEME",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "CAMERA",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "SCROLL_SECTIONS",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "CINEMATIC",
+          "line": 49,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/data/releases.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 130,
+      "nonEmptyLines": 125,
+      "functions": [
+        {
+          "name": "getReleaseBySlug",
+          "startLine": 123,
+          "endLine": 125,
+          "params": [
+            "slug"
+          ]
+        },
+        {
+          "name": "getAllReleaseSlugs",
+          "startLine": 128,
+          "endLine": 130,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "releases",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "getReleaseBySlug",
+          "line": 123,
+          "isDefault": false
+        },
+        {
+          "name": "getAllReleaseSlugs",
+          "line": 128,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getReleaseBySlug",
+          "callee": "releases.find",
+          "lineNumber": 124
+        },
+        {
+          "caller": "getAllReleaseSlugs",
+          "callee": "releases.map",
+          "lineNumber": 129
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/db-cli.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 112,
+      "nonEmptyLines": 103,
+      "functions": [
+        {
+          "name": "readJSON",
+          "startLine": 10,
+          "endLine": 16,
+          "params": [
+            "filename"
+          ]
+        },
+        {
+          "name": "writeJSON",
+          "startLine": 18,
+          "endLine": 21,
+          "params": [
+            "filename",
+            "data"
+          ]
+        },
+        {
+          "name": "slugify",
+          "startLine": 23,
+          "endLine": 31,
+          "params": [
+            "text"
+          ]
+        },
+        {
+          "name": "generateUniqueSlug",
+          "startLine": 33,
+          "endLine": 41,
+          "params": [
+            "baseSlug",
+            "existingItems",
+            "currentId"
+          ]
+        },
+        {
+          "name": "readPosts",
+          "startLine": 43,
+          "endLine": 60,
+          "params": []
+        },
+        {
+          "name": "readPost",
+          "startLine": 62,
+          "endLine": 65,
+          "params": [
+            "idOrSlug"
+          ]
+        },
+        {
+          "name": "createPost",
+          "startLine": 67,
+          "endLine": 92,
+          "params": [
+            "data"
+          ]
+        },
+        {
+          "name": "updatePost",
+          "startLine": 94,
+          "endLine": 112,
+          "params": [
+            "id",
+            "data"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "readPosts",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "readPost",
+          "line": 62,
+          "isDefault": false
+        },
+        {
+          "name": "createPost",
+          "line": 67,
+          "isDefault": false
+        },
+        {
+          "name": "updatePost",
+          "line": 94,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "readJSON",
+          "callee": "path.join",
+          "lineNumber": 11
+        },
+        {
+          "caller": "readJSON",
+          "callee": "existsSync",
+          "lineNumber": 12
+        },
+        {
+          "caller": "readJSON",
+          "callee": "readFile",
+          "lineNumber": 13
+        },
+        {
+          "caller": "readJSON",
+          "callee": "raw.trim",
+          "lineNumber": 14
+        },
+        {
+          "caller": "readJSON",
+          "callee": "JSON.parse",
+          "lineNumber": 15
+        },
+        {
+          "caller": "writeJSON",
+          "callee": "path.join",
+          "lineNumber": 19
+        },
+        {
+          "caller": "writeJSON",
+          "callee": "writeFile",
+          "lineNumber": 20
+        },
+        {
+          "caller": "writeJSON",
+          "callee": "JSON.stringify",
+          "lineNumber": 20
+        },
+        {
+          "caller": "slugify",
+          "callee": "text\n    .toString().toLowerCase().trim()\n    .replace(/\\s+/g, \"-\")\n    .replace(/[^\\w-]+/g, \"\")\n    .replace(/--+/g, \"-\")\n    .replace(/^-+/, \"\")\n    .replace",
+          "lineNumber": 24
+        },
+        {
+          "caller": "slugify",
+          "callee": "text\n    .toString().toLowerCase().trim()\n    .replace(/\\s+/g, \"-\")\n    .replace(/[^\\w-]+/g, \"\")\n    .replace(/--+/g, \"-\")\n    .replace",
+          "lineNumber": 24
+        },
+        {
+          "caller": "slugify",
+          "callee": "text\n    .toString().toLowerCase().trim()\n    .replace(/\\s+/g, \"-\")\n    .replace(/[^\\w-]+/g, \"\")\n    .replace",
+          "lineNumber": 24
+        },
+        {
+          "caller": "slugify",
+          "callee": "text\n    .toString().toLowerCase().trim()\n    .replace(/\\s+/g, \"-\")\n    .replace",
+          "lineNumber": 24
+        },
+        {
+          "caller": "slugify",
+          "callee": "text\n    .toString().toLowerCase().trim()\n    .replace",
+          "lineNumber": 24
+        },
+        {
+          "caller": "slugify",
+          "callee": "text\n    .toString().toLowerCase().trim",
+          "lineNumber": 24
+        },
+        {
+          "caller": "slugify",
+          "callee": "text\n    .toString().toLowerCase",
+          "lineNumber": 24
+        },
+        {
+          "caller": "slugify",
+          "callee": "text\n    .toString",
+          "lineNumber": 24
+        },
+        {
+          "caller": "generateUniqueSlug",
+          "callee": "existingItems.some",
+          "lineNumber": 36
+        },
+        {
+          "caller": "readPosts",
+          "callee": "readJSON",
+          "lineNumber": 44
+        },
+        {
+          "caller": "readPosts",
+          "callee": "posts.filter",
+          "lineNumber": 46
+        },
+        {
+          "caller": "readPosts",
+          "callee": "posts.filter",
+          "lineNumber": 47
+        },
+        {
+          "caller": "readPosts",
+          "callee": "posts.filter",
+          "lineNumber": 48
+        },
+        {
+          "caller": "readPosts",
+          "callee": "search.toLowerCase",
+          "lineNumber": 50
+        },
+        {
+          "caller": "readPosts",
+          "callee": "posts.filter",
+          "lineNumber": 51
+        },
+        {
+          "caller": "readPosts",
+          "callee": "p.title.toLowerCase().includes",
+          "lineNumber": 52
+        },
+        {
+          "caller": "readPosts",
+          "callee": "p.title.toLowerCase",
+          "lineNumber": 52
+        },
+        {
+          "caller": "readPosts",
+          "callee": "p.excerpt?.toLowerCase().includes",
+          "lineNumber": 52
+        },
+        {
+          "caller": "readPosts",
+          "callee": "p.excerpt?.toLowerCase",
+          "lineNumber": 52
+        },
+        {
+          "caller": "readPosts",
+          "callee": "posts.sort",
+          "lineNumber": 55
+        },
+        {
+          "caller": "readPosts",
+          "callee": "posts.slice",
+          "lineNumber": 58
+        },
+        {
+          "caller": "readPost",
+          "callee": "readJSON",
+          "lineNumber": 63
+        },
+        {
+          "caller": "readPost",
+          "callee": "posts.find",
+          "lineNumber": 64
+        },
+        {
+          "caller": "createPost",
+          "callee": "readJSON",
+          "lineNumber": 68
+        },
+        {
+          "caller": "createPost",
+          "callee": "generateUniqueSlug",
+          "lineNumber": 69
+        },
+        {
+          "caller": "createPost",
+          "callee": "slugify",
+          "lineNumber": 69
+        },
+        {
+          "caller": "createPost",
+          "callee": "new Date().toISOString",
+          "lineNumber": 70
+        },
+        {
+          "caller": "createPost",
+          "callee": "crypto.randomUUID",
+          "lineNumber": 72
+        },
+        {
+          "caller": "createPost",
+          "callee": "posts.push",
+          "lineNumber": 89
+        },
+        {
+          "caller": "createPost",
+          "callee": "writeJSON",
+          "lineNumber": 90
+        },
+        {
+          "caller": "updatePost",
+          "callee": "readJSON",
+          "lineNumber": 95
+        },
+        {
+          "caller": "updatePost",
+          "callee": "posts.findIndex",
+          "lineNumber": 96
+        },
+        {
+          "caller": "updatePost",
+          "callee": "slugify",
+          "lineNumber": 100
+        },
+        {
+          "caller": "updatePost",
+          "callee": "generateUniqueSlug",
+          "lineNumber": 101
+        },
+        {
+          "caller": "updatePost",
+          "callee": "new Date().toISOString",
+          "lineNumber": 108
+        },
+        {
+          "caller": "updatePost",
+          "callee": "writeJSON",
+          "lineNumber": 110
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 8,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/db/index.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 39,
+      "nonEmptyLines": 39,
+      "exports": [
+        {
+          "name": "readJSON",
+          "line": 1,
+          "isDefault": false
+        },
+        {
+          "name": "writeJSON",
+          "line": 1,
+          "isDefault": false
+        },
+        {
+          "name": "readFileJSON",
+          "line": 1,
+          "isDefault": false
+        },
+        {
+          "name": "writeFileJSON",
+          "line": 1,
+          "isDefault": false
+        },
+        {
+          "name": "slugify",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "generateUniqueSlug",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "readPosts",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "readPost",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "createPost",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "updatePost",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "deletePost",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "duplicatePost",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "readProducts",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "readProduct",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "createProduct",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "updateProduct",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "deleteProduct",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "readMusic",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "readMusicItem",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "createMusic",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "updateMusic",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "deleteMusic",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "readGallery",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "createGalleryItem",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "bulkCreateGalleryItems",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "readGalleryItem",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "updateGalleryItem",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "deleteGalleryItem",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "readEvents",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "createEvent",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "readEvent",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "updateEvent",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "deleteEvent",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "readCaseStudies",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "createCaseStudy",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "readCaseStudy",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "updateCaseStudy",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "deleteCaseStudy",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "readServices",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "createService",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "readService",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "updateService",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "deleteService",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "readSubscribers",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "unsubscribeSubscriber",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "addSubscriber",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "readSEOMetadata",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "updateSEOMetadata",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "getAllRoutes",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "readMedia",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "createMediaItem",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "updateMediaItem",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "deleteMediaItem",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "readSettings",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "updateSettings",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "readPressKit",
+          "line": 37,
+          "isDefault": false
+        },
+        {
+          "name": "updatePressKit",
+          "line": 37,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 57,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/deviceDetection.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 169,
+      "nonEmptyLines": 138,
+      "functions": [
+        {
+          "name": "getDeviceType",
+          "startLine": 6,
+          "endLine": 12,
+          "params": []
+        },
+        {
+          "name": "getDeviceMemory",
+          "startLine": 14,
+          "endLine": 17,
+          "params": []
+        },
+        {
+          "name": "getConnectionType",
+          "startLine": 19,
+          "endLine": 23,
+          "params": []
+        },
+        {
+          "name": "isSlowNetwork",
+          "startLine": 25,
+          "endLine": 28,
+          "params": []
+        },
+        {
+          "name": "isLowMemoryDevice",
+          "startLine": 30,
+          "endLine": 32,
+          "params": []
+        },
+        {
+          "name": "getModelLoadingStrategy",
+          "startLine": 34,
+          "endLine": 80,
+          "params": []
+        },
+        {
+          "name": "getCanvasConfig",
+          "startLine": 82,
+          "endLine": 105,
+          "params": []
+        },
+        {
+          "name": "getLoadingTimeout",
+          "startLine": 107,
+          "endLine": 123,
+          "params": []
+        },
+        {
+          "name": "shouldSkipComponent",
+          "startLine": 125,
+          "endLine": 136,
+          "params": [
+            "componentType"
+          ]
+        },
+        {
+          "name": "getParticleCount",
+          "startLine": 138,
+          "endLine": 147,
+          "params": []
+        },
+        {
+          "name": "getDPRConfig",
+          "startLine": 149,
+          "endLine": 156,
+          "params": []
+        },
+        {
+          "name": "getTextureSize",
+          "startLine": 158,
+          "endLine": 169,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "getDeviceType",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "getDeviceMemory",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "getConnectionType",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "isSlowNetwork",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "isLowMemoryDevice",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "getModelLoadingStrategy",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "getCanvasConfig",
+          "line": 82,
+          "isDefault": false
+        },
+        {
+          "name": "getLoadingTimeout",
+          "line": 107,
+          "isDefault": false
+        },
+        {
+          "name": "shouldSkipComponent",
+          "line": 125,
+          "isDefault": false
+        },
+        {
+          "name": "getParticleCount",
+          "line": 138,
+          "isDefault": false
+        },
+        {
+          "name": "getDPRConfig",
+          "line": 149,
+          "isDefault": false
+        },
+        {
+          "name": "getTextureSize",
+          "line": 158,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "isSlowNetwork",
+          "callee": "getConnectionType",
+          "lineNumber": 26
+        },
+        {
+          "caller": "isLowMemoryDevice",
+          "callee": "getDeviceMemory",
+          "lineNumber": 31
+        },
+        {
+          "caller": "getModelLoadingStrategy",
+          "callee": "getDeviceType",
+          "lineNumber": 35
+        },
+        {
+          "caller": "getModelLoadingStrategy",
+          "callee": "getDeviceMemory",
+          "lineNumber": 36
+        },
+        {
+          "caller": "getModelLoadingStrategy",
+          "callee": "getConnectionType",
+          "lineNumber": 37
+        },
+        {
+          "caller": "getModelLoadingStrategy",
+          "callee": "isSlowNetwork",
+          "lineNumber": 40
+        },
+        {
+          "caller": "getCanvasConfig",
+          "callee": "getDeviceType",
+          "lineNumber": 83
+        },
+        {
+          "caller": "getCanvasConfig",
+          "callee": "getConnectionType",
+          "lineNumber": 84
+        },
+        {
+          "caller": "getCanvasConfig",
+          "callee": "isSlowNetwork",
+          "lineNumber": 85
+        },
+        {
+          "caller": "getLoadingTimeout",
+          "callee": "getConnectionType",
+          "lineNumber": 108
+        },
+        {
+          "caller": "getLoadingTimeout",
+          "callee": "getDeviceType",
+          "lineNumber": 109
+        },
+        {
+          "caller": "shouldSkipComponent",
+          "callee": "getDeviceType",
+          "lineNumber": 126
+        },
+        {
+          "caller": "shouldSkipComponent",
+          "callee": "getDeviceMemory",
+          "lineNumber": 127
+        },
+        {
+          "caller": "shouldSkipComponent",
+          "callee": "getConnectionType",
+          "lineNumber": 128
+        },
+        {
+          "caller": "shouldSkipComponent",
+          "callee": "isSlowNetwork",
+          "lineNumber": 131
+        },
+        {
+          "caller": "shouldSkipComponent",
+          "callee": "['canvas', 'particles', 'effects'].includes",
+          "lineNumber": 132
+        },
+        {
+          "caller": "getParticleCount",
+          "callee": "getDeviceType",
+          "lineNumber": 139
+        },
+        {
+          "caller": "getParticleCount",
+          "callee": "getDeviceMemory",
+          "lineNumber": 140
+        },
+        {
+          "caller": "getParticleCount",
+          "callee": "Math.floor",
+          "lineNumber": 142
+        },
+        {
+          "caller": "getParticleCount",
+          "callee": "Math.floor",
+          "lineNumber": 143
+        },
+        {
+          "caller": "getParticleCount",
+          "callee": "Math.floor",
+          "lineNumber": 144
+        },
+        {
+          "caller": "getDPRConfig",
+          "callee": "getDeviceType",
+          "lineNumber": 150
+        },
+        {
+          "caller": "getTextureSize",
+          "callee": "getModelLoadingStrategy",
+          "lineNumber": 159
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 12,
+        "functionCount": 12,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/google-indexing.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 69,
+      "nonEmptyLines": 54,
+      "functions": [
+        {
+          "name": "getOAuthAuth",
+          "startLine": 5,
+          "endLine": 15,
+          "params": []
+        },
+        {
+          "name": "getServiceAccountAuth",
+          "startLine": 17,
+          "endLine": 34,
+          "params": []
+        },
+        {
+          "name": "getAuthConfigs",
+          "startLine": 36,
+          "endLine": 38,
+          "params": []
+        },
+        {
+          "name": "shouldSkipLocalIndexing",
+          "startLine": 40,
+          "endLine": 42,
+          "params": []
+        },
+        {
+          "name": "publishGoogleIndexingNotification",
+          "startLine": 44,
+          "endLine": 69,
+          "params": [
+            "url"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "publishGoogleIndexingNotification",
+          "line": 44,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getOAuthAuth",
+          "callee": "auth.setCredentials",
+          "lineNumber": 13
+        },
+        {
+          "caller": "getServiceAccountAuth",
+          "callee": "(process.env.GOOGLE_INDEXING_PRIVATE_KEY || \"\").replace",
+          "lineNumber": 19
+        },
+        {
+          "caller": "getAuthConfigs",
+          "callee": "[getServiceAccountAuth(), getOAuthAuth()].filter",
+          "lineNumber": 37
+        },
+        {
+          "caller": "getAuthConfigs",
+          "callee": "getServiceAccountAuth",
+          "lineNumber": 37
+        },
+        {
+          "caller": "getAuthConfigs",
+          "callee": "getOAuthAuth",
+          "lineNumber": 37
+        },
+        {
+          "caller": "publishGoogleIndexingNotification",
+          "callee": "shouldSkipLocalIndexing",
+          "lineNumber": 47
+        },
+        {
+          "caller": "publishGoogleIndexingNotification",
+          "callee": "getAuthConfigs",
+          "lineNumber": 51
+        },
+        {
+          "caller": "publishGoogleIndexingNotification",
+          "callee": "google.indexing",
+          "lineNumber": 60
+        },
+        {
+          "caller": "publishGoogleIndexingNotification",
+          "callee": "indexing.urlNotifications.publish",
+          "lineNumber": 61
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 5,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/helpers.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 31,
+      "nonEmptyLines": 27,
+      "functions": [
+        {
+          "name": "lerp",
+          "startLine": 8,
+          "endLine": 10,
+          "params": [
+            "start",
+            "end",
+            "factor"
+          ]
+        },
+        {
+          "name": "clamp",
+          "startLine": 15,
+          "endLine": 17,
+          "params": [
+            "value",
+            "min",
+            "max"
+          ]
+        },
+        {
+          "name": "mapRange",
+          "startLine": 22,
+          "endLine": 24,
+          "params": [
+            "value",
+            "inMin",
+            "inMax",
+            "outMin",
+            "outMax"
+          ]
+        },
+        {
+          "name": "degToRad",
+          "startLine": 29,
+          "endLine": 31,
+          "params": [
+            "degrees"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "lerp",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "clamp",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "mapRange",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "degToRad",
+          "line": 29,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "clamp",
+          "callee": "Math.min",
+          "lineNumber": 16
+        },
+        {
+          "caller": "clamp",
+          "callee": "Math.max",
+          "lineNumber": 16
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 4,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/performance.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 117,
+      "nonEmptyLines": 99,
+      "functions": [
+        {
+          "name": "throttle",
+          "startLine": 12,
+          "endLine": 38,
+          "params": [
+            "func"
+          ]
+        },
+        {
+          "name": "debounce",
+          "startLine": 47,
+          "endLine": 69,
+          "params": [
+            "func"
+          ]
+        },
+        {
+          "name": "rafThrottle",
+          "startLine": 76,
+          "endLine": 92,
+          "params": [
+            "func"
+          ]
+        },
+        {
+          "name": "createRAFBatcher",
+          "startLine": 98,
+          "endLine": 117,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "throttle",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "debounce",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "rafThrottle",
+          "line": 76,
+          "isDefault": false
+        },
+        {
+          "name": "createRAFBatcher",
+          "line": 98,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "throttle",
+          "callee": "Date.now",
+          "lineNumber": 18
+        },
+        {
+          "caller": "throttle",
+          "callee": "clearTimeout",
+          "lineNumber": 23
+        },
+        {
+          "caller": "throttle",
+          "callee": "func.apply",
+          "lineNumber": 27
+        },
+        {
+          "caller": "throttle",
+          "callee": "setTimeout",
+          "lineNumber": 29
+        },
+        {
+          "caller": "throttle",
+          "callee": "Date.now",
+          "lineNumber": 30
+        },
+        {
+          "caller": "throttle",
+          "callee": "func.apply",
+          "lineNumber": 32
+        },
+        {
+          "caller": "debounce",
+          "callee": "clearTimeout",
+          "lineNumber": 54
+        },
+        {
+          "caller": "debounce",
+          "callee": "setTimeout",
+          "lineNumber": 56
+        },
+        {
+          "caller": "debounce",
+          "callee": "func.apply",
+          "lineNumber": 58
+        },
+        {
+          "caller": "debounce",
+          "callee": "func.apply",
+          "lineNumber": 64
+        },
+        {
+          "caller": "rafThrottle",
+          "callee": "cancelAnimationFrame",
+          "lineNumber": 84
+        },
+        {
+          "caller": "rafThrottle",
+          "callee": "requestAnimationFrame",
+          "lineNumber": 87
+        },
+        {
+          "caller": "rafThrottle",
+          "callee": "func.apply",
+          "lineNumber": 88
+        },
+        {
+          "caller": "schedule",
+          "callee": "callbacks.push",
+          "lineNumber": 103
+        },
+        {
+          "caller": "schedule",
+          "callee": "requestAnimationFrame",
+          "lineNumber": 106
+        },
+        {
+          "caller": "flush",
+          "callee": "callbacks.splice",
+          "lineNumber": 111
+        },
+        {
+          "caller": "flush",
+          "callee": "toExecute.forEach",
+          "lineNumber": 112
+        },
+        {
+          "caller": "flush",
+          "callee": "fn",
+          "lineNumber": 112
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 4,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/post-utils.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 6,
+      "functions": [
+        {
+          "name": "postUrl",
+          "startLine": 1,
+          "endLine": 3,
+          "params": [
+            "post"
+          ]
+        },
+        {
+          "name": "canonicalUrl",
+          "startLine": 5,
+          "endLine": 7,
+          "params": [
+            "post"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "postUrl",
+          "line": 1,
+          "isDefault": false
+        },
+        {
+          "name": "canonicalUrl",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/seeded-random.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 7,
+      "functions": [
+        {
+          "name": "seededUnit",
+          "startLine": 1,
+          "endLine": 4,
+          "params": [
+            "seed"
+          ]
+        },
+        {
+          "name": "seededBetween",
+          "startLine": 6,
+          "endLine": 8,
+          "params": [
+            "seed",
+            "min",
+            "max"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "seededUnit",
+          "line": 1,
+          "isDefault": false
+        },
+        {
+          "name": "seededBetween",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "seededUnit",
+          "callee": "Math.sin",
+          "lineNumber": 2
+        },
+        {
+          "caller": "seededUnit",
+          "callee": "Math.floor",
+          "lineNumber": 3
+        },
+        {
+          "caller": "seededBetween",
+          "callee": "seededUnit",
+          "lineNumber": 7
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/seo-score.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 43,
+      "nonEmptyLines": 38,
+      "functions": [
+        {
+          "name": "calculateSEOScore",
+          "startLine": 2,
+          "endLine": 43,
+          "params": [
+            "data"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "calculateSEOScore",
+          "line": 2,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "calculateSEOScore",
+          "callee": "checks.push",
+          "lineNumber": 9
+        },
+        {
+          "caller": "calculateSEOScore",
+          "callee": "checks.push",
+          "lineNumber": 12
+        },
+        {
+          "caller": "calculateSEOScore",
+          "callee": "checks.push",
+          "lineNumber": 14
+        },
+        {
+          "caller": "calculateSEOScore",
+          "callee": "checks.push",
+          "lineNumber": 20
+        },
+        {
+          "caller": "calculateSEOScore",
+          "callee": "checks.push",
+          "lineNumber": 23
+        },
+        {
+          "caller": "calculateSEOScore",
+          "callee": "checks.push",
+          "lineNumber": 25
+        },
+        {
+          "caller": "calculateSEOScore",
+          "callee": "checks.push",
+          "lineNumber": 30
+        },
+        {
+          "caller": "calculateSEOScore",
+          "callee": "checks.push",
+          "lineNumber": 32
+        },
+        {
+          "caller": "calculateSEOScore",
+          "callee": "checks.push",
+          "lineNumber": 37
+        },
+        {
+          "caller": "calculateSEOScore",
+          "callee": "checks.push",
+          "lineNumber": 39
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/seo.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 71,
+      "nonEmptyLines": 67,
+      "functions": [
+        {
+          "name": "absoluteUrl",
+          "startLine": 31,
+          "endLine": 35,
+          "params": [
+            "path"
+          ]
+        },
+        {
+          "name": "buildPageMetadata",
+          "startLine": 37,
+          "endLine": 71,
+          "params": [
+            "{\n  title,\n  description,\n  path = \"/\",\n  keywords,\n  image = siteMetadata.defaultImage,\n  type = \"website\",\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "siteMetadata",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "defaultRobots",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "absoluteUrl",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "buildPageMetadata",
+          "line": 37,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "absoluteUrl",
+          "callee": "/^https?:\\/\\//i.test",
+          "lineNumber": 33
+        },
+        {
+          "caller": "absoluteUrl",
+          "callee": "path.startsWith",
+          "lineNumber": 34
+        },
+        {
+          "caller": "buildPageMetadata",
+          "callee": "absoluteUrl",
+          "lineNumber": 45
+        },
+        {
+          "caller": "buildPageMetadata",
+          "callee": "absoluteUrl",
+          "lineNumber": 46
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/services.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 65,
+      "nonEmptyLines": 53,
+      "exports": [
+        {
+          "name": "listBlogPosts",
+          "line": 1,
+          "isDefault": false
+        },
+        {
+          "name": "getBlogPost",
+          "line": 1,
+          "isDefault": false
+        },
+        {
+          "name": "createBlogPost",
+          "line": 1,
+          "isDefault": false
+        },
+        {
+          "name": "updateBlogPost",
+          "line": 1,
+          "isDefault": false
+        },
+        {
+          "name": "deleteBlogPost",
+          "line": 1,
+          "isDefault": false
+        },
+        {
+          "name": "duplicateBlogPost",
+          "line": 1,
+          "isDefault": false
+        },
+        {
+          "name": "BlogHandler",
+          "line": 1,
+          "isDefault": false
+        },
+        {
+          "name": "listShopProducts",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "getShopProduct",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "createShopProduct",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "updateShopProduct",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "deleteShopProduct",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "ShopHandler",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "listMusicItems",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "getMusicItem",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "createMusicItem",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "updateMusicItem",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "deleteMusicItem",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "MusicHandler",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "listGalleryItems",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "getGalleryItem",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "createGalleryItem",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "bulkCreateGalleryItems",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "updateGalleryItem",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "deleteGalleryItem",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "GalleryHandler",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "listEvents",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "getEvent",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "createEvent",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "updateEvent",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "deleteEvent",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "EventHandler",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "listCaseStudies",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "getCaseStudy",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "createCaseStudy",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "updateCaseStudy",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "deleteCaseStudy",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "CaseStudyHandler",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "listServices",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "getService",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "createService",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "updateService",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "deleteService",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "ServiceHandler",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "listSubscribers",
+          "line": 37,
+          "isDefault": false
+        },
+        {
+          "name": "getSubscriber",
+          "line": 37,
+          "isDefault": false
+        },
+        {
+          "name": "addSubscriber",
+          "line": 37,
+          "isDefault": false
+        },
+        {
+          "name": "unsubscribeSubscriber",
+          "line": 37,
+          "isDefault": false
+        },
+        {
+          "name": "NewsletterHandler",
+          "line": 37,
+          "isDefault": false
+        },
+        {
+          "name": "listMedia",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "getMedia",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "createMedia",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "updateMedia",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "deleteMedia",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "MediaHandler",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "listSEORoutes",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "getSEO",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "updateSEO",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "getSEORoutes",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "SEOHandler",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "getSettings",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "updateSettings",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "SettingsHandler",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "getPressKit",
+          "line": 57,
+          "isDefault": false
+        },
+        {
+          "name": "updatePressKit",
+          "line": 57,
+          "isDefault": false
+        },
+        {
+          "name": "PressKitHandler",
+          "line": 57,
+          "isDefault": false
+        },
+        {
+          "name": "submitSitemap",
+          "line": 62,
+          "isDefault": false
+        },
+        {
+          "name": "SearchConsoleHandler",
+          "line": 62,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 68,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/shader-utils.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 213,
+      "nonEmptyLines": 186,
+      "functions": [
+        {
+          "name": "enableShaderDebug",
+          "startLine": 12,
+          "endLine": 27,
+          "params": []
+        },
+        {
+          "name": "validateMaterial",
+          "startLine": 72,
+          "endLine": 104,
+          "params": [
+            "material"
+          ]
+        },
+        {
+          "name": "createSafePhongMaterial",
+          "startLine": 109,
+          "endLine": 122,
+          "params": []
+        },
+        {
+          "name": "createFallbackMaterial",
+          "startLine": 127,
+          "endLine": 133,
+          "params": []
+        },
+        {
+          "name": "loadModelSafely",
+          "startLine": 138,
+          "endLine": 150,
+          "params": [
+            "path",
+            "onError"
+          ]
+        },
+        {
+          "name": "checkWebGLLimits",
+          "startLine": 155,
+          "endLine": 172,
+          "params": [
+            "renderer"
+          ]
+        },
+        {
+          "name": "createDeviceOptimizedMaterial",
+          "startLine": 177,
+          "endLine": 213,
+          "params": [
+            "deviceType"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ShaderErrorBoundary",
+          "startLine": 32,
+          "endLine": 67,
+          "methods": [
+            "constructor",
+            "setupErrorHandler",
+            "getErrors",
+            "clearErrors"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "enableShaderDebug",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "ShaderErrorBoundary",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "validateMaterial",
+          "line": 72,
+          "isDefault": false
+        },
+        {
+          "name": "createSafePhongMaterial",
+          "line": 109,
+          "isDefault": false
+        },
+        {
+          "name": "createFallbackMaterial",
+          "line": 127,
+          "isDefault": false
+        },
+        {
+          "name": "loadModelSafely",
+          "line": 138,
+          "isDefault": false
+        },
+        {
+          "name": "checkWebGLLimits",
+          "line": 155,
+          "isDefault": false
+        },
+        {
+          "name": "createDeviceOptimizedMaterial",
+          "line": 177,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "enableShaderDebug",
+          "callee": "console.log",
+          "lineNumber": 25
+        },
+        {
+          "caller": "constructor",
+          "callee": "this.setupErrorHandler",
+          "lineNumber": 35
+        },
+        {
+          "caller": "setupErrorHandler",
+          "callee": "args.join",
+          "lineNumber": 41
+        },
+        {
+          "caller": "setupErrorHandler",
+          "callee": "errorStr.includes",
+          "lineNumber": 43
+        },
+        {
+          "caller": "setupErrorHandler",
+          "callee": "errorStr.includes",
+          "lineNumber": 43
+        },
+        {
+          "caller": "setupErrorHandler",
+          "callee": "this.errorLog.push",
+          "lineNumber": 44
+        },
+        {
+          "caller": "setupErrorHandler",
+          "callee": "console.warn",
+          "lineNumber": 50
+        },
+        {
+          "caller": "setupErrorHandler",
+          "callee": "originalError.apply",
+          "lineNumber": 56
+        },
+        {
+          "caller": "validateMaterial",
+          "callee": "issues.push",
+          "lineNumber": 76
+        },
+        {
+          "caller": "validateMaterial",
+          "callee": "issues.push",
+          "lineNumber": 82
+        },
+        {
+          "caller": "validateMaterial",
+          "callee": "issues.push",
+          "lineNumber": 86
+        },
+        {
+          "caller": "validateMaterial",
+          "callee": "issues.push",
+          "lineNumber": 90
+        },
+        {
+          "caller": "validateMaterial",
+          "callee": "issues.push",
+          "lineNumber": 96
+        },
+        {
+          "caller": "validateMaterial",
+          "callee": "issues.push",
+          "lineNumber": 99
+        },
+        {
+          "caller": "loadModelSafely",
+          "callee": "fetch",
+          "lineNumber": 140
+        },
+        {
+          "caller": "loadModelSafely",
+          "callee": "response.arrayBuffer",
+          "lineNumber": 143
+        },
+        {
+          "caller": "loadModelSafely",
+          "callee": "console.error",
+          "lineNumber": 146
+        },
+        {
+          "caller": "loadModelSafely",
+          "callee": "onError",
+          "lineNumber": 147
+        },
+        {
+          "caller": "checkWebGLLimits",
+          "callee": "renderer.getContext().getParameter",
+          "lineNumber": 162
+        },
+        {
+          "caller": "checkWebGLLimits",
+          "callee": "renderer.getContext",
+          "lineNumber": 162
+        },
+        {
+          "caller": "checkWebGLLimits",
+          "callee": "renderer.getContext",
+          "lineNumber": 163
+        },
+        {
+          "caller": "checkWebGLLimits",
+          "callee": "renderer.getContext().getParameter",
+          "lineNumber": 165
+        },
+        {
+          "caller": "checkWebGLLimits",
+          "callee": "renderer.getContext",
+          "lineNumber": 165
+        },
+        {
+          "caller": "checkWebGLLimits",
+          "callee": "renderer.getContext",
+          "lineNumber": 166
+        },
+        {
+          "caller": "checkWebGLLimits",
+          "callee": "console.log",
+          "lineNumber": 170
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/lib/shop/query.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 68,
+      "nonEmptyLines": 54,
+      "functions": [
+        {
+          "name": "getEntries",
+          "startLine": 27,
+          "endLine": 47,
+          "params": [
+            "source"
+          ]
+        },
+        {
+          "name": "buildShopSearchParams",
+          "startLine": 49,
+          "endLine": 62,
+          "params": [
+            "source"
+          ]
+        },
+        {
+          "name": "buildShopHref",
+          "startLine": 64,
+          "endLine": 68,
+          "params": [
+            "source"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SHOP_PATH",
+          "line": 1,
+          "isDefault": false
+        },
+        {
+          "name": "SHOP_PRICE_RANGES",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "SHOP_SORT_OPTIONS",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "SHOP_PRICE_RANGE_LABELS",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "SHOP_SORT_LABELS",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "buildShopSearchParams",
+          "line": 49,
+          "isDefault": false
+        },
+        {
+          "name": "buildShopHref",
+          "line": 64,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getEntries",
+          "callee": "Array.from",
+          "lineNumber": 31
+        },
+        {
+          "caller": "getEntries",
+          "callee": "source.entries",
+          "lineNumber": 31
+        },
+        {
+          "caller": "getEntries",
+          "callee": "Object.entries(source).flatMap",
+          "lineNumber": 34
+        },
+        {
+          "caller": "getEntries",
+          "callee": "Object.entries",
+          "lineNumber": 34
+        },
+        {
+          "caller": "getEntries",
+          "callee": "Array.isArray",
+          "lineNumber": 39
+        },
+        {
+          "caller": "getEntries",
+          "callee": "value\n        .filter((item) => item !== undefined && item !== null && item !== \"\")\n        .map",
+          "lineNumber": 40
+        },
+        {
+          "caller": "getEntries",
+          "callee": "value\n        .filter",
+          "lineNumber": 40
+        },
+        {
+          "caller": "getEntries",
+          "callee": "String",
+          "lineNumber": 42
+        },
+        {
+          "caller": "getEntries",
+          "callee": "String",
+          "lineNumber": 45
+        },
+        {
+          "caller": "buildShopSearchParams",
+          "callee": "getEntries",
+          "lineNumber": 50
+        },
+        {
+          "caller": "buildShopSearchParams",
+          "callee": "Object.entries",
+          "lineNumber": 52
+        },
+        {
+          "caller": "buildShopSearchParams",
+          "callee": "params.delete",
+          "lineNumber": 54
+        },
+        {
+          "caller": "buildShopSearchParams",
+          "callee": "params.set",
+          "lineNumber": 58
+        },
+        {
+          "caller": "buildShopSearchParams",
+          "callee": "String",
+          "lineNumber": 58
+        },
+        {
+          "caller": "buildShopHref",
+          "callee": "buildShopSearchParams",
+          "lineNumber": 65
+        },
+        {
+          "caller": "buildShopHref",
+          "callee": "params.toString",
+          "lineNumber": 66
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/utils.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 6,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "cn",
+          "startLine": 4,
+          "endLine": 6,
+          "params": [
+            "...inputs"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "cn",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "cn",
+          "callee": "twMerge",
+          "lineNumber": 5
+        },
+        {
+          "caller": "cn",
+          "callee": "clsx",
+          "lineNumber": 5
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/webglDetector.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 83,
+      "nonEmptyLines": 69,
+      "classes": [
+        {
+          "name": "WebGLDetector",
+          "startLine": 6,
+          "endLine": 81,
+          "methods": [
+            "canUseWebGL",
+            "getWebGLInfo",
+            "setupErrorHandler",
+            "shouldDisableWebGL"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "WebGLDetector",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "canUseWebGL",
+          "callee": "document.createElement",
+          "lineNumber": 11
+        },
+        {
+          "caller": "canUseWebGL",
+          "callee": "canvas.getContext",
+          "lineNumber": 12
+        },
+        {
+          "caller": "canUseWebGL",
+          "callee": "canvas.getContext",
+          "lineNumber": 12
+        },
+        {
+          "caller": "canUseWebGL",
+          "callee": "console.warn",
+          "lineNumber": 15
+        },
+        {
+          "caller": "getWebGLInfo",
+          "callee": "document.createElement",
+          "lineNumber": 24
+        },
+        {
+          "caller": "getWebGLInfo",
+          "callee": "canvas.getContext",
+          "lineNumber": 25
+        },
+        {
+          "caller": "getWebGLInfo",
+          "callee": "canvas.getContext",
+          "lineNumber": 25
+        },
+        {
+          "caller": "getWebGLInfo",
+          "callee": "gl.getExtension",
+          "lineNumber": 29
+        },
+        {
+          "caller": "getWebGLInfo",
+          "callee": "gl.getParameter",
+          "lineNumber": 31
+        },
+        {
+          "caller": "getWebGLInfo",
+          "callee": "gl.getParameter",
+          "lineNumber": 32
+        },
+        {
+          "caller": "getWebGLInfo",
+          "callee": "gl.getParameter",
+          "lineNumber": 33
+        },
+        {
+          "caller": "getWebGLInfo",
+          "callee": "gl.getParameter",
+          "lineNumber": 34
+        },
+        {
+          "caller": "getWebGLInfo",
+          "callee": "gl.getParameter",
+          "lineNumber": 35
+        },
+        {
+          "caller": "getWebGLInfo",
+          "callee": "gl.getParameter",
+          "lineNumber": 36
+        },
+        {
+          "caller": "getWebGLInfo",
+          "callee": "console.warn",
+          "lineNumber": 39
+        },
+        {
+          "caller": "setupErrorHandler",
+          "callee": "args.join",
+          "lineNumber": 50
+        },
+        {
+          "caller": "setupErrorHandler",
+          "callee": "errorStr.includes",
+          "lineNumber": 51
+        },
+        {
+          "caller": "setupErrorHandler",
+          "callee": "errorStr.includes",
+          "lineNumber": 51
+        },
+        {
+          "caller": "setupErrorHandler",
+          "callee": "console.warn",
+          "lineNumber": 52
+        },
+        {
+          "caller": "setupErrorHandler",
+          "callee": "originalError.apply",
+          "lineNumber": 55
+        },
+        {
+          "caller": "setupErrorHandler",
+          "callee": "document.addEventListener",
+          "lineNumber": 61
+        },
+        {
+          "caller": "setupErrorHandler",
+          "callee": "console.warn",
+          "lineNumber": 62
+        },
+        {
+          "caller": "setupErrorHandler",
+          "callee": "event.preventDefault",
+          "lineNumber": 63
+        },
+        {
+          "caller": "setupErrorHandler",
+          "callee": "document.addEventListener",
+          "lineNumber": 66
+        },
+        {
+          "caller": "setupErrorHandler",
+          "callee": "console.log",
+          "lineNumber": 67
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/proxy.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 4,
+      "nonEmptyLines": 4,
+      "exports": [
+        {
+          "name": "proxy",
+          "line": 1,
+          "isDefault": false
+        },
+        {
+          "name": "config",
+          "line": 2,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/styles/design-tokens.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 20,
+      "nonEmptyLines": 16,
+      "metrics": {}
+    },
+    {
+      "path": "src/types/post.d.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 21,
+      "nonEmptyLines": 21,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "vercel.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": "webhook-blog-sample.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 50,
+      "nonEmptyLines": 50,
+      "sections": [
+        {
+          "heading": "rows",
+          "level": 1,
+          "line": 2
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    }
+  ]
+}

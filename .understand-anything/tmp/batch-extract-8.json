@@ -1,0 +1,588 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/components/canvas/CharacterCanvas.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 174,
+      "nonEmptyLines": 158,
+      "functions": [
+        {
+          "name": "toNorm",
+          "startLine": 9,
+          "endLine": 14,
+          "params": [
+            "clientX",
+            "clientY",
+            "rect"
+          ]
+        },
+        {
+          "name": "calcScroll",
+          "startLine": 16,
+          "endLine": 21,
+          "params": []
+        },
+        {
+          "name": "CharacterCanvas",
+          "startLine": 27,
+          "endLine": 174,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "CharacterCanvas",
+          "line": 27,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "calcScroll",
+          "callee": "Math.min",
+          "lineNumber": 17
+        },
+        {
+          "caller": "calcScroll",
+          "callee": "Math.max",
+          "lineNumber": 18
+        },
+        {
+          "caller": "CharacterCanvas",
+          "callee": "useRef",
+          "lineNumber": 28
+        },
+        {
+          "caller": "CharacterCanvas",
+          "callee": "useRef",
+          "lineNumber": 29
+        },
+        {
+          "caller": "CharacterCanvas",
+          "callee": "useState",
+          "lineNumber": 30
+        },
+        {
+          "caller": "CharacterCanvas",
+          "callee": "useState",
+          "lineNumber": 31
+        },
+        {
+          "caller": "CharacterCanvas",
+          "callee": "calcScroll",
+          "lineNumber": 31
+        },
+        {
+          "caller": "CharacterCanvas",
+          "callee": "useState",
+          "lineNumber": 32
+        },
+        {
+          "caller": "CharacterCanvas",
+          "callee": "useRef",
+          "lineNumber": 33
+        },
+        {
+          "caller": "CharacterCanvas",
+          "callee": "useCanvasOptimizer",
+          "lineNumber": 34
+        },
+        {
+          "caller": "CharacterCanvas",
+          "callee": "useHydrated",
+          "lineNumber": 35
+        },
+        {
+          "caller": "CharacterCanvas",
+          "callee": "useCallback",
+          "lineNumber": 37
+        },
+        {
+          "caller": "CharacterCanvas",
+          "callee": "wrapRef.current?.getBoundingClientRect",
+          "lineNumber": 38
+        },
+        {
+          "caller": "CharacterCanvas",
+          "callee": "setMousePos",
+          "lineNumber": 39
+        },
+        {
+          "caller": "CharacterCanvas",
+          "callee": "toNorm",
+          "lineNumber": 39
+        },
+        {
+          "caller": "CharacterCanvas",
+          "callee": "useCallback",
+          "lineNumber": 42
+        },
+        {
+          "caller": "CharacterCanvas",
+          "callee": "setMousePos",
+          "lineNumber": 42
+        },
+        {
+          "caller": "CharacterCanvas",
+          "callee": "useCallback",
+          "lineNumber": 44
+        },
+        {
+          "caller": "CharacterCanvas",
+          "callee": "performance.now",
+          "lineNumber": 45
+        },
+        {
+          "caller": "CharacterCanvas",
+          "callee": "setScrollProgress",
+          "lineNumber": 48
+        },
+        {
+          "caller": "CharacterCanvas",
+          "callee": "calcScroll",
+          "lineNumber": 48
+        },
+        {
+          "caller": "CharacterCanvas",
+          "callee": "useCallback",
+          "lineNumber": 52
+        },
+        {
+          "caller": "CharacterCanvas",
+          "callee": "console.warn",
+          "lineNumber": 53
+        },
+        {
+          "caller": "CharacterCanvas",
+          "callee": "setContextLost",
+          "lineNumber": 54
+        },
+        {
+          "caller": "CharacterCanvas",
+          "callee": "setTimeout",
+          "lineNumber": 56
+        },
+        {
+          "caller": "CharacterCanvas",
+          "callee": "setContextLost",
+          "lineNumber": 56
+        },
+        {
+          "caller": "CharacterCanvas",
+          "callee": "useCallback",
+          "lineNumber": 59
+        },
+        {
+          "caller": "CharacterCanvas",
+          "callee": "console.log",
+          "lineNumber": 60
+        },
+        {
+          "caller": "CharacterCanvas",
+          "callee": "setContextLost",
+          "lineNumber": 61
+        },
+        {
+          "caller": "CharacterCanvas",
+          "callee": "useEffect",
+          "lineNumber": 64
+        },
+        {
+          "caller": "CharacterCanvas",
+          "callee": "canvas.addEventListener",
+          "lineNumber": 69
+        },
+        {
+          "caller": "CharacterCanvas",
+          "callee": "canvas.addEventListener",
+          "lineNumber": 70
+        },
+        {
+          "caller": "CharacterCanvas",
+          "callee": "window.addEventListener",
+          "lineNumber": 74
+        },
+        {
+          "caller": "CharacterCanvas",
+          "callee": "window.addEventListener",
+          "lineNumber": 75
+        },
+        {
+          "caller": "CharacterCanvas",
+          "callee": "window.addEventListener",
+          "lineNumber": 77
+        },
+        {
+          "caller": "CharacterCanvas",
+          "callee": "canvas.removeEventListener",
+          "lineNumber": 81
+        },
+        {
+          "caller": "CharacterCanvas",
+          "callee": "canvas.removeEventListener",
+          "lineNumber": 82
+        },
+        {
+          "caller": "CharacterCanvas",
+          "callee": "window.removeEventListener",
+          "lineNumber": 84
+        },
+        {
+          "caller": "CharacterCanvas",
+          "callee": "window.removeEventListener",
+          "lineNumber": 85
+        },
+        {
+          "caller": "CharacterCanvas",
+          "callee": "window.removeEventListener",
+          "lineNumber": 86
+        },
+        {
+          "caller": "CharacterCanvas",
+          "callee": "camera.lookAt",
+          "lineNumber": 138
+        },
+        {
+          "caller": "CharacterCanvas",
+          "callee": "gl.setPixelRatio",
+          "lineNumber": 142
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/canvas/CharacterModel.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 137,
+      "nonEmptyLines": 121,
+      "functions": [
+        {
+          "name": "CharacterModel",
+          "startLine": 7,
+          "endLine": 137,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "CharacterModel",
+          "line": 7,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "CharacterModel",
+          "callee": "useRef",
+          "lineNumber": 11
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "useRef",
+          "lineNumber": 12
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "useRef",
+          "lineNumber": 13
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "useRef",
+          "lineNumber": 14
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "useRef",
+          "lineNumber": 15
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "useRef",
+          "lineNumber": 16
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "useGLTF",
+          "lineNumber": 18
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "useEffect",
+          "lineNumber": 20
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "scene.traverse",
+          "lineNumber": 24
+        },
+        {
+          "caller": "applyMat",
+          "callee": "mat.clone",
+          "lineNumber": 28
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "Array.isArray",
+          "lineNumber": 35
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "child.material.map",
+          "lineNumber": 36
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "applyMat",
+          "lineNumber": 37
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "mixerRef.current.clipAction",
+          "lineNumber": 51
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "action.play",
+          "lineNumber": 54
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "console.warn",
+          "lineNumber": 56
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "mixerRef.current.stopAllAction",
+          "lineNumber": 62
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "useFrame",
+          "lineNumber": 70
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "Math.min",
+          "lineNumber": 72
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "mixerRef.current.update",
+          "lineNumber": 75
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "Math.min",
+          "lineNumber": 78
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "THREE.MathUtils.lerp",
+          "lineNumber": 99
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "THREE.MathUtils.lerp",
+          "lineNumber": 100
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "THREE.MathUtils.lerp",
+          "lineNumber": 101
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "THREE.MathUtils.lerp",
+          "lineNumber": 102
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "THREE.MathUtils.degToRad",
+          "lineNumber": 103
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "THREE.MathUtils.degToRad",
+          "lineNumber": 104
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "groupRef.current.traverse",
+          "lineNumber": 108
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "Array.isArray",
+          "lineNumber": 110
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "mats.forEach",
+          "lineNumber": 113
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "THREE.MathUtils.lerp",
+          "lineNumber": 114
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "THREE.MathUtils.degToRad",
+          "lineNumber": 128
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "THREE.MathUtils.degToRad",
+          "lineNumber": 129
+        },
+        {
+          "caller": "CharacterModel",
+          "callee": "THREE.MathUtils.degToRad",
+          "lineNumber": 130
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/canvas/HeroCanvas.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 82,
+      "nonEmptyLines": 76,
+      "functions": [
+        {
+          "name": "SceneLights",
+          "startLine": 13,
+          "endLine": 39,
+          "params": []
+        },
+        {
+          "name": "LoadingFallback",
+          "startLine": 41,
+          "endLine": 48,
+          "params": []
+        },
+        {
+          "name": "HeroCanvas",
+          "startLine": 50,
+          "endLine": 82,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "HeroCanvas",
+          "line": 50,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/canvas/StudioModel.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 54,
+      "nonEmptyLines": 46,
+      "functions": [
+        {
+          "name": "StudioModel",
+          "startLine": 10,
+          "endLine": 54,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "StudioModel",
+          "line": 10,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "StudioModel",
+          "callee": "useGLTF",
+          "lineNumber": 11
+        },
+        {
+          "caller": "StudioModel",
+          "callee": "useEffect",
+          "lineNumber": 13
+        },
+        {
+          "caller": "StudioModel",
+          "callee": "scene.traverse",
+          "lineNumber": 17
+        },
+        {
+          "caller": "StudioModel",
+          "callee": "console.warn",
+          "lineNumber": 22
+        },
+        {
+          "caller": "StudioModel",
+          "callee": "createFallbackMaterial",
+          "lineNumber": 23
+        },
+        {
+          "caller": "StudioModel",
+          "callee": "Math.max",
+          "lineNumber": 29
+        },
+        {
+          "caller": "StudioModel",
+          "callee": "Math.min",
+          "lineNumber": 29
+        },
+        {
+          "caller": "StudioModel",
+          "callee": "console.log",
+          "lineNumber": 39
+        },
+        {
+          "caller": "StudioModel",
+          "callee": "node.material.color?.getHexString",
+          "lineNumber": 41
+        },
+        {
+          "caller": "StudioModel",
+          "callee": "console.error",
+          "lineNumber": 46
+        },
+        {
+          "caller": "StudioModel",
+          "callee": "createFallbackMaterial",
+          "lineNumber": 47
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    }
+  ]
+}

@@ -1,67 +1,131 @@
 import {
-  readMusic, readMusicItem, createMusic, updateMusic, deleteMusic,
+  readMusic as listMusicInStore,
+  readMusicItem as getMusicInStore,
+  createMusic as createMusicInStore,
+  updateMusic as updateMusicInStore,
+  deleteMusic as deleteMusicInStore,
 } from "../../db/music.js"
 import {
-  CreateMusicInputSchema, UpdateMusicInputSchema,
-  ListMusicInputSchema, LookupMusicInputSchema,
+  CreateMusicInputSchema,
+  UpdateMusicInputSchema,
+  ListMusicInputSchema,
+  LookupMusicInputSchema,
   MusicErrorCode,
+  MusicListResultSchema,
+  MusicSingleResultSchema,
+  MusicDeleteResultSchema,
+  createMusicFailure,
 } from "./spec.js"
-import { createFailure, safeCatch } from "../../contract/base.js"
+
+const defaultMusicStore = {
+  list: (filters) => listMusicInStore(filters),
+  get: (id) => getMusicInStore(id),
+  create: (data) => createMusicInStore(data),
+  update: (id, data) => updateMusicInStore(id, data),
+  remove: (id) => deleteMusicInStore(id),
+}
+
+function inputFailure(resultSchema, error, fallbackMessage) {
+  const message = error?.issues?.map((issue) => issue.message).join("; ") || fallbackMessage
+  return resultSchema.parse(
+    createMusicFailure(MusicErrorCode.INVALID_INPUT, message, false)
+  )
+}
+
+function unknownFailure(resultSchema, error, fallbackMessage) {
+  return resultSchema.parse(
+    createMusicFailure(
+      MusicErrorCode.UNKNOWN_ERROR,
+      error instanceof Error ? error.message : fallbackMessage,
+      true
+    )
+  )
+}
+
+function notFoundFailure(resultSchema, id) {
+  return resultSchema.parse(
+    createMusicFailure(MusicErrorCode.NOT_FOUND, `Music not found: ${id}`, false)
+  )
+}
 
 export class MusicHandler {
+  constructor(store = defaultMusicStore) {
+    this.store = store
+  }
+
   async list(input) {
+    const parsedInput = ListMusicInputSchema.safeParse(input || {})
+    if (!parsedInput.success) {
+      return inputFailure(MusicListResultSchema, parsedInput.error, "Invalid music filters.")
+    }
+
     try {
-      const filters = ListMusicInputSchema.parse(input || {})
-      const { data, meta } = await readMusic(filters)
-      return { success: true, data: { items: data, meta } }
+      const { data, meta } = await this.store.list(parsedInput.data)
+      return MusicListResultSchema.parse({ success: true, data: { items: data, meta } })
     } catch (error) {
-      return safeCatch(error, "Failed to list music")
+      return unknownFailure(MusicListResultSchema, error, "Failed to list music")
     }
   }
 
   async get(input) {
+    const parsedInput = LookupMusicInputSchema.safeParse(input || {})
+    if (!parsedInput.success) {
+      return inputFailure(MusicSingleResultSchema, parsedInput.error, "Invalid music id.")
+    }
+
     try {
-      const { id } = LookupMusicInputSchema.parse(input || {})
-      if (!id) return createFailure(MusicErrorCode.INVALID_INPUT, "id is required", false)
-      const item = await readMusicItem(id)
-      if (!item) return createFailure(MusicErrorCode.NOT_FOUND, `Music not found: ${id}`, false)
-      return { success: true, data: item }
+      const { id } = parsedInput.data
+      const item = await this.store.get(id)
+      if (!item) return notFoundFailure(MusicSingleResultSchema, id)
+      return MusicSingleResultSchema.parse({ success: true, data: item })
     } catch (error) {
-      return safeCatch(error, "Failed to get music item")
+      return unknownFailure(MusicSingleResultSchema, error, "Failed to get music item")
     }
   }
 
   async create(input) {
+    const parsedInput = CreateMusicInputSchema.safeParse(input || {})
+    if (!parsedInput.success) {
+      return inputFailure(MusicSingleResultSchema, parsedInput.error, "Invalid music payload.")
+    }
+
     try {
-      const data = CreateMusicInputSchema.parse(input || {})
-      const item = await createMusic(data)
-      return { success: true, data: item }
+      const item = await this.store.create(parsedInput.data)
+      return MusicSingleResultSchema.parse({ success: true, data: item })
     } catch (error) {
-      return safeCatch(error, "Failed to create music item")
+      return unknownFailure(MusicSingleResultSchema, error, "Failed to create music item")
     }
   }
 
   async update(input) {
+    const parsedInput = UpdateMusicInputSchema.safeParse(input || {})
+    if (!parsedInput.success) {
+      return inputFailure(MusicSingleResultSchema, parsedInput.error, "Invalid music payload.")
+    }
+
     try {
-      const { id, ...data } = UpdateMusicInputSchema.parse(input || {})
-      if (!id) return createFailure(MusicErrorCode.INVALID_INPUT, "id is required", false)
-      const item = await updateMusic(id, data)
-      if (!item) return createFailure(MusicErrorCode.NOT_FOUND, `Music not found: ${id}`, false)
-      return { success: true, data: item }
+      const { id, ...data } = parsedInput.data
+      const item = await this.store.update(id, data)
+      if (!item) return notFoundFailure(MusicSingleResultSchema, id)
+      return MusicSingleResultSchema.parse({ success: true, data: item })
     } catch (error) {
-      return safeCatch(error, "Failed to update music item")
+      return unknownFailure(MusicSingleResultSchema, error, "Failed to update music item")
     }
   }
 
   async remove(input) {
+    const parsedInput = LookupMusicInputSchema.safeParse(input || {})
+    if (!parsedInput.success) {
+      return inputFailure(MusicDeleteResultSchema, parsedInput.error, "Invalid music id.")
+    }
+
     try {
-      const { id } = LookupMusicInputSchema.parse(input || {})
-      if (!id) return createFailure(MusicErrorCode.INVALID_INPUT, "id is required", false)
-      const deleted = await deleteMusic(id)
-      if (!deleted) return createFailure(MusicErrorCode.NOT_FOUND, `Music not found: ${id}`, false)
-      return { success: true, data: { deleted: true } }
+      const { id } = parsedInput.data
+      const deleted = await this.store.remove(id)
+      if (!deleted) return notFoundFailure(MusicDeleteResultSchema, id)
+      return MusicDeleteResultSchema.parse({ success: true, data: { deleted: true } })
     } catch (error) {
-      return safeCatch(error, "Failed to delete music item")
+      return unknownFailure(MusicDeleteResultSchema, error, "Failed to delete music item")
     }
   }
 }

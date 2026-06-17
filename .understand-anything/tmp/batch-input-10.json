@@ -1,0 +1,31 @@
+{
+  "projectRoot": "C:\\Users\\Admin\\Desktop\\Website 3D\\studio-3d",
+  "batchFiles": [
+    {
+      "path": "src/app/(digital)/digital/loading.jsx",
+      "language": "javascript",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/(digital)/digital/page.client.jsx",
+      "language": "javascript",
+      "sizeLines": 100,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/(digital)/digital/page.jsx",
+      "language": "javascript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/app/(digital)/digital/loading.jsx": [],
+    "src/app/(digital)/digital/page.client.jsx": [],
+    "src/app/(digital)/digital/page.jsx": [
+      "src/app/(digital)/digital/loading.jsx",
+      "src/app/(digital)/digital/page.client.jsx"
+    ]
+  }
+}

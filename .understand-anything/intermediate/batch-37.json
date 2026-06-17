@@ -1,0 +1,1284 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/components/canvas/GradientBlinds.jsx",
+      "type": "file",
+      "name": "GradientBlinds.jsx",
+      "filePath": "src/components/canvas/GradientBlinds.jsx",
+      "summary": "GradientBlinds.jsx: Source file, 3 functions, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/components/canvas/GradientBlinds.jsx:hexToRGB",
+      "type": "function",
+      "name": "hexToRGB",
+      "filePath": "src/components/canvas/GradientBlinds.jsx",
+      "lineRange": [
+        7,
+        13
+      ],
+      "summary": "Function hexToRGB with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/canvas/GradientBlinds.jsx:prepStops",
+      "type": "function",
+      "name": "prepStops",
+      "filePath": "src/components/canvas/GradientBlinds.jsx",
+      "lineRange": [
+        14,
+        22
+      ],
+      "summary": "Function prepStops with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/canvas/GradientBlinds.jsx:GradientBlinds",
+      "type": "function",
+      "name": "GradientBlinds",
+      "filePath": "src/components/canvas/GradientBlinds.jsx",
+      "lineRange": [
+        24,
+        360
+      ],
+      "summary": "Function GradientBlinds with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/canvas/Particles.jsx",
+      "type": "file",
+      "name": "Particles.jsx",
+      "filePath": "src/components/canvas/Particles.jsx",
+      "summary": "Particles.jsx: Source file, 1 function.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/canvas/Particles.jsx:Particles",
+      "type": "function",
+      "name": "Particles",
+      "filePath": "src/components/canvas/Particles.jsx",
+      "lineRange": [
+        7,
+        10
+      ],
+      "summary": "Function Particles with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/canvas/Scene3D.jsx",
+      "type": "file",
+      "name": "Scene3D.jsx",
+      "filePath": "src/components/canvas/Scene3D.jsx",
+      "summary": "Scene3D.jsx: Source file, 1 function.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/canvas/Scene3D.jsx:Scene3D",
+      "type": "function",
+      "name": "Scene3D",
+      "filePath": "src/components/canvas/Scene3D.jsx",
+      "lineRange": [
+        10,
+        29
+      ],
+      "summary": "Function Scene3D with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/canvas/SpotlightCard.jsx",
+      "type": "file",
+      "name": "SpotlightCard.jsx",
+      "filePath": "src/components/canvas/SpotlightCard.jsx",
+      "summary": "SpotlightCard.jsx: Source file, 1 function, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/canvas/SpotlightCard.jsx:SpotlightCard",
+      "type": "function",
+      "name": "SpotlightCard",
+      "filePath": "src/components/canvas/SpotlightCard.jsx",
+      "lineRange": [
+        6,
+        24
+      ],
+      "summary": "Function SpotlightCard with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/Canvas3DFallback.jsx",
+      "type": "file",
+      "name": "Canvas3DFallback.jsx",
+      "filePath": "src/components/Canvas3DFallback.jsx",
+      "summary": "Canvas3DFallback.jsx: Source file, 3 functions.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/Canvas3DFallback.jsx:getWebGLError",
+      "type": "function",
+      "name": "getWebGLError",
+      "filePath": "src/components/Canvas3DFallback.jsx",
+      "lineRange": [
+        10,
+        19
+      ],
+      "summary": "Function getWebGLError with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/Canvas3DFallback.jsx:Canvas3DFallback",
+      "type": "function",
+      "name": "Canvas3DFallback",
+      "filePath": "src/components/Canvas3DFallback.jsx",
+      "lineRange": [
+        21,
+        51
+      ],
+      "summary": "Function Canvas3DFallback with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/Canvas3DFallback.jsx:ProgressiveCanvas3D",
+      "type": "function",
+      "name": "ProgressiveCanvas3D",
+      "filePath": "src/components/Canvas3DFallback.jsx",
+      "lineRange": [
+        57,
+        64
+      ],
+      "summary": "Function ProgressiveCanvas3D with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/contact/ContactPage.module.css",
+      "type": "file",
+      "name": "ContactPage.module.css",
+      "filePath": "src/components/contact/ContactPage.module.css",
+      "summary": "ContactPage.module.css: Source file.",
+      "tags": [
+        "markup",
+        "component"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/components/digital/digital-blog/blog-posts.js",
+      "type": "file",
+      "name": "blog-posts.js",
+      "filePath": "src/components/digital/digital-blog/blog-posts.js",
+      "summary": "blog-posts.js: Source file, 5 functions.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/components/digital/digital-blog/blog-posts.js:getAllPosts",
+      "type": "function",
+      "name": "getAllPosts",
+      "filePath": "src/components/digital/digital-blog/blog-posts.js",
+      "lineRange": [
+        281,
+        283
+      ],
+      "summary": "Function getAllPosts with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/digital/digital-blog/blog-posts.js:getPostBySlug",
+      "type": "function",
+      "name": "getPostBySlug",
+      "filePath": "src/components/digital/digital-blog/blog-posts.js",
+      "lineRange": [
+        285,
+        287
+      ],
+      "summary": "Function getPostBySlug with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/digital/digital-blog/blog-posts.js:getAllTags",
+      "type": "function",
+      "name": "getAllTags",
+      "filePath": "src/components/digital/digital-blog/blog-posts.js",
+      "lineRange": [
+        289,
+        295
+      ],
+      "summary": "Function getAllTags with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/digital/digital-blog/blog-posts.js:getTagCounts",
+      "type": "function",
+      "name": "getTagCounts",
+      "filePath": "src/components/digital/digital-blog/blog-posts.js",
+      "lineRange": [
+        297,
+        305
+      ],
+      "summary": "Function getTagCounts with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/digital/digital-blog/blog-posts.js:getRelatedPosts",
+      "type": "function",
+      "name": "getRelatedPosts",
+      "filePath": "src/components/digital/digital-blog/blog-posts.js",
+      "lineRange": [
+        307,
+        315
+      ],
+      "summary": "Function getRelatedPosts with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/digital/digital-blog/blog.css",
+      "type": "file",
+      "name": "blog.css",
+      "filePath": "src/components/digital/digital-blog/blog.css",
+      "summary": "blog.css: Source file.",
+      "tags": [
+        "markup",
+        "component"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/components/digital/digital-blog/BlogCard.jsx",
+      "type": "file",
+      "name": "BlogCard.jsx",
+      "filePath": "src/components/digital/digital-blog/BlogCard.jsx",
+      "summary": "BlogCard.jsx: Source file, 1 function.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/digital/digital-blog/BlogCard.jsx:BlogCard",
+      "type": "function",
+      "name": "BlogCard",
+      "filePath": "src/components/digital/digital-blog/BlogCard.jsx",
+      "lineRange": [
+        3,
+        20
+      ],
+      "summary": "Function BlogCard with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/digital/digital-blog/FlickeringGrid.jsx",
+      "type": "file",
+      "name": "FlickeringGrid.jsx",
+      "filePath": "src/components/digital/digital-blog/FlickeringGrid.jsx",
+      "summary": "FlickeringGrid.jsx: Source file, 1 function.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/digital/digital-blog/FlickeringGrid.jsx:FlickeringGrid",
+      "type": "function",
+      "name": "FlickeringGrid",
+      "filePath": "src/components/digital/digital-blog/FlickeringGrid.jsx",
+      "lineRange": [
+        5,
+        168
+      ],
+      "summary": "Function FlickeringGrid with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/digital/digital-blog/TagFilter.jsx",
+      "type": "file",
+      "name": "TagFilter.jsx",
+      "filePath": "src/components/digital/digital-blog/TagFilter.jsx",
+      "summary": "TagFilter.jsx: Source file, 1 function.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/digital/digital-blog/TagFilter.jsx:TagFilter",
+      "type": "function",
+      "name": "TagFilter",
+      "filePath": "src/components/digital/digital-blog/TagFilter.jsx",
+      "lineRange": [
+        6,
+        71
+      ],
+      "summary": "Function TagFilter with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/digital/DigitalContact.jsx",
+      "type": "file",
+      "name": "DigitalContact.jsx",
+      "filePath": "src/components/digital/DigitalContact.jsx",
+      "summary": "DigitalContact.jsx: Source file, 1 function, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/digital/DigitalContact.jsx:DigitalContact",
+      "type": "function",
+      "name": "DigitalContact",
+      "filePath": "src/components/digital/DigitalContact.jsx",
+      "lineRange": [
+        7,
+        49
+      ],
+      "summary": "Function DigitalContact with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/digital/DigitalFooter.jsx",
+      "type": "file",
+      "name": "DigitalFooter.jsx",
+      "filePath": "src/components/digital/DigitalFooter.jsx",
+      "summary": "DigitalFooter.jsx: Source file, 1 function, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/digital/DigitalFooter.jsx:DigitalFooter",
+      "type": "function",
+      "name": "DigitalFooter",
+      "filePath": "src/components/digital/DigitalFooter.jsx",
+      "lineRange": [
+        7,
+        120
+      ],
+      "summary": "Function DigitalFooter with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/digital/DigitalHero.jsx",
+      "type": "file",
+      "name": "DigitalHero.jsx",
+      "filePath": "src/components/digital/DigitalHero.jsx",
+      "summary": "DigitalHero.jsx: Source file, 1 function, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/digital/DigitalHero.jsx:DigitalHero",
+      "type": "function",
+      "name": "DigitalHero",
+      "filePath": "src/components/digital/DigitalHero.jsx",
+      "lineRange": [
+        14,
+        101
+      ],
+      "summary": "Function DigitalHero with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/digital/DigitalServices.jsx",
+      "type": "file",
+      "name": "DigitalServices.jsx",
+      "filePath": "src/components/digital/DigitalServices.jsx",
+      "summary": "DigitalServices.jsx: Source file, 1 function, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/digital/DigitalServices.jsx:DigitalServices",
+      "type": "function",
+      "name": "DigitalServices",
+      "filePath": "src/components/digital/DigitalServices.jsx",
+      "lineRange": [
+        49,
+        140
+      ],
+      "summary": "Function DigitalServices with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/digital/DigitalSkills.jsx",
+      "type": "file",
+      "name": "DigitalSkills.jsx",
+      "filePath": "src/components/digital/DigitalSkills.jsx",
+      "summary": "DigitalSkills.jsx: Source file, 1 function, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/components/digital/DigitalSkills.jsx:DigitalSkills",
+      "type": "function",
+      "name": "DigitalSkills",
+      "filePath": "src/components/digital/DigitalSkills.jsx",
+      "lineRange": [
+        51,
+        192
+      ],
+      "summary": "Function DigitalSkills with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/digital/DigitalSocialProof.jsx",
+      "type": "file",
+      "name": "DigitalSocialProof.jsx",
+      "filePath": "src/components/digital/DigitalSocialProof.jsx",
+      "summary": "DigitalSocialProof.jsx: Source file, 1 function, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/digital/DigitalSocialProof.jsx:DigitalSocialProof",
+      "type": "function",
+      "name": "DigitalSocialProof",
+      "filePath": "src/components/digital/DigitalSocialProof.jsx",
+      "lineRange": [
+        26,
+        162
+      ],
+      "summary": "Function DigitalSocialProof with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/digital/DigitalTimeline.jsx",
+      "type": "file",
+      "name": "DigitalTimeline.jsx",
+      "filePath": "src/components/digital/DigitalTimeline.jsx",
+      "summary": "DigitalTimeline.jsx: Source file, 1 function, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/components/digital/DigitalTimeline.jsx:DigitalTimeline",
+      "type": "function",
+      "name": "DigitalTimeline",
+      "filePath": "src/components/digital/DigitalTimeline.jsx",
+      "lineRange": [
+        66,
+        359
+      ],
+      "summary": "Function DigitalTimeline with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/digital/DigitalTransition.jsx",
+      "type": "file",
+      "name": "DigitalTransition.jsx",
+      "filePath": "src/components/digital/DigitalTransition.jsx",
+      "summary": "DigitalTransition.jsx: Source file, 1 function, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/digital/DigitalTransition.jsx:DigitalTransition",
+      "type": "function",
+      "name": "DigitalTransition",
+      "filePath": "src/components/digital/DigitalTransition.jsx",
+      "lineRange": [
+        13,
+        93
+      ],
+      "summary": "Function DigitalTransition with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/digital/GalaxyBackground.jsx",
+      "type": "file",
+      "name": "GalaxyBackground.jsx",
+      "filePath": "src/components/digital/GalaxyBackground.jsx",
+      "summary": "GalaxyBackground.jsx: Source file, 1 function.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/digital/GalaxyBackground.jsx:GalaxyBackground",
+      "type": "function",
+      "name": "GalaxyBackground",
+      "filePath": "src/components/digital/GalaxyBackground.jsx",
+      "lineRange": [
+        6,
+        187
+      ],
+      "summary": "Function GalaxyBackground with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/ErrorBoundary.jsx",
+      "type": "file",
+      "name": "ErrorBoundary.jsx",
+      "filePath": "src/components/ErrorBoundary.jsx",
+      "summary": "ErrorBoundary.jsx: Source file, 2 functions, 1 class.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/ErrorBoundary.jsx:ErrorFallback",
+      "type": "function",
+      "name": "ErrorFallback",
+      "filePath": "src/components/ErrorBoundary.jsx",
+      "lineRange": [
+        6,
+        28
+      ],
+      "summary": "Function ErrorFallback with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ErrorBoundary.jsx:withErrorBoundary",
+      "type": "function",
+      "name": "withErrorBoundary",
+      "filePath": "src/components/ErrorBoundary.jsx",
+      "lineRange": [
+        84,
+        89
+      ],
+      "summary": "Function withErrorBoundary with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/components/ErrorBoundary.jsx:ErrorBoundary",
+      "type": "class",
+      "name": "ErrorBoundary",
+      "filePath": "src/components/ErrorBoundary.jsx",
+      "lineRange": [
+        30,
+        81
+      ],
+      "summary": "Class ErrorBoundary with 4 methods and 0 properties.",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/HomeLazySections.jsx",
+      "type": "file",
+      "name": "HomeLazySections.jsx",
+      "filePath": "src/components/HomeLazySections.jsx",
+      "summary": "HomeLazySections.jsx: Source file, 3 functions.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/HomeLazySections.jsx:LazyMount",
+      "type": "function",
+      "name": "LazyMount",
+      "filePath": "src/components/HomeLazySections.jsx",
+      "lineRange": [
+        44,
+        73
+      ],
+      "summary": "Function LazyMount with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/HomeLazySections.jsx:HomeLazySections",
+      "type": "function",
+      "name": "HomeLazySections",
+      "filePath": "src/components/HomeLazySections.jsx",
+      "lineRange": [
+        75,
+        97
+      ],
+      "summary": "Function HomeLazySections with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/HomeLazySections.jsx:LazyFooter",
+      "type": "function",
+      "name": "LazyFooter",
+      "filePath": "src/components/HomeLazySections.jsx",
+      "lineRange": [
+        99,
+        105
+      ],
+      "summary": "Function LazyFooter with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/layout/Footer.module.css",
+      "type": "file",
+      "name": "Footer.module.css",
+      "filePath": "src/components/layout/Footer.module.css",
+      "summary": "Footer.module.css: Source file.",
+      "tags": [
+        "markup",
+        "component"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/components/layout/Navbar.jsx",
+      "type": "file",
+      "name": "Navbar.jsx",
+      "filePath": "src/components/layout/Navbar.jsx",
+      "summary": "Navbar.jsx: Source file, 1 function, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/components/layout/Navbar.jsx:Navbar",
+      "type": "function",
+      "name": "Navbar",
+      "filePath": "src/components/layout/Navbar.jsx",
+      "lineRange": [
+        8,
+        206
+      ],
+      "summary": "Function Navbar with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/layout/Navbar.module.css",
+      "type": "file",
+      "name": "Navbar.module.css",
+      "filePath": "src/components/layout/Navbar.module.css",
+      "summary": "Navbar.module.css: Source file.",
+      "tags": [
+        "markup",
+        "component"
+      ],
+      "complexity": "complex"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/components/canvas/GradientBlinds.jsx",
+      "target": "function:src/components/canvas/GradientBlinds.jsx:hexToRGB",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/canvas/GradientBlinds.jsx",
+      "target": "function:src/components/canvas/GradientBlinds.jsx:prepStops",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/canvas/GradientBlinds.jsx",
+      "target": "function:src/components/canvas/GradientBlinds.jsx:GradientBlinds",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/canvas/GradientBlinds.jsx",
+      "target": "file:src/components/canvas/GradientBlinds.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/canvas/GradientBlinds.jsx",
+      "target": "function:src/components/canvas/GradientBlinds.jsx:hexToRGB",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/canvas/GradientBlinds.jsx",
+      "target": "function:src/components/canvas/GradientBlinds.jsx:prepStops",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/canvas/Particles.jsx",
+      "target": "function:src/components/canvas/Particles.jsx:Particles",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/canvas/Particles.jsx",
+      "target": "function:src/components/canvas/Particles.jsx:Particles",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/canvas/Scene3D.jsx",
+      "target": "function:src/components/canvas/Scene3D.jsx:Scene3D",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/canvas/Scene3D.jsx",
+      "target": "function:src/components/canvas/Scene3D.jsx:Scene3D",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/canvas/SpotlightCard.jsx",
+      "target": "function:src/components/canvas/SpotlightCard.jsx:SpotlightCard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/canvas/SpotlightCard.jsx",
+      "target": "file:src/components/canvas/SpotlightCard.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/Canvas3DFallback.jsx",
+      "target": "function:src/components/Canvas3DFallback.jsx:getWebGLError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/Canvas3DFallback.jsx",
+      "target": "function:src/components/Canvas3DFallback.jsx:Canvas3DFallback",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/Canvas3DFallback.jsx",
+      "target": "function:src/components/Canvas3DFallback.jsx:Canvas3DFallback",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/Canvas3DFallback.jsx",
+      "target": "function:src/components/Canvas3DFallback.jsx:ProgressiveCanvas3D",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/Canvas3DFallback.jsx",
+      "target": "function:src/components/Canvas3DFallback.jsx:ProgressiveCanvas3D",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/Canvas3DFallback.jsx",
+      "target": "function:src/components/Canvas3DFallback.jsx:getWebGLError",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/digital/digital-blog/blog-posts.js",
+      "target": "function:src/components/digital/digital-blog/blog-posts.js:getAllPosts",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/digital/digital-blog/blog-posts.js",
+      "target": "function:src/components/digital/digital-blog/blog-posts.js:getAllPosts",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/digital/digital-blog/blog-posts.js",
+      "target": "function:src/components/digital/digital-blog/blog-posts.js:getPostBySlug",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/digital/digital-blog/blog-posts.js",
+      "target": "function:src/components/digital/digital-blog/blog-posts.js:getPostBySlug",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/digital/digital-blog/blog-posts.js",
+      "target": "function:src/components/digital/digital-blog/blog-posts.js:getAllTags",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/digital/digital-blog/blog-posts.js",
+      "target": "function:src/components/digital/digital-blog/blog-posts.js:getAllTags",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/digital/digital-blog/blog-posts.js",
+      "target": "function:src/components/digital/digital-blog/blog-posts.js:getTagCounts",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/digital/digital-blog/blog-posts.js",
+      "target": "function:src/components/digital/digital-blog/blog-posts.js:getTagCounts",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/digital/digital-blog/blog-posts.js",
+      "target": "function:src/components/digital/digital-blog/blog-posts.js:getRelatedPosts",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/digital/digital-blog/blog-posts.js",
+      "target": "function:src/components/digital/digital-blog/blog-posts.js:getRelatedPosts",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/digital/digital-blog/BlogCard.jsx",
+      "target": "function:src/components/digital/digital-blog/BlogCard.jsx:BlogCard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/digital/digital-blog/BlogCard.jsx",
+      "target": "function:src/components/digital/digital-blog/BlogCard.jsx:BlogCard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/digital/digital-blog/FlickeringGrid.jsx",
+      "target": "function:src/components/digital/digital-blog/FlickeringGrid.jsx:FlickeringGrid",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/digital/digital-blog/FlickeringGrid.jsx",
+      "target": "function:src/components/digital/digital-blog/FlickeringGrid.jsx:FlickeringGrid",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/digital/digital-blog/TagFilter.jsx",
+      "target": "function:src/components/digital/digital-blog/TagFilter.jsx:TagFilter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/digital/digital-blog/TagFilter.jsx",
+      "target": "function:src/components/digital/digital-blog/TagFilter.jsx:TagFilter",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/digital/DigitalContact.jsx",
+      "target": "function:src/components/digital/DigitalContact.jsx:DigitalContact",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/digital/DigitalContact.jsx",
+      "target": "function:src/components/digital/DigitalContact.jsx:DigitalContact",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/digital/DigitalContact.jsx",
+      "target": "file:src/components/digital/DigitalContact.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/digital/DigitalFooter.jsx",
+      "target": "function:src/components/digital/DigitalFooter.jsx:DigitalFooter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/digital/DigitalFooter.jsx",
+      "target": "function:src/components/digital/DigitalFooter.jsx:DigitalFooter",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/digital/DigitalFooter.jsx",
+      "target": "file:src/components/digital/DigitalFooter.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/digital/DigitalHero.jsx",
+      "target": "function:src/components/digital/DigitalHero.jsx:DigitalHero",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/digital/DigitalHero.jsx",
+      "target": "function:src/components/digital/DigitalHero.jsx:DigitalHero",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/digital/DigitalHero.jsx",
+      "target": "file:src/components/digital/DigitalHero.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/digital/DigitalServices.jsx",
+      "target": "function:src/components/digital/DigitalServices.jsx:DigitalServices",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/digital/DigitalServices.jsx",
+      "target": "function:src/components/digital/DigitalServices.jsx:DigitalServices",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/digital/DigitalServices.jsx",
+      "target": "file:src/components/digital/DigitalServices.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/digital/DigitalSkills.jsx",
+      "target": "function:src/components/digital/DigitalSkills.jsx:DigitalSkills",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/digital/DigitalSkills.jsx",
+      "target": "function:src/components/digital/DigitalSkills.jsx:DigitalSkills",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/digital/DigitalSkills.jsx",
+      "target": "file:src/components/digital/DigitalSkills.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/digital/DigitalSocialProof.jsx",
+      "target": "function:src/components/digital/DigitalSocialProof.jsx:DigitalSocialProof",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/digital/DigitalSocialProof.jsx",
+      "target": "function:src/components/digital/DigitalSocialProof.jsx:DigitalSocialProof",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/digital/DigitalSocialProof.jsx",
+      "target": "file:src/components/digital/DigitalSocialProof.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/digital/DigitalTimeline.jsx",
+      "target": "function:src/components/digital/DigitalTimeline.jsx:DigitalTimeline",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/digital/DigitalTimeline.jsx",
+      "target": "function:src/components/digital/DigitalTimeline.jsx:DigitalTimeline",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/digital/DigitalTimeline.jsx",
+      "target": "file:src/components/digital/DigitalTimeline.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/digital/DigitalTransition.jsx",
+      "target": "function:src/components/digital/DigitalTransition.jsx:DigitalTransition",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/digital/DigitalTransition.jsx",
+      "target": "function:src/components/digital/DigitalTransition.jsx:DigitalTransition",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/digital/DigitalTransition.jsx",
+      "target": "file:src/components/digital/DigitalTransition.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/digital/GalaxyBackground.jsx",
+      "target": "function:src/components/digital/GalaxyBackground.jsx:GalaxyBackground",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/digital/GalaxyBackground.jsx",
+      "target": "function:src/components/digital/GalaxyBackground.jsx:GalaxyBackground",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ErrorBoundary.jsx",
+      "target": "function:src/components/ErrorBoundary.jsx:ErrorFallback",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/ErrorBoundary.jsx",
+      "target": "function:src/components/ErrorBoundary.jsx:withErrorBoundary",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/ErrorBoundary.jsx",
+      "target": "function:src/components/ErrorBoundary.jsx:withErrorBoundary",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ErrorBoundary.jsx",
+      "target": "class:src/components/ErrorBoundary.jsx:ErrorBoundary",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/HomeLazySections.jsx",
+      "target": "function:src/components/HomeLazySections.jsx:LazyMount",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/HomeLazySections.jsx",
+      "target": "function:src/components/HomeLazySections.jsx:HomeLazySections",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/HomeLazySections.jsx",
+      "target": "function:src/components/HomeLazySections.jsx:HomeLazySections",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/HomeLazySections.jsx",
+      "target": "function:src/components/HomeLazySections.jsx:LazyFooter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/HomeLazySections.jsx",
+      "target": "function:src/components/HomeLazySections.jsx:LazyFooter",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/layout/Navbar.jsx",
+      "target": "function:src/components/layout/Navbar.jsx:Navbar",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/layout/Navbar.jsx",
+      "target": "function:src/components/layout/Navbar.jsx:Navbar",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/layout/Navbar.jsx",
+      "target": "file:src/components/layout/Navbar.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

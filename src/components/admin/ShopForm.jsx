@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect, useCallback } from "react"
+import { useState, useCallback } from "react"
 import { useRouter } from "next/navigation"
 import RichTextEditor from "./RichTextEditor"
 
@@ -16,52 +16,54 @@ const CURRENCY_OPTIONS = [
   { value: "VND", label: "VND (₫)" },
 ]
 
+function createInitialForm(product) {
+  if (!product) {
+    return {
+      name: "",
+      slug: "",
+      description: "",
+      price: "",
+      currency: "USD",
+      images: [""],
+      category: "",
+      tags: "",
+      affiliateUrl: "",
+      status: "hidden",
+      seoTitle: "",
+      seoDescription: "",
+      features: "",
+      whyRecommend: "",
+      faq: [{ question: "", answer: "" }],
+    }
+  }
+
+  return {
+    name: product.name || "",
+    slug: product.slug || "",
+    description: product.description || "",
+    price: product.price?.toString() || "",
+    currency: product.currency || "USD",
+    images: product.images?.length ? product.images : [""],
+    category: product.category || "",
+    tags: (product.tags || []).join(", "),
+    affiliateUrl: product.affiliateUrl || "",
+    status: product.status || "hidden",
+    seoTitle: product.seoTitle || "",
+    seoDescription: product.seoDescription || "",
+    features: (product.features || []).join("\n"),
+    whyRecommend: product.whyRecommend || "",
+    faq: product.faq?.length ? product.faq : [{ question: "", answer: "" }],
+  }
+}
+
 export default function ShopForm({ product }) {
   const router = useRouter()
   const isEditing = !!product
 
-  const [form, setForm] = useState({
-    name: "",
-    slug: "",
-    description: "",
-    price: "",
-    currency: "USD",
-    images: [""],
-    category: "",
-    tags: "",
-    affiliateUrl: "",
-    status: "hidden",
-    seoTitle: "",
-    seoDescription: "",
-    features: "",
-    whyRecommend: "",
-    faq: [{ question: "", answer: "" }],
-  })
+  const [form, setForm] = useState(() => createInitialForm(product))
   const [slugManuallyEdited, setSlugManuallyEdited] = useState(false)
   const [saving, setSaving] = useState(false)
   const [error, setError] = useState("")
-
-  useEffect(() => {
-    if (product) {
-      setForm({
-        name: product.name || "",
-        slug: product.slug || "",
-        description: product.description || "",
-        price: product.price?.toString() || "",
-        currency: product.currency || "USD",
-        images: product.images?.length ? product.images : [""],
-        category: product.category || "",
-        tags: (product.tags || []).join(", "),
-        affiliateUrl: product.affiliateUrl || "",
-        status: product.status || "hidden",
-        seoTitle: product.seoTitle || "",
-        seoDescription: product.seoDescription || "",
-        features: (product.features || []).join("\n"),
-        whyRecommend: product.whyRecommend || "",
-        faq: product.faq?.length ? product.faq : [{ question: "", answer: "" }],
-      })
-    }
-  }, [product])
 
   const handleChange = useCallback(
     (field, value) => {

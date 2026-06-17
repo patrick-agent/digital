@@ -1,0 +1,2748 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 20,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "AGENTS.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 345,
+      "nonEmptyLines": 269,
+      "sections": [
+        {
+          "heading": "This is NOT the Next.js you know",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "Session Summary",
+          "level": 1,
+          "line": 8
+        },
+        {
+          "heading": "Goal",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "Constraints & Preferences",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Progress",
+          "level": 2,
+          "line": 21
+        },
+        {
+          "heading": "Done",
+          "level": 3,
+          "line": 22
+        },
+        {
+          "heading": "Blocked",
+          "level": 3,
+          "line": 29
+        },
+        {
+          "heading": "Key Decisions",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "Next Steps",
+          "level": 2,
+          "line": 39
+        },
+        {
+          "heading": "Relevant Files",
+          "level": 2,
+          "line": 45
+        },
+        {
+          "heading": "Google Sheets → Blog Auto-Post Workflow",
+          "level": 1,
+          "line": 55
+        },
+        {
+          "heading": "Tổng quan",
+          "level": 2,
+          "line": 57
+        },
+        {
+          "heading": "Cách hoạt động",
+          "level": 2,
+          "line": 61
+        },
+        {
+          "heading": "Cột Google Sheet mặc định",
+          "level": 2,
+          "line": 68
+        },
+        {
+          "heading": "Cài đặt",
+          "level": 2,
+          "line": 84
+        },
+        {
+          "heading": "1. Tạo Service Account trên Google Cloud Console",
+          "level": 3,
+          "line": 86
+        },
+        {
+          "heading": "2. Cấp quyền cho Service Account",
+          "level": 3,
+          "line": 95
+        },
+        {
+          "heading": "3. Lấy Spreadsheet ID",
+          "level": 3,
+          "line": 100
+        },
+        {
+          "heading": "4. Cấu hình .env",
+          "level": 3,
+          "line": 105
+        },
+        {
+          "heading": "Cách sử dụng",
+          "level": 2,
+          "line": 118
+        },
+        {
+          "heading": "CLI Script",
+          "level": 3,
+          "line": 120
+        },
+        {
+          "heading": "Webhook API",
+          "level": 3,
+          "line": 130
+        },
+        {
+          "heading": "Ví dụ Google Apps Script trigger",
+          "level": 3,
+          "line": 155
+        },
+        {
+          "heading": "Architecture",
+          "level": 2,
+          "line": 181
+        },
+        {
+          "heading": "Luồng xử lý",
+          "level": 2,
+          "line": 194
+        },
+        {
+          "heading": "Google Sitemap Ping — Auto Index URLs",
+          "level": 1,
+          "line": 206
+        },
+        {
+          "heading": "Tổng quan",
+          "level": 2,
+          "line": 208
+        },
+        {
+          "heading": "Cách hoạt động",
+          "level": 2,
+          "line": 212
+        },
+        {
+          "heading": "Cách sử dụng",
+          "level": 2,
+          "line": 218
+        },
+        {
+          "heading": "Architecture",
+          "level": 2,
+          "line": 228
+        },
+        {
+          "heading": "Ghi chú",
+          "level": 2,
+          "line": 243
+        },
+        {
+          "heading": "SEO & AEO Skills Stack (Installed)",
+          "level": 1,
+          "line": 251
+        },
+        {
+          "heading": "Skills đã cài đặt",
+          "level": 2,
+          "line": 253
+        },
+        {
+          "heading": "1. aaron-he-zhu/seo-geo-claude-skills (20 skills, bundle)",
+          "level": 3,
+          "line": 255
+        },
+        {
+          "heading": "2. addyosmani/web-quality-skills@seo",
+          "level": 3,
+          "line": 277
+        },
+        {
+          "heading": "3. coreyhaines31/marketingskills@ai-seo",
+          "level": 3,
+          "line": 284
+        },
+        {
+          "heading": "4. sanity-io/agent-toolkit@seo-aeo-best-practices",
+          "level": 3,
+          "line": 290
+        },
+        {
+          "heading": "5. jdrhyne/agent-skills@gsc (190 installs)",
+          "level": 3,
+          "line": 296
+        },
+        {
+          "heading": "6. agricidaniel/claude-seo@seo-backlinks (1.6K installs)",
+          "level": 3,
+          "line": 303
+        },
+        {
+          "heading": "Workflow đề xuất",
+          "level": 2,
+          "line": 310
+        },
+        {
+          "heading": "Blog Post Lifecycle (Vibe Code)",
+          "level": 3,
+          "line": 312
+        },
+        {
+          "heading": "Các lệnh CLI",
+          "level": 3,
+          "line": 320
+        },
+        {
+          "heading": "Quy tắc tự động commit",
+          "level": 2,
+          "line": 333
+        },
+        {
+          "heading": "Kích hoạt skills",
+          "level": 2,
+          "line": 342
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 44
+      }
+    },
+    {
+      "path": "CLAUDE.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": "CONTEXT.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 33,
+      "nonEmptyLines": 25,
+      "sections": [
+        {
+          "heading": "Domain Context",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Concepts",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Service",
+          "level": 3,
+          "line": 5
+        },
+        {
+          "heading": "Event",
+          "level": 3,
+          "line": 9
+        },
+        {
+          "heading": "Release",
+          "level": 3,
+          "line": 13
+        },
+        {
+          "heading": "Architecture",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "Admin CRUD Feature Slice",
+          "level": 3,
+          "line": 19
+        },
+        {
+          "heading": "Store Adapter",
+          "level": 3,
+          "line": 27
+        },
+        {
+          "heading": "Admin Route Handler",
+          "level": 3,
+          "line": 31
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": "DESIGN.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 728,
+      "nonEmptyLines": 494,
+      "sections": [
+        {
+          "heading": "DESIGN.md",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Purpose",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Product Surfaces",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Shared Brand Foundation",
+          "level": 2,
+          "line": 25
+        },
+        {
+          "heading": "Design Intent",
+          "level": 2,
+          "line": 36
+        },
+        {
+          "heading": "1. Public artist site",
+          "level": 3,
+          "line": 38
+        },
+        {
+          "heading": "2. Digital persona site",
+          "level": 3,
+          "line": 59
+        },
+        {
+          "heading": "3. Admin CMS",
+          "level": 3,
+          "line": 72
+        },
+        {
+          "heading": "Shared Visual Foundation",
+          "level": 2,
+          "line": 83
+        },
+        {
+          "heading": "Color palette",
+          "level": 3,
+          "line": 90
+        },
+        {
+          "heading": "Gradients",
+          "level": 3,
+          "line": 126
+        },
+        {
+          "heading": "Typography",
+          "level": 3,
+          "line": 141
+        },
+        {
+          "heading": "Spacing",
+          "level": 3,
+          "line": 175
+        },
+        {
+          "heading": "Shape system",
+          "level": 3,
+          "line": 188
+        },
+        {
+          "heading": "Shadows and glows",
+          "level": 3,
+          "line": 205
+        },
+        {
+          "heading": "Global Public Layout Rules",
+          "level": 2,
+          "line": 220
+        },
+        {
+          "heading": "Background model",
+          "level": 3,
+          "line": 222
+        },
+        {
+          "heading": "Navigation",
+          "level": 3,
+          "line": 233
+        },
+        {
+          "heading": "Footer",
+          "level": 3,
+          "line": 258
+        },
+        {
+          "heading": "Shared Public Component Patterns",
+          "level": 2,
+          "line": 275
+        },
+        {
+          "heading": "Glass panels",
+          "level": 3,
+          "line": 277
+        },
+        {
+          "heading": "Section titles",
+          "level": 3,
+          "line": 302
+        },
+        {
+          "heading": "Cards",
+          "level": 3,
+          "line": 317
+        },
+        {
+          "heading": "Chips, pills, and tags",
+          "level": 3,
+          "line": 334
+        },
+        {
+          "heading": "CTA buttons",
+          "level": 3,
+          "line": 348
+        },
+        {
+          "heading": "Motion System",
+          "level": 2,
+          "line": 362
+        },
+        {
+          "heading": "Motion principles",
+          "level": 3,
+          "line": 372
+        },
+        {
+          "heading": "Homepage Design",
+          "level": 2,
+          "line": 398
+        },
+        {
+          "heading": "Structure",
+          "level": 3,
+          "line": 406
+        },
+        {
+          "heading": "Hero",
+          "level": 3,
+          "line": 418
+        },
+        {
+          "heading": "About",
+          "level": 3,
+          "line": 433
+        },
+        {
+          "heading": "Music",
+          "level": 3,
+          "line": 444
+        },
+        {
+          "heading": "Contact",
+          "level": 3,
+          "line": 456
+        },
+        {
+          "heading": "Blog Design",
+          "level": 2,
+          "line": 467
+        },
+        {
+          "heading": "Bio Music Design",
+          "level": 2,
+          "line": 501
+        },
+        {
+          "heading": "Shop Design",
+          "level": 2,
+          "line": 520
+        },
+        {
+          "heading": "Digital Persona Design",
+          "level": 2,
+          "line": 544
+        },
+        {
+          "heading": "Admin Design",
+          "level": 2,
+          "line": 582
+        },
+        {
+          "heading": "Responsive Strategy",
+          "level": 2,
+          "line": 607
+        },
+        {
+          "heading": "Accessibility Baseline",
+          "level": 2,
+          "line": 628
+        },
+        {
+          "heading": "Content Tone By Surface",
+          "level": 2,
+          "line": 645
+        },
+        {
+          "heading": "Public artist site",
+          "level": 3,
+          "line": 647
+        },
+        {
+          "heading": "Blog and shop",
+          "level": 3,
+          "line": 654
+        },
+        {
+          "heading": "Digital persona",
+          "level": 3,
+          "line": 661
+        },
+        {
+          "heading": "Admin",
+          "level": 3,
+          "line": 668
+        },
+        {
+          "heading": "Current Design Debt",
+          "level": 2,
+          "line": 674
+        },
+        {
+          "heading": "Design Rules To Preserve",
+          "level": 2,
+          "line": 686
+        },
+        {
+          "heading": "File Map",
+          "level": 2,
+          "line": 701
+        },
+        {
+          "heading": "Practical Use",
+          "level": 2,
+          "line": 718
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 49
+      }
+    },
+    {
+      "path": "MOBILE_OPTIMIZATION_FIXES.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 197,
+      "nonEmptyLines": 153,
+      "sections": [
+        {
+          "heading": "Mobile Performance Optimization - Summary",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Issues Diagnosed",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Primary Problem: Excessive Model Loading on Mobile",
+          "level": 3,
+          "line": 5
+        },
+        {
+          "heading": "Secondary Issues",
+          "level": 3,
+          "line": 13
+        },
+        {
+          "heading": "Solutions Implemented",
+          "level": 2,
+          "line": 22
+        },
+        {
+          "heading": "1. ✅ Device Detection & Adaptive Loading (`src/lib/deviceDetection.js`)",
+          "level": 3,
+          "line": 24
+        },
+        {
+          "heading": "2. ✅ Device-Aware Model Preloader (`src/components/PreloadModels.jsx`)",
+          "level": 3,
+          "line": 34
+        },
+        {
+          "heading": "3. ✅ Network-Aware Loading Timeout (`src/context/LoadingContext.jsx`)",
+          "level": 3,
+          "line": 40
+        },
+        {
+          "heading": "4. ✅ Optimized Canvas Rendering (`src/components/canvas/CharacterCanvas.jsx`)",
+          "level": 3,
+          "line": 50
+        },
+        {
+          "heading": "5. ✅ Resource Management (`src/components/canvas/CharacterModel.jsx`)",
+          "level": 3,
+          "line": 60
+        },
+        {
+          "heading": "6. ✅ Enhanced Error Handling (`src/components/ErrorBoundary.jsx`)",
+          "level": 3,
+          "line": 66
+        },
+        {
+          "heading": "7. ✅ WebGL Detection & Recovery (`src/lib/webglDetector.js`)",
+          "level": 3,
+          "line": 72
+        },
+        {
+          "heading": "8. ✅ Fallback Components (`src/components/Canvas3DFallback.jsx`)",
+          "level": 3,
+          "line": 78
+        },
+        {
+          "heading": "Key Changes by File",
+          "level": 2,
+          "line": 85
+        },
+        {
+          "heading": "Performance Improvements Expected",
+          "level": 2,
+          "line": 101
+        },
+        {
+          "heading": "Bundle Size",
+          "level": 3,
+          "line": 103
+        },
+        {
+          "heading": "Network Performance",
+          "level": 3,
+          "line": 107
+        },
+        {
+          "heading": "Runtime Performance",
+          "level": 3,
+          "line": 111
+        },
+        {
+          "heading": "Reliability",
+          "level": 3,
+          "line": 116
+        },
+        {
+          "heading": "Testing Recommendations",
+          "level": 2,
+          "line": 124
+        },
+        {
+          "heading": "Mobile Testing",
+          "level": 3,
+          "line": 126
+        },
+        {
+          "heading": "Monitoring",
+          "level": 3,
+          "line": 141
+        },
+        {
+          "heading": "Additional Optimizations (Future)",
+          "level": 2,
+          "line": 155
+        },
+        {
+          "heading": "Rollback Instructions",
+          "level": 2,
+          "line": 175
+        },
+        {
+          "heading": "Notes for Future Development",
+          "level": 2,
+          "line": 190
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 25
+      }
+    },
+    {
+      "path": "MOBILE_TROUBLESHOOTING.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 193,
+      "nonEmptyLines": 147,
+      "sections": [
+        {
+          "heading": "Mobile/Tablet Troubleshooting Guide",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Quick Diagnostic",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "1. Check the Browser Console (DevTools)",
+          "level": 3,
+          "line": 7
+        },
+        {
+          "heading": "Testing Checklist",
+          "level": 2,
+          "line": 29
+        },
+        {
+          "heading": "Mobile Simulation (Chrome DevTools)",
+          "level": 3,
+          "line": 31
+        },
+        {
+          "heading": "Real Device Testing",
+          "level": 3,
+          "line": 39
+        },
+        {
+          "heading": "Network Throttling Test",
+          "level": 3,
+          "line": 46
+        },
+        {
+          "heading": "If Issues Persist",
+          "level": 2,
+          "line": 55
+        },
+        {
+          "heading": "Check Logs in Vercel",
+          "level": 3,
+          "line": 57
+        },
+        {
+          "heading": "Enable Debug Mode",
+          "level": 3,
+          "line": 64
+        },
+        {
+          "heading": "Common Mobile Issues & Fixes",
+          "level": 2,
+          "line": 75
+        },
+        {
+          "heading": "Performance Metrics",
+          "level": 2,
+          "line": 88
+        },
+        {
+          "heading": "Good Performance",
+          "level": 3,
+          "line": 90
+        },
+        {
+          "heading": "Warning Signs",
+          "level": 3,
+          "line": 96
+        },
+        {
+          "heading": "Deployment Notes for v1.2.9",
+          "level": 2,
+          "line": 104
+        },
+        {
+          "heading": "What Changed",
+          "level": 3,
+          "line": 106
+        },
+        {
+          "heading": "What Stayed the Same",
+          "level": 3,
+          "line": 113
+        },
+        {
+          "heading": "Mobile Experience",
+          "level": 3,
+          "line": 118
+        },
+        {
+          "heading": "After Deployment Steps",
+          "level": 2,
+          "line": 126
+        },
+        {
+          "heading": "Hour 1-2: Monitor",
+          "level": 3,
+          "line": 128
+        },
+        {
+          "heading": "Hour 4: Analytics",
+          "level": 3,
+          "line": 133
+        },
+        {
+          "heading": "Day 1: User Feedback",
+          "level": 3,
+          "line": 138
+        },
+        {
+          "heading": "Week 1: Optimization",
+          "level": 3,
+          "line": 143
+        },
+        {
+          "heading": "Support Commands",
+          "level": 2,
+          "line": 150
+        },
+        {
+          "heading": "Clear Browser Cache",
+          "level": 3,
+          "line": 152
+        },
+        {
+          "heading": "Reset Loading State",
+          "level": 3,
+          "line": 159
+        },
+        {
+          "heading": "Check Network Connection",
+          "level": 3,
+          "line": 167
+        },
+        {
+          "heading": "Emergency Rollback",
+          "level": 2,
+          "line": 176
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 28
+      }
+    },
+    {
+      "path": "OPTIMIZATION_CLEANUP.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 176,
+      "nonEmptyLines": 135,
+      "sections": [
+        {
+          "heading": "📦 Site Optimization Summary - v1.2.9+",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "✅ Optimizations Completed",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "1. **Removed Unused Components** (-4 files, reduced codebase)",
+          "level": 3,
+          "line": 5
+        },
+        {
+          "heading": "2. **Removed Unused Dependencies** (-44 packages)",
+          "level": 3,
+          "line": 11
+        },
+        {
+          "heading": "3. **Removed Unused Public Assets** (-5 SVG files)",
+          "level": 3,
+          "line": 16
+        },
+        {
+          "heading": "4. **Verified Build Success**",
+          "level": 3,
+          "line": 24
+        },
+        {
+          "heading": "📊 Size Reduction Results",
+          "level": 2,
+          "line": 31
+        },
+        {
+          "heading": "node_modules",
+          "level": 3,
+          "line": 33
+        },
+        {
+          "heading": "Package-lock.json",
+          "level": 3,
+          "line": 38
+        },
+        {
+          "heading": "Total Site Size",
+          "level": 3,
+          "line": 42
+        },
+        {
+          "heading": "🔍 What Was Kept (Still Used)",
+          "level": 2,
+          "line": 48
+        },
+        {
+          "heading": "📈 Performance Impact",
+          "level": 2,
+          "line": 68
+        },
+        {
+          "heading": "Install Time",
+          "level": 3,
+          "line": 70
+        },
+        {
+          "heading": "Build Time",
+          "level": 3,
+          "line": 75
+        },
+        {
+          "heading": "Runtime",
+          "level": 3,
+          "line": 79
+        },
+        {
+          "heading": "🚀 Further Optimization Recommendations",
+          "level": 2,
+          "line": 85
+        },
+        {
+          "heading": "High Priority (Easy, High Impact)",
+          "level": 3,
+          "line": 87
+        },
+        {
+          "heading": "Medium Priority (Moderate, Good Impact)",
+          "level": 3,
+          "line": 105
+        },
+        {
+          "heading": "Low Priority (Complex, Minimal Impact)",
+          "level": 3,
+          "line": 121
+        },
+        {
+          "heading": "✨ Deployment Notes",
+          "level": 2,
+          "line": 132
+        },
+        {
+          "heading": "Push Changes",
+          "level": 3,
+          "line": 134
+        },
+        {
+          "heading": "Vercel Deployment",
+          "level": 3,
+          "line": 141
+        },
+        {
+          "heading": "Monitoring",
+          "level": 3,
+          "line": 146
+        },
+        {
+          "heading": "🎯 Before & After Checklist",
+          "level": 2,
+          "line": 153
+        },
+        {
+          "heading": "📝 Notes",
+          "level": 2,
+          "line": 167
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 25
+      }
+    },
+    {
+      "path": "OPTIMIZATION_SUMMARY.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 309,
+      "nonEmptyLines": 240,
+      "sections": [
+        {
+          "heading": "Performance Optimization Summary",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Website 3D Project - May 25, 2026",
+          "level": 2,
+          "line": 2
+        },
+        {
+          "heading": "📋 Executive Summary",
+          "level": 3,
+          "line": 4
+        },
+        {
+          "heading": "🔧 Implemented Optimizations",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "1. **Font Loading (High Impact)**",
+          "level": 3,
+          "line": 16
+        },
+        {
+          "heading": "2. **Event Listener Optimization (Medium Impact)**",
+          "level": 3,
+          "line": 23
+        },
+        {
+          "heading": "3. **Animation Visibility Control (High Impact)**",
+          "level": 3,
+          "line": 29
+        },
+        {
+          "heading": "4. **CSS Performance Optimization (Medium Impact)**",
+          "level": 3,
+          "line": 36
+        },
+        {
+          "heading": "5. **Next.js Build Optimization (High Impact)**",
+          "level": 3,
+          "line": 44
+        },
+        {
+          "heading": "6. **Performance Utilities**",
+          "level": 3,
+          "line": 54
+        },
+        {
+          "heading": "7. **Model Loader Hook**",
+          "level": 3,
+          "line": 62
+        },
+        {
+          "heading": "8. **Bundle Analysis Tool**",
+          "level": 3,
+          "line": 71
+        },
+        {
+          "heading": "9. **Documentation**",
+          "level": 3,
+          "line": 78
+        },
+        {
+          "heading": "📈 Expected Performance Gains",
+          "level": 2,
+          "line": 85
+        },
+        {
+          "heading": "Bundle Size",
+          "level": 3,
+          "line": 87
+        },
+        {
+          "heading": "Runtime Performance",
+          "level": 3,
+          "line": 94
+        },
+        {
+          "heading": "GPU Performance",
+          "level": 3,
+          "line": 102
+        },
+        {
+          "heading": "🚀 How to Use These Optimizations",
+          "level": 2,
+          "line": 111
+        },
+        {
+          "heading": "For Developers",
+          "level": 3,
+          "line": 113
+        },
+        {
+          "heading": "1. Import Performance Utilities",
+          "level": 4,
+          "line": 115
+        },
+        {
+          "heading": "2. Use Device-Aware Hooks",
+          "level": 4,
+          "line": 125
+        },
+        {
+          "heading": "3. Load Models Optimally",
+          "level": 4,
+          "line": 133
+        },
+        {
+          "heading": "4. Check Bundle Size",
+          "level": 4,
+          "line": 141
+        },
+        {
+          "heading": "For Content Creators",
+          "level": 3,
+          "line": 147
+        },
+        {
+          "heading": "For Deployment",
+          "level": 3,
+          "line": 151
+        },
+        {
+          "heading": "✅ Verification Checklist",
+          "level": 2,
+          "line": 164
+        },
+        {
+          "heading": "Before Production",
+          "level": 3,
+          "line": 166
+        },
+        {
+          "heading": "After Deployment",
+          "level": 3,
+          "line": 175
+        },
+        {
+          "heading": "🔍 How to Monitor Performance",
+          "level": 2,
+          "line": 183
+        },
+        {
+          "heading": "Real-Time Monitoring",
+          "level": 3,
+          "line": 185
+        },
+        {
+          "heading": "FPS Monitoring (3D Canvas)",
+          "level": 3,
+          "line": 197
+        },
+        {
+          "heading": "🚨 Performance Budgets",
+          "level": 2,
+          "line": 209
+        },
+        {
+          "heading": "Critical Thresholds (Alert if exceeded)",
+          "level": 3,
+          "line": 211
+        },
+        {
+          "heading": "Optimal Targets (Aim for)",
+          "level": 3,
+          "line": 217
+        },
+        {
+          "heading": "📚 Additional Resources",
+          "level": 2,
+          "line": 225
+        },
+        {
+          "heading": "Documentation",
+          "level": 3,
+          "line": 227
+        },
+        {
+          "heading": "External Resources",
+          "level": 3,
+          "line": 232
+        },
+        {
+          "heading": "🎯 Future Optimization Opportunities",
+          "level": 2,
+          "line": 240
+        },
+        {
+          "heading": "Phase 2 (Next Sprint)",
+          "level": 3,
+          "line": 242
+        },
+        {
+          "heading": "Phase 3 (Future)",
+          "level": 3,
+          "line": 256
+        },
+        {
+          "heading": "📞 Support & Questions",
+          "level": 2,
+          "line": 271
+        },
+        {
+          "heading": "If Performance Degrades",
+          "level": 3,
+          "line": 273
+        },
+        {
+          "heading": "Adding New Features",
+          "level": 3,
+          "line": 280
+        },
+        {
+          "heading": "Changes Summary by File",
+          "level": 2,
+          "line": 296
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 44
+      }
+    },
+    {
+      "path": "PERFORMANCE.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 308,
+      "nonEmptyLines": 233,
+      "sections": [
+        {
+          "heading": "Performance Optimization Guide",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Overview",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "🎯 Key Performance Metrics to Monitor",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Critical Web Vitals (CWV)",
+          "level": 3,
+          "line": 8
+        },
+        {
+          "heading": "📊 Optimizations Implemented",
+          "level": 2,
+          "line": 21
+        },
+        {
+          "heading": "1. **Font Loading Optimization** ✅",
+          "level": 3,
+          "line": 23
+        },
+        {
+          "heading": "2. **Event Listener Optimization** ✅",
+          "level": 3,
+          "line": 33
+        },
+        {
+          "heading": "3. **LightRays Animation Optimization** ✅",
+          "level": 3,
+          "line": 43
+        },
+        {
+          "heading": "4. **CSS Performance** ✅",
+          "level": 3,
+          "line": 53
+        },
+        {
+          "heading": "5. **Next.js Configuration** ✅",
+          "level": 3,
+          "line": 64
+        },
+        {
+          "heading": "6. **Performance Utilities** ✅",
+          "level": 3,
+          "line": 79
+        },
+        {
+          "heading": "🚀 Best Practices Going Forward",
+          "level": 2,
+          "line": 90
+        },
+        {
+          "heading": "For New Components",
+          "level": 3,
+          "line": 92
+        },
+        {
+          "heading": "1. **Dynamic Imports for Heavy Components**",
+          "level": 4,
+          "line": 94
+        },
+        {
+          "heading": "2. **Use useCanvasOptimizer Hook for 3D**",
+          "level": 4,
+          "line": 104
+        },
+        {
+          "heading": "3. **Optimize Event Listeners**",
+          "level": 4,
+          "line": 117
+        },
+        {
+          "heading": "4. **Use Next.js Image Component**",
+          "level": 4,
+          "line": 126
+        },
+        {
+          "heading": "5. **Visibility-Based Rendering**",
+          "level": 4,
+          "line": 143
+        },
+        {
+          "heading": "6. **Optimize Animation Cleanup**",
+          "level": 4,
+          "line": 158
+        },
+        {
+          "heading": "🔍 Performance Testing & Monitoring",
+          "level": 2,
+          "line": 179
+        },
+        {
+          "heading": "Local Testing",
+          "level": 3,
+          "line": 181
+        },
+        {
+          "heading": "Continuous Monitoring",
+          "level": 3,
+          "line": 194
+        },
+        {
+          "heading": "Testing 3D Performance",
+          "level": 3,
+          "line": 199
+        },
+        {
+          "heading": "📈 Performance Budgets",
+          "level": 2,
+          "line": 213
+        },
+        {
+          "heading": "Recommended Targets",
+          "level": 3,
+          "line": 215
+        },
+        {
+          "heading": "🔧 Advanced Optimizations (Future)",
+          "level": 2,
+          "line": 225
+        },
+        {
+          "heading": "1. **Model LOD (Level of Detail)**",
+          "level": 3,
+          "line": 227
+        },
+        {
+          "heading": "2. **3D Model Streaming**",
+          "level": 3,
+          "line": 237
+        },
+        {
+          "heading": "3. **Code Splitting**",
+          "level": 3,
+          "line": 242
+        },
+        {
+          "heading": "4. **Lazy Loading Images**",
+          "level": 3,
+          "line": 247
+        },
+        {
+          "heading": "🐛 Debugging Performance Issues",
+          "level": 2,
+          "line": 258
+        },
+        {
+          "heading": "Common Issues & Solutions",
+          "level": 3,
+          "line": 260
+        },
+        {
+          "heading": "Issue: Low FPS in 3D Canvas",
+          "level": 4,
+          "line": 262
+        },
+        {
+          "heading": "Issue: Layout Shift",
+          "level": 4,
+          "line": 267
+        },
+        {
+          "heading": "Issue: Slow Initial Load",
+          "level": 4,
+          "line": 272
+        },
+        {
+          "heading": "Issue: High Memory Usage",
+          "level": 4,
+          "line": 277
+        },
+        {
+          "heading": "📚 Resources",
+          "level": 2,
+          "line": 284
+        },
+        {
+          "heading": "📝 Checklist for Future Changes",
+          "level": 2,
+          "line": 294
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 38
+      }
+    },
+    {
+      "path": "QUICK_REFERENCE.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 267,
+      "nonEmptyLines": 204,
+      "sections": [
+        {
+          "heading": "🚀 Performance Optimization - Quick Reference",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "✅ What Was Done",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Core Optimizations (8 Items)",
+          "level": 3,
+          "line": 5
+        },
+        {
+          "heading": "Documentation",
+          "level": 3,
+          "line": 15
+        },
+        {
+          "heading": "📊 Expected Results",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Bundle Size",
+          "level": 3,
+          "line": 25
+        },
+        {
+          "heading": "Runtime Performance",
+          "level": 3,
+          "line": 32
+        },
+        {
+          "heading": "GPU Performance",
+          "level": 3,
+          "line": 40
+        },
+        {
+          "heading": "🔍 How to Verify Optimizations",
+          "level": 2,
+          "line": 48
+        },
+        {
+          "heading": "1. Check Bundle Size",
+          "level": 3,
+          "line": 50
+        },
+        {
+          "heading": "2. Local Performance Test",
+          "level": 3,
+          "line": 57
+        },
+        {
+          "heading": "3. Monitor 3D Performance",
+          "level": 3,
+          "line": 63
+        },
+        {
+          "heading": "📚 Files Modified & Created",
+          "level": 2,
+          "line": 71
+        },
+        {
+          "heading": "Modified Files (5)",
+          "level": 3,
+          "line": 73
+        },
+        {
+          "heading": "New Files Created (4)",
+          "level": 3,
+          "line": 82
+        },
+        {
+          "heading": "Documentation (3)",
+          "level": 3,
+          "line": 90
+        },
+        {
+          "heading": "🎯 How to Use Going Forward",
+          "level": 2,
+          "line": 99
+        },
+        {
+          "heading": "For New Components",
+          "level": 3,
+          "line": 101
+        },
+        {
+          "heading": "For Monitoring",
+          "level": 3,
+          "line": 113
+        },
+        {
+          "heading": "For Debugging Performance",
+          "level": 3,
+          "line": 122
+        },
+        {
+          "heading": "🚨 Performance Budgets (Monitor These)",
+          "level": 2,
+          "line": 131
+        },
+        {
+          "heading": "✅ Green Zone",
+          "level": 3,
+          "line": 133
+        },
+        {
+          "heading": "🟡 Yellow Zone (Warning)",
+          "level": 3,
+          "line": 139
+        },
+        {
+          "heading": "🔴 Red Zone (Action Required)",
+          "level": 3,
+          "line": 144
+        },
+        {
+          "heading": "📋 Deployment Checklist",
+          "level": 2,
+          "line": 151
+        },
+        {
+          "heading": "🎓 Key Performance Concepts Used",
+          "level": 2,
+          "line": 174
+        },
+        {
+          "heading": "1. **CSS Containment**",
+          "level": 3,
+          "line": 176
+        },
+        {
+          "heading": "2. **Passive Event Listeners**",
+          "level": 3,
+          "line": 181
+        },
+        {
+          "heading": "3. **Intersection Observer**",
+          "level": 3,
+          "line": 186
+        },
+        {
+          "heading": "4. **Font Display Strategy**",
+          "level": 3,
+          "line": 191
+        },
+        {
+          "heading": "5. **Request Animation Frame**",
+          "level": 3,
+          "line": 196
+        },
+        {
+          "heading": "🔗 Quick Links",
+          "level": 2,
+          "line": 203
+        },
+        {
+          "heading": "Documentation",
+          "level": 3,
+          "line": 205
+        },
+        {
+          "heading": "Tools",
+          "level": 3,
+          "line": 210
+        },
+        {
+          "heading": "External",
+          "level": 3,
+          "line": 216
+        },
+        {
+          "heading": "❓ FAQ",
+          "level": 2,
+          "line": 224
+        },
+        {
+          "heading": "📞 Need Help?",
+          "level": 2,
+          "line": 243
+        },
+        {
+          "heading": "TL;DR (Too Long; Didn't Read)",
+          "level": 2,
+          "line": 259
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 38
+      }
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 99,
+      "nonEmptyLines": 68,
+      "sections": [
+        {
+          "heading": "Getting Started",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Learn More",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Deploy on Vercel",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "Google Indexing API",
+          "level": 2,
+          "line": 38
+        },
+        {
+          "heading": "Automatic blog indexing",
+          "level": 3,
+          "line": 87
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": "SEO_CANNIBALIZATION_AUDIT_2026-06-16.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 258,
+      "nonEmptyLines": 182,
+      "sections": [
+        {
+          "heading": "SEO Cannibalization Audit - 2026-06-16",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Summary",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "How To Read This File",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "Priority 1",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "1. Free VST / Plugin Free",
+          "level": 3,
+          "line": 19
+        },
+        {
+          "heading": "2. FL Studio Beginner Overview",
+          "level": 3,
+          "line": 39
+        },
+        {
+          "heading": "3. Beat-making in FL Studio for Beginners",
+          "level": 3,
+          "line": 55
+        },
+        {
+          "heading": "4. Learn Music / Producer Roadmap From Zero",
+          "level": 3,
+          "line": 68
+        },
+        {
+          "heading": "5. Kontakt Add Library",
+          "level": 3,
+          "line": 83
+        },
+        {
+          "heading": "6. Basic Mixing",
+          "level": 3,
+          "line": 96
+        },
+        {
+          "heading": "7. Vocal Mixing Basics",
+          "level": 3,
+          "line": 109
+        },
+        {
+          "heading": "Priority 2",
+          "level": 2,
+          "line": 124
+        },
+        {
+          "heading": "8. EQ Basics",
+          "level": 3,
+          "line": 126
+        },
+        {
+          "heading": "9. Compressor Basics",
+          "level": 3,
+          "line": 140
+        },
+        {
+          "heading": "10. Reverb Basics",
+          "level": 3,
+          "line": 154
+        },
+        {
+          "heading": "11. Delay Basics",
+          "level": 3,
+          "line": 167
+        },
+        {
+          "heading": "12. Headphones vs Monitors",
+          "level": 3,
+          "line": 179
+        },
+        {
+          "heading": "Priority 3",
+          "level": 2,
+          "line": 190
+        },
+        {
+          "heading": "13. Budget Monitoring Headphones",
+          "level": 3,
+          "line": 192
+        },
+        {
+          "heading": "14. Home Studio Setup",
+          "level": 3,
+          "line": 207
+        },
+        {
+          "heading": "Recommended Execution Order",
+          "level": 2,
+          "line": 224
+        },
+        {
+          "heading": "Rules For Choosing 301 vs Canonical",
+          "level": 2,
+          "line": 239
+        },
+        {
+          "heading": "Main Takeaway",
+          "level": 2,
+          "line": 254
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 23
+      }
+    },
+    {
+      "path": "SHADER_ERROR_FIX.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 287,
+      "nonEmptyLines": 218,
+      "sections": [
+        {
+          "heading": "Three.js Shader Error - Debugging & Fix Guide",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "🔴 Error Analysis",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "🔍 Common Causes",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "1. **Too Many Lights** (Most Common)",
+          "level": 3,
+          "line": 18
+        },
+        {
+          "heading": "2. **GPU Driver/WebGL Incompatibility**",
+          "level": 3,
+          "line": 30
+        },
+        {
+          "heading": "3. **Model Material Misconfiguration**",
+          "level": 3,
+          "line": 41
+        },
+        {
+          "heading": "4. **Texture Issues**",
+          "level": 3,
+          "line": 49
+        },
+        {
+          "heading": "🔧 Immediate Fixes to Try",
+          "level": 2,
+          "line": 61
+        },
+        {
+          "heading": "Option 1: Enable Shader Debugging",
+          "level": 3,
+          "line": 63
+        },
+        {
+          "heading": "Option 2: Override Problematic Material",
+          "level": 3,
+          "line": 79
+        },
+        {
+          "heading": "Option 3: Reduce Light Count",
+          "level": 3,
+          "line": 98
+        },
+        {
+          "heading": "Option 4: Use Lambert Material (Simpler)",
+          "level": 3,
+          "line": 104
+        },
+        {
+          "heading": "🔎 Which File is Causing This?",
+          "level": 2,
+          "line": 114
+        },
+        {
+          "heading": "📝 Step-by-Step Fix",
+          "level": 2,
+          "line": 133
+        },
+        {
+          "heading": "Step 1: Identify Component",
+          "level": 3,
+          "line": 135
+        },
+        {
+          "heading": "Step 2: Find the Model File",
+          "level": 3,
+          "line": 141
+        },
+        {
+          "heading": "Step 3: Check Material Configuration",
+          "level": 3,
+          "line": 148
+        },
+        {
+          "heading": "Step 4: Apply Fix",
+          "level": 3,
+          "line": 172
+        },
+        {
+          "heading": "🚨 If Problem Persists",
+          "level": 2,
+          "line": 202
+        },
+        {
+          "heading": "Check Your GPU",
+          "level": 3,
+          "line": 204
+        },
+        {
+          "heading": "Reduce Shader Complexity",
+          "level": 3,
+          "line": 210
+        },
+        {
+          "heading": "Check Browser Console",
+          "level": 3,
+          "line": 220
+        },
+        {
+          "heading": "Test on Different Browser",
+          "level": 3,
+          "line": 226
+        },
+        {
+          "heading": "📊 Debug Information to Collect",
+          "level": 2,
+          "line": 231
+        },
+        {
+          "heading": "✅ Verification",
+          "level": 2,
+          "line": 249
+        },
+        {
+          "heading": "🎯 Quick Checklist",
+          "level": 2,
+          "line": 260
+        },
+        {
+          "heading": "📚 Resources",
+          "level": 2,
+          "line": 271
+        },
+        {
+          "heading": "Need Help?",
+          "level": 2,
+          "line": 280
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 28
+      }
+    },
+    {
+      "path": "SHOP_PRICE_FULFILLMENT.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 110,
+      "nonEmptyLines": 81,
+      "sections": [
+        {
+          "heading": "Shop Price Fulfillment",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Cách điền",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Audio Interface",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "Micro Condenser",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Micro Dynamic",
+          "level": 2,
+          "line": 31
+        },
+        {
+          "heading": "Tai nghe Closed-back",
+          "level": 2,
+          "line": 38
+        },
+        {
+          "heading": "Tai nghe Open-back",
+          "level": 2,
+          "line": 47
+        },
+        {
+          "heading": "Loa Kiem Am",
+          "level": 2,
+          "line": 55
+        },
+        {
+          "heading": "MIDI Mini Controller",
+          "level": 2,
+          "line": 63
+        },
+        {
+          "heading": "MIDI Keyboard 49 Phim",
+          "level": 2,
+          "line": 70
+        },
+        {
+          "heading": "Booster Gain",
+          "level": 2,
+          "line": 77
+        },
+        {
+          "heading": "Reflection Filter",
+          "level": 2,
+          "line": 84
+        },
+        {
+          "heading": "Phu Kien Monitor",
+          "level": 2,
+          "line": 90
+        },
+        {
+          "heading": "Phu Kien Thu Am",
+          "level": 2,
+          "line": 96
+        },
+        {
+          "heading": "SSD Ngoai",
+          "level": 2,
+          "line": 104
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 15
+      }
+    },
+    {
+      "path": "TACHY_ARTIST_CONTEXT.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 318,
+      "nonEmptyLines": 274,
+      "sections": [
+        {
+          "heading": "TACHY ARTIST — Project Context",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "PROJECT OVERVIEW",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "PROJECT STRUCTURE",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "THEME VARIABLES (`digital-vars.css`)",
+          "level": 2,
+          "line": 65
+        },
+        {
+          "heading": "SPLINE SCENES",
+          "level": 2,
+          "line": 86
+        },
+        {
+          "heading": "SECTION DETAILS",
+          "level": 2,
+          "line": 99
+        },
+        {
+          "heading": "1. DigitalHero",
+          "level": 3,
+          "line": 101
+        },
+        {
+          "heading": "2. DigitalSocialProof (REPLACED Intro)",
+          "level": 3,
+          "line": 110
+        },
+        {
+          "heading": "3. DigitalTransition",
+          "level": 3,
+          "line": 124
+        },
+        {
+          "heading": "4. DigitalTimeline",
+          "level": 3,
+          "line": 132
+        },
+        {
+          "heading": "5. DigitalSkills (CLONED: @aceternity/canvas-reveal-effect-demo)",
+          "level": 3,
+          "line": 156
+        },
+        {
+          "heading": "6. DigitalServices (CLONED: @aceternity/features-section-demo-2)",
+          "level": 3,
+          "line": 177
+        },
+        {
+          "heading": "7. DigitalContact (REBUILT: Final CTA)",
+          "level": 3,
+          "line": 200
+        },
+        {
+          "heading": "8. DigitalFooter",
+          "level": 3,
+          "line": 215
+        },
+        {
+          "heading": "ROUTE SLUG CHANGE",
+          "level": 2,
+          "line": 226
+        },
+        {
+          "heading": "KEY DECISIONS & CONSTRAINTS",
+          "level": 2,
+          "line": 243
+        },
+        {
+          "heading": "KNOWN ISSUES & NOTES",
+          "level": 2,
+          "line": 262
+        },
+        {
+          "heading": "DEPENDENCIES",
+          "level": 2,
+          "line": 278
+        },
+        {
+          "heading": "DEV COMMANDS",
+          "level": 2,
+          "line": 298
+        },
+        {
+          "heading": "NEXT STEPS (TODO)",
+          "level": 2,
+          "line": 309
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 20
+      }
+    },
+    {
+      "path": "_affiliate-products-need-links.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 1241,
+      "nonEmptyLines": 928,
+      "sections": [
+        {
+          "heading": "Danh sach Gear can gan link Affiliate",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Cach su dung",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "Audio Interface",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Audient iD14 MkII (11 bai viet, 110 luot de cap)",
+          "level": 3,
+          "line": 44
+        },
+        {
+          "heading": "Focusrite Scarlett 2i2 (15 bai viet, 81 luot de cap)",
+          "level": 3,
+          "line": 65
+        },
+        {
+          "heading": "SSL 2 (13 bai viet, 42 luot de cap)",
+          "level": 3,
+          "line": 90
+        },
+        {
+          "heading": "MOTU M2 (8 bai viet, 27 luot de cap)",
+          "level": 3,
+          "line": 113
+        },
+        {
+          "heading": "SSL 2+ (3 bai viet, 13 luot de cap)",
+          "level": 3,
+          "line": 131
+        },
+        {
+          "heading": "Universal Audio Volt 2 (4 bai viet, 13 luot de cap)",
+          "level": 3,
+          "line": 144
+        },
+        {
+          "heading": "Universal Audio Volt 1 (5 bai viet, 10 luot de cap)",
+          "level": 3,
+          "line": 158
+        },
+        {
+          "heading": "Focusrite Scarlett Solo (3 bai viet, 5 luot de cap)",
+          "level": 3,
+          "line": 173
+        },
+        {
+          "heading": "Focusrite Scarlett 4i4 (1 bai viet, 3 luot de cap)",
+          "level": 3,
+          "line": 186
+        },
+        {
+          "heading": "Focusrite Clarett+ 2Pre (1 bai viet, 2 luot de cap)",
+          "level": 3,
+          "line": 197
+        },
+        {
+          "heading": "RME Babyface Pro FS (1 bai viet, 2 luot de cap)",
+          "level": 3,
+          "line": 208
+        },
+        {
+          "heading": "Universal Audio Apollo Twin X (1 bai viet, 1 luot de cap)",
+          "level": 3,
+          "line": 219
+        },
+        {
+          "heading": "Behringer U-Phoria UMC204HD (1 bai viet, 1 luot de cap)",
+          "level": 3,
+          "line": 230
+        },
+        {
+          "heading": "Microphone",
+          "level": 2,
+          "line": 243
+        },
+        {
+          "heading": "Shure SM7B (11 bai viet, 91 luot de cap)",
+          "level": 3,
+          "line": 269
+        },
+        {
+          "heading": "Rode NT1 (5th Gen) (13 bai viet, 85 luot de cap)",
+          "level": 3,
+          "line": 290
+        },
+        {
+          "heading": "Audio-Technica AT2020 (11 bai viet, 59 luot de cap)",
+          "level": 3,
+          "line": 313
+        },
+        {
+          "heading": "Lewitt LCT 440 PURE (5 bai viet, 50 luot de cap)",
+          "level": 3,
+          "line": 334
+        },
+        {
+          "heading": "AKG P120 (5 bai viet, 43 luot de cap)",
+          "level": 3,
+          "line": 349
+        },
+        {
+          "heading": "Cloudlifter CL-1 (5 bai viet, 31 luot de cap)",
+          "level": 3,
+          "line": 364
+        },
+        {
+          "heading": "Shure MV7 (4 bai viet, 29 luot de cap)",
+          "level": 3,
+          "line": 379
+        },
+        {
+          "heading": "Rode NT1-A (5 bai viet, 25 luot de cap)",
+          "level": 3,
+          "line": 393
+        },
+        {
+          "heading": "Rode NT-USB (3 bai viet, 13 luot de cap)",
+          "level": 3,
+          "line": 408
+        },
+        {
+          "heading": "Triton Audio FetHead (3 bai viet, 13 luot de cap)",
+          "level": 3,
+          "line": 421
+        },
+        {
+          "heading": "Shure SM58 (6 bai viet, 12 luot de cap)",
+          "level": 3,
+          "line": 434
+        },
+        {
+          "heading": "Aston Origin (3 bai viet, 11 luot de cap)",
+          "level": 3,
+          "line": 450
+        },
+        {
+          "heading": "sE Electronics DM1 Dynamite (2 bai viet, 10 luot de cap)",
+          "level": 3,
+          "line": 463
+        },
+        {
+          "heading": "Blue Yeti (4 bai viet, 7 luot de cap)",
+          "level": 3,
+          "line": 475
+        },
+        {
+          "heading": "Lewitt LCT 240 PRO (1 bai viet, 5 luot de cap)",
+          "level": 3,
+          "line": 489
+        },
+        {
+          "heading": "Shure SM57 (1 bai viet, 2 luot de cap)",
+          "level": 3,
+          "line": 500
+        },
+        {
+          "heading": "Samson Q2U (1 bai viet, 2 luot de cap)",
+          "level": 3,
+          "line": 511
+        },
+        {
+          "heading": "Samson C01 (1 bai viet, 1 luot de cap)",
+          "level": 3,
+          "line": 522
+        },
+        {
+          "heading": "Phụ kiện phòng thu",
+          "level": 2,
+          "line": 535
+        },
+        {
+          "heading": "Acoustic foam (miếng tiêu âm) (26 bai viet, 87 luot de cap)",
+          "level": 3,
+          "line": 556
+        },
+        {
+          "heading": "Pop filter (21 bai viet, 54 luot de cap)",
+          "level": 3,
+          "line": 592
+        },
+        {
+          "heading": "Reflection filter (tấm chắn âm) (9 bai viet, 29 luot de cap)",
+          "level": 3,
+          "line": 623
+        },
+        {
+          "heading": "Mic stand (chân đế micro) (6 bai viet, 20 luot de cap)",
+          "level": 3,
+          "line": 642
+        },
+        {
+          "heading": "Bass trap (bẫy bass) (5 bai viet, 13 luot de cap)",
+          "level": 3,
+          "line": 658
+        },
+        {
+          "heading": "Headphone amp (5 bai viet, 10 luot de cap)",
+          "level": 3,
+          "line": 673
+        },
+        {
+          "heading": "Shock mount (5 bai viet, 8 luot de cap)",
+          "level": 3,
+          "line": 688
+        },
+        {
+          "heading": "Cáp XLR (4 bai viet, 5 luot de cap)",
+          "level": 3,
+          "line": 703
+        },
+        {
+          "heading": "Diffuser (tấm khuếch tán) (3 bai viet, 3 luot de cap)",
+          "level": 3,
+          "line": 717
+        },
+        {
+          "heading": "Subwoofer (3 bai viet, 3 luot de cap)",
+          "level": 3,
+          "line": 730
+        },
+        {
+          "heading": "Isolation pad (đế cách rung loa) (2 bai viet, 2 luot de cap)",
+          "level": 3,
+          "line": 743
+        },
+        {
+          "heading": "Monitor stand (chân đế loa) (2 bai viet, 2 luot de cap)",
+          "level": 3,
+          "line": 755
+        },
+        {
+          "heading": "Cáp TRS / TS (jack) (1 bai viet, 1 luot de cap)",
+          "level": 3,
+          "line": 767
+        },
+        {
+          "heading": "Tai nghe Studio",
+          "level": 2,
+          "line": 780
+        },
+        {
+          "heading": "Audio-Technica ATH-M50x (12 bai viet, 80 luot de cap)",
+          "level": 3,
+          "line": 800
+        },
+        {
+          "heading": "Audio-Technica ATH-M40x (10 bai viet, 78 luot de cap)",
+          "level": 3,
+          "line": 822
+        },
+        {
+          "heading": "AKG K240 Studio (11 bai viet, 64 luot de cap)",
+          "level": 3,
+          "line": 842
+        },
+        {
+          "heading": "Sony MDR-7506 (7 bai viet, 51 luot de cap)",
+          "level": 3,
+          "line": 863
+        },
+        {
+          "heading": "Beyerdynamic DT 770 Pro (10 bai viet, 40 luot de cap)",
+          "level": 3,
+          "line": 880
+        },
+        {
+          "heading": "Beyerdynamic DT 990 Pro (11 bai viet, 38 luot de cap)",
+          "level": 3,
+          "line": 900
+        },
+        {
+          "heading": "Sennheiser HD 560S (12 bai viet, 38 luot de cap)",
+          "level": 3,
+          "line": 921
+        },
+        {
+          "heading": "Sennheiser HD 600 (8 bai viet, 26 luot de cap)",
+          "level": 3,
+          "line": 943
+        },
+        {
+          "heading": "AKG K371 (4 bai viet, 9 luot de cap)",
+          "level": 3,
+          "line": 961
+        },
+        {
+          "heading": "Slate Audio VSX (2 bai viet, 2 luot de cap)",
+          "level": 3,
+          "line": 975
+        },
+        {
+          "heading": "Sennheiser HD 650 (1 bai viet, 1 luot de cap)",
+          "level": 3,
+          "line": 987
+        },
+        {
+          "heading": "Focal Clear MG (1 bai viet, 1 luot de cap)",
+          "level": 3,
+          "line": 998
+        },
+        {
+          "heading": "MIDI Controller / Keyboard",
+          "level": 2,
+          "line": 1011
+        },
+        {
+          "heading": "Arturia MiniLab 3 (5 bai viet, 53 luot de cap)",
+          "level": 3,
+          "line": 1026
+        },
+        {
+          "heading": "Arturia KeyLab 49 (4 bai viet, 30 luot de cap)",
+          "level": 3,
+          "line": 1041
+        },
+        {
+          "heading": "Novation FLkey (3 bai viet, 20 luot de cap)",
+          "level": 3,
+          "line": 1055
+        },
+        {
+          "heading": "Akai MPK Mini Mk3 (4 bai viet, 18 luot de cap)",
+          "level": 3,
+          "line": 1068
+        },
+        {
+          "heading": "Novation Launchkey 49 (3 bai viet, 16 luot de cap)",
+          "level": 3,
+          "line": 1082
+        },
+        {
+          "heading": "Native Instruments Komplete Kontrol A49 (2 bai viet, 14 luot de cap)",
+          "level": 3,
+          "line": 1095
+        },
+        {
+          "heading": "Korg Volca series (1 bai viet, 2 luot de cap)",
+          "level": 3,
+          "line": 1107
+        },
+        {
+          "heading": "Loa kiểm âm",
+          "level": 2,
+          "line": 1120
+        },
+        {
+          "heading": "Adam T5V (6 bai viet, 38 luot de cap)",
+          "level": 3,
+          "line": 1135
+        },
+        {
+          "heading": "JBL 305P MkII (5 bai viet, 30 luot de cap)",
+          "level": 3,
+          "line": 1151
+        },
+        {
+          "heading": "KRK Rokit 8 G4 (6 bai viet, 11 luot de cap)",
+          "level": 3,
+          "line": 1166
+        },
+        {
+          "heading": "Yamaha HS5 (2 bai viet, 6 luot de cap)",
+          "level": 3,
+          "line": 1182
+        },
+        {
+          "heading": "Yamaha HS7 (1 bai viet, 5 luot de cap)",
+          "level": 3,
+          "line": 1194
+        },
+        {
+          "heading": "Yamaha HS8 (1 bai viet, 3 luot de cap)",
+          "level": 3,
+          "line": 1205
+        },
+        {
+          "heading": "KRK Rokit 5 G4 (2 bai viet, 3 luot de cap)",
+          "level": 3,
+          "line": 1216
+        },
+        {
+          "heading": "Thong ke tong hop",
+          "level": 2,
+          "line": 1232
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 79
+      }
+    },
+    {
+      "path": "components.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 20,
+      "nonEmptyLines": 20,
+      "sections": [
+        {
+          "heading": "$schema",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "style",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "rsc",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "tsx",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "tailwind",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "iconLibrary",
+          "level": 1,
+          "line": 12
+        },
+        {
+          "heading": "aliases",
+          "level": 1,
+          "line": 13
+        },
+        {
+          "heading": "registries",
+          "level": 1,
+          "line": 17
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": "jsconfig.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 7,
+      "nonEmptyLines": 7,
+      "sections": [
+        {
+          "heading": "compilerOptions",
+          "level": 1,
+          "line": 2
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": "package.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 100,
+      "nonEmptyLines": 100,
+      "sections": [
+        {
+          "heading": "name",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "private",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "scripts",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "dependencies",
+          "level": 1,
+          "line": 35
+        },
+        {
+          "heading": "devDependencies",
+          "level": 1,
+          "line": 93
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": "tachy_artist_version.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 6,
+      "nonEmptyLines": 2,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/components/artist/about/BioSection.module.css",
+      "type": "file",
+      "name": "BioSection.module.css",
+      "filePath": "src/components/artist/about/BioSection.module.css",
+      "summary": "BioSection.module.css: Source file.",
+      "tags": [
+        "markup",
+        "component"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/components/artist/about/HeroAbout.module.css",
+      "type": "file",
+      "name": "HeroAbout.module.css",
+      "filePath": "src/components/artist/about/HeroAbout.module.css",
+      "summary": "HeroAbout.module.css: Source file.",
+      "tags": [
+        "markup",
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/artist/about/StreamingBar.module.css",
+      "type": "file",
+      "name": "StreamingBar.module.css",
+      "filePath": "src/components/artist/about/StreamingBar.module.css",
+      "summary": "StreamingBar.module.css: Source file.",
+      "tags": [
+        "markup",
+        "component"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": []
+}

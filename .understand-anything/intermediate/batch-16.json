@@ -1,0 +1,124 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/lib/services/service/http.js",
+      "type": "file",
+      "name": "http.js",
+      "filePath": "src/lib/services/service/http.js",
+      "summary": "http.js: Source file, 1 function, 1 import.",
+      "tags": [
+        "service",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/services/service/http.js:getServiceErrorStatus",
+      "type": "function",
+      "name": "getServiceErrorStatus",
+      "filePath": "src/lib/services/service/http.js",
+      "lineRange": [
+        9,
+        11
+      ],
+      "summary": "Function getServiceErrorStatus with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/services/service/spec.js",
+      "type": "file",
+      "name": "spec.js",
+      "filePath": "src/lib/services/service/spec.js",
+      "summary": "spec.js: Source file, 1 function, 1 import.",
+      "tags": [
+        "service",
+        "utility",
+        "exports"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/lib/services/service/spec.js:createServiceFailure",
+      "type": "function",
+      "name": "createServiceFailure",
+      "filePath": "src/lib/services/service/spec.js",
+      "lineRange": [
+        109,
+        114
+      ],
+      "summary": "Function createServiceFailure with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/services/service/spec.test.mjs",
+      "type": "file",
+      "name": "spec.test.mjs",
+      "filePath": "src/lib/services/service/spec.test.mjs",
+      "summary": "spec.test.mjs: Source file, 1 import.",
+      "tags": [
+        "test",
+        "service",
+        "utility",
+        "type-definition"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/lib/services/service/http.js",
+      "target": "function:src/lib/services/service/http.js:getServiceErrorStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/services/service/http.js",
+      "target": "function:src/lib/services/service/http.js:getServiceErrorStatus",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/services/service/http.js",
+      "target": "file:src/lib/services/service/spec.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/services/service/spec.js",
+      "target": "function:src/lib/services/service/spec.js:createServiceFailure",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/services/service/spec.js",
+      "target": "function:src/lib/services/service/spec.js:createServiceFailure",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/services/service/spec.js",
+      "target": "file:src/lib/contract/base.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/lib/services/service/spec.test.mjs",
+      "target": "file:src/lib/services/service/spec.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

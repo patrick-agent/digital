@@ -1,0 +1,127 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 15,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/components/blog/AffiliateProducts.module.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 85,
+      "nonEmptyLines": 73,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/blog/ArticleBody.module.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 388,
+      "nonEmptyLines": 335,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/blog/ArticleHero.module.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 145,
+      "nonEmptyLines": 126,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/blog/AuthorBox.module.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 96,
+      "nonEmptyLines": 84,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/blog/BlogClient.module.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 319,
+      "nonEmptyLines": 272,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/blog/BlogHero.module.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 294,
+      "nonEmptyLines": 257,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/blog/Breadcrumb.module.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 51,
+      "nonEmptyLines": 44,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/blog/CategoryNav.module.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 75,
+      "nonEmptyLines": 66,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/blog/PostCard.module.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 248,
+      "nonEmptyLines": 212,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/blog/PostGrid.module.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 23,
+      "nonEmptyLines": 20,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/blog/PostShelf.module.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 222,
+      "nonEmptyLines": 192,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/blog/ReadingProgress.module.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 20,
+      "nonEmptyLines": 19,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/blog/RelatedPosts.module.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 38,
+      "nonEmptyLines": 33,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/blog/ShareSection.module.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 47,
+      "nonEmptyLines": 42,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/blog/TableOfContents.module.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 138,
+      "nonEmptyLines": 119,
+      "metrics": {}
+    }
+  ]
+}

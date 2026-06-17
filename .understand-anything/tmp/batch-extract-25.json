@@ -1,0 +1,55 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 6,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/components/sections/AboutSection.module.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 388,
+      "nonEmptyLines": 338,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/sections/ContactSection.module.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 674,
+      "nonEmptyLines": 586,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/sections/DonationSection.module.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 488,
+      "nonEmptyLines": 425,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/sections/HeroSection.module.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 463,
+      "nonEmptyLines": 406,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/sections/LatestEPSection.module.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 265,
+      "nonEmptyLines": 229,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/sections/MusicSection.module.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 455,
+      "nonEmptyLines": 385,
+      "metrics": {}
+    }
+  ]
+}

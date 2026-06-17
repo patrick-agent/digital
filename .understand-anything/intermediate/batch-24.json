@@ -1,0 +1,161 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/components/digital/CompanyLogos.module.css",
+      "type": "file",
+      "name": "CompanyLogos.module.css",
+      "filePath": "src/components/digital/CompanyLogos.module.css",
+      "summary": "CompanyLogos.module.css: Source file.",
+      "tags": [
+        "markup",
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/digital/DigitalContact.module.css",
+      "type": "file",
+      "name": "DigitalContact.module.css",
+      "filePath": "src/components/digital/DigitalContact.module.css",
+      "summary": "DigitalContact.module.css: Source file.",
+      "tags": [
+        "markup",
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/digital/DigitalFooter.module.css",
+      "type": "file",
+      "name": "DigitalFooter.module.css",
+      "filePath": "src/components/digital/DigitalFooter.module.css",
+      "summary": "DigitalFooter.module.css: Source file.",
+      "tags": [
+        "markup",
+        "component"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/components/digital/DigitalHero.module.css",
+      "type": "file",
+      "name": "DigitalHero.module.css",
+      "filePath": "src/components/digital/DigitalHero.module.css",
+      "summary": "DigitalHero.module.css: Source file.",
+      "tags": [
+        "markup",
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/digital/DigitalIntro.module.css",
+      "type": "file",
+      "name": "DigitalIntro.module.css",
+      "filePath": "src/components/digital/DigitalIntro.module.css",
+      "summary": "DigitalIntro.module.css: Source file.",
+      "tags": [
+        "markup",
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/digital/DigitalNavbar.module.css",
+      "type": "file",
+      "name": "DigitalNavbar.module.css",
+      "filePath": "src/components/digital/DigitalNavbar.module.css",
+      "summary": "DigitalNavbar.module.css: Source file.",
+      "tags": [
+        "markup",
+        "component"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/components/digital/DigitalServices.module.css",
+      "type": "file",
+      "name": "DigitalServices.module.css",
+      "filePath": "src/components/digital/DigitalServices.module.css",
+      "summary": "DigitalServices.module.css: Source file.",
+      "tags": [
+        "markup",
+        "component"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/components/digital/DigitalSkills.module.css",
+      "type": "file",
+      "name": "DigitalSkills.module.css",
+      "filePath": "src/components/digital/DigitalSkills.module.css",
+      "summary": "DigitalSkills.module.css: Source file.",
+      "tags": [
+        "markup",
+        "component"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/components/digital/DigitalSocialProof.module.css",
+      "type": "file",
+      "name": "DigitalSocialProof.module.css",
+      "filePath": "src/components/digital/DigitalSocialProof.module.css",
+      "summary": "DigitalSocialProof.module.css: Source file.",
+      "tags": [
+        "markup",
+        "component"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/components/digital/DigitalTimeline.module.css",
+      "type": "file",
+      "name": "DigitalTimeline.module.css",
+      "filePath": "src/components/digital/DigitalTimeline.module.css",
+      "summary": "DigitalTimeline.module.css: Source file.",
+      "tags": [
+        "markup",
+        "component"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/components/digital/DigitalTransition.module.css",
+      "type": "file",
+      "name": "DigitalTransition.module.css",
+      "filePath": "src/components/digital/DigitalTransition.module.css",
+      "summary": "DigitalTransition.module.css: Source file.",
+      "tags": [
+        "markup",
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/digital/TextFlip.module.css",
+      "type": "file",
+      "name": "TextFlip.module.css",
+      "filePath": "src/components/digital/TextFlip.module.css",
+      "summary": "TextFlip.module.css: Source file.",
+      "tags": [
+        "markup",
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/digital/digital-vars.css",
+      "type": "file",
+      "name": "digital-vars.css",
+      "filePath": "src/components/digital/digital-vars.css",
+      "summary": "digital-vars.css: Source file.",
+      "tags": [
+        "markup",
+        "component"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": []
+}

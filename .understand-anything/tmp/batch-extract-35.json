@@ -1,0 +1,2358 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/app/not-found.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 157,
+      "nonEmptyLines": 153,
+      "functions": [
+        {
+          "name": "NotFound",
+          "startLine": 13,
+          "endLine": 157,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "NotFound",
+          "line": 13,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/page.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 57,
+      "nonEmptyLines": 52,
+      "functions": [
+        {
+          "name": "generateMetadata",
+          "startLine": 10,
+          "endLine": 40,
+          "params": []
+        },
+        {
+          "name": "Home",
+          "startLine": 42,
+          "endLine": 57,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "revalidate",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "generateMetadata",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "Home",
+          "line": 42,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "generateMetadata",
+          "callee": "readSettings",
+          "lineNumber": 11
+        },
+        {
+          "caller": "generateMetadata",
+          "callee": "absoluteUrl",
+          "lineNumber": 14
+        },
+        {
+          "caller": "Home",
+          "callee": "readSettings",
+          "lineNumber": 43
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/post_sitemap.xml/route.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 33,
+      "nonEmptyLines": 26,
+      "functions": [
+        {
+          "name": "escapeXml",
+          "startLine": 7,
+          "endLine": 14,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "GET",
+          "startLine": 16,
+          "endLine": 33,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "revalidate",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "GET",
+          "line": 16,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "escapeXml",
+          "callee": "String(value)\n    .replace(/&/g, \"&amp;\")\n    .replace(/</g, \"&lt;\")\n    .replace(/>/g, \"&gt;\")\n    .replace(/\\\"/g, \"&quot;\")\n    .replace",
+          "lineNumber": 8
+        },
+        {
+          "caller": "escapeXml",
+          "callee": "String(value)\n    .replace(/&/g, \"&amp;\")\n    .replace(/</g, \"&lt;\")\n    .replace(/>/g, \"&gt;\")\n    .replace",
+          "lineNumber": 8
+        },
+        {
+          "caller": "escapeXml",
+          "callee": "String(value)\n    .replace(/&/g, \"&amp;\")\n    .replace(/</g, \"&lt;\")\n    .replace",
+          "lineNumber": 8
+        },
+        {
+          "caller": "escapeXml",
+          "callee": "String(value)\n    .replace(/&/g, \"&amp;\")\n    .replace",
+          "lineNumber": 8
+        },
+        {
+          "caller": "escapeXml",
+          "callee": "String(value)\n    .replace",
+          "lineNumber": 8
+        },
+        {
+          "caller": "escapeXml",
+          "callee": "String",
+          "lineNumber": 8
+        },
+        {
+          "caller": "GET",
+          "callee": "getAllPublishedSlugs",
+          "lineNumber": 17
+        },
+        {
+          "caller": "GET",
+          "callee": "slugs.map",
+          "lineNumber": 19
+        },
+        {
+          "caller": "GET",
+          "callee": "new Date().toISOString",
+          "lineNumber": 20
+        },
+        {
+          "caller": "GET",
+          "callee": "escapeXml",
+          "lineNumber": 22
+        },
+        {
+          "caller": "GET",
+          "callee": "canonicalUrl",
+          "lineNumber": 22
+        },
+        {
+          "caller": "GET",
+          "callee": "escapeXml",
+          "lineNumber": 22
+        },
+        {
+          "caller": "GET",
+          "callee": "new Date(lastModified).toISOString",
+          "lineNumber": 22
+        },
+        {
+          "caller": "GET",
+          "callee": "urls.join",
+          "lineNumber": 25
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/privacy/page.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 130,
+      "nonEmptyLines": 117,
+      "functions": [
+        {
+          "name": "PrivacyPage",
+          "startLine": 14,
+          "endLine": 130,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "metadata",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "PrivacyPage",
+          "line": 14,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/robots.txt/route.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 20,
+      "functions": [
+        {
+          "name": "GET",
+          "startLine": 5,
+          "endLine": 23,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "revalidate",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "GET",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "GET",
+          "callee": "lines.join",
+          "lineNumber": 17
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/shop/[slug]/page.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 292,
+      "nonEmptyLines": 263,
+      "functions": [
+        {
+          "name": "getPriceValidUntil",
+          "startLine": 19,
+          "endLine": 23,
+          "params": [
+            "baseDate"
+          ]
+        },
+        {
+          "name": "generateStaticParams",
+          "startLine": 27,
+          "endLine": 31,
+          "params": []
+        },
+        {
+          "name": "generateMetadata",
+          "startLine": 33,
+          "endLine": 58,
+          "params": []
+        },
+        {
+          "name": "ProductDetailPage",
+          "startLine": 60,
+          "endLine": 292,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "revalidate",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "generateStaticParams",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "generateMetadata",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "ProductDetailPage",
+          "line": 60,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getPriceValidUntil",
+          "callee": "sourceDate.setUTCFullYear",
+          "lineNumber": 21
+        },
+        {
+          "caller": "getPriceValidUntil",
+          "callee": "sourceDate.getUTCFullYear",
+          "lineNumber": 21
+        },
+        {
+          "caller": "getPriceValidUntil",
+          "callee": "sourceDate.toISOString",
+          "lineNumber": 22
+        },
+        {
+          "caller": "generateStaticParams",
+          "callee": "listPublicProducts",
+          "lineNumber": 28
+        },
+        {
+          "caller": "generateStaticParams",
+          "callee": "result.data.products.map",
+          "lineNumber": 30
+        },
+        {
+          "caller": "generateMetadata",
+          "callee": "getPublicProduct",
+          "lineNumber": 35
+        },
+        {
+          "caller": "generateMetadata",
+          "callee": "stripHtml(product.description).slice",
+          "lineNumber": 45
+        },
+        {
+          "caller": "generateMetadata",
+          "callee": "stripHtml",
+          "lineNumber": 45
+        },
+        {
+          "caller": "generateMetadata",
+          "callee": "buildPageMetadata",
+          "lineNumber": 49
+        },
+        {
+          "caller": "generateMetadata",
+          "callee": "[product.name, product.category, product.brand, ...(product.tags || [])].filter",
+          "lineNumber": 54
+        },
+        {
+          "caller": "ProductDetailPage",
+          "callee": "getPublicProduct",
+          "lineNumber": 62
+        },
+        {
+          "caller": "ProductDetailPage",
+          "callee": "notFound",
+          "lineNumber": 66
+        },
+        {
+          "caller": "ProductDetailPage",
+          "callee": "getRelatedProducts",
+          "lineNumber": 69
+        },
+        {
+          "caller": "ProductDetailPage",
+          "callee": "stripHtml",
+          "lineNumber": 80
+        },
+        {
+          "caller": "ProductDetailPage",
+          "callee": "getPrimaryProductImage",
+          "lineNumber": 81
+        },
+        {
+          "caller": "ProductDetailPage",
+          "callee": "getPriceValidUntil",
+          "lineNumber": 99
+        },
+        {
+          "caller": "ProductDetailPage",
+          "callee": "product.faq.map",
+          "lineNumber": 118
+        },
+        {
+          "caller": "ProductDetailPage",
+          "callee": "stripHtml",
+          "lineNumber": 123
+        },
+        {
+          "caller": "ProductDetailPage",
+          "callee": "JSON.stringify",
+          "lineNumber": 131
+        },
+        {
+          "caller": "ProductDetailPage",
+          "callee": "JSON.stringify",
+          "lineNumber": 132
+        },
+        {
+          "caller": "ProductDetailPage",
+          "callee": "JSON.stringify",
+          "lineNumber": 134
+        },
+        {
+          "caller": "ProductDetailPage",
+          "callee": "getPrimaryProductImage",
+          "lineNumber": 144
+        },
+        {
+          "caller": "ProductDetailPage",
+          "callee": "getPrimaryProductImage",
+          "lineNumber": 146
+        },
+        {
+          "caller": "ProductDetailPage",
+          "callee": "formatProductPrice",
+          "lineNumber": 176
+        },
+        {
+          "caller": "ProductDetailPage",
+          "callee": "product.tags.map",
+          "lineNumber": 190
+        },
+        {
+          "caller": "ProductDetailPage",
+          "callee": "product.features.map",
+          "lineNumber": 225
+        },
+        {
+          "caller": "ProductDetailPage",
+          "callee": "product.faq.map",
+          "lineNumber": 245
+        },
+        {
+          "caller": "ProductDetailPage",
+          "callee": "product.relatedArticles.map",
+          "lineNumber": 260
+        },
+        {
+          "caller": "ProductDetailPage",
+          "callee": "related.map",
+          "lineNumber": 276
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 4,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/shop/error.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "ShopError",
+          "startLine": 5,
+          "endLine": 7,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ShopError",
+          "line": 5,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/shop/FilterSelect.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 79,
+      "nonEmptyLines": 69,
+      "functions": [
+        {
+          "name": "navigate",
+          "startLine": 12,
+          "endLine": 16,
+          "params": [
+            "router",
+            "searchParams",
+            "updates"
+          ]
+        },
+        {
+          "name": "FilterBar",
+          "startLine": 18,
+          "endLine": 79,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "FilterBar",
+          "line": 18,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "navigate",
+          "callee": "startTransition",
+          "lineNumber": 13
+        },
+        {
+          "caller": "navigate",
+          "callee": "router.push",
+          "lineNumber": 14
+        },
+        {
+          "caller": "navigate",
+          "callee": "buildShopHref",
+          "lineNumber": 14
+        },
+        {
+          "caller": "FilterBar",
+          "callee": "useRouter",
+          "lineNumber": 19
+        },
+        {
+          "caller": "FilterBar",
+          "callee": "useSearchParams",
+          "lineNumber": 20
+        },
+        {
+          "caller": "FilterBar",
+          "callee": "searchParams.get",
+          "lineNumber": 22
+        },
+        {
+          "caller": "FilterBar",
+          "callee": "searchParams.get",
+          "lineNumber": 23
+        },
+        {
+          "caller": "FilterBar",
+          "callee": "searchParams.get",
+          "lineNumber": 24
+        },
+        {
+          "caller": "handlePriceRange",
+          "callee": "navigate",
+          "lineNumber": 27
+        },
+        {
+          "caller": "handleSort",
+          "callee": "navigate",
+          "lineNumber": 31
+        },
+        {
+          "caller": "handleSearch",
+          "callee": "e.preventDefault",
+          "lineNumber": 35
+        },
+        {
+          "caller": "handleSearch",
+          "callee": "navigate",
+          "lineNumber": 36
+        },
+        {
+          "caller": "handleSearch",
+          "callee": "e.currentTarget.elements.q.value.trim",
+          "lineNumber": 37
+        },
+        {
+          "caller": "FilterBar",
+          "callee": "SHOP_PRICE_RANGES.map",
+          "lineNumber": 46
+        },
+        {
+          "caller": "FilterBar",
+          "callee": "SHOP_SORT_OPTIONS.map",
+          "lineNumber": 55
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/shop/layout.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 38,
+      "nonEmptyLines": 36,
+      "functions": [
+        {
+          "name": "ShopLayout",
+          "startLine": 27,
+          "endLine": 38,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "metadata",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "ShopLayout",
+          "line": 27,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/shop/loading.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 31,
+      "nonEmptyLines": 29,
+      "functions": [
+        {
+          "name": "SkeletonCard",
+          "startLine": 3,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "ShopLoading",
+          "startLine": 21,
+          "endLine": 31,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ShopLoading",
+          "line": 21,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ShopLoading",
+          "callee": "Array.from",
+          "lineNumber": 25
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/shop/page.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 152,
+      "nonEmptyLines": 135,
+      "functions": [
+        {
+          "name": "normalizeSearchParam",
+          "startLine": 12,
+          "endLine": 14,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "generateMetadata",
+          "startLine": 16,
+          "endLine": 33,
+          "params": []
+        },
+        {
+          "name": "buildShopCollectionSchema",
+          "startLine": 35,
+          "endLine": 71,
+          "params": [
+            "products",
+            "totalCount"
+          ]
+        },
+        {
+          "name": "normalizeSelectValue",
+          "startLine": 73,
+          "endLine": 75,
+          "params": [
+            "value",
+            "labels"
+          ]
+        },
+        {
+          "name": "ShopPage",
+          "startLine": 77,
+          "endLine": 152,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "revalidate",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "generateMetadata",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "ShopPage",
+          "line": 77,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "normalizeSearchParam",
+          "callee": "value.trim",
+          "lineNumber": 13
+        },
+        {
+          "caller": "generateMetadata",
+          "callee": "normalizeSearchParam",
+          "lineNumber": 18
+        },
+        {
+          "caller": "generateMetadata",
+          "callee": "normalizeSearchParam",
+          "lineNumber": 19
+        },
+        {
+          "caller": "generateMetadata",
+          "callee": "normalizeSearchParam",
+          "lineNumber": 20
+        },
+        {
+          "caller": "generateMetadata",
+          "callee": "normalizeSearchParam",
+          "lineNumber": 21
+        },
+        {
+          "caller": "generateMetadata",
+          "callee": "Boolean",
+          "lineNumber": 22
+        },
+        {
+          "caller": "generateMetadata",
+          "callee": "buildPageMetadata",
+          "lineNumber": 25
+        },
+        {
+          "caller": "buildShopCollectionSchema",
+          "callee": "products.map",
+          "lineNumber": 51
+        },
+        {
+          "caller": "normalizeSelectValue",
+          "callee": "Object.hasOwn",
+          "lineNumber": 74
+        },
+        {
+          "caller": "ShopPage",
+          "callee": "normalizeSearchParam",
+          "lineNumber": 79
+        },
+        {
+          "caller": "ShopPage",
+          "callee": "normalizeSelectValue",
+          "lineNumber": 80
+        },
+        {
+          "caller": "ShopPage",
+          "callee": "normalizeSearchParam",
+          "lineNumber": 80
+        },
+        {
+          "caller": "ShopPage",
+          "callee": "normalizeSelectValue",
+          "lineNumber": 81
+        },
+        {
+          "caller": "ShopPage",
+          "callee": "normalizeSearchParam",
+          "lineNumber": 81
+        },
+        {
+          "caller": "ShopPage",
+          "callee": "normalizeSearchParam",
+          "lineNumber": 82
+        },
+        {
+          "caller": "ShopPage",
+          "callee": "listPublicProducts",
+          "lineNumber": 90
+        },
+        {
+          "caller": "ShopPage",
+          "callee": "console.error",
+          "lineNumber": 100
+        },
+        {
+          "caller": "ShopPage",
+          "callee": "categories.includes",
+          "lineNumber": 104
+        },
+        {
+          "caller": "ShopPage",
+          "callee": "buildShopCollectionSchema",
+          "lineNumber": 106
+        },
+        {
+          "caller": "ShopPage",
+          "callee": "JSON.stringify(shopCollectionJsonLd).replace",
+          "lineNumber": 112
+        },
+        {
+          "caller": "ShopPage",
+          "callee": "JSON.stringify",
+          "lineNumber": 112
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 3,
+        "functionCount": 5,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/shop/shop-card.module.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 400,
+      "nonEmptyLines": 348,
+      "metrics": {}
+    },
+    {
+      "path": "src/app/shop/shop.module.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 609,
+      "nonEmptyLines": 527,
+      "metrics": {}
+    },
+    {
+      "path": "src/app/sitemap.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 111,
+      "nonEmptyLines": 98,
+      "functions": [
+        {
+          "name": "sitemap",
+          "startLine": 25,
+          "endLine": 111,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "sitemap",
+          "line": 25,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "sitemap",
+          "callee": "connection",
+          "lineNumber": 28
+        },
+        {
+          "caller": "sitemap",
+          "callee": "getAllPublishedSlugs",
+          "lineNumber": 30
+        },
+        {
+          "caller": "sitemap",
+          "callee": "slugs.map",
+          "lineNumber": 32
+        },
+        {
+          "caller": "sitemap",
+          "callee": "canonicalUrl",
+          "lineNumber": 34
+        },
+        {
+          "caller": "sitemap",
+          "callee": "readMusic",
+          "lineNumber": 43
+        },
+        {
+          "caller": "sitemap",
+          "callee": "music\n      .filter((m) => m.status === \"published\" || !m.status)\n      .map",
+          "lineNumber": 44
+        },
+        {
+          "caller": "sitemap",
+          "callee": "music\n      .filter",
+          "lineNumber": 44
+        },
+        {
+          "caller": "sitemap",
+          "callee": "listPublicProducts",
+          "lineNumber": 56
+        },
+        {
+          "caller": "sitemap",
+          "callee": "products.map",
+          "lineNumber": 58
+        },
+        {
+          "caller": "sitemap",
+          "callee": "getAllPosts().map",
+          "lineNumber": 66
+        },
+        {
+          "caller": "sitemap",
+          "callee": "getAllPosts",
+          "lineNumber": 66
+        },
+        {
+          "caller": "sitemap",
+          "callee": "new Date(p.date).toISOString",
+          "lineNumber": 68
+        },
+        {
+          "caller": "sitemap",
+          "callee": "getAllRoutes",
+          "lineNumber": 73
+        },
+        {
+          "caller": "sitemap",
+          "callee": "routes\n    .filter((r) => {\n      if (r.route === \"/\" || r.route === \"/blog\") return false\n      if (r.route.startsWith(\"/digital/\")) return false\n      if (r.route.startsWith(\"/admin\")) return false\n      return true\n    })\n    .map",
+          "lineNumber": 75
+        },
+        {
+          "caller": "sitemap",
+          "callee": "routes\n    .filter",
+          "lineNumber": 75
+        },
+        {
+          "caller": "sitemap",
+          "callee": "r.route.startsWith",
+          "lineNumber": 78
+        },
+        {
+          "caller": "sitemap",
+          "callee": "r.route.startsWith",
+          "lineNumber": 79
+        },
+        {
+          "caller": "sitemap",
+          "callee": "staticPages.map",
+          "lineNumber": 89
+        },
+        {
+          "caller": "sitemap",
+          "callee": "all.filter",
+          "lineNumber": 106
+        },
+        {
+          "caller": "sitemap",
+          "callee": "seen.has",
+          "lineNumber": 107
+        },
+        {
+          "caller": "sitemap",
+          "callee": "seen.add",
+          "lineNumber": 108
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/terms/page.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 104,
+      "nonEmptyLines": 92,
+      "functions": [
+        {
+          "name": "TermsPage",
+          "startLine": 14,
+          "endLine": 104,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "metadata",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "TermsPage",
+          "line": 14,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/admin/AdminCard.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 18,
+      "nonEmptyLines": 16,
+      "functions": [
+        {
+          "name": "AdminCard",
+          "startLine": 3,
+          "endLine": 9,
+          "params": []
+        },
+        {
+          "name": "AdminCardHeader",
+          "startLine": 11,
+          "endLine": 18,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AdminCard",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "AdminCardHeader",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AdminCard",
+          "callee": "cn",
+          "lineNumber": 5
+        },
+        {
+          "caller": "AdminCardHeader",
+          "callee": "cn",
+          "lineNumber": 13
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/admin/AdminPageContainer.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 8,
+      "functions": [
+        {
+          "name": "AdminPageContainer",
+          "startLine": 3,
+          "endLine": 9,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AdminPageContainer",
+          "line": 3,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AdminPageContainer",
+          "callee": "cn",
+          "lineNumber": 5
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/admin/AdminShell.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 109,
+      "nonEmptyLines": 99,
+      "functions": [
+        {
+          "name": "AdminShell",
+          "startLine": 17,
+          "endLine": 109,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AdminShell",
+          "line": 17,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AdminShell",
+          "callee": "useState",
+          "lineNumber": 18
+        },
+        {
+          "caller": "AdminShell",
+          "callee": "setMobileSidebar",
+          "lineNumber": 31
+        },
+        {
+          "caller": "AdminShell",
+          "callee": "cn",
+          "lineNumber": 37
+        },
+        {
+          "caller": "AdminShell",
+          "callee": "setMobileSidebar",
+          "lineNumber": 54
+        },
+        {
+          "caller": "AdminShell",
+          "callee": "MOBILE_LINKS.map",
+          "lineNumber": 91
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/admin/AdminToolbar.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 56,
+      "nonEmptyLines": 53,
+      "functions": [
+        {
+          "name": "AdminToolbar",
+          "startLine": 3,
+          "endLine": 9,
+          "params": []
+        },
+        {
+          "name": "SearchInput",
+          "startLine": 11,
+          "endLine": 37,
+          "params": []
+        },
+        {
+          "name": "SelectFilter",
+          "startLine": 39,
+          "endLine": 56,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AdminToolbar",
+          "line": 3,
+          "isDefault": true
+        },
+        {
+          "name": "SearchInput",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "SelectFilter",
+          "line": 39,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AdminToolbar",
+          "callee": "cn",
+          "lineNumber": 5
+        },
+        {
+          "caller": "SearchInput",
+          "callee": "cn",
+          "lineNumber": 13
+        },
+        {
+          "caller": "SearchInput",
+          "callee": "onChange",
+          "lineNumber": 31
+        },
+        {
+          "caller": "SelectFilter",
+          "callee": "onChange",
+          "lineNumber": 43
+        },
+        {
+          "caller": "SelectFilter",
+          "callee": "cn",
+          "lineNumber": 44
+        },
+        {
+          "caller": "SelectFilter",
+          "callee": "options.map",
+          "lineNumber": 49
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/admin/CaseStudiesForm.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 159,
+      "nonEmptyLines": 144,
+      "functions": [
+        {
+          "name": "createInitialForm",
+          "startLine": 12,
+          "endLine": 32,
+          "params": [
+            "item"
+          ]
+        },
+        {
+          "name": "CaseStudiesForm",
+          "startLine": 34,
+          "endLine": 159,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "CaseStudiesForm",
+          "line": 34,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createInitialForm",
+          "callee": "(item.results || []).join",
+          "lineNumber": 25
+        },
+        {
+          "caller": "createInitialForm",
+          "callee": "JSON.stringify",
+          "lineNumber": 26
+        },
+        {
+          "caller": "createInitialForm",
+          "callee": "(item.tags || []).join",
+          "lineNumber": 28
+        },
+        {
+          "caller": "createInitialForm",
+          "callee": "item.publishedAt.slice",
+          "lineNumber": 29
+        },
+        {
+          "caller": "CaseStudiesForm",
+          "callee": "useRouter",
+          "lineNumber": 35
+        },
+        {
+          "caller": "CaseStudiesForm",
+          "callee": "useState",
+          "lineNumber": 38
+        },
+        {
+          "caller": "CaseStudiesForm",
+          "callee": "createInitialForm",
+          "lineNumber": 38
+        },
+        {
+          "caller": "CaseStudiesForm",
+          "callee": "useState",
+          "lineNumber": 39
+        },
+        {
+          "caller": "CaseStudiesForm",
+          "callee": "useState",
+          "lineNumber": 40
+        },
+        {
+          "caller": "CaseStudiesForm",
+          "callee": "useState",
+          "lineNumber": 41
+        },
+        {
+          "caller": "CaseStudiesForm",
+          "callee": "useCallback",
+          "lineNumber": 43
+        },
+        {
+          "caller": "CaseStudiesForm",
+          "callee": "setForm",
+          "lineNumber": 44
+        },
+        {
+          "caller": "CaseStudiesForm",
+          "callee": "value.toLowerCase().replace(/[^a-z0-9]+/g, \"-\").replace",
+          "lineNumber": 47
+        },
+        {
+          "caller": "CaseStudiesForm",
+          "callee": "value.toLowerCase().replace",
+          "lineNumber": 47
+        },
+        {
+          "caller": "CaseStudiesForm",
+          "callee": "value.toLowerCase",
+          "lineNumber": 47
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "e.preventDefault",
+          "lineNumber": 54
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setSaving",
+          "lineNumber": 55
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setError",
+          "lineNumber": 56
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "JSON.parse",
+          "lineNumber": 58
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "form.resultsRaw.split(\"\\n\").map((r) => r.trim()).filter",
+          "lineNumber": 61
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "form.resultsRaw.split(\"\\n\").map",
+          "lineNumber": 61
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "form.resultsRaw.split",
+          "lineNumber": 61
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "r.trim",
+          "lineNumber": 61
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "form.tags.split(\",\").map((t) => t.trim()).filter",
+          "lineNumber": 62
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "form.tags.split(\",\").map",
+          "lineNumber": 62
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "form.tags.split",
+          "lineNumber": 62
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "t.trim",
+          "lineNumber": 62
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "new Date(form.publishedAt).toISOString",
+          "lineNumber": 63
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "fetch",
+          "lineNumber": 70
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "JSON.stringify",
+          "lineNumber": 70
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "res.json",
+          "lineNumber": 71
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "router.push",
+          "lineNumber": 72
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "router.refresh",
+          "lineNumber": 73
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setError",
+          "lineNumber": 74
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setSaving",
+          "lineNumber": 74
+        },
+        {
+          "caller": "CaseStudiesForm",
+          "callee": "handleChange",
+          "lineNumber": 86
+        },
+        {
+          "caller": "CaseStudiesForm",
+          "callee": "setSlugManuallyEdited",
+          "lineNumber": 90
+        },
+        {
+          "caller": "CaseStudiesForm",
+          "callee": "handleChange",
+          "lineNumber": 90
+        },
+        {
+          "caller": "CaseStudiesForm",
+          "callee": "handleChange",
+          "lineNumber": 95
+        },
+        {
+          "caller": "CaseStudiesForm",
+          "callee": "handleChange",
+          "lineNumber": 99
+        },
+        {
+          "caller": "CaseStudiesForm",
+          "callee": "handleChange",
+          "lineNumber": 104
+        },
+        {
+          "caller": "CaseStudiesForm",
+          "callee": "handleChange",
+          "lineNumber": 108
+        },
+        {
+          "caller": "CaseStudiesForm",
+          "callee": "handleChange",
+          "lineNumber": 112
+        },
+        {
+          "caller": "CaseStudiesForm",
+          "callee": "handleChange",
+          "lineNumber": 121
+        },
+        {
+          "caller": "CaseStudiesForm",
+          "callee": "STATUS_OPTIONS.map",
+          "lineNumber": 122
+        },
+        {
+          "caller": "CaseStudiesForm",
+          "callee": "handleChange",
+          "lineNumber": 127
+        },
+        {
+          "caller": "CaseStudiesForm",
+          "callee": "handleChange",
+          "lineNumber": 136
+        },
+        {
+          "caller": "CaseStudiesForm",
+          "callee": "handleChange",
+          "lineNumber": 142
+        },
+        {
+          "caller": "CaseStudiesForm",
+          "callee": "handleChange",
+          "lineNumber": 143
+        },
+        {
+          "caller": "CaseStudiesForm",
+          "callee": "handleChange",
+          "lineNumber": 148
+        },
+        {
+          "caller": "CaseStudiesForm",
+          "callee": "handleChange",
+          "lineNumber": 153
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/admin/EmptyState.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 25,
+      "nonEmptyLines": 24,
+      "functions": [
+        {
+          "name": "EmptyState",
+          "startLine": 3,
+          "endLine": 25,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "EmptyState",
+          "line": 3,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/admin/EventsForm.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 115,
+      "nonEmptyLines": 103,
+      "functions": [
+        {
+          "name": "createInitialForm",
+          "startLine": 12,
+          "endLine": 26,
+          "params": [
+            "item"
+          ]
+        },
+        {
+          "name": "EventsForm",
+          "startLine": 28,
+          "endLine": 115,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "EventsForm",
+          "line": 28,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createInitialForm",
+          "callee": "item.date.slice",
+          "lineNumber": 22
+        },
+        {
+          "caller": "EventsForm",
+          "callee": "useRouter",
+          "lineNumber": 29
+        },
+        {
+          "caller": "EventsForm",
+          "callee": "useState",
+          "lineNumber": 32
+        },
+        {
+          "caller": "EventsForm",
+          "callee": "createInitialForm",
+          "lineNumber": 32
+        },
+        {
+          "caller": "EventsForm",
+          "callee": "useState",
+          "lineNumber": 33
+        },
+        {
+          "caller": "EventsForm",
+          "callee": "useState",
+          "lineNumber": 34
+        },
+        {
+          "caller": "EventsForm",
+          "callee": "useCallback",
+          "lineNumber": 36
+        },
+        {
+          "caller": "EventsForm",
+          "callee": "setForm",
+          "lineNumber": 37
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "e.preventDefault",
+          "lineNumber": 41
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setSaving",
+          "lineNumber": 42
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setError",
+          "lineNumber": 43
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "fetch",
+          "lineNumber": 47
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "JSON.stringify",
+          "lineNumber": 47
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "res.json",
+          "lineNumber": 48
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "router.push",
+          "lineNumber": 49
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "router.refresh",
+          "lineNumber": 50
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setError",
+          "lineNumber": 51
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setSaving",
+          "lineNumber": 51
+        },
+        {
+          "caller": "EventsForm",
+          "callee": "handleChange",
+          "lineNumber": 63
+        },
+        {
+          "caller": "EventsForm",
+          "callee": "handleChange",
+          "lineNumber": 68
+        },
+        {
+          "caller": "EventsForm",
+          "callee": "handleChange",
+          "lineNumber": 72
+        },
+        {
+          "caller": "EventsForm",
+          "callee": "handleChange",
+          "lineNumber": 77
+        },
+        {
+          "caller": "EventsForm",
+          "callee": "handleChange",
+          "lineNumber": 86
+        },
+        {
+          "caller": "EventsForm",
+          "callee": "handleChange",
+          "lineNumber": 90
+        },
+        {
+          "caller": "EventsForm",
+          "callee": "STATUS_OPTIONS.map",
+          "lineNumber": 91
+        },
+        {
+          "caller": "EventsForm",
+          "callee": "handleChange",
+          "lineNumber": 103
+        },
+        {
+          "caller": "EventsForm",
+          "callee": "handleChange",
+          "lineNumber": 107
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/admin/GalleryForm.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 114,
+      "nonEmptyLines": 101,
+      "functions": [
+        {
+          "name": "createInitialForm",
+          "startLine": 12,
+          "endLine": 26,
+          "params": [
+            "item"
+          ]
+        },
+        {
+          "name": "GalleryForm",
+          "startLine": 28,
+          "endLine": 114,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "GalleryForm",
+          "line": 28,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createInitialForm",
+          "callee": "(item.tags || []).join",
+          "lineNumber": 24
+        },
+        {
+          "caller": "GalleryForm",
+          "callee": "useRouter",
+          "lineNumber": 29
+        },
+        {
+          "caller": "GalleryForm",
+          "callee": "useState",
+          "lineNumber": 32
+        },
+        {
+          "caller": "GalleryForm",
+          "callee": "createInitialForm",
+          "lineNumber": 32
+        },
+        {
+          "caller": "GalleryForm",
+          "callee": "useState",
+          "lineNumber": 33
+        },
+        {
+          "caller": "GalleryForm",
+          "callee": "useState",
+          "lineNumber": 34
+        },
+        {
+          "caller": "GalleryForm",
+          "callee": "useCallback",
+          "lineNumber": 36
+        },
+        {
+          "caller": "GalleryForm",
+          "callee": "setForm",
+          "lineNumber": 37
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "e.preventDefault",
+          "lineNumber": 41
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setSaving",
+          "lineNumber": 42
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setError",
+          "lineNumber": 43
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "form.tags.split(\",\").map((t) => t.trim()).filter",
+          "lineNumber": 44
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "form.tags.split(\",\").map",
+          "lineNumber": 44
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "form.tags.split",
+          "lineNumber": 44
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "t.trim",
+          "lineNumber": 44
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "fetch",
+          "lineNumber": 48
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "JSON.stringify",
+          "lineNumber": 48
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "res.json",
+          "lineNumber": 49
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "router.push",
+          "lineNumber": 50
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "router.refresh",
+          "lineNumber": 51
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setError",
+          "lineNumber": 52
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setSaving",
+          "lineNumber": 52
+        },
+        {
+          "caller": "GalleryForm",
+          "callee": "handleChange",
+          "lineNumber": 64
+        },
+        {
+          "caller": "GalleryForm",
+          "callee": "handleChange",
+          "lineNumber": 68
+        },
+        {
+          "caller": "GalleryForm",
+          "callee": "handleChange",
+          "lineNumber": 72
+        },
+        {
+          "caller": "GalleryForm",
+          "callee": "handleChange",
+          "lineNumber": 76
+        },
+        {
+          "caller": "GalleryForm",
+          "callee": "handleChange",
+          "lineNumber": 83
+        },
+        {
+          "caller": "GalleryForm",
+          "callee": "TYPE_OPTIONS.map",
+          "lineNumber": 84
+        },
+        {
+          "caller": "GalleryForm",
+          "callee": "handleChange",
+          "lineNumber": 95
+        },
+        {
+          "caller": "GalleryForm",
+          "callee": "handleChange",
+          "lineNumber": 99
+        },
+        {
+          "caller": "GalleryForm",
+          "callee": "handleChange",
+          "lineNumber": 108
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/admin/MusicForm.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 262,
+      "nonEmptyLines": 244,
+      "functions": [
+        {
+          "name": "createInitialForm",
+          "startLine": 33,
+          "endLine": 60,
+          "params": [
+            "item"
+          ]
+        },
+        {
+          "name": "MusicForm",
+          "startLine": 62,
+          "endLine": 262,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "MusicForm",
+          "line": 62,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createInitialForm",
+          "callee": "item.releaseDate.slice",
+          "lineNumber": 46
+        },
+        {
+          "caller": "createInitialForm",
+          "callee": "(item.tracklist || []).join",
+          "lineNumber": 50
+        },
+        {
+          "caller": "MusicForm",
+          "callee": "useRouter",
+          "lineNumber": 63
+        },
+        {
+          "caller": "MusicForm",
+          "callee": "useRef",
+          "lineNumber": 65
+        },
+        {
+          "caller": "MusicForm",
+          "callee": "useState",
+          "lineNumber": 67
+        },
+        {
+          "caller": "MusicForm",
+          "callee": "createInitialForm",
+          "lineNumber": 67
+        },
+        {
+          "caller": "MusicForm",
+          "callee": "useState",
+          "lineNumber": 68
+        },
+        {
+          "caller": "MusicForm",
+          "callee": "useState",
+          "lineNumber": 69
+        },
+        {
+          "caller": "MusicForm",
+          "callee": "useState",
+          "lineNumber": 70
+        },
+        {
+          "caller": "MusicForm",
+          "callee": "useState",
+          "lineNumber": 71
+        },
+        {
+          "caller": "MusicForm",
+          "callee": "useState",
+          "lineNumber": 72
+        },
+        {
+          "caller": "MusicForm",
+          "callee": "useCallback",
+          "lineNumber": 74
+        },
+        {
+          "caller": "MusicForm",
+          "callee": "setForm",
+          "lineNumber": 75
+        },
+        {
+          "caller": "MusicForm",
+          "callee": "value.toLowerCase().replace(/[^a-z0-9]+/g, \"-\").replace",
+          "lineNumber": 78
+        },
+        {
+          "caller": "MusicForm",
+          "callee": "value.toLowerCase().replace",
+          "lineNumber": 78
+        },
+        {
+          "caller": "MusicForm",
+          "callee": "value.toLowerCase",
+          "lineNumber": 78
+        },
+        {
+          "caller": "MusicForm",
+          "callee": "setCoverPreview",
+          "lineNumber": 81
+        },
+        {
+          "caller": "handleFileUpload",
+          "callee": "setUploading",
+          "lineNumber": 90
+        },
+        {
+          "caller": "handleFileUpload",
+          "callee": "setError",
+          "lineNumber": 91
+        },
+        {
+          "caller": "handleFileUpload",
+          "callee": "formData.append",
+          "lineNumber": 94
+        },
+        {
+          "caller": "handleFileUpload",
+          "callee": "formData.append",
+          "lineNumber": 95
+        },
+        {
+          "caller": "handleFileUpload",
+          "callee": "fetch",
+          "lineNumber": 96
+        },
+        {
+          "caller": "handleFileUpload",
+          "callee": "res.json",
+          "lineNumber": 98
+        },
+        {
+          "caller": "handleFileUpload",
+          "callee": "res.json",
+          "lineNumber": 101
+        },
+        {
+          "caller": "handleFileUpload",
+          "callee": "handleChange",
+          "lineNumber": 102
+        },
+        {
+          "caller": "handleFileUpload",
+          "callee": "handleChange",
+          "lineNumber": 108
+        },
+        {
+          "caller": "handleFileUpload",
+          "callee": "reader.readAsDataURL",
+          "lineNumber": 110
+        },
+        {
+          "caller": "handleFileUpload",
+          "callee": "setUploading",
+          "lineNumber": 112
+        },
+        {
+          "caller": "removeCover",
+          "callee": "handleChange",
+          "lineNumber": 117
+        },
+        {
+          "caller": "removeCover",
+          "callee": "setCoverPreview",
+          "lineNumber": 118
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "e.preventDefault",
+          "lineNumber": 123
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setSaving",
+          "lineNumber": 124
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setError",
+          "lineNumber": 125
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "form.tracklistRaw.split(\"\\n\").map((t) => t.trim()).filter",
+          "lineNumber": 126
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "form.tracklistRaw.split(\"\\n\").map",
+          "lineNumber": 126
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "form.tracklistRaw.split",
+          "lineNumber": 126
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "t.trim",
+          "lineNumber": 126
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "fetch",
+          "lineNumber": 141
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "JSON.stringify",
+          "lineNumber": 141
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "res.json",
+          "lineNumber": 142
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "router.push",
+          "lineNumber": 143
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "router.refresh",
+          "lineNumber": 144
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setError",
+          "lineNumber": 145
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setSaving",
+          "lineNumber": 145
+        },
+        {
+          "caller": "MusicForm",
+          "callee": "handleChange",
+          "lineNumber": 158
+        },
+        {
+          "caller": "MusicForm",
+          "callee": "setSlugManuallyEdited",
+          "lineNumber": 162
+        },
+        {
+          "caller": "MusicForm",
+          "callee": "handleChange",
+          "lineNumber": 162
+        },
+        {
+          "caller": "MusicForm",
+          "callee": "handleChange",
+          "lineNumber": 166
+        },
+        {
+          "caller": "MusicForm",
+          "callee": "handleChange",
+          "lineNumber": 170
+        },
+        {
+          "caller": "MusicForm",
+          "callee": "handleChange",
+          "lineNumber": 181
+        },
+        {
+          "caller": "MusicForm",
+          "callee": "TYPE_OPTIONS.map",
+          "lineNumber": 182
+        },
+        {
+          "caller": "MusicForm",
+          "callee": "handleChange",
+          "lineNumber": 187
+        },
+        {
+          "caller": "MusicForm",
+          "callee": "handleChange",
+          "lineNumber": 191
+        },
+        {
+          "caller": "MusicForm",
+          "callee": "STATUS_OPTIONS.map",
+          "lineNumber": 192
+        },
+        {
+          "caller": "MusicForm",
+          "callee": "handleChange",
+          "lineNumber": 196
+        },
+        {
+          "caller": "MusicForm",
+          "callee": "fileInputRef.current?.click",
+          "lineNumber": 207
+        },
+        {
+          "caller": "MusicForm",
+          "callee": "handleChange",
+          "lineNumber": 224
+        },
+        {
+          "caller": "MusicForm",
+          "callee": "STREAMING_PLATFORMS.map",
+          "lineNumber": 238
+        },
+        {
+          "caller": "MusicForm",
+          "callee": "handleChange",
+          "lineNumber": 247
+        },
+        {
+          "caller": "MusicForm",
+          "callee": "handleChange",
+          "lineNumber": 256
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/admin/PageHeader.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 17,
+      "nonEmptyLines": 16,
+      "functions": [
+        {
+          "name": "PageHeader",
+          "startLine": 3,
+          "endLine": 17,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "PageHeader",
+          "line": 3,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "PageHeader",
+          "callee": "cn",
+          "lineNumber": 5
+        },
+        {
+          "caller": "PageHeader",
+          "callee": "cn",
+          "lineNumber": 6
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    }
+  ]
+}

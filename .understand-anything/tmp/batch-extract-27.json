@@ -1,0 +1,462 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".learnings/ERRORS.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 57,
+      "nonEmptyLines": 42,
+      "sections": [
+        {
+          "heading": "[ERR-20260611-001] npm run lint",
+          "level": 2,
+          "line": 1
+        },
+        {
+          "heading": "Summary",
+          "level": 3,
+          "line": 8
+        },
+        {
+          "heading": "Error",
+          "level": 3,
+          "line": 11
+        },
+        {
+          "heading": "Context",
+          "level": 3,
+          "line": 17
+        },
+        {
+          "heading": "Suggested Fix",
+          "level": 3,
+          "line": 21
+        },
+        {
+          "heading": "Metadata",
+          "level": 3,
+          "line": 24
+        },
+        {
+          "heading": "[ERR-20260611-002] npm run build -- --webpack",
+          "level": 2,
+          "line": 30
+        },
+        {
+          "heading": "Summary",
+          "level": 3,
+          "line": 37
+        },
+        {
+          "heading": "Error",
+          "level": 3,
+          "line": 40
+        },
+        {
+          "heading": "Context",
+          "level": 3,
+          "line": 46
+        },
+        {
+          "heading": "Suggested Fix",
+          "level": 3,
+          "line": 50
+        },
+        {
+          "heading": "Metadata",
+          "level": 3,
+          "line": 53
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 12
+      }
+    },
+    {
+      "path": ".learnings/LEARNINGS.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 27,
+      "nonEmptyLines": 20,
+      "sections": [
+        {
+          "heading": "[LRN-20260611-001] best_practice",
+          "level": 2,
+          "line": 1
+        },
+        {
+          "heading": "Summary",
+          "level": 3,
+          "line": 8
+        },
+        {
+          "heading": "Details",
+          "level": 3,
+          "line": 11
+        },
+        {
+          "heading": "Suggested Action",
+          "level": 3,
+          "line": 14
+        },
+        {
+          "heading": "Metadata",
+          "level": 3,
+          "line": 17
+        },
+        {
+          "heading": "Resolution",
+          "level": 3,
+          "line": 22
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".opencode/plans/architecture-refactor-plan.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 205,
+      "nonEmptyLines": 151,
+      "sections": [
+        {
+          "heading": "Architecture Refactor Plan — Studio 3D",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Phase 1: Small Wins (zero risk, thấy kết quả ngay)",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Bước 1.1 — Extract ProductCard component",
+          "level": 3,
+          "line": 11
+        },
+        {
+          "heading": "Bước 1.2 — Split CSS module",
+          "level": 3,
+          "line": 25
+        },
+        {
+          "heading": "Bước 1.3 — Fix script import bridge",
+          "level": 3,
+          "line": 40
+        },
+        {
+          "heading": "Phase 2: Data Layer Refactoring (core — cẩn thận nhất)",
+          "level": 2,
+          "line": 62
+        },
+        {
+          "heading": "Bước 2.1 — Tách monolithic db.js (quan trọng nhất)",
+          "level": 3,
+          "line": 64
+        },
+        {
+          "heading": "Bước 2.2 — Blog public-catalog pattern",
+          "level": 3,
+          "line": 120
+        },
+        {
+          "heading": "Phase 3: Script Refactoring",
+          "level": 2,
+          "line": 147
+        },
+        {
+          "heading": "Bước 3.1 — Split rebuild-shop-catalog.mjs",
+          "level": 3,
+          "line": 149
+        },
+        {
+          "heading": "Timeline",
+          "level": 2,
+          "line": 173
+        },
+        {
+          "heading": "Risk Mitigation",
+          "level": 2,
+          "line": 187
+        },
+        {
+          "heading": "Khi nào bắt đầu?",
+          "level": 2,
+          "line": 199
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 13
+      }
+    },
+    {
+      "path": ".understand-anything/.understandignore",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 37,
+      "nonEmptyLines": 37,
+      "metrics": {}
+    },
+    {
+      "path": ".understand-anything/config.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 4,
+      "nonEmptyLines": 4,
+      "sections": [
+        {
+          "heading": "autoUpdate",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "outputLanguage",
+          "level": 1,
+          "line": 3
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": ".vercelignore",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 4,
+      "nonEmptyLines": 4,
+      "metrics": {}
+    },
+    {
+      "path": "docs/adr/0001-admin-crud-spec-handler-http-adapter.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 63,
+      "nonEmptyLines": 43,
+      "sections": [
+        {
+          "heading": "ADR 0001: Admin CRUD Uses Spec, Handler, and HTTP Adapter",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Context",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Decision",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "Consequences",
+          "level": 2,
+          "line": 43
+        },
+        {
+          "heading": "Positive",
+          "level": 3,
+          "line": 45
+        },
+        {
+          "heading": "Negative",
+          "level": 3,
+          "line": 52
+        },
+        {
+          "heading": "Rollout",
+          "level": 2,
+          "line": 57
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": "eslint.config.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 16,
+      "nonEmptyLines": 14,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "next.config.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 148,
+      "nonEmptyLines": 138,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "postcss.config.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 7,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/images/blog/bo-gear-thu-rap-vocal-tai-nha-cho-phong-chua-xu-ly-am-inside.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 151,
+      "nonEmptyLines": 150,
+      "metrics": {}
+    },
+    {
+      "path": "public/images/blog/bo-gear-thu-rap-vocal-tai-nha-cho-phong-chua-xu-ly-am.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 333,
+      "nonEmptyLines": 333,
+      "metrics": {}
+    },
+    {
+      "path": "public/images/blog/cach-lam-beat-fl-studio-co-ban.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 74,
+      "nonEmptyLines": 74,
+      "metrics": {}
+    },
+    {
+      "path": "public/images/blog/cach-mix-vocal-tai-nha.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 63,
+      "nonEmptyLines": 63,
+      "metrics": {}
+    },
+    {
+      "path": "public/images/blog/chon-micro-thu-am-tai-nha-condenser-dynamic.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 80,
+      "nonEmptyLines": 80,
+      "metrics": {}
+    },
+    {
+      "path": "public/images/blog/co-can-booster-gain-cloudlifter-fethead-cho-micro-dynamic-inside.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 165,
+      "nonEmptyLines": 165,
+      "metrics": {}
+    },
+    {
+      "path": "public/images/blog/co-can-booster-gain-cloudlifter-fethead-cho-micro-dynamic.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 122,
+      "nonEmptyLines": 121,
+      "metrics": {}
+    },
+    {
+      "path": "public/images/blog/co-nen-mua-micro-usb-xlr-hybrid-mv7-podmic-usb-q9u-inside.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 122,
+      "nonEmptyLines": 122,
+      "metrics": {}
+    },
+    {
+      "path": "public/images/blog/co-nen-mua-micro-usb-xlr-hybrid-mv7-podmic-usb-q9u.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 131,
+      "nonEmptyLines": 131,
+      "metrics": {}
+    },
+    {
+      "path": "public/images/blog/co-nen-mua-reflection-filter-cho-phong-ngu-thu-vocal-inside.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 188,
+      "nonEmptyLines": 187,
+      "metrics": {}
+    },
+    {
+      "path": "public/images/blog/co-nen-mua-reflection-filter-cho-phong-ngu-thu-vocal.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 172,
+      "nonEmptyLines": 172,
+      "metrics": {}
+    },
+    {
+      "path": "public/images/blog/combo-home-studio-duoi-10-trieu-cho-singer-songwriter-inside.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 188,
+      "nonEmptyLines": 188,
+      "metrics": {}
+    },
+    {
+      "path": "public/images/blog/combo-home-studio-duoi-10-trieu-cho-singer-songwriter.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 183,
+      "nonEmptyLines": 183,
+      "metrics": {}
+    },
+    {
+      "path": "public/images/blog/combo-home-studio-duoi-20-trieu-cho-producer-ban-chuyen-inside.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 364,
+      "nonEmptyLines": 364,
+      "metrics": {}
+    },
+    {
+      "path": "public/images/blog/combo-home-studio-duoi-20-trieu-cho-producer-ban-chuyen.webp",
+      "language": "webp",
+      "fileCategory": "code",
+      "totalLines": 183,
+      "nonEmptyLines": 183,
+      "metrics": {}
+    }
+  ]
+}

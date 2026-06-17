@@ -68,8 +68,8 @@ export function useModelLoader(modelPath, options = {}) {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
   const [model, setModel] = useState(null);
-  const [deviceTier, setDeviceTier] = useState('desktop');
-  const cacheKeyRef = useRef(null);
+  const [deviceTier, setDeviceTier] = useState(() => getDeviceTier());
+  const [modelUrl, setModelUrl] = useState(null);
   const controllerRef = useRef(new AbortController());
 
   const {
@@ -110,7 +110,7 @@ export function useModelLoader(modelPath, options = {}) {
     setError(null);
 
     const optimizedPath = getOptimizedPath(modelPath);
-    cacheKeyRef.current = optimizedPath;
+    setModelUrl(optimizedPath);
 
     // Check cache first
     if (useCache && modelCache.has(optimizedPath)) {
@@ -195,11 +195,15 @@ export function useModelLoader(modelPath, options = {}) {
 
   // Load model on mount and when path changes
   useEffect(() => {
-    loadModel();
+    const controller = new AbortController();
+    controllerRef.current = controller;
+    const timer = setTimeout(() => {
+      void loadModel();
+    }, 0);
 
     return () => {
-      // Cancel ongoing requests on unmount
-      controllerRef.current.abort();
+      clearTimeout(timer);
+      controller.abort();
     };
   }, [loadModel]);
 
@@ -211,7 +215,7 @@ export function useModelLoader(modelPath, options = {}) {
     error,
     deviceTier,
     config,
-    modelUrl: cacheKeyRef.current,
+    modelUrl,
     retry: loadModel,
   };
 }

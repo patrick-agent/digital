@@ -1,0 +1,4012 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "public/models/Walking.glb",
+      "language": "glb",
+      "fileCategory": "code",
+      "totalLines": 40206,
+      "nonEmptyLines": 39962,
+      "metrics": {}
+    },
+    {
+      "path": "public/models/wave-hiphop-dance.glb",
+      "language": "glb",
+      "fileCategory": "code",
+      "totalLines": 40933,
+      "nonEmptyLines": 40689,
+      "metrics": {}
+    },
+    {
+      "path": "scripts/_generate-gear-report.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 323,
+      "nonEmptyLines": 300,
+      "functions": [
+        {
+          "name": "buildRegex",
+          "startLine": 182,
+          "endLine": 191,
+          "params": [
+            "term"
+          ]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "buildRegex",
+          "callee": "term.replace",
+          "lineNumber": 183
+        },
+        {
+          "caller": "buildRegex",
+          "callee": "term.trim",
+          "lineNumber": 186
+        },
+        {
+          "caller": "buildRegex",
+          "callee": "/^[a-zA-Z0-9-]+$/.test",
+          "lineNumber": 187
+        },
+        {
+          "caller": "buildRegex",
+          "callee": "escaped.replace",
+          "lineNumber": 190
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "scripts/analyze-bundle.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 174,
+      "nonEmptyLines": 147,
+      "functions": [
+        {
+          "name": "formatBytes",
+          "startLine": 29,
+          "endLine": 35,
+          "params": [
+            "bytes"
+          ]
+        },
+        {
+          "name": "getColoredSize",
+          "startLine": 37,
+          "endLine": 44,
+          "params": [
+            "bytes"
+          ]
+        },
+        {
+          "name": "getGzipSize",
+          "startLine": 46,
+          "endLine": 54,
+          "params": [
+            "filePath"
+          ]
+        },
+        {
+          "name": "analyzeDirectory",
+          "startLine": 56,
+          "endLine": 103,
+          "params": [
+            "dir"
+          ]
+        },
+        {
+          "name": "printSummary",
+          "startLine": 105,
+          "endLine": 166,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "formatBytes",
+          "callee": "Math.floor",
+          "lineNumber": 33
+        },
+        {
+          "caller": "formatBytes",
+          "callee": "Math.log",
+          "lineNumber": 33
+        },
+        {
+          "caller": "formatBytes",
+          "callee": "Math.log",
+          "lineNumber": 33
+        },
+        {
+          "caller": "formatBytes",
+          "callee": "parseFloat",
+          "lineNumber": 34
+        },
+        {
+          "caller": "formatBytes",
+          "callee": "(bytes / Math.pow(k, i)).toFixed",
+          "lineNumber": 34
+        },
+        {
+          "caller": "formatBytes",
+          "callee": "Math.pow",
+          "lineNumber": 34
+        },
+        {
+          "caller": "getColoredSize",
+          "callee": "formatBytes",
+          "lineNumber": 38
+        },
+        {
+          "caller": "getGzipSize",
+          "callee": "fs.readFileSync",
+          "lineNumber": 48
+        },
+        {
+          "caller": "getGzipSize",
+          "callee": "zlib.gzipSync",
+          "lineNumber": 49
+        },
+        {
+          "caller": "analyzeDirectory",
+          "callee": "fs.readdirSync",
+          "lineNumber": 59
+        },
+        {
+          "caller": "analyzeDirectory",
+          "callee": "item.isDirectory",
+          "lineNumber": 65
+        },
+        {
+          "caller": "analyzeDirectory",
+          "callee": "item.name.startsWith",
+          "lineNumber": 66
+        },
+        {
+          "caller": "analyzeDirectory",
+          "callee": "analyzeDirectory",
+          "lineNumber": 67
+        },
+        {
+          "caller": "analyzeDirectory",
+          "callee": "path.join",
+          "lineNumber": 68
+        },
+        {
+          "caller": "analyzeDirectory",
+          "callee": "files.push",
+          "lineNumber": 76
+        },
+        {
+          "caller": "analyzeDirectory",
+          "callee": "path.join",
+          "lineNumber": 85
+        },
+        {
+          "caller": "analyzeDirectory",
+          "callee": "fs.statSync",
+          "lineNumber": 86
+        },
+        {
+          "caller": "analyzeDirectory",
+          "callee": "getGzipSize",
+          "lineNumber": 87
+        },
+        {
+          "caller": "analyzeDirectory",
+          "callee": "files.push",
+          "lineNumber": 92
+        },
+        {
+          "caller": "printSummary",
+          "callee": "console.log",
+          "lineNumber": 106
+        },
+        {
+          "caller": "printSummary",
+          "callee": "fs.existsSync",
+          "lineNumber": 108
+        },
+        {
+          "caller": "printSummary",
+          "callee": "console.log",
+          "lineNumber": 109
+        },
+        {
+          "caller": "printSummary",
+          "callee": "path.join",
+          "lineNumber": 114
+        },
+        {
+          "caller": "printSummary",
+          "callee": "path.join",
+          "lineNumber": 115
+        },
+        {
+          "caller": "printSummary",
+          "callee": "fs.existsSync",
+          "lineNumber": 122
+        },
+        {
+          "caller": "printSummary",
+          "callee": "analyzeDirectory",
+          "lineNumber": 124
+        },
+        {
+          "caller": "printSummary",
+          "callee": "console.log",
+          "lineNumber": 128
+        },
+        {
+          "caller": "printSummary",
+          "callee": "console.log",
+          "lineNumber": 129
+        },
+        {
+          "caller": "printSummary",
+          "callee": "getColoredSize",
+          "lineNumber": 129
+        },
+        {
+          "caller": "printSummary",
+          "callee": "console.log",
+          "lineNumber": 130
+        },
+        {
+          "caller": "printSummary",
+          "callee": "getColoredSize",
+          "lineNumber": 130
+        },
+        {
+          "caller": "printSummary",
+          "callee": "result.files.sort",
+          "lineNumber": 133
+        },
+        {
+          "caller": "printSummary",
+          "callee": "sorted.slice",
+          "lineNumber": 134
+        },
+        {
+          "caller": "printSummary",
+          "callee": "console.log",
+          "lineNumber": 136
+        },
+        {
+          "caller": "printSummary",
+          "callee": "getColoredSize",
+          "lineNumber": 138
+        },
+        {
+          "caller": "printSummary",
+          "callee": "formatBytes",
+          "lineNumber": 139
+        },
+        {
+          "caller": "printSummary",
+          "callee": "console.log",
+          "lineNumber": 140
+        },
+        {
+          "caller": "printSummary",
+          "callee": "console.log",
+          "lineNumber": 144
+        },
+        {
+          "caller": "printSummary",
+          "callee": "console.log",
+          "lineNumber": 147
+        },
+        {
+          "caller": "printSummary",
+          "callee": "console.log",
+          "lineNumber": 148
+        },
+        {
+          "caller": "printSummary",
+          "callee": "getColoredSize",
+          "lineNumber": 148
+        },
+        {
+          "caller": "printSummary",
+          "callee": "console.log",
+          "lineNumber": 149
+        },
+        {
+          "caller": "printSummary",
+          "callee": "getColoredSize",
+          "lineNumber": 149
+        },
+        {
+          "caller": "printSummary",
+          "callee": "console.log",
+          "lineNumber": 150
+        },
+        {
+          "caller": "printSummary",
+          "callee": "console.log",
+          "lineNumber": 153
+        },
+        {
+          "caller": "printSummary",
+          "callee": "console.log",
+          "lineNumber": 155
+        },
+        {
+          "caller": "printSummary",
+          "callee": "console.log",
+          "lineNumber": 157
+        },
+        {
+          "caller": "printSummary",
+          "callee": "console.log",
+          "lineNumber": 159
+        },
+        {
+          "caller": "printSummary",
+          "callee": "console.log",
+          "lineNumber": 162
+        },
+        {
+          "caller": "printSummary",
+          "callee": "console.log",
+          "lineNumber": 163
+        },
+        {
+          "caller": "printSummary",
+          "callee": "console.log",
+          "lineNumber": 164
+        },
+        {
+          "caller": "printSummary",
+          "callee": "console.log",
+          "lineNumber": 165
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 5,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "scripts/audit-affiliate-products.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 199,
+      "nonEmptyLines": 161,
+      "functions": [
+        {
+          "name": "buildPatterns",
+          "startLine": 35,
+          "endLine": 63,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "buildPatterns",
+          "callee": "b.replace",
+          "lineNumber": 42
+        },
+        {
+          "caller": "buildPatterns",
+          "callee": "patterns.push",
+          "lineNumber": 44
+        },
+        {
+          "caller": "buildPatterns",
+          "callee": "m.replace",
+          "lineNumber": 49
+        },
+        {
+          "caller": "buildPatterns",
+          "callee": "patterns.push",
+          "lineNumber": 51
+        },
+        {
+          "caller": "buildPatterns",
+          "callee": "g.replace",
+          "lineNumber": 56
+        },
+        {
+          "caller": "buildPatterns",
+          "callee": "patterns.push",
+          "lineNumber": 58
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "scripts/backlink-assets/social-posts.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 36,
+      "nonEmptyLines": 20,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": "scripts/compress-models.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 127,
+      "nonEmptyLines": 104,
+      "functions": [
+        {
+          "name": "formatSize",
+          "startLine": 33,
+          "endLine": 37,
+          "params": [
+            "bytes"
+          ]
+        },
+        {
+          "name": "analyzeModels",
+          "startLine": 39,
+          "endLine": 71,
+          "params": []
+        },
+        {
+          "name": "compressGlbFiles",
+          "startLine": 73,
+          "endLine": 113,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "formatSize",
+          "callee": "(kb / 1024).toFixed",
+          "lineNumber": 35
+        },
+        {
+          "caller": "formatSize",
+          "callee": "kb.toFixed",
+          "lineNumber": 36
+        },
+        {
+          "caller": "analyzeModels",
+          "callee": "existsSync",
+          "lineNumber": 40
+        },
+        {
+          "caller": "analyzeModels",
+          "callee": "console.error",
+          "lineNumber": 41
+        },
+        {
+          "caller": "analyzeModels",
+          "callee": "process.exit",
+          "lineNumber": 42
+        },
+        {
+          "caller": "analyzeModels",
+          "callee": "readdirSync",
+          "lineNumber": 45
+        },
+        {
+          "caller": "analyzeModels",
+          "callee": "files.filter",
+          "lineNumber": 46
+        },
+        {
+          "caller": "analyzeModels",
+          "callee": "/\\.(fbx|glb|gltf)$/i.test",
+          "lineNumber": 46
+        },
+        {
+          "caller": "analyzeModels",
+          "callee": "console.log",
+          "lineNumber": 49
+        },
+        {
+          "caller": "analyzeModels",
+          "callee": "console.log",
+          "lineNumber": 53
+        },
+        {
+          "caller": "analyzeModels",
+          "callee": "modelFiles.sort",
+          "lineNumber": 56
+        },
+        {
+          "caller": "analyzeModels",
+          "callee": "join",
+          "lineNumber": 57
+        },
+        {
+          "caller": "analyzeModels",
+          "callee": "statSync",
+          "lineNumber": 58
+        },
+        {
+          "caller": "analyzeModels",
+          "callee": "extname(file).toLowerCase",
+          "lineNumber": 59
+        },
+        {
+          "caller": "analyzeModels",
+          "callee": "extname",
+          "lineNumber": 59
+        },
+        {
+          "caller": "analyzeModels",
+          "callee": "console.log",
+          "lineNumber": 63
+        },
+        {
+          "caller": "analyzeModels",
+          "callee": "file.padEnd",
+          "lineNumber": 63
+        },
+        {
+          "caller": "analyzeModels",
+          "callee": "formatSize(size).padStart",
+          "lineNumber": 63
+        },
+        {
+          "caller": "analyzeModels",
+          "callee": "formatSize",
+          "lineNumber": 63
+        },
+        {
+          "caller": "analyzeModels",
+          "callee": "console.log",
+          "lineNumber": 66
+        },
+        {
+          "caller": "analyzeModels",
+          "callee": "\"─\".repeat",
+          "lineNumber": 66
+        },
+        {
+          "caller": "analyzeModels",
+          "callee": "console.log",
+          "lineNumber": 67
+        },
+        {
+          "caller": "analyzeModels",
+          "callee": "formatSize",
+          "lineNumber": 67
+        },
+        {
+          "caller": "analyzeModels",
+          "callee": "console.log",
+          "lineNumber": 68
+        },
+        {
+          "caller": "compressGlbFiles",
+          "callee": "existsSync",
+          "lineNumber": 74
+        },
+        {
+          "caller": "compressGlbFiles",
+          "callee": "mkdirSync",
+          "lineNumber": 74
+        },
+        {
+          "caller": "compressGlbFiles",
+          "callee": "readdirSync(MODELS_DIR).filter",
+          "lineNumber": 76
+        },
+        {
+          "caller": "compressGlbFiles",
+          "callee": "readdirSync",
+          "lineNumber": 76
+        },
+        {
+          "caller": "compressGlbFiles",
+          "callee": "/\\.glb$/i.test",
+          "lineNumber": 76
+        },
+        {
+          "caller": "compressGlbFiles",
+          "callee": "console.log",
+          "lineNumber": 79
+        },
+        {
+          "caller": "compressGlbFiles",
+          "callee": "execSync",
+          "lineNumber": 84
+        },
+        {
+          "caller": "compressGlbFiles",
+          "callee": "console.log",
+          "lineNumber": 86
+        },
+        {
+          "caller": "compressGlbFiles",
+          "callee": "execSync",
+          "lineNumber": 87
+        },
+        {
+          "caller": "compressGlbFiles",
+          "callee": "join",
+          "lineNumber": 91
+        },
+        {
+          "caller": "compressGlbFiles",
+          "callee": "join",
+          "lineNumber": 92
+        },
+        {
+          "caller": "compressGlbFiles",
+          "callee": "statSync",
+          "lineNumber": 93
+        },
+        {
+          "caller": "compressGlbFiles",
+          "callee": "console.log",
+          "lineNumber": 95
+        },
+        {
+          "caller": "compressGlbFiles",
+          "callee": "execSync",
+          "lineNumber": 97
+        },
+        {
+          "caller": "compressGlbFiles",
+          "callee": "existsSync",
+          "lineNumber": 102
+        },
+        {
+          "caller": "compressGlbFiles",
+          "callee": "statSync",
+          "lineNumber": 103
+        },
+        {
+          "caller": "compressGlbFiles",
+          "callee": "((1 - newSize / originalSize) * 100).toFixed",
+          "lineNumber": 104
+        },
+        {
+          "caller": "compressGlbFiles",
+          "callee": "(originalSize / 1024).toFixed",
+          "lineNumber": 105
+        },
+        {
+          "caller": "compressGlbFiles",
+          "callee": "(newSize / 1024).toFixed",
+          "lineNumber": 106
+        },
+        {
+          "caller": "compressGlbFiles",
+          "callee": "console.log",
+          "lineNumber": 107
+        },
+        {
+          "caller": "compressGlbFiles",
+          "callee": "console.error",
+          "lineNumber": 110
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "scripts/extract-music-cover-art.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 66,
+      "nonEmptyLines": 53,
+      "functions": [
+        {
+          "name": "parseDataUrl",
+          "startLine": 11,
+          "endLine": 19,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "safeSlug",
+          "startLine": 21,
+          "endLine": 30,
+          "params": [
+            "item"
+          ]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "parseDataUrl",
+          "callee": "value.match",
+          "lineNumber": 13
+        },
+        {
+          "caller": "parseDataUrl",
+          "callee": "Buffer.from",
+          "lineNumber": 17
+        },
+        {
+          "caller": "safeSlug",
+          "callee": "(item.slug || item.title || item.id || \"release\")\n    .toString()\n    .toLowerCase()\n    .trim()\n    .replace(/\\s+/g, \"-\")\n    .replace(/[^a-z0-9-]/g, \"\")\n    .replace(/-+/g, \"-\")\n    .replace",
+          "lineNumber": 22
+        },
+        {
+          "caller": "safeSlug",
+          "callee": "(item.slug || item.title || item.id || \"release\")\n    .toString()\n    .toLowerCase()\n    .trim()\n    .replace(/\\s+/g, \"-\")\n    .replace(/[^a-z0-9-]/g, \"\")\n    .replace",
+          "lineNumber": 22
+        },
+        {
+          "caller": "safeSlug",
+          "callee": "(item.slug || item.title || item.id || \"release\")\n    .toString()\n    .toLowerCase()\n    .trim()\n    .replace(/\\s+/g, \"-\")\n    .replace",
+          "lineNumber": 22
+        },
+        {
+          "caller": "safeSlug",
+          "callee": "(item.slug || item.title || item.id || \"release\")\n    .toString()\n    .toLowerCase()\n    .trim()\n    .replace",
+          "lineNumber": 22
+        },
+        {
+          "caller": "safeSlug",
+          "callee": "(item.slug || item.title || item.id || \"release\")\n    .toString()\n    .toLowerCase()\n    .trim",
+          "lineNumber": 22
+        },
+        {
+          "caller": "safeSlug",
+          "callee": "(item.slug || item.title || item.id || \"release\")\n    .toString()\n    .toLowerCase",
+          "lineNumber": 22
+        },
+        {
+          "caller": "safeSlug",
+          "callee": "(item.slug || item.title || item.id || \"release\")\n    .toString",
+          "lineNumber": 22
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "scripts/fbx2glb.cjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 70,
+      "nonEmptyLines": 60,
+      "functions": [
+        {
+          "name": "convertFbxToGlb",
+          "startLine": 10,
+          "endLine": 54,
+          "params": [
+            "name"
+          ]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "convertFbxToGlb",
+          "callee": "path.join",
+          "lineNumber": 12
+        },
+        {
+          "caller": "convertFbxToGlb",
+          "callee": "path.join",
+          "lineNumber": 13
+        },
+        {
+          "caller": "convertFbxToGlb",
+          "callee": "fs.existsSync",
+          "lineNumber": 15
+        },
+        {
+          "caller": "convertFbxToGlb",
+          "callee": "console.error",
+          "lineNumber": 16
+        },
+        {
+          "caller": "convertFbxToGlb",
+          "callee": "resolve",
+          "lineNumber": 17
+        },
+        {
+          "caller": "convertFbxToGlb",
+          "callee": "console.log",
+          "lineNumber": 21
+        },
+        {
+          "caller": "convertFbxToGlb",
+          "callee": "loader.load",
+          "lineNumber": 26
+        },
+        {
+          "caller": "convertFbxToGlb",
+          "callee": "scene.add",
+          "lineNumber": 29
+        },
+        {
+          "caller": "convertFbxToGlb",
+          "callee": "exporter.parse",
+          "lineNumber": 32
+        },
+        {
+          "caller": "convertFbxToGlb",
+          "callee": "Buffer.from",
+          "lineNumber": 35
+        },
+        {
+          "caller": "convertFbxToGlb",
+          "callee": "fs.writeFileSync",
+          "lineNumber": 36
+        },
+        {
+          "caller": "convertFbxToGlb",
+          "callee": "console.log",
+          "lineNumber": 37
+        },
+        {
+          "caller": "convertFbxToGlb",
+          "callee": "(buffer.length / 1024 / 1024).toFixed",
+          "lineNumber": 37
+        },
+        {
+          "caller": "convertFbxToGlb",
+          "callee": "resolve",
+          "lineNumber": 38
+        },
+        {
+          "caller": "convertFbxToGlb",
+          "callee": "console.error",
+          "lineNumber": 41
+        },
+        {
+          "caller": "convertFbxToGlb",
+          "callee": "reject",
+          "lineNumber": 42
+        },
+        {
+          "caller": "convertFbxToGlb",
+          "callee": "console.error",
+          "lineNumber": 49
+        },
+        {
+          "caller": "convertFbxToGlb",
+          "callee": "reject",
+          "lineNumber": 50
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "scripts/fix-headings.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 27,
+      "nonEmptyLines": 23,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "scripts/fix-tables.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 89,
+      "nonEmptyLines": 78,
+      "functions": [
+        {
+          "name": "isTableDelimiter",
+          "startLine": 9,
+          "endLine": 12,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "splitTableRow",
+          "startLine": 14,
+          "endLine": 16,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "tableAlignment",
+          "startLine": 18,
+          "endLine": 23,
+          "params": [
+            "delimiter"
+          ]
+        },
+        {
+          "name": "parseEmbeddedTable",
+          "startLine": 25,
+          "endLine": 58,
+          "params": [
+            "inner"
+          ]
+        },
+        {
+          "name": "renderTableHtml",
+          "startLine": 60,
+          "endLine": 73,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "isTableDelimiter",
+          "callee": "value.trim().replace(/^\\|/, \"\").replace(/\\|$/, \"\").split",
+          "lineNumber": 10
+        },
+        {
+          "caller": "isTableDelimiter",
+          "callee": "value.trim().replace(/^\\|/, \"\").replace",
+          "lineNumber": 10
+        },
+        {
+          "caller": "isTableDelimiter",
+          "callee": "value.trim().replace",
+          "lineNumber": 10
+        },
+        {
+          "caller": "isTableDelimiter",
+          "callee": "value.trim",
+          "lineNumber": 10
+        },
+        {
+          "caller": "isTableDelimiter",
+          "callee": "cells.every",
+          "lineNumber": 11
+        },
+        {
+          "caller": "isTableDelimiter",
+          "callee": "/^\\s*:?-{3,}:?\\s*$/.test",
+          "lineNumber": 11
+        },
+        {
+          "caller": "splitTableRow",
+          "callee": "value.trim().replace(/^\\|/, \"\").replace(/\\|$/, \"\").split(\"|\").map",
+          "lineNumber": 15
+        },
+        {
+          "caller": "splitTableRow",
+          "callee": "value.trim().replace(/^\\|/, \"\").replace(/\\|$/, \"\").split",
+          "lineNumber": 15
+        },
+        {
+          "caller": "splitTableRow",
+          "callee": "value.trim().replace(/^\\|/, \"\").replace",
+          "lineNumber": 15
+        },
+        {
+          "caller": "splitTableRow",
+          "callee": "value.trim().replace",
+          "lineNumber": 15
+        },
+        {
+          "caller": "splitTableRow",
+          "callee": "value.trim",
+          "lineNumber": 15
+        },
+        {
+          "caller": "splitTableRow",
+          "callee": "cell.trim",
+          "lineNumber": 15
+        },
+        {
+          "caller": "tableAlignment",
+          "callee": "delimiter.trim",
+          "lineNumber": 19
+        },
+        {
+          "caller": "tableAlignment",
+          "callee": "trimmed.startsWith",
+          "lineNumber": 20
+        },
+        {
+          "caller": "tableAlignment",
+          "callee": "trimmed.endsWith",
+          "lineNumber": 20
+        },
+        {
+          "caller": "tableAlignment",
+          "callee": "trimmed.endsWith",
+          "lineNumber": 21
+        },
+        {
+          "caller": "parseEmbeddedTable",
+          "callee": "inner.split(/\\r?\\n/).map(l => l.trim()).filter",
+          "lineNumber": 26
+        },
+        {
+          "caller": "parseEmbeddedTable",
+          "callee": "inner.split(/\\r?\\n/).map",
+          "lineNumber": 26
+        },
+        {
+          "caller": "parseEmbeddedTable",
+          "callee": "inner.split",
+          "lineNumber": 26
+        },
+        {
+          "caller": "parseEmbeddedTable",
+          "callee": "l.trim",
+          "lineNumber": 26
+        },
+        {
+          "caller": "parseEmbeddedTable",
+          "callee": "lines.findIndex",
+          "lineNumber": 29
+        },
+        {
+          "caller": "parseEmbeddedTable",
+          "callee": "isTableDelimiter",
+          "lineNumber": 29
+        },
+        {
+          "caller": "parseEmbeddedTable",
+          "callee": "lines[delimIdx - 1].includes",
+          "lineNumber": 30
+        },
+        {
+          "caller": "parseEmbeddedTable",
+          "callee": "splitTableRow",
+          "lineNumber": 31
+        },
+        {
+          "caller": "parseEmbeddedTable",
+          "callee": "splitTableRow(lines[delimIdx]).map",
+          "lineNumber": 32
+        },
+        {
+          "caller": "parseEmbeddedTable",
+          "callee": "splitTableRow",
+          "lineNumber": 32
+        },
+        {
+          "caller": "parseEmbeddedTable",
+          "callee": "lines[i].includes",
+          "lineNumber": 35
+        },
+        {
+          "caller": "parseEmbeddedTable",
+          "callee": "rows.push",
+          "lineNumber": 35
+        },
+        {
+          "caller": "parseEmbeddedTable",
+          "callee": "splitTableRow",
+          "lineNumber": 35
+        },
+        {
+          "caller": "parseEmbeddedTable",
+          "callee": "inner.trim().split(\"|\").map",
+          "lineNumber": 41
+        },
+        {
+          "caller": "parseEmbeddedTable",
+          "callee": "inner.trim().split",
+          "lineNumber": 41
+        },
+        {
+          "caller": "parseEmbeddedTable",
+          "callee": "inner.trim",
+          "lineNumber": 41
+        },
+        {
+          "caller": "parseEmbeddedTable",
+          "callee": "s.trim",
+          "lineNumber": 41
+        },
+        {
+          "caller": "parseEmbeddedTable",
+          "callee": "cells.forEach",
+          "lineNumber": 43
+        },
+        {
+          "caller": "parseEmbeddedTable",
+          "callee": "emptyIdx.push",
+          "lineNumber": 43
+        },
+        {
+          "caller": "parseEmbeddedTable",
+          "callee": "groups.push",
+          "lineNumber": 48
+        },
+        {
+          "caller": "parseEmbeddedTable",
+          "callee": "cells.slice",
+          "lineNumber": 48
+        },
+        {
+          "caller": "parseEmbeddedTable",
+          "callee": "alignCells.every",
+          "lineNumber": 52
+        },
+        {
+          "caller": "parseEmbeddedTable",
+          "callee": "/^:?-{3,}:?$/.test",
+          "lineNumber": 52
+        },
+        {
+          "caller": "parseEmbeddedTable",
+          "callee": "alignCells.map",
+          "lineNumber": 55
+        },
+        {
+          "caller": "parseEmbeddedTable",
+          "callee": "groups.slice",
+          "lineNumber": 56
+        },
+        {
+          "caller": "renderTableHtml",
+          "callee": "headers\n    .map((cell, i) => `<th style=\"text-align:${alignments[i] || \"left\"}\">${cell}</th>`)\n    .join",
+          "lineNumber": 61
+        },
+        {
+          "caller": "renderTableHtml",
+          "callee": "headers\n    .map",
+          "lineNumber": 61
+        },
+        {
+          "caller": "renderTableHtml",
+          "callee": "rows\n    .map((row) => {\n      const cells = headers\n        .map((_, i) => `<td style=\"text-align:${alignments[i] || \"left\"}\">${row[i] || \"\"}</td>`)\n        .join(\"\")\n      return `<tr>${cells}</tr>`\n    })\n    .join",
+          "lineNumber": 64
+        },
+        {
+          "caller": "renderTableHtml",
+          "callee": "rows\n    .map",
+          "lineNumber": 64
+        },
+        {
+          "caller": "renderTableHtml",
+          "callee": "headers\n        .map((_, i) => `<td style=\"text-align:${alignments[i] || \"left\"}\">${row[i] || \"\"}</td>`)\n        .join",
+          "lineNumber": 66
+        },
+        {
+          "caller": "renderTableHtml",
+          "callee": "headers\n        .map",
+          "lineNumber": 66
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 5,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "scripts/generate-favicon.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 145,
+      "nonEmptyLines": 121,
+      "functions": [
+        {
+          "name": "generateTintedFavicon",
+          "startLine": 24,
+          "endLine": 67,
+          "params": [
+            "inputBuffer",
+            "size"
+          ]
+        },
+        {
+          "name": "createIcoFromPngBuffer",
+          "startLine": 69,
+          "endLine": 95,
+          "params": [
+            "inputBuffer"
+          ]
+        },
+        {
+          "name": "generateFavicon",
+          "startLine": 97,
+          "endLine": 143,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "generateTintedFavicon",
+          "callee": "Math.round",
+          "lineNumber": 26
+        },
+        {
+          "caller": "generateTintedFavicon",
+          "callee": "sharp(inputBuffer)\r\n    .resize(scaledSize, scaledSize, { fit: \"cover\" })\r\n    .extract({ left: Math.round(scaledSize * 0.045), top: Math.round(scaledSize * 0.045), width: size, height: size })\r\n    .ensureAlpha()\r\n    .png()\r\n    .toBuffer",
+          "lineNumber": 27
+        },
+        {
+          "caller": "generateTintedFavicon",
+          "callee": "sharp(inputBuffer)\r\n    .resize(scaledSize, scaledSize, { fit: \"cover\" })\r\n    .extract({ left: Math.round(scaledSize * 0.045), top: Math.round(scaledSize * 0.045), width: size, height: size })\r\n    .ensureAlpha()\r\n    .png",
+          "lineNumber": 27
+        },
+        {
+          "caller": "generateTintedFavicon",
+          "callee": "sharp(inputBuffer)\r\n    .resize(scaledSize, scaledSize, { fit: \"cover\" })\r\n    .extract({ left: Math.round(scaledSize * 0.045), top: Math.round(scaledSize * 0.045), width: size, height: size })\r\n    .ensureAlpha",
+          "lineNumber": 27
+        },
+        {
+          "caller": "generateTintedFavicon",
+          "callee": "sharp(inputBuffer)\r\n    .resize(scaledSize, scaledSize, { fit: \"cover\" })\r\n    .extract",
+          "lineNumber": 27
+        },
+        {
+          "caller": "generateTintedFavicon",
+          "callee": "sharp(inputBuffer)\r\n    .resize",
+          "lineNumber": 27
+        },
+        {
+          "caller": "generateTintedFavicon",
+          "callee": "sharp",
+          "lineNumber": 27
+        },
+        {
+          "caller": "generateTintedFavicon",
+          "callee": "Math.round",
+          "lineNumber": 29
+        },
+        {
+          "caller": "generateTintedFavicon",
+          "callee": "Math.round",
+          "lineNumber": 29
+        },
+        {
+          "caller": "generateTintedFavicon",
+          "callee": "sharp(resized).raw().toBuffer",
+          "lineNumber": 35
+        },
+        {
+          "caller": "generateTintedFavicon",
+          "callee": "sharp(resized).raw",
+          "lineNumber": 35
+        },
+        {
+          "caller": "generateTintedFavicon",
+          "callee": "sharp",
+          "lineNumber": 35
+        },
+        {
+          "caller": "generateTintedFavicon",
+          "callee": "Buffer.alloc",
+          "lineNumber": 37
+        },
+        {
+          "caller": "generateTintedFavicon",
+          "callee": "Math.round",
+          "lineNumber": 57
+        },
+        {
+          "caller": "generateTintedFavicon",
+          "callee": "Math.round",
+          "lineNumber": 58
+        },
+        {
+          "caller": "generateTintedFavicon",
+          "callee": "Math.round",
+          "lineNumber": 59
+        },
+        {
+          "caller": "generateTintedFavicon",
+          "callee": "sharp(output, {\n    raw: { width: size, height: size, channels: 4 },\n  }).png().toBuffer",
+          "lineNumber": 64
+        },
+        {
+          "caller": "generateTintedFavicon",
+          "callee": "sharp(output, {\n    raw: { width: size, height: size, channels: 4 },\n  }).png",
+          "lineNumber": 64
+        },
+        {
+          "caller": "generateTintedFavicon",
+          "callee": "sharp",
+          "lineNumber": 64
+        },
+        {
+          "caller": "createIcoFromPngBuffer",
+          "callee": "sharp(inputBuffer)\n    .resize(32, 32, { fit: \"cover\" })\n    .png()\n    .toBuffer",
+          "lineNumber": 70
+        },
+        {
+          "caller": "createIcoFromPngBuffer",
+          "callee": "sharp(inputBuffer)\n    .resize(32, 32, { fit: \"cover\" })\n    .png",
+          "lineNumber": 70
+        },
+        {
+          "caller": "createIcoFromPngBuffer",
+          "callee": "sharp(inputBuffer)\n    .resize",
+          "lineNumber": 70
+        },
+        {
+          "caller": "createIcoFromPngBuffer",
+          "callee": "sharp",
+          "lineNumber": 70
+        },
+        {
+          "caller": "createIcoFromPngBuffer",
+          "callee": "sharp(pngBuffer).metadata",
+          "lineNumber": 75
+        },
+        {
+          "caller": "createIcoFromPngBuffer",
+          "callee": "sharp",
+          "lineNumber": 75
+        },
+        {
+          "caller": "createIcoFromPngBuffer",
+          "callee": "Buffer.alloc",
+          "lineNumber": 79
+        },
+        {
+          "caller": "createIcoFromPngBuffer",
+          "callee": "iconDir.writeUInt16LE",
+          "lineNumber": 80
+        },
+        {
+          "caller": "createIcoFromPngBuffer",
+          "callee": "iconDir.writeUInt16LE",
+          "lineNumber": 81
+        },
+        {
+          "caller": "createIcoFromPngBuffer",
+          "callee": "iconDir.writeUInt16LE",
+          "lineNumber": 82
+        },
+        {
+          "caller": "createIcoFromPngBuffer",
+          "callee": "Buffer.alloc",
+          "lineNumber": 84
+        },
+        {
+          "caller": "createIcoFromPngBuffer",
+          "callee": "iconEntry.writeUInt8",
+          "lineNumber": 85
+        },
+        {
+          "caller": "createIcoFromPngBuffer",
+          "callee": "iconEntry.writeUInt8",
+          "lineNumber": 86
+        },
+        {
+          "caller": "createIcoFromPngBuffer",
+          "callee": "iconEntry.writeUInt8",
+          "lineNumber": 87
+        },
+        {
+          "caller": "createIcoFromPngBuffer",
+          "callee": "iconEntry.writeUInt8",
+          "lineNumber": 88
+        },
+        {
+          "caller": "createIcoFromPngBuffer",
+          "callee": "iconEntry.writeUInt16LE",
+          "lineNumber": 89
+        },
+        {
+          "caller": "createIcoFromPngBuffer",
+          "callee": "iconEntry.writeUInt16LE",
+          "lineNumber": 90
+        },
+        {
+          "caller": "createIcoFromPngBuffer",
+          "callee": "iconEntry.writeUInt32LE",
+          "lineNumber": 91
+        },
+        {
+          "caller": "createIcoFromPngBuffer",
+          "callee": "iconEntry.writeUInt32LE",
+          "lineNumber": 92
+        },
+        {
+          "caller": "createIcoFromPngBuffer",
+          "callee": "Buffer.concat",
+          "lineNumber": 94
+        },
+        {
+          "caller": "generateFavicon",
+          "callee": "fs.existsSync",
+          "lineNumber": 99
+        },
+        {
+          "caller": "generateFavicon",
+          "callee": "console.error",
+          "lineNumber": 100
+        },
+        {
+          "caller": "generateFavicon",
+          "callee": "process.exit",
+          "lineNumber": 101
+        },
+        {
+          "caller": "generateFavicon",
+          "callee": "fs.readFileSync",
+          "lineNumber": 104
+        },
+        {
+          "caller": "generateFavicon",
+          "callee": "path.join",
+          "lineNumber": 107
+        },
+        {
+          "caller": "generateFavicon",
+          "callee": "generateTintedFavicon",
+          "lineNumber": 108
+        },
+        {
+          "caller": "generateFavicon",
+          "callee": "sharp(favicon256).png({ compressionLevel: 9 }).toFile",
+          "lineNumber": 109
+        },
+        {
+          "caller": "generateFavicon",
+          "callee": "sharp(favicon256).png",
+          "lineNumber": 109
+        },
+        {
+          "caller": "generateFavicon",
+          "callee": "sharp",
+          "lineNumber": 109
+        },
+        {
+          "caller": "generateFavicon",
+          "callee": "console.log",
+          "lineNumber": 110
+        },
+        {
+          "caller": "generateFavicon",
+          "callee": "path.join",
+          "lineNumber": 113
+        },
+        {
+          "caller": "generateFavicon",
+          "callee": "fs.writeFileSync",
+          "lineNumber": 114
+        },
+        {
+          "caller": "generateFavicon",
+          "callee": "console.log",
+          "lineNumber": 115
+        },
+        {
+          "caller": "generateFavicon",
+          "callee": "path.join",
+          "lineNumber": 118
+        },
+        {
+          "caller": "generateFavicon",
+          "callee": "generateTintedFavicon",
+          "lineNumber": 119
+        },
+        {
+          "caller": "generateFavicon",
+          "callee": "createIcoFromPngBuffer",
+          "lineNumber": 120
+        },
+        {
+          "caller": "generateFavicon",
+          "callee": "fs.writeFileSync",
+          "lineNumber": 121
+        },
+        {
+          "caller": "generateFavicon",
+          "callee": "console.log",
+          "lineNumber": 122
+        },
+        {
+          "caller": "generateFavicon",
+          "callee": "path.join",
+          "lineNumber": 125
+        },
+        {
+          "caller": "generateFavicon",
+          "callee": "generateTintedFavicon",
+          "lineNumber": 126
+        },
+        {
+          "caller": "generateFavicon",
+          "callee": "sharp(apple180).png({ compressionLevel: 9 }).toFile",
+          "lineNumber": 127
+        },
+        {
+          "caller": "generateFavicon",
+          "callee": "sharp(apple180).png",
+          "lineNumber": 127
+        },
+        {
+          "caller": "generateFavicon",
+          "callee": "sharp",
+          "lineNumber": 127
+        },
+        {
+          "caller": "generateFavicon",
+          "callee": "console.log",
+          "lineNumber": 128
+        },
+        {
+          "caller": "generateFavicon",
+          "callee": "path.join",
+          "lineNumber": 130
+        },
+        {
+          "caller": "generateFavicon",
+          "callee": "fs.writeFileSync",
+          "lineNumber": 131
+        },
+        {
+          "caller": "generateFavicon",
+          "callee": "console.log",
+          "lineNumber": 132
+        },
+        {
+          "caller": "generateFavicon",
+          "callee": "path.join",
+          "lineNumber": 135
+        },
+        {
+          "caller": "generateFavicon",
+          "callee": "sharp(inputBuffer)\n    .resize(100, 100, { fit: \"contain\", background: { r: 0, g: 0, b: 0, alpha: 0 } })\n    .png({ compressionLevel: 9 })\r\n    .toFile",
+          "lineNumber": 136
+        },
+        {
+          "caller": "generateFavicon",
+          "callee": "sharp(inputBuffer)\n    .resize(100, 100, { fit: \"contain\", background: { r: 0, g: 0, b: 0, alpha: 0 } })\n    .png",
+          "lineNumber": 136
+        },
+        {
+          "caller": "generateFavicon",
+          "callee": "sharp(inputBuffer)\n    .resize",
+          "lineNumber": 136
+        },
+        {
+          "caller": "generateFavicon",
+          "callee": "sharp",
+          "lineNumber": 136
+        },
+        {
+          "caller": "generateFavicon",
+          "callee": "console.log",
+          "lineNumber": 140
+        },
+        {
+          "caller": "generateFavicon",
+          "callee": "console.log",
+          "lineNumber": 142
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "scripts/google-indexing-oauth.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 139,
+      "nonEmptyLines": 108,
+      "functions": [
+        {
+          "name": "getArgValue",
+          "startLine": 14,
+          "endLine": 23,
+          "params": [
+            "name"
+          ]
+        },
+        {
+          "name": "loadEnvText",
+          "startLine": 25,
+          "endLine": 28,
+          "params": []
+        },
+        {
+          "name": "parseEnv",
+          "startLine": 30,
+          "endLine": 51,
+          "params": [
+            "text"
+          ]
+        },
+        {
+          "name": "setEnvValue",
+          "startLine": 53,
+          "endLine": 60,
+          "params": [
+            "text",
+            "name",
+            "value"
+          ]
+        },
+        {
+          "name": "loadClientJson",
+          "startLine": 62,
+          "endLine": 76,
+          "params": [
+            "clientJsonPath"
+          ]
+        },
+        {
+          "name": "getClient",
+          "startLine": 78,
+          "endLine": 88,
+          "params": [
+            "env"
+          ]
+        },
+        {
+          "name": "main",
+          "startLine": 90,
+          "endLine": 134,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getArgValue",
+          "callee": "argv.find",
+          "lineNumber": 16
+        },
+        {
+          "caller": "getArgValue",
+          "callee": "value.startsWith",
+          "lineNumber": 16
+        },
+        {
+          "caller": "getArgValue",
+          "callee": "arg.slice",
+          "lineNumber": 17
+        },
+        {
+          "caller": "getArgValue",
+          "callee": "argv.indexOf",
+          "lineNumber": 19
+        },
+        {
+          "caller": "loadEnvText",
+          "callee": "existsSync",
+          "lineNumber": 26
+        },
+        {
+          "caller": "loadEnvText",
+          "callee": "readFile",
+          "lineNumber": 27
+        },
+        {
+          "caller": "parseEnv",
+          "callee": "text.split",
+          "lineNumber": 33
+        },
+        {
+          "caller": "parseEnv",
+          "callee": "line.trim",
+          "lineNumber": 34
+        },
+        {
+          "caller": "parseEnv",
+          "callee": "trimmed.startsWith",
+          "lineNumber": 35
+        },
+        {
+          "caller": "parseEnv",
+          "callee": "trimmed.indexOf",
+          "lineNumber": 37
+        },
+        {
+          "caller": "parseEnv",
+          "callee": "trimmed.slice(0, eq).trim",
+          "lineNumber": 40
+        },
+        {
+          "caller": "parseEnv",
+          "callee": "trimmed.slice",
+          "lineNumber": 40
+        },
+        {
+          "caller": "parseEnv",
+          "callee": "trimmed.slice(eq + 1).trim",
+          "lineNumber": 41
+        },
+        {
+          "caller": "parseEnv",
+          "callee": "trimmed.slice",
+          "lineNumber": 41
+        },
+        {
+          "caller": "parseEnv",
+          "callee": "value.startsWith",
+          "lineNumber": 43
+        },
+        {
+          "caller": "parseEnv",
+          "callee": "value.endsWith",
+          "lineNumber": 43
+        },
+        {
+          "caller": "parseEnv",
+          "callee": "value.startsWith",
+          "lineNumber": 43
+        },
+        {
+          "caller": "parseEnv",
+          "callee": "value.endsWith",
+          "lineNumber": 43
+        },
+        {
+          "caller": "parseEnv",
+          "callee": "value.slice",
+          "lineNumber": 44
+        },
+        {
+          "caller": "setEnvValue",
+          "callee": "JSON.stringify",
+          "lineNumber": 54
+        },
+        {
+          "caller": "setEnvValue",
+          "callee": "name.replace",
+          "lineNumber": 55
+        },
+        {
+          "caller": "setEnvValue",
+          "callee": "re.test",
+          "lineNumber": 58
+        },
+        {
+          "caller": "setEnvValue",
+          "callee": "text.replace",
+          "lineNumber": 58
+        },
+        {
+          "caller": "setEnvValue",
+          "callee": "text.endsWith",
+          "lineNumber": 59
+        },
+        {
+          "caller": "loadClientJson",
+          "callee": "JSON.parse",
+          "lineNumber": 65
+        },
+        {
+          "caller": "loadClientJson",
+          "callee": "readFile",
+          "lineNumber": 65
+        },
+        {
+          "caller": "main",
+          "callee": "loadEnvText",
+          "lineNumber": 91
+        },
+        {
+          "caller": "main",
+          "callee": "parseEnv",
+          "lineNumber": 92
+        },
+        {
+          "caller": "main",
+          "callee": "getArgValue",
+          "lineNumber": 94
+        },
+        {
+          "caller": "main",
+          "callee": "loadClientJson",
+          "lineNumber": 95
+        },
+        {
+          "caller": "main",
+          "callee": "setEnvValue",
+          "lineNumber": 98
+        },
+        {
+          "caller": "main",
+          "callee": "setEnvValue",
+          "lineNumber": 99
+        },
+        {
+          "caller": "main",
+          "callee": "setEnvValue",
+          "lineNumber": 100
+        },
+        {
+          "caller": "main",
+          "callee": "writeFile",
+          "lineNumber": 101
+        },
+        {
+          "caller": "main",
+          "callee": "parseEnv",
+          "lineNumber": 102
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 103
+        },
+        {
+          "caller": "main",
+          "callee": "getClient",
+          "lineNumber": 106
+        },
+        {
+          "caller": "main",
+          "callee": "getArgValue",
+          "lineNumber": 108
+        },
+        {
+          "caller": "main",
+          "callee": "oauth2Client.generateAuthUrl",
+          "lineNumber": 111
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 117
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 118
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 119
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 120
+        },
+        {
+          "caller": "main",
+          "callee": "oauth2Client.getToken",
+          "lineNumber": 124
+        },
+        {
+          "caller": "main",
+          "callee": "loadEnvText",
+          "lineNumber": 129
+        },
+        {
+          "caller": "main",
+          "callee": "setEnvValue",
+          "lineNumber": 130
+        },
+        {
+          "caller": "main",
+          "callee": "writeFile",
+          "lineNumber": 131
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 133
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 7,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "scripts/index-urls.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 94,
+      "nonEmptyLines": 79,
+      "functions": [
+        {
+          "name": "getAuth",
+          "startLine": 8,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "submitViaSearchConsole",
+          "startLine": 22,
+          "endLine": 47,
+          "params": []
+        },
+        {
+          "name": "pingGoogle",
+          "startLine": 49,
+          "endLine": 66,
+          "params": []
+        },
+        {
+          "name": "main",
+          "startLine": 68,
+          "endLine": 89,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getAuth",
+          "callee": "(process.env.GOOGLE_INDEXING_PRIVATE_KEY || \"\").replace",
+          "lineNumber": 10
+        },
+        {
+          "caller": "submitViaSearchConsole",
+          "callee": "getAuth",
+          "lineNumber": 23
+        },
+        {
+          "caller": "submitViaSearchConsole",
+          "callee": "console.log",
+          "lineNumber": 25
+        },
+        {
+          "caller": "submitViaSearchConsole",
+          "callee": "google.webmasters",
+          "lineNumber": 30
+        },
+        {
+          "caller": "submitViaSearchConsole",
+          "callee": "webmasters.sitemaps.submit",
+          "lineNumber": 35
+        },
+        {
+          "caller": "submitViaSearchConsole",
+          "callee": "console.log",
+          "lineNumber": 40
+        },
+        {
+          "caller": "submitViaSearchConsole",
+          "callee": "console.log",
+          "lineNumber": 44
+        },
+        {
+          "caller": "pingGoogle",
+          "callee": "console.log",
+          "lineNumber": 50
+        },
+        {
+          "caller": "pingGoogle",
+          "callee": "console.log",
+          "lineNumber": 51
+        },
+        {
+          "caller": "pingGoogle",
+          "callee": "fetch",
+          "lineNumber": 53
+        },
+        {
+          "caller": "pingGoogle",
+          "callee": "res.text().catch",
+          "lineNumber": 54
+        },
+        {
+          "caller": "pingGoogle",
+          "callee": "res.text",
+          "lineNumber": 54
+        },
+        {
+          "caller": "pingGoogle",
+          "callee": "console.log",
+          "lineNumber": 55
+        },
+        {
+          "caller": "pingGoogle",
+          "callee": "console.log",
+          "lineNumber": 58
+        },
+        {
+          "caller": "pingGoogle",
+          "callee": "/deprecated/i.test",
+          "lineNumber": 61
+        },
+        {
+          "caller": "pingGoogle",
+          "callee": "console.log",
+          "lineNumber": 62
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 70
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 71
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 75
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 76
+        },
+        {
+          "caller": "main",
+          "callee": "submitViaSearchConsole",
+          "lineNumber": 78
+        },
+        {
+          "caller": "main",
+          "callee": "pingGoogle",
+          "lineNumber": 79
+        },
+        {
+          "caller": "main",
+          "callee": "console.error",
+          "lineNumber": 82
+        },
+        {
+          "caller": "main",
+          "callee": "process.exit",
+          "lineNumber": 83
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 87
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 4,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "scripts/indexing-api.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 258,
+      "nonEmptyLines": 207,
+      "functions": [
+        {
+          "name": "getArgValue",
+          "startLine": 18,
+          "endLine": 27,
+          "params": [
+            "name"
+          ]
+        },
+        {
+          "name": "loadEnv",
+          "startLine": 29,
+          "endLine": 54,
+          "params": []
+        },
+        {
+          "name": "decodeXml",
+          "startLine": 56,
+          "endLine": 63,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "unique",
+          "startLine": 65,
+          "endLine": 67,
+          "params": [
+            "values"
+          ]
+        },
+        {
+          "name": "fetchSitemapUrls",
+          "startLine": 69,
+          "endLine": 89,
+          "params": [
+            "sitemapUrl"
+          ]
+        },
+        {
+          "name": "getExplicitUrls",
+          "startLine": 91,
+          "endLine": 96,
+          "params": []
+        },
+        {
+          "name": "assertAbsoluteUrls",
+          "startLine": 98,
+          "endLine": 107,
+          "params": [
+            "urls"
+          ]
+        },
+        {
+          "name": "getServiceAccountCredentials",
+          "startLine": 109,
+          "endLine": 122,
+          "params": [
+            "env"
+          ]
+        },
+        {
+          "name": "getOAuthCredentials",
+          "startLine": 124,
+          "endLine": 130,
+          "params": [
+            "env"
+          ]
+        },
+        {
+          "name": "getAuth",
+          "startLine": 132,
+          "endLine": 156,
+          "params": [
+            "env"
+          ]
+        },
+        {
+          "name": "notifyUrls",
+          "startLine": 158,
+          "endLine": 184,
+          "params": []
+        },
+        {
+          "name": "main",
+          "startLine": 186,
+          "endLine": 253,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getArgValue",
+          "callee": "argv.find",
+          "lineNumber": 20
+        },
+        {
+          "caller": "getArgValue",
+          "callee": "value.startsWith",
+          "lineNumber": 20
+        },
+        {
+          "caller": "getArgValue",
+          "callee": "arg.slice",
+          "lineNumber": 21
+        },
+        {
+          "caller": "getArgValue",
+          "callee": "argv.indexOf",
+          "lineNumber": 23
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "path.join",
+          "lineNumber": 30
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "existsSync",
+          "lineNumber": 31
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "readFile",
+          "lineNumber": 33
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "text.split",
+          "lineNumber": 36
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "line.trim",
+          "lineNumber": 37
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "trimmed.startsWith",
+          "lineNumber": 38
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "trimmed.indexOf",
+          "lineNumber": 40
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "trimmed.slice(0, eq).trim",
+          "lineNumber": 43
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "trimmed.slice",
+          "lineNumber": 43
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "trimmed.slice(eq + 1).trim",
+          "lineNumber": 44
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "trimmed.slice",
+          "lineNumber": 44
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "value.startsWith",
+          "lineNumber": 46
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "value.endsWith",
+          "lineNumber": 46
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "value.startsWith",
+          "lineNumber": 46
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "value.endsWith",
+          "lineNumber": 46
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "value.slice",
+          "lineNumber": 47
+        },
+        {
+          "caller": "decodeXml",
+          "callee": "value\n    .replace(/&amp;/g, \"&\")\n    .replace(/&lt;/g, \"<\")\n    .replace(/&gt;/g, \">\")\n    .replace(/&quot;/g, '\"')\n    .replace",
+          "lineNumber": 57
+        },
+        {
+          "caller": "decodeXml",
+          "callee": "value\n    .replace(/&amp;/g, \"&\")\n    .replace(/&lt;/g, \"<\")\n    .replace(/&gt;/g, \">\")\n    .replace",
+          "lineNumber": 57
+        },
+        {
+          "caller": "decodeXml",
+          "callee": "value\n    .replace(/&amp;/g, \"&\")\n    .replace(/&lt;/g, \"<\")\n    .replace",
+          "lineNumber": 57
+        },
+        {
+          "caller": "decodeXml",
+          "callee": "value\n    .replace(/&amp;/g, \"&\")\n    .replace",
+          "lineNumber": 57
+        },
+        {
+          "caller": "decodeXml",
+          "callee": "value\n    .replace",
+          "lineNumber": 57
+        },
+        {
+          "caller": "unique",
+          "callee": "values.filter",
+          "lineNumber": 66
+        },
+        {
+          "caller": "fetchSitemapUrls",
+          "callee": "seenSitemaps.has",
+          "lineNumber": 70
+        },
+        {
+          "caller": "fetchSitemapUrls",
+          "callee": "seenSitemaps.add",
+          "lineNumber": 71
+        },
+        {
+          "caller": "fetchSitemapUrls",
+          "callee": "fetch",
+          "lineNumber": 73
+        },
+        {
+          "caller": "fetchSitemapUrls",
+          "callee": "res.text",
+          "lineNumber": 78
+        },
+        {
+          "caller": "fetchSitemapUrls",
+          "callee": "unique",
+          "lineNumber": 79
+        },
+        {
+          "caller": "fetchSitemapUrls",
+          "callee": "[...xml.matchAll(/<loc>\\s*([^<]+)\\s*<\\/loc>/gi)].map",
+          "lineNumber": 80
+        },
+        {
+          "caller": "fetchSitemapUrls",
+          "callee": "xml.matchAll",
+          "lineNumber": 80
+        },
+        {
+          "caller": "fetchSitemapUrls",
+          "callee": "decodeXml",
+          "lineNumber": 80
+        },
+        {
+          "caller": "fetchSitemapUrls",
+          "callee": "match[1].trim",
+          "lineNumber": 80
+        },
+        {
+          "caller": "fetchSitemapUrls",
+          "callee": "/<sitemapindex[\\s>]/i.test",
+          "lineNumber": 83
+        },
+        {
+          "caller": "fetchSitemapUrls",
+          "callee": "Promise.all",
+          "lineNumber": 84
+        },
+        {
+          "caller": "fetchSitemapUrls",
+          "callee": "locs.map",
+          "lineNumber": 84
+        },
+        {
+          "caller": "fetchSitemapUrls",
+          "callee": "fetchSitemapUrls",
+          "lineNumber": 84
+        },
+        {
+          "caller": "fetchSitemapUrls",
+          "callee": "unique",
+          "lineNumber": 85
+        },
+        {
+          "caller": "fetchSitemapUrls",
+          "callee": "nestedUrls.flat",
+          "lineNumber": 85
+        },
+        {
+          "caller": "getExplicitUrls",
+          "callee": "getArgValue",
+          "lineNumber": 92
+        },
+        {
+          "caller": "getExplicitUrls",
+          "callee": "getArgValue",
+          "lineNumber": 93
+        },
+        {
+          "caller": "getExplicitUrls",
+          "callee": "urlsArg.split(\",\").map",
+          "lineNumber": 94
+        },
+        {
+          "caller": "getExplicitUrls",
+          "callee": "urlsArg.split",
+          "lineNumber": 94
+        },
+        {
+          "caller": "getExplicitUrls",
+          "callee": "url.trim",
+          "lineNumber": 94
+        },
+        {
+          "caller": "getExplicitUrls",
+          "callee": "unique",
+          "lineNumber": 95
+        },
+        {
+          "caller": "assertAbsoluteUrls",
+          "callee": "parsed.protocol.startsWith",
+          "lineNumber": 102
+        },
+        {
+          "caller": "getServiceAccountCredentials",
+          "callee": "(\n    process.env.GOOGLE_INDEXING_PRIVATE_KEY ||\n    env.GOOGLE_INDEXING_PRIVATE_KEY ||\n    \"\"\n  ).replace",
+          "lineNumber": 115
+        },
+        {
+          "caller": "getAuth",
+          "callee": "getServiceAccountCredentials",
+          "lineNumber": 133
+        },
+        {
+          "caller": "getAuth",
+          "callee": "getOAuthCredentials",
+          "lineNumber": 148
+        },
+        {
+          "caller": "getAuth",
+          "callee": "auth.setCredentials",
+          "lineNumber": 151
+        },
+        {
+          "caller": "notifyUrls",
+          "callee": "google.indexing",
+          "lineNumber": 159
+        },
+        {
+          "caller": "notifyUrls",
+          "callee": "urls.entries",
+          "lineNumber": 162
+        },
+        {
+          "caller": "notifyUrls",
+          "callee": "indexing.urlNotifications.publish",
+          "lineNumber": 166
+        },
+        {
+          "caller": "notifyUrls",
+          "callee": "console.log",
+          "lineNumber": 170
+        },
+        {
+          "caller": "notifyUrls",
+          "callee": "results.errors.push",
+          "lineNumber": 173
+        },
+        {
+          "caller": "notifyUrls",
+          "callee": "console.error",
+          "lineNumber": 174
+        },
+        {
+          "caller": "notifyUrls",
+          "callee": "console.error",
+          "lineNumber": 175
+        },
+        {
+          "caller": "notifyUrls",
+          "callee": "setTimeout",
+          "lineNumber": 179
+        },
+        {
+          "caller": "main",
+          "callee": "loadEnv",
+          "lineNumber": 187
+        },
+        {
+          "caller": "main",
+          "callee": "getArgValue",
+          "lineNumber": 188
+        },
+        {
+          "caller": "main",
+          "callee": "getArgValue",
+          "lineNumber": 189
+        },
+        {
+          "caller": "main",
+          "callee": "Number",
+          "lineNumber": 190
+        },
+        {
+          "caller": "main",
+          "callee": "getArgValue",
+          "lineNumber": 190
+        },
+        {
+          "caller": "main",
+          "callee": "Number",
+          "lineNumber": 191
+        },
+        {
+          "caller": "main",
+          "callee": "getArgValue",
+          "lineNumber": 191
+        },
+        {
+          "caller": "main",
+          "callee": "VALID_TYPES.has",
+          "lineNumber": 193
+        },
+        {
+          "caller": "main",
+          "callee": "console.error",
+          "lineNumber": 194
+        },
+        {
+          "caller": "main",
+          "callee": "console.error",
+          "lineNumber": 195
+        },
+        {
+          "caller": "main",
+          "callee": "process.exit",
+          "lineNumber": 196
+        },
+        {
+          "caller": "main",
+          "callee": "getExplicitUrls",
+          "lineNumber": 199
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 201
+        },
+        {
+          "caller": "main",
+          "callee": "fetchSitemapUrls",
+          "lineNumber": 202
+        },
+        {
+          "caller": "main",
+          "callee": "unique",
+          "lineNumber": 205
+        },
+        {
+          "caller": "main",
+          "callee": "urls.slice",
+          "lineNumber": 206
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 209
+        },
+        {
+          "caller": "main",
+          "callee": "assertAbsoluteUrls",
+          "lineNumber": 213
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 215
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 219
+        },
+        {
+          "caller": "main",
+          "callee": "getAuth",
+          "lineNumber": 224
+        },
+        {
+          "caller": "main",
+          "callee": "[\n      \"Missing Google Indexing API credentials.\",\n      \"Recommended: run node scripts/google-indexing-oauth.mjs to authorize with the Search Console owner account.\",\n      \"Fallback: set GOOGLE_INDEXING_CLIENT_EMAIL and GOOGLE_INDEXING_PRIVATE_KEY if the service account is a verified owner.\",\n    ].join",
+          "lineNumber": 226
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 233
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 234
+        },
+        {
+          "caller": "main",
+          "callee": "console.error",
+          "lineNumber": 238
+        },
+        {
+          "caller": "main",
+          "callee": "process.exit",
+          "lineNumber": 239
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 242
+        },
+        {
+          "caller": "main",
+          "callee": "notifyUrls",
+          "lineNumber": 244
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 246
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 247
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 248
+        },
+        {
+          "caller": "main",
+          "callee": "process.exit",
+          "lineNumber": 251
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 12,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "scripts/seed-music.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 108,
+      "nonEmptyLines": 106,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "scripts/sync-blog.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 207,
+      "nonEmptyLines": 178,
+      "functions": [
+        {
+          "name": "loadEnv",
+          "startLine": 25,
+          "endLine": 45,
+          "params": []
+        },
+        {
+          "name": "parseTags",
+          "startLine": 47,
+          "endLine": 50,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "mapRowToPost",
+          "startLine": 52,
+          "endLine": 78,
+          "params": [
+            "row",
+            "columnMap"
+          ]
+        },
+        {
+          "name": "getSheetData",
+          "startLine": 80,
+          "endLine": 105,
+          "params": []
+        },
+        {
+          "name": "getSheetDataFromRows",
+          "startLine": 107,
+          "endLine": 109,
+          "params": [
+            "rows"
+          ]
+        },
+        {
+          "name": "syncToBlog",
+          "startLine": 111,
+          "endLine": 154,
+          "params": [
+            "sheetRows",
+            "columnMap"
+          ]
+        },
+        {
+          "name": "main",
+          "startLine": 156,
+          "endLine": 202,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "loadEnv",
+          "callee": "path.join",
+          "lineNumber": 26
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "existsSync",
+          "lineNumber": 27
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "readFile",
+          "lineNumber": 28
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "content.then",
+          "lineNumber": 29
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "text.split",
+          "lineNumber": 31
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "line.trim",
+          "lineNumber": 32
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "trimmed.startsWith",
+          "lineNumber": 33
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "trimmed.indexOf",
+          "lineNumber": 34
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "trimmed.slice(0, eq).trim",
+          "lineNumber": 36
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "trimmed.slice",
+          "lineNumber": 36
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "trimmed.slice(eq + 1).trim",
+          "lineNumber": 37
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "trimmed.slice",
+          "lineNumber": 37
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "value.startsWith",
+          "lineNumber": 38
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "value.endsWith",
+          "lineNumber": 38
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "value.startsWith",
+          "lineNumber": 38
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "value.endsWith",
+          "lineNumber": 38
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "value.slice",
+          "lineNumber": 39
+        },
+        {
+          "caller": "parseTags",
+          "callee": "value.split(\",\").map((t) => t.trim()).filter",
+          "lineNumber": 49
+        },
+        {
+          "caller": "parseTags",
+          "callee": "value.split(\",\").map",
+          "lineNumber": 49
+        },
+        {
+          "caller": "parseTags",
+          "callee": "value.split",
+          "lineNumber": 49
+        },
+        {
+          "caller": "parseTags",
+          "callee": "t.trim",
+          "lineNumber": 49
+        },
+        {
+          "caller": "mapRowToPost",
+          "callee": "Object.entries",
+          "lineNumber": 54
+        },
+        {
+          "caller": "mapRowToPost",
+          "callee": "String(row[col]).trim",
+          "lineNumber": 55
+        },
+        {
+          "caller": "mapRowToPost",
+          "callee": "String",
+          "lineNumber": 55
+        },
+        {
+          "caller": "mapRowToPost",
+          "callee": "raw.status?.toLowerCase",
+          "lineNumber": 58
+        },
+        {
+          "caller": "mapRowToPost",
+          "callee": "parseTags",
+          "lineNumber": 65
+        },
+        {
+          "caller": "mapRowToPost",
+          "callee": "parseTags",
+          "lineNumber": 71
+        },
+        {
+          "caller": "mapRowToPost",
+          "callee": "new Date().toISOString",
+          "lineNumber": 75
+        },
+        {
+          "caller": "getSheetData",
+          "callee": "google.sheets",
+          "lineNumber": 86
+        },
+        {
+          "caller": "getSheetData",
+          "callee": "sheets.spreadsheets.values.get",
+          "lineNumber": 87
+        },
+        {
+          "caller": "getSheetData",
+          "callee": "rows.slice(1).map",
+          "lineNumber": 98
+        },
+        {
+          "caller": "getSheetData",
+          "callee": "rows.slice",
+          "lineNumber": 98
+        },
+        {
+          "caller": "getSheetData",
+          "callee": "headers.forEach",
+          "lineNumber": 100
+        },
+        {
+          "caller": "syncToBlog",
+          "callee": "mapRowToPost",
+          "lineNumber": 116
+        },
+        {
+          "caller": "syncToBlog",
+          "callee": "readPosts",
+          "lineNumber": 123
+        },
+        {
+          "caller": "syncToBlog",
+          "callee": "postData.title.toLowerCase().replace(/\\s+/g, \"-\").replace",
+          "lineNumber": 124
+        },
+        {
+          "caller": "syncToBlog",
+          "callee": "postData.title.toLowerCase().replace",
+          "lineNumber": 124
+        },
+        {
+          "caller": "syncToBlog",
+          "callee": "postData.title.toLowerCase",
+          "lineNumber": 124
+        },
+        {
+          "caller": "syncToBlog",
+          "callee": "existingPosts.find",
+          "lineNumber": 125
+        },
+        {
+          "caller": "syncToBlog",
+          "callee": "console.log",
+          "lineNumber": 131
+        },
+        {
+          "caller": "syncToBlog",
+          "callee": "updatePost",
+          "lineNumber": 133
+        },
+        {
+          "caller": "syncToBlog",
+          "callee": "console.log",
+          "lineNumber": 134
+        },
+        {
+          "caller": "syncToBlog",
+          "callee": "console.log",
+          "lineNumber": 139
+        },
+        {
+          "caller": "syncToBlog",
+          "callee": "createPost",
+          "lineNumber": 141
+        },
+        {
+          "caller": "syncToBlog",
+          "callee": "console.log",
+          "lineNumber": 142
+        },
+        {
+          "caller": "syncToBlog",
+          "callee": "console.error",
+          "lineNumber": 148
+        },
+        {
+          "caller": "syncToBlog",
+          "callee": "results.errors.push",
+          "lineNumber": 149
+        },
+        {
+          "caller": "main",
+          "callee": "loadEnv",
+          "lineNumber": 157
+        },
+        {
+          "caller": "main",
+          "callee": "(process.env.GOOGLE_SHEETS_PRIVATE_KEY || env.GOOGLE_SHEETS_PRIVATE_KEY || \"\").replace",
+          "lineNumber": 161
+        },
+        {
+          "caller": "main",
+          "callee": "process.argv.includes",
+          "lineNumber": 163
+        },
+        {
+          "caller": "main",
+          "callee": "console.error",
+          "lineNumber": 166
+        },
+        {
+          "caller": "main",
+          "callee": "console.error",
+          "lineNumber": 167
+        },
+        {
+          "caller": "main",
+          "callee": "console.error",
+          "lineNumber": 168
+        },
+        {
+          "caller": "main",
+          "callee": "console.error",
+          "lineNumber": 169
+        },
+        {
+          "caller": "main",
+          "callee": "console.error",
+          "lineNumber": 170
+        },
+        {
+          "caller": "main",
+          "callee": "console.error",
+          "lineNumber": 171
+        },
+        {
+          "caller": "main",
+          "callee": "process.exit",
+          "lineNumber": 172
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 181
+        },
+        {
+          "caller": "main",
+          "callee": "getSheetData",
+          "lineNumber": 182
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 183
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 186
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 190
+        },
+        {
+          "caller": "main",
+          "callee": "syncToBlog",
+          "lineNumber": 191
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 193
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 194
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 195
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 196
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 197
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 199
+        },
+        {
+          "caller": "main",
+          "callee": "results.errors.forEach",
+          "lineNumber": 200
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 200
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 7,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "scripts/sync-db-from-vercel.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 188,
+      "nonEmptyLines": 155,
+      "functions": [
+        {
+          "name": "parseArgs",
+          "startLine": 23,
+          "endLine": 41,
+          "params": []
+        },
+        {
+          "name": "loadEnv",
+          "startLine": 43,
+          "endLine": 61,
+          "params": []
+        },
+        {
+          "name": "blobStoreId",
+          "startLine": 63,
+          "endLine": 69,
+          "params": [
+            "token"
+          ]
+        },
+        {
+          "name": "normalizeJson",
+          "startLine": 71,
+          "endLine": 73,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "timestamp",
+          "startLine": 75,
+          "endLine": 77,
+          "params": []
+        },
+        {
+          "name": "readLocalJson",
+          "startLine": 79,
+          "endLine": 88,
+          "params": [
+            "filePath"
+          ]
+        },
+        {
+          "name": "fetchRemoteJson",
+          "startLine": 90,
+          "endLine": 111,
+          "params": [
+            "filename",
+            "token",
+            "storeId"
+          ]
+        },
+        {
+          "name": "syncOnce",
+          "startLine": 113,
+          "endLine": 169,
+          "params": [
+            "options"
+          ]
+        },
+        {
+          "name": "main",
+          "startLine": 171,
+          "endLine": 183,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "parseArgs",
+          "callee": "process.argv.slice",
+          "lineNumber": 24
+        },
+        {
+          "caller": "parseArgs",
+          "callee": "args\n    .filter((arg) => arg.startsWith(\"--file=\"))\n    .map((arg) => arg.slice(\"--file=\".length).trim())\n    .filter",
+          "lineNumber": 25
+        },
+        {
+          "caller": "parseArgs",
+          "callee": "args\n    .filter((arg) => arg.startsWith(\"--file=\"))\n    .map",
+          "lineNumber": 25
+        },
+        {
+          "caller": "parseArgs",
+          "callee": "args\n    .filter",
+          "lineNumber": 25
+        },
+        {
+          "caller": "parseArgs",
+          "callee": "arg.startsWith",
+          "lineNumber": 26
+        },
+        {
+          "caller": "parseArgs",
+          "callee": "arg.slice(\"--file=\".length).trim",
+          "lineNumber": 27
+        },
+        {
+          "caller": "parseArgs",
+          "callee": "arg.slice",
+          "lineNumber": 27
+        },
+        {
+          "caller": "parseArgs",
+          "callee": "args.find",
+          "lineNumber": 30
+        },
+        {
+          "caller": "parseArgs",
+          "callee": "arg.startsWith",
+          "lineNumber": 30
+        },
+        {
+          "caller": "parseArgs",
+          "callee": "Number",
+          "lineNumber": 31
+        },
+        {
+          "caller": "parseArgs",
+          "callee": "intervalArg.slice",
+          "lineNumber": 31
+        },
+        {
+          "caller": "parseArgs",
+          "callee": "args.includes",
+          "lineNumber": 34
+        },
+        {
+          "caller": "parseArgs",
+          "callee": "args.includes",
+          "lineNumber": 35
+        },
+        {
+          "caller": "parseArgs",
+          "callee": "args.includes",
+          "lineNumber": 36
+        },
+        {
+          "caller": "parseArgs",
+          "callee": "args.includes",
+          "lineNumber": 37
+        },
+        {
+          "caller": "parseArgs",
+          "callee": "Math.max",
+          "lineNumber": 39
+        },
+        {
+          "caller": "parseArgs",
+          "callee": "Number.isFinite",
+          "lineNumber": 39
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "path.join",
+          "lineNumber": 44
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "existsSync",
+          "lineNumber": 45
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "readFile",
+          "lineNumber": 47
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "text.split",
+          "lineNumber": 48
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "line.trim",
+          "lineNumber": 49
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "trimmed.startsWith",
+          "lineNumber": 50
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "trimmed.indexOf",
+          "lineNumber": 51
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "trimmed.slice(0, eq).trim",
+          "lineNumber": 54
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "trimmed.slice",
+          "lineNumber": 54
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "trimmed.slice(eq + 1).trim",
+          "lineNumber": 55
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "trimmed.slice",
+          "lineNumber": 55
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "value.startsWith",
+          "lineNumber": 56
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "value.endsWith",
+          "lineNumber": 56
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "value.startsWith",
+          "lineNumber": 56
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "value.endsWith",
+          "lineNumber": 56
+        },
+        {
+          "caller": "loadEnv",
+          "callee": "value.slice",
+          "lineNumber": 57
+        },
+        {
+          "caller": "blobStoreId",
+          "callee": "String(token || \"\").split",
+          "lineNumber": 64
+        },
+        {
+          "caller": "blobStoreId",
+          "callee": "String",
+          "lineNumber": 64
+        },
+        {
+          "caller": "blobStoreId",
+          "callee": "parts[3].toLowerCase",
+          "lineNumber": 66
+        },
+        {
+          "caller": "normalizeJson",
+          "callee": "JSON.stringify",
+          "lineNumber": 72
+        },
+        {
+          "caller": "timestamp",
+          "callee": "new Date().toISOString().replace",
+          "lineNumber": 76
+        },
+        {
+          "caller": "timestamp",
+          "callee": "new Date().toISOString",
+          "lineNumber": 76
+        },
+        {
+          "caller": "readLocalJson",
+          "callee": "existsSync",
+          "lineNumber": 80
+        },
+        {
+          "caller": "readLocalJson",
+          "callee": "readFile",
+          "lineNumber": 82
+        },
+        {
+          "caller": "readLocalJson",
+          "callee": "normalizeJson",
+          "lineNumber": 84
+        },
+        {
+          "caller": "readLocalJson",
+          "callee": "JSON.parse",
+          "lineNumber": 84
+        },
+        {
+          "caller": "fetchRemoteJson",
+          "callee": "fetch",
+          "lineNumber": 92
+        },
+        {
+          "caller": "fetchRemoteJson",
+          "callee": "res.text().catch",
+          "lineNumber": 99
+        },
+        {
+          "caller": "fetchRemoteJson",
+          "callee": "res.text",
+          "lineNumber": 99
+        },
+        {
+          "caller": "fetchRemoteJson",
+          "callee": "res.text",
+          "lineNumber": 103
+        },
+        {
+          "caller": "fetchRemoteJson",
+          "callee": "text.trim",
+          "lineNumber": 104
+        },
+        {
+          "caller": "fetchRemoteJson",
+          "callee": "normalizeJson",
+          "lineNumber": 107
+        },
+        {
+          "caller": "fetchRemoteJson",
+          "callee": "JSON.parse",
+          "lineNumber": 107
+        },
+        {
+          "caller": "syncOnce",
+          "callee": "loadEnv",
+          "lineNumber": 114
+        },
+        {
+          "caller": "syncOnce",
+          "callee": "blobStoreId",
+          "lineNumber": 117
+        },
+        {
+          "caller": "syncOnce",
+          "callee": "console.log",
+          "lineNumber": 122
+        },
+        {
+          "caller": "syncOnce",
+          "callee": "mkdir",
+          "lineNumber": 132
+        },
+        {
+          "caller": "syncOnce",
+          "callee": "fetchRemoteJson",
+          "lineNumber": 135
+        },
+        {
+          "caller": "syncOnce",
+          "callee": "console.log",
+          "lineNumber": 137
+        },
+        {
+          "caller": "syncOnce",
+          "callee": "path.join",
+          "lineNumber": 142
+        },
+        {
+          "caller": "syncOnce",
+          "callee": "readLocalJson",
+          "lineNumber": 143
+        },
+        {
+          "caller": "syncOnce",
+          "callee": "console.log",
+          "lineNumber": 146
+        },
+        {
+          "caller": "syncOnce",
+          "callee": "console.log",
+          "lineNumber": 152
+        },
+        {
+          "caller": "syncOnce",
+          "callee": "path.join",
+          "lineNumber": 157
+        },
+        {
+          "caller": "syncOnce",
+          "callee": "timestamp",
+          "lineNumber": 157
+        },
+        {
+          "caller": "syncOnce",
+          "callee": "mkdir",
+          "lineNumber": 158
+        },
+        {
+          "caller": "syncOnce",
+          "callee": "copyFile",
+          "lineNumber": 159
+        },
+        {
+          "caller": "syncOnce",
+          "callee": "path.join",
+          "lineNumber": 159
+        },
+        {
+          "caller": "syncOnce",
+          "callee": "writeFile",
+          "lineNumber": 162
+        },
+        {
+          "caller": "syncOnce",
+          "callee": "console.log",
+          "lineNumber": 163
+        },
+        {
+          "caller": "syncOnce",
+          "callee": "console.log",
+          "lineNumber": 166
+        },
+        {
+          "caller": "syncOnce",
+          "callee": "console.log",
+          "lineNumber": 167
+        },
+        {
+          "caller": "main",
+          "callee": "parseArgs",
+          "lineNumber": 172
+        },
+        {
+          "caller": "main",
+          "callee": "syncOnce",
+          "lineNumber": 173
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 177
+        },
+        {
+          "caller": "main",
+          "callee": "setInterval",
+          "lineNumber": 178
+        },
+        {
+          "caller": "main",
+          "callee": "syncOnce(options).catch",
+          "lineNumber": 179
+        },
+        {
+          "caller": "main",
+          "callee": "syncOnce",
+          "lineNumber": 179
+        },
+        {
+          "caller": "main",
+          "callee": "console.error",
+          "lineNumber": 180
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 9,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "scripts/sync-to-vercel.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 45,
+      "nonEmptyLines": 39,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "scripts/verify-tables.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 31,
+      "nonEmptyLines": 27,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/(digital)/digital/blog/[slug]/BlogPostClient.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 205,
+      "nonEmptyLines": 188,
+      "functions": [
+        {
+          "name": "formatDate",
+          "startLine": 10,
+          "endLine": 16,
+          "params": [
+            "dateStr"
+          ]
+        },
+        {
+          "name": "parseContent",
+          "startLine": 18,
+          "endLine": 68,
+          "params": [
+            "content"
+          ]
+        },
+        {
+          "name": "BlogPostClient",
+          "startLine": 70,
+          "endLine": 205,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "BlogPostClient",
+          "line": 70,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "formatDate",
+          "callee": "new Date(dateStr).toLocaleDateString",
+          "lineNumber": 11
+        },
+        {
+          "caller": "parseContent",
+          "callee": "content.trim().split",
+          "lineNumber": 19
+        },
+        {
+          "caller": "parseContent",
+          "callee": "content.trim",
+          "lineNumber": 19
+        },
+        {
+          "caller": "parseContent",
+          "callee": "line.trim",
+          "lineNumber": 24
+        },
+        {
+          "caller": "parseContent",
+          "callee": "trimmed.startsWith",
+          "lineNumber": 28
+        },
+        {
+          "caller": "parseContent",
+          "callee": "trimmed.match",
+          "lineNumber": 28
+        },
+        {
+          "caller": "parseContent",
+          "callee": "trimmed.startsWith",
+          "lineNumber": 35
+        },
+        {
+          "caller": "parseContent",
+          "callee": "trimmed.slice",
+          "lineNumber": 36
+        },
+        {
+          "caller": "parseContent",
+          "callee": "trimmed.startsWith",
+          "lineNumber": 37
+        },
+        {
+          "caller": "parseContent",
+          "callee": "trimmed.slice",
+          "lineNumber": 38
+        },
+        {
+          "caller": "parseContent",
+          "callee": "trimmed.startsWith",
+          "lineNumber": 39
+        },
+        {
+          "caller": "parseContent",
+          "callee": "trimmed.slice",
+          "lineNumber": 40
+        },
+        {
+          "caller": "parseContent",
+          "callee": "trimmed.startsWith",
+          "lineNumber": 41
+        },
+        {
+          "caller": "parseContent",
+          "callee": "trimmed.slice",
+          "lineNumber": 42
+        },
+        {
+          "caller": "parseContent",
+          "callee": "trimmed.startsWith",
+          "lineNumber": 43
+        },
+        {
+          "caller": "parseContent",
+          "callee": "trimmed.slice",
+          "lineNumber": 48
+        },
+        {
+          "caller": "parseContent",
+          "callee": "trimmed.match",
+          "lineNumber": 49
+        },
+        {
+          "caller": "parseContent",
+          "callee": "trimmed.replace",
+          "lineNumber": 54
+        },
+        {
+          "caller": "parseContent",
+          "callee": "trimmed.startsWith",
+          "lineNumber": 55
+        },
+        {
+          "caller": "BlogPostClient",
+          "callee": "formatDate",
+          "lineNumber": 71
+        },
+        {
+          "caller": "BlogPostClient",
+          "callee": "getRelatedPosts",
+          "lineNumber": 72
+        },
+        {
+          "caller": "BlogPostClient",
+          "callee": "parseContent",
+          "lineNumber": 73
+        },
+        {
+          "caller": "BlogPostClient",
+          "callee": "post.tags.map",
+          "lineNumber": 106
+        },
+        {
+          "caller": "BlogPostClient",
+          "callee": "relatedPosts.map",
+          "lineNumber": 147
+        },
+        {
+          "caller": "BlogPostClient",
+          "callee": "formatDate",
+          "lineNumber": 153
+        },
+        {
+          "caller": "BlogPostClient",
+          "callee": "(post.content.match(/^#{1,3} .+/gm) || []).map",
+          "lineNumber": 177
+        },
+        {
+          "caller": "BlogPostClient",
+          "callee": "post.content.match",
+          "lineNumber": 177
+        },
+        {
+          "caller": "BlogPostClient",
+          "callee": "heading.match",
+          "lineNumber": 178
+        },
+        {
+          "caller": "BlogPostClient",
+          "callee": "heading.replace",
+          "lineNumber": 179
+        },
+        {
+          "caller": "BlogPostClient",
+          "callee": "text.toLowerCase().replace",
+          "lineNumber": 180
+        },
+        {
+          "caller": "BlogPostClient",
+          "callee": "text.toLowerCase",
+          "lineNumber": 180
+        },
+        {
+          "caller": "BlogPostClient",
+          "callee": "e.preventDefault",
+          "lineNumber": 187
+        },
+        {
+          "caller": "BlogPostClient",
+          "callee": "document.getElementById",
+          "lineNumber": 188
+        },
+        {
+          "caller": "BlogPostClient",
+          "callee": "el.scrollIntoView",
+          "lineNumber": 189
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/(digital)/digital/blog/[slug]/page.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 57,
+      "nonEmptyLines": 53,
+      "functions": [
+        {
+          "name": "generateMetadata",
+          "startLine": 5,
+          "endLine": 27,
+          "params": []
+        },
+        {
+          "name": "BlogPostPage",
+          "startLine": 29,
+          "endLine": 57,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "generateMetadata",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "BlogPostPage",
+          "line": 29,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "generateMetadata",
+          "callee": "getPostBySlug",
+          "lineNumber": 7
+        },
+        {
+          "caller": "BlogPostPage",
+          "callee": "getPostBySlug",
+          "lineNumber": 31
+        },
+        {
+          "caller": "BlogPostPage",
+          "callee": "notFound",
+          "lineNumber": 32
+        },
+        {
+          "caller": "BlogPostPage",
+          "callee": "JSON.stringify(articleSchema).replace",
+          "lineNumber": 52
+        },
+        {
+          "caller": "BlogPostPage",
+          "callee": "JSON.stringify",
+          "lineNumber": 52
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/(digital)/digital/blog/BlogClient.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 97,
+      "nonEmptyLines": 89,
+      "functions": [
+        {
+          "name": "formatDate",
+          "startLine": 11,
+          "endLine": 17,
+          "params": [
+            "dateStr"
+          ]
+        },
+        {
+          "name": "BlogClient",
+          "startLine": 19,
+          "endLine": 97,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "BlogClient",
+          "line": 19,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "formatDate",
+          "callee": "new Date(dateStr).toLocaleDateString",
+          "lineNumber": 12
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "useSearchParams",
+          "lineNumber": 20
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "searchParams.get",
+          "lineNumber": 21
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "getAllPosts",
+          "lineNumber": 23
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "getAllTags",
+          "lineNumber": 24
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "getTagCounts",
+          "lineNumber": 25
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "allPosts.filter",
+          "lineNumber": 30
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "(post.tags || []).includes",
+          "lineNumber": 30
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "filteredPosts.map",
+          "lineNumber": 79
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "formatDate",
+          "lineNumber": 80
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/(digital)/digital/blog/page.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 18,
+      "nonEmptyLines": 16,
+      "functions": [
+        {
+          "name": "DigitalBlogPage",
+          "startLine": 12,
+          "endLine": 18,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "metadata",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "DigitalBlogPage",
+          "line": 12,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/(digital)/layout.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 21,
+      "nonEmptyLines": 20,
+      "functions": [
+        {
+          "name": "DigitalLayout",
+          "startLine": 5,
+          "endLine": 21,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "DigitalLayout",
+          "line": 5,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    }
+  ]
+}

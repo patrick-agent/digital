@@ -1,0 +1,2413 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 23,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/lib/contract/base.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 88,
+      "nonEmptyLines": 77,
+      "functions": [
+        {
+          "name": "stringField",
+          "startLine": 15,
+          "endLine": 15,
+          "params": []
+        },
+        {
+          "name": "numberField",
+          "startLine": 16,
+          "endLine": 16,
+          "params": []
+        },
+        {
+          "name": "booleanField",
+          "startLine": 17,
+          "endLine": 17,
+          "params": []
+        },
+        {
+          "name": "createListInputSchema",
+          "startLine": 19,
+          "endLine": 27,
+          "params": []
+        },
+        {
+          "name": "createFailure",
+          "startLine": 38,
+          "endLine": 43,
+          "params": [
+            "code",
+            "message"
+          ]
+        },
+        {
+          "name": "createSingleSuccessSchema",
+          "startLine": 45,
+          "endLine": 50,
+          "params": [
+            "dataSchema"
+          ]
+        },
+        {
+          "name": "createListSuccessSchema",
+          "startLine": 52,
+          "endLine": 64,
+          "params": [
+            "itemSchema"
+          ]
+        },
+        {
+          "name": "createDeleteSuccessSchema",
+          "startLine": 66,
+          "endLine": 73,
+          "params": []
+        },
+        {
+          "name": "safeCatch",
+          "startLine": 79,
+          "endLine": 88,
+          "params": [
+            "error",
+            "defaultMessage"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "optionalTrimmedString",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "optionalPositiveInteger",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "stringField",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "numberField",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "booleanField",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "createListInputSchema",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "BaseFailureSchema",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "createFailure",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "createSingleSuccessSchema",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "createListSuccessSchema",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "createDeleteSuccessSchema",
+          "line": 66,
+          "isDefault": false
+        },
+        {
+          "name": "LookupInputSchema",
+          "line": 75,
+          "isDefault": false
+        },
+        {
+          "name": "safeCatch",
+          "line": 79,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "stringField",
+          "callee": "z.string().default",
+          "lineNumber": 15
+        },
+        {
+          "caller": "stringField",
+          "callee": "z.string",
+          "lineNumber": 15
+        },
+        {
+          "caller": "numberField",
+          "callee": "z.coerce.number().default",
+          "lineNumber": 16
+        },
+        {
+          "caller": "numberField",
+          "callee": "z.coerce.number",
+          "lineNumber": 16
+        },
+        {
+          "caller": "booleanField",
+          "callee": "z.boolean().default",
+          "lineNumber": 17
+        },
+        {
+          "caller": "booleanField",
+          "callee": "z.boolean",
+          "lineNumber": 17
+        },
+        {
+          "caller": "createListInputSchema",
+          "callee": "z.object({\n    status: optionalTrimmedString,\n    search: optionalTrimmedString,\n    page: optionalPositiveInteger,\n    limit: optionalPositiveInteger,\n    ...extraFields,\n  }).strip",
+          "lineNumber": 20
+        },
+        {
+          "caller": "createListInputSchema",
+          "callee": "z.object",
+          "lineNumber": 20
+        },
+        {
+          "caller": "createFailure",
+          "callee": "BaseFailureSchema.parse",
+          "lineNumber": 39
+        },
+        {
+          "caller": "createSingleSuccessSchema",
+          "callee": "z.object",
+          "lineNumber": 46
+        },
+        {
+          "caller": "createSingleSuccessSchema",
+          "callee": "z.literal",
+          "lineNumber": 47
+        },
+        {
+          "caller": "createListSuccessSchema",
+          "callee": "z.object",
+          "lineNumber": 53
+        },
+        {
+          "caller": "createListSuccessSchema",
+          "callee": "z.literal",
+          "lineNumber": 54
+        },
+        {
+          "caller": "createListSuccessSchema",
+          "callee": "z.object",
+          "lineNumber": 55
+        },
+        {
+          "caller": "createListSuccessSchema",
+          "callee": "z.array",
+          "lineNumber": 56
+        },
+        {
+          "caller": "createListSuccessSchema",
+          "callee": "z.object",
+          "lineNumber": 57
+        },
+        {
+          "caller": "createListSuccessSchema",
+          "callee": "z.number().int().nonnegative",
+          "lineNumber": 58
+        },
+        {
+          "caller": "createListSuccessSchema",
+          "callee": "z.number().int",
+          "lineNumber": 58
+        },
+        {
+          "caller": "createListSuccessSchema",
+          "callee": "z.number",
+          "lineNumber": 58
+        },
+        {
+          "caller": "createListSuccessSchema",
+          "callee": "z.number().int().nonnegative",
+          "lineNumber": 59
+        },
+        {
+          "caller": "createListSuccessSchema",
+          "callee": "z.number().int",
+          "lineNumber": 59
+        },
+        {
+          "caller": "createListSuccessSchema",
+          "callee": "z.number",
+          "lineNumber": 59
+        },
+        {
+          "caller": "createListSuccessSchema",
+          "callee": "z.number().int().nonnegative",
+          "lineNumber": 60
+        },
+        {
+          "caller": "createListSuccessSchema",
+          "callee": "z.number().int",
+          "lineNumber": 60
+        },
+        {
+          "caller": "createListSuccessSchema",
+          "callee": "z.number",
+          "lineNumber": 60
+        },
+        {
+          "caller": "createDeleteSuccessSchema",
+          "callee": "z.object",
+          "lineNumber": 67
+        },
+        {
+          "caller": "createDeleteSuccessSchema",
+          "callee": "z.literal",
+          "lineNumber": 68
+        },
+        {
+          "caller": "createDeleteSuccessSchema",
+          "callee": "z.object",
+          "lineNumber": 69
+        },
+        {
+          "caller": "createDeleteSuccessSchema",
+          "callee": "z.literal",
+          "lineNumber": 70
+        },
+        {
+          "caller": "safeCatch",
+          "callee": "createFailure",
+          "lineNumber": 81
+        },
+        {
+          "caller": "safeCatch",
+          "callee": "error.errors.map(e => e.message).join",
+          "lineNumber": 81
+        },
+        {
+          "caller": "safeCatch",
+          "callee": "error.errors.map",
+          "lineNumber": 81
+        },
+        {
+          "caller": "safeCatch",
+          "callee": "createFailure",
+          "lineNumber": 83
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 13,
+        "functionCount": 9,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/db/media.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 73,
+      "nonEmptyLines": 61,
+      "functions": [
+        {
+          "name": "readMedia",
+          "startLine": 3,
+          "endLine": 25,
+          "params": []
+        },
+        {
+          "name": "createMediaItem",
+          "startLine": 27,
+          "endLine": 46,
+          "params": [
+            "data"
+          ]
+        },
+        {
+          "name": "updateMediaItem",
+          "startLine": 48,
+          "endLine": 63,
+          "params": [
+            "id",
+            "data"
+          ]
+        },
+        {
+          "name": "deleteMediaItem",
+          "startLine": 65,
+          "endLine": 73,
+          "params": [
+            "id"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "readMedia",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "createMediaItem",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "updateMediaItem",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "deleteMediaItem",
+          "line": 65,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "readMedia",
+          "callee": "readJSON",
+          "lineNumber": 4
+        },
+        {
+          "caller": "readMedia",
+          "callee": "items.filter",
+          "lineNumber": 7
+        },
+        {
+          "caller": "readMedia",
+          "callee": "search.toLowerCase",
+          "lineNumber": 10
+        },
+        {
+          "caller": "readMedia",
+          "callee": "items.filter",
+          "lineNumber": 11
+        },
+        {
+          "caller": "readMedia",
+          "callee": "item.filename?.toLowerCase().includes",
+          "lineNumber": 13
+        },
+        {
+          "caller": "readMedia",
+          "callee": "item.filename?.toLowerCase",
+          "lineNumber": 13
+        },
+        {
+          "caller": "readMedia",
+          "callee": "item.alt?.toLowerCase().includes",
+          "lineNumber": 14
+        },
+        {
+          "caller": "readMedia",
+          "callee": "item.alt?.toLowerCase",
+          "lineNumber": 14
+        },
+        {
+          "caller": "readMedia",
+          "callee": "item.url?.toLowerCase().includes",
+          "lineNumber": 15
+        },
+        {
+          "caller": "readMedia",
+          "callee": "item.url?.toLowerCase",
+          "lineNumber": 15
+        },
+        {
+          "caller": "readMedia",
+          "callee": "items.sort",
+          "lineNumber": 19
+        },
+        {
+          "caller": "readMedia",
+          "callee": "items.slice",
+          "lineNumber": 23
+        },
+        {
+          "caller": "createMediaItem",
+          "callee": "readJSON",
+          "lineNumber": 28
+        },
+        {
+          "caller": "createMediaItem",
+          "callee": "new Date().toISOString",
+          "lineNumber": 29
+        },
+        {
+          "caller": "createMediaItem",
+          "callee": "crypto.randomUUID",
+          "lineNumber": 31
+        },
+        {
+          "caller": "createMediaItem",
+          "callee": "items.push",
+          "lineNumber": 43
+        },
+        {
+          "caller": "createMediaItem",
+          "callee": "writeJSON",
+          "lineNumber": 44
+        },
+        {
+          "caller": "updateMediaItem",
+          "callee": "readJSON",
+          "lineNumber": 49
+        },
+        {
+          "caller": "updateMediaItem",
+          "callee": "items.findIndex",
+          "lineNumber": 50
+        },
+        {
+          "caller": "updateMediaItem",
+          "callee": "new Date().toISOString",
+          "lineNumber": 58
+        },
+        {
+          "caller": "updateMediaItem",
+          "callee": "writeJSON",
+          "lineNumber": 61
+        },
+        {
+          "caller": "deleteMediaItem",
+          "callee": "readJSON",
+          "lineNumber": 66
+        },
+        {
+          "caller": "deleteMediaItem",
+          "callee": "items.findIndex",
+          "lineNumber": 67
+        },
+        {
+          "caller": "deleteMediaItem",
+          "callee": "items.splice",
+          "lineNumber": 70
+        },
+        {
+          "caller": "deleteMediaItem",
+          "callee": "writeJSON",
+          "lineNumber": 71
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 4,
+        "functionCount": 4,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/db/newsletter.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 58,
+      "nonEmptyLines": 47,
+      "functions": [
+        {
+          "name": "readSubscribers",
+          "startLine": 3,
+          "endLine": 25,
+          "params": []
+        },
+        {
+          "name": "unsubscribeSubscriber",
+          "startLine": 27,
+          "endLine": 36,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "addSubscriber",
+          "startLine": 38,
+          "endLine": 58,
+          "params": [
+            "data"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "readSubscribers",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "unsubscribeSubscriber",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "addSubscriber",
+          "line": 38,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "readSubscribers",
+          "callee": "readJSON",
+          "lineNumber": 4
+        },
+        {
+          "caller": "readSubscribers",
+          "callee": "items.filter",
+          "lineNumber": 7
+        },
+        {
+          "caller": "readSubscribers",
+          "callee": "items.filter",
+          "lineNumber": 8
+        },
+        {
+          "caller": "readSubscribers",
+          "callee": "s.personaInterest?.includes",
+          "lineNumber": 8
+        },
+        {
+          "caller": "readSubscribers",
+          "callee": "search.toLowerCase",
+          "lineNumber": 11
+        },
+        {
+          "caller": "readSubscribers",
+          "callee": "items.filter",
+          "lineNumber": 12
+        },
+        {
+          "caller": "readSubscribers",
+          "callee": "s.email.toLowerCase().includes",
+          "lineNumber": 14
+        },
+        {
+          "caller": "readSubscribers",
+          "callee": "s.email.toLowerCase",
+          "lineNumber": 14
+        },
+        {
+          "caller": "readSubscribers",
+          "callee": "s.firstName?.toLowerCase().includes",
+          "lineNumber": 15
+        },
+        {
+          "caller": "readSubscribers",
+          "callee": "s.firstName?.toLowerCase",
+          "lineNumber": 15
+        },
+        {
+          "caller": "readSubscribers",
+          "callee": "items.sort",
+          "lineNumber": 19
+        },
+        {
+          "caller": "readSubscribers",
+          "callee": "items.slice",
+          "lineNumber": 22
+        },
+        {
+          "caller": "unsubscribeSubscriber",
+          "callee": "readJSON",
+          "lineNumber": 28
+        },
+        {
+          "caller": "unsubscribeSubscriber",
+          "callee": "items.findIndex",
+          "lineNumber": 29
+        },
+        {
+          "caller": "unsubscribeSubscriber",
+          "callee": "new Date().toISOString",
+          "lineNumber": 33
+        },
+        {
+          "caller": "unsubscribeSubscriber",
+          "callee": "writeJSON",
+          "lineNumber": 34
+        },
+        {
+          "caller": "addSubscriber",
+          "callee": "readJSON",
+          "lineNumber": 39
+        },
+        {
+          "caller": "addSubscriber",
+          "callee": "items.some",
+          "lineNumber": 41
+        },
+        {
+          "caller": "addSubscriber",
+          "callee": "new Date().toISOString",
+          "lineNumber": 45
+        },
+        {
+          "caller": "addSubscriber",
+          "callee": "crypto.randomUUID",
+          "lineNumber": 47
+        },
+        {
+          "caller": "addSubscriber",
+          "callee": "items.push",
+          "lineNumber": 55
+        },
+        {
+          "caller": "addSubscriber",
+          "callee": "writeJSON",
+          "lineNumber": 56
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/db/press-kit.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 21,
+      "functions": [
+        {
+          "name": "readPressKit",
+          "startLine": 3,
+          "endLine": 16,
+          "params": []
+        },
+        {
+          "name": "updatePressKit",
+          "startLine": 18,
+          "endLine": 23,
+          "params": [
+            "data"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "readPressKit",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "updatePressKit",
+          "line": 18,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "readPressKit",
+          "callee": "readFileJSON",
+          "lineNumber": 4
+        },
+        {
+          "caller": "updatePressKit",
+          "callee": "readPressKit",
+          "lineNumber": 19
+        },
+        {
+          "caller": "updatePressKit",
+          "callee": "writeFileJSON",
+          "lineNumber": 21
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/db/seo.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 36,
+      "nonEmptyLines": 31,
+      "functions": [
+        {
+          "name": "readSEOMetadata",
+          "startLine": 3,
+          "endLine": 7,
+          "params": []
+        },
+        {
+          "name": "updateSEOMetadata",
+          "startLine": 9,
+          "endLine": 21,
+          "params": [
+            "route",
+            "data"
+          ]
+        },
+        {
+          "name": "getAllRoutes",
+          "startLine": 23,
+          "endLine": 36,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "readSEOMetadata",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "updateSEOMetadata",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "getAllRoutes",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "readSEOMetadata",
+          "callee": "readFileJSON",
+          "lineNumber": 4
+        },
+        {
+          "caller": "updateSEOMetadata",
+          "callee": "readSEOMetadata",
+          "lineNumber": 10
+        },
+        {
+          "caller": "updateSEOMetadata",
+          "callee": "new Date().toISOString",
+          "lineNumber": 16
+        },
+        {
+          "caller": "updateSEOMetadata",
+          "callee": "writeFileJSON",
+          "lineNumber": 19
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/media/service/handler.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 68,
+      "nonEmptyLines": 63,
+      "classes": [
+        {
+          "name": "MediaHandler",
+          "startLine": 11,
+          "endLine": 68,
+          "methods": [
+            "list",
+            "get",
+            "create",
+            "update",
+            "remove"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "MediaHandler",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "list",
+          "callee": "ListMediaInputSchema.parse",
+          "lineNumber": 14
+        },
+        {
+          "caller": "list",
+          "callee": "readMedia",
+          "lineNumber": 15
+        },
+        {
+          "caller": "list",
+          "callee": "safeCatch",
+          "lineNumber": 18
+        },
+        {
+          "caller": "get",
+          "callee": "LookupMediaInputSchema.parse",
+          "lineNumber": 24
+        },
+        {
+          "caller": "get",
+          "callee": "createFailure",
+          "lineNumber": 25
+        },
+        {
+          "caller": "get",
+          "callee": "readMedia",
+          "lineNumber": 26
+        },
+        {
+          "caller": "get",
+          "callee": "data.find",
+          "lineNumber": 27
+        },
+        {
+          "caller": "get",
+          "callee": "createFailure",
+          "lineNumber": 28
+        },
+        {
+          "caller": "get",
+          "callee": "safeCatch",
+          "lineNumber": 31
+        },
+        {
+          "caller": "create",
+          "callee": "CreateMediaInputSchema.parse",
+          "lineNumber": 37
+        },
+        {
+          "caller": "create",
+          "callee": "createMediaItem",
+          "lineNumber": 38
+        },
+        {
+          "caller": "create",
+          "callee": "safeCatch",
+          "lineNumber": 41
+        },
+        {
+          "caller": "update",
+          "callee": "UpdateMediaInputSchema.parse",
+          "lineNumber": 47
+        },
+        {
+          "caller": "update",
+          "callee": "createFailure",
+          "lineNumber": 48
+        },
+        {
+          "caller": "update",
+          "callee": "updateMediaItem",
+          "lineNumber": 49
+        },
+        {
+          "caller": "update",
+          "callee": "createFailure",
+          "lineNumber": 50
+        },
+        {
+          "caller": "update",
+          "callee": "safeCatch",
+          "lineNumber": 53
+        },
+        {
+          "caller": "remove",
+          "callee": "LookupMediaInputSchema.parse",
+          "lineNumber": 59
+        },
+        {
+          "caller": "remove",
+          "callee": "createFailure",
+          "lineNumber": 60
+        },
+        {
+          "caller": "remove",
+          "callee": "deleteMediaItem",
+          "lineNumber": 61
+        },
+        {
+          "caller": "remove",
+          "callee": "createFailure",
+          "lineNumber": 62
+        },
+        {
+          "caller": "remove",
+          "callee": "safeCatch",
+          "lineNumber": 65
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/lib/media/service/index.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 12,
+      "nonEmptyLines": 9,
+      "functions": [
+        {
+          "name": "listMedia",
+          "startLine": 5,
+          "endLine": 5,
+          "params": [
+            "input"
+          ]
+        },
+        {
+          "name": "getMedia",
+          "startLine": 6,
+          "endLine": 6,
+          "params": [
+            "input"
+          ]
+        },
+        {
+          "name": "createMedia",
+          "startLine": 7,
+          "endLine": 7,
+          "params": [
+            "input"
+          ]
+        },
+        {
+          "name": "updateMedia",
+          "startLine": 8,
+          "endLine": 8,
+          "params": [
+            "input"
+          ]
+        },
+        {
+          "name": "deleteMedia",
+          "startLine": 9,
+          "endLine": 9,
+          "params": [
+            "input"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "listMedia",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "getMedia",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "createMedia",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "updateMedia",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "deleteMedia",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "MediaHandler",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "listMedia",
+          "callee": "handler.list",
+          "lineNumber": 5
+        },
+        {
+          "caller": "getMedia",
+          "callee": "handler.get",
+          "lineNumber": 6
+        },
+        {
+          "caller": "createMedia",
+          "callee": "handler.create",
+          "lineNumber": 7
+        },
+        {
+          "caller": "updateMedia",
+          "callee": "handler.update",
+          "lineNumber": 8
+        },
+        {
+          "caller": "deleteMedia",
+          "callee": "handler.remove",
+          "lineNumber": 9
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 6,
+        "functionCount": 5,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/media/service/spec.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 69,
+      "nonEmptyLines": 60,
+      "exports": [
+        {
+          "name": "MediaSchema",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "CreateMediaInputSchema",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "UpdateMediaInputSchema",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "ListMediaInputSchema",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "LookupMediaInputSchema",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "MediaErrorCode",
+          "line": 49,
+          "isDefault": false
+        },
+        {
+          "name": "MediaListSuccessSchema",
+          "line": 55,
+          "isDefault": false
+        },
+        {
+          "name": "MediaSingleSuccessSchema",
+          "line": 56,
+          "isDefault": false
+        },
+        {
+          "name": "MediaDeleteSuccessSchema",
+          "line": 57,
+          "isDefault": false
+        },
+        {
+          "name": "MediaFailureSchema",
+          "line": 58,
+          "isDefault": false
+        },
+        {
+          "name": "MediaResultSchema",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "MediaListResultSchema",
+          "line": 67,
+          "isDefault": false
+        },
+        {
+          "name": "MediaSingleResultSchema",
+          "line": 68,
+          "isDefault": false
+        },
+        {
+          "name": "MediaDeleteResultSchema",
+          "line": 69,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 14,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/newsletter/service/handler.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 55,
+      "nonEmptyLines": 51,
+      "classes": [
+        {
+          "name": "NewsletterHandler",
+          "startLine": 9,
+          "endLine": 55,
+          "methods": [
+            "list",
+            "get",
+            "add",
+            "unsubscribe"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "NewsletterHandler",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "list",
+          "callee": "ListSubscriberInputSchema.parse",
+          "lineNumber": 12
+        },
+        {
+          "caller": "list",
+          "callee": "readSubscribers",
+          "lineNumber": 13
+        },
+        {
+          "caller": "list",
+          "callee": "safeCatch",
+          "lineNumber": 16
+        },
+        {
+          "caller": "get",
+          "callee": "LookupSubscriberInputSchema.parse",
+          "lineNumber": 22
+        },
+        {
+          "caller": "get",
+          "callee": "createFailure",
+          "lineNumber": 23
+        },
+        {
+          "caller": "get",
+          "callee": "readSubscribers",
+          "lineNumber": 24
+        },
+        {
+          "caller": "get",
+          "callee": "data.find",
+          "lineNumber": 25
+        },
+        {
+          "caller": "get",
+          "callee": "createFailure",
+          "lineNumber": 26
+        },
+        {
+          "caller": "get",
+          "callee": "safeCatch",
+          "lineNumber": 29
+        },
+        {
+          "caller": "add",
+          "callee": "AddSubscriberInputSchema.parse",
+          "lineNumber": 35
+        },
+        {
+          "caller": "add",
+          "callee": "addSubscriber",
+          "lineNumber": 36
+        },
+        {
+          "caller": "add",
+          "callee": "createFailure",
+          "lineNumber": 37
+        },
+        {
+          "caller": "add",
+          "callee": "safeCatch",
+          "lineNumber": 40
+        },
+        {
+          "caller": "unsubscribe",
+          "callee": "UnsubscribeInputSchema.parse",
+          "lineNumber": 46
+        },
+        {
+          "caller": "unsubscribe",
+          "callee": "createFailure",
+          "lineNumber": 47
+        },
+        {
+          "caller": "unsubscribe",
+          "callee": "unsubscribeSubscriber",
+          "lineNumber": 48
+        },
+        {
+          "caller": "unsubscribe",
+          "callee": "createFailure",
+          "lineNumber": 49
+        },
+        {
+          "caller": "unsubscribe",
+          "callee": "safeCatch",
+          "lineNumber": 52
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/lib/newsletter/service/index.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 8,
+      "functions": [
+        {
+          "name": "listSubscribers",
+          "startLine": 5,
+          "endLine": 5,
+          "params": [
+            "input"
+          ]
+        },
+        {
+          "name": "getSubscriber",
+          "startLine": 6,
+          "endLine": 6,
+          "params": [
+            "input"
+          ]
+        },
+        {
+          "name": "addSubscriber",
+          "startLine": 7,
+          "endLine": 7,
+          "params": [
+            "input"
+          ]
+        },
+        {
+          "name": "unsubscribeSubscriber",
+          "startLine": 8,
+          "endLine": 8,
+          "params": [
+            "input"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "listSubscribers",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "getSubscriber",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "addSubscriber",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "unsubscribeSubscriber",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "NewsletterHandler",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "listSubscribers",
+          "callee": "handler.list",
+          "lineNumber": 5
+        },
+        {
+          "caller": "getSubscriber",
+          "callee": "handler.get",
+          "lineNumber": 6
+        },
+        {
+          "caller": "addSubscriber",
+          "callee": "handler.add",
+          "lineNumber": 7
+        },
+        {
+          "caller": "unsubscribeSubscriber",
+          "callee": "handler.unsubscribe",
+          "lineNumber": 8
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/newsletter/service/spec.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 56,
+      "nonEmptyLines": 47,
+      "exports": [
+        {
+          "name": "NewsletterSchema",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "AddSubscriberInputSchema",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "UnsubscribeInputSchema",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "ListSubscriberInputSchema",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "LookupSubscriberInputSchema",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "NewsletterErrorCode",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "NewsletterListSuccessSchema",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "NewsletterSingleSuccessSchema",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "NewsletterDeleteSuccessSchema",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "NewsletterFailureSchema",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "NewsletterResultSchema",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "NewsletterListResultSchema",
+          "line": 54,
+          "isDefault": false
+        },
+        {
+          "name": "NewsletterSingleResultSchema",
+          "line": 55,
+          "isDefault": false
+        },
+        {
+          "name": "NewsletterDeleteResultSchema",
+          "line": 56,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 14,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/press-kit/service/handler.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 28,
+      "nonEmptyLines": 26,
+      "classes": [
+        {
+          "name": "PressKitHandler",
+          "startLine": 9,
+          "endLine": 28,
+          "methods": [
+            "get",
+            "update"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "PressKitHandler",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "get",
+          "callee": "readPressKit",
+          "lineNumber": 12
+        },
+        {
+          "caller": "get",
+          "callee": "safeCatch",
+          "lineNumber": 15
+        },
+        {
+          "caller": "update",
+          "callee": "UpdatePressKitInputSchema.parse",
+          "lineNumber": 21
+        },
+        {
+          "caller": "update",
+          "callee": "updatePressKit",
+          "lineNumber": 22
+        },
+        {
+          "caller": "update",
+          "callee": "safeCatch",
+          "lineNumber": 25
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/lib/press-kit/service/index.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 6,
+      "functions": [
+        {
+          "name": "getPressKit",
+          "startLine": 5,
+          "endLine": 5,
+          "params": [
+            "input"
+          ]
+        },
+        {
+          "name": "updatePressKit",
+          "startLine": 6,
+          "endLine": 6,
+          "params": [
+            "input"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getPressKit",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "updatePressKit",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "PressKitHandler",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getPressKit",
+          "callee": "handler.get",
+          "lineNumber": 5
+        },
+        {
+          "caller": "updatePressKit",
+          "callee": "handler.update",
+          "lineNumber": 6
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/press-kit/service/spec.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 53,
+      "nonEmptyLines": 46,
+      "exports": [
+        {
+          "name": "PressReleaseSchema",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "PressKitSchema",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "UpdatePressKitInputSchema",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "PressKitErrorCode",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "PressKitSingleSuccessSchema",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "PressKitFailureSchema",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "PressKitResultSchema",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "PressKitSingleResultSchema",
+          "line": 53,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 8,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/seo/service/handler.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 48,
+      "nonEmptyLines": 44,
+      "classes": [
+        {
+          "name": "SEOHandler",
+          "startLine": 10,
+          "endLine": 48,
+          "methods": [
+            "list",
+            "get",
+            "update",
+            "routes"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "SEOHandler",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "list",
+          "callee": "getAllRoutes",
+          "lineNumber": 13
+        },
+        {
+          "caller": "list",
+          "callee": "safeCatch",
+          "lineNumber": 16
+        },
+        {
+          "caller": "get",
+          "callee": "readSEOMetadata",
+          "lineNumber": 22
+        },
+        {
+          "caller": "get",
+          "callee": "safeCatch",
+          "lineNumber": 25
+        },
+        {
+          "caller": "update",
+          "callee": "UpdateSEOInputSchema.parse",
+          "lineNumber": 31
+        },
+        {
+          "caller": "update",
+          "callee": "createFailure",
+          "lineNumber": 32
+        },
+        {
+          "caller": "update",
+          "callee": "updateSEOMetadata",
+          "lineNumber": 33
+        },
+        {
+          "caller": "update",
+          "callee": "safeCatch",
+          "lineNumber": 36
+        },
+        {
+          "caller": "routes",
+          "callee": "getAllRoutes",
+          "lineNumber": 42
+        },
+        {
+          "caller": "routes",
+          "callee": "safeCatch",
+          "lineNumber": 45
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/lib/seo/service/index.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 8,
+      "functions": [
+        {
+          "name": "listSEORoutes",
+          "startLine": 5,
+          "endLine": 5,
+          "params": [
+            "input"
+          ]
+        },
+        {
+          "name": "getSEO",
+          "startLine": 6,
+          "endLine": 6,
+          "params": [
+            "input"
+          ]
+        },
+        {
+          "name": "updateSEO",
+          "startLine": 7,
+          "endLine": 7,
+          "params": [
+            "input"
+          ]
+        },
+        {
+          "name": "getSEORoutes",
+          "startLine": 8,
+          "endLine": 8,
+          "params": [
+            "input"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "listSEORoutes",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "getSEO",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "updateSEO",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "getSEORoutes",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "SEOHandler",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "listSEORoutes",
+          "callee": "handler.list",
+          "lineNumber": 5
+        },
+        {
+          "caller": "getSEO",
+          "callee": "handler.get",
+          "lineNumber": 6
+        },
+        {
+          "caller": "updateSEO",
+          "callee": "handler.update",
+          "lineNumber": 7
+        },
+        {
+          "caller": "getSEORoutes",
+          "callee": "handler.routes",
+          "lineNumber": 8
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/seo/service/spec.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 61,
+      "nonEmptyLines": 53,
+      "exports": [
+        {
+          "name": "SEOEntrySchema",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "RouteSchema",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "SEOSchema",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "UpdateSEOInputSchema",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "SEOErrorCode",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "SEOListSuccessSchema",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "SEOSingleSuccessSchema",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "SEOEntrySuccessSchema",
+          "line": 49,
+          "isDefault": false
+        },
+        {
+          "name": "SEOFailureSchema",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "SEOResultSchema",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "SEOListResultSchema",
+          "line": 59,
+          "isDefault": false
+        },
+        {
+          "name": "SEOSingleResultSchema",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "SEOEntryResultSchema",
+          "line": 61,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 13,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/settings/service/handler.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 28,
+      "nonEmptyLines": 26,
+      "classes": [
+        {
+          "name": "SettingsHandler",
+          "startLine": 9,
+          "endLine": 28,
+          "methods": [
+            "get",
+            "update"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "SettingsHandler",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "get",
+          "callee": "readSettings",
+          "lineNumber": 12
+        },
+        {
+          "caller": "get",
+          "callee": "safeCatch",
+          "lineNumber": 15
+        },
+        {
+          "caller": "update",
+          "callee": "UpdateSettingsInputSchema.parse",
+          "lineNumber": 21
+        },
+        {
+          "caller": "update",
+          "callee": "updateSettings",
+          "lineNumber": 22
+        },
+        {
+          "caller": "update",
+          "callee": "safeCatch",
+          "lineNumber": 25
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/lib/settings/service/index.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 6,
+      "functions": [
+        {
+          "name": "getSettings",
+          "startLine": 5,
+          "endLine": 5,
+          "params": [
+            "input"
+          ]
+        },
+        {
+          "name": "updateSettings",
+          "startLine": 6,
+          "endLine": 6,
+          "params": [
+            "input"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getSettings",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "updateSettings",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "SettingsHandler",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getSettings",
+          "callee": "handler.get",
+          "lineNumber": 5
+        },
+        {
+          "caller": "updateSettings",
+          "callee": "handler.update",
+          "lineNumber": 6
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/settings/service/spec.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 26,
+      "nonEmptyLines": 20,
+      "exports": [
+        {
+          "name": "SettingsSchema",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "UpdateSettingsInputSchema",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "SettingsErrorCode",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "SettingsSingleSuccessSchema",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "SettingsFailureSchema",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "SettingsResultSchema",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "SettingsSingleResultSchema",
+          "line": 26,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 7,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/shop/service/handler.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 67,
+      "nonEmptyLines": 62,
+      "classes": [
+        {
+          "name": "ShopHandler",
+          "startLine": 11,
+          "endLine": 67,
+          "methods": [
+            "list",
+            "get",
+            "create",
+            "update",
+            "remove"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ShopHandler",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "list",
+          "callee": "ListShopInputSchema.parse",
+          "lineNumber": 14
+        },
+        {
+          "caller": "list",
+          "callee": "readProducts",
+          "lineNumber": 15
+        },
+        {
+          "caller": "list",
+          "callee": "safeCatch",
+          "lineNumber": 18
+        },
+        {
+          "caller": "get",
+          "callee": "LookupShopInputSchema.parse",
+          "lineNumber": 24
+        },
+        {
+          "caller": "get",
+          "callee": "createFailure",
+          "lineNumber": 25
+        },
+        {
+          "caller": "get",
+          "callee": "readProduct",
+          "lineNumber": 26
+        },
+        {
+          "caller": "get",
+          "callee": "createFailure",
+          "lineNumber": 27
+        },
+        {
+          "caller": "get",
+          "callee": "safeCatch",
+          "lineNumber": 30
+        },
+        {
+          "caller": "create",
+          "callee": "CreateShopInputSchema.parse",
+          "lineNumber": 36
+        },
+        {
+          "caller": "create",
+          "callee": "createProduct",
+          "lineNumber": 37
+        },
+        {
+          "caller": "create",
+          "callee": "safeCatch",
+          "lineNumber": 40
+        },
+        {
+          "caller": "update",
+          "callee": "UpdateShopInputSchema.parse",
+          "lineNumber": 46
+        },
+        {
+          "caller": "update",
+          "callee": "createFailure",
+          "lineNumber": 47
+        },
+        {
+          "caller": "update",
+          "callee": "updateProduct",
+          "lineNumber": 48
+        },
+        {
+          "caller": "update",
+          "callee": "createFailure",
+          "lineNumber": 49
+        },
+        {
+          "caller": "update",
+          "callee": "safeCatch",
+          "lineNumber": 52
+        },
+        {
+          "caller": "remove",
+          "callee": "LookupShopInputSchema.parse",
+          "lineNumber": 58
+        },
+        {
+          "caller": "remove",
+          "callee": "createFailure",
+          "lineNumber": 59
+        },
+        {
+          "caller": "remove",
+          "callee": "deleteProduct",
+          "lineNumber": 60
+        },
+        {
+          "caller": "remove",
+          "callee": "createFailure",
+          "lineNumber": 61
+        },
+        {
+          "caller": "remove",
+          "callee": "safeCatch",
+          "lineNumber": 64
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/lib/shop/service/index.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 12,
+      "nonEmptyLines": 9,
+      "functions": [
+        {
+          "name": "listShopProducts",
+          "startLine": 5,
+          "endLine": 5,
+          "params": [
+            "input"
+          ]
+        },
+        {
+          "name": "getShopProduct",
+          "startLine": 6,
+          "endLine": 6,
+          "params": [
+            "input"
+          ]
+        },
+        {
+          "name": "createShopProduct",
+          "startLine": 7,
+          "endLine": 7,
+          "params": [
+            "input"
+          ]
+        },
+        {
+          "name": "updateShopProduct",
+          "startLine": 8,
+          "endLine": 8,
+          "params": [
+            "input"
+          ]
+        },
+        {
+          "name": "deleteShopProduct",
+          "startLine": 9,
+          "endLine": 9,
+          "params": [
+            "input"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "listShopProducts",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "getShopProduct",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "createShopProduct",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "updateShopProduct",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "deleteShopProduct",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "ShopHandler",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "listShopProducts",
+          "callee": "handler.list",
+          "lineNumber": 5
+        },
+        {
+          "caller": "getShopProduct",
+          "callee": "handler.get",
+          "lineNumber": 6
+        },
+        {
+          "caller": "createShopProduct",
+          "callee": "handler.create",
+          "lineNumber": 7
+        },
+        {
+          "caller": "updateShopProduct",
+          "callee": "handler.update",
+          "lineNumber": 8
+        },
+        {
+          "caller": "deleteShopProduct",
+          "callee": "handler.remove",
+          "lineNumber": 9
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 6,
+        "functionCount": 5,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/shop/service/spec.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 108,
+      "nonEmptyLines": 99,
+      "exports": [
+        {
+          "name": "ShopSchema",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "CreateShopInputSchema",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "UpdateShopInputSchema",
+          "line": 58,
+          "isDefault": false
+        },
+        {
+          "name": "ListShopInputSchema",
+          "line": 82,
+          "isDefault": false
+        },
+        {
+          "name": "LookupShopInputSchema",
+          "line": 86,
+          "isDefault": false
+        },
+        {
+          "name": "ShopErrorCode",
+          "line": 88,
+          "isDefault": false
+        },
+        {
+          "name": "ShopListSuccessSchema",
+          "line": 94,
+          "isDefault": false
+        },
+        {
+          "name": "ShopSingleSuccessSchema",
+          "line": 95,
+          "isDefault": false
+        },
+        {
+          "name": "ShopDeleteSuccessSchema",
+          "line": 96,
+          "isDefault": false
+        },
+        {
+          "name": "ShopFailureSchema",
+          "line": 97,
+          "isDefault": false
+        },
+        {
+          "name": "ShopResultSchema",
+          "line": 99,
+          "isDefault": false
+        },
+        {
+          "name": "ShopListResultSchema",
+          "line": 106,
+          "isDefault": false
+        },
+        {
+          "name": "ShopSingleResultSchema",
+          "line": 107,
+          "isDefault": false
+        },
+        {
+          "name": "ShopDeleteResultSchema",
+          "line": 108,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 14,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,1050 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/app/about/error.js",
+      "type": "file",
+      "name": "error.js",
+      "filePath": "src/app/about/error.js",
+      "summary": "error.js: Source file, 1 function.",
+      "tags": [],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/about/error.js:AboutError",
+      "type": "function",
+      "name": "AboutError",
+      "filePath": "src/app/about/error.js",
+      "lineRange": [
+        5,
+        7
+      ],
+      "summary": "Function AboutError with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/about/loading.js",
+      "type": "file",
+      "name": "loading.js",
+      "filePath": "src/app/about/loading.js",
+      "summary": "loading.js: Source file, 1 function.",
+      "tags": [],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/about/loading.js:AboutLoading",
+      "type": "function",
+      "name": "AboutLoading",
+      "filePath": "src/app/about/loading.js",
+      "lineRange": [
+        3,
+        5
+      ],
+      "summary": "Function AboutLoading with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/about/page.jsx",
+      "type": "file",
+      "name": "page.jsx",
+      "filePath": "src/app/about/page.jsx",
+      "summary": "page.jsx: Source file, 1 function.",
+      "tags": [],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/about/page.jsx:AboutPage",
+      "type": "function",
+      "name": "AboutPage",
+      "filePath": "src/app/about/page.jsx",
+      "lineRange": [
+        18,
+        30
+      ],
+      "summary": "Function AboutPage with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/admin/(auth)/layout.js",
+      "type": "file",
+      "name": "layout.js",
+      "filePath": "src/app/admin/(auth)/layout.js",
+      "summary": "layout.js: Source file, 1 function.",
+      "tags": [],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/admin/(auth)/layout.js:AuthLayout",
+      "type": "function",
+      "name": "AuthLayout",
+      "filePath": "src/app/admin/(auth)/layout.js",
+      "lineRange": [
+        1,
+        3
+      ],
+      "summary": "Function AuthLayout with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/admin/(auth)/login/page.js",
+      "type": "file",
+      "name": "page.js",
+      "filePath": "src/app/admin/(auth)/login/page.js",
+      "summary": "page.js: Source file, 1 function.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/app/admin/(auth)/login/page.js:AdminLoginPage",
+      "type": "function",
+      "name": "AdminLoginPage",
+      "filePath": "src/app/admin/(auth)/login/page.js",
+      "lineRange": [
+        7,
+        140
+      ],
+      "summary": "Function AdminLoginPage with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/blog/[id]/edit/page.js",
+      "type": "file",
+      "name": "page.js",
+      "filePath": "src/app/admin/(dashboard)/blog/[id]/edit/page.js",
+      "summary": "page.js: Source file, 1 function.",
+      "tags": [],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/blog/[id]/edit/page.js:EditBlogPostPage",
+      "type": "function",
+      "name": "EditBlogPostPage",
+      "filePath": "src/app/admin/(dashboard)/blog/[id]/edit/page.js",
+      "lineRange": [
+        9,
+        27
+      ],
+      "summary": "Function EditBlogPostPage with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/blog/BlogListClient.jsx",
+      "type": "file",
+      "name": "BlogListClient.jsx",
+      "filePath": "src/app/admin/(dashboard)/blog/BlogListClient.jsx",
+      "summary": "BlogListClient.jsx: Source file, 4 functions.",
+      "tags": [],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/blog/BlogListClient.jsx:SEOScoreBadge",
+      "type": "function",
+      "name": "SEOScoreBadge",
+      "filePath": "src/app/admin/(dashboard)/blog/BlogListClient.jsx",
+      "lineRange": [
+        28,
+        32
+      ],
+      "summary": "Function SEOScoreBadge with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/blog/BlogListClient.jsx:ActionIcon",
+      "type": "function",
+      "name": "ActionIcon",
+      "filePath": "src/app/admin/(dashboard)/blog/BlogListClient.jsx",
+      "lineRange": [
+        34,
+        45
+      ],
+      "summary": "Function ActionIcon with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/blog/BlogListClient.jsx:ActionLink",
+      "type": "function",
+      "name": "ActionLink",
+      "filePath": "src/app/admin/(dashboard)/blog/BlogListClient.jsx",
+      "lineRange": [
+        47,
+        58
+      ],
+      "summary": "Function ActionLink with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/blog/BlogListClient.jsx:BlogListClient",
+      "type": "function",
+      "name": "BlogListClient",
+      "filePath": "src/app/admin/(dashboard)/blog/BlogListClient.jsx",
+      "lineRange": [
+        60,
+        265
+      ],
+      "summary": "Function BlogListClient with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/blog/new/page.js",
+      "type": "file",
+      "name": "page.js",
+      "filePath": "src/app/admin/(dashboard)/blog/new/page.js",
+      "summary": "page.js: Source file, 1 function.",
+      "tags": [],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/blog/new/page.js:NewBlogPostPage",
+      "type": "function",
+      "name": "NewBlogPostPage",
+      "filePath": "src/app/admin/(dashboard)/blog/new/page.js",
+      "lineRange": [
+        5,
+        15
+      ],
+      "summary": "Function NewBlogPostPage with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/blog/page.js",
+      "type": "file",
+      "name": "page.js",
+      "filePath": "src/app/admin/(dashboard)/blog/page.js",
+      "summary": "page.js: Source file, 1 function, 1 import.",
+      "tags": [],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/blog/page.js:AdminBlogPage",
+      "type": "function",
+      "name": "AdminBlogPage",
+      "filePath": "src/app/admin/(dashboard)/blog/page.js",
+      "lineRange": [
+        10,
+        36
+      ],
+      "summary": "Function AdminBlogPage with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/case-studies/[id]/edit/page.js",
+      "type": "file",
+      "name": "page.js",
+      "filePath": "src/app/admin/(dashboard)/case-studies/[id]/edit/page.js",
+      "summary": "page.js: Source file, 1 function.",
+      "tags": [],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/case-studies/[id]/edit/page.js:EditCaseStudiesPage",
+      "type": "function",
+      "name": "EditCaseStudiesPage",
+      "filePath": "src/app/admin/(dashboard)/case-studies/[id]/edit/page.js",
+      "lineRange": [
+        6,
+        11
+      ],
+      "summary": "Function EditCaseStudiesPage with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/case-studies/CaseStudiesListClient.jsx",
+      "type": "file",
+      "name": "CaseStudiesListClient.jsx",
+      "filePath": "src/app/admin/(dashboard)/case-studies/CaseStudiesListClient.jsx",
+      "summary": "CaseStudiesListClient.jsx: Source file, 1 function.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/case-studies/CaseStudiesListClient.jsx:CaseStudiesListClient",
+      "type": "function",
+      "name": "CaseStudiesListClient",
+      "filePath": "src/app/admin/(dashboard)/case-studies/CaseStudiesListClient.jsx",
+      "lineRange": [
+        14,
+        81
+      ],
+      "summary": "Function CaseStudiesListClient with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/case-studies/new/page.js",
+      "type": "file",
+      "name": "page.js",
+      "filePath": "src/app/admin/(dashboard)/case-studies/new/page.js",
+      "summary": "page.js: Source file, 1 function.",
+      "tags": [],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/case-studies/new/page.js:NewCaseStudiesPage",
+      "type": "function",
+      "name": "NewCaseStudiesPage",
+      "filePath": "src/app/admin/(dashboard)/case-studies/new/page.js",
+      "lineRange": [
+        5,
+        7
+      ],
+      "summary": "Function NewCaseStudiesPage with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/case-studies/page.js",
+      "type": "file",
+      "name": "page.js",
+      "filePath": "src/app/admin/(dashboard)/case-studies/page.js",
+      "summary": "page.js: Source file, 1 function, 1 import.",
+      "tags": [],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/case-studies/page.js:AdminCaseStudiesPage",
+      "type": "function",
+      "name": "AdminCaseStudiesPage",
+      "filePath": "src/app/admin/(dashboard)/case-studies/page.js",
+      "lineRange": [
+        8,
+        30
+      ],
+      "summary": "Function AdminCaseStudiesPage with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/dashboard/page.js",
+      "type": "file",
+      "name": "page.js",
+      "filePath": "src/app/admin/(dashboard)/dashboard/page.js",
+      "summary": "page.js: Source file, 1 function.",
+      "tags": [],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/dashboard/page.js:AdminDashboardPage",
+      "type": "function",
+      "name": "AdminDashboardPage",
+      "filePath": "src/app/admin/(dashboard)/dashboard/page.js",
+      "lineRange": [
+        28,
+        221
+      ],
+      "summary": "Function AdminDashboardPage with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/error.js",
+      "type": "file",
+      "name": "error.js",
+      "filePath": "src/app/admin/(dashboard)/error.js",
+      "summary": "error.js: Source file, 1 function.",
+      "tags": [],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/error.js:AdminError",
+      "type": "function",
+      "name": "AdminError",
+      "filePath": "src/app/admin/(dashboard)/error.js",
+      "lineRange": [
+        5,
+        7
+      ],
+      "summary": "Function AdminError with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/events/[id]/edit/page.js",
+      "type": "file",
+      "name": "page.js",
+      "filePath": "src/app/admin/(dashboard)/events/[id]/edit/page.js",
+      "summary": "page.js: Source file, 1 function.",
+      "tags": [],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/events/[id]/edit/page.js:EditEventsPage",
+      "type": "function",
+      "name": "EditEventsPage",
+      "filePath": "src/app/admin/(dashboard)/events/[id]/edit/page.js",
+      "lineRange": [
+        6,
+        11
+      ],
+      "summary": "Function EditEventsPage with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/events/EventsListClient.jsx",
+      "type": "file",
+      "name": "EventsListClient.jsx",
+      "filePath": "src/app/admin/(dashboard)/events/EventsListClient.jsx",
+      "summary": "EventsListClient.jsx: Source file, 1 function.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/events/EventsListClient.jsx:EventsListClient",
+      "type": "function",
+      "name": "EventsListClient",
+      "filePath": "src/app/admin/(dashboard)/events/EventsListClient.jsx",
+      "lineRange": [
+        15,
+        86
+      ],
+      "summary": "Function EventsListClient with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/events/new/page.js",
+      "type": "file",
+      "name": "page.js",
+      "filePath": "src/app/admin/(dashboard)/events/new/page.js",
+      "summary": "page.js: Source file, 1 function.",
+      "tags": [],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/events/new/page.js:NewEventsPage",
+      "type": "function",
+      "name": "NewEventsPage",
+      "filePath": "src/app/admin/(dashboard)/events/new/page.js",
+      "lineRange": [
+        5,
+        7
+      ],
+      "summary": "Function NewEventsPage with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/events/page.js",
+      "type": "file",
+      "name": "page.js",
+      "filePath": "src/app/admin/(dashboard)/events/page.js",
+      "summary": "page.js: Source file, 1 function, 1 import.",
+      "tags": [],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/events/page.js:AdminEventsPage",
+      "type": "function",
+      "name": "AdminEventsPage",
+      "filePath": "src/app/admin/(dashboard)/events/page.js",
+      "lineRange": [
+        8,
+        30
+      ],
+      "summary": "Function AdminEventsPage with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/gallery/[id]/edit/page.js",
+      "type": "file",
+      "name": "page.js",
+      "filePath": "src/app/admin/(dashboard)/gallery/[id]/edit/page.js",
+      "summary": "page.js: Source file, 1 function.",
+      "tags": [],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/gallery/[id]/edit/page.js:EditGalleryPage",
+      "type": "function",
+      "name": "EditGalleryPage",
+      "filePath": "src/app/admin/(dashboard)/gallery/[id]/edit/page.js",
+      "lineRange": [
+        6,
+        11
+      ],
+      "summary": "Function EditGalleryPage with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/gallery/GalleryListClient.jsx",
+      "type": "file",
+      "name": "GalleryListClient.jsx",
+      "filePath": "src/app/admin/(dashboard)/gallery/GalleryListClient.jsx",
+      "summary": "GalleryListClient.jsx: Source file, 1 function.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/gallery/GalleryListClient.jsx:GalleryListClient",
+      "type": "function",
+      "name": "GalleryListClient",
+      "filePath": "src/app/admin/(dashboard)/gallery/GalleryListClient.jsx",
+      "lineRange": [
+        16,
+        91
+      ],
+      "summary": "Function GalleryListClient with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/gallery/new/page.js",
+      "type": "file",
+      "name": "page.js",
+      "filePath": "src/app/admin/(dashboard)/gallery/new/page.js",
+      "summary": "page.js: Source file, 1 function.",
+      "tags": [],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/gallery/new/page.js:NewGalleryPage",
+      "type": "function",
+      "name": "NewGalleryPage",
+      "filePath": "src/app/admin/(dashboard)/gallery/new/page.js",
+      "lineRange": [
+        5,
+        7
+      ],
+      "summary": "Function NewGalleryPage with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/gallery/page.js",
+      "type": "file",
+      "name": "page.js",
+      "filePath": "src/app/admin/(dashboard)/gallery/page.js",
+      "summary": "page.js: Source file, 1 function, 1 import.",
+      "tags": [],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/gallery/page.js:AdminGalleryPage",
+      "type": "function",
+      "name": "AdminGalleryPage",
+      "filePath": "src/app/admin/(dashboard)/gallery/page.js",
+      "lineRange": [
+        8,
+        30
+      ],
+      "summary": "Function AdminGalleryPage with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/layout.js",
+      "type": "file",
+      "name": "layout.js",
+      "filePath": "src/app/admin/(dashboard)/layout.js",
+      "summary": "layout.js: Source file, 1 function.",
+      "tags": [],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/layout.js:DashboardLayout",
+      "type": "function",
+      "name": "DashboardLayout",
+      "filePath": "src/app/admin/(dashboard)/layout.js",
+      "lineRange": [
+        5,
+        13
+      ],
+      "summary": "Function DashboardLayout with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/loading.js",
+      "type": "file",
+      "name": "loading.js",
+      "filePath": "src/app/admin/(dashboard)/loading.js",
+      "summary": "loading.js: Source file, 1 function.",
+      "tags": [],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/loading.js:AdminLoading",
+      "type": "function",
+      "name": "AdminLoading",
+      "filePath": "src/app/admin/(dashboard)/loading.js",
+      "lineRange": [
+        3,
+        5
+      ],
+      "summary": "Function AdminLoading with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/app/about/error.js",
+      "target": "function:src/app/about/error.js:AboutError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/about/error.js",
+      "target": "function:src/app/about/error.js:AboutError",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/about/loading.js",
+      "target": "function:src/app/about/loading.js:AboutLoading",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/about/loading.js",
+      "target": "function:src/app/about/loading.js:AboutLoading",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/about/page.jsx",
+      "target": "function:src/app/about/page.jsx:AboutPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/about/page.jsx",
+      "target": "function:src/app/about/page.jsx:AboutPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(auth)/layout.js",
+      "target": "function:src/app/admin/(auth)/layout.js:AuthLayout",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(auth)/layout.js",
+      "target": "function:src/app/admin/(auth)/layout.js:AuthLayout",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(auth)/login/page.js",
+      "target": "function:src/app/admin/(auth)/login/page.js:AdminLoginPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(auth)/login/page.js",
+      "target": "function:src/app/admin/(auth)/login/page.js:AdminLoginPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/blog/[id]/edit/page.js",
+      "target": "function:src/app/admin/(dashboard)/blog/[id]/edit/page.js:EditBlogPostPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/blog/[id]/edit/page.js",
+      "target": "function:src/app/admin/(dashboard)/blog/[id]/edit/page.js:EditBlogPostPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/blog/BlogListClient.jsx",
+      "target": "function:src/app/admin/(dashboard)/blog/BlogListClient.jsx:SEOScoreBadge",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/blog/BlogListClient.jsx",
+      "target": "function:src/app/admin/(dashboard)/blog/BlogListClient.jsx:ActionIcon",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/blog/BlogListClient.jsx",
+      "target": "function:src/app/admin/(dashboard)/blog/BlogListClient.jsx:ActionLink",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/blog/BlogListClient.jsx",
+      "target": "function:src/app/admin/(dashboard)/blog/BlogListClient.jsx:BlogListClient",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/blog/BlogListClient.jsx",
+      "target": "function:src/app/admin/(dashboard)/blog/BlogListClient.jsx:BlogListClient",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/blog/new/page.js",
+      "target": "function:src/app/admin/(dashboard)/blog/new/page.js:NewBlogPostPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/blog/new/page.js",
+      "target": "function:src/app/admin/(dashboard)/blog/new/page.js:NewBlogPostPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/blog/page.js",
+      "target": "function:src/app/admin/(dashboard)/blog/page.js:AdminBlogPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/blog/page.js",
+      "target": "function:src/app/admin/(dashboard)/blog/page.js:AdminBlogPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/blog/page.js",
+      "target": "file:src/app/admin/(dashboard)/blog/BlogListClient.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/case-studies/[id]/edit/page.js",
+      "target": "function:src/app/admin/(dashboard)/case-studies/[id]/edit/page.js:EditCaseStudiesPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/case-studies/[id]/edit/page.js",
+      "target": "function:src/app/admin/(dashboard)/case-studies/[id]/edit/page.js:EditCaseStudiesPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/case-studies/CaseStudiesListClient.jsx",
+      "target": "function:src/app/admin/(dashboard)/case-studies/CaseStudiesListClient.jsx:CaseStudiesListClient",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/case-studies/CaseStudiesListClient.jsx",
+      "target": "function:src/app/admin/(dashboard)/case-studies/CaseStudiesListClient.jsx:CaseStudiesListClient",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/case-studies/new/page.js",
+      "target": "function:src/app/admin/(dashboard)/case-studies/new/page.js:NewCaseStudiesPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/case-studies/new/page.js",
+      "target": "function:src/app/admin/(dashboard)/case-studies/new/page.js:NewCaseStudiesPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/case-studies/page.js",
+      "target": "function:src/app/admin/(dashboard)/case-studies/page.js:AdminCaseStudiesPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/case-studies/page.js",
+      "target": "function:src/app/admin/(dashboard)/case-studies/page.js:AdminCaseStudiesPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/case-studies/page.js",
+      "target": "file:src/app/admin/(dashboard)/case-studies/CaseStudiesListClient.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/dashboard/page.js",
+      "target": "function:src/app/admin/(dashboard)/dashboard/page.js:AdminDashboardPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/dashboard/page.js",
+      "target": "function:src/app/admin/(dashboard)/dashboard/page.js:AdminDashboardPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/error.js",
+      "target": "function:src/app/admin/(dashboard)/error.js:AdminError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/error.js",
+      "target": "function:src/app/admin/(dashboard)/error.js:AdminError",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/events/[id]/edit/page.js",
+      "target": "function:src/app/admin/(dashboard)/events/[id]/edit/page.js:EditEventsPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/events/[id]/edit/page.js",
+      "target": "function:src/app/admin/(dashboard)/events/[id]/edit/page.js:EditEventsPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/events/EventsListClient.jsx",
+      "target": "function:src/app/admin/(dashboard)/events/EventsListClient.jsx:EventsListClient",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/events/EventsListClient.jsx",
+      "target": "function:src/app/admin/(dashboard)/events/EventsListClient.jsx:EventsListClient",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/events/new/page.js",
+      "target": "function:src/app/admin/(dashboard)/events/new/page.js:NewEventsPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/events/new/page.js",
+      "target": "function:src/app/admin/(dashboard)/events/new/page.js:NewEventsPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/events/page.js",
+      "target": "function:src/app/admin/(dashboard)/events/page.js:AdminEventsPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/events/page.js",
+      "target": "function:src/app/admin/(dashboard)/events/page.js:AdminEventsPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/events/page.js",
+      "target": "file:src/app/admin/(dashboard)/events/EventsListClient.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/gallery/[id]/edit/page.js",
+      "target": "function:src/app/admin/(dashboard)/gallery/[id]/edit/page.js:EditGalleryPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/gallery/[id]/edit/page.js",
+      "target": "function:src/app/admin/(dashboard)/gallery/[id]/edit/page.js:EditGalleryPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/gallery/GalleryListClient.jsx",
+      "target": "function:src/app/admin/(dashboard)/gallery/GalleryListClient.jsx:GalleryListClient",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/gallery/GalleryListClient.jsx",
+      "target": "function:src/app/admin/(dashboard)/gallery/GalleryListClient.jsx:GalleryListClient",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/gallery/new/page.js",
+      "target": "function:src/app/admin/(dashboard)/gallery/new/page.js:NewGalleryPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/gallery/new/page.js",
+      "target": "function:src/app/admin/(dashboard)/gallery/new/page.js:NewGalleryPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/gallery/page.js",
+      "target": "function:src/app/admin/(dashboard)/gallery/page.js:AdminGalleryPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/gallery/page.js",
+      "target": "function:src/app/admin/(dashboard)/gallery/page.js:AdminGalleryPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/gallery/page.js",
+      "target": "file:src/app/admin/(dashboard)/gallery/GalleryListClient.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/layout.js",
+      "target": "function:src/app/admin/(dashboard)/layout.js:DashboardLayout",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/layout.js",
+      "target": "function:src/app/admin/(dashboard)/layout.js:DashboardLayout",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/loading.js",
+      "target": "function:src/app/admin/(dashboard)/loading.js:AdminLoading",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/loading.js",
+      "target": "function:src/app/admin/(dashboard)/loading.js:AdminLoading",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

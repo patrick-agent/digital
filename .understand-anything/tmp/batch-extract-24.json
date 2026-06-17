@@ -1,0 +1,111 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 13,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/components/digital/CompanyLogos.module.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 71,
+      "nonEmptyLines": 60,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/digital/DigitalContact.module.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 156,
+      "nonEmptyLines": 138,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/digital/DigitalFooter.module.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 396,
+      "nonEmptyLines": 345,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/digital/DigitalHero.module.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 157,
+      "nonEmptyLines": 138,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/digital/DigitalIntro.module.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 190,
+      "nonEmptyLines": 164,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/digital/DigitalNavbar.module.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 270,
+      "nonEmptyLines": 238,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/digital/DigitalServices.module.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 276,
+      "nonEmptyLines": 236,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/digital/DigitalSkills.module.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 424,
+      "nonEmptyLines": 365,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/digital/DigitalSocialProof.module.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 371,
+      "nonEmptyLines": 322,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/digital/DigitalTimeline.module.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 438,
+      "nonEmptyLines": 385,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/digital/DigitalTransition.module.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 52,
+      "nonEmptyLines": 48,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/digital/TextFlip.module.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 35,
+      "nonEmptyLines": 29,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/digital/digital-vars.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 19,
+      "nonEmptyLines": 16,
+      "metrics": {}
+    }
+  ]
+}

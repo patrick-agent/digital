@@ -1,0 +1,300 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/components/admin/BlogForm.jsx",
+      "type": "file",
+      "name": "BlogForm.jsx",
+      "filePath": "src/components/admin/BlogForm.jsx",
+      "summary": "BlogForm.jsx: Source file, 3 functions, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/components/admin/BlogForm.jsx:createInitialForm",
+      "type": "function",
+      "name": "createInitialForm",
+      "filePath": "src/components/admin/BlogForm.jsx",
+      "lineRange": [
+        16,
+        52
+      ],
+      "summary": "Function createInitialForm with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/admin/BlogForm.jsx:SEOIndicator",
+      "type": "function",
+      "name": "SEOIndicator",
+      "filePath": "src/components/admin/BlogForm.jsx",
+      "lineRange": [
+        54,
+        100
+      ],
+      "summary": "Function SEOIndicator with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/admin/BlogForm.jsx:BlogForm",
+      "type": "function",
+      "name": "BlogForm",
+      "filePath": "src/components/admin/BlogForm.jsx",
+      "lineRange": [
+        102,
+        430
+      ],
+      "summary": "Function BlogForm with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/admin/RichTextEditor.jsx",
+      "type": "file",
+      "name": "RichTextEditor.jsx",
+      "filePath": "src/components/admin/RichTextEditor.jsx",
+      "summary": "RichTextEditor.jsx: Source file, 4 functions.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/components/admin/RichTextEditor.jsx:ToolbarButton",
+      "type": "function",
+      "name": "ToolbarButton",
+      "filePath": "src/components/admin/RichTextEditor.jsx",
+      "lineRange": [
+        27,
+        44
+      ],
+      "summary": "Function ToolbarButton with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/admin/RichTextEditor.jsx:ToolbarDivider",
+      "type": "function",
+      "name": "ToolbarDivider",
+      "filePath": "src/components/admin/RichTextEditor.jsx",
+      "lineRange": [
+        46,
+        48
+      ],
+      "summary": "Function ToolbarDivider with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/admin/RichTextEditor.jsx:formatHtmlForEditor",
+      "type": "function",
+      "name": "formatHtmlForEditor",
+      "filePath": "src/components/admin/RichTextEditor.jsx",
+      "lineRange": [
+        87,
+        181
+      ],
+      "summary": "Function formatHtmlForEditor with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/admin/RichTextEditor.jsx:RichTextEditor",
+      "type": "function",
+      "name": "RichTextEditor",
+      "filePath": "src/components/admin/RichTextEditor.jsx",
+      "lineRange": [
+        183,
+        409
+      ],
+      "summary": "Function RichTextEditor with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/admin/ShopForm.jsx",
+      "type": "file",
+      "name": "ShopForm.jsx",
+      "filePath": "src/components/admin/ShopForm.jsx",
+      "summary": "ShopForm.jsx: Source file, 2 functions, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/components/admin/ShopForm.jsx:createInitialForm",
+      "type": "function",
+      "name": "createInitialForm",
+      "filePath": "src/components/admin/ShopForm.jsx",
+      "lineRange": [
+        19,
+        57
+      ],
+      "summary": "Function createInitialForm with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/admin/ShopForm.jsx:ShopForm",
+      "type": "function",
+      "name": "ShopForm",
+      "filePath": "src/components/admin/ShopForm.jsx",
+      "lineRange": [
+        59,
+        436
+      ],
+      "summary": "Function ShopForm with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/components/admin/BlogForm.jsx",
+      "target": "function:src/components/admin/BlogForm.jsx:createInitialForm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/admin/BlogForm.jsx",
+      "target": "function:src/components/admin/BlogForm.jsx:SEOIndicator",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/admin/BlogForm.jsx",
+      "target": "function:src/components/admin/BlogForm.jsx:BlogForm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/admin/BlogForm.jsx",
+      "target": "function:src/components/admin/BlogForm.jsx:BlogForm",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/admin/BlogForm.jsx",
+      "target": "file:src/components/admin/RichTextEditor.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/admin/BlogForm.jsx",
+      "target": "function:src/components/admin/BlogForm.jsx:createInitialForm",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/admin/RichTextEditor.jsx",
+      "target": "function:src/components/admin/RichTextEditor.jsx:ToolbarButton",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/admin/RichTextEditor.jsx",
+      "target": "function:src/components/admin/RichTextEditor.jsx:ToolbarDivider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/admin/RichTextEditor.jsx",
+      "target": "function:src/components/admin/RichTextEditor.jsx:formatHtmlForEditor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/admin/RichTextEditor.jsx",
+      "target": "function:src/components/admin/RichTextEditor.jsx:RichTextEditor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/admin/RichTextEditor.jsx",
+      "target": "function:src/components/admin/RichTextEditor.jsx:RichTextEditor",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/admin/RichTextEditor.jsx",
+      "target": "function:src/components/admin/RichTextEditor.jsx:formatHtmlForEditor",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/admin/RichTextEditor.jsx",
+      "target": "function:src/components/admin/RichTextEditor.jsx:formatHtmlForEditor",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/admin/ShopForm.jsx",
+      "target": "function:src/components/admin/ShopForm.jsx:createInitialForm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/admin/ShopForm.jsx",
+      "target": "function:src/components/admin/ShopForm.jsx:ShopForm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/admin/ShopForm.jsx",
+      "target": "function:src/components/admin/ShopForm.jsx:ShopForm",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/admin/ShopForm.jsx",
+      "target": "file:src/components/admin/RichTextEditor.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/admin/ShopForm.jsx",
+      "target": "function:src/components/admin/ShopForm.jsx:createInitialForm",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

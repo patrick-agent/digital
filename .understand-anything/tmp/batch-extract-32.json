@@ -1,0 +1,2141 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/app/admin/(dashboard)/media/MediaLibraryClient.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 157,
+      "nonEmptyLines": 146,
+      "functions": [
+        {
+          "name": "MediaLibraryClient",
+          "startLine": 7,
+          "endLine": 157,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "MediaLibraryClient",
+          "line": 7,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "MediaLibraryClient",
+          "callee": "useRef",
+          "lineNumber": 8
+        },
+        {
+          "caller": "MediaLibraryClient",
+          "callee": "useState",
+          "lineNumber": 9
+        },
+        {
+          "caller": "MediaLibraryClient",
+          "callee": "useState",
+          "lineNumber": 10
+        },
+        {
+          "caller": "MediaLibraryClient",
+          "callee": "useState",
+          "lineNumber": 11
+        },
+        {
+          "caller": "MediaLibraryClient",
+          "callee": "useState",
+          "lineNumber": 12
+        },
+        {
+          "caller": "uploadFile",
+          "callee": "formData.append",
+          "lineNumber": 16
+        },
+        {
+          "caller": "uploadFile",
+          "callee": "formData.append",
+          "lineNumber": 17
+        },
+        {
+          "caller": "uploadFile",
+          "callee": "formData.append",
+          "lineNumber": 18
+        },
+        {
+          "caller": "uploadFile",
+          "callee": "fetch",
+          "lineNumber": 20
+        },
+        {
+          "caller": "uploadFile",
+          "callee": "res.json().catch",
+          "lineNumber": 25
+        },
+        {
+          "caller": "uploadFile",
+          "callee": "res.json",
+          "lineNumber": 25
+        },
+        {
+          "caller": "uploadFile",
+          "callee": "res.json",
+          "lineNumber": 28
+        },
+        {
+          "caller": "handleFileChange",
+          "callee": "Array.from",
+          "lineNumber": 32
+        },
+        {
+          "caller": "handleFileChange",
+          "callee": "setUploading",
+          "lineNumber": 35
+        },
+        {
+          "caller": "handleFileChange",
+          "callee": "uploaded.push",
+          "lineNumber": 39
+        },
+        {
+          "caller": "handleFileChange",
+          "callee": "uploadFile",
+          "lineNumber": 39
+        },
+        {
+          "caller": "handleFileChange",
+          "callee": "setItems",
+          "lineNumber": 41
+        },
+        {
+          "caller": "handleFileChange",
+          "callee": "setAlt",
+          "lineNumber": 42
+        },
+        {
+          "caller": "handleFileChange",
+          "callee": "toast.success",
+          "lineNumber": 43
+        },
+        {
+          "caller": "handleFileChange",
+          "callee": "toast.error",
+          "lineNumber": 45
+        },
+        {
+          "caller": "handleFileChange",
+          "callee": "setUploading",
+          "lineNumber": 47
+        },
+        {
+          "caller": "copyUrl",
+          "callee": "navigator.clipboard.writeText",
+          "lineNumber": 53
+        },
+        {
+          "caller": "copyUrl",
+          "callee": "toast.success",
+          "lineNumber": 54
+        },
+        {
+          "caller": "deleteItem",
+          "callee": "fetch",
+          "lineNumber": 58
+        },
+        {
+          "caller": "deleteItem",
+          "callee": "toast.error",
+          "lineNumber": 60
+        },
+        {
+          "caller": "deleteItem",
+          "callee": "setItems",
+          "lineNumber": 63
+        },
+        {
+          "caller": "deleteItem",
+          "callee": "prev.filter",
+          "lineNumber": 63
+        },
+        {
+          "caller": "deleteItem",
+          "callee": "toast.success",
+          "lineNumber": 64
+        },
+        {
+          "caller": "MediaLibraryClient",
+          "callee": "fileInputRef.current?.click",
+          "lineNumber": 77
+        },
+        {
+          "caller": "MediaLibraryClient",
+          "callee": "setFolder",
+          "lineNumber": 93
+        },
+        {
+          "caller": "MediaLibraryClient",
+          "callee": "setAlt",
+          "lineNumber": 102
+        },
+        {
+          "caller": "MediaLibraryClient",
+          "callee": "items.map",
+          "lineNumber": 118
+        },
+        {
+          "caller": "MediaLibraryClient",
+          "callee": "copyUrl",
+          "lineNumber": 136
+        },
+        {
+          "caller": "MediaLibraryClient",
+          "callee": "deleteItem",
+          "lineNumber": 143
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/media/page.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 7,
+      "functions": [
+        {
+          "name": "AdminMediaPage",
+          "startLine": 6,
+          "endLine": 9,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "AdminMediaPage",
+          "line": 6,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AdminMediaPage",
+          "callee": "readMedia",
+          "lineNumber": 7
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/music/[id]/edit/page.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 9,
+      "functions": [
+        {
+          "name": "EditMusicPage",
+          "startLine": 6,
+          "endLine": 11,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "EditMusicPage",
+          "line": 6,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "EditMusicPage",
+          "callee": "readMusicItem",
+          "lineNumber": 8
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/music/MusicListClient.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 113,
+      "nonEmptyLines": 106,
+      "functions": [
+        {
+          "name": "MusicListClient",
+          "startLine": 21,
+          "endLine": 113,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "MusicListClient",
+          "line": 21,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "MusicListClient",
+          "callee": "useRouter",
+          "lineNumber": 22
+        },
+        {
+          "caller": "MusicListClient",
+          "callee": "useState",
+          "lineNumber": 23
+        },
+        {
+          "caller": "MusicListClient",
+          "callee": "useState",
+          "lineNumber": 24
+        },
+        {
+          "caller": "MusicListClient",
+          "callee": "useState",
+          "lineNumber": 25
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "confirm",
+          "lineNumber": 28
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "fetch",
+          "lineNumber": 29
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "setItems",
+          "lineNumber": 31
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "prev.filter",
+          "lineNumber": 31
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "router.refresh",
+          "lineNumber": 32
+        },
+        {
+          "caller": "MusicListClient",
+          "callee": "items.filter",
+          "lineNumber": 36
+        },
+        {
+          "caller": "MusicListClient",
+          "callee": "item.title.toLowerCase().includes",
+          "lineNumber": 37
+        },
+        {
+          "caller": "MusicListClient",
+          "callee": "item.title.toLowerCase",
+          "lineNumber": 37
+        },
+        {
+          "caller": "MusicListClient",
+          "callee": "search.toLowerCase",
+          "lineNumber": 37
+        },
+        {
+          "caller": "MusicListClient",
+          "callee": "setSearch",
+          "lineNumber": 47
+        },
+        {
+          "caller": "MusicListClient",
+          "callee": "setTypeFilter",
+          "lineNumber": 49
+        },
+        {
+          "caller": "MusicListClient",
+          "callee": "filtered.map",
+          "lineNumber": 74
+        },
+        {
+          "caller": "MusicListClient",
+          "callee": "new Date(item.releaseDate).toLocaleDateString",
+          "lineNumber": 93
+        },
+        {
+          "caller": "MusicListClient",
+          "callee": "handleDelete",
+          "lineNumber": 101
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/music/new/page.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 6,
+      "functions": [
+        {
+          "name": "NewMusicPage",
+          "startLine": 6,
+          "endLine": 8,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "NewMusicPage",
+          "line": 6,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/music/page.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 30,
+      "nonEmptyLines": 27,
+      "functions": [
+        {
+          "name": "AdminMusicPage",
+          "startLine": 8,
+          "endLine": 30,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "AdminMusicPage",
+          "line": 8,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AdminMusicPage",
+          "callee": "readMusic",
+          "lineNumber": 10
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/newsletter/NewsletterClient.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 114,
+      "nonEmptyLines": 105,
+      "functions": [
+        {
+          "name": "NewsletterClient",
+          "startLine": 12,
+          "endLine": 114,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "NewsletterClient",
+          "line": 12,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "NewsletterClient",
+          "callee": "useState",
+          "lineNumber": 13
+        },
+        {
+          "caller": "NewsletterClient",
+          "callee": "useState",
+          "lineNumber": 14
+        },
+        {
+          "caller": "NewsletterClient",
+          "callee": "useState",
+          "lineNumber": 15
+        },
+        {
+          "caller": "handleUnsubscribe",
+          "callee": "confirm",
+          "lineNumber": 18
+        },
+        {
+          "caller": "handleUnsubscribe",
+          "callee": "fetch",
+          "lineNumber": 19
+        },
+        {
+          "caller": "handleUnsubscribe",
+          "callee": "JSON.stringify",
+          "lineNumber": 22
+        },
+        {
+          "caller": "handleUnsubscribe",
+          "callee": "setSubscribers",
+          "lineNumber": 25
+        },
+        {
+          "caller": "handleUnsubscribe",
+          "callee": "prev.map",
+          "lineNumber": 25
+        },
+        {
+          "caller": "handleExportCSV",
+          "callee": "subscribers.map",
+          "lineNumber": 31
+        },
+        {
+          "caller": "handleExportCSV",
+          "callee": "(s.personaInterest || []).join",
+          "lineNumber": 32
+        },
+        {
+          "caller": "handleExportCSV",
+          "callee": "new Date(s.subscribedAt).toLocaleDateString",
+          "lineNumber": 33
+        },
+        {
+          "caller": "handleExportCSV",
+          "callee": "[headers, ...rows].map((r) => r.map((c) => `\"${c}\"`).join(\",\")).join",
+          "lineNumber": 35
+        },
+        {
+          "caller": "handleExportCSV",
+          "callee": "[headers, ...rows].map",
+          "lineNumber": 35
+        },
+        {
+          "caller": "handleExportCSV",
+          "callee": "r.map((c) => `\"${c}\"`).join",
+          "lineNumber": 35
+        },
+        {
+          "caller": "handleExportCSV",
+          "callee": "r.map",
+          "lineNumber": 35
+        },
+        {
+          "caller": "handleExportCSV",
+          "callee": "URL.createObjectURL",
+          "lineNumber": 37
+        },
+        {
+          "caller": "handleExportCSV",
+          "callee": "document.createElement",
+          "lineNumber": 38
+        },
+        {
+          "caller": "handleExportCSV",
+          "callee": "a.click",
+          "lineNumber": 41
+        },
+        {
+          "caller": "handleExportCSV",
+          "callee": "URL.revokeObjectURL",
+          "lineNumber": 42
+        },
+        {
+          "caller": "NewsletterClient",
+          "callee": "subscribers.filter",
+          "lineNumber": 45
+        },
+        {
+          "caller": "NewsletterClient",
+          "callee": "s.email.toLowerCase().includes",
+          "lineNumber": 46
+        },
+        {
+          "caller": "NewsletterClient",
+          "callee": "s.email.toLowerCase",
+          "lineNumber": 46
+        },
+        {
+          "caller": "NewsletterClient",
+          "callee": "search.toLowerCase",
+          "lineNumber": 46
+        },
+        {
+          "caller": "NewsletterClient",
+          "callee": "s.firstName?.toLowerCase().includes",
+          "lineNumber": 46
+        },
+        {
+          "caller": "NewsletterClient",
+          "callee": "s.firstName?.toLowerCase",
+          "lineNumber": 46
+        },
+        {
+          "caller": "NewsletterClient",
+          "callee": "search.toLowerCase",
+          "lineNumber": 46
+        },
+        {
+          "caller": "NewsletterClient",
+          "callee": "setSearch",
+          "lineNumber": 67
+        },
+        {
+          "caller": "NewsletterClient",
+          "callee": "setStatusFilter",
+          "lineNumber": 69
+        },
+        {
+          "caller": "NewsletterClient",
+          "callee": "filtered.map",
+          "lineNumber": 92
+        },
+        {
+          "caller": "NewsletterClient",
+          "callee": "(s.personaInterest || []).join",
+          "lineNumber": 96
+        },
+        {
+          "caller": "NewsletterClient",
+          "callee": "new Date(s.subscribedAt).toLocaleDateString",
+          "lineNumber": 97
+        },
+        {
+          "caller": "NewsletterClient",
+          "callee": "handleUnsubscribe",
+          "lineNumber": 101
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/newsletter/page.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 11,
+      "functions": [
+        {
+          "name": "NewsletterPage",
+          "startLine": 6,
+          "endLine": 14,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "NewsletterPage",
+          "line": 6,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "NewsletterPage",
+          "callee": "readSubscribers",
+          "lineNumber": 8
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/page.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 5,
+      "nonEmptyLines": 4,
+      "functions": [
+        {
+          "name": "AdminPage",
+          "startLine": 3,
+          "endLine": 5,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AdminPage",
+          "line": 3,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AdminPage",
+          "callee": "redirect",
+          "lineNumber": 4
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/pages/page.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 52,
+      "nonEmptyLines": 48,
+      "functions": [
+        {
+          "name": "AdminPagesPage",
+          "startLine": 15,
+          "endLine": 52,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "AdminPagesPage",
+          "line": 15,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AdminPagesPage",
+          "callee": "STATIC_PAGES.map",
+          "lineNumber": 24
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/press-kit/page.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 7,
+      "functions": [
+        {
+          "name": "PressKitPage",
+          "startLine": 6,
+          "endLine": 9,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "PressKitPage",
+          "line": 6,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "PressKitPage",
+          "callee": "readPressKit",
+          "lineNumber": 7
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/seo/page.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 10,
+      "nonEmptyLines": 8,
+      "functions": [
+        {
+          "name": "SEOPage",
+          "startLine": 6,
+          "endLine": 10,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "SEOPage",
+          "line": 6,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "SEOPage",
+          "callee": "readSEOMetadata",
+          "lineNumber": 7
+        },
+        {
+          "caller": "SEOPage",
+          "callee": "getAllRoutes",
+          "lineNumber": 8
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/seo/SEOClient.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 125,
+      "nonEmptyLines": 114,
+      "functions": [
+        {
+          "name": "SEOClient",
+          "startLine": 6,
+          "endLine": 125,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "SEOClient",
+          "line": 6,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "SEOClient",
+          "callee": "useState",
+          "lineNumber": 8
+        },
+        {
+          "caller": "SEOClient",
+          "callee": "useState",
+          "lineNumber": 11
+        },
+        {
+          "caller": "handleRouteChange",
+          "callee": "setSelectedRoute",
+          "lineNumber": 21
+        },
+        {
+          "caller": "handleRouteChange",
+          "callee": "setForm",
+          "lineNumber": 23
+        },
+        {
+          "caller": "handleChange",
+          "callee": "setForm",
+          "lineNumber": 30
+        },
+        {
+          "caller": "handleSave",
+          "callee": "fetch",
+          "lineNumber": 33
+        },
+        {
+          "caller": "handleSave",
+          "callee": "JSON.stringify",
+          "lineNumber": 36
+        },
+        {
+          "caller": "handleSave",
+          "callee": "alert",
+          "lineNumber": 38
+        },
+        {
+          "caller": "SEOClient",
+          "callee": "routes.map",
+          "lineNumber": 61
+        },
+        {
+          "caller": "SEOClient",
+          "callee": "handleRouteChange",
+          "lineNumber": 64
+        },
+        {
+          "caller": "SEOClient",
+          "callee": "routes.find",
+          "lineNumber": 82
+        },
+        {
+          "caller": "SEOClient",
+          "callee": "handleChange",
+          "lineNumber": 87
+        },
+        {
+          "caller": "SEOClient",
+          "callee": "handleChange",
+          "lineNumber": 91
+        },
+        {
+          "caller": "SEOClient",
+          "callee": "handleChange",
+          "lineNumber": 95
+        },
+        {
+          "caller": "SEOClient",
+          "callee": "handleChange",
+          "lineNumber": 100
+        },
+        {
+          "caller": "SEOClient",
+          "callee": "handleChange",
+          "lineNumber": 104
+        },
+        {
+          "caller": "SEOClient",
+          "callee": "handleChange",
+          "lineNumber": 114
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/services/[id]/edit/page.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 9,
+      "functions": [
+        {
+          "name": "EditServicesPage",
+          "startLine": 6,
+          "endLine": 11,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "EditServicesPage",
+          "line": 6,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "EditServicesPage",
+          "callee": "readService",
+          "lineNumber": 8
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/services/new/page.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "NewServicesPage",
+          "startLine": 5,
+          "endLine": 7,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "NewServicesPage",
+          "line": 5,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/services/page.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 30,
+      "nonEmptyLines": 27,
+      "functions": [
+        {
+          "name": "AdminServicesPage",
+          "startLine": 8,
+          "endLine": 30,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "AdminServicesPage",
+          "line": 8,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AdminServicesPage",
+          "callee": "readServices",
+          "lineNumber": 10
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/services/ServicesListClient.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 83,
+      "nonEmptyLines": 76,
+      "functions": [
+        {
+          "name": "ServicesListClient",
+          "startLine": 14,
+          "endLine": 83,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ServicesListClient",
+          "line": 14,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ServicesListClient",
+          "callee": "useRouter",
+          "lineNumber": 15
+        },
+        {
+          "caller": "ServicesListClient",
+          "callee": "useState",
+          "lineNumber": 16
+        },
+        {
+          "caller": "ServicesListClient",
+          "callee": "useState",
+          "lineNumber": 17
+        },
+        {
+          "caller": "ServicesListClient",
+          "callee": "useState",
+          "lineNumber": 18
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "confirm",
+          "lineNumber": 21
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "fetch",
+          "lineNumber": 22
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "setItems",
+          "lineNumber": 23
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "prev.filter",
+          "lineNumber": 23
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "router.refresh",
+          "lineNumber": 23
+        },
+        {
+          "caller": "ServicesListClient",
+          "callee": "items.filter",
+          "lineNumber": 26
+        },
+        {
+          "caller": "ServicesListClient",
+          "callee": "item.serviceName.toLowerCase().includes",
+          "lineNumber": 27
+        },
+        {
+          "caller": "ServicesListClient",
+          "callee": "item.serviceName.toLowerCase",
+          "lineNumber": 27
+        },
+        {
+          "caller": "ServicesListClient",
+          "callee": "search.toLowerCase",
+          "lineNumber": 27
+        },
+        {
+          "caller": "ServicesListClient",
+          "callee": "setSearch",
+          "lineNumber": 37
+        },
+        {
+          "caller": "ServicesListClient",
+          "callee": "setStatusFilter",
+          "lineNumber": 39
+        },
+        {
+          "caller": "ServicesListClient",
+          "callee": "filtered.map",
+          "lineNumber": 62
+        },
+        {
+          "caller": "ServicesListClient",
+          "callee": "handleDelete",
+          "lineNumber": 72
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/settings/page.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 19,
+      "functions": [
+        {
+          "name": "AdminSettingsPage",
+          "startLine": 6,
+          "endLine": 23,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "AdminSettingsPage",
+          "line": 6,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AdminSettingsPage",
+          "callee": "readSettings",
+          "lineNumber": 7
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/settings/SettingsForm.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 130,
+      "nonEmptyLines": 116,
+      "functions": [
+        {
+          "name": "SettingsForm",
+          "startLine": 6,
+          "endLine": 130,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "SettingsForm",
+          "line": 6,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "SettingsForm",
+          "callee": "useRouter",
+          "lineNumber": 7
+        },
+        {
+          "caller": "SettingsForm",
+          "callee": "useState",
+          "lineNumber": 8
+        },
+        {
+          "caller": "SettingsForm",
+          "callee": "(settings.seoKeywords || []).join",
+          "lineNumber": 12
+        },
+        {
+          "caller": "SettingsForm",
+          "callee": "useState",
+          "lineNumber": 14
+        },
+        {
+          "caller": "SettingsForm",
+          "callee": "useState",
+          "lineNumber": 15
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "e.preventDefault",
+          "lineNumber": 18
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setSaving",
+          "lineNumber": 19
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setMessage",
+          "lineNumber": 20
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "fetch",
+          "lineNumber": 23
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "JSON.stringify",
+          "lineNumber": 26
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "form.seoKeywords\n            .split(\",\")\n            .map((t) => t.trim())\n            .filter",
+          "lineNumber": 28
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "form.seoKeywords\n            .split(\",\")\n            .map",
+          "lineNumber": 28
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "form.seoKeywords\n            .split",
+          "lineNumber": 28
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "t.trim",
+          "lineNumber": 30
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setMessage",
+          "lineNumber": 37
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "router.refresh",
+          "lineNumber": 38
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setMessage",
+          "lineNumber": 40
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setSaving",
+          "lineNumber": 42
+        },
+        {
+          "caller": "SettingsForm",
+          "callee": "setForm",
+          "lineNumber": 60
+        },
+        {
+          "caller": "SettingsForm",
+          "callee": "setForm",
+          "lineNumber": 78
+        },
+        {
+          "caller": "SettingsForm",
+          "callee": "setForm",
+          "lineNumber": 89
+        },
+        {
+          "caller": "SettingsForm",
+          "callee": "setForm",
+          "lineNumber": 102
+        },
+        {
+          "caller": "SettingsForm",
+          "callee": "message.includes",
+          "lineNumber": 111
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/shop/[id]/edit/page.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 25,
+      "nonEmptyLines": 20,
+      "functions": [
+        {
+          "name": "EditProductPage",
+          "startLine": 7,
+          "endLine": 25,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "EditProductPage",
+          "line": 7,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "EditProductPage",
+          "callee": "readProduct",
+          "lineNumber": 9
+        },
+        {
+          "caller": "EditProductPage",
+          "callee": "notFound",
+          "lineNumber": 12
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/shop/new/page.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 12,
+      "functions": [
+        {
+          "name": "NewProductPage",
+          "startLine": 3,
+          "endLine": 14,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "NewProductPage",
+          "line": 3,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/shop/page.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 39,
+      "nonEmptyLines": 34,
+      "functions": [
+        {
+          "name": "AdminShopPage",
+          "startLine": 8,
+          "endLine": 39,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "AdminShopPage",
+          "line": 8,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AdminShopPage",
+          "callee": "readProducts",
+          "lineNumber": 13
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/shop/ShopListClient.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 142,
+      "nonEmptyLines": 133,
+      "functions": [
+        {
+          "name": "ShopListClient",
+          "startLine": 15,
+          "endLine": 142,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ShopListClient",
+          "line": 15,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ShopListClient",
+          "callee": "useRouter",
+          "lineNumber": 16
+        },
+        {
+          "caller": "ShopListClient",
+          "callee": "useState",
+          "lineNumber": 17
+        },
+        {
+          "caller": "ShopListClient",
+          "callee": "useState",
+          "lineNumber": 18
+        },
+        {
+          "caller": "ShopListClient",
+          "callee": "useState",
+          "lineNumber": 19
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "confirm",
+          "lineNumber": 22
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "fetch",
+          "lineNumber": 24
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "setProducts",
+          "lineNumber": 29
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "prev.filter",
+          "lineNumber": 29
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "router.refresh",
+          "lineNumber": 30
+        },
+        {
+          "caller": "ShopListClient",
+          "callee": "products.filter",
+          "lineNumber": 34
+        },
+        {
+          "caller": "ShopListClient",
+          "callee": "product.name.toLowerCase().includes",
+          "lineNumber": 36
+        },
+        {
+          "caller": "ShopListClient",
+          "callee": "product.name.toLowerCase",
+          "lineNumber": 36
+        },
+        {
+          "caller": "ShopListClient",
+          "callee": "search.toLowerCase",
+          "lineNumber": 36
+        },
+        {
+          "caller": "ShopListClient",
+          "callee": "setSearch",
+          "lineNumber": 49
+        },
+        {
+          "caller": "ShopListClient",
+          "callee": "setStatusFilter",
+          "lineNumber": 56
+        },
+        {
+          "caller": "ShopListClient",
+          "callee": "filtered.map",
+          "lineNumber": 95
+        },
+        {
+          "caller": "ShopListClient",
+          "callee": "product.status?.replace",
+          "lineNumber": 109
+        },
+        {
+          "caller": "ShopListClient",
+          "callee": "product.price?.toFixed",
+          "lineNumber": 113
+        },
+        {
+          "caller": "ShopListClient",
+          "callee": "handleDelete",
+          "lineNumber": 127
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/website/page.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 7,
+      "functions": [
+        {
+          "name": "AdminWebsitePage",
+          "startLine": 6,
+          "endLine": 9,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "AdminWebsitePage",
+          "line": 6,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AdminWebsitePage",
+          "callee": "readSettings",
+          "lineNumber": 7
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/app/admin/(dashboard)/website/WebsiteBuilderClient.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 366,
+      "nonEmptyLines": 348,
+      "functions": [
+        {
+          "name": "Card",
+          "startLine": 20,
+          "endLine": 30,
+          "params": []
+        },
+        {
+          "name": "TextField",
+          "startLine": 32,
+          "endLine": 46,
+          "params": []
+        },
+        {
+          "name": "TextArea",
+          "startLine": 48,
+          "endLine": 61,
+          "params": []
+        },
+        {
+          "name": "ToggleField",
+          "startLine": 63,
+          "endLine": 76,
+          "params": []
+        },
+        {
+          "name": "LinkEditor",
+          "startLine": 78,
+          "endLine": 131,
+          "params": []
+        },
+        {
+          "name": "WebsiteBuilderClient",
+          "startLine": 133,
+          "endLine": 366,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "WebsiteBuilderClient",
+          "line": 133,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "TextField",
+          "callee": "onChange",
+          "lineNumber": 39
+        },
+        {
+          "caller": "TextArea",
+          "callee": "onChange",
+          "lineNumber": 54
+        },
+        {
+          "caller": "ToggleField",
+          "callee": "Boolean",
+          "lineNumber": 69
+        },
+        {
+          "caller": "ToggleField",
+          "callee": "onChange",
+          "lineNumber": 70
+        },
+        {
+          "caller": "LinkEditor",
+          "callee": "items.map",
+          "lineNumber": 92
+        },
+        {
+          "caller": "LinkEditor",
+          "callee": "onChange",
+          "lineNumber": 96
+        },
+        {
+          "caller": "LinkEditor",
+          "callee": "onChange",
+          "lineNumber": 99
+        },
+        {
+          "caller": "LinkEditor",
+          "callee": "onChange",
+          "lineNumber": 103
+        },
+        {
+          "caller": "LinkEditor",
+          "callee": "onChange",
+          "lineNumber": 111
+        },
+        {
+          "caller": "LinkEditor",
+          "callee": "onRemove",
+          "lineNumber": 118
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "useState",
+          "lineNumber": 134
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "useState",
+          "lineNumber": 135
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "mergeSiteSettings",
+          "lineNumber": 135
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "useState",
+          "lineNumber": 136
+        },
+        {
+          "caller": "updateTopLevel",
+          "callee": "setForm",
+          "lineNumber": 138
+        },
+        {
+          "caller": "updateObject",
+          "callee": "setForm",
+          "lineNumber": 139
+        },
+        {
+          "caller": "updateHero",
+          "callee": "setForm",
+          "lineNumber": 140
+        },
+        {
+          "caller": "updateSectionVisibility",
+          "callee": "setForm",
+          "lineNumber": 144
+        },
+        {
+          "caller": "updateLink",
+          "callee": "setForm",
+          "lineNumber": 151
+        },
+        {
+          "caller": "updateLink",
+          "callee": "prev[group].map",
+          "lineNumber": 153
+        },
+        {
+          "caller": "removeLink",
+          "callee": "setForm",
+          "lineNumber": 155
+        },
+        {
+          "caller": "removeLink",
+          "callee": "prev[group].filter",
+          "lineNumber": 157
+        },
+        {
+          "caller": "addLink",
+          "callee": "setForm",
+          "lineNumber": 159
+        },
+        {
+          "caller": "updateFooterLink",
+          "callee": "setForm",
+          "lineNumber": 163
+        },
+        {
+          "caller": "updateFooterLink",
+          "callee": "prev.footer[group].map",
+          "lineNumber": 167
+        },
+        {
+          "caller": "removeFooterLink",
+          "callee": "setForm",
+          "lineNumber": 170
+        },
+        {
+          "caller": "removeFooterLink",
+          "callee": "prev.footer[group].filter",
+          "lineNumber": 172
+        },
+        {
+          "caller": "addFooterLink",
+          "callee": "setForm",
+          "lineNumber": 174
+        },
+        {
+          "caller": "updateParagraph",
+          "callee": "setForm",
+          "lineNumber": 178
+        },
+        {
+          "caller": "updateParagraph",
+          "callee": "prev.footer.paragraphs.map",
+          "lineNumber": 182
+        },
+        {
+          "caller": "handleSave",
+          "callee": "setSaving",
+          "lineNumber": 187
+        },
+        {
+          "caller": "handleSave",
+          "callee": "fetch",
+          "lineNumber": 189
+        },
+        {
+          "caller": "handleSave",
+          "callee": "JSON.stringify",
+          "lineNumber": 192
+        },
+        {
+          "caller": "handleSave",
+          "callee": "res.json",
+          "lineNumber": 195
+        },
+        {
+          "caller": "handleSave",
+          "callee": "setForm",
+          "lineNumber": 196
+        },
+        {
+          "caller": "handleSave",
+          "callee": "mergeSiteSettings",
+          "lineNumber": 196
+        },
+        {
+          "caller": "handleSave",
+          "callee": "toast.success",
+          "lineNumber": 197
+        },
+        {
+          "caller": "handleSave",
+          "callee": "toast.error",
+          "lineNumber": 199
+        },
+        {
+          "caller": "handleSave",
+          "callee": "setSaving",
+          "lineNumber": 201
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "tabs.map",
+          "lineNumber": 235
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "setActiveTab",
+          "lineNumber": 241
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "updateTopLevel",
+          "lineNumber": 261
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "updateObject",
+          "lineNumber": 262
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "updateObject",
+          "lineNumber": 263
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "updateObject",
+          "lineNumber": 264
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "updateObject",
+          "lineNumber": 265
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "updateObject",
+          "lineNumber": 266
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "Object.entries(form.socialLinks).map",
+          "lineNumber": 271
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "Object.entries",
+          "lineNumber": 271
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "updateObject",
+          "lineNumber": 272
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "updateHero",
+          "lineNumber": 283
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "updateHero",
+          "lineNumber": 284
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "updateHero",
+          "lineNumber": 285
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "updateHero",
+          "lineNumber": 286
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "updateHero",
+          "lineNumber": 287
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "updateHero",
+          "lineNumber": 288
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "updateHero",
+          "lineNumber": 290
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "updateHero",
+          "lineNumber": 291
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "updateHero",
+          "lineNumber": 293
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "updateHero",
+          "lineNumber": 294
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "Object.entries(form.homepage.sectionVisibility).map",
+          "lineNumber": 299
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "Object.entries",
+          "lineNumber": 299
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "updateSectionVisibility",
+          "lineNumber": 300
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "updateLink",
+          "lineNumber": 313
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "addLink",
+          "lineNumber": 314
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "removeLink",
+          "lineNumber": 315
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "updateObject",
+          "lineNumber": 323
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "form.footer.paragraphs.map",
+          "lineNumber": 324
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "updateParagraph",
+          "lineNumber": 325
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "updateObject",
+          "lineNumber": 327
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "updateFooterLink",
+          "lineNumber": 333
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "addFooterLink",
+          "lineNumber": 334
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "removeFooterLink",
+          "lineNumber": 335
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "updateFooterLink",
+          "lineNumber": 340
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "addFooterLink",
+          "lineNumber": 341
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "removeFooterLink",
+          "lineNumber": 342
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "updateObject",
+          "lineNumber": 351
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "updateObject",
+          "lineNumber": 352
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "updateObject",
+          "lineNumber": 353
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "updateObject",
+          "lineNumber": 354
+        },
+        {
+          "caller": "WebsiteBuilderClient",
+          "callee": "updateObject",
+          "lineNumber": 355
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 6,
+        "classCount": 0
+      }
+    }
+  ]
+}

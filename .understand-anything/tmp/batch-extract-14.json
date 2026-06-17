@@ -1,0 +1,738 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 3,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/components/shop/ProductCard.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 80,
+      "nonEmptyLines": 78,
+      "functions": [
+        {
+          "name": "ProductCard",
+          "startLine": 10,
+          "endLine": 80,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ProductCard",
+          "line": 10,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ProductCard",
+          "callee": "getPrimaryProductImage",
+          "lineNumber": 23
+        },
+        {
+          "caller": "ProductCard",
+          "callee": "getPrimaryProductImage",
+          "lineNumber": 25
+        },
+        {
+          "caller": "ProductCard",
+          "callee": "getProductExcerpt",
+          "lineNumber": 52
+        },
+        {
+          "caller": "ProductCard",
+          "callee": "formatProductPrice",
+          "lineNumber": 56
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/shop/ProductShelf.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 126,
+      "nonEmptyLines": 108,
+      "functions": [
+        {
+          "name": "ProductShelf",
+          "startLine": 7,
+          "endLine": 126,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ProductShelf",
+          "line": 7,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ProductShelf",
+          "callee": "useRef",
+          "lineNumber": 8
+        },
+        {
+          "caller": "ProductShelf",
+          "callee": "useId",
+          "lineNumber": 9
+        },
+        {
+          "caller": "ProductShelf",
+          "callee": "useState",
+          "lineNumber": 10
+        },
+        {
+          "caller": "ProductShelf",
+          "callee": "useState",
+          "lineNumber": 11
+        },
+        {
+          "caller": "ProductShelf",
+          "callee": "useEffectEvent",
+          "lineNumber": 13
+        },
+        {
+          "caller": "ProductShelf",
+          "callee": "setCanScrollPrev",
+          "lineNumber": 18
+        },
+        {
+          "caller": "ProductShelf",
+          "callee": "setCanScrollNext",
+          "lineNumber": 19
+        },
+        {
+          "caller": "ProductShelf",
+          "callee": "useEffect",
+          "lineNumber": 22
+        },
+        {
+          "caller": "ProductShelf",
+          "callee": "updateControls",
+          "lineNumber": 26
+        },
+        {
+          "caller": "handleScroll",
+          "callee": "updateControls",
+          "lineNumber": 28
+        },
+        {
+          "caller": "handleResize",
+          "callee": "updateControls",
+          "lineNumber": 29
+        },
+        {
+          "caller": "ProductShelf",
+          "callee": "viewport.addEventListener",
+          "lineNumber": 31
+        },
+        {
+          "caller": "ProductShelf",
+          "callee": "window.addEventListener",
+          "lineNumber": 32
+        },
+        {
+          "caller": "ProductShelf",
+          "callee": "viewport.removeEventListener",
+          "lineNumber": 35
+        },
+        {
+          "caller": "ProductShelf",
+          "callee": "window.removeEventListener",
+          "lineNumber": 36
+        },
+        {
+          "caller": "scrollByViewport",
+          "callee": "Math.max",
+          "lineNumber": 44
+        },
+        {
+          "caller": "scrollByViewport",
+          "callee": "viewport.scrollBy",
+          "lineNumber": 46
+        },
+        {
+          "caller": "handleKeyDown",
+          "callee": "event.preventDefault",
+          "lineNumber": 54
+        },
+        {
+          "caller": "handleKeyDown",
+          "callee": "scrollByViewport",
+          "lineNumber": 55
+        },
+        {
+          "caller": "handleKeyDown",
+          "callee": "event.preventDefault",
+          "lineNumber": 59
+        },
+        {
+          "caller": "handleKeyDown",
+          "callee": "scrollByViewport",
+          "lineNumber": 60
+        },
+        {
+          "caller": "ProductShelf",
+          "callee": "scrollByViewport",
+          "lineNumber": 74
+        },
+        {
+          "caller": "ProductShelf",
+          "callee": "scrollByViewport",
+          "lineNumber": 84
+        },
+        {
+          "caller": "ProductShelf",
+          "callee": "products.map",
+          "lineNumber": 112
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/shop/ShopClient.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 402,
+      "nonEmptyLines": 343,
+      "functions": [
+        {
+          "name": "normalizeSearchValue",
+          "startLine": 20,
+          "endLine": 25,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "parsePriceRange",
+          "startLine": 27,
+          "endLine": 35,
+          "params": [
+            "priceRange"
+          ]
+        },
+        {
+          "name": "matchesSearch",
+          "startLine": 37,
+          "endLine": 49,
+          "params": [
+            "product",
+            "query"
+          ]
+        },
+        {
+          "name": "sortProducts",
+          "startLine": 51,
+          "endLine": 65,
+          "params": [
+            "products",
+            "sort"
+          ]
+        },
+        {
+          "name": "buildCategorySummary",
+          "startLine": 67,
+          "endLine": 69,
+          "params": [
+            "category",
+            "count"
+          ]
+        },
+        {
+          "name": "getCategorySectionId",
+          "startLine": 71,
+          "endLine": 73,
+          "params": [
+            "category"
+          ]
+        },
+        {
+          "name": "ShopClient",
+          "startLine": 75,
+          "endLine": 402,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ShopClient",
+          "line": 75,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "normalizeSearchValue",
+          "callee": "String(value || \"\")\n    .normalize(\"NFD\")\n    .replace(/[\\u0300-\\u036f]/g, \"\")\n    .toLowerCase",
+          "lineNumber": 21
+        },
+        {
+          "caller": "normalizeSearchValue",
+          "callee": "String(value || \"\")\n    .normalize(\"NFD\")\n    .replace",
+          "lineNumber": 21
+        },
+        {
+          "caller": "normalizeSearchValue",
+          "callee": "String(value || \"\")\n    .normalize",
+          "lineNumber": 21
+        },
+        {
+          "caller": "normalizeSearchValue",
+          "callee": "String",
+          "lineNumber": 21
+        },
+        {
+          "caller": "parsePriceRange",
+          "callee": "priceRange.split",
+          "lineNumber": 30
+        },
+        {
+          "caller": "parsePriceRange",
+          "callee": "Number",
+          "lineNumber": 31
+        },
+        {
+          "caller": "parsePriceRange",
+          "callee": "Number",
+          "lineNumber": 32
+        },
+        {
+          "caller": "matchesSearch",
+          "callee": "normalizeSearchValue",
+          "lineNumber": 40
+        },
+        {
+          "caller": "matchesSearch",
+          "callee": "[\n    product.name,\n    product.brand,\n    product.category,\n    stripHtml(product.description),\n    ...(product.tags || []),\n  ].filter(Boolean).join",
+          "lineNumber": 40
+        },
+        {
+          "caller": "matchesSearch",
+          "callee": "[\n    product.name,\n    product.brand,\n    product.category,\n    stripHtml(product.description),\n    ...(product.tags || []),\n  ].filter",
+          "lineNumber": 40
+        },
+        {
+          "caller": "matchesSearch",
+          "callee": "stripHtml",
+          "lineNumber": 44
+        },
+        {
+          "caller": "matchesSearch",
+          "callee": "haystack.includes",
+          "lineNumber": 48
+        },
+        {
+          "caller": "sortProducts",
+          "callee": "sortedProducts.sort",
+          "lineNumber": 55
+        },
+        {
+          "caller": "sortProducts",
+          "callee": "sortedProducts.sort",
+          "lineNumber": 57
+        },
+        {
+          "caller": "sortProducts",
+          "callee": "sortedProducts.sort",
+          "lineNumber": 59
+        },
+        {
+          "caller": "sortProducts",
+          "callee": "(left.name || \"\").localeCompare",
+          "lineNumber": 59
+        },
+        {
+          "caller": "sortProducts",
+          "callee": "sortedProducts.sort",
+          "lineNumber": 61
+        },
+        {
+          "caller": "sortProducts",
+          "callee": "(right.name || \"\").localeCompare",
+          "lineNumber": 61
+        },
+        {
+          "caller": "getCategorySectionId",
+          "callee": "normalizeSearchValue(category).replace(/[^a-z0-9]+/g, \"-\").replace",
+          "lineNumber": 72
+        },
+        {
+          "caller": "getCategorySectionId",
+          "callee": "normalizeSearchValue(category).replace",
+          "lineNumber": 72
+        },
+        {
+          "caller": "getCategorySectionId",
+          "callee": "normalizeSearchValue",
+          "lineNumber": 72
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "useState",
+          "lineNumber": 84
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "useState",
+          "lineNumber": 85
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "useState",
+          "lineNumber": 86
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "useState",
+          "lineNumber": 87
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "useReducedMotion",
+          "lineNumber": 88
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "usePathname",
+          "lineNumber": 89
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "useDeferredValue",
+          "lineNumber": 90
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "useMemo",
+          "lineNumber": 92
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "normalizeSearchValue",
+          "lineNumber": 92
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "deferredQuery.trim",
+          "lineNumber": 92
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "useMemo",
+          "lineNumber": 94
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "Object.hasOwn",
+          "lineNumber": 102
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "Boolean",
+          "lineNumber": 109
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "useMemo",
+          "lineNumber": 111
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "categories.map",
+          "lineNumber": 112
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "parsePriceRange",
+          "lineNumber": 113
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "grouped.has",
+          "lineNumber": 116
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "matchesSearch",
+          "lineNumber": 119
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "grouped.get(product.category).push",
+          "lineNumber": 120
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "grouped.get",
+          "lineNumber": 120
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "categories\n      .map((category) => {\n        const products = sortProducts(grouped.get(category) || [], sort)\n        const previewProducts = hasActiveFilters ? products : products.slice(0, PRODUCT_PREVIEW_LIMIT)\n\n        return {\n          category,\n          products,\n          previewProducts,\n          description: buildCategorySummary(category, products.length),\n        }\n      })\n      .filter",
+          "lineNumber": 123
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "categories\n      .map",
+          "lineNumber": 123
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "sortProducts",
+          "lineNumber": 125
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "grouped.get",
+          "lineNumber": 125
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "products.slice",
+          "lineNumber": 126
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "buildCategorySummary",
+          "lineNumber": 132
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "useMemo",
+          "lineNumber": 138
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "sections.reduce",
+          "lineNumber": 139
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "useMemo",
+          "lineNumber": 142
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "sections.reduce",
+          "lineNumber": 143
+        },
+        {
+          "caller": "handleCategoryChange",
+          "callee": "startTransition",
+          "lineNumber": 152
+        },
+        {
+          "caller": "handleCategoryChange",
+          "callee": "setActiveCategory",
+          "lineNumber": 153
+        },
+        {
+          "caller": "handlePriceRangeChange",
+          "callee": "startTransition",
+          "lineNumber": 160
+        },
+        {
+          "caller": "handlePriceRangeChange",
+          "callee": "setPriceRange",
+          "lineNumber": 161
+        },
+        {
+          "caller": "handleSortChange",
+          "callee": "startTransition",
+          "lineNumber": 168
+        },
+        {
+          "caller": "handleSortChange",
+          "callee": "setSort",
+          "lineNumber": 169
+        },
+        {
+          "caller": "handleSearchChange",
+          "callee": "startTransition",
+          "lineNumber": 176
+        },
+        {
+          "caller": "handleSearchChange",
+          "callee": "setSearchQuery",
+          "lineNumber": 177
+        },
+        {
+          "caller": "handleClearSearch",
+          "callee": "startTransition",
+          "lineNumber": 182
+        },
+        {
+          "caller": "handleClearSearch",
+          "callee": "setSearchQuery",
+          "lineNumber": 183
+        },
+        {
+          "caller": "handleSectionAction",
+          "callee": "startTransition",
+          "lineNumber": 188
+        },
+        {
+          "caller": "handleSectionAction",
+          "callee": "setActiveCategory",
+          "lineNumber": 189
+        },
+        {
+          "caller": "clearFilters",
+          "callee": "startTransition",
+          "lineNumber": 194
+        },
+        {
+          "caller": "clearFilters",
+          "callee": "setActiveCategory",
+          "lineNumber": 195
+        },
+        {
+          "caller": "clearFilters",
+          "callee": "setPriceRange",
+          "lineNumber": 196
+        },
+        {
+          "caller": "clearFilters",
+          "callee": "setSort",
+          "lineNumber": 197
+        },
+        {
+          "caller": "clearFilters",
+          "callee": "setSearchQuery",
+          "lineNumber": 198
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "useEffectEvent",
+          "lineNumber": 202
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "nextQuery.trim",
+          "lineNumber": 206
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "params.set",
+          "lineNumber": 209
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "params.delete",
+          "lineNumber": 211
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "params.set",
+          "lineNumber": 215
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "params.delete",
+          "lineNumber": 217
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "params.set",
+          "lineNumber": 221
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "params.delete",
+          "lineNumber": 223
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "params.set",
+          "lineNumber": 227
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "params.delete",
+          "lineNumber": 229
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "params.toString",
+          "lineNumber": 232
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "window.history.replaceState",
+          "lineNumber": 237
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "useEffect",
+          "lineNumber": 241
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "syncUrlState",
+          "lineNumber": 242
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "SHOP_PRICE_RANGES.map",
+          "lineNumber": 288
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "SHOP_SORT_OPTIONS.map",
+          "lineNumber": 302
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "[\n                    activeCategory ? `Danh mục: ${activeCategory}` : null,\n                    priceRange && SHOP_PRICE_RANGE_LABELS[priceRange] ? `Giá: ${SHOP_PRICE_RANGE_LABELS[priceRange]}` : null,\n                    sort && SHOP_SORT_LABELS[sort] ? `Sắp xếp: ${SHOP_SORT_LABELS[sort]}` : null,\n                    normalizedQuery ? `Keyword: “${searchQuery.trim()}”` : null,\n                  ].filter(Boolean).join",
+          "lineNumber": 324
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "[\n                    activeCategory ? `Danh mục: ${activeCategory}` : null,\n                    priceRange && SHOP_PRICE_RANGE_LABELS[priceRange] ? `Giá: ${SHOP_PRICE_RANGE_LABELS[priceRange]}` : null,\n                    sort && SHOP_SORT_LABELS[sort] ? `Sắp xếp: ${SHOP_SORT_LABELS[sort]}` : null,\n                    normalizedQuery ? `Keyword: “${searchQuery.trim()}”` : null,\n                  ].filter",
+          "lineNumber": 324
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "searchQuery.trim",
+          "lineNumber": 328
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "sections.map",
+          "lineNumber": 368
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "getCategorySectionId",
+          "lineNumber": 370
+        },
+        {
+          "caller": "ShopClient",
+          "callee": "handleSectionAction",
+          "lineNumber": 392
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 7,
+        "classCount": 0
+      }
+    }
+  ]
+}

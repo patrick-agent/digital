@@ -1,0 +1,204 @@
+{
+  "projectRoot": "C:\\Users\\Admin\\Desktop\\Website 3D\\studio-3d",
+  "batchFiles": [
+    {
+      "path": "src/components/canvas/GradientBlinds.jsx",
+      "language": "javascript",
+      "sizeLines": 362,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/Particles.jsx",
+      "language": "javascript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/Scene3D.jsx",
+      "language": "javascript",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/SpotlightCard.jsx",
+      "language": "javascript",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/Canvas3DFallback.jsx",
+      "language": "javascript",
+      "sizeLines": 66,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/contact/ContactPage.module.css",
+      "language": "css",
+      "sizeLines": 474,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/digital/digital-blog/blog-posts.js",
+      "language": "javascript",
+      "sizeLines": 315,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/digital/digital-blog/blog.css",
+      "language": "css",
+      "sizeLines": 948,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/digital/digital-blog/BlogCard.jsx",
+      "language": "javascript",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/digital/digital-blog/FlickeringGrid.jsx",
+      "language": "javascript",
+      "sizeLines": 168,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/digital/digital-blog/TagFilter.jsx",
+      "language": "javascript",
+      "sizeLines": 71,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/digital/DigitalContact.jsx",
+      "language": "javascript",
+      "sizeLines": 49,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/digital/DigitalFooter.jsx",
+      "language": "javascript",
+      "sizeLines": 119,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/digital/DigitalHero.jsx",
+      "language": "javascript",
+      "sizeLines": 101,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/digital/DigitalServices.jsx",
+      "language": "javascript",
+      "sizeLines": 140,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/digital/DigitalSkills.jsx",
+      "language": "javascript",
+      "sizeLines": 249,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/digital/DigitalSocialProof.jsx",
+      "language": "javascript",
+      "sizeLines": 162,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/digital/DigitalTimeline.jsx",
+      "language": "javascript",
+      "sizeLines": 359,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/digital/DigitalTransition.jsx",
+      "language": "javascript",
+      "sizeLines": 92,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/digital/GalaxyBackground.jsx",
+      "language": "javascript",
+      "sizeLines": 187,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ErrorBoundary.jsx",
+      "language": "javascript",
+      "sizeLines": 89,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/HomeLazySections.jsx",
+      "language": "javascript",
+      "sizeLines": 105,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/layout/Footer.module.css",
+      "language": "css",
+      "sizeLines": 400,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/layout/Navbar.jsx",
+      "language": "javascript",
+      "sizeLines": 205,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/layout/Navbar.module.css",
+      "language": "css",
+      "sizeLines": 443,
+      "fileCategory": "markup"
+    }
+  ],
+  "batchImportData": {
+    "src/components/canvas/GradientBlinds.jsx": [
+      "src/components/canvas/GradientBlinds.css"
+    ],
+    "src/components/canvas/Particles.jsx": [],
+    "src/components/canvas/Scene3D.jsx": [],
+    "src/components/canvas/SpotlightCard.jsx": [
+      "src/components/canvas/SpotlightCard.css"
+    ],
+    "src/components/Canvas3DFallback.jsx": [],
+    "src/components/contact/ContactPage.module.css": [],
+    "src/components/digital/digital-blog/blog-posts.js": [],
+    "src/components/digital/digital-blog/blog.css": [],
+    "src/components/digital/digital-blog/BlogCard.jsx": [],
+    "src/components/digital/digital-blog/FlickeringGrid.jsx": [],
+    "src/components/digital/digital-blog/TagFilter.jsx": [],
+    "src/components/digital/DigitalContact.jsx": [
+      "src/components/digital/DigitalContact.module.css"
+    ],
+    "src/components/digital/DigitalFooter.jsx": [
+      "src/components/digital/DigitalFooter.module.css"
+    ],
+    "src/components/digital/DigitalHero.jsx": [
+      "src/components/digital/DigitalHero.module.css"
+    ],
+    "src/components/digital/DigitalServices.jsx": [
+      "src/components/digital/DigitalServices.module.css"
+    ],
+    "src/components/digital/DigitalSkills.jsx": [
+      "src/components/digital/DigitalSkills.module.css"
+    ],
+    "src/components/digital/DigitalSocialProof.jsx": [
+      "src/components/digital/DigitalSocialProof.module.css"
+    ],
+    "src/components/digital/DigitalTimeline.jsx": [
+      "src/components/digital/DigitalTimeline.module.css"
+    ],
+    "src/components/digital/DigitalTransition.jsx": [
+      "src/components/digital/DigitalTransition.module.css"
+    ],
+    "src/components/digital/GalaxyBackground.jsx": [],
+    "src/components/ErrorBoundary.jsx": [],
+    "src/components/HomeLazySections.jsx": [],
+    "src/components/layout/Footer.module.css": [],
+    "src/components/layout/Navbar.jsx": [
+      "src/components/layout/Navbar.module.css"
+    ],
+    "src/components/layout/Navbar.module.css": []
+  }
+}

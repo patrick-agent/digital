@@ -1,0 +1,34 @@
+{
+  "projectRoot": "C:\\Users\\Admin\\Desktop\\Website 3D\\studio-3d",
+  "batchFiles": [
+    {
+      "path": "src/lib/search-console/service/handler.js",
+      "language": "javascript",
+      "sizeLines": 99,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/search-console/service/index.js",
+      "language": "javascript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/search-console/service/spec.js",
+      "language": "javascript",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/lib/search-console/service/handler.js": [
+      "src/lib/search-console/service/spec.js"
+    ],
+    "src/lib/search-console/service/index.js": [
+      "src/lib/search-console/service/handler.js"
+    ],
+    "src/lib/search-console/service/spec.js": [
+      "src/lib/contract/base.js"
+    ]
+  }
+}

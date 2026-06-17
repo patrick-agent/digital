@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect, useCallback, useRef } from "react"
+import { useState, useCallback, useRef } from "react"
 import { useRouter } from "next/navigation"
 import {
   SiSpotify, SiYoutube, SiApplemusic, SiSoundcloud, SiTidal, SiYoutubemusic,
@@ -30,45 +30,46 @@ const STREAMING_PLATFORMS = [
   { key: "deezerUrl", field: "deezer", label: "Deezer", icon: SiTidal, color: "#A238FF", placeholder: "https://deezer.com/..." },
 ]
 
+function createInitialForm(item) {
+  if (!item) {
+    return {
+      title: "", slug: "", type: "single", releaseDate: "", coverArt: "",
+      spotifyEmbed: "", description: "", featured: false, status: "draft",
+      tracklistRaw: "",
+      spotifyUrl: "", appleUrl: "", youtubeUrl: "", soundcloudUrl: "",
+      amazonMusicUrl: "", youtubeMusicUrl: "", tidalUrl: "", deezerUrl: "",
+    }
+  }
+
+  return {
+    title: item.title || "", slug: item.slug || "", type: item.type || "single",
+    releaseDate: item.releaseDate ? item.releaseDate.slice(0, 10) : "",
+    coverArt: item.coverArt || "", spotifyEmbed: item.spotifyEmbed || "",
+    description: item.description || "", featured: item.featured || false,
+    status: item.status || "draft",
+    tracklistRaw: (item.tracklist || []).join("\n"),
+    spotifyUrl: item.streamingLinks?.spotify || "",
+    appleUrl: item.streamingLinks?.apple || "",
+    youtubeUrl: item.streamingLinks?.youtube || "",
+    soundcloudUrl: item.streamingLinks?.soundcloud || "",
+    amazonMusicUrl: item.streamingLinks?.amazon_music || "",
+    youtubeMusicUrl: item.streamingLinks?.youtube_music || "",
+    tidalUrl: item.streamingLinks?.tidal || "",
+    deezerUrl: item.streamingLinks?.deezer || "",
+  }
+}
+
 export default function MusicForm({ item }) {
   const router = useRouter()
   const isEditing = !!item
   const fileInputRef = useRef(null)
 
-  const [form, setForm] = useState({
-    title: "", slug: "", type: "single", releaseDate: "", coverArt: "",
-    spotifyEmbed: "", description: "", featured: false, status: "draft",
-    tracklistRaw: "",
-    spotifyUrl: "", appleUrl: "", youtubeUrl: "", soundcloudUrl: "",
-    amazonMusicUrl: "", youtubeMusicUrl: "", tidalUrl: "", deezerUrl: "",
-  })
+  const [form, setForm] = useState(() => createInitialForm(item))
   const [slugManuallyEdited, setSlugManuallyEdited] = useState(false)
   const [saving, setSaving] = useState(false)
   const [error, setError] = useState("")
   const [uploading, setUploading] = useState(false)
-  const [coverPreview, setCoverPreview] = useState("")
-
-  useEffect(() => {
-    if (item) {
-      setForm({
-        title: item.title || "", slug: item.slug || "", type: item.type || "single",
-        releaseDate: item.releaseDate ? item.releaseDate.slice(0, 10) : "",
-        coverArt: item.coverArt || "", spotifyEmbed: item.spotifyEmbed || "",
-        description: item.description || "", featured: item.featured || false,
-        status: item.status || "draft",
-        tracklistRaw: (item.tracklist || []).join("\n"),
-        spotifyUrl: item.streamingLinks?.spotify || "",
-        appleUrl: item.streamingLinks?.apple || "",
-        youtubeUrl: item.streamingLinks?.youtube || "",
-        soundcloudUrl: item.streamingLinks?.soundcloud || "",
-        amazonMusicUrl: item.streamingLinks?.amazon_music || "",
-        youtubeMusicUrl: item.streamingLinks?.youtube_music || "",
-        tidalUrl: item.streamingLinks?.tidal || "",
-        deezerUrl: item.streamingLinks?.deezer || "",
-      })
-      setCoverPreview(item.coverArt || "")
-    }
-  }, [item])
+  const [coverPreview, setCoverPreview] = useState(() => item?.coverArt || "")
 
   const handleChange = useCallback((field, value) => {
     setForm((prev) => {

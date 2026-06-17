@@ -1,0 +1,1130 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/app/admin/(dashboard)/media/MediaLibraryClient.jsx",
+      "type": "file",
+      "name": "MediaLibraryClient.jsx",
+      "filePath": "src/app/admin/(dashboard)/media/MediaLibraryClient.jsx",
+      "summary": "MediaLibraryClient.jsx: Source file, 1 function.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/media/MediaLibraryClient.jsx:MediaLibraryClient",
+      "type": "function",
+      "name": "MediaLibraryClient",
+      "filePath": "src/app/admin/(dashboard)/media/MediaLibraryClient.jsx",
+      "lineRange": [
+        7,
+        157
+      ],
+      "summary": "Function MediaLibraryClient with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/media/page.js",
+      "type": "file",
+      "name": "page.js",
+      "filePath": "src/app/admin/(dashboard)/media/page.js",
+      "summary": "page.js: Source file, 1 function, 1 import.",
+      "tags": [],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/media/page.js:AdminMediaPage",
+      "type": "function",
+      "name": "AdminMediaPage",
+      "filePath": "src/app/admin/(dashboard)/media/page.js",
+      "lineRange": [
+        6,
+        9
+      ],
+      "summary": "Function AdminMediaPage with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/music/[id]/edit/page.js",
+      "type": "file",
+      "name": "page.js",
+      "filePath": "src/app/admin/(dashboard)/music/[id]/edit/page.js",
+      "summary": "page.js: Source file, 1 function.",
+      "tags": [],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/music/[id]/edit/page.js:EditMusicPage",
+      "type": "function",
+      "name": "EditMusicPage",
+      "filePath": "src/app/admin/(dashboard)/music/[id]/edit/page.js",
+      "lineRange": [
+        6,
+        11
+      ],
+      "summary": "Function EditMusicPage with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/music/MusicListClient.jsx",
+      "type": "file",
+      "name": "MusicListClient.jsx",
+      "filePath": "src/app/admin/(dashboard)/music/MusicListClient.jsx",
+      "summary": "MusicListClient.jsx: Source file, 1 function.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/music/MusicListClient.jsx:MusicListClient",
+      "type": "function",
+      "name": "MusicListClient",
+      "filePath": "src/app/admin/(dashboard)/music/MusicListClient.jsx",
+      "lineRange": [
+        21,
+        113
+      ],
+      "summary": "Function MusicListClient with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/music/new/page.js",
+      "type": "file",
+      "name": "page.js",
+      "filePath": "src/app/admin/(dashboard)/music/new/page.js",
+      "summary": "page.js: Source file, 1 function.",
+      "tags": [],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/music/new/page.js:NewMusicPage",
+      "type": "function",
+      "name": "NewMusicPage",
+      "filePath": "src/app/admin/(dashboard)/music/new/page.js",
+      "lineRange": [
+        6,
+        8
+      ],
+      "summary": "Function NewMusicPage with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/music/page.js",
+      "type": "file",
+      "name": "page.js",
+      "filePath": "src/app/admin/(dashboard)/music/page.js",
+      "summary": "page.js: Source file, 1 function, 1 import.",
+      "tags": [],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/music/page.js:AdminMusicPage",
+      "type": "function",
+      "name": "AdminMusicPage",
+      "filePath": "src/app/admin/(dashboard)/music/page.js",
+      "lineRange": [
+        8,
+        30
+      ],
+      "summary": "Function AdminMusicPage with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/newsletter/NewsletterClient.jsx",
+      "type": "file",
+      "name": "NewsletterClient.jsx",
+      "filePath": "src/app/admin/(dashboard)/newsletter/NewsletterClient.jsx",
+      "summary": "NewsletterClient.jsx: Source file, 1 function.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/newsletter/NewsletterClient.jsx:NewsletterClient",
+      "type": "function",
+      "name": "NewsletterClient",
+      "filePath": "src/app/admin/(dashboard)/newsletter/NewsletterClient.jsx",
+      "lineRange": [
+        12,
+        114
+      ],
+      "summary": "Function NewsletterClient with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/newsletter/page.js",
+      "type": "file",
+      "name": "page.js",
+      "filePath": "src/app/admin/(dashboard)/newsletter/page.js",
+      "summary": "page.js: Source file, 1 function, 1 import.",
+      "tags": [],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/newsletter/page.js:NewsletterPage",
+      "type": "function",
+      "name": "NewsletterPage",
+      "filePath": "src/app/admin/(dashboard)/newsletter/page.js",
+      "lineRange": [
+        6,
+        14
+      ],
+      "summary": "Function NewsletterPage with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/page.js",
+      "type": "file",
+      "name": "page.js",
+      "filePath": "src/app/admin/(dashboard)/page.js",
+      "summary": "page.js: Source file, 1 function.",
+      "tags": [],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/page.js:AdminPage",
+      "type": "function",
+      "name": "AdminPage",
+      "filePath": "src/app/admin/(dashboard)/page.js",
+      "lineRange": [
+        3,
+        5
+      ],
+      "summary": "Function AdminPage with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/pages/page.js",
+      "type": "file",
+      "name": "page.js",
+      "filePath": "src/app/admin/(dashboard)/pages/page.js",
+      "summary": "page.js: Source file, 1 function.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/pages/page.js:AdminPagesPage",
+      "type": "function",
+      "name": "AdminPagesPage",
+      "filePath": "src/app/admin/(dashboard)/pages/page.js",
+      "lineRange": [
+        15,
+        52
+      ],
+      "summary": "Function AdminPagesPage with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/press-kit/page.js",
+      "type": "file",
+      "name": "page.js",
+      "filePath": "src/app/admin/(dashboard)/press-kit/page.js",
+      "summary": "page.js: Source file, 1 function.",
+      "tags": [],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/press-kit/page.js:PressKitPage",
+      "type": "function",
+      "name": "PressKitPage",
+      "filePath": "src/app/admin/(dashboard)/press-kit/page.js",
+      "lineRange": [
+        6,
+        9
+      ],
+      "summary": "Function PressKitPage with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/seo/page.js",
+      "type": "file",
+      "name": "page.js",
+      "filePath": "src/app/admin/(dashboard)/seo/page.js",
+      "summary": "page.js: Source file, 1 function, 1 import.",
+      "tags": [],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/seo/page.js:SEOPage",
+      "type": "function",
+      "name": "SEOPage",
+      "filePath": "src/app/admin/(dashboard)/seo/page.js",
+      "lineRange": [
+        6,
+        10
+      ],
+      "summary": "Function SEOPage with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/seo/SEOClient.jsx",
+      "type": "file",
+      "name": "SEOClient.jsx",
+      "filePath": "src/app/admin/(dashboard)/seo/SEOClient.jsx",
+      "summary": "SEOClient.jsx: Source file, 1 function.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/seo/SEOClient.jsx:SEOClient",
+      "type": "function",
+      "name": "SEOClient",
+      "filePath": "src/app/admin/(dashboard)/seo/SEOClient.jsx",
+      "lineRange": [
+        6,
+        125
+      ],
+      "summary": "Function SEOClient with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/services/[id]/edit/page.js",
+      "type": "file",
+      "name": "page.js",
+      "filePath": "src/app/admin/(dashboard)/services/[id]/edit/page.js",
+      "summary": "page.js: Source file, 1 function.",
+      "tags": [
+        "service"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/services/[id]/edit/page.js:EditServicesPage",
+      "type": "function",
+      "name": "EditServicesPage",
+      "filePath": "src/app/admin/(dashboard)/services/[id]/edit/page.js",
+      "lineRange": [
+        6,
+        11
+      ],
+      "summary": "Function EditServicesPage with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/services/new/page.js",
+      "type": "file",
+      "name": "page.js",
+      "filePath": "src/app/admin/(dashboard)/services/new/page.js",
+      "summary": "page.js: Source file, 1 function.",
+      "tags": [
+        "service"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/services/new/page.js:NewServicesPage",
+      "type": "function",
+      "name": "NewServicesPage",
+      "filePath": "src/app/admin/(dashboard)/services/new/page.js",
+      "lineRange": [
+        5,
+        7
+      ],
+      "summary": "Function NewServicesPage with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/services/page.js",
+      "type": "file",
+      "name": "page.js",
+      "filePath": "src/app/admin/(dashboard)/services/page.js",
+      "summary": "page.js: Source file, 1 function, 1 import.",
+      "tags": [
+        "service"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/services/page.js:AdminServicesPage",
+      "type": "function",
+      "name": "AdminServicesPage",
+      "filePath": "src/app/admin/(dashboard)/services/page.js",
+      "lineRange": [
+        8,
+        30
+      ],
+      "summary": "Function AdminServicesPage with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/services/ServicesListClient.jsx",
+      "type": "file",
+      "name": "ServicesListClient.jsx",
+      "filePath": "src/app/admin/(dashboard)/services/ServicesListClient.jsx",
+      "summary": "ServicesListClient.jsx: Source file, 1 function.",
+      "tags": [
+        "service"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/services/ServicesListClient.jsx:ServicesListClient",
+      "type": "function",
+      "name": "ServicesListClient",
+      "filePath": "src/app/admin/(dashboard)/services/ServicesListClient.jsx",
+      "lineRange": [
+        14,
+        83
+      ],
+      "summary": "Function ServicesListClient with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/settings/page.js",
+      "type": "file",
+      "name": "page.js",
+      "filePath": "src/app/admin/(dashboard)/settings/page.js",
+      "summary": "page.js: Source file, 1 function, 1 import.",
+      "tags": [],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/settings/page.js:AdminSettingsPage",
+      "type": "function",
+      "name": "AdminSettingsPage",
+      "filePath": "src/app/admin/(dashboard)/settings/page.js",
+      "lineRange": [
+        6,
+        23
+      ],
+      "summary": "Function AdminSettingsPage with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/settings/SettingsForm.jsx",
+      "type": "file",
+      "name": "SettingsForm.jsx",
+      "filePath": "src/app/admin/(dashboard)/settings/SettingsForm.jsx",
+      "summary": "SettingsForm.jsx: Source file, 1 function.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/settings/SettingsForm.jsx:SettingsForm",
+      "type": "function",
+      "name": "SettingsForm",
+      "filePath": "src/app/admin/(dashboard)/settings/SettingsForm.jsx",
+      "lineRange": [
+        6,
+        130
+      ],
+      "summary": "Function SettingsForm with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/shop/[id]/edit/page.js",
+      "type": "file",
+      "name": "page.js",
+      "filePath": "src/app/admin/(dashboard)/shop/[id]/edit/page.js",
+      "summary": "page.js: Source file, 1 function.",
+      "tags": [],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/shop/[id]/edit/page.js:EditProductPage",
+      "type": "function",
+      "name": "EditProductPage",
+      "filePath": "src/app/admin/(dashboard)/shop/[id]/edit/page.js",
+      "lineRange": [
+        7,
+        25
+      ],
+      "summary": "Function EditProductPage with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/shop/new/page.js",
+      "type": "file",
+      "name": "page.js",
+      "filePath": "src/app/admin/(dashboard)/shop/new/page.js",
+      "summary": "page.js: Source file, 1 function.",
+      "tags": [],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/shop/new/page.js:NewProductPage",
+      "type": "function",
+      "name": "NewProductPage",
+      "filePath": "src/app/admin/(dashboard)/shop/new/page.js",
+      "lineRange": [
+        3,
+        14
+      ],
+      "summary": "Function NewProductPage with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/shop/page.js",
+      "type": "file",
+      "name": "page.js",
+      "filePath": "src/app/admin/(dashboard)/shop/page.js",
+      "summary": "page.js: Source file, 1 function, 1 import.",
+      "tags": [],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/shop/page.js:AdminShopPage",
+      "type": "function",
+      "name": "AdminShopPage",
+      "filePath": "src/app/admin/(dashboard)/shop/page.js",
+      "lineRange": [
+        8,
+        39
+      ],
+      "summary": "Function AdminShopPage with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/shop/ShopListClient.jsx",
+      "type": "file",
+      "name": "ShopListClient.jsx",
+      "filePath": "src/app/admin/(dashboard)/shop/ShopListClient.jsx",
+      "summary": "ShopListClient.jsx: Source file, 1 function.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/shop/ShopListClient.jsx:ShopListClient",
+      "type": "function",
+      "name": "ShopListClient",
+      "filePath": "src/app/admin/(dashboard)/shop/ShopListClient.jsx",
+      "lineRange": [
+        15,
+        142
+      ],
+      "summary": "Function ShopListClient with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/website/page.js",
+      "type": "file",
+      "name": "page.js",
+      "filePath": "src/app/admin/(dashboard)/website/page.js",
+      "summary": "page.js: Source file, 1 function, 1 import.",
+      "tags": [],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/website/page.js:AdminWebsitePage",
+      "type": "function",
+      "name": "AdminWebsitePage",
+      "filePath": "src/app/admin/(dashboard)/website/page.js",
+      "lineRange": [
+        6,
+        9
+      ],
+      "summary": "Function AdminWebsitePage with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/admin/(dashboard)/website/WebsiteBuilderClient.jsx",
+      "type": "file",
+      "name": "WebsiteBuilderClient.jsx",
+      "filePath": "src/app/admin/(dashboard)/website/WebsiteBuilderClient.jsx",
+      "summary": "WebsiteBuilderClient.jsx: Source file, 6 functions.",
+      "tags": [],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/website/WebsiteBuilderClient.jsx:Card",
+      "type": "function",
+      "name": "Card",
+      "filePath": "src/app/admin/(dashboard)/website/WebsiteBuilderClient.jsx",
+      "lineRange": [
+        20,
+        30
+      ],
+      "summary": "Function Card with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/website/WebsiteBuilderClient.jsx:TextField",
+      "type": "function",
+      "name": "TextField",
+      "filePath": "src/app/admin/(dashboard)/website/WebsiteBuilderClient.jsx",
+      "lineRange": [
+        32,
+        46
+      ],
+      "summary": "Function TextField with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/website/WebsiteBuilderClient.jsx:TextArea",
+      "type": "function",
+      "name": "TextArea",
+      "filePath": "src/app/admin/(dashboard)/website/WebsiteBuilderClient.jsx",
+      "lineRange": [
+        48,
+        61
+      ],
+      "summary": "Function TextArea with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/website/WebsiteBuilderClient.jsx:ToggleField",
+      "type": "function",
+      "name": "ToggleField",
+      "filePath": "src/app/admin/(dashboard)/website/WebsiteBuilderClient.jsx",
+      "lineRange": [
+        63,
+        76
+      ],
+      "summary": "Function ToggleField with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/website/WebsiteBuilderClient.jsx:LinkEditor",
+      "type": "function",
+      "name": "LinkEditor",
+      "filePath": "src/app/admin/(dashboard)/website/WebsiteBuilderClient.jsx",
+      "lineRange": [
+        78,
+        131
+      ],
+      "summary": "Function LinkEditor with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/app/admin/(dashboard)/website/WebsiteBuilderClient.jsx:WebsiteBuilderClient",
+      "type": "function",
+      "name": "WebsiteBuilderClient",
+      "filePath": "src/app/admin/(dashboard)/website/WebsiteBuilderClient.jsx",
+      "lineRange": [
+        133,
+        366
+      ],
+      "summary": "Function WebsiteBuilderClient with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/app/admin/(dashboard)/media/MediaLibraryClient.jsx",
+      "target": "function:src/app/admin/(dashboard)/media/MediaLibraryClient.jsx:MediaLibraryClient",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/media/MediaLibraryClient.jsx",
+      "target": "function:src/app/admin/(dashboard)/media/MediaLibraryClient.jsx:MediaLibraryClient",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/media/page.js",
+      "target": "function:src/app/admin/(dashboard)/media/page.js:AdminMediaPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/media/page.js",
+      "target": "function:src/app/admin/(dashboard)/media/page.js:AdminMediaPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/media/page.js",
+      "target": "file:src/app/admin/(dashboard)/media/MediaLibraryClient.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/music/[id]/edit/page.js",
+      "target": "function:src/app/admin/(dashboard)/music/[id]/edit/page.js:EditMusicPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/music/[id]/edit/page.js",
+      "target": "function:src/app/admin/(dashboard)/music/[id]/edit/page.js:EditMusicPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/music/MusicListClient.jsx",
+      "target": "function:src/app/admin/(dashboard)/music/MusicListClient.jsx:MusicListClient",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/music/MusicListClient.jsx",
+      "target": "function:src/app/admin/(dashboard)/music/MusicListClient.jsx:MusicListClient",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/music/new/page.js",
+      "target": "function:src/app/admin/(dashboard)/music/new/page.js:NewMusicPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/music/new/page.js",
+      "target": "function:src/app/admin/(dashboard)/music/new/page.js:NewMusicPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/music/page.js",
+      "target": "function:src/app/admin/(dashboard)/music/page.js:AdminMusicPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/music/page.js",
+      "target": "function:src/app/admin/(dashboard)/music/page.js:AdminMusicPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/music/page.js",
+      "target": "file:src/app/admin/(dashboard)/music/MusicListClient.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/newsletter/NewsletterClient.jsx",
+      "target": "function:src/app/admin/(dashboard)/newsletter/NewsletterClient.jsx:NewsletterClient",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/newsletter/NewsletterClient.jsx",
+      "target": "function:src/app/admin/(dashboard)/newsletter/NewsletterClient.jsx:NewsletterClient",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/newsletter/page.js",
+      "target": "function:src/app/admin/(dashboard)/newsletter/page.js:NewsletterPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/newsletter/page.js",
+      "target": "function:src/app/admin/(dashboard)/newsletter/page.js:NewsletterPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/newsletter/page.js",
+      "target": "file:src/app/admin/(dashboard)/newsletter/NewsletterClient.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/page.js",
+      "target": "function:src/app/admin/(dashboard)/page.js:AdminPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/page.js",
+      "target": "function:src/app/admin/(dashboard)/page.js:AdminPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/pages/page.js",
+      "target": "function:src/app/admin/(dashboard)/pages/page.js:AdminPagesPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/pages/page.js",
+      "target": "function:src/app/admin/(dashboard)/pages/page.js:AdminPagesPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/press-kit/page.js",
+      "target": "function:src/app/admin/(dashboard)/press-kit/page.js:PressKitPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/press-kit/page.js",
+      "target": "function:src/app/admin/(dashboard)/press-kit/page.js:PressKitPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/seo/page.js",
+      "target": "function:src/app/admin/(dashboard)/seo/page.js:SEOPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/seo/page.js",
+      "target": "function:src/app/admin/(dashboard)/seo/page.js:SEOPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/seo/page.js",
+      "target": "file:src/app/admin/(dashboard)/seo/SEOClient.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/seo/SEOClient.jsx",
+      "target": "function:src/app/admin/(dashboard)/seo/SEOClient.jsx:SEOClient",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/seo/SEOClient.jsx",
+      "target": "function:src/app/admin/(dashboard)/seo/SEOClient.jsx:SEOClient",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/services/[id]/edit/page.js",
+      "target": "function:src/app/admin/(dashboard)/services/[id]/edit/page.js:EditServicesPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/services/[id]/edit/page.js",
+      "target": "function:src/app/admin/(dashboard)/services/[id]/edit/page.js:EditServicesPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/services/new/page.js",
+      "target": "function:src/app/admin/(dashboard)/services/new/page.js:NewServicesPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/services/new/page.js",
+      "target": "function:src/app/admin/(dashboard)/services/new/page.js:NewServicesPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/services/page.js",
+      "target": "function:src/app/admin/(dashboard)/services/page.js:AdminServicesPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/services/page.js",
+      "target": "function:src/app/admin/(dashboard)/services/page.js:AdminServicesPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/services/page.js",
+      "target": "file:src/app/admin/(dashboard)/services/ServicesListClient.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/services/ServicesListClient.jsx",
+      "target": "function:src/app/admin/(dashboard)/services/ServicesListClient.jsx:ServicesListClient",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/services/ServicesListClient.jsx",
+      "target": "function:src/app/admin/(dashboard)/services/ServicesListClient.jsx:ServicesListClient",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/settings/page.js",
+      "target": "function:src/app/admin/(dashboard)/settings/page.js:AdminSettingsPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/settings/page.js",
+      "target": "function:src/app/admin/(dashboard)/settings/page.js:AdminSettingsPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/settings/page.js",
+      "target": "file:src/app/admin/(dashboard)/settings/SettingsForm.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/settings/SettingsForm.jsx",
+      "target": "function:src/app/admin/(dashboard)/settings/SettingsForm.jsx:SettingsForm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/settings/SettingsForm.jsx",
+      "target": "function:src/app/admin/(dashboard)/settings/SettingsForm.jsx:SettingsForm",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/shop/[id]/edit/page.js",
+      "target": "function:src/app/admin/(dashboard)/shop/[id]/edit/page.js:EditProductPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/shop/[id]/edit/page.js",
+      "target": "function:src/app/admin/(dashboard)/shop/[id]/edit/page.js:EditProductPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/shop/new/page.js",
+      "target": "function:src/app/admin/(dashboard)/shop/new/page.js:NewProductPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/shop/new/page.js",
+      "target": "function:src/app/admin/(dashboard)/shop/new/page.js:NewProductPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/shop/page.js",
+      "target": "function:src/app/admin/(dashboard)/shop/page.js:AdminShopPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/shop/page.js",
+      "target": "function:src/app/admin/(dashboard)/shop/page.js:AdminShopPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/shop/page.js",
+      "target": "file:src/app/admin/(dashboard)/shop/ShopListClient.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/shop/ShopListClient.jsx",
+      "target": "function:src/app/admin/(dashboard)/shop/ShopListClient.jsx:ShopListClient",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/shop/ShopListClient.jsx",
+      "target": "function:src/app/admin/(dashboard)/shop/ShopListClient.jsx:ShopListClient",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/website/page.js",
+      "target": "function:src/app/admin/(dashboard)/website/page.js:AdminWebsitePage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/website/page.js",
+      "target": "function:src/app/admin/(dashboard)/website/page.js:AdminWebsitePage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/website/page.js",
+      "target": "file:src/app/admin/(dashboard)/website/WebsiteBuilderClient.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/website/WebsiteBuilderClient.jsx",
+      "target": "function:src/app/admin/(dashboard)/website/WebsiteBuilderClient.jsx:Card",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/website/WebsiteBuilderClient.jsx",
+      "target": "function:src/app/admin/(dashboard)/website/WebsiteBuilderClient.jsx:TextField",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/website/WebsiteBuilderClient.jsx",
+      "target": "function:src/app/admin/(dashboard)/website/WebsiteBuilderClient.jsx:TextArea",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/website/WebsiteBuilderClient.jsx",
+      "target": "function:src/app/admin/(dashboard)/website/WebsiteBuilderClient.jsx:ToggleField",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/website/WebsiteBuilderClient.jsx",
+      "target": "function:src/app/admin/(dashboard)/website/WebsiteBuilderClient.jsx:LinkEditor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/website/WebsiteBuilderClient.jsx",
+      "target": "function:src/app/admin/(dashboard)/website/WebsiteBuilderClient.jsx:WebsiteBuilderClient",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/admin/(dashboard)/website/WebsiteBuilderClient.jsx",
+      "target": "function:src/app/admin/(dashboard)/website/WebsiteBuilderClient.jsx:WebsiteBuilderClient",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

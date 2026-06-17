@@ -1,0 +1,1093 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 6,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/components/sections/AboutSection.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 304,
+      "nonEmptyLines": 274,
+      "functions": [
+        {
+          "name": "degToRad",
+          "startLine": 16,
+          "endLine": 16,
+          "params": [
+            "deg"
+          ]
+        },
+        {
+          "name": "AboutSection",
+          "startLine": 39,
+          "endLine": 304,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AboutSection",
+          "line": 39,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AboutSection",
+          "callee": "useRef",
+          "lineNumber": 40
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "useRef",
+          "lineNumber": 41
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "useRef",
+          "lineNumber": 42
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "useRef",
+          "lineNumber": 43
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "useState",
+          "lineNumber": 44
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "useState",
+          "lineNumber": 45
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "useState",
+          "lineNumber": 46
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "useState",
+          "lineNumber": 47
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "useState",
+          "lineNumber": 48
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "useCanvasOptimizer",
+          "lineNumber": 49
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "usePrefersReducedMotion",
+          "lineNumber": 51
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "useRef",
+          "lineNumber": 53
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "useRef",
+          "lineNumber": 54
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "useRef",
+          "lineNumber": 55
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "useRef",
+          "lineNumber": 56
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "useCallback",
+          "lineNumber": 58
+        },
+        {
+          "caller": "animate",
+          "callee": "requestAnimationFrame",
+          "lineNumber": 67
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "requestAnimationFrame",
+          "lineNumber": 70
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "useCallback",
+          "lineNumber": 73
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "cancelAnimationFrame",
+          "lineNumber": 75
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "useCallback",
+          "lineNumber": 80
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "stopAutoScroll",
+          "lineNumber": 83
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "useCallback",
+          "lineNumber": 86
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "useCallback",
+          "lineNumber": 97
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "startAutoScroll",
+          "lineNumber": 99
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "useEffect",
+          "lineNumber": 102
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "setTimeout",
+          "lineNumber": 105
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "startAutoScroll",
+          "lineNumber": 105
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "clearTimeout",
+          "lineNumber": 106
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "stopAutoScroll",
+          "lineNumber": 106
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "useEffect",
+          "lineNumber": 109
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "setVisible",
+          "lineNumber": 114
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "setIsAboutVisible",
+          "lineNumber": 115
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "obs.observe",
+          "lineNumber": 119
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "obs.disconnect",
+          "lineNumber": 120
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "useCallback",
+          "lineNumber": 123
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "sectionRef.current.getBoundingClientRect",
+          "lineNumber": 125
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "setMousePos",
+          "lineNumber": 126
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "useEffect",
+          "lineNumber": 132
+        },
+        {
+          "caller": "load",
+          "callee": "Promise.all",
+          "lineNumber": 136
+        },
+        {
+          "caller": "load",
+          "callee": "import",
+          "lineNumber": 136
+        },
+        {
+          "caller": "load",
+          "callee": "import",
+          "lineNumber": 136
+        },
+        {
+          "caller": "load",
+          "callee": "gsapInstance.registerPlugin",
+          "lineNumber": 140
+        },
+        {
+          "caller": "load",
+          "callee": "setGsapObj",
+          "lineNumber": 141
+        },
+        {
+          "caller": "load",
+          "callee": "console.error",
+          "lineNumber": 142
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "load",
+          "lineNumber": 144
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "useEffect",
+          "lineNumber": 148
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "setInterval",
+          "lineNumber": 149
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "setCharReady",
+          "lineNumber": 150
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "clearInterval",
+          "lineNumber": 150
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "clearInterval",
+          "lineNumber": 152
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "useEffect",
+          "lineNumber": 155
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "gsap.context",
+          "lineNumber": 161
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "document.getElementById",
+          "lineNumber": 162
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "gsap.timeline",
+          "lineNumber": 164
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "gsap.set",
+          "lineNumber": 170
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "gsap.set",
+          "lineNumber": 171
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "tl.set",
+          "lineNumber": 175
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "tl.set",
+          "lineNumber": 176
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "tl.set",
+          "lineNumber": 177
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "boxRefs.current.forEach",
+          "lineNumber": 179
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "gsap.set",
+          "lineNumber": 181
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "ctx.revert",
+          "lineNumber": 185
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "e.preventDefault",
+          "lineNumber": 216
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "scrollTrackRef.current.scrollBy",
+          "lineNumber": 217
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "e.preventDefault",
+          "lineNumber": 219
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "scrollTrackRef.current.scrollBy",
+          "lineNumber": 220
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "allPanels.map",
+          "lineNumber": 225
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "leftPanelData.map",
+          "lineNumber": 263
+        },
+        {
+          "caller": "AboutSection",
+          "callee": "rightPanelData.map",
+          "lineNumber": 282
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/sections/AuroraBackground.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 142,
+      "nonEmptyLines": 116,
+      "functions": [
+        {
+          "name": "AuroraBackground",
+          "startLine": 6,
+          "endLine": 142,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AuroraBackground",
+          "line": 6,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AuroraBackground",
+          "callee": "useRef",
+          "lineNumber": 7
+        },
+        {
+          "caller": "AuroraBackground",
+          "callee": "useEffect",
+          "lineNumber": 9
+        },
+        {
+          "caller": "AuroraBackground",
+          "callee": "document.createElement",
+          "lineNumber": 13
+        },
+        {
+          "caller": "AuroraBackground",
+          "callee": "canvas.getContext",
+          "lineNumber": 14
+        },
+        {
+          "caller": "AuroraBackground",
+          "callee": "canvas.getContext",
+          "lineNumber": 14
+        },
+        {
+          "caller": "AuroraBackground",
+          "callee": "canvas.getContext",
+          "lineNumber": 14
+        },
+        {
+          "caller": "AuroraBackground",
+          "callee": "renderer.setSize",
+          "lineNumber": 18
+        },
+        {
+          "caller": "AuroraBackground",
+          "callee": "renderer.setPixelRatio",
+          "lineNumber": 19
+        },
+        {
+          "caller": "AuroraBackground",
+          "callee": "Math.min",
+          "lineNumber": 19
+        },
+        {
+          "caller": "AuroraBackground",
+          "callee": "container.appendChild",
+          "lineNumber": 20
+        },
+        {
+          "caller": "AuroraBackground",
+          "callee": "scene.add",
+          "lineNumber": 101
+        },
+        {
+          "caller": "animate",
+          "callee": "requestAnimationFrame",
+          "lineNumber": 107
+        },
+        {
+          "caller": "animate",
+          "callee": "clock.getElapsedTime",
+          "lineNumber": 108
+        },
+        {
+          "caller": "animate",
+          "callee": "renderer.render",
+          "lineNumber": 110
+        },
+        {
+          "caller": "AuroraBackground",
+          "callee": "animate",
+          "lineNumber": 113
+        },
+        {
+          "caller": "onWindowResize",
+          "callee": "renderer.setSize",
+          "lineNumber": 117
+        },
+        {
+          "caller": "onWindowResize",
+          "callee": "camera.updateProjectionMatrix",
+          "lineNumber": 122
+        },
+        {
+          "caller": "AuroraBackground",
+          "callee": "window.addEventListener",
+          "lineNumber": 125
+        },
+        {
+          "caller": "AuroraBackground",
+          "callee": "cancelAnimationFrame",
+          "lineNumber": 129
+        },
+        {
+          "caller": "AuroraBackground",
+          "callee": "window.removeEventListener",
+          "lineNumber": 130
+        },
+        {
+          "caller": "AuroraBackground",
+          "callee": "geometry.dispose",
+          "lineNumber": 131
+        },
+        {
+          "caller": "AuroraBackground",
+          "callee": "material.dispose",
+          "lineNumber": 132
+        },
+        {
+          "caller": "AuroraBackground",
+          "callee": "renderer.dispose",
+          "lineNumber": 133
+        },
+        {
+          "caller": "AuroraBackground",
+          "callee": "renderer.forceContextLoss",
+          "lineNumber": 134
+        },
+        {
+          "caller": "AuroraBackground",
+          "callee": "container.removeChild",
+          "lineNumber": 136
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/sections/LatestEPSection.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 170,
+      "nonEmptyLines": 151,
+      "functions": [
+        {
+          "name": "degToRad",
+          "startLine": 16,
+          "endLine": 16,
+          "params": [
+            "deg"
+          ]
+        },
+        {
+          "name": "LatestEPSection",
+          "startLine": 50,
+          "endLine": 170,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "LatestEPSection",
+          "line": 50,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "LatestEPSection",
+          "callee": "useRef",
+          "lineNumber": 51
+        },
+        {
+          "caller": "LatestEPSection",
+          "callee": "useRef",
+          "lineNumber": 52
+        },
+        {
+          "caller": "LatestEPSection",
+          "callee": "useRef",
+          "lineNumber": 53
+        },
+        {
+          "caller": "LatestEPSection",
+          "callee": "useState",
+          "lineNumber": 54
+        },
+        {
+          "caller": "LatestEPSection",
+          "callee": "useState",
+          "lineNumber": 55
+        },
+        {
+          "caller": "LatestEPSection",
+          "callee": "useState",
+          "lineNumber": 56
+        },
+        {
+          "caller": "LatestEPSection",
+          "callee": "useCanvasOptimizer",
+          "lineNumber": 57
+        },
+        {
+          "caller": "LatestEPSection",
+          "callee": "useEffect",
+          "lineNumber": 60
+        },
+        {
+          "caller": "LatestEPSection",
+          "callee": "setVisible",
+          "lineNumber": 64
+        },
+        {
+          "caller": "LatestEPSection",
+          "callee": "obs.observe",
+          "lineNumber": 67
+        },
+        {
+          "caller": "LatestEPSection",
+          "callee": "obs.disconnect",
+          "lineNumber": 68
+        },
+        {
+          "caller": "LatestEPSection",
+          "callee": "useEffect",
+          "lineNumber": 71
+        },
+        {
+          "caller": "load",
+          "callee": "Promise.all",
+          "lineNumber": 75
+        },
+        {
+          "caller": "load",
+          "callee": "import",
+          "lineNumber": 75
+        },
+        {
+          "caller": "load",
+          "callee": "import",
+          "lineNumber": 75
+        },
+        {
+          "caller": "load",
+          "callee": "gsapInstance.registerPlugin",
+          "lineNumber": 79
+        },
+        {
+          "caller": "load",
+          "callee": "setGsapObj",
+          "lineNumber": 80
+        },
+        {
+          "caller": "load",
+          "callee": "console.error",
+          "lineNumber": 81
+        },
+        {
+          "caller": "LatestEPSection",
+          "callee": "load",
+          "lineNumber": 83
+        },
+        {
+          "caller": "LatestEPSection",
+          "callee": "useEffect",
+          "lineNumber": 87
+        },
+        {
+          "caller": "LatestEPSection",
+          "callee": "setInterval",
+          "lineNumber": 88
+        },
+        {
+          "caller": "LatestEPSection",
+          "callee": "setCharReady",
+          "lineNumber": 89
+        },
+        {
+          "caller": "LatestEPSection",
+          "callee": "clearInterval",
+          "lineNumber": 89
+        },
+        {
+          "caller": "LatestEPSection",
+          "callee": "clearInterval",
+          "lineNumber": 91
+        },
+        {
+          "caller": "LatestEPSection",
+          "callee": "useEffect",
+          "lineNumber": 94
+        },
+        {
+          "caller": "LatestEPSection",
+          "callee": "gsap.context",
+          "lineNumber": 100
+        },
+        {
+          "caller": "LatestEPSection",
+          "callee": "gsap.timeline",
+          "lineNumber": 101
+        },
+        {
+          "caller": "LatestEPSection",
+          "callee": "tl.fromTo",
+          "lineNumber": 111
+        },
+        {
+          "caller": "LatestEPSection",
+          "callee": "degToRad",
+          "lineNumber": 119
+        },
+        {
+          "caller": "LatestEPSection",
+          "callee": "tl.to",
+          "lineNumber": 121
+        },
+        {
+          "caller": "LatestEPSection",
+          "callee": "tl.to",
+          "lineNumber": 122
+        },
+        {
+          "caller": "LatestEPSection",
+          "callee": "tl.to",
+          "lineNumber": 123
+        },
+        {
+          "caller": "LatestEPSection",
+          "callee": "ctx.revert",
+          "lineNumber": 126
+        },
+        {
+          "caller": "LatestEPSection",
+          "callee": "PLATFORMS.map",
+          "lineNumber": 142
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/sections/MusicSection.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 246,
+      "nonEmptyLines": 222,
+      "functions": [
+        {
+          "name": "degToRad",
+          "startLine": 21,
+          "endLine": 21,
+          "params": [
+            "deg"
+          ]
+        },
+        {
+          "name": "ShootingStars",
+          "startLine": 32,
+          "endLine": 54,
+          "params": []
+        },
+        {
+          "name": "MusicSection",
+          "startLine": 72,
+          "endLine": 246,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "MusicSection",
+          "line": 72,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ShootingStars",
+          "callee": "useMemo",
+          "lineNumber": 33
+        },
+        {
+          "caller": "ShootingStars",
+          "callee": "Array.from",
+          "lineNumber": 34
+        },
+        {
+          "caller": "ShootingStars",
+          "callee": "seededBetween",
+          "lineNumber": 35
+        },
+        {
+          "caller": "ShootingStars",
+          "callee": "seededBetween",
+          "lineNumber": 36
+        },
+        {
+          "caller": "ShootingStars",
+          "callee": "seededBetween",
+          "lineNumber": 37
+        },
+        {
+          "caller": "ShootingStars",
+          "callee": "seededBetween",
+          "lineNumber": 38
+        },
+        {
+          "caller": "ShootingStars",
+          "callee": "seededBetween",
+          "lineNumber": 39
+        },
+        {
+          "caller": "ShootingStars",
+          "callee": "stars.map",
+          "lineNumber": 45
+        },
+        {
+          "caller": "MusicSection",
+          "callee": "useRef",
+          "lineNumber": 73
+        },
+        {
+          "caller": "MusicSection",
+          "callee": "useRef",
+          "lineNumber": 74
+        },
+        {
+          "caller": "MusicSection",
+          "callee": "useRef",
+          "lineNumber": 75
+        },
+        {
+          "caller": "MusicSection",
+          "callee": "useRef",
+          "lineNumber": 76
+        },
+        {
+          "caller": "MusicSection",
+          "callee": "useState",
+          "lineNumber": 77
+        },
+        {
+          "caller": "MusicSection",
+          "callee": "useState",
+          "lineNumber": 78
+        },
+        {
+          "caller": "MusicSection",
+          "callee": "useState",
+          "lineNumber": 79
+        },
+        {
+          "caller": "MusicSection",
+          "callee": "useState",
+          "lineNumber": 80
+        },
+        {
+          "caller": "MusicSection",
+          "callee": "useCanvasOptimizer",
+          "lineNumber": 81
+        },
+        {
+          "caller": "MusicSection",
+          "callee": "usePrefersReducedMotion",
+          "lineNumber": 83
+        },
+        {
+          "caller": "MusicSection",
+          "callee": "useEffect",
+          "lineNumber": 85
+        },
+        {
+          "caller": "MusicSection",
+          "callee": "setVisible",
+          "lineNumber": 89
+        },
+        {
+          "caller": "MusicSection",
+          "callee": "obs.observe",
+          "lineNumber": 92
+        },
+        {
+          "caller": "MusicSection",
+          "callee": "obs.disconnect",
+          "lineNumber": 93
+        },
+        {
+          "caller": "MusicSection",
+          "callee": "useEffect",
+          "lineNumber": 96
+        },
+        {
+          "caller": "load",
+          "callee": "Promise.all",
+          "lineNumber": 100
+        },
+        {
+          "caller": "load",
+          "callee": "import",
+          "lineNumber": 100
+        },
+        {
+          "caller": "load",
+          "callee": "import",
+          "lineNumber": 100
+        },
+        {
+          "caller": "load",
+          "callee": "gsapInstance.registerPlugin",
+          "lineNumber": 104
+        },
+        {
+          "caller": "load",
+          "callee": "setGsapObj",
+          "lineNumber": 105
+        },
+        {
+          "caller": "load",
+          "callee": "console.error",
+          "lineNumber": 106
+        },
+        {
+          "caller": "MusicSection",
+          "callee": "load",
+          "lineNumber": 108
+        },
+        {
+          "caller": "MusicSection",
+          "callee": "useEffect",
+          "lineNumber": 112
+        },
+        {
+          "caller": "MusicSection",
+          "callee": "setInterval",
+          "lineNumber": 113
+        },
+        {
+          "caller": "MusicSection",
+          "callee": "setCharReady",
+          "lineNumber": 114
+        },
+        {
+          "caller": "MusicSection",
+          "callee": "clearInterval",
+          "lineNumber": 114
+        },
+        {
+          "caller": "MusicSection",
+          "callee": "clearInterval",
+          "lineNumber": 116
+        },
+        {
+          "caller": "MusicSection",
+          "callee": "useEffect",
+          "lineNumber": 119
+        },
+        {
+          "caller": "MusicSection",
+          "callee": "gsap.context",
+          "lineNumber": 125
+        },
+        {
+          "caller": "MusicSection",
+          "callee": "gsap.timeline",
+          "lineNumber": 126
+        },
+        {
+          "caller": "MusicSection",
+          "callee": "tl.set",
+          "lineNumber": 136
+        },
+        {
+          "caller": "MusicSection",
+          "callee": "tl.set",
+          "lineNumber": 139
+        },
+        {
+          "caller": "MusicSection",
+          "callee": "tl.set",
+          "lineNumber": 140
+        },
+        {
+          "caller": "MusicSection",
+          "callee": "tl.set",
+          "lineNumber": 141
+        },
+        {
+          "caller": "MusicSection",
+          "callee": "tl.set",
+          "lineNumber": 144
+        },
+        {
+          "caller": "MusicSection",
+          "callee": "ctx.revert",
+          "lineNumber": 148
+        },
+        {
+          "caller": "MusicSection",
+          "callee": "YOUTUBE_VIDEOS.map",
+          "lineNumber": 217
+        },
+        {
+          "caller": "MusicSection",
+          "callee": "setActiveVideo",
+          "lineNumber": 223
+        },
+        {
+          "caller": "MusicSection",
+          "callee": "e.preventDefault",
+          "lineNumber": 224
+        },
+        {
+          "caller": "MusicSection",
+          "callee": "setActiveVideo",
+          "lineNumber": 224
+        },
+        {
+          "caller": "MusicSection",
+          "callee": "(index + 1).toString().padStart",
+          "lineNumber": 226
+        },
+        {
+          "caller": "MusicSection",
+          "callee": "(index + 1).toString",
+          "lineNumber": 226
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/ui/GlassPanel.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 103,
+      "nonEmptyLines": 98,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/ui/SectionTitle.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 54,
+      "nonEmptyLines": 53,
+      "functions": [
+        {
+          "name": "SectionTitle",
+          "startLine": 3,
+          "endLine": 54,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "SectionTitle",
+          "line": 3,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    }
+  ]
+}

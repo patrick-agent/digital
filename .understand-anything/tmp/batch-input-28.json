@@ -1,0 +1,182 @@
+{
+  "projectRoot": "C:\\Users\\Admin\\Desktop\\Website 3D\\studio-3d",
+  "batchFiles": [
+    {
+      "path": "public/images/blog/danh-gia-focusrite-scarlett-2i2.webp",
+      "language": "webp",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/edm-la-gi-lich-su-nhac-dien-tu.webp",
+      "language": "webp",
+      "sizeLines": 67,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/fl-studio-cheatsheet-pdf.webp",
+      "language": "webp",
+      "sizeLines": 82,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/house-la-gi.webp",
+      "language": "webp",
+      "sizeLines": 82,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/huong-dan-su-dung-compressor-mixing.webp",
+      "language": "webp",
+      "sizeLines": 82,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/loa-kiem-am-cho-phong-duoi-15m2-nen-chon-kich-thuoc-nao-inside.webp",
+      "language": "webp",
+      "sizeLines": 233,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/loa-kiem-am-cho-phong-duoi-15m2-nen-chon-kich-thuoc-nao.webp",
+      "language": "webp",
+      "sizeLines": 236,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/monitor-isolation-pad-chan-loa-ke-loa-phu-kien-dang-nang-cap-inside.webp",
+      "language": "webp",
+      "sizeLines": 187,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/monitor-isolation-pad-chan-loa-ke-loa-phu-kien-dang-nang-cap.webp",
+      "language": "webp",
+      "sizeLines": 236,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/nang-cap-home-studio-mua-gi-truoc-de-nghe-hay-hon-inside.webp",
+      "language": "webp",
+      "sizeLines": 263,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/nang-cap-home-studio-mua-gi-truoc-de-nghe-hay-hon.webp",
+      "language": "webp",
+      "sizeLines": 182,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/nhip-tempo-bpm-la-gi.webp",
+      "language": "webp",
+      "sizeLines": 74,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/review-audient-id14-mkii-cho-home-studio-ban-chuyen-inside.webp",
+      "language": "webp",
+      "sizeLines": 411,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/review-audient-id14-mkii-cho-home-studio-ban-chuyen.webp",
+      "language": "webp",
+      "sizeLines": 393,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/review-kali-lp6-v2-cho-phong-nho-inside.webp",
+      "language": "webp",
+      "sizeLines": 363,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/review-kali-lp6-v2-cho-phong-nho.webp",
+      "language": "webp",
+      "sizeLines": 236,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/review-lewitt-lct-440-pure-co-dang-mua-inside.webp",
+      "language": "webp",
+      "sizeLines": 233,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/review-lewitt-lct-440-pure-co-dang-mua.webp",
+      "language": "webp",
+      "sizeLines": 121,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/setup-phong-thu-am-tai-nha-diy.webp",
+      "language": "webp",
+      "sizeLines": 80,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/so-sanh-audient-id14-mkii-motu-m2-ssl2-plus-inside.webp",
+      "language": "webp",
+      "sizeLines": 233,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/so-sanh-audient-id14-mkii-motu-m2-ssl2-plus.webp",
+      "language": "webp",
+      "sizeLines": 393,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/so-sanh-jbl-305p-mkii-kali-lp6-v2-adam-t5v-inside.webp",
+      "language": "webp",
+      "sizeLines": 270,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/so-sanh-jbl-305p-mkii-kali-lp6-v2-adam-t5v.webp",
+      "language": "webp",
+      "sizeLines": 236,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/so-sanh-midi-49-phim-keylab-launchkey-a49-inside.webp",
+      "language": "webp",
+      "sizeLines": 411,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/images/blog/so-sanh-midi-49-phim-keylab-launchkey-a49.webp",
+      "language": "webp",
+      "sizeLines": 352,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "public/images/blog/danh-gia-focusrite-scarlett-2i2.webp": [],
+    "public/images/blog/edm-la-gi-lich-su-nhac-dien-tu.webp": [],
+    "public/images/blog/fl-studio-cheatsheet-pdf.webp": [],
+    "public/images/blog/house-la-gi.webp": [],
+    "public/images/blog/huong-dan-su-dung-compressor-mixing.webp": [],
+    "public/images/blog/loa-kiem-am-cho-phong-duoi-15m2-nen-chon-kich-thuoc-nao-inside.webp": [],
+    "public/images/blog/loa-kiem-am-cho-phong-duoi-15m2-nen-chon-kich-thuoc-nao.webp": [],
+    "public/images/blog/monitor-isolation-pad-chan-loa-ke-loa-phu-kien-dang-nang-cap-inside.webp": [],
+    "public/images/blog/monitor-isolation-pad-chan-loa-ke-loa-phu-kien-dang-nang-cap.webp": [],
+    "public/images/blog/nang-cap-home-studio-mua-gi-truoc-de-nghe-hay-hon-inside.webp": [],
+    "public/images/blog/nang-cap-home-studio-mua-gi-truoc-de-nghe-hay-hon.webp": [],
+    "public/images/blog/nhip-tempo-bpm-la-gi.webp": [],
+    "public/images/blog/review-audient-id14-mkii-cho-home-studio-ban-chuyen-inside.webp": [],
+    "public/images/blog/review-audient-id14-mkii-cho-home-studio-ban-chuyen.webp": [],
+    "public/images/blog/review-kali-lp6-v2-cho-phong-nho-inside.webp": [],
+    "public/images/blog/review-kali-lp6-v2-cho-phong-nho.webp": [],
+    "public/images/blog/review-lewitt-lct-440-pure-co-dang-mua-inside.webp": [],
+    "public/images/blog/review-lewitt-lct-440-pure-co-dang-mua.webp": [],
+    "public/images/blog/setup-phong-thu-am-tai-nha-diy.webp": [],
+    "public/images/blog/so-sanh-audient-id14-mkii-motu-m2-ssl2-plus-inside.webp": [],
+    "public/images/blog/so-sanh-audient-id14-mkii-motu-m2-ssl2-plus.webp": [],
+    "public/images/blog/so-sanh-jbl-305p-mkii-kali-lp6-v2-adam-t5v-inside.webp": [],
+    "public/images/blog/so-sanh-jbl-305p-mkii-kali-lp6-v2-adam-t5v.webp": [],
+    "public/images/blog/so-sanh-midi-49-phim-keylab-launchkey-a49-inside.webp": [],
+    "public/images/blog/so-sanh-midi-49-phim-keylab-launchkey-a49.webp": []
+  }
+}

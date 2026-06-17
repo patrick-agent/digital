@@ -1,0 +1,212 @@
+{
+  "projectRoot": "C:\\Users\\Admin\\Desktop\\Website 3D\\studio-3d",
+  "batchFiles": [
+    {
+      "path": "src/components/admin/PressKitForm.jsx",
+      "language": "javascript",
+      "sizeLines": 117,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/admin/QuickActionButton.jsx",
+      "language": "javascript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/admin/SectionCard.jsx",
+      "language": "javascript",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/admin/ServicesForm.jsx",
+      "language": "javascript",
+      "sizeLines": 130,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/admin/Sidebar.jsx",
+      "language": "javascript",
+      "sizeLines": 165,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/admin/StatCard.jsx",
+      "language": "javascript",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/artist/about/AboutCanvas.jsx",
+      "language": "javascript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/artist/about/BioSection.jsx",
+      "language": "javascript",
+      "sizeLines": 166,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/artist/about/HeroAbout.jsx",
+      "language": "javascript",
+      "sizeLines": 55,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/artist/about/StreamingBar.jsx",
+      "language": "javascript",
+      "sizeLines": 81,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/artist/bio-music/BioDetailBackground.tsx",
+      "language": "typescript",
+      "sizeLines": 75,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/artist/bio-music/ReleaseCard.tsx",
+      "language": "typescript",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/artist/bio-music/ReleaseShelf3D.tsx",
+      "language": "typescript",
+      "sizeLines": 105,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/blog/AffiliateProducts.jsx",
+      "language": "javascript",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/blog/ArticleBody.jsx",
+      "language": "javascript",
+      "sizeLines": 244,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/blog/ArticleHero.jsx",
+      "language": "javascript",
+      "sizeLines": 95,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/blog/ArticleSchema.jsx",
+      "language": "javascript",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/blog/AuthorBox.jsx",
+      "language": "javascript",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/blog/ReadingProgress.jsx",
+      "language": "javascript",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/blog/ShareSection.jsx",
+      "language": "javascript",
+      "sizeLines": 55,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/blog/TableOfContents.jsx",
+      "language": "javascript",
+      "sizeLines": 72,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/BackgroundEffects.jsx",
+      "language": "javascript",
+      "sizeLines": 140,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/BorderGlow.jsx",
+      "language": "javascript",
+      "sizeLines": 156,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/ByeCharacterCanvas.jsx",
+      "language": "javascript",
+      "sizeLines": 94,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/canvas/DotField.jsx",
+      "language": "javascript",
+      "sizeLines": 274,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/components/admin/PressKitForm.jsx": [],
+    "src/components/admin/QuickActionButton.jsx": [],
+    "src/components/admin/SectionCard.jsx": [],
+    "src/components/admin/ServicesForm.jsx": [],
+    "src/components/admin/Sidebar.jsx": [],
+    "src/components/admin/StatCard.jsx": [],
+    "src/components/artist/about/AboutCanvas.jsx": [],
+    "src/components/artist/about/BioSection.jsx": [
+      "src/components/artist/about/BioSection.module.css"
+    ],
+    "src/components/artist/about/HeroAbout.jsx": [
+      "src/components/artist/about/HeroAbout.module.css"
+    ],
+    "src/components/artist/about/StreamingBar.jsx": [
+      "src/components/artist/about/StreamingBar.module.css"
+    ],
+    "src/components/artist/bio-music/BioDetailBackground.tsx": [
+      "src/components/artist/bio-music/BioDetailBackground.module.css"
+    ],
+    "src/components/artist/bio-music/ReleaseCard.tsx": [
+      "src/components/artist/bio-music/ReleaseCard.module.css"
+    ],
+    "src/components/artist/bio-music/ReleaseShelf3D.tsx": [
+      "src/components/artist/bio-music/ReleaseShelf3D.module.css"
+    ],
+    "src/components/blog/AffiliateProducts.jsx": [
+      "src/components/blog/AffiliateProducts.module.css"
+    ],
+    "src/components/blog/ArticleBody.jsx": [
+      "src/components/blog/ArticleBody.module.css"
+    ],
+    "src/components/blog/ArticleHero.jsx": [
+      "src/components/blog/ArticleHero.module.css"
+    ],
+    "src/components/blog/ArticleSchema.jsx": [],
+    "src/components/blog/AuthorBox.jsx": [
+      "src/components/blog/AuthorBox.module.css"
+    ],
+    "src/components/blog/ReadingProgress.jsx": [
+      "src/components/blog/ReadingProgress.module.css"
+    ],
+    "src/components/blog/ShareSection.jsx": [
+      "src/components/blog/ShareSection.module.css"
+    ],
+    "src/components/blog/TableOfContents.jsx": [
+      "src/components/blog/TableOfContents.module.css"
+    ],
+    "src/components/canvas/BackgroundEffects.jsx": [],
+    "src/components/canvas/BorderGlow.jsx": [
+      "src/components/canvas/BorderGlow.css"
+    ],
+    "src/components/canvas/ByeCharacterCanvas.jsx": [],
+    "src/components/canvas/DotField.jsx": [
+      "src/components/canvas/DotField.css"
+    ]
+  }
+}

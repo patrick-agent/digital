@@ -1,0 +1,1231 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/lib/constants.js",
+      "type": "file",
+      "name": "constants.js",
+      "filePath": "src/lib/constants.js",
+      "summary": "constants.js: Source file.",
+      "tags": [
+        "utility",
+        "type-definition"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/lib/data/releases.ts",
+      "type": "file",
+      "name": "releases.ts",
+      "filePath": "src/lib/data/releases.ts",
+      "summary": "releases.ts: Source file, 2 functions.",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/lib/data/releases.ts:getReleaseBySlug",
+      "type": "function",
+      "name": "getReleaseBySlug",
+      "filePath": "src/lib/data/releases.ts",
+      "lineRange": [
+        123,
+        125
+      ],
+      "summary": "Function getReleaseBySlug with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/data/releases.ts:getAllReleaseSlugs",
+      "type": "function",
+      "name": "getAllReleaseSlugs",
+      "filePath": "src/lib/data/releases.ts",
+      "lineRange": [
+        128,
+        130
+      ],
+      "summary": "Function getAllReleaseSlugs with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/db-cli.mjs",
+      "type": "file",
+      "name": "db-cli.mjs",
+      "filePath": "src/lib/db-cli.mjs",
+      "summary": "db-cli.mjs: Source file, 8 functions.",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/lib/db-cli.mjs:readJSON",
+      "type": "function",
+      "name": "readJSON",
+      "filePath": "src/lib/db-cli.mjs",
+      "lineRange": [
+        10,
+        16
+      ],
+      "summary": "Function readJSON with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db-cli.mjs:writeJSON",
+      "type": "function",
+      "name": "writeJSON",
+      "filePath": "src/lib/db-cli.mjs",
+      "lineRange": [
+        18,
+        21
+      ],
+      "summary": "Function writeJSON with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db-cli.mjs:slugify",
+      "type": "function",
+      "name": "slugify",
+      "filePath": "src/lib/db-cli.mjs",
+      "lineRange": [
+        23,
+        31
+      ],
+      "summary": "Function slugify with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db-cli.mjs:generateUniqueSlug",
+      "type": "function",
+      "name": "generateUniqueSlug",
+      "filePath": "src/lib/db-cli.mjs",
+      "lineRange": [
+        33,
+        41
+      ],
+      "summary": "Function generateUniqueSlug with 3 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db-cli.mjs:readPosts",
+      "type": "function",
+      "name": "readPosts",
+      "filePath": "src/lib/db-cli.mjs",
+      "lineRange": [
+        43,
+        60
+      ],
+      "summary": "Function readPosts with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db-cli.mjs:readPost",
+      "type": "function",
+      "name": "readPost",
+      "filePath": "src/lib/db-cli.mjs",
+      "lineRange": [
+        62,
+        65
+      ],
+      "summary": "Function readPost with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db-cli.mjs:createPost",
+      "type": "function",
+      "name": "createPost",
+      "filePath": "src/lib/db-cli.mjs",
+      "lineRange": [
+        67,
+        92
+      ],
+      "summary": "Function createPost with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/db-cli.mjs:updatePost",
+      "type": "function",
+      "name": "updatePost",
+      "filePath": "src/lib/db-cli.mjs",
+      "lineRange": [
+        94,
+        112
+      ],
+      "summary": "Function updatePost with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/db/index.js",
+      "type": "file",
+      "name": "index.js",
+      "filePath": "src/lib/db/index.js",
+      "summary": "index.js: Module entry point.",
+      "tags": [
+        "barrel",
+        "entry-point",
+        "utility",
+        "database",
+        "exports",
+        "type-definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/deviceDetection.js",
+      "type": "file",
+      "name": "deviceDetection.js",
+      "filePath": "src/lib/deviceDetection.js",
+      "summary": "deviceDetection.js: Source file, 12 functions.",
+      "tags": [
+        "utility",
+        "exports"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/lib/deviceDetection.js:getDeviceType",
+      "type": "function",
+      "name": "getDeviceType",
+      "filePath": "src/lib/deviceDetection.js",
+      "lineRange": [
+        6,
+        12
+      ],
+      "summary": "Function getDeviceType with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/deviceDetection.js:getDeviceMemory",
+      "type": "function",
+      "name": "getDeviceMemory",
+      "filePath": "src/lib/deviceDetection.js",
+      "lineRange": [
+        14,
+        17
+      ],
+      "summary": "Function getDeviceMemory with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/deviceDetection.js:getConnectionType",
+      "type": "function",
+      "name": "getConnectionType",
+      "filePath": "src/lib/deviceDetection.js",
+      "lineRange": [
+        19,
+        23
+      ],
+      "summary": "Function getConnectionType with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/deviceDetection.js:isSlowNetwork",
+      "type": "function",
+      "name": "isSlowNetwork",
+      "filePath": "src/lib/deviceDetection.js",
+      "lineRange": [
+        25,
+        28
+      ],
+      "summary": "Function isSlowNetwork with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/deviceDetection.js:isLowMemoryDevice",
+      "type": "function",
+      "name": "isLowMemoryDevice",
+      "filePath": "src/lib/deviceDetection.js",
+      "lineRange": [
+        30,
+        32
+      ],
+      "summary": "Function isLowMemoryDevice with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/deviceDetection.js:getModelLoadingStrategy",
+      "type": "function",
+      "name": "getModelLoadingStrategy",
+      "filePath": "src/lib/deviceDetection.js",
+      "lineRange": [
+        34,
+        80
+      ],
+      "summary": "Function getModelLoadingStrategy with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/deviceDetection.js:getCanvasConfig",
+      "type": "function",
+      "name": "getCanvasConfig",
+      "filePath": "src/lib/deviceDetection.js",
+      "lineRange": [
+        82,
+        105
+      ],
+      "summary": "Function getCanvasConfig with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/deviceDetection.js:getLoadingTimeout",
+      "type": "function",
+      "name": "getLoadingTimeout",
+      "filePath": "src/lib/deviceDetection.js",
+      "lineRange": [
+        107,
+        123
+      ],
+      "summary": "Function getLoadingTimeout with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/deviceDetection.js:shouldSkipComponent",
+      "type": "function",
+      "name": "shouldSkipComponent",
+      "filePath": "src/lib/deviceDetection.js",
+      "lineRange": [
+        125,
+        136
+      ],
+      "summary": "Function shouldSkipComponent with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/deviceDetection.js:getParticleCount",
+      "type": "function",
+      "name": "getParticleCount",
+      "filePath": "src/lib/deviceDetection.js",
+      "lineRange": [
+        138,
+        147
+      ],
+      "summary": "Function getParticleCount with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/deviceDetection.js:getDPRConfig",
+      "type": "function",
+      "name": "getDPRConfig",
+      "filePath": "src/lib/deviceDetection.js",
+      "lineRange": [
+        149,
+        156
+      ],
+      "summary": "Function getDPRConfig with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/deviceDetection.js:getTextureSize",
+      "type": "function",
+      "name": "getTextureSize",
+      "filePath": "src/lib/deviceDetection.js",
+      "lineRange": [
+        158,
+        169
+      ],
+      "summary": "Function getTextureSize with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/google-indexing.js",
+      "type": "file",
+      "name": "google-indexing.js",
+      "filePath": "src/lib/google-indexing.js",
+      "summary": "google-indexing.js: Source file, 5 functions.",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/lib/google-indexing.js:getOAuthAuth",
+      "type": "function",
+      "name": "getOAuthAuth",
+      "filePath": "src/lib/google-indexing.js",
+      "lineRange": [
+        5,
+        15
+      ],
+      "summary": "Function getOAuthAuth with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/google-indexing.js:getServiceAccountAuth",
+      "type": "function",
+      "name": "getServiceAccountAuth",
+      "filePath": "src/lib/google-indexing.js",
+      "lineRange": [
+        17,
+        34
+      ],
+      "summary": "Function getServiceAccountAuth with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/google-indexing.js:getAuthConfigs",
+      "type": "function",
+      "name": "getAuthConfigs",
+      "filePath": "src/lib/google-indexing.js",
+      "lineRange": [
+        36,
+        38
+      ],
+      "summary": "Function getAuthConfigs with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/google-indexing.js:shouldSkipLocalIndexing",
+      "type": "function",
+      "name": "shouldSkipLocalIndexing",
+      "filePath": "src/lib/google-indexing.js",
+      "lineRange": [
+        40,
+        42
+      ],
+      "summary": "Function shouldSkipLocalIndexing with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/google-indexing.js:publishGoogleIndexingNotification",
+      "type": "function",
+      "name": "publishGoogleIndexingNotification",
+      "filePath": "src/lib/google-indexing.js",
+      "lineRange": [
+        44,
+        69
+      ],
+      "summary": "Function publishGoogleIndexingNotification with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/helpers.js",
+      "type": "file",
+      "name": "helpers.js",
+      "filePath": "src/lib/helpers.js",
+      "summary": "helpers.js: Source file, 4 functions.",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/helpers.js:lerp",
+      "type": "function",
+      "name": "lerp",
+      "filePath": "src/lib/helpers.js",
+      "lineRange": [
+        8,
+        10
+      ],
+      "summary": "Function lerp with 3 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/helpers.js:clamp",
+      "type": "function",
+      "name": "clamp",
+      "filePath": "src/lib/helpers.js",
+      "lineRange": [
+        15,
+        17
+      ],
+      "summary": "Function clamp with 3 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/helpers.js:mapRange",
+      "type": "function",
+      "name": "mapRange",
+      "filePath": "src/lib/helpers.js",
+      "lineRange": [
+        22,
+        24
+      ],
+      "summary": "Function mapRange with 5 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/helpers.js:degToRad",
+      "type": "function",
+      "name": "degToRad",
+      "filePath": "src/lib/helpers.js",
+      "lineRange": [
+        29,
+        31
+      ],
+      "summary": "Function degToRad with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/performance.js",
+      "type": "file",
+      "name": "performance.js",
+      "filePath": "src/lib/performance.js",
+      "summary": "performance.js: Source file, 4 functions.",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/lib/data/releases.ts",
+      "target": "function:src/lib/data/releases.ts:getReleaseBySlug",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/data/releases.ts",
+      "target": "function:src/lib/data/releases.ts:getReleaseBySlug",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/data/releases.ts",
+      "target": "function:src/lib/data/releases.ts:getAllReleaseSlugs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/data/releases.ts",
+      "target": "function:src/lib/data/releases.ts:getAllReleaseSlugs",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db-cli.mjs",
+      "target": "function:src/lib/db-cli.mjs:readJSON",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db-cli.mjs",
+      "target": "function:src/lib/db-cli.mjs:writeJSON",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db-cli.mjs",
+      "target": "function:src/lib/db-cli.mjs:slugify",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db-cli.mjs",
+      "target": "function:src/lib/db-cli.mjs:generateUniqueSlug",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db-cli.mjs",
+      "target": "function:src/lib/db-cli.mjs:readPosts",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db-cli.mjs",
+      "target": "function:src/lib/db-cli.mjs:readPosts",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db-cli.mjs",
+      "target": "function:src/lib/db-cli.mjs:readPost",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db-cli.mjs",
+      "target": "function:src/lib/db-cli.mjs:readPost",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db-cli.mjs",
+      "target": "function:src/lib/db-cli.mjs:createPost",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db-cli.mjs",
+      "target": "function:src/lib/db-cli.mjs:createPost",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db-cli.mjs",
+      "target": "function:src/lib/db-cli.mjs:updatePost",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/db-cli.mjs",
+      "target": "function:src/lib/db-cli.mjs:updatePost",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db-cli.mjs",
+      "target": "function:src/lib/db-cli.mjs:readJSON",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db-cli.mjs",
+      "target": "function:src/lib/db-cli.mjs:readJSON",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db-cli.mjs",
+      "target": "function:src/lib/db-cli.mjs:readJSON",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db-cli.mjs",
+      "target": "function:src/lib/db-cli.mjs:generateUniqueSlug",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db-cli.mjs",
+      "target": "function:src/lib/db-cli.mjs:slugify",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db-cli.mjs",
+      "target": "function:src/lib/db-cli.mjs:writeJSON",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db-cli.mjs",
+      "target": "function:src/lib/db-cli.mjs:readJSON",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db-cli.mjs",
+      "target": "function:src/lib/db-cli.mjs:slugify",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db-cli.mjs",
+      "target": "function:src/lib/db-cli.mjs:generateUniqueSlug",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/db-cli.mjs",
+      "target": "function:src/lib/db-cli.mjs:writeJSON",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:getDeviceType",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:getDeviceType",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:getDeviceMemory",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:getDeviceMemory",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:getConnectionType",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:getConnectionType",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:isSlowNetwork",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:isSlowNetwork",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:isLowMemoryDevice",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:isLowMemoryDevice",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:getModelLoadingStrategy",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:getModelLoadingStrategy",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:getCanvasConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:getCanvasConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:getLoadingTimeout",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:getLoadingTimeout",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:shouldSkipComponent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:shouldSkipComponent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:getParticleCount",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:getParticleCount",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:getDPRConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:getDPRConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:getTextureSize",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:getTextureSize",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:getConnectionType",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:getDeviceMemory",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:getDeviceType",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:getDeviceMemory",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:getConnectionType",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:isSlowNetwork",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:getDeviceType",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:getConnectionType",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:isSlowNetwork",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:getConnectionType",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:getDeviceType",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:getDeviceType",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:getDeviceMemory",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:getConnectionType",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:isSlowNetwork",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:getDeviceType",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:getDeviceMemory",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:getDeviceType",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/deviceDetection.js",
+      "target": "function:src/lib/deviceDetection.js:getModelLoadingStrategy",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/google-indexing.js",
+      "target": "function:src/lib/google-indexing.js:getOAuthAuth",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/google-indexing.js",
+      "target": "function:src/lib/google-indexing.js:getServiceAccountAuth",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/google-indexing.js",
+      "target": "function:src/lib/google-indexing.js:getAuthConfigs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/google-indexing.js",
+      "target": "function:src/lib/google-indexing.js:shouldSkipLocalIndexing",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/google-indexing.js",
+      "target": "function:src/lib/google-indexing.js:publishGoogleIndexingNotification",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/google-indexing.js",
+      "target": "function:src/lib/google-indexing.js:publishGoogleIndexingNotification",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/google-indexing.js",
+      "target": "function:src/lib/google-indexing.js:getServiceAccountAuth",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/google-indexing.js",
+      "target": "function:src/lib/google-indexing.js:getOAuthAuth",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/google-indexing.js",
+      "target": "function:src/lib/google-indexing.js:shouldSkipLocalIndexing",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/google-indexing.js",
+      "target": "function:src/lib/google-indexing.js:getAuthConfigs",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/helpers.js",
+      "target": "function:src/lib/helpers.js:lerp",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/helpers.js",
+      "target": "function:src/lib/helpers.js:lerp",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/helpers.js",
+      "target": "function:src/lib/helpers.js:clamp",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/helpers.js",
+      "target": "function:src/lib/helpers.js:clamp",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/helpers.js",
+      "target": "function:src/lib/helpers.js:mapRange",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/helpers.js",
+      "target": "function:src/lib/helpers.js:mapRange",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/helpers.js",
+      "target": "function:src/lib/helpers.js:degToRad",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/helpers.js",
+      "target": "function:src/lib/helpers.js:degToRad",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/performance.js",
+      "target": "function:src/lib/performance.js:throttle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/performance.js",
+      "target": "function:src/lib/performance.js:throttle",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/performance.js",
+      "target": "function:src/lib/performance.js:debounce",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/performance.js",
+      "target": "function:src/lib/performance.js:debounce",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/performance.js",
+      "target": "function:src/lib/performance.js:rafThrottle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/performance.js",
+      "target": "function:src/lib/performance.js:rafThrottle",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/performance.js",
+      "target": "function:src/lib/performance.js:createRAFBatcher",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/performance.js",
+      "target": "function:src/lib/performance.js:createRAFBatcher",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

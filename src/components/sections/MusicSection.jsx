@@ -10,6 +10,8 @@ import styles from "./MusicSection.module.css";
 import GlassPanel from "../ui/GlassPanel";
 import SectionTitle from "../ui/SectionTitle";
 import { useCanvasOptimizer } from "@/hooks/useCanvasOptimizer";
+import { usePrefersReducedMotion } from "@/hooks/usePrefersReducedMotion";
+import { seededBetween } from "@/lib/seeded-random";
 
 const PointingCharacterCanvas = dynamic(
   () => import("../canvas/PointingCharacterCanvas"),
@@ -30,11 +32,11 @@ const CHAR_CONFIG = {
 function ShootingStars() {
   const stars = useMemo(() => {
     return Array.from({ length: 40 }, (_, i) => ({
-      '--x': `${5 + Math.random() * 90}%`,
-      '--y': `${-(5 + Math.random() * 10)}%`,
-      '--dur': `${2 + Math.random() * 3}s`,
-      '--delay': `${Math.random() * 5}s`,
-      '--trail': `${40 + Math.random() * 80}px`,
+      '--x': `${seededBetween(i * 5 + 1, 5, 95)}%`,
+      '--y': `${-seededBetween(i * 5 + 2, 5, 15)}%`,
+      '--dur': `${seededBetween(i * 5 + 3, 2, 5)}s`,
+      '--delay': `${seededBetween(i * 5 + 4, 0, 5)}s`,
+      '--trail': `${seededBetween(i * 5 + 5, 40, 120)}px`,
     }));
   }, []);
 
@@ -78,15 +80,7 @@ export default function MusicSection() {
   const [visible, setVisible] = useState(false);
   const { isMobile, isTablet } = useCanvasOptimizer();
   const isSmall = isMobile || isTablet;
-  const [reducedMotion, setReducedMotion] = useState(false);
-
-  useEffect(() => {
-    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
-    setReducedMotion(mq.matches);
-    const handler = (e) => setReducedMotion(e.matches);
-    mq.addEventListener("change", handler);
-    return () => mq.removeEventListener("change", handler);
-  }, []);
+  const reducedMotion = usePrefersReducedMotion();
 
   useEffect(() => {
     const el = sectionRef.current;

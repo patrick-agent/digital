@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect, useCallback } from "react"
+import { useState, useCallback } from "react"
 import { useRouter } from "next/navigation"
 
 const STATUS_OPTIONS = [
@@ -8,29 +8,31 @@ const STATUS_OPTIONS = [
   { value: "hidden", label: "Hidden" },
 ]
 
+function createInitialForm(item) {
+  if (!item) {
+    return {
+      serviceName: "", slug: "", headline: "", description: "",
+      featuresRaw: "", priceRange: "", ctaLabel: "Contact", ctaUrl: "",
+      icon: "", status: "active",
+    }
+  }
+
+  return {
+    serviceName: item.serviceName || "", slug: item.slug || "", headline: item.headline || "",
+    description: item.description || "", featuresRaw: (item.features || []).join("\n"),
+    priceRange: item.priceRange || "", ctaLabel: item.ctaLabel || "Contact",
+    ctaUrl: item.ctaUrl || "", icon: item.icon || "", status: item.status || "active",
+  }
+}
+
 export default function ServicesForm({ item }) {
   const router = useRouter()
   const isEditing = !!item
 
-  const [form, setForm] = useState({
-    serviceName: "", slug: "", headline: "", description: "",
-    featuresRaw: "", priceRange: "", ctaLabel: "Contact", ctaUrl: "",
-    icon: "", status: "active",
-  })
+  const [form, setForm] = useState(() => createInitialForm(item))
   const [slugManuallyEdited, setSlugManuallyEdited] = useState(false)
   const [saving, setSaving] = useState(false)
   const [error, setError] = useState("")
-
-  useEffect(() => {
-    if (item) {
-      setForm({
-        serviceName: item.serviceName || "", slug: item.slug || "", headline: item.headline || "",
-        description: item.description || "", featuresRaw: (item.features || []).join("\n"),
-        priceRange: item.priceRange || "", ctaLabel: item.ctaLabel || "Contact",
-        ctaUrl: item.ctaUrl || "", icon: item.icon || "", status: item.status || "active",
-      })
-    }
-  }, [item])
 
   const handleChange = useCallback((field, value) => {
     setForm((prev) => {

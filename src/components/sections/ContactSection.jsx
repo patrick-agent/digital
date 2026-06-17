@@ -4,6 +4,7 @@ import { useRef, useEffect, useState, useCallback } from "react";
 import dynamic from "next/dynamic";
 import styles from "./ContactSection.module.css";
 import GlassPanel from "../ui/GlassPanel";
+import ContactForm from "./ContactForm";
 import { Canvas } from "@react-three/fiber";
 import ParticleField from "../canvas/ParticleField";
 import FloatingGeometries from "../canvas/FloatingGeometries";
@@ -190,15 +191,6 @@ export default function ContactSection() {
     return () => { clearTimeout(timer); stopAutoScroll(); };
   }, [isSmall, visible, startAutoScroll, stopAutoScroll]);
 
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: ""
-  });
-  const [formStatus, setFormStatus] = useState("idle");
-  const [error, setError] = useState("");
-
   useEffect(() => {
     const el = sectionRef.current;
     if (!el) return;
@@ -217,52 +209,6 @@ export default function ContactSection() {
     }, 50);
     return () => clearInterval(interval);
   }, [isSmall]);
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-    setError("");
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setFormStatus("submitting");
-    setError("");
-
-    if (!formData.name || !formData.email || !formData.subject || !formData.message) {
-      setError("Vui lòng điền đầy đủ thông tin!");
-      setFormStatus("idle");
-      return;
-    }
-
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(formData.email)) {
-      setError("Email không hợp lệ!");
-      setFormStatus("idle");
-      return;
-    }
-
-    try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData)
-      });
-
-      const data = await response.json();
-
-      if (response.ok) {
-        setFormStatus("success");
-        setFormData({ name: "", email: "", subject: "", message: "" });
-      } else {
-        setError(data.message || "Có lỗi xảy ra, vui lòng thử lại!");
-        setFormStatus("error");
-      }
-    } catch (err) {
-      setError("Có lỗi xảy ra, vui lòng thử lại!");
-      setFormStatus("error");
-    }
-  };
 
   return (
     <section id="contact" className={styles.contact} ref={sectionRef} onMouseMove={!isSmall ? handleMouseMove : undefined}>
@@ -358,78 +304,7 @@ export default function ContactSection() {
                 Have questions? Send Tachy a message!
               </p>
 
-              {formStatus === "success" ? (
-                <div className={styles.successMessage}>
-                  Cảm ơn bạn! Tin nhắn đã được gửi thành công.
-                </div>
-              ) : (
-                <form className={styles.contactForm} onSubmit={handleSubmit}>
-                  <div className={styles.formGroup}>
-                    <label htmlFor="name">Name</label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      required
-                      placeholder="Your name…"
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      aria-describedby="name-error"
-                    />
-                  </div>
-
-                  <div className={styles.formGroup}>
-                    <label htmlFor="email">Email</label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      required
-                      placeholder="your@email.com…"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      aria-describedby="email-error"
-                    />
-                  </div>
-
-                  <div className={styles.formGroup}>
-                    <label htmlFor="subject">Subject</label>
-                    <input
-                      type="text"
-                      id="subject"
-                      name="subject"
-                      required
-                      placeholder="Subject…"
-                      value={formData.subject}
-                      onChange={handleInputChange}
-                      aria-describedby="subject-error"
-                    />
-                  </div>
-
-                  <div className={styles.formGroup}>
-                    <label htmlFor="message">Message</label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      required
-                      placeholder="Your message…"
-                      value={formData.message}
-                      onChange={handleInputChange}
-                      aria-describedby="message-error"
-                    />
-                  </div>
-
-                  {error && <div id="form-error" className={styles.errorMessage} role="alert">{error}</div>}
-
-                  <button
-                    type="submit"
-                    className={styles.submitBtn}
-                    disabled={formStatus === "submitting"}
-                  >
-                    {formStatus === "submitting" ? "Sending..." : "Send Message"}
-                  </button>
-                </form>
-              )}
+              <ContactForm />
             </GlassPanel>
           </div>
         </div>

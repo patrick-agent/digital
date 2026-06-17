@@ -1,0 +1,32 @@
+{
+  "projectRoot": "C:\\Users\\Admin\\Desktop\\Website 3D\\studio-3d",
+  "batchFiles": [
+    {
+      "path": "src/components/admin/BlogForm.jsx",
+      "language": "javascript",
+      "sizeLines": 430,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/admin/RichTextEditor.jsx",
+      "language": "javascript",
+      "sizeLines": 409,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/admin/ShopForm.jsx",
+      "language": "javascript",
+      "sizeLines": 436,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/components/admin/BlogForm.jsx": [
+      "src/components/admin/RichTextEditor.jsx"
+    ],
+    "src/components/admin/RichTextEditor.jsx": [],
+    "src/components/admin/ShopForm.jsx": [
+      "src/components/admin/RichTextEditor.jsx"
+    ]
+  }
+}

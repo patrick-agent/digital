@@ -1,0 +1,1377 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/components/LoadingScreen.jsx",
+      "type": "file",
+      "name": "LoadingScreen.jsx",
+      "filePath": "src/components/LoadingScreen.jsx",
+      "summary": "LoadingScreen.jsx: Source file, 1 function.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/LoadingScreen.jsx:LoadingScreen",
+      "type": "function",
+      "name": "LoadingScreen",
+      "filePath": "src/components/LoadingScreen.jsx",
+      "lineRange": [
+        7,
+        163
+      ],
+      "summary": "Function LoadingScreen with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/PreloadModels.jsx",
+      "type": "file",
+      "name": "PreloadModels.jsx",
+      "filePath": "src/components/PreloadModels.jsx",
+      "summary": "PreloadModels.jsx: Source file, 1 function.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/PreloadModels.jsx:PreloadModels",
+      "type": "function",
+      "name": "PreloadModels",
+      "filePath": "src/components/PreloadModels.jsx",
+      "lineRange": [
+        12,
+        77
+      ],
+      "summary": "Function PreloadModels with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/ProgressTracker.jsx",
+      "type": "file",
+      "name": "ProgressTracker.jsx",
+      "filePath": "src/components/ProgressTracker.jsx",
+      "summary": "ProgressTracker.jsx: Source file, 1 function.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ProgressTracker.jsx:ProgressTracker",
+      "type": "function",
+      "name": "ProgressTracker",
+      "filePath": "src/components/ProgressTracker.jsx",
+      "lineRange": [
+        7,
+        23
+      ],
+      "summary": "Function ProgressTracker with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/sections/GallerySection.jsx",
+      "type": "file",
+      "name": "GallerySection.jsx",
+      "filePath": "src/components/sections/GallerySection.jsx",
+      "summary": "GallerySection.jsx: Source file, 1 function.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/sections/GallerySection.jsx:GallerySection",
+      "type": "function",
+      "name": "GallerySection",
+      "filePath": "src/components/sections/GallerySection.jsx",
+      "lineRange": [
+        7,
+        10
+      ],
+      "summary": "Function GallerySection with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/sections/HeroSection.jsx",
+      "type": "file",
+      "name": "HeroSection.jsx",
+      "filePath": "src/components/sections/HeroSection.jsx",
+      "summary": "HeroSection.jsx: Source file, 1 function, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/sections/HeroSection.jsx:HeroSection",
+      "type": "function",
+      "name": "HeroSection",
+      "filePath": "src/components/sections/HeroSection.jsx",
+      "lineRange": [
+        18,
+        127
+      ],
+      "summary": "Function HeroSection with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/shop/ProductShelf.module.css",
+      "type": "file",
+      "name": "ProductShelf.module.css",
+      "filePath": "src/components/shop/ProductShelf.module.css",
+      "summary": "ProductShelf.module.css: Source file.",
+      "tags": [
+        "markup",
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/shop/ShopClient.module.css",
+      "type": "file",
+      "name": "ShopClient.module.css",
+      "filePath": "src/components/shop/ShopClient.module.css",
+      "summary": "ShopClient.module.css: Source file.",
+      "tags": [
+        "markup",
+        "component"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/components/ui/badge.jsx",
+      "type": "file",
+      "name": "badge.jsx",
+      "filePath": "src/components/ui/badge.jsx",
+      "summary": "badge.jsx: Source file, 1 function.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/badge.jsx:Badge",
+      "type": "function",
+      "name": "Badge",
+      "filePath": "src/components/ui/badge.jsx",
+      "lineRange": [
+        26,
+        32
+      ],
+      "summary": "Function Badge with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/ui/button.jsx",
+      "type": "file",
+      "name": "button.jsx",
+      "filePath": "src/components/ui/button.jsx",
+      "summary": "button.jsx: Source file.",
+      "tags": [
+        "component",
+        "type-definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/ui/canvas-reveal-effect.jsx",
+      "type": "file",
+      "name": "canvas-reveal-effect.jsx",
+      "filePath": "src/components/ui/canvas-reveal-effect.jsx",
+      "summary": "canvas-reveal-effect.jsx: Source file, 4 functions.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/components/ui/canvas-reveal-effect.jsx:CanvasRevealEffect",
+      "type": "function",
+      "name": "CanvasRevealEffect",
+      "filePath": "src/components/ui/canvas-reveal-effect.jsx",
+      "lineRange": [
+        7,
+        37
+      ],
+      "summary": "Function CanvasRevealEffect with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/canvas-reveal-effect.jsx:DotMatrix",
+      "type": "function",
+      "name": "DotMatrix",
+      "filePath": "src/components/ui/canvas-reveal-effect.jsx",
+      "lineRange": [
+        39,
+        154
+      ],
+      "summary": "Function DotMatrix with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/ui/canvas-reveal-effect.jsx:ShaderMaterial",
+      "type": "function",
+      "name": "ShaderMaterial",
+      "filePath": "src/components/ui/canvas-reveal-effect.jsx",
+      "lineRange": [
+        156,
+        256
+      ],
+      "summary": "Function ShaderMaterial with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/ui/canvas-reveal-effect.jsx:Shader",
+      "type": "function",
+      "name": "Shader",
+      "filePath": "src/components/ui/canvas-reveal-effect.jsx",
+      "lineRange": [
+        258,
+        264
+      ],
+      "summary": "Function Shader with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/ui/comet-card.jsx",
+      "type": "file",
+      "name": "comet-card.jsx",
+      "filePath": "src/components/ui/comet-card.jsx",
+      "summary": "comet-card.jsx: Source file, 1 function.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/ui/comet-card.jsx:CometCard",
+      "type": "function",
+      "name": "CometCard",
+      "filePath": "src/components/ui/comet-card.jsx",
+      "lineRange": [
+        12,
+        92
+      ],
+      "summary": "Function CometCard with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/ui/dialog.jsx",
+      "type": "file",
+      "name": "dialog.jsx",
+      "filePath": "src/components/ui/dialog.jsx",
+      "summary": "dialog.jsx: Source file, 2 functions.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/ui/dialog.jsx:DialogHeader",
+      "type": "function",
+      "name": "DialogHeader",
+      "filePath": "src/components/ui/dialog.jsx",
+      "lineRange": [
+        49,
+        56
+      ],
+      "summary": "Function DialogHeader with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/dialog.jsx:DialogFooter",
+      "type": "function",
+      "name": "DialogFooter",
+      "filePath": "src/components/ui/dialog.jsx",
+      "lineRange": [
+        59,
+        66
+      ],
+      "summary": "Function DialogFooter with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/ui/ErrorBoundary.jsx",
+      "type": "file",
+      "name": "ErrorBoundary.jsx",
+      "filePath": "src/components/ui/ErrorBoundary.jsx",
+      "summary": "ErrorBoundary.jsx: Source file, 1 function.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/ui/ErrorBoundary.jsx:ErrorBoundary",
+      "type": "function",
+      "name": "ErrorBoundary",
+      "filePath": "src/components/ui/ErrorBoundary.jsx",
+      "lineRange": [
+        5,
+        70
+      ],
+      "summary": "Function ErrorBoundary with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/ui/Galaxy.jsx",
+      "type": "file",
+      "name": "Galaxy.jsx",
+      "filePath": "src/components/ui/Galaxy.jsx",
+      "summary": "Galaxy.jsx: Source file, 1 function, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/components/ui/Galaxy.jsx:Galaxy",
+      "type": "function",
+      "name": "Galaxy",
+      "filePath": "src/components/ui/Galaxy.jsx",
+      "lineRange": [
+        173,
+        333
+      ],
+      "summary": "Function Galaxy with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/ui/GradientText.jsx",
+      "type": "file",
+      "name": "GradientText.jsx",
+      "filePath": "src/components/ui/GradientText.jsx",
+      "summary": "GradientText.jsx: Source file, 1 function, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/ui/GradientText.jsx:GradientText",
+      "type": "function",
+      "name": "GradientText",
+      "filePath": "src/components/ui/GradientText.jsx",
+      "lineRange": [
+        5,
+        96
+      ],
+      "summary": "Function GradientText with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/ui/GridScan.jsx",
+      "type": "file",
+      "name": "GridScan.jsx",
+      "filePath": "src/components/ui/GridScan.jsx",
+      "summary": "GridScan.jsx: Source file, 8 functions, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/components/ui/GridScan.jsx:GridScan",
+      "type": "function",
+      "name": "GridScan",
+      "filePath": "src/components/ui/GridScan.jsx",
+      "lineRange": [
+        272,
+        807
+      ],
+      "summary": "Function GridScan with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/ui/GridScan.jsx:srgbColor",
+      "type": "function",
+      "name": "srgbColor",
+      "filePath": "src/components/ui/GridScan.jsx",
+      "lineRange": [
+        809,
+        812
+      ],
+      "summary": "Function srgbColor with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/GridScan.jsx:smoothDampVec2",
+      "type": "function",
+      "name": "smoothDampVec2",
+      "filePath": "src/components/ui/GridScan.jsx",
+      "lineRange": [
+        814,
+        841
+      ],
+      "summary": "Function smoothDampVec2 with 6 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/GridScan.jsx:smoothDampFloat",
+      "type": "function",
+      "name": "smoothDampFloat",
+      "filePath": "src/components/ui/GridScan.jsx",
+      "lineRange": [
+        843,
+        868
+      ],
+      "summary": "Function smoothDampFloat with 6 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/GridScan.jsx:medianPush",
+      "type": "function",
+      "name": "medianPush",
+      "filePath": "src/components/ui/GridScan.jsx",
+      "lineRange": [
+        870,
+        873
+      ],
+      "summary": "Function medianPush with 3 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/GridScan.jsx:median",
+      "type": "function",
+      "name": "median",
+      "filePath": "src/components/ui/GridScan.jsx",
+      "lineRange": [
+        875,
+        880
+      ],
+      "summary": "Function median with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/GridScan.jsx:centroid",
+      "type": "function",
+      "name": "centroid",
+      "filePath": "src/components/ui/GridScan.jsx",
+      "lineRange": [
+        882,
+        891
+      ],
+      "summary": "Function centroid with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/GridScan.jsx:dist2",
+      "type": "function",
+      "name": "dist2",
+      "filePath": "src/components/ui/GridScan.jsx",
+      "lineRange": [
+        893,
+        895
+      ],
+      "summary": "Function dist2 with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/ui/input.jsx",
+      "type": "file",
+      "name": "input.jsx",
+      "filePath": "src/components/ui/input.jsx",
+      "summary": "input.jsx: Source file.",
+      "tags": [
+        "component",
+        "type-definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/ui/label.jsx",
+      "type": "file",
+      "name": "label.jsx",
+      "filePath": "src/components/ui/label.jsx",
+      "summary": "label.jsx: Source file.",
+      "tags": [
+        "component",
+        "type-definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/ui/LightPillar.jsx",
+      "type": "file",
+      "name": "LightPillar.jsx",
+      "filePath": "src/components/ui/LightPillar.jsx",
+      "summary": "LightPillar.jsx: Source file, 2 functions, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/components/ui/LightPillar.jsx:canUseWebGL",
+      "type": "function",
+      "name": "canUseWebGL",
+      "filePath": "src/components/ui/LightPillar.jsx",
+      "lineRange": [
+        8,
+        17
+      ],
+      "summary": "Function canUseWebGL with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/LightPillar.jsx:LightPillar",
+      "type": "function",
+      "name": "LightPillar",
+      "filePath": "src/components/ui/LightPillar.jsx",
+      "lineRange": [
+        19,
+        385
+      ],
+      "summary": "Function LightPillar with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/ui/LightRays.jsx",
+      "type": "file",
+      "name": "LightRays.jsx",
+      "filePath": "src/components/ui/LightRays.jsx",
+      "summary": "LightRays.jsx: Source file, 3 functions, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/components/ui/LightRays.jsx:hexToRgb",
+      "type": "function",
+      "name": "hexToRgb",
+      "filePath": "src/components/ui/LightRays.jsx",
+      "lineRange": [
+        7,
+        10
+      ],
+      "summary": "Function hexToRgb with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/LightRays.jsx:getAnchorAndDir",
+      "type": "function",
+      "name": "getAnchorAndDir",
+      "filePath": "src/components/ui/LightRays.jsx",
+      "lineRange": [
+        12,
+        32
+      ],
+      "summary": "Function getAnchorAndDir with 3 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/LightRays.jsx:LightRays",
+      "type": "function",
+      "name": "LightRays",
+      "filePath": "src/components/ui/LightRays.jsx",
+      "lineRange": [
+        34,
+        400
+      ],
+      "summary": "Function LightRays with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/ui/LiquidEther.jsx",
+      "type": "file",
+      "name": "LiquidEther.jsx",
+      "filePath": "src/components/ui/LiquidEther.jsx",
+      "summary": "LiquidEther.jsx: Source file, 1 function, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/components/ui/LiquidEther.jsx:LiquidEther",
+      "type": "function",
+      "name": "LiquidEther",
+      "filePath": "src/components/ui/LiquidEther.jsx",
+      "lineRange": [
+        5,
+        1167
+      ],
+      "summary": "Function LiquidEther with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/ui/LoadingSpinner.jsx",
+      "type": "file",
+      "name": "LoadingSpinner.jsx",
+      "filePath": "src/components/ui/LoadingSpinner.jsx",
+      "summary": "LoadingSpinner.jsx: Source file, 1 function.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ui/LoadingSpinner.jsx:LoadingSpinner",
+      "type": "function",
+      "name": "LoadingSpinner",
+      "filePath": "src/components/ui/LoadingSpinner.jsx",
+      "lineRange": [
+        3,
+        37
+      ],
+      "summary": "Function LoadingSpinner with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/ui/NeonButton.jsx",
+      "type": "file",
+      "name": "NeonButton.jsx",
+      "filePath": "src/components/ui/NeonButton.jsx",
+      "summary": "NeonButton.jsx: Source file, 1 function.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/ui/NeonButton.jsx:NeonButton",
+      "type": "function",
+      "name": "NeonButton",
+      "filePath": "src/components/ui/NeonButton.jsx",
+      "lineRange": [
+        5,
+        111
+      ],
+      "summary": "Function NeonButton with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/ui/RippleGrid.jsx",
+      "type": "file",
+      "name": "RippleGrid.jsx",
+      "filePath": "src/components/ui/RippleGrid.jsx",
+      "summary": "RippleGrid.jsx: Source file, 1 function, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/components/ui/RippleGrid.jsx:RippleGrid",
+      "type": "function",
+      "name": "RippleGrid",
+      "filePath": "src/components/ui/RippleGrid.jsx",
+      "lineRange": [
+        5,
+        274
+      ],
+      "summary": "Function RippleGrid with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/ui/RotatingText.jsx",
+      "type": "file",
+      "name": "RotatingText.jsx",
+      "filePath": "src/components/ui/RotatingText.jsx",
+      "summary": "RotatingText.jsx: Source file, 1 function.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/ui/RotatingText.jsx:cn",
+      "type": "function",
+      "name": "cn",
+      "filePath": "src/components/ui/RotatingText.jsx",
+      "lineRange": [
+        6,
+        8
+      ],
+      "summary": "Function cn with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/components/LoadingScreen.jsx",
+      "target": "function:src/components/LoadingScreen.jsx:LoadingScreen",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/LoadingScreen.jsx",
+      "target": "function:src/components/LoadingScreen.jsx:LoadingScreen",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/PreloadModels.jsx",
+      "target": "function:src/components/PreloadModels.jsx:PreloadModels",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/PreloadModels.jsx",
+      "target": "function:src/components/PreloadModels.jsx:PreloadModels",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ProgressTracker.jsx",
+      "target": "function:src/components/ProgressTracker.jsx:ProgressTracker",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/ProgressTracker.jsx",
+      "target": "function:src/components/ProgressTracker.jsx:ProgressTracker",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/sections/GallerySection.jsx",
+      "target": "function:src/components/sections/GallerySection.jsx:GallerySection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/sections/GallerySection.jsx",
+      "target": "function:src/components/sections/GallerySection.jsx:GallerySection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/sections/HeroSection.jsx",
+      "target": "function:src/components/sections/HeroSection.jsx:HeroSection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/sections/HeroSection.jsx",
+      "target": "function:src/components/sections/HeroSection.jsx:HeroSection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/sections/HeroSection.jsx",
+      "target": "file:src/components/sections/HeroSection.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/ui/badge.jsx",
+      "target": "function:src/components/ui/badge.jsx:Badge",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/ui/badge.jsx",
+      "target": "function:src/components/ui/badge.jsx:Badge",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ui/canvas-reveal-effect.jsx",
+      "target": "function:src/components/ui/canvas-reveal-effect.jsx:CanvasRevealEffect",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/ui/canvas-reveal-effect.jsx",
+      "target": "function:src/components/ui/canvas-reveal-effect.jsx:CanvasRevealEffect",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ui/canvas-reveal-effect.jsx",
+      "target": "function:src/components/ui/canvas-reveal-effect.jsx:DotMatrix",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/ui/canvas-reveal-effect.jsx",
+      "target": "function:src/components/ui/canvas-reveal-effect.jsx:ShaderMaterial",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/ui/canvas-reveal-effect.jsx",
+      "target": "function:src/components/ui/canvas-reveal-effect.jsx:Shader",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/ui/comet-card.jsx",
+      "target": "function:src/components/ui/comet-card.jsx:CometCard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/ui/comet-card.jsx",
+      "target": "function:src/components/ui/comet-card.jsx:CometCard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ui/dialog.jsx",
+      "target": "function:src/components/ui/dialog.jsx:DialogHeader",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/ui/dialog.jsx",
+      "target": "function:src/components/ui/dialog.jsx:DialogHeader",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ui/dialog.jsx",
+      "target": "function:src/components/ui/dialog.jsx:DialogFooter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/ui/dialog.jsx",
+      "target": "function:src/components/ui/dialog.jsx:DialogFooter",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ui/ErrorBoundary.jsx",
+      "target": "function:src/components/ui/ErrorBoundary.jsx:ErrorBoundary",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/ui/ErrorBoundary.jsx",
+      "target": "function:src/components/ui/ErrorBoundary.jsx:ErrorBoundary",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ui/Galaxy.jsx",
+      "target": "function:src/components/ui/Galaxy.jsx:Galaxy",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/ui/Galaxy.jsx",
+      "target": "function:src/components/ui/Galaxy.jsx:Galaxy",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ui/Galaxy.jsx",
+      "target": "file:src/components/ui/Galaxy.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/ui/GradientText.jsx",
+      "target": "function:src/components/ui/GradientText.jsx:GradientText",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/ui/GradientText.jsx",
+      "target": "function:src/components/ui/GradientText.jsx:GradientText",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ui/GradientText.jsx",
+      "target": "file:src/components/ui/GradientText.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/ui/GridScan.jsx",
+      "target": "function:src/components/ui/GridScan.jsx:GridScan",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/ui/GridScan.jsx",
+      "target": "function:src/components/ui/GridScan.jsx:GridScan",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ui/GridScan.jsx",
+      "target": "function:src/components/ui/GridScan.jsx:srgbColor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/ui/GridScan.jsx",
+      "target": "function:src/components/ui/GridScan.jsx:smoothDampVec2",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/ui/GridScan.jsx",
+      "target": "function:src/components/ui/GridScan.jsx:smoothDampFloat",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/ui/GridScan.jsx",
+      "target": "function:src/components/ui/GridScan.jsx:medianPush",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/ui/GridScan.jsx",
+      "target": "function:src/components/ui/GridScan.jsx:median",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/ui/GridScan.jsx",
+      "target": "function:src/components/ui/GridScan.jsx:centroid",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/ui/GridScan.jsx",
+      "target": "function:src/components/ui/GridScan.jsx:dist2",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/ui/GridScan.jsx",
+      "target": "file:src/components/ui/GridScan.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/ui/GridScan.jsx",
+      "target": "function:src/components/ui/GridScan.jsx:srgbColor",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ui/GridScan.jsx",
+      "target": "function:src/components/ui/GridScan.jsx:srgbColor",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ui/GridScan.jsx",
+      "target": "function:src/components/ui/GridScan.jsx:smoothDampVec2",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ui/GridScan.jsx",
+      "target": "function:src/components/ui/GridScan.jsx:smoothDampFloat",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ui/GridScan.jsx",
+      "target": "function:src/components/ui/GridScan.jsx:smoothDampFloat",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ui/GridScan.jsx",
+      "target": "function:src/components/ui/GridScan.jsx:srgbColor",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ui/GridScan.jsx",
+      "target": "function:src/components/ui/GridScan.jsx:srgbColor",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ui/GridScan.jsx",
+      "target": "function:src/components/ui/GridScan.jsx:medianPush",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ui/GridScan.jsx",
+      "target": "function:src/components/ui/GridScan.jsx:medianPush",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ui/GridScan.jsx",
+      "target": "function:src/components/ui/GridScan.jsx:median",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ui/GridScan.jsx",
+      "target": "function:src/components/ui/GridScan.jsx:median",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ui/GridScan.jsx",
+      "target": "function:src/components/ui/GridScan.jsx:centroid",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ui/GridScan.jsx",
+      "target": "function:src/components/ui/GridScan.jsx:centroid",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ui/GridScan.jsx",
+      "target": "function:src/components/ui/GridScan.jsx:medianPush",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ui/GridScan.jsx",
+      "target": "function:src/components/ui/GridScan.jsx:median",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ui/GridScan.jsx",
+      "target": "function:src/components/ui/GridScan.jsx:dist2",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ui/GridScan.jsx",
+      "target": "function:src/components/ui/GridScan.jsx:dist2",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ui/GridScan.jsx",
+      "target": "function:src/components/ui/GridScan.jsx:medianPush",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ui/GridScan.jsx",
+      "target": "function:src/components/ui/GridScan.jsx:median",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ui/LightPillar.jsx",
+      "target": "function:src/components/ui/LightPillar.jsx:canUseWebGL",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/ui/LightPillar.jsx",
+      "target": "function:src/components/ui/LightPillar.jsx:LightPillar",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/ui/LightPillar.jsx",
+      "target": "file:src/components/ui/LightPillar.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/ui/LightPillar.jsx",
+      "target": "function:src/components/ui/LightPillar.jsx:canUseWebGL",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ui/LightRays.jsx",
+      "target": "function:src/components/ui/LightRays.jsx:hexToRgb",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/ui/LightRays.jsx",
+      "target": "function:src/components/ui/LightRays.jsx:getAnchorAndDir",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/ui/LightRays.jsx",
+      "target": "function:src/components/ui/LightRays.jsx:LightRays",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/ui/LightRays.jsx",
+      "target": "file:src/components/ui/LightRays.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/ui/LightRays.jsx",
+      "target": "function:src/components/ui/LightRays.jsx:hexToRgb",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ui/LightRays.jsx",
+      "target": "function:src/components/ui/LightRays.jsx:getAnchorAndDir",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ui/LightRays.jsx",
+      "target": "function:src/components/ui/LightRays.jsx:hexToRgb",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ui/LightRays.jsx",
+      "target": "function:src/components/ui/LightRays.jsx:getAnchorAndDir",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ui/LiquidEther.jsx",
+      "target": "function:src/components/ui/LiquidEther.jsx:LiquidEther",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/ui/LiquidEther.jsx",
+      "target": "function:src/components/ui/LiquidEther.jsx:LiquidEther",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ui/LiquidEther.jsx",
+      "target": "file:src/components/ui/LiquidEther.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/ui/LoadingSpinner.jsx",
+      "target": "function:src/components/ui/LoadingSpinner.jsx:LoadingSpinner",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/ui/LoadingSpinner.jsx",
+      "target": "function:src/components/ui/LoadingSpinner.jsx:LoadingSpinner",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ui/NeonButton.jsx",
+      "target": "function:src/components/ui/NeonButton.jsx:NeonButton",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/ui/NeonButton.jsx",
+      "target": "function:src/components/ui/NeonButton.jsx:NeonButton",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/ui/RippleGrid.jsx",
+      "target": "function:src/components/ui/RippleGrid.jsx:RippleGrid",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/ui/RippleGrid.jsx",
+      "target": "file:src/components/ui/RippleGrid.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/ui/RotatingText.jsx",
+      "target": "function:src/components/ui/RotatingText.jsx:cn",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    }
+  ]
+}

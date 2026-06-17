@@ -1,0 +1,250 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 3,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/lib/search-console/service/handler.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 99,
+      "nonEmptyLines": 87,
+      "functions": [
+        {
+          "name": "getServiceAccountAuth",
+          "startLine": 12,
+          "endLine": 26,
+          "params": []
+        },
+        {
+          "name": "siteUrl",
+          "startLine": 28,
+          "endLine": 30,
+          "params": []
+        },
+        {
+          "name": "shouldSkipLocal",
+          "startLine": 32,
+          "endLine": 34,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "SearchConsoleHandler",
+          "startLine": 36,
+          "endLine": 99,
+          "methods": [
+            "submitSitemap"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "SearchConsoleHandler",
+          "line": 36,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getServiceAccountAuth",
+          "callee": "(process.env.GOOGLE_INDEXING_PRIVATE_KEY || \"\").replace",
+          "lineNumber": 14
+        },
+        {
+          "caller": "submitSitemap",
+          "callee": "SitemapSubmitInputSchema.safeParse",
+          "lineNumber": 38
+        },
+        {
+          "caller": "submitSitemap",
+          "callee": "SubmitResultSchema.parse",
+          "lineNumber": 40
+        },
+        {
+          "caller": "submitSitemap",
+          "callee": "createSearchConsoleFailure",
+          "lineNumber": 41
+        },
+        {
+          "caller": "submitSitemap",
+          "callee": "shouldSkipLocal",
+          "lineNumber": 49
+        },
+        {
+          "caller": "submitSitemap",
+          "callee": "SubmitResultSchema.parse",
+          "lineNumber": 50
+        },
+        {
+          "caller": "submitSitemap",
+          "callee": "createSearchConsoleFailure",
+          "lineNumber": 51
+        },
+        {
+          "caller": "submitSitemap",
+          "callee": "getServiceAccountAuth",
+          "lineNumber": 59
+        },
+        {
+          "caller": "submitSitemap",
+          "callee": "SubmitResultSchema.parse",
+          "lineNumber": 61
+        },
+        {
+          "caller": "submitSitemap",
+          "callee": "createSearchConsoleFailure",
+          "lineNumber": 62
+        },
+        {
+          "caller": "submitSitemap",
+          "callee": "google.webmasters",
+          "lineNumber": 71
+        },
+        {
+          "caller": "submitSitemap",
+          "callee": "webmasters.sitemaps.submit",
+          "lineNumber": 77
+        },
+        {
+          "caller": "submitSitemap",
+          "callee": "SubmitResultSchema.parse",
+          "lineNumber": 82
+        },
+        {
+          "caller": "submitSitemap",
+          "callee": "message.includes",
+          "lineNumber": 91
+        },
+        {
+          "caller": "submitSitemap",
+          "callee": "SubmitResultSchema.parse",
+          "lineNumber": 94
+        },
+        {
+          "caller": "submitSitemap",
+          "callee": "createSearchConsoleFailure",
+          "lineNumber": 95
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/lib/search-console/service/index.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 5,
+      "functions": [
+        {
+          "name": "submitSitemap",
+          "startLine": 5,
+          "endLine": 5,
+          "params": [
+            "input"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "submitSitemap",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "SearchConsoleHandler",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "submitSitemap",
+          "callee": "handler.submitSitemap",
+          "lineNumber": 5
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/lib/search-console/service/spec.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 34,
+      "nonEmptyLines": 28,
+      "functions": [
+        {
+          "name": "createSearchConsoleFailure",
+          "startLine": 30,
+          "endLine": 34,
+          "params": [
+            "code",
+            "message"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SitemapSubmitInputSchema",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "SubmitResultSuccessSchema",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "SubmitResultFailureSchema",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "SubmitResultSchema",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "SearchConsoleErrorCode",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "createSearchConsoleFailure",
+          "line": 30,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createSearchConsoleFailure",
+          "callee": "SubmitResultFailureSchema.parse",
+          "lineNumber": 31
+        },
+        {
+          "caller": "createSearchConsoleFailure",
+          "callee": "createFailure",
+          "lineNumber": 32
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 6,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    }
+  ]
+}

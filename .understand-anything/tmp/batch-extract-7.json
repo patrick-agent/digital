@@ -1,0 +1,765 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "scripts/rebuild-shop-catalog.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 55,
+      "nonEmptyLines": 48,
+      "functions": [
+        {
+          "name": "main",
+          "startLine": 7,
+          "endLine": 50,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "main",
+          "callee": "Date.now",
+          "lineNumber": 8
+        },
+        {
+          "caller": "main",
+          "callee": "products.entries",
+          "lineNumber": 11
+        },
+        {
+          "caller": "main",
+          "callee": "fetchShopeeMeta",
+          "lineNumber": 12
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 16
+        },
+        {
+          "caller": "main",
+          "callee": "formatPrice",
+          "lineNumber": 16
+        },
+        {
+          "caller": "main",
+          "callee": "catalog.push",
+          "lineNumber": 18
+        },
+        {
+          "caller": "main",
+          "callee": "crypto.randomUUID",
+          "lineNumber": 19
+        },
+        {
+          "caller": "main",
+          "callee": "slugify",
+          "lineNumber": 22
+        },
+        {
+          "caller": "main",
+          "callee": "buildDescription",
+          "lineNumber": 23
+        },
+        {
+          "caller": "main",
+          "callee": "buildSeoTitle",
+          "lineNumber": 33
+        },
+        {
+          "caller": "main",
+          "callee": "buildSeoDescription",
+          "lineNumber": 34
+        },
+        {
+          "caller": "main",
+          "callee": "buildPriceNote",
+          "lineNumber": 35
+        },
+        {
+          "caller": "main",
+          "callee": "buildWhyRecommend",
+          "lineNumber": 37
+        },
+        {
+          "caller": "main",
+          "callee": "buildFaq",
+          "lineNumber": 38
+        },
+        {
+          "caller": "main",
+          "callee": "new Date(now - index * 60_000).toISOString",
+          "lineNumber": 40
+        },
+        {
+          "caller": "main",
+          "callee": "new Date(now).toISOString",
+          "lineNumber": 41
+        },
+        {
+          "caller": "main",
+          "callee": "setTimeout",
+          "lineNumber": 44
+        },
+        {
+          "caller": "main",
+          "callee": "path.join",
+          "lineNumber": 47
+        },
+        {
+          "caller": "main",
+          "callee": "process.cwd",
+          "lineNumber": 47
+        },
+        {
+          "caller": "main",
+          "callee": "writeFile",
+          "lineNumber": 48
+        },
+        {
+          "caller": "main",
+          "callee": "JSON.stringify",
+          "lineNumber": 48
+        },
+        {
+          "caller": "main",
+          "callee": "console.log",
+          "lineNumber": 49
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "scripts/shop-data/content-builder.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 214,
+      "nonEmptyLines": 196,
+      "functions": [
+        {
+          "name": "slugify",
+          "startLine": 1,
+          "endLine": 9,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "formatPrice",
+          "startLine": 11,
+          "endLine": 13,
+          "params": [
+            "price"
+          ]
+        },
+        {
+          "name": "decodeHtml",
+          "startLine": 15,
+          "endLine": 22,
+          "params": []
+        },
+        {
+          "name": "normalizeImageUrl",
+          "startLine": 24,
+          "endLine": 29,
+          "params": [
+            "url"
+          ]
+        },
+        {
+          "name": "uniq",
+          "startLine": 31,
+          "endLine": 33,
+          "params": [
+            "values"
+          ]
+        },
+        {
+          "name": "joinArticleLinks",
+          "startLine": 35,
+          "endLine": 41,
+          "params": []
+        },
+        {
+          "name": "buildDescription",
+          "startLine": 43,
+          "endLine": 53,
+          "params": [
+            "product",
+            "price"
+          ]
+        },
+        {
+          "name": "buildWhyRecommend",
+          "startLine": 55,
+          "endLine": 60,
+          "params": [
+            "product"
+          ]
+        },
+        {
+          "name": "buildPriceNote",
+          "startLine": 62,
+          "endLine": 70,
+          "params": [
+            "product"
+          ]
+        },
+        {
+          "name": "buildSeoTitle",
+          "startLine": 72,
+          "endLine": 74,
+          "params": [
+            "product"
+          ]
+        },
+        {
+          "name": "buildSeoDescription",
+          "startLine": 76,
+          "endLine": 78,
+          "params": [
+            "product"
+          ]
+        },
+        {
+          "name": "buildFaq",
+          "startLine": 80,
+          "endLine": 214,
+          "params": [
+            "product"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "slugify",
+          "line": 1,
+          "isDefault": false
+        },
+        {
+          "name": "formatPrice",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "decodeHtml",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "normalizeImageUrl",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "uniq",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "buildDescription",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "buildWhyRecommend",
+          "line": 55,
+          "isDefault": false
+        },
+        {
+          "name": "buildPriceNote",
+          "line": 62,
+          "isDefault": false
+        },
+        {
+          "name": "buildSeoTitle",
+          "line": 72,
+          "isDefault": false
+        },
+        {
+          "name": "buildSeoDescription",
+          "line": 76,
+          "isDefault": false
+        },
+        {
+          "name": "buildFaq",
+          "line": 80,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "slugify",
+          "callee": "String(value)\n    .normalize(\"NFKD\")\n    .replace(/[\\u0300-\\u036f]/g, \"\")\n    .replace(/\\+/g, \" plus \")\n    .replace(/[^a-zA-Z0-9]+/g, \"-\")\n    .replace(/^-+|-+$/g, \"\")\n    .toLowerCase",
+          "lineNumber": 2
+        },
+        {
+          "caller": "slugify",
+          "callee": "String(value)\n    .normalize(\"NFKD\")\n    .replace(/[\\u0300-\\u036f]/g, \"\")\n    .replace(/\\+/g, \" plus \")\n    .replace(/[^a-zA-Z0-9]+/g, \"-\")\n    .replace",
+          "lineNumber": 2
+        },
+        {
+          "caller": "slugify",
+          "callee": "String(value)\n    .normalize(\"NFKD\")\n    .replace(/[\\u0300-\\u036f]/g, \"\")\n    .replace(/\\+/g, \" plus \")\n    .replace",
+          "lineNumber": 2
+        },
+        {
+          "caller": "slugify",
+          "callee": "String(value)\n    .normalize(\"NFKD\")\n    .replace(/[\\u0300-\\u036f]/g, \"\")\n    .replace",
+          "lineNumber": 2
+        },
+        {
+          "caller": "slugify",
+          "callee": "String(value)\n    .normalize(\"NFKD\")\n    .replace",
+          "lineNumber": 2
+        },
+        {
+          "caller": "slugify",
+          "callee": "String(value)\n    .normalize",
+          "lineNumber": 2
+        },
+        {
+          "caller": "slugify",
+          "callee": "String",
+          "lineNumber": 2
+        },
+        {
+          "caller": "formatPrice",
+          "callee": "Number(price || 0).toLocaleString",
+          "lineNumber": 12
+        },
+        {
+          "caller": "formatPrice",
+          "callee": "Number",
+          "lineNumber": 12
+        },
+        {
+          "caller": "decodeHtml",
+          "callee": "String(value)\n    .replace(/&quot;/g, '\"')\n    .replace(/&#39;/g, \"'\")\n    .replace(/&amp;/g, \"&\")\n    .replace(/&lt;/g, \"<\")\n    .replace",
+          "lineNumber": 16
+        },
+        {
+          "caller": "decodeHtml",
+          "callee": "String(value)\n    .replace(/&quot;/g, '\"')\n    .replace(/&#39;/g, \"'\")\n    .replace(/&amp;/g, \"&\")\n    .replace",
+          "lineNumber": 16
+        },
+        {
+          "caller": "decodeHtml",
+          "callee": "String(value)\n    .replace(/&quot;/g, '\"')\n    .replace(/&#39;/g, \"'\")\n    .replace",
+          "lineNumber": 16
+        },
+        {
+          "caller": "decodeHtml",
+          "callee": "String(value)\n    .replace(/&quot;/g, '\"')\n    .replace",
+          "lineNumber": 16
+        },
+        {
+          "caller": "decodeHtml",
+          "callee": "String(value)\n    .replace",
+          "lineNumber": 16
+        },
+        {
+          "caller": "decodeHtml",
+          "callee": "String",
+          "lineNumber": 16
+        },
+        {
+          "caller": "normalizeImageUrl",
+          "callee": "decodeHtml(url).trim",
+          "lineNumber": 26
+        },
+        {
+          "caller": "normalizeImageUrl",
+          "callee": "decodeHtml",
+          "lineNumber": 26
+        },
+        {
+          "caller": "normalizeImageUrl",
+          "callee": "/^https?:\\/\\//i.test",
+          "lineNumber": 27
+        },
+        {
+          "caller": "uniq",
+          "callee": "values.filter",
+          "lineNumber": 32
+        },
+        {
+          "caller": "joinArticleLinks",
+          "callee": "items.map",
+          "lineNumber": 36
+        },
+        {
+          "caller": "joinArticleLinks",
+          "callee": "links.slice(0, -1).join",
+          "lineNumber": 40
+        },
+        {
+          "caller": "joinArticleLinks",
+          "callee": "links.slice",
+          "lineNumber": 40
+        },
+        {
+          "caller": "joinArticleLinks",
+          "callee": "links.at",
+          "lineNumber": 40
+        },
+        {
+          "caller": "buildDescription",
+          "callee": "joinArticleLinks",
+          "lineNumber": 44
+        },
+        {
+          "caller": "buildDescription",
+          "callee": "product.relatedArticles.slice",
+          "lineNumber": 44
+        },
+        {
+          "caller": "buildDescription",
+          "callee": "formatPrice",
+          "lineNumber": 45
+        },
+        {
+          "caller": "buildDescription",
+          "callee": "[\n    `<p><strong>Kết luận nhanh:</strong> ${product.name} ${product.summaryLine}.</p>`,\n    `<p>Giá tham khảo hiện tại quanh <strong>${priceText}</strong>. ${product.audienceLine} ${product.workflowLine}</p>`,\n    articleLinks\n      ? `<p>${product.recommendationLine} Trước khi chốt mua, bạn nên đối chiếu thêm với ${articleLinks}. ${product.cautionLine}</p>`\n      : `<p>${product.recommendationLine} ${product.cautionLine}</p>`,\n  ].join",
+          "lineNumber": 46
+        },
+        {
+          "caller": "buildWhyRecommend",
+          "callee": "[\n    `<p>${product.recommendationLine}</p>`,\n    `<p>${product.pairingLine} ${product.cautionLine}</p>`,\n  ].join",
+          "lineNumber": 56
+        },
+        {
+          "caller": "buildFaq",
+          "callee": "joinArticleLinks",
+          "lineNumber": 81
+        },
+        {
+          "caller": "buildFaq",
+          "callee": "product.relatedArticles.slice",
+          "lineNumber": 81
+        },
+        {
+          "caller": "buildFaq",
+          "callee": "[\"condenser-mic\", \"hybrid-mic\"].includes",
+          "lineNumber": 101
+        },
+        {
+          "caller": "buildFaq",
+          "callee": "[\"closed-headphone\", \"open-headphone\"].includes",
+          "lineNumber": 118
+        },
+        {
+          "caller": "buildFaq",
+          "callee": "[\"midi-mini\", \"midi-49\"].includes",
+          "lineNumber": 156
+        },
+        {
+          "caller": "buildFaq",
+          "callee": "[\"booster\", \"reflection-filter\", \"monitor-accessory\", \"recording-accessory\"].includes",
+          "lineNumber": 175
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 11,
+        "functionCount": 12,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "scripts/shop-data/products.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 1060,
+      "nonEmptyLines": 1058,
+      "functions": [
+        {
+          "name": "blog",
+          "startLine": 1,
+          "endLine": 1,
+          "params": [
+            "slug",
+            "title"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "blog",
+          "line": 1,
+          "isDefault": false
+        },
+        {
+          "name": "products",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "IMAGE_MAP",
+          "line": 1026,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "scripts/shop-data/shopee-scraper.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 92,
+      "nonEmptyLines": 81,
+      "functions": [
+        {
+          "name": "parsePrice",
+          "startLine": 3,
+          "endLine": 9,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "parseJsonLdBlocks",
+          "startLine": 11,
+          "endLine": 24,
+          "params": [
+            "html"
+          ]
+        },
+        {
+          "name": "flattenNodes",
+          "startLine": 26,
+          "endLine": 33,
+          "params": [
+            "node"
+          ]
+        },
+        {
+          "name": "findProductSchema",
+          "startLine": 35,
+          "endLine": 42,
+          "params": [
+            "html"
+          ]
+        },
+        {
+          "name": "extractShopeeData",
+          "startLine": 44,
+          "endLine": 66,
+          "params": [
+            "html"
+          ]
+        },
+        {
+          "name": "fetchShopeeMeta",
+          "startLine": 68,
+          "endLine": 92,
+          "params": [
+            "product"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "fetchShopeeMeta",
+          "line": 68,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "parsePrice",
+          "callee": "String(value).replace",
+          "lineNumber": 5
+        },
+        {
+          "caller": "parsePrice",
+          "callee": "String",
+          "lineNumber": 5
+        },
+        {
+          "caller": "parsePrice",
+          "callee": "Number",
+          "lineNumber": 7
+        },
+        {
+          "caller": "parsePrice",
+          "callee": "Number.isFinite",
+          "lineNumber": 8
+        },
+        {
+          "caller": "parseJsonLdBlocks",
+          "callee": "html.matchAll",
+          "lineNumber": 12
+        },
+        {
+          "caller": "parseJsonLdBlocks",
+          "callee": "decodeHtml(match[1]).trim",
+          "lineNumber": 15
+        },
+        {
+          "caller": "parseJsonLdBlocks",
+          "callee": "decodeHtml",
+          "lineNumber": 15
+        },
+        {
+          "caller": "parseJsonLdBlocks",
+          "callee": "results.push",
+          "lineNumber": 18
+        },
+        {
+          "caller": "parseJsonLdBlocks",
+          "callee": "JSON.parse",
+          "lineNumber": 18
+        },
+        {
+          "caller": "flattenNodes",
+          "callee": "Array.isArray",
+          "lineNumber": 28
+        },
+        {
+          "caller": "flattenNodes",
+          "callee": "node.flatMap",
+          "lineNumber": 28
+        },
+        {
+          "caller": "flattenNodes",
+          "callee": "Array.isArray",
+          "lineNumber": 31
+        },
+        {
+          "caller": "flattenNodes",
+          "callee": "node[\"@graph\"].flatMap",
+          "lineNumber": 31
+        },
+        {
+          "caller": "findProductSchema",
+          "callee": "parseJsonLdBlocks(html).flatMap",
+          "lineNumber": 36
+        },
+        {
+          "caller": "findProductSchema",
+          "callee": "parseJsonLdBlocks",
+          "lineNumber": 36
+        },
+        {
+          "caller": "findProductSchema",
+          "callee": "nodes.find",
+          "lineNumber": 37
+        },
+        {
+          "caller": "findProductSchema",
+          "callee": "Array.isArray",
+          "lineNumber": 39
+        },
+        {
+          "caller": "findProductSchema",
+          "callee": "type.includes",
+          "lineNumber": 39
+        },
+        {
+          "caller": "extractShopeeData",
+          "callee": "findProductSchema",
+          "lineNumber": 45
+        },
+        {
+          "caller": "extractShopeeData",
+          "callee": "html.match",
+          "lineNumber": 46
+        },
+        {
+          "caller": "extractShopeeData",
+          "callee": "html.match",
+          "lineNumber": 47
+        },
+        {
+          "caller": "extractShopeeData",
+          "callee": "parsePrice",
+          "lineNumber": 51
+        },
+        {
+          "caller": "extractShopeeData",
+          "callee": "Array.isArray",
+          "lineNumber": 53
+        },
+        {
+          "caller": "extractShopeeData",
+          "callee": "parsePrice",
+          "lineNumber": 54
+        },
+        {
+          "caller": "extractShopeeData",
+          "callee": "parsePrice",
+          "lineNumber": 56
+        },
+        {
+          "caller": "extractShopeeData",
+          "callee": "uniq([\n    ...(Array.isArray(schemaImages) ? schemaImages : [schemaImages]),\n    metaImage,\n  ].map(normalizeImageUrl)).slice",
+          "lineNumber": 60
+        },
+        {
+          "caller": "extractShopeeData",
+          "callee": "uniq",
+          "lineNumber": 60
+        },
+        {
+          "caller": "extractShopeeData",
+          "callee": "[\n    ...(Array.isArray(schemaImages) ? schemaImages : [schemaImages]),\n    metaImage,\n  ].map",
+          "lineNumber": 60
+        },
+        {
+          "caller": "extractShopeeData",
+          "callee": "Array.isArray",
+          "lineNumber": 61
+        },
+        {
+          "caller": "fetchShopeeMeta",
+          "callee": "fetch",
+          "lineNumber": 70
+        },
+        {
+          "caller": "fetchShopeeMeta",
+          "callee": "res.text",
+          "lineNumber": 82
+        },
+        {
+          "caller": "fetchShopeeMeta",
+          "callee": "extractShopeeData",
+          "lineNumber": 83
+        },
+        {
+          "caller": "fetchShopeeMeta",
+          "callee": "setTimeout",
+          "lineNumber": 86
+        },
+        {
+          "caller": "fetchShopeeMeta",
+          "callee": "fetchShopeeMeta",
+          "lineNumber": 87
+        },
+        {
+          "caller": "fetchShopeeMeta",
+          "callee": "console.warn",
+          "lineNumber": 89
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 6,
+        "classCount": 0
+      }
+    }
+  ]
+}

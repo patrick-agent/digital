@@ -1,0 +1,192 @@
+{
+  "projectRoot": "C:\\Users\\Admin\\Desktop\\Website 3D\\studio-3d",
+  "batchFiles": [
+    {
+      "path": "src/app/not-found.js",
+      "language": "javascript",
+      "sizeLines": 157,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/page.js",
+      "language": "javascript",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/post_sitemap.xml/route.js",
+      "language": "javascript",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/privacy/page.js",
+      "language": "javascript",
+      "sizeLines": 130,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/robots.txt/route.js",
+      "language": "javascript",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/shop/[slug]/page.js",
+      "language": "javascript",
+      "sizeLines": 286,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/shop/error.js",
+      "language": "javascript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/shop/FilterSelect.js",
+      "language": "javascript",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/shop/layout.js",
+      "language": "javascript",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/shop/loading.js",
+      "language": "javascript",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/shop/page.js",
+      "language": "javascript",
+      "sizeLines": 152,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/shop/shop-card.module.css",
+      "language": "css",
+      "sizeLines": 400,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/app/shop/shop.module.css",
+      "language": "css",
+      "sizeLines": 609,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/app/sitemap.js",
+      "language": "javascript",
+      "sizeLines": 111,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/terms/page.js",
+      "language": "javascript",
+      "sizeLines": 104,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/admin/AdminCard.jsx",
+      "language": "javascript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/admin/AdminPageContainer.jsx",
+      "language": "javascript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/admin/AdminShell.jsx",
+      "language": "javascript",
+      "sizeLines": 109,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/admin/AdminToolbar.jsx",
+      "language": "javascript",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/admin/CaseStudiesForm.jsx",
+      "language": "javascript",
+      "sizeLines": 159,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/admin/EmptyState.jsx",
+      "language": "javascript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/admin/EventsForm.jsx",
+      "language": "javascript",
+      "sizeLines": 115,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/admin/GalleryForm.jsx",
+      "language": "javascript",
+      "sizeLines": 114,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/admin/MusicForm.jsx",
+      "language": "javascript",
+      "sizeLines": 262,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/admin/PageHeader.jsx",
+      "language": "javascript",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/app/not-found.js": [
+      "src/app/glitch.css"
+    ],
+    "src/app/page.js": [],
+    "src/app/post_sitemap.xml/route.js": [],
+    "src/app/privacy/page.js": [],
+    "src/app/robots.txt/route.js": [],
+    "src/app/shop/[slug]/page.js": [],
+    "src/app/shop/error.js": [],
+    "src/app/shop/FilterSelect.js": [
+      "src/app/shop/shop.module.css"
+    ],
+    "src/app/shop/layout.js": [
+      "src/app/shop/shop.module.css"
+    ],
+    "src/app/shop/loading.js": [
+      "src/app/shop/shop-card.module.css"
+    ],
+    "src/app/shop/page.js": [
+      "src/app/shop/shop.module.css"
+    ],
+    "src/app/shop/shop-card.module.css": [],
+    "src/app/shop/shop.module.css": [],
+    "src/app/sitemap.js": [],
+    "src/app/terms/page.js": [],
+    "src/components/admin/AdminCard.jsx": [],
+    "src/components/admin/AdminPageContainer.jsx": [],
+    "src/components/admin/AdminShell.jsx": [],
+    "src/components/admin/AdminToolbar.jsx": [],
+    "src/components/admin/CaseStudiesForm.jsx": [],
+    "src/components/admin/EmptyState.jsx": [],
+    "src/components/admin/EventsForm.jsx": [],
+    "src/components/admin/GalleryForm.jsx": [],
+    "src/components/admin/MusicForm.jsx": [],
+    "src/components/admin/PageHeader.jsx": []
+  }
+}

@@ -1,0 +1,252 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/components/digital/DigitalNavbar.jsx",
+      "type": "file",
+      "name": "DigitalNavbar.jsx",
+      "filePath": "src/components/digital/DigitalNavbar.jsx",
+      "summary": "DigitalNavbar.jsx: Source file, 1 function, 2 imports.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/components/digital/DigitalNavbar.jsx:DigitalNavbar",
+      "type": "function",
+      "name": "DigitalNavbar",
+      "filePath": "src/components/digital/DigitalNavbar.jsx",
+      "lineRange": [
+        20,
+        231
+      ],
+      "summary": "Function DigitalNavbar with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/digital/digital-blog/BlogThemeProvider.jsx",
+      "type": "file",
+      "name": "BlogThemeProvider.jsx",
+      "filePath": "src/components/digital/digital-blog/BlogThemeProvider.jsx",
+      "summary": "BlogThemeProvider.jsx: Source file, 2 functions, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/digital/digital-blog/BlogThemeProvider.jsx:useBlogTheme",
+      "type": "function",
+      "name": "useBlogTheme",
+      "filePath": "src/components/digital/digital-blog/BlogThemeProvider.jsx",
+      "lineRange": [
+        9,
+        11
+      ],
+      "summary": "Function useBlogTheme with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/digital/digital-blog/BlogThemeProvider.jsx:BlogThemeProvider",
+      "type": "function",
+      "name": "BlogThemeProvider",
+      "filePath": "src/components/digital/digital-blog/BlogThemeProvider.jsx",
+      "lineRange": [
+        13,
+        43
+      ],
+      "summary": "Function BlogThemeProvider with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/digital/digital-blog/ThemeToggle.jsx",
+      "type": "file",
+      "name": "ThemeToggle.jsx",
+      "filePath": "src/components/digital/digital-blog/ThemeToggle.jsx",
+      "summary": "ThemeToggle.jsx: Source file, 1 function, 1 import.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/digital/digital-blog/ThemeToggle.jsx:ThemeToggle",
+      "type": "function",
+      "name": "ThemeToggle",
+      "filePath": "src/components/digital/digital-blog/ThemeToggle.jsx",
+      "lineRange": [
+        7,
+        84
+      ],
+      "summary": "Function ThemeToggle with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/digital/digital-blog/blog-theme.js",
+      "type": "file",
+      "name": "blog-theme.js",
+      "filePath": "src/components/digital/digital-blog/blog-theme.js",
+      "summary": "blog-theme.js: Source file, 2 functions.",
+      "tags": [
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/digital/digital-blog/blog-theme.js:getStoredTheme",
+      "type": "function",
+      "name": "getStoredTheme",
+      "filePath": "src/components/digital/digital-blog/blog-theme.js",
+      "lineRange": [
+        3,
+        11
+      ],
+      "summary": "Function getStoredTheme with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/digital/digital-blog/blog-theme.js:setStoredTheme",
+      "type": "function",
+      "name": "setStoredTheme",
+      "filePath": "src/components/digital/digital-blog/blog-theme.js",
+      "lineRange": [
+        13,
+        17
+      ],
+      "summary": "Function setStoredTheme with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/components/digital/DigitalNavbar.jsx",
+      "target": "function:src/components/digital/DigitalNavbar.jsx:DigitalNavbar",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/digital/DigitalNavbar.jsx",
+      "target": "function:src/components/digital/DigitalNavbar.jsx:DigitalNavbar",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/digital/DigitalNavbar.jsx",
+      "target": "file:src/components/digital/digital-blog/ThemeToggle.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/digital/DigitalNavbar.jsx",
+      "target": "file:src/components/digital/DigitalNavbar.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/digital/digital-blog/BlogThemeProvider.jsx",
+      "target": "function:src/components/digital/digital-blog/BlogThemeProvider.jsx:useBlogTheme",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/digital/digital-blog/BlogThemeProvider.jsx",
+      "target": "function:src/components/digital/digital-blog/BlogThemeProvider.jsx:useBlogTheme",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/digital/digital-blog/BlogThemeProvider.jsx",
+      "target": "function:src/components/digital/digital-blog/BlogThemeProvider.jsx:BlogThemeProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/digital/digital-blog/BlogThemeProvider.jsx",
+      "target": "function:src/components/digital/digital-blog/BlogThemeProvider.jsx:BlogThemeProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/digital/digital-blog/BlogThemeProvider.jsx",
+      "target": "file:src/components/digital/digital-blog/blog-theme.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/digital/digital-blog/ThemeToggle.jsx",
+      "target": "function:src/components/digital/digital-blog/ThemeToggle.jsx:ThemeToggle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/digital/digital-blog/ThemeToggle.jsx",
+      "target": "function:src/components/digital/digital-blog/ThemeToggle.jsx:ThemeToggle",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/digital/digital-blog/ThemeToggle.jsx",
+      "target": "file:src/components/digital/digital-blog/blog-theme.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/digital/digital-blog/blog-theme.js",
+      "target": "function:src/components/digital/digital-blog/blog-theme.js:getStoredTheme",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/digital/digital-blog/blog-theme.js",
+      "target": "function:src/components/digital/digital-blog/blog-theme.js:getStoredTheme",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/digital/digital-blog/blog-theme.js",
+      "target": "function:src/components/digital/digital-blog/blog-theme.js:setStoredTheme",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/digital/digital-blog/blog-theme.js",
+      "target": "function:src/components/digital/digital-blog/blog-theme.js:setStoredTheme",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

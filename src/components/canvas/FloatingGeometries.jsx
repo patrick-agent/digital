@@ -3,6 +3,7 @@
 import { useRef, useMemo } from "react";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
+import { seededBetween, seededUnit } from "@/lib/seeded-random";
 
 const GEOMETRIES = [
   { geom: new THREE.IcosahedronGeometry(1, 0), label: "ico" },
@@ -27,15 +28,15 @@ export default function FloatingGeometries({
       temp.push({
         geometry: g.geom,
         position: [
-          (Math.random() - 0.5) * spread,
-          (Math.random() - 0.5) * spread * 0.6,
-          (Math.random() - 0.5) * spread * 0.5 - 5,
+          seededBetween(i * 8 + 1, -spread / 2, spread / 2),
+          seededBetween(i * 8 + 2, -(spread * 0.3), spread * 0.3),
+          seededBetween(i * 8 + 3, -(spread * 0.25) - 5, spread * 0.25 - 5),
         ],
-        rotation: [Math.random() * Math.PI, Math.random() * Math.PI, 0],
-        speed: 0.1 + Math.random() * 0.3,
-        scale: size + Math.random() * size * 0.5,
-        phase: Math.random() * Math.PI * 2,
-        emissive: Math.random() > 0.5,
+        rotation: [seededBetween(i * 8 + 4, 0, Math.PI), seededBetween(i * 8 + 5, 0, Math.PI), 0],
+        speed: seededBetween(i * 8 + 6, 0.1, 0.4),
+        scale: seededBetween(i * 8 + 7, size, size * 1.5),
+        phase: seededBetween(i * 8 + 8, 0, Math.PI * 2),
+        emissive: seededUnit(i * 8 + 9) > 0.5,
       });
     }
     return temp;

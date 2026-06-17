@@ -1,0 +1,852 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/app/not-found.js",
+      "type": "file",
+      "name": "not-found.js",
+      "filePath": "src/app/not-found.js",
+      "summary": "not-found.js: Source file, 1 function, 1 import.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/app/not-found.js:NotFound",
+      "type": "function",
+      "name": "NotFound",
+      "filePath": "src/app/not-found.js",
+      "lineRange": [
+        13,
+        157
+      ],
+      "summary": "Function NotFound with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/app/page.js",
+      "type": "file",
+      "name": "page.js",
+      "filePath": "src/app/page.js",
+      "summary": "page.js: Source file, 2 functions.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/app/page.js:generateMetadata",
+      "type": "function",
+      "name": "generateMetadata",
+      "filePath": "src/app/page.js",
+      "lineRange": [
+        10,
+        40
+      ],
+      "summary": "Function generateMetadata with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/page.js:Home",
+      "type": "function",
+      "name": "Home",
+      "filePath": "src/app/page.js",
+      "lineRange": [
+        42,
+        57
+      ],
+      "summary": "Function Home with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/post_sitemap.xml/route.js",
+      "type": "file",
+      "name": "route.js",
+      "filePath": "src/app/post_sitemap.xml/route.js",
+      "summary": "route.js: Source file, 2 functions.",
+      "tags": [
+        "api-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/post_sitemap.xml/route.js:escapeXml",
+      "type": "function",
+      "name": "escapeXml",
+      "filePath": "src/app/post_sitemap.xml/route.js",
+      "lineRange": [
+        7,
+        14
+      ],
+      "summary": "Function escapeXml with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/post_sitemap.xml/route.js:GET",
+      "type": "function",
+      "name": "GET",
+      "filePath": "src/app/post_sitemap.xml/route.js",
+      "lineRange": [
+        16,
+        33
+      ],
+      "summary": "Function GET with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/privacy/page.js",
+      "type": "file",
+      "name": "page.js",
+      "filePath": "src/app/privacy/page.js",
+      "summary": "page.js: Source file, 1 function.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/app/privacy/page.js:PrivacyPage",
+      "type": "function",
+      "name": "PrivacyPage",
+      "filePath": "src/app/privacy/page.js",
+      "lineRange": [
+        14,
+        130
+      ],
+      "summary": "Function PrivacyPage with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/app/robots.txt/route.js",
+      "type": "file",
+      "name": "route.js",
+      "filePath": "src/app/robots.txt/route.js",
+      "summary": "route.js: Source file, 1 function.",
+      "tags": [
+        "api-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/robots.txt/route.js:GET",
+      "type": "function",
+      "name": "GET",
+      "filePath": "src/app/robots.txt/route.js",
+      "lineRange": [
+        5,
+        23
+      ],
+      "summary": "Function GET with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/shop/[slug]/page.js",
+      "type": "file",
+      "name": "page.js",
+      "filePath": "src/app/shop/[slug]/page.js",
+      "summary": "page.js: Source file, 4 functions.",
+      "tags": [],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/app/shop/[slug]/page.js:getPriceValidUntil",
+      "type": "function",
+      "name": "getPriceValidUntil",
+      "filePath": "src/app/shop/[slug]/page.js",
+      "lineRange": [
+        19,
+        23
+      ],
+      "summary": "Function getPriceValidUntil with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/shop/[slug]/page.js:generateStaticParams",
+      "type": "function",
+      "name": "generateStaticParams",
+      "filePath": "src/app/shop/[slug]/page.js",
+      "lineRange": [
+        27,
+        31
+      ],
+      "summary": "Function generateStaticParams with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/shop/[slug]/page.js:generateMetadata",
+      "type": "function",
+      "name": "generateMetadata",
+      "filePath": "src/app/shop/[slug]/page.js",
+      "lineRange": [
+        33,
+        58
+      ],
+      "summary": "Function generateMetadata with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/shop/[slug]/page.js:ProductDetailPage",
+      "type": "function",
+      "name": "ProductDetailPage",
+      "filePath": "src/app/shop/[slug]/page.js",
+      "lineRange": [
+        60,
+        292
+      ],
+      "summary": "Function ProductDetailPage with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/app/shop/error.js",
+      "type": "file",
+      "name": "error.js",
+      "filePath": "src/app/shop/error.js",
+      "summary": "error.js: Source file, 1 function.",
+      "tags": [],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/shop/error.js:ShopError",
+      "type": "function",
+      "name": "ShopError",
+      "filePath": "src/app/shop/error.js",
+      "lineRange": [
+        5,
+        7
+      ],
+      "summary": "Function ShopError with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/shop/FilterSelect.js",
+      "type": "file",
+      "name": "FilterSelect.js",
+      "filePath": "src/app/shop/FilterSelect.js",
+      "summary": "FilterSelect.js: Source file, 2 functions, 1 import.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/app/shop/FilterSelect.js:navigate",
+      "type": "function",
+      "name": "navigate",
+      "filePath": "src/app/shop/FilterSelect.js",
+      "lineRange": [
+        12,
+        16
+      ],
+      "summary": "Function navigate with 3 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/shop/FilterSelect.js:FilterBar",
+      "type": "function",
+      "name": "FilterBar",
+      "filePath": "src/app/shop/FilterSelect.js",
+      "lineRange": [
+        18,
+        79
+      ],
+      "summary": "Function FilterBar with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/app/shop/layout.js",
+      "type": "file",
+      "name": "layout.js",
+      "filePath": "src/app/shop/layout.js",
+      "summary": "layout.js: Source file, 1 function, 1 import.",
+      "tags": [],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/shop/layout.js:ShopLayout",
+      "type": "function",
+      "name": "ShopLayout",
+      "filePath": "src/app/shop/layout.js",
+      "lineRange": [
+        27,
+        38
+      ],
+      "summary": "Function ShopLayout with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/shop/loading.js",
+      "type": "file",
+      "name": "loading.js",
+      "filePath": "src/app/shop/loading.js",
+      "summary": "loading.js: Source file, 2 functions, 1 import.",
+      "tags": [],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/shop/loading.js:SkeletonCard",
+      "type": "function",
+      "name": "SkeletonCard",
+      "filePath": "src/app/shop/loading.js",
+      "lineRange": [
+        3,
+        19
+      ],
+      "summary": "Function SkeletonCard with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/shop/loading.js:ShopLoading",
+      "type": "function",
+      "name": "ShopLoading",
+      "filePath": "src/app/shop/loading.js",
+      "lineRange": [
+        21,
+        31
+      ],
+      "summary": "Function ShopLoading with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/shop/page.js",
+      "type": "file",
+      "name": "page.js",
+      "filePath": "src/app/shop/page.js",
+      "summary": "page.js: Source file, 5 functions, 1 import.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/app/shop/page.js:normalizeSearchParam",
+      "type": "function",
+      "name": "normalizeSearchParam",
+      "filePath": "src/app/shop/page.js",
+      "lineRange": [
+        12,
+        14
+      ],
+      "summary": "Function normalizeSearchParam with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/shop/page.js:generateMetadata",
+      "type": "function",
+      "name": "generateMetadata",
+      "filePath": "src/app/shop/page.js",
+      "lineRange": [
+        16,
+        33
+      ],
+      "summary": "Function generateMetadata with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/shop/page.js:buildShopCollectionSchema",
+      "type": "function",
+      "name": "buildShopCollectionSchema",
+      "filePath": "src/app/shop/page.js",
+      "lineRange": [
+        35,
+        71
+      ],
+      "summary": "Function buildShopCollectionSchema with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/shop/page.js:normalizeSelectValue",
+      "type": "function",
+      "name": "normalizeSelectValue",
+      "filePath": "src/app/shop/page.js",
+      "lineRange": [
+        73,
+        75
+      ],
+      "summary": "Function normalizeSelectValue with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/shop/page.js:ShopPage",
+      "type": "function",
+      "name": "ShopPage",
+      "filePath": "src/app/shop/page.js",
+      "lineRange": [
+        77,
+        152
+      ],
+      "summary": "Function ShopPage with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/app/not-found.js",
+      "target": "function:src/app/not-found.js:NotFound",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/not-found.js",
+      "target": "function:src/app/not-found.js:NotFound",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/not-found.js",
+      "target": "file:src/app/glitch.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/app/page.js",
+      "target": "function:src/app/page.js:generateMetadata",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/page.js",
+      "target": "function:src/app/page.js:generateMetadata",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/page.js",
+      "target": "function:src/app/page.js:Home",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/page.js",
+      "target": "function:src/app/page.js:Home",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/post_sitemap.xml/route.js",
+      "target": "function:src/app/post_sitemap.xml/route.js:escapeXml",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/post_sitemap.xml/route.js",
+      "target": "function:src/app/post_sitemap.xml/route.js:GET",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/post_sitemap.xml/route.js",
+      "target": "function:src/app/post_sitemap.xml/route.js:GET",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/post_sitemap.xml/route.js",
+      "target": "function:src/app/post_sitemap.xml/route.js:escapeXml",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/post_sitemap.xml/route.js",
+      "target": "function:src/app/post_sitemap.xml/route.js:escapeXml",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/privacy/page.js",
+      "target": "function:src/app/privacy/page.js:PrivacyPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/privacy/page.js",
+      "target": "function:src/app/privacy/page.js:PrivacyPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/robots.txt/route.js",
+      "target": "function:src/app/robots.txt/route.js:GET",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/robots.txt/route.js",
+      "target": "function:src/app/robots.txt/route.js:GET",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/shop/[slug]/page.js",
+      "target": "function:src/app/shop/[slug]/page.js:getPriceValidUntil",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/shop/[slug]/page.js",
+      "target": "function:src/app/shop/[slug]/page.js:generateStaticParams",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/shop/[slug]/page.js",
+      "target": "function:src/app/shop/[slug]/page.js:generateStaticParams",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/shop/[slug]/page.js",
+      "target": "function:src/app/shop/[slug]/page.js:generateMetadata",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/shop/[slug]/page.js",
+      "target": "function:src/app/shop/[slug]/page.js:generateMetadata",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/shop/[slug]/page.js",
+      "target": "function:src/app/shop/[slug]/page.js:ProductDetailPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/shop/[slug]/page.js",
+      "target": "function:src/app/shop/[slug]/page.js:ProductDetailPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/shop/[slug]/page.js",
+      "target": "function:src/app/shop/[slug]/page.js:getPriceValidUntil",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/shop/error.js",
+      "target": "function:src/app/shop/error.js:ShopError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/shop/error.js",
+      "target": "function:src/app/shop/error.js:ShopError",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/shop/FilterSelect.js",
+      "target": "function:src/app/shop/FilterSelect.js:navigate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/shop/FilterSelect.js",
+      "target": "function:src/app/shop/FilterSelect.js:FilterBar",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/shop/FilterSelect.js",
+      "target": "function:src/app/shop/FilterSelect.js:FilterBar",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/shop/FilterSelect.js",
+      "target": "file:src/app/shop/shop.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/app/shop/FilterSelect.js",
+      "target": "function:src/app/shop/FilterSelect.js:navigate",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/shop/FilterSelect.js",
+      "target": "function:src/app/shop/FilterSelect.js:navigate",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/shop/FilterSelect.js",
+      "target": "function:src/app/shop/FilterSelect.js:navigate",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/shop/layout.js",
+      "target": "function:src/app/shop/layout.js:ShopLayout",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/shop/layout.js",
+      "target": "function:src/app/shop/layout.js:ShopLayout",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/shop/layout.js",
+      "target": "file:src/app/shop/shop.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/app/shop/loading.js",
+      "target": "function:src/app/shop/loading.js:SkeletonCard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/shop/loading.js",
+      "target": "function:src/app/shop/loading.js:ShopLoading",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/shop/loading.js",
+      "target": "function:src/app/shop/loading.js:ShopLoading",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/shop/loading.js",
+      "target": "file:src/app/shop/shop-card.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/app/shop/page.js",
+      "target": "function:src/app/shop/page.js:normalizeSearchParam",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/shop/page.js",
+      "target": "function:src/app/shop/page.js:generateMetadata",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/shop/page.js",
+      "target": "function:src/app/shop/page.js:generateMetadata",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/shop/page.js",
+      "target": "function:src/app/shop/page.js:buildShopCollectionSchema",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/shop/page.js",
+      "target": "function:src/app/shop/page.js:normalizeSelectValue",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/shop/page.js",
+      "target": "function:src/app/shop/page.js:ShopPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/shop/page.js",
+      "target": "function:src/app/shop/page.js:ShopPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/shop/page.js",
+      "target": "file:src/app/shop/shop.module.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/app/shop/page.js",
+      "target": "function:src/app/shop/page.js:normalizeSearchParam",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/shop/page.js",
+      "target": "function:src/app/shop/page.js:normalizeSearchParam",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/shop/page.js",
+      "target": "function:src/app/shop/page.js:normalizeSearchParam",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/shop/page.js",
+      "target": "function:src/app/shop/page.js:normalizeSearchParam",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/shop/page.js",
+      "target": "function:src/app/shop/page.js:normalizeSearchParam",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/shop/page.js",
+      "target": "function:src/app/shop/page.js:normalizeSelectValue",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/shop/page.js",
+      "target": "function:src/app/shop/page.js:normalizeSearchParam",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/shop/page.js",
+      "target": "function:src/app/shop/page.js:normalizeSelectValue",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/shop/page.js",
+      "target": "function:src/app/shop/page.js:normalizeSearchParam",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/shop/page.js",
+      "target": "function:src/app/shop/page.js:normalizeSearchParam",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/shop/page.js",
+      "target": "function:src/app/shop/page.js:buildShopCollectionSchema",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

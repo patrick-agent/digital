@@ -1,0 +1,70 @@
+{
+  "projectRoot": "C:\\Users\\Admin\\Desktop\\Website 3D\\studio-3d",
+  "batchFiles": [
+    {
+      "path": "src/components/ui/Galaxy.css",
+      "language": "css",
+      "sizeLines": 5,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/ui/GradientText.css",
+      "language": "css",
+      "sizeLines": 54,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/ui/GridScan.css",
+      "language": "css",
+      "sizeLines": 44,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/ui/LightPillar.css",
+      "language": "css",
+      "sizeLines": 21,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/ui/LightRays.css",
+      "language": "css",
+      "sizeLines": 8,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/ui/LiquidEther.css",
+      "language": "css",
+      "sizeLines": 7,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/ui/RippleGrid.css",
+      "language": "css",
+      "sizeLines": 6,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/ui/RotatingText.css",
+      "language": "css",
+      "sizeLines": 36,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/ui/SoftAurora.css",
+      "language": "css",
+      "sizeLines": 4,
+      "fileCategory": "markup"
+    }
+  ],
+  "batchImportData": {
+    "src/components/ui/Galaxy.css": [],
+    "src/components/ui/GradientText.css": [],
+    "src/components/ui/GridScan.css": [],
+    "src/components/ui/LightPillar.css": [],
+    "src/components/ui/LightRays.css": [],
+    "src/components/ui/LiquidEther.css": [],
+    "src/components/ui/RippleGrid.css": [],
+    "src/components/ui/RotatingText.css": [],
+    "src/components/ui/SoftAurora.css": []
+  }
+}

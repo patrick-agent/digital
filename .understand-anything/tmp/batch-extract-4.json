@@ -1,0 +1,977 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 8,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/components/blog/BlogClient.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 283,
+      "nonEmptyLines": 241,
+      "functions": [
+        {
+          "name": "normalizeSearchValue",
+          "startLine": 13,
+          "endLine": 18,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "matchesSearch",
+          "startLine": 20,
+          "endLine": 32,
+          "params": [
+            "post",
+            "query"
+          ]
+        },
+        {
+          "name": "BlogClient",
+          "startLine": 34,
+          "endLine": 283,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "BlogClient",
+          "line": 34,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "normalizeSearchValue",
+          "callee": "String(value || \"\")\n    .normalize(\"NFD\")\n    .replace(/[\\u0300-\\u036f]/g, \"\")\n    .toLowerCase",
+          "lineNumber": 14
+        },
+        {
+          "caller": "normalizeSearchValue",
+          "callee": "String(value || \"\")\n    .normalize(\"NFD\")\n    .replace",
+          "lineNumber": 14
+        },
+        {
+          "caller": "normalizeSearchValue",
+          "callee": "String(value || \"\")\n    .normalize",
+          "lineNumber": 14
+        },
+        {
+          "caller": "normalizeSearchValue",
+          "callee": "String",
+          "lineNumber": 14
+        },
+        {
+          "caller": "matchesSearch",
+          "callee": "normalizeSearchValue",
+          "lineNumber": 23
+        },
+        {
+          "caller": "matchesSearch",
+          "callee": "[\n    post.title,\n    post.excerpt,\n    post.category,\n    formatBlogCategoryLabel(post.category),\n    ...(post.tags || []),\n  ].filter(Boolean).join",
+          "lineNumber": 23
+        },
+        {
+          "caller": "matchesSearch",
+          "callee": "[\n    post.title,\n    post.excerpt,\n    post.category,\n    formatBlogCategoryLabel(post.category),\n    ...(post.tags || []),\n  ].filter",
+          "lineNumber": 23
+        },
+        {
+          "caller": "matchesSearch",
+          "callee": "formatBlogCategoryLabel",
+          "lineNumber": 27
+        },
+        {
+          "caller": "matchesSearch",
+          "callee": "haystack.includes",
+          "lineNumber": 31
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "useState",
+          "lineNumber": 35
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "useState",
+          "lineNumber": 36
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "useReducedMotion",
+          "lineNumber": 37
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "usePathname",
+          "lineNumber": 38
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "useDeferredValue",
+          "lineNumber": 39
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "useMemo",
+          "lineNumber": 41
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "normalizeSearchValue",
+          "lineNumber": 41
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "useMemo",
+          "lineNumber": 43
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "categories.reduce",
+          "lineNumber": 44
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "formatBlogCategoryLabel",
+          "lineNumber": 45
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "useMemo",
+          "lineNumber": 50
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "Object.hasOwn",
+          "lineNumber": 58
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "useMemo",
+          "lineNumber": 65
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "categories.map",
+          "lineNumber": 66
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "grouped.has",
+          "lineNumber": 69
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "matchesSearch",
+          "lineNumber": 71
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "grouped.get(post.category).push",
+          "lineNumber": 72
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "grouped.get",
+          "lineNumber": 72
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "categories\n      .map((category) => {\n        const posts = grouped.get(category) || []\n        const categoryMeta = getBlogCategoryMeta(category)\n\n        return {\n          category,\n          label: categoryMeta.label,\n          description: categoryMeta.description,\n          posts,\n          previewPosts: posts.slice(0, 10),\n        }\n      })\n      .filter",
+          "lineNumber": 75
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "categories\n      .map",
+          "lineNumber": 75
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "grouped.get",
+          "lineNumber": 77
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "getBlogCategoryMeta",
+          "lineNumber": 78
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "posts.slice",
+          "lineNumber": 85
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "useMemo",
+          "lineNumber": 91
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "sections.reduce",
+          "lineNumber": 92
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "useMemo",
+          "lineNumber": 95
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "sections.reduce",
+          "lineNumber": 96
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "Boolean",
+          "lineNumber": 99
+        },
+        {
+          "caller": "handleCategoryChange",
+          "callee": "startTransition",
+          "lineNumber": 107
+        },
+        {
+          "caller": "handleCategoryChange",
+          "callee": "setActiveCategory",
+          "lineNumber": 108
+        },
+        {
+          "caller": "handleSearchChange",
+          "callee": "startTransition",
+          "lineNumber": 115
+        },
+        {
+          "caller": "handleSearchChange",
+          "callee": "setSearchQuery",
+          "lineNumber": 116
+        },
+        {
+          "caller": "handleClearSearch",
+          "callee": "startTransition",
+          "lineNumber": 121
+        },
+        {
+          "caller": "handleClearSearch",
+          "callee": "setSearchQuery",
+          "lineNumber": 122
+        },
+        {
+          "caller": "clearFilters",
+          "callee": "startTransition",
+          "lineNumber": 127
+        },
+        {
+          "caller": "clearFilters",
+          "callee": "setActiveCategory",
+          "lineNumber": 128
+        },
+        {
+          "caller": "clearFilters",
+          "callee": "setSearchQuery",
+          "lineNumber": 129
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "useEffectEvent",
+          "lineNumber": 133
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "nextQuery.trim",
+          "lineNumber": 137
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "params.set",
+          "lineNumber": 140
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "params.delete",
+          "lineNumber": 142
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "params.set",
+          "lineNumber": 146
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "params.delete",
+          "lineNumber": 148
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "params.toString",
+          "lineNumber": 151
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "window.history.replaceState",
+          "lineNumber": 156
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "useEffect",
+          "lineNumber": 160
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "syncUrlState",
+          "lineNumber": 161
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "[\n                      activeCategory ? `Danh mục: ${formatBlogCategoryLabel(activeCategory)}` : null,\n                      normalizedQuery ? `Keyword: “${searchQuery.trim()}”` : null,\n                    ].filter(Boolean).join",
+          "lineNumber": 220
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "[\n                      activeCategory ? `Danh mục: ${formatBlogCategoryLabel(activeCategory)}` : null,\n                      normalizedQuery ? `Keyword: “${searchQuery.trim()}”` : null,\n                    ].filter",
+          "lineNumber": 220
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "formatBlogCategoryLabel",
+          "lineNumber": 221
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "searchQuery.trim",
+          "lineNumber": 222
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "sections.map",
+          "lineNumber": 254
+        },
+        {
+          "caller": "BlogClient",
+          "callee": "getBlogCategoryHref",
+          "lineNumber": 273
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/blog/BlogHero.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 81,
+      "nonEmptyLines": 76,
+      "functions": [
+        {
+          "name": "BlogHero",
+          "startLine": 9,
+          "endLine": 81,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "BlogHero",
+          "line": 9,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "BlogHero",
+          "callee": "postUrl",
+          "lineNumber": 39
+        },
+        {
+          "caller": "BlogHero",
+          "callee": "new Date(featuredPost.publishedAt || featuredPost.createdAt).toLocaleDateString",
+          "lineNumber": 64
+        },
+        {
+          "caller": "BlogHero",
+          "callee": "formatBlogCategoryLabel",
+          "lineNumber": 71
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/blog/Breadcrumb.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 52,
+      "nonEmptyLines": 48,
+      "functions": [
+        {
+          "name": "absoluteHref",
+          "startLine": 7,
+          "endLine": 10,
+          "params": [
+            "href"
+          ]
+        },
+        {
+          "name": "Breadcrumb",
+          "startLine": 12,
+          "endLine": 52,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Breadcrumb",
+          "line": 12,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "absoluteHref",
+          "callee": "/^https?:\\/\\//i.test",
+          "lineNumber": 8
+        },
+        {
+          "caller": "absoluteHref",
+          "callee": "href.startsWith",
+          "lineNumber": 9
+        },
+        {
+          "caller": "Breadcrumb",
+          "callee": "items.map",
+          "lineNumber": 16
+        },
+        {
+          "caller": "Breadcrumb",
+          "callee": "absoluteHref",
+          "lineNumber": 20
+        },
+        {
+          "caller": "Breadcrumb",
+          "callee": "JSON.stringify(schema).replace",
+          "lineNumber": 28
+        },
+        {
+          "caller": "Breadcrumb",
+          "callee": "JSON.stringify",
+          "lineNumber": 28
+        },
+        {
+          "caller": "Breadcrumb",
+          "callee": "items.map",
+          "lineNumber": 31
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/blog/CategoryNav.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 46,
+      "nonEmptyLines": 42,
+      "functions": [
+        {
+          "name": "CategoryNav",
+          "startLine": 6,
+          "endLine": 46,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "CategoryNav",
+          "line": 6,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "CategoryNav",
+          "callee": "useRef",
+          "lineNumber": 15
+        },
+        {
+          "caller": "CategoryNav",
+          "callee": "Object.values(counts).reduce",
+          "lineNumber": 17
+        },
+        {
+          "caller": "CategoryNav",
+          "callee": "Object.values",
+          "lineNumber": 17
+        },
+        {
+          "caller": "CategoryNav",
+          "callee": "onSelect",
+          "lineNumber": 26
+        },
+        {
+          "caller": "CategoryNav",
+          "callee": "categories.map",
+          "lineNumber": 31
+        },
+        {
+          "caller": "CategoryNav",
+          "callee": "onSelect",
+          "lineNumber": 37
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/blog/PostCard.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 80,
+      "nonEmptyLines": 74,
+      "functions": [
+        {
+          "name": "PostCard",
+          "startLine": 11,
+          "endLine": 80,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "PostCard",
+          "line": 11,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "PostCard",
+          "callee": "useRef",
+          "lineNumber": 12
+        },
+        {
+          "caller": "PostCard",
+          "callee": "useReducedMotion",
+          "lineNumber": 13
+        },
+        {
+          "caller": "PostCard",
+          "callee": "useCallback",
+          "lineNumber": 15
+        },
+        {
+          "caller": "PostCard",
+          "callee": "card.getBoundingClientRect",
+          "lineNumber": 19
+        },
+        {
+          "caller": "PostCard",
+          "callee": "card.style.setProperty",
+          "lineNumber": 26
+        },
+        {
+          "caller": "PostCard",
+          "callee": "card.style.setProperty",
+          "lineNumber": 27
+        },
+        {
+          "caller": "PostCard",
+          "callee": "useCallback",
+          "lineNumber": 30
+        },
+        {
+          "caller": "PostCard",
+          "callee": "card.style.setProperty",
+          "lineNumber": 33
+        },
+        {
+          "caller": "PostCard",
+          "callee": "card.style.setProperty",
+          "lineNumber": 34
+        },
+        {
+          "caller": "PostCard",
+          "callee": "Math.max",
+          "lineNumber": 37
+        },
+        {
+          "caller": "PostCard",
+          "callee": "Math.ceil",
+          "lineNumber": 37
+        },
+        {
+          "caller": "PostCard",
+          "callee": "post.content?.replace(/<[^>]*>/g, \"\").split(/\\s+/).filter",
+          "lineNumber": 37
+        },
+        {
+          "caller": "PostCard",
+          "callee": "post.content?.replace(/<[^>]*>/g, \"\").split",
+          "lineNumber": 37
+        },
+        {
+          "caller": "PostCard",
+          "callee": "post.content?.replace",
+          "lineNumber": 37
+        },
+        {
+          "caller": "PostCard",
+          "callee": "postUrl",
+          "lineNumber": 41
+        },
+        {
+          "caller": "PostCard",
+          "callee": "formatBlogCategoryLabel",
+          "lineNumber": 63
+        },
+        {
+          "caller": "PostCard",
+          "callee": "new Date(post.publishedAt || post.createdAt).toLocaleDateString",
+          "lineNumber": 69
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/blog/PostGrid.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 85,
+      "nonEmptyLines": 74,
+      "functions": [
+        {
+          "name": "PostGrid",
+          "startLine": 7,
+          "endLine": 85,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "PostGrid",
+          "line": 7,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "PostGrid",
+          "callee": "useRef",
+          "lineNumber": 8
+        },
+        {
+          "caller": "PostGrid",
+          "callee": "useState",
+          "lineNumber": 9
+        },
+        {
+          "caller": "PostGrid",
+          "callee": "useEffect",
+          "lineNumber": 11
+        },
+        {
+          "caller": "load",
+          "callee": "Promise.all",
+          "lineNumber": 15
+        },
+        {
+          "caller": "load",
+          "callee": "import",
+          "lineNumber": 15
+        },
+        {
+          "caller": "load",
+          "callee": "import",
+          "lineNumber": 15
+        },
+        {
+          "caller": "load",
+          "callee": "gsapInstance.registerPlugin",
+          "lineNumber": 19
+        },
+        {
+          "caller": "load",
+          "callee": "setGsapReady",
+          "lineNumber": 20
+        },
+        {
+          "caller": "load",
+          "callee": "console.error",
+          "lineNumber": 22
+        },
+        {
+          "caller": "PostGrid",
+          "callee": "load",
+          "lineNumber": 25
+        },
+        {
+          "caller": "PostGrid",
+          "callee": "useEffect",
+          "lineNumber": 29
+        },
+        {
+          "caller": "PostGrid",
+          "callee": "gridRef.current.querySelectorAll",
+          "lineNumber": 32
+        },
+        {
+          "caller": "init",
+          "callee": "import",
+          "lineNumber": 39
+        },
+        {
+          "caller": "init",
+          "callee": "import",
+          "lineNumber": 40
+        },
+        {
+          "caller": "init",
+          "callee": "cards.forEach",
+          "lineNumber": 45
+        },
+        {
+          "caller": "init",
+          "callee": "gsapInstance.fromTo",
+          "lineNumber": 46
+        },
+        {
+          "caller": "PostGrid",
+          "callee": "init",
+          "lineNumber": 65
+        },
+        {
+          "caller": "PostGrid",
+          "callee": "ScrollTriggerInstance?.getAll?.().forEach",
+          "lineNumber": 68
+        },
+        {
+          "caller": "PostGrid",
+          "callee": "ScrollTriggerInstance?.getAll",
+          "lineNumber": 68
+        },
+        {
+          "caller": "PostGrid",
+          "callee": "st.kill",
+          "lineNumber": 68
+        },
+        {
+          "caller": "PostGrid",
+          "callee": "posts.map",
+          "lineNumber": 78
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/blog/PostShelf.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 124,
+      "nonEmptyLines": 106,
+      "functions": [
+        {
+          "name": "PostShelf",
+          "startLine": 8,
+          "endLine": 124,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "PostShelf",
+          "line": 8,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "PostShelf",
+          "callee": "useRef",
+          "lineNumber": 9
+        },
+        {
+          "caller": "PostShelf",
+          "callee": "useId",
+          "lineNumber": 10
+        },
+        {
+          "caller": "PostShelf",
+          "callee": "useState",
+          "lineNumber": 11
+        },
+        {
+          "caller": "PostShelf",
+          "callee": "useState",
+          "lineNumber": 12
+        },
+        {
+          "caller": "PostShelf",
+          "callee": "useEffectEvent",
+          "lineNumber": 14
+        },
+        {
+          "caller": "PostShelf",
+          "callee": "setCanScrollPrev",
+          "lineNumber": 19
+        },
+        {
+          "caller": "PostShelf",
+          "callee": "setCanScrollNext",
+          "lineNumber": 20
+        },
+        {
+          "caller": "PostShelf",
+          "callee": "useEffect",
+          "lineNumber": 23
+        },
+        {
+          "caller": "PostShelf",
+          "callee": "updateControls",
+          "lineNumber": 27
+        },
+        {
+          "caller": "handleScroll",
+          "callee": "updateControls",
+          "lineNumber": 29
+        },
+        {
+          "caller": "handleResize",
+          "callee": "updateControls",
+          "lineNumber": 30
+        },
+        {
+          "caller": "PostShelf",
+          "callee": "viewport.addEventListener",
+          "lineNumber": 32
+        },
+        {
+          "caller": "PostShelf",
+          "callee": "window.addEventListener",
+          "lineNumber": 33
+        },
+        {
+          "caller": "PostShelf",
+          "callee": "viewport.removeEventListener",
+          "lineNumber": 36
+        },
+        {
+          "caller": "PostShelf",
+          "callee": "window.removeEventListener",
+          "lineNumber": 37
+        },
+        {
+          "caller": "scrollByViewport",
+          "callee": "Math.max",
+          "lineNumber": 45
+        },
+        {
+          "caller": "scrollByViewport",
+          "callee": "viewport.scrollBy",
+          "lineNumber": 47
+        },
+        {
+          "caller": "handleKeyDown",
+          "callee": "event.preventDefault",
+          "lineNumber": 55
+        },
+        {
+          "caller": "handleKeyDown",
+          "callee": "scrollByViewport",
+          "lineNumber": 56
+        },
+        {
+          "caller": "handleKeyDown",
+          "callee": "event.preventDefault",
+          "lineNumber": 60
+        },
+        {
+          "caller": "handleKeyDown",
+          "callee": "scrollByViewport",
+          "lineNumber": 61
+        },
+        {
+          "caller": "PostShelf",
+          "callee": "scrollByViewport",
+          "lineNumber": 75
+        },
+        {
+          "caller": "PostShelf",
+          "callee": "scrollByViewport",
+          "lineNumber": 85
+        },
+        {
+          "caller": "PostShelf",
+          "callee": "posts.map",
+          "lineNumber": 111
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components/blog/RelatedPosts.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 19,
+      "nonEmptyLines": 17,
+      "functions": [
+        {
+          "name": "RelatedPosts",
+          "startLine": 4,
+          "endLine": 19,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "RelatedPosts",
+          "line": 4,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "RelatedPosts",
+          "callee": "posts.map",
+          "lineNumber": 11
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,262 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 11,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "db/blog.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 9528,
+      "nonEmptyLines": 9528,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": "db/case-studies.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 83,
+      "nonEmptyLines": 83,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": "db/events.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": "db/gallery.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 74,
+      "nonEmptyLines": 74,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": "db/music.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 152,
+      "nonEmptyLines": 152,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": "db/newsletter.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": "db/press-kit.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 14,
+      "nonEmptyLines": 14,
+      "sections": [
+        {
+          "heading": "bioShort",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "bioLong",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "headshots",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "logos",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "pressReleases",
+          "level": 1,
+          "line": 10
+        },
+        {
+          "heading": "contactBookingEmail",
+          "level": 1,
+          "line": 11
+        },
+        {
+          "heading": "riderPdf",
+          "level": 1,
+          "line": 12
+        },
+        {
+          "heading": "techSpecPdf",
+          "level": 1,
+          "line": 13
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": "db/seo.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 33,
+      "nonEmptyLines": 33,
+      "sections": [
+        {
+          "heading": "pages",
+          "level": 1,
+          "line": 2
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": "db/services.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 78,
+      "nonEmptyLines": 78,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": "db/settings.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 170,
+      "nonEmptyLines": 170,
+      "sections": [
+        {
+          "heading": "siteTitle",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "seoTitle",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "seoDescription",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "seoKeywords",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "branding",
+          "level": 1,
+          "line": 13
+        },
+        {
+          "heading": "navigation",
+          "level": 1,
+          "line": 22
+        },
+        {
+          "heading": "homepage",
+          "level": 1,
+          "line": 60
+        },
+        {
+          "heading": "footer",
+          "level": 1,
+          "line": 81
+        },
+        {
+          "heading": "socialLinks",
+          "level": 1,
+          "line": 153
+        },
+        {
+          "heading": "theme",
+          "level": 1,
+          "line": 163
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": "db/shop.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 1937,
+      "nonEmptyLines": 1937,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    }
+  ]
+}

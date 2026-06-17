@@ -1,0 +1,32 @@
+# Project-specific exclusions
+node_modules/
+.next/
+dist/
+build/
+coverage/
+.git/
+public/generated/
+.db-backups/
+.vercel/
+.learnings/
+
+# Build artifacts
+*.min.js
+*.min.css
+*.map
+*.tsbuildinfo
+next-env.d.ts
+
+# Lock files
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+*.lock
+
+# Data files
+db/*.json
+*.csv
+*.xlsx
+
+# Generated / auto content
+webhook-blog-sample.json

@@ -1,0 +1,246 @@
+{
+  "nodes": [
+    {
+      "id": "document:.learnings/ERRORS.md",
+      "type": "document",
+      "name": "ERRORS.md",
+      "filePath": ".learnings/ERRORS.md",
+      "summary": "Documentation file: ERRORS.md.",
+      "tags": [
+        "documentation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.learnings/LEARNINGS.md",
+      "type": "document",
+      "name": "LEARNINGS.md",
+      "filePath": ".learnings/LEARNINGS.md",
+      "summary": "Documentation file: LEARNINGS.md.",
+      "tags": [
+        "documentation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.opencode/plans/architecture-refactor-plan.md",
+      "type": "document",
+      "name": "architecture-refactor-plan.md",
+      "filePath": ".opencode/plans/architecture-refactor-plan.md",
+      "summary": "Documentation file: architecture-refactor-plan.md.",
+      "tags": [
+        "documentation"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:.understand-anything/.understandignore",
+      "type": "file",
+      "name": ".understandignore",
+      "filePath": ".understand-anything/.understandignore",
+      "summary": ".understandignore: Source file.",
+      "tags": [],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.understand-anything/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": ".understand-anything/config.json",
+      "summary": "Configuration file for config.json defining project settings.",
+      "tags": [
+        "configuration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:.vercelignore",
+      "type": "file",
+      "name": ".vercelignore",
+      "filePath": ".vercelignore",
+      "summary": ".vercelignore: Source file.",
+      "tags": [],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:docs/adr/0001-admin-crud-spec-handler-http-adapter.md",
+      "type": "document",
+      "name": "0001-admin-crud-spec-handler-http-adapter.md",
+      "filePath": "docs/adr/0001-admin-crud-spec-handler-http-adapter.md",
+      "summary": "Documentation file: 0001-admin-crud-spec-handler-http-adapter.md.",
+      "tags": [
+        "documentation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:eslint.config.mjs",
+      "type": "file",
+      "name": "eslint.config.mjs",
+      "filePath": "eslint.config.mjs",
+      "summary": "eslint.config.mjs: Source file.",
+      "tags": [
+        "type-definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:next.config.mjs",
+      "type": "file",
+      "name": "next.config.mjs",
+      "filePath": "next.config.mjs",
+      "summary": "next.config.mjs: Source file.",
+      "tags": [
+        "type-definition"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:postcss.config.mjs",
+      "type": "file",
+      "name": "postcss.config.mjs",
+      "filePath": "postcss.config.mjs",
+      "summary": "postcss.config.mjs: Source file.",
+      "tags": [
+        "type-definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:public/images/blog/bo-gear-thu-rap-vocal-tai-nha-cho-phong-chua-xu-ly-am-inside.webp",
+      "type": "file",
+      "name": "bo-gear-thu-rap-vocal-tai-nha-cho-phong-chua-xu-ly-am-inside.webp",
+      "filePath": "public/images/blog/bo-gear-thu-rap-vocal-tai-nha-cho-phong-chua-xu-ly-am-inside.webp",
+      "summary": "bo-gear-thu-rap-vocal-tai-nha-cho-phong-chua-xu-ly-am-inside.webp: Source file.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:public/images/blog/bo-gear-thu-rap-vocal-tai-nha-cho-phong-chua-xu-ly-am.webp",
+      "type": "file",
+      "name": "bo-gear-thu-rap-vocal-tai-nha-cho-phong-chua-xu-ly-am.webp",
+      "filePath": "public/images/blog/bo-gear-thu-rap-vocal-tai-nha-cho-phong-chua-xu-ly-am.webp",
+      "summary": "bo-gear-thu-rap-vocal-tai-nha-cho-phong-chua-xu-ly-am.webp: Source file.",
+      "tags": [],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:public/images/blog/cach-lam-beat-fl-studio-co-ban.webp",
+      "type": "file",
+      "name": "cach-lam-beat-fl-studio-co-ban.webp",
+      "filePath": "public/images/blog/cach-lam-beat-fl-studio-co-ban.webp",
+      "summary": "cach-lam-beat-fl-studio-co-ban.webp: Source file.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:public/images/blog/cach-mix-vocal-tai-nha.webp",
+      "type": "file",
+      "name": "cach-mix-vocal-tai-nha.webp",
+      "filePath": "public/images/blog/cach-mix-vocal-tai-nha.webp",
+      "summary": "cach-mix-vocal-tai-nha.webp: Source file.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:public/images/blog/chon-micro-thu-am-tai-nha-condenser-dynamic.webp",
+      "type": "file",
+      "name": "chon-micro-thu-am-tai-nha-condenser-dynamic.webp",
+      "filePath": "public/images/blog/chon-micro-thu-am-tai-nha-condenser-dynamic.webp",
+      "summary": "chon-micro-thu-am-tai-nha-condenser-dynamic.webp: Source file.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:public/images/blog/co-can-booster-gain-cloudlifter-fethead-cho-micro-dynamic-inside.webp",
+      "type": "file",
+      "name": "co-can-booster-gain-cloudlifter-fethead-cho-micro-dynamic-inside.webp",
+      "filePath": "public/images/blog/co-can-booster-gain-cloudlifter-fethead-cho-micro-dynamic-inside.webp",
+      "summary": "co-can-booster-gain-cloudlifter-fethead-cho-micro-dynamic-inside.webp: Source file.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:public/images/blog/co-can-booster-gain-cloudlifter-fethead-cho-micro-dynamic.webp",
+      "type": "file",
+      "name": "co-can-booster-gain-cloudlifter-fethead-cho-micro-dynamic.webp",
+      "filePath": "public/images/blog/co-can-booster-gain-cloudlifter-fethead-cho-micro-dynamic.webp",
+      "summary": "co-can-booster-gain-cloudlifter-fethead-cho-micro-dynamic.webp: Source file.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:public/images/blog/co-nen-mua-micro-usb-xlr-hybrid-mv7-podmic-usb-q9u-inside.webp",
+      "type": "file",
+      "name": "co-nen-mua-micro-usb-xlr-hybrid-mv7-podmic-usb-q9u-inside.webp",
+      "filePath": "public/images/blog/co-nen-mua-micro-usb-xlr-hybrid-mv7-podmic-usb-q9u-inside.webp",
+      "summary": "co-nen-mua-micro-usb-xlr-hybrid-mv7-podmic-usb-q9u-inside.webp: Source file.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:public/images/blog/co-nen-mua-micro-usb-xlr-hybrid-mv7-podmic-usb-q9u.webp",
+      "type": "file",
+      "name": "co-nen-mua-micro-usb-xlr-hybrid-mv7-podmic-usb-q9u.webp",
+      "filePath": "public/images/blog/co-nen-mua-micro-usb-xlr-hybrid-mv7-podmic-usb-q9u.webp",
+      "summary": "co-nen-mua-micro-usb-xlr-hybrid-mv7-podmic-usb-q9u.webp: Source file.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:public/images/blog/co-nen-mua-reflection-filter-cho-phong-ngu-thu-vocal-inside.webp",
+      "type": "file",
+      "name": "co-nen-mua-reflection-filter-cho-phong-ngu-thu-vocal-inside.webp",
+      "filePath": "public/images/blog/co-nen-mua-reflection-filter-cho-phong-ngu-thu-vocal-inside.webp",
+      "summary": "co-nen-mua-reflection-filter-cho-phong-ngu-thu-vocal-inside.webp: Source file.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:public/images/blog/co-nen-mua-reflection-filter-cho-phong-ngu-thu-vocal.webp",
+      "type": "file",
+      "name": "co-nen-mua-reflection-filter-cho-phong-ngu-thu-vocal.webp",
+      "filePath": "public/images/blog/co-nen-mua-reflection-filter-cho-phong-ngu-thu-vocal.webp",
+      "summary": "co-nen-mua-reflection-filter-cho-phong-ngu-thu-vocal.webp: Source file.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:public/images/blog/combo-home-studio-duoi-10-trieu-cho-singer-songwriter-inside.webp",
+      "type": "file",
+      "name": "combo-home-studio-duoi-10-trieu-cho-singer-songwriter-inside.webp",
+      "filePath": "public/images/blog/combo-home-studio-duoi-10-trieu-cho-singer-songwriter-inside.webp",
+      "summary": "combo-home-studio-duoi-10-trieu-cho-singer-songwriter-inside.webp: Source file.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:public/images/blog/combo-home-studio-duoi-10-trieu-cho-singer-songwriter.webp",
+      "type": "file",
+      "name": "combo-home-studio-duoi-10-trieu-cho-singer-songwriter.webp",
+      "filePath": "public/images/blog/combo-home-studio-duoi-10-trieu-cho-singer-songwriter.webp",
+      "summary": "combo-home-studio-duoi-10-trieu-cho-singer-songwriter.webp: Source file.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:public/images/blog/combo-home-studio-duoi-20-trieu-cho-producer-ban-chuyen-inside.webp",
+      "type": "file",
+      "name": "combo-home-studio-duoi-20-trieu-cho-producer-ban-chuyen-inside.webp",
+      "filePath": "public/images/blog/combo-home-studio-duoi-20-trieu-cho-producer-ban-chuyen-inside.webp",
+      "summary": "combo-home-studio-duoi-20-trieu-cho-producer-ban-chuyen-inside.webp: Source file.",
+      "tags": [],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:public/images/blog/combo-home-studio-duoi-20-trieu-cho-producer-ban-chuyen.webp",
+      "type": "file",
+      "name": "combo-home-studio-duoi-20-trieu-cho-producer-ban-chuyen.webp",
+      "filePath": "public/images/blog/combo-home-studio-duoi-20-trieu-cho-producer-ban-chuyen.webp",
+      "summary": "combo-home-studio-duoi-20-trieu-cho-producer-ban-chuyen.webp: Source file.",
+      "tags": [],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": []
+}

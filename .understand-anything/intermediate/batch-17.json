@@ -1,0 +1,230 @@
+{
+  "nodes": [
+    {
+      "id": "document:AGENTS.md",
+      "type": "document",
+      "name": "AGENTS.md",
+      "filePath": "AGENTS.md",
+      "summary": "Documentation file: AGENTS.md.",
+      "tags": [
+        "documentation"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:CLAUDE.md",
+      "type": "document",
+      "name": "CLAUDE.md",
+      "filePath": "CLAUDE.md",
+      "summary": "Documentation file: CLAUDE.md.",
+      "tags": [
+        "documentation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:CONTEXT.md",
+      "type": "document",
+      "name": "CONTEXT.md",
+      "filePath": "CONTEXT.md",
+      "summary": "Documentation file: CONTEXT.md.",
+      "tags": [
+        "documentation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:DESIGN.md",
+      "type": "document",
+      "name": "DESIGN.md",
+      "filePath": "DESIGN.md",
+      "summary": "Documentation file: DESIGN.md.",
+      "tags": [
+        "documentation"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:MOBILE_OPTIMIZATION_FIXES.md",
+      "type": "document",
+      "name": "MOBILE_OPTIMIZATION_FIXES.md",
+      "filePath": "MOBILE_OPTIMIZATION_FIXES.md",
+      "summary": "Documentation file: MOBILE_OPTIMIZATION_FIXES.md.",
+      "tags": [
+        "documentation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:MOBILE_TROUBLESHOOTING.md",
+      "type": "document",
+      "name": "MOBILE_TROUBLESHOOTING.md",
+      "filePath": "MOBILE_TROUBLESHOOTING.md",
+      "summary": "Documentation file: MOBILE_TROUBLESHOOTING.md.",
+      "tags": [
+        "documentation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:OPTIMIZATION_CLEANUP.md",
+      "type": "document",
+      "name": "OPTIMIZATION_CLEANUP.md",
+      "filePath": "OPTIMIZATION_CLEANUP.md",
+      "summary": "Documentation file: OPTIMIZATION_CLEANUP.md.",
+      "tags": [
+        "documentation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:OPTIMIZATION_SUMMARY.md",
+      "type": "document",
+      "name": "OPTIMIZATION_SUMMARY.md",
+      "filePath": "OPTIMIZATION_SUMMARY.md",
+      "summary": "Documentation file: OPTIMIZATION_SUMMARY.md.",
+      "tags": [
+        "documentation"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:PERFORMANCE.md",
+      "type": "document",
+      "name": "PERFORMANCE.md",
+      "filePath": "PERFORMANCE.md",
+      "summary": "Documentation file: PERFORMANCE.md.",
+      "tags": [
+        "documentation"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:QUICK_REFERENCE.md",
+      "type": "document",
+      "name": "QUICK_REFERENCE.md",
+      "filePath": "QUICK_REFERENCE.md",
+      "summary": "Documentation file: QUICK_REFERENCE.md.",
+      "tags": [
+        "documentation"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "Project overview documentation with setup and usage instructions.",
+      "tags": [
+        "documentation",
+        "entry-point",
+        "overview"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:SEO_CANNIBALIZATION_AUDIT_2026-06-16.md",
+      "type": "document",
+      "name": "SEO_CANNIBALIZATION_AUDIT_2026-06-16.md",
+      "filePath": "SEO_CANNIBALIZATION_AUDIT_2026-06-16.md",
+      "summary": "Documentation file: SEO_CANNIBALIZATION_AUDIT_2026-06-16.md.",
+      "tags": [
+        "documentation"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:SHADER_ERROR_FIX.md",
+      "type": "document",
+      "name": "SHADER_ERROR_FIX.md",
+      "filePath": "SHADER_ERROR_FIX.md",
+      "summary": "Documentation file: SHADER_ERROR_FIX.md.",
+      "tags": [
+        "documentation"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:SHOP_PRICE_FULFILLMENT.md",
+      "type": "document",
+      "name": "SHOP_PRICE_FULFILLMENT.md",
+      "filePath": "SHOP_PRICE_FULFILLMENT.md",
+      "summary": "Documentation file: SHOP_PRICE_FULFILLMENT.md.",
+      "tags": [
+        "documentation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:TACHY_ARTIST_CONTEXT.md",
+      "type": "document",
+      "name": "TACHY_ARTIST_CONTEXT.md",
+      "filePath": "TACHY_ARTIST_CONTEXT.md",
+      "summary": "Documentation file: TACHY_ARTIST_CONTEXT.md.",
+      "tags": [
+        "documentation"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:_affiliate-products-need-links.md",
+      "type": "document",
+      "name": "_affiliate-products-need-links.md",
+      "filePath": "_affiliate-products-need-links.md",
+      "summary": "Documentation file: _affiliate-products-need-links.md.",
+      "tags": [
+        "documentation"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "config:components.json",
+      "type": "config",
+      "name": "components.json",
+      "filePath": "components.json",
+      "summary": "Configuration file for components.json defining project settings.",
+      "tags": [
+        "configuration",
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:jsconfig.json",
+      "type": "config",
+      "name": "jsconfig.json",
+      "filePath": "jsconfig.json",
+      "summary": "Configuration file for jsconfig.json defining project settings.",
+      "tags": [
+        "configuration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "package.json",
+      "summary": "Configuration file for package.json defining project settings.",
+      "tags": [
+        "configuration",
+        "build-system",
+        "dependencies"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:tachy_artist_version.md",
+      "type": "document",
+      "name": "tachy_artist_version.md",
+      "filePath": "tachy_artist_version.md",
+      "summary": "Documentation file: tachy_artist_version.md.",
+      "tags": [
+        "documentation"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": []
+}

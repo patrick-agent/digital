@@ -3,6 +3,7 @@
 import { useRef, useMemo } from "react";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
+import { seededBetween } from "@/lib/seeded-random";
 
 export default function ParticleField({
   count = 120,
@@ -21,12 +22,12 @@ export default function ParticleField({
     const temp = [];
     for (let i = 0; i < count; i++) {
       temp.push({
-        x: (Math.random() - 0.5) * spread,
-        y: (Math.random() - 0.5) * spread,
-        z: (Math.random() - 0.5) * spread + depth,
-        speed: speed + Math.random() * 0.5,
-        phase: Math.random() * Math.PI * 2,
-        originalX: (Math.random() - 0.5) * spread,
+        x: seededBetween(i * 6 + 1, -spread / 2, spread / 2),
+        y: seededBetween(i * 6 + 2, -spread / 2, spread / 2),
+        z: seededBetween(i * 6 + 3, -spread / 2 + depth, spread / 2 + depth),
+        speed: seededBetween(i * 6 + 4, speed, speed + 0.5),
+        phase: seededBetween(i * 6 + 5, 0, Math.PI * 2),
+        originalX: seededBetween(i * 6 + 6, -spread / 2, spread / 2),
       });
     }
     return temp;

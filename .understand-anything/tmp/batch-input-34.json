@@ -1,0 +1,191 @@
+{
+  "projectRoot": "C:\\Users\\Admin\\Desktop\\Website 3D\\studio-3d",
+  "batchFiles": [
+    {
+      "path": "src/app/api/v1/blog/posts/[param]/route.js",
+      "language": "javascript",
+      "sizeLines": 71,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/api/v1/blog/posts/route.js",
+      "language": "javascript",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/api/v1/shop/products/[param]/route.js",
+      "language": "javascript",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/api/v1/shop/products/route.js",
+      "language": "javascript",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/api/webhook/sync-blog/route.js",
+      "language": "javascript",
+      "sizeLines": 124,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/bio-music/[slug]/page.js",
+      "language": "javascript",
+      "sizeLines": 172,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/bio-music/[slug]/page.module.css",
+      "language": "css",
+      "sizeLines": 145,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/app/bio-music/error.js",
+      "language": "javascript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/bio-music/layout.js",
+      "language": "javascript",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/bio-music/loading.js",
+      "language": "javascript",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/bio-music/page.js",
+      "language": "javascript",
+      "sizeLines": 95,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/bio-music/page.module.css",
+      "language": "css",
+      "sizeLines": 142,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/app/blog/[...slug]/article-page.module.css",
+      "language": "css",
+      "sizeLines": 207,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/app/blog/[...slug]/category-page.module.css",
+      "language": "css",
+      "sizeLines": 249,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/app/blog/[...slug]/page.js",
+      "language": "javascript",
+      "sizeLines": 411,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/blog/error.js",
+      "language": "javascript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/blog/layout.js",
+      "language": "javascript",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/blog/page.js",
+      "language": "javascript",
+      "sizeLines": 113,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/contact/error.js",
+      "language": "javascript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/contact/layout.js",
+      "language": "javascript",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/contact/loading.js",
+      "language": "javascript",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/contact/page.js",
+      "language": "javascript",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/global-error.js",
+      "language": "javascript",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/layout.js",
+      "language": "javascript",
+      "sizeLines": 136,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/app/llms.txt/route.js",
+      "language": "javascript",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/app/api/v1/blog/posts/[param]/route.js": [],
+    "src/app/api/v1/blog/posts/route.js": [],
+    "src/app/api/v1/shop/products/[param]/route.js": [],
+    "src/app/api/v1/shop/products/route.js": [],
+    "src/app/api/webhook/sync-blog/route.js": [],
+    "src/app/bio-music/[slug]/page.js": [
+      "src/app/bio-music/[slug]/page.module.css"
+    ],
+    "src/app/bio-music/[slug]/page.module.css": [],
+    "src/app/bio-music/error.js": [],
+    "src/app/bio-music/layout.js": [],
+    "src/app/bio-music/loading.js": [],
+    "src/app/bio-music/page.js": [
+      "src/app/bio-music/page.module.css"
+    ],
+    "src/app/bio-music/page.module.css": [],
+    "src/app/blog/[...slug]/article-page.module.css": [],
+    "src/app/blog/[...slug]/category-page.module.css": [],
+    "src/app/blog/[...slug]/page.js": [
+      "src/app/blog/[...slug]/article-page.module.css",
+      "src/app/blog/[...slug]/category-page.module.css"
+    ],
+    "src/app/blog/error.js": [],
+    "src/app/blog/layout.js": [],
+    "src/app/blog/page.js": [],
+    "src/app/contact/error.js": [],
+    "src/app/contact/layout.js": [],
+    "src/app/contact/loading.js": [],
+    "src/app/contact/page.js": [],
+    "src/app/global-error.js": [],
+    "src/app/layout.js": [
+      "src/app/globals.css"
+    ],
+    "src/app/llms.txt/route.js": []
+  }
+}

@@ -64,12 +64,15 @@ export default function DigitalSkills() {
       if (window.innerWidth <= 767) {
         setVisibleCards(1);
         setCardWidthPercent(85);
+        setCurrentIndex((prev) => Math.min(prev, skillClusters.length - 1));
       } else if (window.innerWidth <= 1023) {
         setVisibleCards(2);
         setCardWidthPercent(50);
+        setCurrentIndex((prev) => Math.min(prev, skillClusters.length - 2));
       } else {
         setVisibleCards(3);
         setCardWidthPercent(33.333);
+        setCurrentIndex((prev) => Math.min(prev, skillClusters.length - 3));
       }
     };
     updateVisible();
@@ -78,10 +81,7 @@ export default function DigitalSkills() {
   }, []);
 
   const maxIndex = Math.max(0, skillClusters.length - visibleCards);
-
-  useEffect(() => {
-    if (currentIndex > maxIndex) setCurrentIndex(maxIndex);
-  }, [maxIndex]);
+  const clampedCurrentIndex = Math.min(currentIndex, maxIndex);
 
   const handlePointerDown = (e) => {
     setIsDragging(true);
@@ -99,9 +99,9 @@ export default function DigitalSkills() {
     setIsDragging(false);
 
     const threshold = window.innerWidth <= 767 ? 40 : 80;
-    if (dragOffset < -threshold && currentIndex < maxIndex) {
+    if (dragOffset < -threshold && clampedCurrentIndex < maxIndex) {
       setCurrentIndex(prev => prev + 1);
-    } else if (dragOffset > threshold && currentIndex > 0) {
+    } else if (dragOffset > threshold && clampedCurrentIndex > 0) {
       setCurrentIndex(prev => prev - 1);
     }
 
@@ -147,7 +147,7 @@ export default function DigitalSkills() {
       >
         <motion.div
           className={styles.carouselTrack}
-          animate={{ x: `calc(-${currentIndex * cardWidthPercent}% + ${dragOffset}px)` }}
+          animate={{ x: `calc(-${clampedCurrentIndex * cardWidthPercent}% + ${dragOffset}px)` }}
           transition={{ type: 'spring', stiffness: 300, damping: 30 }}
         >
           {skillClusters.map((cluster, index) => (

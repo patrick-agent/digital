@@ -1,0 +1,1259 @@
+{
+  "nodes": [
+    {
+      "id": "function:scripts/indexing-api.mjs:getArgValue",
+      "type": "function",
+      "name": "getArgValue",
+      "filePath": "scripts/indexing-api.mjs",
+      "lineRange": [
+        18,
+        27
+      ],
+      "summary": "Function getArgValue with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/indexing-api.mjs:loadEnv",
+      "type": "function",
+      "name": "loadEnv",
+      "filePath": "scripts/indexing-api.mjs",
+      "lineRange": [
+        29,
+        54
+      ],
+      "summary": "Function loadEnv with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/indexing-api.mjs:decodeXml",
+      "type": "function",
+      "name": "decodeXml",
+      "filePath": "scripts/indexing-api.mjs",
+      "lineRange": [
+        56,
+        63
+      ],
+      "summary": "Function decodeXml with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/indexing-api.mjs:unique",
+      "type": "function",
+      "name": "unique",
+      "filePath": "scripts/indexing-api.mjs",
+      "lineRange": [
+        65,
+        67
+      ],
+      "summary": "Function unique with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/indexing-api.mjs:fetchSitemapUrls",
+      "type": "function",
+      "name": "fetchSitemapUrls",
+      "filePath": "scripts/indexing-api.mjs",
+      "lineRange": [
+        69,
+        89
+      ],
+      "summary": "Function fetchSitemapUrls with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/indexing-api.mjs:getExplicitUrls",
+      "type": "function",
+      "name": "getExplicitUrls",
+      "filePath": "scripts/indexing-api.mjs",
+      "lineRange": [
+        91,
+        96
+      ],
+      "summary": "Function getExplicitUrls with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/indexing-api.mjs:assertAbsoluteUrls",
+      "type": "function",
+      "name": "assertAbsoluteUrls",
+      "filePath": "scripts/indexing-api.mjs",
+      "lineRange": [
+        98,
+        107
+      ],
+      "summary": "Function assertAbsoluteUrls with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/indexing-api.mjs:getServiceAccountCredentials",
+      "type": "function",
+      "name": "getServiceAccountCredentials",
+      "filePath": "scripts/indexing-api.mjs",
+      "lineRange": [
+        109,
+        122
+      ],
+      "summary": "Function getServiceAccountCredentials with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/indexing-api.mjs:getOAuthCredentials",
+      "type": "function",
+      "name": "getOAuthCredentials",
+      "filePath": "scripts/indexing-api.mjs",
+      "lineRange": [
+        124,
+        130
+      ],
+      "summary": "Function getOAuthCredentials with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/indexing-api.mjs:getAuth",
+      "type": "function",
+      "name": "getAuth",
+      "filePath": "scripts/indexing-api.mjs",
+      "lineRange": [
+        132,
+        156
+      ],
+      "summary": "Function getAuth with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/indexing-api.mjs:notifyUrls",
+      "type": "function",
+      "name": "notifyUrls",
+      "filePath": "scripts/indexing-api.mjs",
+      "lineRange": [
+        158,
+        184
+      ],
+      "summary": "Function notifyUrls with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/indexing-api.mjs:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "scripts/indexing-api.mjs",
+      "lineRange": [
+        186,
+        253
+      ],
+      "summary": "Function main with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:scripts/seed-music.mjs",
+      "type": "file",
+      "name": "seed-music.mjs",
+      "filePath": "scripts/seed-music.mjs",
+      "summary": "seed-music.mjs: Source file.",
+      "tags": [
+        "type-definition"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:scripts/sync-blog.mjs",
+      "type": "file",
+      "name": "sync-blog.mjs",
+      "filePath": "scripts/sync-blog.mjs",
+      "summary": "sync-blog.mjs: Source file, 7 functions, 1 import.",
+      "tags": [],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:scripts/sync-blog.mjs:loadEnv",
+      "type": "function",
+      "name": "loadEnv",
+      "filePath": "scripts/sync-blog.mjs",
+      "lineRange": [
+        25,
+        45
+      ],
+      "summary": "Function loadEnv with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/sync-blog.mjs:parseTags",
+      "type": "function",
+      "name": "parseTags",
+      "filePath": "scripts/sync-blog.mjs",
+      "lineRange": [
+        47,
+        50
+      ],
+      "summary": "Function parseTags with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/sync-blog.mjs:mapRowToPost",
+      "type": "function",
+      "name": "mapRowToPost",
+      "filePath": "scripts/sync-blog.mjs",
+      "lineRange": [
+        52,
+        78
+      ],
+      "summary": "Function mapRowToPost with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/sync-blog.mjs:getSheetData",
+      "type": "function",
+      "name": "getSheetData",
+      "filePath": "scripts/sync-blog.mjs",
+      "lineRange": [
+        80,
+        105
+      ],
+      "summary": "Function getSheetData with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/sync-blog.mjs:getSheetDataFromRows",
+      "type": "function",
+      "name": "getSheetDataFromRows",
+      "filePath": "scripts/sync-blog.mjs",
+      "lineRange": [
+        107,
+        109
+      ],
+      "summary": "Function getSheetDataFromRows with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/sync-blog.mjs:syncToBlog",
+      "type": "function",
+      "name": "syncToBlog",
+      "filePath": "scripts/sync-blog.mjs",
+      "lineRange": [
+        111,
+        154
+      ],
+      "summary": "Function syncToBlog with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/sync-blog.mjs:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "scripts/sync-blog.mjs",
+      "lineRange": [
+        156,
+        202
+      ],
+      "summary": "Function main with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/sync-db-from-vercel.mjs",
+      "type": "file",
+      "name": "sync-db-from-vercel.mjs",
+      "filePath": "scripts/sync-db-from-vercel.mjs",
+      "summary": "sync-db-from-vercel.mjs: Source file, 9 functions.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/sync-db-from-vercel.mjs:parseArgs",
+      "type": "function",
+      "name": "parseArgs",
+      "filePath": "scripts/sync-db-from-vercel.mjs",
+      "lineRange": [
+        23,
+        41
+      ],
+      "summary": "Function parseArgs with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/sync-db-from-vercel.mjs:loadEnv",
+      "type": "function",
+      "name": "loadEnv",
+      "filePath": "scripts/sync-db-from-vercel.mjs",
+      "lineRange": [
+        43,
+        61
+      ],
+      "summary": "Function loadEnv with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/sync-db-from-vercel.mjs:blobStoreId",
+      "type": "function",
+      "name": "blobStoreId",
+      "filePath": "scripts/sync-db-from-vercel.mjs",
+      "lineRange": [
+        63,
+        69
+      ],
+      "summary": "Function blobStoreId with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/sync-db-from-vercel.mjs:normalizeJson",
+      "type": "function",
+      "name": "normalizeJson",
+      "filePath": "scripts/sync-db-from-vercel.mjs",
+      "lineRange": [
+        71,
+        73
+      ],
+      "summary": "Function normalizeJson with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/sync-db-from-vercel.mjs:timestamp",
+      "type": "function",
+      "name": "timestamp",
+      "filePath": "scripts/sync-db-from-vercel.mjs",
+      "lineRange": [
+        75,
+        77
+      ],
+      "summary": "Function timestamp with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/sync-db-from-vercel.mjs:readLocalJson",
+      "type": "function",
+      "name": "readLocalJson",
+      "filePath": "scripts/sync-db-from-vercel.mjs",
+      "lineRange": [
+        79,
+        88
+      ],
+      "summary": "Function readLocalJson with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/sync-db-from-vercel.mjs:fetchRemoteJson",
+      "type": "function",
+      "name": "fetchRemoteJson",
+      "filePath": "scripts/sync-db-from-vercel.mjs",
+      "lineRange": [
+        90,
+        111
+      ],
+      "summary": "Function fetchRemoteJson with 3 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/sync-db-from-vercel.mjs:syncOnce",
+      "type": "function",
+      "name": "syncOnce",
+      "filePath": "scripts/sync-db-from-vercel.mjs",
+      "lineRange": [
+        113,
+        169
+      ],
+      "summary": "Function syncOnce with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/sync-db-from-vercel.mjs:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "scripts/sync-db-from-vercel.mjs",
+      "lineRange": [
+        171,
+        183
+      ],
+      "summary": "Function main with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/sync-to-vercel.mjs",
+      "type": "file",
+      "name": "sync-to-vercel.mjs",
+      "filePath": "scripts/sync-to-vercel.mjs",
+      "summary": "sync-to-vercel.mjs: Source file.",
+      "tags": [
+        "type-definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/verify-tables.mjs",
+      "type": "file",
+      "name": "verify-tables.mjs",
+      "filePath": "scripts/verify-tables.mjs",
+      "summary": "verify-tables.mjs: Source file.",
+      "tags": [
+        "type-definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/(digital)/digital/blog/[slug]/BlogPostClient.jsx",
+      "type": "file",
+      "name": "BlogPostClient.jsx",
+      "filePath": "src/app/(digital)/digital/blog/[slug]/BlogPostClient.jsx",
+      "summary": "BlogPostClient.jsx: Source file, 3 functions.",
+      "tags": [],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/app/(digital)/digital/blog/[slug]/BlogPostClient.jsx:formatDate",
+      "type": "function",
+      "name": "formatDate",
+      "filePath": "src/app/(digital)/digital/blog/[slug]/BlogPostClient.jsx",
+      "lineRange": [
+        10,
+        16
+      ],
+      "summary": "Function formatDate with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/(digital)/digital/blog/[slug]/BlogPostClient.jsx:parseContent",
+      "type": "function",
+      "name": "parseContent",
+      "filePath": "src/app/(digital)/digital/blog/[slug]/BlogPostClient.jsx",
+      "lineRange": [
+        18,
+        68
+      ],
+      "summary": "Function parseContent with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/(digital)/digital/blog/[slug]/BlogPostClient.jsx:BlogPostClient",
+      "type": "function",
+      "name": "BlogPostClient",
+      "filePath": "src/app/(digital)/digital/blog/[slug]/BlogPostClient.jsx",
+      "lineRange": [
+        70,
+        205
+      ],
+      "summary": "Function BlogPostClient with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/app/(digital)/digital/blog/[slug]/page.jsx",
+      "type": "file",
+      "name": "page.jsx",
+      "filePath": "src/app/(digital)/digital/blog/[slug]/page.jsx",
+      "summary": "page.jsx: Source file, 2 functions, 1 import.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/app/(digital)/digital/blog/[slug]/page.jsx:generateMetadata",
+      "type": "function",
+      "name": "generateMetadata",
+      "filePath": "src/app/(digital)/digital/blog/[slug]/page.jsx",
+      "lineRange": [
+        5,
+        27
+      ],
+      "summary": "Function generateMetadata with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/(digital)/digital/blog/[slug]/page.jsx:BlogPostPage",
+      "type": "function",
+      "name": "BlogPostPage",
+      "filePath": "src/app/(digital)/digital/blog/[slug]/page.jsx",
+      "lineRange": [
+        29,
+        57
+      ],
+      "summary": "Function BlogPostPage with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/(digital)/digital/blog/BlogClient.jsx",
+      "type": "file",
+      "name": "BlogClient.jsx",
+      "filePath": "src/app/(digital)/digital/blog/BlogClient.jsx",
+      "summary": "BlogClient.jsx: Source file, 2 functions.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/app/(digital)/digital/blog/BlogClient.jsx:formatDate",
+      "type": "function",
+      "name": "formatDate",
+      "filePath": "src/app/(digital)/digital/blog/BlogClient.jsx",
+      "lineRange": [
+        11,
+        17
+      ],
+      "summary": "Function formatDate with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/(digital)/digital/blog/BlogClient.jsx:BlogClient",
+      "type": "function",
+      "name": "BlogClient",
+      "filePath": "src/app/(digital)/digital/blog/BlogClient.jsx",
+      "lineRange": [
+        19,
+        97
+      ],
+      "summary": "Function BlogClient with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/app/(digital)/digital/blog/page.jsx",
+      "type": "file",
+      "name": "page.jsx",
+      "filePath": "src/app/(digital)/digital/blog/page.jsx",
+      "summary": "page.jsx: Source file, 1 function, 1 import.",
+      "tags": [],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/(digital)/digital/blog/page.jsx:DigitalBlogPage",
+      "type": "function",
+      "name": "DigitalBlogPage",
+      "filePath": "src/app/(digital)/digital/blog/page.jsx",
+      "lineRange": [
+        12,
+        18
+      ],
+      "summary": "Function DigitalBlogPage with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/(digital)/layout.jsx",
+      "type": "file",
+      "name": "layout.jsx",
+      "filePath": "src/app/(digital)/layout.jsx",
+      "summary": "layout.jsx: Source file, 1 function.",
+      "tags": [],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/(digital)/layout.jsx:DigitalLayout",
+      "type": "function",
+      "name": "DigitalLayout",
+      "filePath": "src/app/(digital)/layout.jsx",
+      "lineRange": [
+        5,
+        21
+      ],
+      "summary": "Function DigitalLayout with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:getArgValue",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:loadEnv",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:decodeXml",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:unique",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:fetchSitemapUrls",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:getExplicitUrls",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:assertAbsoluteUrls",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:getServiceAccountCredentials",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:getOAuthCredentials",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:getAuth",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:notifyUrls",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:unique",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:decodeXml",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:fetchSitemapUrls",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:unique",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:getArgValue",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:getArgValue",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:unique",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:getServiceAccountCredentials",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:getOAuthCredentials",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:loadEnv",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:getArgValue",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:getArgValue",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:getArgValue",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:getArgValue",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:getExplicitUrls",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:fetchSitemapUrls",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:unique",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:assertAbsoluteUrls",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:getAuth",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/indexing-api.mjs",
+      "target": "function:scripts/indexing-api.mjs:notifyUrls",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/sync-blog.mjs",
+      "target": "function:scripts/sync-blog.mjs:loadEnv",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/sync-blog.mjs",
+      "target": "function:scripts/sync-blog.mjs:parseTags",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/sync-blog.mjs",
+      "target": "function:scripts/sync-blog.mjs:mapRowToPost",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/sync-blog.mjs",
+      "target": "function:scripts/sync-blog.mjs:getSheetData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/sync-blog.mjs",
+      "target": "function:scripts/sync-blog.mjs:getSheetDataFromRows",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/sync-blog.mjs",
+      "target": "function:scripts/sync-blog.mjs:syncToBlog",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/sync-blog.mjs",
+      "target": "function:scripts/sync-blog.mjs:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/sync-blog.mjs",
+      "target": "file:src/lib/db-cli.mjs",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:scripts/sync-blog.mjs",
+      "target": "function:scripts/sync-blog.mjs:parseTags",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/sync-blog.mjs",
+      "target": "function:scripts/sync-blog.mjs:parseTags",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/sync-blog.mjs",
+      "target": "function:scripts/sync-blog.mjs:mapRowToPost",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/sync-blog.mjs",
+      "target": "function:scripts/sync-blog.mjs:loadEnv",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/sync-blog.mjs",
+      "target": "function:scripts/sync-blog.mjs:getSheetData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/sync-blog.mjs",
+      "target": "function:scripts/sync-blog.mjs:syncToBlog",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/sync-db-from-vercel.mjs",
+      "target": "function:scripts/sync-db-from-vercel.mjs:parseArgs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/sync-db-from-vercel.mjs",
+      "target": "function:scripts/sync-db-from-vercel.mjs:loadEnv",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/sync-db-from-vercel.mjs",
+      "target": "function:scripts/sync-db-from-vercel.mjs:blobStoreId",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/sync-db-from-vercel.mjs",
+      "target": "function:scripts/sync-db-from-vercel.mjs:normalizeJson",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/sync-db-from-vercel.mjs",
+      "target": "function:scripts/sync-db-from-vercel.mjs:timestamp",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/sync-db-from-vercel.mjs",
+      "target": "function:scripts/sync-db-from-vercel.mjs:readLocalJson",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/sync-db-from-vercel.mjs",
+      "target": "function:scripts/sync-db-from-vercel.mjs:fetchRemoteJson",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/sync-db-from-vercel.mjs",
+      "target": "function:scripts/sync-db-from-vercel.mjs:syncOnce",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/sync-db-from-vercel.mjs",
+      "target": "function:scripts/sync-db-from-vercel.mjs:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/sync-db-from-vercel.mjs",
+      "target": "function:scripts/sync-db-from-vercel.mjs:normalizeJson",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/sync-db-from-vercel.mjs",
+      "target": "function:scripts/sync-db-from-vercel.mjs:normalizeJson",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/sync-db-from-vercel.mjs",
+      "target": "function:scripts/sync-db-from-vercel.mjs:loadEnv",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/sync-db-from-vercel.mjs",
+      "target": "function:scripts/sync-db-from-vercel.mjs:blobStoreId",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/sync-db-from-vercel.mjs",
+      "target": "function:scripts/sync-db-from-vercel.mjs:fetchRemoteJson",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/sync-db-from-vercel.mjs",
+      "target": "function:scripts/sync-db-from-vercel.mjs:readLocalJson",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/sync-db-from-vercel.mjs",
+      "target": "function:scripts/sync-db-from-vercel.mjs:timestamp",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/sync-db-from-vercel.mjs",
+      "target": "function:scripts/sync-db-from-vercel.mjs:parseArgs",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/sync-db-from-vercel.mjs",
+      "target": "function:scripts/sync-db-from-vercel.mjs:syncOnce",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/sync-db-from-vercel.mjs",
+      "target": "function:scripts/sync-db-from-vercel.mjs:syncOnce",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/(digital)/digital/blog/[slug]/BlogPostClient.jsx",
+      "target": "function:src/app/(digital)/digital/blog/[slug]/BlogPostClient.jsx:formatDate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/(digital)/digital/blog/[slug]/BlogPostClient.jsx",
+      "target": "function:src/app/(digital)/digital/blog/[slug]/BlogPostClient.jsx:parseContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/(digital)/digital/blog/[slug]/BlogPostClient.jsx",
+      "target": "function:src/app/(digital)/digital/blog/[slug]/BlogPostClient.jsx:BlogPostClient",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/(digital)/digital/blog/[slug]/BlogPostClient.jsx",
+      "target": "function:src/app/(digital)/digital/blog/[slug]/BlogPostClient.jsx:BlogPostClient",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/(digital)/digital/blog/[slug]/BlogPostClient.jsx",
+      "target": "function:src/app/(digital)/digital/blog/[slug]/BlogPostClient.jsx:formatDate",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/(digital)/digital/blog/[slug]/BlogPostClient.jsx",
+      "target": "function:src/app/(digital)/digital/blog/[slug]/BlogPostClient.jsx:parseContent",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/(digital)/digital/blog/[slug]/BlogPostClient.jsx",
+      "target": "function:src/app/(digital)/digital/blog/[slug]/BlogPostClient.jsx:formatDate",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/(digital)/digital/blog/[slug]/page.jsx",
+      "target": "function:src/app/(digital)/digital/blog/[slug]/page.jsx:generateMetadata",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/(digital)/digital/blog/[slug]/page.jsx",
+      "target": "function:src/app/(digital)/digital/blog/[slug]/page.jsx:generateMetadata",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/(digital)/digital/blog/[slug]/page.jsx",
+      "target": "function:src/app/(digital)/digital/blog/[slug]/page.jsx:BlogPostPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/(digital)/digital/blog/[slug]/page.jsx",
+      "target": "function:src/app/(digital)/digital/blog/[slug]/page.jsx:BlogPostPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/(digital)/digital/blog/[slug]/page.jsx",
+      "target": "file:src/app/(digital)/digital/blog/[slug]/BlogPostClient.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/app/(digital)/digital/blog/BlogClient.jsx",
+      "target": "function:src/app/(digital)/digital/blog/BlogClient.jsx:formatDate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/(digital)/digital/blog/BlogClient.jsx",
+      "target": "function:src/app/(digital)/digital/blog/BlogClient.jsx:BlogClient",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/(digital)/digital/blog/BlogClient.jsx",
+      "target": "function:src/app/(digital)/digital/blog/BlogClient.jsx:BlogClient",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/(digital)/digital/blog/BlogClient.jsx",
+      "target": "function:src/app/(digital)/digital/blog/BlogClient.jsx:formatDate",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/(digital)/digital/blog/page.jsx",
+      "target": "function:src/app/(digital)/digital/blog/page.jsx:DigitalBlogPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/(digital)/digital/blog/page.jsx",
+      "target": "function:src/app/(digital)/digital/blog/page.jsx:DigitalBlogPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/(digital)/digital/blog/page.jsx",
+      "target": "file:src/app/(digital)/digital/blog/BlogClient.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/app/(digital)/layout.jsx",
+      "target": "function:src/app/(digital)/layout.jsx:DigitalLayout",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/(digital)/layout.jsx",
+      "target": "function:src/app/(digital)/layout.jsx:DigitalLayout",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

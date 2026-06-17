@@ -1,0 +1,39 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/components/canvas/BorderGlow.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 138,
+      "nonEmptyLines": 124,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/canvas/DotField.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 5,
+      "nonEmptyLines": 5,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/canvas/GradientBlinds.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 6,
+      "nonEmptyLines": 6,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/canvas/SpotlightCard.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 49,
+      "nonEmptyLines": 45,
+      "metrics": {}
+    }
+  ]
+}

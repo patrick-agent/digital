@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import Link from 'next/link';
 import styles from './DigitalFooter.module.css';
 
 export default function DigitalFooter() {
@@ -82,14 +83,14 @@ export default function DigitalFooter() {
                 <a href="#timeline">My Journey</a>
                 <a href="#skills">Skills</a>
                 <a href="#services">Services</a>
-                <a href="/contact">Contact</a>
+                <Link href="/contact">Contact</Link>
               </div>
               <div className={styles.footerCol}>
                 <p className={styles.footerColTitle}>Other</p>
-                <a href="/">Another Me</a>
-                <a href="/digital/blog">Blog</a>
-                <a href="/terms">Terms and Condition</a>
-                <a href="/privacy">Privacy Policy</a>
+                <Link href="/">Another Me</Link>
+                <Link href="/digital/blog">Blog</Link>
+                <Link href="/terms">Terms and Condition</Link>
+                <Link href="/privacy">Privacy Policy</Link>
               </div>
             </div>
           </div>

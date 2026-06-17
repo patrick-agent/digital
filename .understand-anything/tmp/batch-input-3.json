@@ -1,0 +1,91 @@
+{
+  "projectRoot": "C:\\Users\\Admin\\Desktop\\Website 3D\\studio-3d",
+  "batchFiles": [
+    {
+      "path": "scripts/publish-shopee-affiliate-cluster.mjs",
+      "language": "javascript",
+      "sizeLines": 1778,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/blog/canonical-slugs.js",
+      "language": "javascript",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/blog/public-catalog/handler.js",
+      "language": "javascript",
+      "sizeLines": 253,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/blog/public-catalog/index.js",
+      "language": "javascript",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/blog/public-catalog/spec.js",
+      "language": "javascript",
+      "sizeLines": 117,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/db.js",
+      "language": "javascript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/shop/presentation.js",
+      "language": "javascript",
+      "sizeLines": 67,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/shop/public-catalog/handler.js",
+      "language": "javascript",
+      "sizeLines": 218,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/shop/public-catalog/index.js",
+      "language": "javascript",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/shop/public-catalog/spec.js",
+      "language": "javascript",
+      "sizeLines": 150,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "scripts/publish-shopee-affiliate-cluster.mjs": [
+      "src/lib/db.js"
+    ],
+    "src/lib/blog/canonical-slugs.js": [],
+    "src/lib/blog/public-catalog/handler.js": [
+      "src/lib/blog/canonical-slugs.js",
+      "src/lib/blog/public-catalog/spec.js",
+      "src/lib/db.js"
+    ],
+    "src/lib/blog/public-catalog/index.js": [
+      "src/lib/blog/public-catalog/handler.js"
+    ],
+    "src/lib/blog/public-catalog/spec.js": [],
+    "src/lib/db.js": [],
+    "src/lib/shop/presentation.js": [],
+    "src/lib/shop/public-catalog/handler.js": [
+      "src/lib/db.js",
+      "src/lib/shop/presentation.js",
+      "src/lib/shop/public-catalog/spec.js"
+    ],
+    "src/lib/shop/public-catalog/index.js": [
+      "src/lib/shop/public-catalog/handler.js"
+    ],
+    "src/lib/shop/public-catalog/spec.js": []
+  }
+}

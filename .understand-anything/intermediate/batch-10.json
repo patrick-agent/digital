@@ -1,0 +1,178 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/app/(digital)/digital/loading.jsx",
+      "type": "file",
+      "name": "loading.jsx",
+      "filePath": "src/app/(digital)/digital/loading.jsx",
+      "summary": "loading.jsx: Source file, 1 function.",
+      "tags": [],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/(digital)/digital/loading.jsx:DigitalLoading",
+      "type": "function",
+      "name": "DigitalLoading",
+      "filePath": "src/app/(digital)/digital/loading.jsx",
+      "lineRange": [
+        5,
+        47
+      ],
+      "summary": "Function DigitalLoading with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/(digital)/digital/page.client.jsx",
+      "type": "file",
+      "name": "page.client.jsx",
+      "filePath": "src/app/(digital)/digital/page.client.jsx",
+      "summary": "page.client.jsx: Source file, 3 functions.",
+      "tags": [],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/app/(digital)/digital/page.client.jsx:SectionPlaceholder",
+      "type": "function",
+      "name": "SectionPlaceholder",
+      "filePath": "src/app/(digital)/digital/page.client.jsx",
+      "lineRange": [
+        41,
+        43
+      ],
+      "summary": "Function SectionPlaceholder with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/(digital)/digital/page.client.jsx:LazyMount",
+      "type": "function",
+      "name": "LazyMount",
+      "filePath": "src/app/(digital)/digital/page.client.jsx",
+      "lineRange": [
+        45,
+        74
+      ],
+      "summary": "Function LazyMount with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/(digital)/digital/page.client.jsx:DigitalPageContent",
+      "type": "function",
+      "name": "DigitalPageContent",
+      "filePath": "src/app/(digital)/digital/page.client.jsx",
+      "lineRange": [
+        76,
+        100
+      ],
+      "summary": "Function DigitalPageContent with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/(digital)/digital/page.jsx",
+      "type": "file",
+      "name": "page.jsx",
+      "filePath": "src/app/(digital)/digital/page.jsx",
+      "summary": "page.jsx: Source file, 1 function, 2 imports.",
+      "tags": [],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/(digital)/digital/page.jsx:DigitalPage",
+      "type": "function",
+      "name": "DigitalPage",
+      "filePath": "src/app/(digital)/digital/page.jsx",
+      "lineRange": [
+        19,
+        25
+      ],
+      "summary": "Function DigitalPage with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/app/(digital)/digital/loading.jsx",
+      "target": "function:src/app/(digital)/digital/loading.jsx:DigitalLoading",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/(digital)/digital/loading.jsx",
+      "target": "function:src/app/(digital)/digital/loading.jsx:DigitalLoading",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/(digital)/digital/page.client.jsx",
+      "target": "function:src/app/(digital)/digital/page.client.jsx:SectionPlaceholder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/(digital)/digital/page.client.jsx",
+      "target": "function:src/app/(digital)/digital/page.client.jsx:LazyMount",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/(digital)/digital/page.client.jsx",
+      "target": "function:src/app/(digital)/digital/page.client.jsx:DigitalPageContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/(digital)/digital/page.client.jsx",
+      "target": "function:src/app/(digital)/digital/page.client.jsx:DigitalPageContent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/(digital)/digital/page.jsx",
+      "target": "function:src/app/(digital)/digital/page.jsx:DigitalPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app/(digital)/digital/page.jsx",
+      "target": "function:src/app/(digital)/digital/page.jsx:DigitalPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/app/(digital)/digital/page.jsx",
+      "target": "file:src/app/(digital)/digital/loading.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/app/(digital)/digital/page.jsx",
+      "target": "file:src/app/(digital)/digital/page.client.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

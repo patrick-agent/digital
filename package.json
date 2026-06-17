@@ -8,6 +8,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "test:services": "node --test src/lib/services/service/spec.test.mjs src/lib/services/service/handler.test.mjs",
+    "test:events": "node --test src/lib/events/service/spec.test.mjs src/lib/events/service/handler.test.mjs",
+    "test:music": "node --test src/lib/music/service/spec.test.mjs src/lib/music/service/handler.test.mjs",
+    "test:admin-slices": "node --test src/lib/services/service/spec.test.mjs src/lib/services/service/handler.test.mjs src/lib/events/service/spec.test.mjs src/lib/events/service/handler.test.mjs src/lib/music/service/spec.test.mjs src/lib/music/service/handler.test.mjs",
     "analyze": "node scripts/analyze-bundle.mjs",
     "models:analyze": "node scripts/compress-models.mjs",
     "models:compress": "node scripts/compress-models.mjs compress",
@@ -88,6 +92,8 @@
   },
   "devDependencies": {
     "@types/three": "^0.184.1",
+    "eslint": "^9.39.4",
+    "eslint-config-next": "^16.2.9",
     "replicate": "^1.4.0",
     "sharp": "^0.34.5"
   }

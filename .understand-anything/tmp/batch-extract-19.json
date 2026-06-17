@@ -1,0 +1,39 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/app/glitch.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 116,
+      "nonEmptyLines": 101,
+      "metrics": {}
+    },
+    {
+      "path": "src/app/globals.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 440,
+      "nonEmptyLines": 379,
+      "metrics": {}
+    },
+    {
+      "path": "src/app/legal.module.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 89,
+      "nonEmptyLines": 76,
+      "metrics": {}
+    },
+    {
+      "path": "src/app/page.module.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 95,
+      "nonEmptyLines": 84,
+      "metrics": {}
+    }
+  ]
+}

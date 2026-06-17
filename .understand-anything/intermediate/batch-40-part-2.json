@@ -1,0 +1,888 @@
+{
+  "nodes": [
+    {
+      "id": "function:src/lib/performance.js:throttle",
+      "type": "function",
+      "name": "throttle",
+      "filePath": "src/lib/performance.js",
+      "lineRange": [
+        12,
+        38
+      ],
+      "summary": "Function throttle with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/performance.js:debounce",
+      "type": "function",
+      "name": "debounce",
+      "filePath": "src/lib/performance.js",
+      "lineRange": [
+        47,
+        69
+      ],
+      "summary": "Function debounce with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/performance.js:rafThrottle",
+      "type": "function",
+      "name": "rafThrottle",
+      "filePath": "src/lib/performance.js",
+      "lineRange": [
+        76,
+        92
+      ],
+      "summary": "Function rafThrottle with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/performance.js:createRAFBatcher",
+      "type": "function",
+      "name": "createRAFBatcher",
+      "filePath": "src/lib/performance.js",
+      "lineRange": [
+        98,
+        117
+      ],
+      "summary": "Function createRAFBatcher with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/post-utils.js",
+      "type": "file",
+      "name": "post-utils.js",
+      "filePath": "src/lib/post-utils.js",
+      "summary": "post-utils.js: Source file, 2 functions.",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/post-utils.js:postUrl",
+      "type": "function",
+      "name": "postUrl",
+      "filePath": "src/lib/post-utils.js",
+      "lineRange": [
+        1,
+        3
+      ],
+      "summary": "Function postUrl with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/post-utils.js:canonicalUrl",
+      "type": "function",
+      "name": "canonicalUrl",
+      "filePath": "src/lib/post-utils.js",
+      "lineRange": [
+        5,
+        7
+      ],
+      "summary": "Function canonicalUrl with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/seeded-random.js",
+      "type": "file",
+      "name": "seeded-random.js",
+      "filePath": "src/lib/seeded-random.js",
+      "summary": "seeded-random.js: Source file, 2 functions.",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/seeded-random.js:seededUnit",
+      "type": "function",
+      "name": "seededUnit",
+      "filePath": "src/lib/seeded-random.js",
+      "lineRange": [
+        1,
+        4
+      ],
+      "summary": "Function seededUnit with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/seeded-random.js:seededBetween",
+      "type": "function",
+      "name": "seededBetween",
+      "filePath": "src/lib/seeded-random.js",
+      "lineRange": [
+        6,
+        8
+      ],
+      "summary": "Function seededBetween with 3 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/seo-score.js",
+      "type": "file",
+      "name": "seo-score.js",
+      "filePath": "src/lib/seo-score.js",
+      "summary": "seo-score.js: Source file, 1 function.",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/seo-score.js:calculateSEOScore",
+      "type": "function",
+      "name": "calculateSEOScore",
+      "filePath": "src/lib/seo-score.js",
+      "lineRange": [
+        2,
+        43
+      ],
+      "summary": "Function calculateSEOScore with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/seo.ts",
+      "type": "file",
+      "name": "seo.ts",
+      "filePath": "src/lib/seo.ts",
+      "summary": "seo.ts: Source file, 2 functions.",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/lib/seo.ts:absoluteUrl",
+      "type": "function",
+      "name": "absoluteUrl",
+      "filePath": "src/lib/seo.ts",
+      "lineRange": [
+        31,
+        35
+      ],
+      "summary": "Function absoluteUrl with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/seo.ts:buildPageMetadata",
+      "type": "function",
+      "name": "buildPageMetadata",
+      "filePath": "src/lib/seo.ts",
+      "lineRange": [
+        37,
+        71
+      ],
+      "summary": "Function buildPageMetadata with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/services.js",
+      "type": "file",
+      "name": "services.js",
+      "filePath": "src/lib/services.js",
+      "summary": "services.js: Source file.",
+      "tags": [
+        "service",
+        "utility",
+        "exports",
+        "type-definition"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/lib/shader-utils.js",
+      "type": "file",
+      "name": "shader-utils.js",
+      "filePath": "src/lib/shader-utils.js",
+      "summary": "shader-utils.js: Source file, 7 functions, 1 class.",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/lib/shader-utils.js:enableShaderDebug",
+      "type": "function",
+      "name": "enableShaderDebug",
+      "filePath": "src/lib/shader-utils.js",
+      "lineRange": [
+        12,
+        27
+      ],
+      "summary": "Function enableShaderDebug with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/shader-utils.js:validateMaterial",
+      "type": "function",
+      "name": "validateMaterial",
+      "filePath": "src/lib/shader-utils.js",
+      "lineRange": [
+        72,
+        104
+      ],
+      "summary": "Function validateMaterial with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/shader-utils.js:createSafePhongMaterial",
+      "type": "function",
+      "name": "createSafePhongMaterial",
+      "filePath": "src/lib/shader-utils.js",
+      "lineRange": [
+        109,
+        122
+      ],
+      "summary": "Function createSafePhongMaterial with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/shader-utils.js:createFallbackMaterial",
+      "type": "function",
+      "name": "createFallbackMaterial",
+      "filePath": "src/lib/shader-utils.js",
+      "lineRange": [
+        127,
+        133
+      ],
+      "summary": "Function createFallbackMaterial with 0 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/shader-utils.js:loadModelSafely",
+      "type": "function",
+      "name": "loadModelSafely",
+      "filePath": "src/lib/shader-utils.js",
+      "lineRange": [
+        138,
+        150
+      ],
+      "summary": "Function loadModelSafely with 2 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/shader-utils.js:checkWebGLLimits",
+      "type": "function",
+      "name": "checkWebGLLimits",
+      "filePath": "src/lib/shader-utils.js",
+      "lineRange": [
+        155,
+        172
+      ],
+      "summary": "Function checkWebGLLimits with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/shader-utils.js:createDeviceOptimizedMaterial",
+      "type": "function",
+      "name": "createDeviceOptimizedMaterial",
+      "filePath": "src/lib/shader-utils.js",
+      "lineRange": [
+        177,
+        213
+      ],
+      "summary": "Function createDeviceOptimizedMaterial with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/lib/shader-utils.js:ShaderErrorBoundary",
+      "type": "class",
+      "name": "ShaderErrorBoundary",
+      "filePath": "src/lib/shader-utils.js",
+      "lineRange": [
+        32,
+        67
+      ],
+      "summary": "Class ShaderErrorBoundary with 4 methods and 0 properties.",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/lib/shop/query.js",
+      "type": "file",
+      "name": "query.js",
+      "filePath": "src/lib/shop/query.js",
+      "summary": "query.js: Source file, 3 functions.",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/lib/shop/query.js:getEntries",
+      "type": "function",
+      "name": "getEntries",
+      "filePath": "src/lib/shop/query.js",
+      "lineRange": [
+        27,
+        47
+      ],
+      "summary": "Function getEntries with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/shop/query.js:buildShopSearchParams",
+      "type": "function",
+      "name": "buildShopSearchParams",
+      "filePath": "src/lib/shop/query.js",
+      "lineRange": [
+        49,
+        62
+      ],
+      "summary": "Function buildShopSearchParams with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/shop/query.js:buildShopHref",
+      "type": "function",
+      "name": "buildShopHref",
+      "filePath": "src/lib/shop/query.js",
+      "lineRange": [
+        64,
+        68
+      ],
+      "summary": "Function buildShopHref with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/utils.js",
+      "type": "file",
+      "name": "utils.js",
+      "filePath": "src/lib/utils.js",
+      "summary": "utils.js: Source file, 1 function.",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/utils.js:cn",
+      "type": "function",
+      "name": "cn",
+      "filePath": "src/lib/utils.js",
+      "lineRange": [
+        4,
+        6
+      ],
+      "summary": "Function cn with 1 parameters.",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/webglDetector.js",
+      "type": "file",
+      "name": "webglDetector.js",
+      "filePath": "src/lib/webglDetector.js",
+      "summary": "webglDetector.js: Source file, 1 class.",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/lib/webglDetector.js:WebGLDetector",
+      "type": "class",
+      "name": "WebGLDetector",
+      "filePath": "src/lib/webglDetector.js",
+      "lineRange": [
+        6,
+        81
+      ],
+      "summary": "Class WebGLDetector with 4 methods and 0 properties.",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/proxy.js",
+      "type": "file",
+      "name": "proxy.js",
+      "filePath": "src/proxy.js",
+      "summary": "proxy.js: Source file.",
+      "tags": [
+        "type-definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/styles/design-tokens.css",
+      "type": "file",
+      "name": "design-tokens.css",
+      "filePath": "src/styles/design-tokens.css",
+      "summary": "design-tokens.css: Source file.",
+      "tags": [
+        "markup"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/types/post.d.ts",
+      "type": "file",
+      "name": "post.d.ts",
+      "filePath": "src/types/post.d.ts",
+      "summary": "post.d.ts: Source file.",
+      "tags": [
+        "type-definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:vercel.json",
+      "type": "config",
+      "name": "vercel.json",
+      "filePath": "vercel.json",
+      "summary": "Configuration file for vercel.json defining project settings.",
+      "tags": [
+        "configuration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:webhook-blog-sample.json",
+      "type": "config",
+      "name": "webhook-blog-sample.json",
+      "filePath": "webhook-blog-sample.json",
+      "summary": "Configuration file for webhook-blog-sample.json defining project settings.",
+      "tags": [
+        "configuration",
+        "hook"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/lib/performance.js",
+      "target": "function:src/lib/performance.js:throttle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/performance.js",
+      "target": "function:src/lib/performance.js:throttle",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/performance.js",
+      "target": "function:src/lib/performance.js:debounce",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/performance.js",
+      "target": "function:src/lib/performance.js:debounce",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/performance.js",
+      "target": "function:src/lib/performance.js:rafThrottle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/performance.js",
+      "target": "function:src/lib/performance.js:rafThrottle",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/performance.js",
+      "target": "function:src/lib/performance.js:createRAFBatcher",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/performance.js",
+      "target": "function:src/lib/performance.js:createRAFBatcher",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/post-utils.js",
+      "target": "function:src/lib/post-utils.js:postUrl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/post-utils.js",
+      "target": "function:src/lib/post-utils.js:postUrl",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/post-utils.js",
+      "target": "function:src/lib/post-utils.js:canonicalUrl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/post-utils.js",
+      "target": "function:src/lib/post-utils.js:canonicalUrl",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/seeded-random.js",
+      "target": "function:src/lib/seeded-random.js:seededUnit",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/seeded-random.js",
+      "target": "function:src/lib/seeded-random.js:seededUnit",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/seeded-random.js",
+      "target": "function:src/lib/seeded-random.js:seededBetween",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/seeded-random.js",
+      "target": "function:src/lib/seeded-random.js:seededBetween",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/seeded-random.js",
+      "target": "function:src/lib/seeded-random.js:seededUnit",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/seo-score.js",
+      "target": "function:src/lib/seo-score.js:calculateSEOScore",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/seo-score.js",
+      "target": "function:src/lib/seo-score.js:calculateSEOScore",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/seo.ts",
+      "target": "function:src/lib/seo.ts:absoluteUrl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/seo.ts",
+      "target": "function:src/lib/seo.ts:absoluteUrl",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/seo.ts",
+      "target": "function:src/lib/seo.ts:buildPageMetadata",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/seo.ts",
+      "target": "function:src/lib/seo.ts:buildPageMetadata",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/seo.ts",
+      "target": "function:src/lib/seo.ts:absoluteUrl",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/seo.ts",
+      "target": "function:src/lib/seo.ts:absoluteUrl",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/shader-utils.js",
+      "target": "function:src/lib/shader-utils.js:enableShaderDebug",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/shader-utils.js",
+      "target": "function:src/lib/shader-utils.js:enableShaderDebug",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/shader-utils.js",
+      "target": "function:src/lib/shader-utils.js:validateMaterial",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/shader-utils.js",
+      "target": "function:src/lib/shader-utils.js:validateMaterial",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/shader-utils.js",
+      "target": "function:src/lib/shader-utils.js:createSafePhongMaterial",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/shader-utils.js",
+      "target": "function:src/lib/shader-utils.js:createSafePhongMaterial",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/shader-utils.js",
+      "target": "function:src/lib/shader-utils.js:createFallbackMaterial",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/shader-utils.js",
+      "target": "function:src/lib/shader-utils.js:createFallbackMaterial",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/shader-utils.js",
+      "target": "function:src/lib/shader-utils.js:loadModelSafely",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/shader-utils.js",
+      "target": "function:src/lib/shader-utils.js:loadModelSafely",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/shader-utils.js",
+      "target": "function:src/lib/shader-utils.js:checkWebGLLimits",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/shader-utils.js",
+      "target": "function:src/lib/shader-utils.js:checkWebGLLimits",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/shader-utils.js",
+      "target": "function:src/lib/shader-utils.js:createDeviceOptimizedMaterial",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/shader-utils.js",
+      "target": "function:src/lib/shader-utils.js:createDeviceOptimizedMaterial",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/shader-utils.js",
+      "target": "class:src/lib/shader-utils.js:ShaderErrorBoundary",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/shader-utils.js",
+      "target": "class:src/lib/shader-utils.js:ShaderErrorBoundary",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/shop/query.js",
+      "target": "function:src/lib/shop/query.js:getEntries",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/shop/query.js",
+      "target": "function:src/lib/shop/query.js:buildShopSearchParams",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/shop/query.js",
+      "target": "function:src/lib/shop/query.js:buildShopSearchParams",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/shop/query.js",
+      "target": "function:src/lib/shop/query.js:buildShopHref",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/shop/query.js",
+      "target": "function:src/lib/shop/query.js:buildShopHref",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/shop/query.js",
+      "target": "function:src/lib/shop/query.js:getEntries",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/shop/query.js",
+      "target": "function:src/lib/shop/query.js:buildShopSearchParams",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/utils.js",
+      "target": "function:src/lib/utils.js:cn",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/utils.js",
+      "target": "function:src/lib/utils.js:cn",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/lib/webglDetector.js",
+      "target": "class:src/lib/webglDetector.js:WebGLDetector",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/lib/webglDetector.js",
+      "target": "class:src/lib/webglDetector.js:WebGLDetector",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

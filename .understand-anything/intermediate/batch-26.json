@@ -1,0 +1,113 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/components/ui/Galaxy.css",
+      "type": "file",
+      "name": "Galaxy.css",
+      "filePath": "src/components/ui/Galaxy.css",
+      "summary": "Galaxy.css: Source file.",
+      "tags": [
+        "markup",
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/ui/GradientText.css",
+      "type": "file",
+      "name": "GradientText.css",
+      "filePath": "src/components/ui/GradientText.css",
+      "summary": "GradientText.css: Source file.",
+      "tags": [
+        "markup",
+        "component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/ui/GridScan.css",
+      "type": "file",
+      "name": "GridScan.css",
+      "filePath": "src/components/ui/GridScan.css",
+      "summary": "GridScan.css: Source file.",
+      "tags": [
+        "markup",
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/ui/LightPillar.css",
+      "type": "file",
+      "name": "LightPillar.css",
+      "filePath": "src/components/ui/LightPillar.css",
+      "summary": "LightPillar.css: Source file.",
+      "tags": [
+        "markup",
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/ui/LightRays.css",
+      "type": "file",
+      "name": "LightRays.css",
+      "filePath": "src/components/ui/LightRays.css",
+      "summary": "LightRays.css: Source file.",
+      "tags": [
+        "markup",
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/ui/LiquidEther.css",
+      "type": "file",
+      "name": "LiquidEther.css",
+      "filePath": "src/components/ui/LiquidEther.css",
+      "summary": "LiquidEther.css: Source file.",
+      "tags": [
+        "markup",
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/ui/RippleGrid.css",
+      "type": "file",
+      "name": "RippleGrid.css",
+      "filePath": "src/components/ui/RippleGrid.css",
+      "summary": "RippleGrid.css: Source file.",
+      "tags": [
+        "markup",
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/ui/RotatingText.css",
+      "type": "file",
+      "name": "RotatingText.css",
+      "filePath": "src/components/ui/RotatingText.css",
+      "summary": "RotatingText.css: Source file.",
+      "tags": [
+        "markup",
+        "component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/ui/SoftAurora.css",
+      "type": "file",
+      "name": "SoftAurora.css",
+      "filePath": "src/components/ui/SoftAurora.css",
+      "summary": "SoftAurora.css: Source file.",
+      "tags": [
+        "markup",
+        "component"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": []
+}

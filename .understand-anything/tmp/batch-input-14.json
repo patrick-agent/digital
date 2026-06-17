@@ -1,0 +1,34 @@
+{
+  "projectRoot": "C:\\Users\\Admin\\Desktop\\Website 3D\\studio-3d",
+  "batchFiles": [
+    {
+      "path": "src/components/shop/ProductCard.jsx",
+      "language": "javascript",
+      "sizeLines": 80,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/shop/ProductShelf.jsx",
+      "language": "javascript",
+      "sizeLines": 126,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/shop/ShopClient.jsx",
+      "language": "javascript",
+      "sizeLines": 402,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/components/shop/ProductCard.jsx": [],
+    "src/components/shop/ProductShelf.jsx": [
+      "src/components/shop/ProductCard.jsx",
+      "src/components/shop/ProductShelf.module.css"
+    ],
+    "src/components/shop/ShopClient.jsx": [
+      "src/components/shop/ProductShelf.jsx",
+      "src/components/shop/ShopClient.module.css"
+    ]
+  }
+}

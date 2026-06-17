@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef } from "react";
+import React from "react";
 import { useThree } from "@react-three/fiber";
 import { EffectComposer, Bloom, ChromaticAberration, Noise, Vignette, DepthOfField } from "@react-three/postprocessing";
 import { BlendFunction } from "postprocessing";
@@ -21,8 +21,6 @@ class ComposerErrorBoundary extends React.Component {
 
 function SafeEffectComposer({ children, multisampling = 4 }) {
   const gl = useThree((state) => state.gl);
-  const mountKey = useRef(0);
-  const prevGl = useRef(gl);
 
   if (!gl) return null;
 
@@ -34,14 +32,11 @@ function SafeEffectComposer({ children, multisampling = 4 }) {
   const ctxAttrs = context.getContextAttributes();
   if (!ctxAttrs) return null;
 
-  if (prevGl.current !== gl) {
-    prevGl.current = gl;
-    mountKey.current += 1;
-  }
+  const composerKey = gl.uuid || "default-composer";
 
   return (
     <ComposerErrorBoundary>
-      <EffectComposer key={mountKey.current} multisampling={multisampling}>
+      <EffectComposer key={composerKey} multisampling={multisampling}>
         {children}
       </EffectComposer>
     </ComposerErrorBoundary>

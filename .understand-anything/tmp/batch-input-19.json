@@ -1,0 +1,35 @@
+{
+  "projectRoot": "C:\\Users\\Admin\\Desktop\\Website 3D\\studio-3d",
+  "batchFiles": [
+    {
+      "path": "src/app/glitch.css",
+      "language": "css",
+      "sizeLines": 116,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/app/globals.css",
+      "language": "css",
+      "sizeLines": 440,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/app/legal.module.css",
+      "language": "css",
+      "sizeLines": 89,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/app/page.module.css",
+      "language": "css",
+      "sizeLines": 95,
+      "fileCategory": "markup"
+    }
+  ],
+  "batchImportData": {
+    "src/app/glitch.css": [],
+    "src/app/globals.css": [],
+    "src/app/legal.module.css": [],
+    "src/app/page.module.css": []
+  }
+}

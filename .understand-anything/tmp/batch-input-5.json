@@ -1,0 +1,72 @@
+{
+  "projectRoot": "C:\\Users\\Admin\\Desktop\\Website 3D\\studio-3d",
+  "batchFiles": [
+    {
+      "path": "src/lib/db/events.js",
+      "language": "javascript",
+      "sizeLines": 148,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/events/service/handler.js",
+      "language": "javascript",
+      "sizeLines": 131,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/events/service/handler.test.mjs",
+      "language": "javascript",
+      "sizeLines": 99,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/events/service/http.js",
+      "language": "javascript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/events/service/index.js",
+      "language": "javascript",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/events/service/spec.js",
+      "language": "javascript",
+      "sizeLines": 116,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/lib/events/service/spec.test.mjs",
+      "language": "javascript",
+      "sizeLines": 46,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/lib/db/events.js": [
+      "src/lib/db/io.js",
+      "src/lib/db/slug.js"
+    ],
+    "src/lib/events/service/handler.js": [
+      "src/lib/db/events.js",
+      "src/lib/events/service/spec.js"
+    ],
+    "src/lib/events/service/handler.test.mjs": [
+      "src/lib/events/service/handler.js"
+    ],
+    "src/lib/events/service/http.js": [
+      "src/lib/events/service/spec.js"
+    ],
+    "src/lib/events/service/index.js": [
+      "src/lib/events/service/handler.js"
+    ],
+    "src/lib/events/service/spec.js": [
+      "src/lib/contract/base.js"
+    ],
+    "src/lib/events/service/spec.test.mjs": [
+      "src/lib/events/service/spec.js"
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 5,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/components/artist/bio-music/BioDetailBackground.module.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 7,
+      "nonEmptyLines": 7,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/artist/bio-music/PlatformLink.module.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 50,
+      "nonEmptyLines": 44,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/artist/bio-music/PlatformLinksCard.module.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 12,
+      "nonEmptyLines": 11,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/artist/bio-music/ReleaseCard.module.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 101,
+      "nonEmptyLines": 91,
+      "metrics": {}
+    },
+    {
+      "path": "src/components/artist/bio-music/ReleaseShelf3D.module.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 209,
+      "nonEmptyLines": 184,
+      "metrics": {}
+    }
+  ]
+}
