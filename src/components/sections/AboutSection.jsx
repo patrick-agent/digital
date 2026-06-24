@@ -48,6 +48,7 @@ export default function AboutSection() {
   const { isMobile, isTablet } = useCanvasOptimizer();
   const isSmall = isMobile || isTablet;
   const reducedMotion = usePrefersReducedMotion();
+  const allPanels = [...leftPanelData, ...rightPanelData];
 
   const autoScrollRef = useRef(null);
   const scrollPosRef = useRef(0);

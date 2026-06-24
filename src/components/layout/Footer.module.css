@@ -75,6 +75,7 @@
   z-index: 0;
   pointer-events: none;
   opacity: 0.8;
+  transform: translateX(-36%) translateY(10%) scale(1)
 }
 
 .divider {
@@ -254,6 +255,75 @@
 
   .copyright {
     margin-left: 120px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .footer {
+    margin-top: -200px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin-top: -30px;
+  }
+
+  .brand {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .topSection {
+    justify-content: left;
+    gap: var(--space-lg);
+    width: 100%;
+    text-align: left;
+    padding-top: 30px;
+    line-height: 12px;
+  }
+
+  .linkColumn {
+    text-align: left;
+    width: 20%;
+  }
+
+  .linkColumn:first-child{
+    width: 30%;
+  }
+
+  .linkColumn:last-child{
+    width: 60%;
+  }
+
+  .bottomSection {
+    flex-wrap: wrap;
+    gap: var(--space-lg);
+    justify-content: right;
+  }
+
+  .socialIcons {
+    order: -1;
+    width: 100%;
+    justify-content: left;
+  }
+
+  .copyright {
+    width: 100%;
+    text-align: left;
+  }
+
+  .modelLayer {
+    position: absolute;
+    inset: unset;
+    width: 40%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.8;
+    transform-origin: right center;
   }
 }
 

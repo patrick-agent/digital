@@ -73,7 +73,7 @@ export default function RootLayout({ children }) {
       <body suppressHydrationWarning>
         <SkipLink href="#main-content">Bỏ qua điều hướng tới nội dung chính</SkipLink>
         <link rel="preconnect" href="https://prod.spline.design" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://prod.spline.design" />
         <noscript>
           <iframe

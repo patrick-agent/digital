@@ -393,6 +393,7 @@
   }
 
   .characterWrapper {
+    display: none;
     height: 30vh;
   }
 

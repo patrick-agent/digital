@@ -389,8 +389,12 @@
    RESPONSIVE — Mobile
    ============================================ */
 @media (max-width: 640px) {
+  .hero {
+    min-height: 40vh;
+  }
+
   .heroInner {
-    padding: 100px var(--space-md) 0;
+    padding: 80px var(--space-md) 20px;
     gap: var(--space-xl);
   }
 
@@ -400,6 +404,7 @@
     background: rgba(6, 6, 8, 0.5);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
   }
 
   .headline {
@@ -429,6 +434,7 @@
   }
 
   .characterOverlay {
+    display: none;
     height: 55vh;
     align-items: center;
     margin-top: 0;

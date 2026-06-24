@@ -17,7 +17,7 @@ const BreakdanceCharacterCanvas = dynamic(
 const degToRad = (deg) => (deg * Math.PI) / 180;
 
 const SECTION_CONFIG = {
-  startPos: { x: -80, y: -15, z: 0 },
+  startPos: { x: -100, y: 30, z: -50 },
   startRot: { x: 0, y: degToRad(45), z: 0 },
   startScale: { x: 1.0, y: 1.0, z: 1.0 },
 };

@@ -568,11 +568,12 @@
 @media (max-width: 640px) {
   .contact {
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   .contactContent {
     padding-top: 32px;
+    min-height: 50vh;
   }
 
   .uiOverlay {
@@ -589,6 +590,7 @@
   }
 
   .scrollTrackOverlay {
+    margin: 0;
     padding: 6px var(--space-sm);
   }
 

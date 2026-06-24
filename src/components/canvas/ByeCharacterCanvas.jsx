@@ -1,8 +1,19 @@
 import React, { Suspense, useEffect, useMemo, useRef } from 'react';
-import { Canvas, useFrame } from '@react-three/fiber';
+import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { useGLTF } from '@react-three/drei';
 import * as THREE from 'three';
 import { SkeletonUtils } from 'three-stdlib';
+
+function CameraSetup() {
+  const { camera } = useThree();
+  useEffect(() => {
+    camera.position.set(25, 80, 150);
+    camera.fov = 35;
+    camera.updateProjectionMatrix();
+    camera.lookAt(0, 80, 0);
+  }, [camera]);
+  return null;
+}
 
 function ByeModel() {
   const { scene, animations } = useGLTF('/models/bye.glb');
@@ -51,8 +62,6 @@ function ByeModel() {
   return <primitive object={modelScene} />;
 }
 
-const CAM_TARGET = [95, 95, 0];
-
 function Scene() {
   const groupRef = useRef();
 
@@ -76,9 +85,6 @@ export default function ByeCharacterCanvas() {
     <div style={{ width: '100%', height: '100%', position: 'relative', minHeight: '200px' }}>
       <Canvas
         camera={{ position: [25, 80, 150], fov: 35, near: 0.1, far: 1000 }}
-        onCreated={({ camera }) => {
-          camera.lookAt(...CAM_TARGET);
-        }}
         style={{
           width: '100%',
           height: '100%',
@@ -89,7 +95,9 @@ export default function ByeCharacterCanvas() {
         }}
         gl={{ alpha: true, antialias: true, powerPreference: 'low-power' }}
         dpr={[1, 1.5]}
+        frameloop="always"
       >
+        <CameraSetup />
         <Scene />
       </Canvas>
     </div>

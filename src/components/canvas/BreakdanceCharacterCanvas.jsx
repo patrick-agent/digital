@@ -1,12 +1,23 @@
 "use client";
 
 import React, { forwardRef, useEffect, useMemo, useRef } from 'react';
-import { Canvas, useFrame } from '@react-three/fiber';
+import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { useGLTF } from '@react-three/drei';
 import * as THREE from 'three';
 import { SkeletonUtils } from 'three-stdlib';
 import { useCanvasOptimizer } from '@/hooks/useCanvasOptimizer';
 import GlowBackground from './GlowBackground';
+
+function CameraSetup({ fov }) {
+  const { camera } = useThree();
+  useEffect(() => {
+    camera.position.set(0, 35, 110);
+    camera.fov = fov;
+    camera.updateProjectionMatrix();
+    camera.lookAt(0, 70, 0);
+  }, [camera, fov]);
+  return null;
+}
 
 function MouseParticles() {
   const particlesRef = useRef([]);
@@ -141,18 +152,19 @@ const BreakdanceCharacterCanvas = forwardRef(({
   const groupRef = useRef();
   const { containerRef, devicePixelRatio, getResponsiveFov } = useCanvasOptimizer({ threshold: 0 });
 
+  const fov = getResponsiveFov(45);
+
   return (
     <div ref={containerRef} style={{ width: '100%', height: '100%' }}>
       {sectionVisible && <Canvas
         shadows={!isMobile}
-        camera={{ position: [0, 35, 110], fov: getResponsiveFov(45), near: 0.1, far: 1000 }}
-        onCreated={({ camera }) => {
-          camera.lookAt(125, 70, 0);
-        }}
+        camera={{ position: [0, 35, 110], fov, near: 0.1, far: 1000 }}
         style={{ background: 'transparent', pointerEvents: 'auto', width: '100%', height: '100%' }}
         gl={{ alpha: true, antialias: !isMobile, powerPreference: 'high-performance' }}
         dpr={devicePixelRatio}
+        frameloop="always"
       >
+        <CameraSetup fov={fov} />
         <GlowBackground color="#c084fc" secondaryColor="#a200ff" intensity={0.3} radius={10} />
         {!isMobile && <MouseParticles />}
         <RotatingLightRing />
