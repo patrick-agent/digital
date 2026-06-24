@@ -1,6 +1,22 @@
 import { readJSON, writeJSON } from "./io.js"
 import { slugify, generateUniqueSlug } from "./slug.js"
 
+function resolveBlogPublishedAtForCreate(data, now) {
+  if (data.publishedAt) return data.publishedAt
+  return data.status === "published" ? now : null
+}
+
+function resolveBlogPublishedAtForUpdate(existing, data, now) {
+  if (data.publishedAt) return data.publishedAt
+
+  const nextStatus = data.status || existing.status
+  if (nextStatus === "published" && !existing.publishedAt) {
+    return now
+  }
+
+  return existing.publishedAt || null
+}
+
 export async function readPosts(filters = {}) {
   let posts = await readJSON("blog.json")
   const { status, search, persona, category, page = 1, limit = 50 } = filters
@@ -34,13 +50,13 @@ export async function readPost(idOrSlug) {
 
 export async function createPost(data) {
   const posts = await readJSON("blog.json")
+  const now = new Date().toISOString()
 
   const slug = await generateUniqueSlug(
-    data.slug || slugify(data.title),
+    data.slug || slugify(data.title, "untitled"),
     posts
   )
 
-  const now = new Date().toISOString()
   const post = {
     id: crypto.randomUUID(),
     title: data.title || "",
@@ -52,7 +68,7 @@ export async function createPost(data) {
     tags: data.tags || [],
     category: data.category || "",
     status: data.status || "draft",
-    publishedAt: data.publishedAt || null,
+    publishedAt: resolveBlogPublishedAtForCreate(data, now),
     seoTitle: data.seoTitle || "",
     seoDescription: data.seoDescription || "",
     seoKeywords: data.seoKeywords || [],
@@ -72,18 +88,22 @@ export async function updatePost(id, data) {
   if (index === -1) return null
 
   const existing = posts[index]
+  const now = new Date().toISOString()
 
-  if (data.title || data.slug) {
-    const newSlug = data.slug || slugify(data.title || existing.title)
-    data.slug = await generateUniqueSlug(newSlug, posts, id)
-  }
+  const nextSlug = data.slug
+    ? await generateUniqueSlug(data.slug, posts, id)
+    : existing.slug || await generateUniqueSlug(slugify(data.title || existing.title, "untitled"), posts, id)
+
+  const nextPublishedAt = resolveBlogPublishedAtForUpdate(existing, data, now)
 
   posts[index] = {
     ...existing,
     ...data,
+    slug: nextSlug,
+    publishedAt: nextPublishedAt,
     id: existing.id,
     createdAt: existing.createdAt,
-    updatedAt: new Date().toISOString(),
+    updatedAt: now,
   }
 
   await writeJSON("blog.json", posts)

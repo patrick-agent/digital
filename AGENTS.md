@@ -169,7 +169,7 @@ function onSheetChange() {
 
   const options = {
     method: "post",
-    headers: { "x-api-key": "997a5749-e68d-4b5c-8afa-ca3c710f214c" },
+    headers: { "x-api-key": "<AUTOMATION_API_KEY>" },
     contentType: "application/json",
     payload: JSON.stringify({ rows }),
   }

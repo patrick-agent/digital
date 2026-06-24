@@ -3,6 +3,7 @@
 import { useState, useCallback } from "react"
 import { useRouter } from "next/navigation"
 import RichTextEditor from "@/components/admin/RichTextEditor"
+import { slugify } from "@/lib/db/slug"
 
 const STATUS_OPTIONS = [
   { value: "draft", label: "Draft" },
@@ -44,7 +45,7 @@ export default function CaseStudiesForm({ item }) {
     setForm((prev) => {
       const next = { ...prev, [field]: value }
       if (field === "title" && !slugManuallyEdited) {
-        next.slug = value.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")
+        next.slug = slugify(value, "")
       }
       return next
     })

@@ -51,7 +51,7 @@ export default function ContactForm() {
   };
 
   if (formStatus === "success") {
-    return <div className={styles.successMessage}>Cảm ơn bạn! Tin nhắn đã được gửi thành công.</div>;
+    return <div className={styles.successMessage}>Cảm ơn bạn! Tin nhắn đã được ghi nhận thành công.</div>;
   }
 
   return (

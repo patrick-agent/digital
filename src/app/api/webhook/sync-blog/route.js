@@ -2,6 +2,7 @@ import { NextResponse } from "next/server"
 import { validateApiKey } from "@/lib/api-auth"
 import { createBlogPost, updateBlogPost, listBlogPosts } from "@/lib/blog/service"
 import { notifyPublishedBlogPost } from "@/lib/blog-indexing"
+import { slugify } from "@/lib/db/slug"
 
 const SHEET_STATUS_PUBLIC = "public"
 const BLOG_PERSONA = "artist"
@@ -13,12 +14,6 @@ function parseTags(value) {
 }
 
 function mapRowToPost(row) {
-  console.log('--- mapRowToPost ---')
-  console.log('Incoming row keys:', Object.keys(row))
-  console.log('row.content length:', row.content?.length)
-  console.log('row.content preview:', row.content?.slice(0, 300))
-  console.log('Incoming row:', JSON.stringify(row, null, 2))
-
   const status = String(row.status || "").toLowerCase() === SHEET_STATUS_PUBLIC ? "published" : "draft"
 
   const title = String(row.title || "").trim() || "Untitled"
@@ -31,9 +26,6 @@ function mapRowToPost(row) {
   const seoTitle = String(row.seoTitle || row.seo_title || title).trim()
   const seoDescription = String(row.seoDescription || row.seo_description || row.excerpt || "").trim()
   const seoKeywords = parseTags(row.seoKeywords || row.seo_keywords)
-
-  console.log('Mapped content:', JSON.stringify(content?.slice(0, 200)))
-  console.log('Mapped image:', coverImage)
 
   const post = {
     title,
@@ -50,7 +42,6 @@ function mapRowToPost(row) {
   }
 
   if (slug) post.slug = slug
-  if (status === "published") post.publishedAt = new Date().toISOString()
 
   return post
 }
@@ -83,13 +74,12 @@ export async function POST(request) {
           continue
         }
 
-        const slug = postData.slug || postData.title.toLowerCase().replace(/\s+/g, "-").replace(/[^\w-]+/g, "")
+        const slug = postData.slug || slugify(postData.title, "untitled")
         const existing = existingPosts.find(
           (p) => p.slug === slug || p.title === postData.title
         )
 
         if (existing) {
-          console.log('Final post content length:', postData.content?.length, '| slug:', slug)
           const result = await updateBlogPost({ id: existing.id, ...postData, slug: existing.slug })
           if (!result.success) throw new Error(result.error.message)
           const post = result.data

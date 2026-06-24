@@ -3,7 +3,8 @@ import path from "path"
 import { fileURLToPath } from "url"
 import { existsSync } from "fs"
 import { readFile } from "fs/promises"
-import { createPost, updatePost, readPost, readPosts } from "../src/lib/db-cli.mjs"
+import { createBlogPost, updateBlogPost, listBlogPosts } from "../src/lib/blog/service/index.js"
+import { slugify } from "../src/lib/db/slug.js"
 
 const SHEET_STATUS_PUBLIC = "public"
 const BLOG_PERSONA = "artist"
@@ -72,7 +73,6 @@ function mapRowToPost(row, columnMap) {
   }
 
   if (raw.slug) post.slug = raw.slug
-  if (status === "published") post.publishedAt = new Date().toISOString()
 
   return post
 }
@@ -110,6 +110,8 @@ async function getSheetDataFromRows(rows) {
 
 async function syncToBlog(sheetRows, columnMap, dryRun = false) {
   const results = { created: 0, updated: 0, skipped: 0, errors: [] }
+  const existingResult = await listBlogPosts({ persona: BLOG_PERSONA, limit: 9999 })
+  const existingPosts = existingResult.success ? [...existingResult.data.items] : []
 
   for (const row of sheetRows) {
     try {
@@ -120,8 +122,7 @@ async function syncToBlog(sheetRows, columnMap, dryRun = false) {
         continue
       }
 
-      const existingPosts = (await readPosts({ persona: BLOG_PERSONA })).data
-      const slug = postData.slug || postData.title.toLowerCase().replace(/\s+/g, "-").replace(/[^\w-]+/g, "")
+      const slug = postData.slug || slugify(postData.title, "untitled")
       const existing = existingPosts.find(
         (p) => p.slug === slug || p.title === postData.title
       )
@@ -130,7 +131,8 @@ async function syncToBlog(sheetRows, columnMap, dryRun = false) {
         if (dryRun) {
           console.log(`[DRY-RUN] Would update: "${postData.title}" (${existing.id})`)
         } else {
-          await updatePost(existing.id, { ...postData, slug: existing.slug })
+          const result = await updateBlogPost({ id: existing.id, ...postData, slug: existing.slug })
+          if (!result.success) throw new Error(result.error.message)
           console.log(`[UPDATE] "${postData.title}" (${existing.id})`)
           results.updated++
         }
@@ -138,7 +140,10 @@ async function syncToBlog(sheetRows, columnMap, dryRun = false) {
         if (dryRun) {
           console.log(`[DRY-RUN] Would create: "${postData.title}"`)
         } else {
-          const created = await createPost(postData)
+          const result = await createBlogPost(postData)
+          if (!result.success) throw new Error(result.error.message)
+          const created = result.data
+          existingPosts.push(created)
           console.log(`[CREATE] "${created.title}" (${created.id})`)
           results.created++
         }

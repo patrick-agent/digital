@@ -6,6 +6,12 @@ import {
   BaseFailureSchema, LookupInputSchema,
 } from "../../contract/base.js"
 
+const optionalNullableTrimmedString = z.union([z.string(), z.null()]).optional().transform((value) => {
+  if (value === null || value === undefined) return undefined
+  const trimmed = value.trim()
+  return trimmed || undefined
+})
+
 export const BlogSchema = z.object({
   id: z.string(),
   title: z.string(),
@@ -35,7 +41,7 @@ export const CreateBlogInputSchema = z.object({
   tags: z.array(z.string()).optional(),
   category: optionalTrimmedString,
   status: optionalTrimmedString,
-  publishedAt: optionalTrimmedString,
+  publishedAt: optionalNullableTrimmedString,
   seoTitle: optionalTrimmedString,
   seoDescription: optionalTrimmedString,
   seoKeywords: z.array(z.string()).optional(),
@@ -52,7 +58,7 @@ export const UpdateBlogInputSchema = z.object({
   tags: z.array(z.string()).optional(),
   category: optionalTrimmedString,
   status: optionalTrimmedString,
-  publishedAt: optionalTrimmedString,
+  publishedAt: optionalNullableTrimmedString,
   seoTitle: optionalTrimmedString,
   seoDescription: optionalTrimmedString,
   seoKeywords: z.array(z.string()).optional(),

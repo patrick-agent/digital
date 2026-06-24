@@ -6,6 +6,7 @@ import Link from "next/link"
 import { Copy, Eye } from "lucide-react"
 import RichTextEditor from "./RichTextEditor"
 import { calculateSEOScore } from "@/lib/seo-score"
+import { slugify } from "@/lib/db/slug"
 
 const STATUS_OPTIONS = [
   { value: "draft", label: "Draft" },
@@ -113,10 +114,7 @@ export default function BlogForm({ post }) {
       setForm((prev) => {
         const next = { ...prev, [field]: value }
         if (field === "title" && !slugManuallyEdited) {
-          next.slug = value
-            .toLowerCase()
-            .replace(/[^a-z0-9]+/g, "-")
-            .replace(/^-|-$/g, "")
+          next.slug = slugify(value, "")
         }
         return next
       })

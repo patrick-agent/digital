@@ -6,6 +6,7 @@ import {
   SiSpotify, SiYoutube, SiApplemusic, SiSoundcloud, SiTidal, SiYoutubemusic,
 } from "react-icons/si"
 import { Music, Upload, X, Link2, ImageIcon } from "lucide-react"
+import { slugify } from "@/lib/db/slug"
 
 const TYPE_OPTIONS = [
   { value: "album", label: "Album" },
@@ -75,7 +76,7 @@ export default function MusicForm({ item }) {
     setForm((prev) => {
       const next = { ...prev, [field]: value }
       if (field === "title" && !slugManuallyEdited) {
-        next.slug = value.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")
+        next.slug = slugify(value, "")
       }
       if (field === "coverArt") {
         setCoverPreview(value)

@@ -1,5 +1,6 @@
 import { readProduct, readProducts } from "../../db.js"
 import { stripHtml, syncDescriptionPrice } from "../presentation.js"
+import { sanitizeShopFaqEntries, sanitizeShopRichText } from "../public-html.js"
 import {
   PublicCatalogListInputSchema,
   PublicCatalogListResultSchema,
@@ -67,7 +68,9 @@ async function readAllPublicProducts() {
   const { data } = await readProducts({ status: "active", limit: PUBLIC_CATALOG_LIMIT })
   return PublicProductSchema.array().parse(data || []).map((product) => ({
     ...product,
-    description: syncDescriptionPrice(product.description, product.price, product.currency),
+    description: sanitizeShopRichText(syncDescriptionPrice(product.description, product.price, product.currency)),
+    whyRecommend: sanitizeShopRichText(product.whyRecommend),
+    faq: sanitizeShopFaqEntries(product.faq),
   }))
 }
 
@@ -155,7 +158,9 @@ export class PublicCatalogHandler {
           data: {
             product: {
               ...PublicProductSchema.parse(product),
-              description: syncDescriptionPrice(product.description, product.price, product.currency),
+              description: sanitizeShopRichText(syncDescriptionPrice(product.description, product.price, product.currency)),
+              whyRecommend: sanitizeShopRichText(product.whyRecommend),
+              faq: sanitizeShopFaqEntries(product.faq),
             },
           },
         })

@@ -12,6 +12,8 @@
     "test:events": "node --test src/lib/events/service/spec.test.mjs src/lib/events/service/handler.test.mjs",
     "test:music": "node --test src/lib/music/service/spec.test.mjs src/lib/music/service/handler.test.mjs",
     "test:admin-slices": "node --test src/lib/services/service/spec.test.mjs src/lib/services/service/handler.test.mjs src/lib/events/service/spec.test.mjs src/lib/events/service/handler.test.mjs src/lib/music/service/spec.test.mjs src/lib/music/service/handler.test.mjs",
+    "test:hardening": "node --test src/lib/db/slug.test.mjs src/lib/db/io.test.mjs src/lib/db/blog.test.mjs src/lib/shop/public-html.test.mjs src/lib/contact-submissions.test.mjs",
+    "validate:data": "node scripts/validate-db-json.mjs",
     "analyze": "node scripts/analyze-bundle.mjs",
     "models:analyze": "node scripts/compress-models.mjs",
     "models:compress": "node scripts/compress-models.mjs compress",

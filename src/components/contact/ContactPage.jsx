@@ -205,9 +205,9 @@ export default function ContactPageClient() {
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
                 </div>
-                <h3 className={styles.successTitle}>Message Sent!</h3>
+                <h3 className={styles.successTitle}>Message Received</h3>
                 <p className={styles.successText}>
-                  Thank you for reaching out. I&apos;ll get back to you as soon as possible.
+                  Thank you for reaching out. Your message has been received and I&apos;ll get back to you as soon as possible.
                 </p>
                 <button onClick={handleReset} className={styles.resetBtn}>
                   Send Another Message

@@ -3,6 +3,7 @@
 import { useState, useCallback } from "react"
 import { useRouter } from "next/navigation"
 import RichTextEditor from "./RichTextEditor"
+import { slugify } from "@/lib/db/slug"
 
 const STATUS_OPTIONS = [
   { value: "active", label: "Active" },
@@ -71,10 +72,7 @@ export default function ShopForm({ product }) {
         const next = { ...prev, [field]: value }
 
         if (field === "name" && !slugManuallyEdited) {
-          next.slug = value
-            .toLowerCase()
-            .replace(/[^a-z0-9]+/g, "-")
-            .replace(/^-|-$/g, "")
+          next.slug = slugify(value, "")
         }
 
         return next

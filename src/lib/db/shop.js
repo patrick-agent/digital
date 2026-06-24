@@ -35,7 +35,7 @@ export async function createProduct(data) {
   const products = await readJSON("shop.json")
 
   const slug = await generateUniqueSlug(
-    data.slug || slugify(data.name),
+    data.slug || slugify(data.name, "untitled-product"),
     products
   )
 
@@ -76,14 +76,14 @@ export async function updateProduct(id, data) {
 
   const existing = products[index]
 
-  if (data.name || data.slug) {
-    const newSlug = data.slug || slugify(data.name || existing.name)
-    data.slug = await generateUniqueSlug(newSlug, products, id)
-  }
+  const nextSlug = data.slug
+    ? await generateUniqueSlug(data.slug, products, id)
+    : existing.slug || await generateUniqueSlug(slugify(data.name || existing.name, "untitled-product"), products, id)
 
   products[index] = {
     ...existing,
     ...data,
+    slug: nextSlug,
     id: existing.id,
     createdAt: existing.createdAt,
     updatedAt: new Date().toISOString(),

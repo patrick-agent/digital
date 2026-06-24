@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from "react"
 import { useRouter } from "next/navigation"
+import { slugify } from "@/lib/db/slug"
 
 const STATUS_OPTIONS = [
   { value: "active", label: "Active" },
@@ -38,7 +39,7 @@ export default function ServicesForm({ item }) {
     setForm((prev) => {
       const next = { ...prev, [field]: value }
       if (field === "serviceName" && !slugManuallyEdited) {
-        next.slug = value.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")
+        next.slug = slugify(value, "")
       }
       return next
     })
