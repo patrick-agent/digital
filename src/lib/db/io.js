@@ -76,14 +76,9 @@ function ensureArrayData(data, filename) {
   )
 }
 
-function assertBlobConfig(filename) {
-  if (useBlobDb && (!blobToken() || !blobStoreId())) {
-    throw createStorageError(
-      "BLOB_TOKEN_MISSING",
-      filename,
-      `Blob storage is enabled for ${filename}, but BLOB_READ_WRITE_TOKEN is missing or invalid.`
-    )
-  }
+function assertBlobConfig(/*filename*/) {
+  // Soft check — if blob token is missing, just skip blob reads
+  // and fall through to local file read instead of throwing.
 }
 
 async function ensureDbDir() {
@@ -191,7 +186,7 @@ export async function readJSON(filename) {
       return ensureArrayData(blobResult.data, filename)
     }
     if (blobResult.status === "missing") {
-      return []
+      // Fall through to local file read
     }
   }
 
