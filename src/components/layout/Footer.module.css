@@ -75,7 +75,7 @@
   z-index: 0;
   pointer-events: none;
   opacity: 0.8;
-  transform: translateX(-36%) translateY(10%) scale(1)
+  transform: translateX(-27%) translateY(10%) scale(1)
 }
 
 .divider {
@@ -97,7 +97,7 @@
 
 .topSection {
   display: flex;
-  gap: 20px;
+  gap: 40px;
   line-height: 14px;
 }
 
@@ -149,7 +149,7 @@
 .othersGrid {
   display: grid;
   grid-template-columns: 2fr 2fr;
-  gap: 0 20px;
+  gap: 0 40px;
 }
 
 .linkColumn a:hover {
@@ -234,12 +234,11 @@
 
   .brand {
     flex: 0 0 500px;
-    margin-left: 300px;
   }
 
   .topSection {
     flex: 1;
-    justify-content: flex-end;
+    justify-content: center;
   }
 
   .bottomSection {
@@ -249,12 +248,8 @@
     align-items: center;
   }
 
-  .socialIcons {
-    margin-left: 350px;
-  }
-
   .copyright {
-    margin-left: 120px;
+    margin-left: auto;
   }
 }
 
