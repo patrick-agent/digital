@@ -42,8 +42,6 @@ export const metadata = {
   verification: {
     google: "rmZiW-EkmfQCHQr7kdW4m4G7Ie9_Dzlu3hpc_KCsrho",
   },
-  theme: "light",
-  colorScheme: ["light", "dark"],
   openGraph: {
     title: "Tachy | Indie Artist, Music Producer & Home Studio Blog",
     description: siteDescription,
@@ -85,7 +83,6 @@ export default function RootLayout({ children }) {
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
-        <meta name="color-scheme" content="light dark" />
         <div id="main-content">{children}</div>
         <script
           type="application/ld+json"

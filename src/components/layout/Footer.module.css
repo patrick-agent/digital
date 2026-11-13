@@ -69,7 +69,14 @@
   }
 }
 
-/* .modelLayer removed - 3D model no longer displayed */
+.modelLayer {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.8;
+  transform: translateX(-27%) translateY(10%) scale(1)
+}
 
 .divider {
   position: absolute;
@@ -301,7 +308,18 @@
     text-align: left;
   }
 
-  /* .modelLayer removed - 3D model no longer displayed */
+  .modelLayer {
+    position: absolute;
+    inset: unset;
+    width: 40%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.8;
+    transform-origin: right center;
+  }
 }
 
 @media (min-width: 641px) and (max-width: 1024px) {
@@ -357,6 +375,10 @@
   .copyright {
     width: 100%;
     text-align: left;
+  }
+
+  .modelLayer {
+    display: none;
   }
 }
 
@@ -436,5 +458,9 @@
   .backToTop {
     width: 40px;
     height: 40px;
+  }
+
+  .modelLayer {
+    display: none;
   }
 }

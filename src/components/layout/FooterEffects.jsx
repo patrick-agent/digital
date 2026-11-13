@@ -5,6 +5,11 @@ import { Canvas } from "@react-three/fiber";
 import ParticleField from "../canvas/ParticleField";
 import { useCanvasOptimizer } from "@/hooks/useCanvasOptimizer";
 
+const ByeCharacterCanvas = dynamic(
+  () => import("../canvas/ByeCharacterCanvas"),
+  { ssr: false, loading: () => null }
+);
+
 function ParticleBackground({ isMobile }) {
   const { devicePixelRatio, isVisible } = useCanvasOptimizer({ threshold: 0 });
   const particleCount = isMobile ? 30 : 60;
@@ -30,12 +35,17 @@ function ParticleBackground({ isMobile }) {
   );
 }
 
-export default function FooterEffects({ canvasClassName }) {
+export default function FooterEffects({ canvasClassName, modelClassName }) {
   const { isMobile } = useCanvasOptimizer();
 
   return (
-    <div className={canvasClassName}>
-      <ParticleBackground isMobile={isMobile} />
-    </div>
+    <>
+      <div className={canvasClassName}>
+        <ParticleBackground isMobile={isMobile} />
+      </div>
+      <div className={modelClassName}>
+        <ByeCharacterCanvas />
+      </div>
+    </>
   );
 }
