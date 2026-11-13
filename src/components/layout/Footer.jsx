@@ -77,7 +77,6 @@ export default function Footer({ settings }) {
       {visible && (
         <FooterEffects
           canvasClassName={styles.canvasLayer}
-          modelClassName={styles.modelLayer}
         />
       )}
       <div className={styles.content}>
