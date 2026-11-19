@@ -7,6 +7,20 @@ import sanitizeHtml from "sanitize-html"
 import { getArticleHeadings, getArticleRenderMode, getArticleSource } from "@/lib/article-content"
 import styles from "./ArticleBody.module.css"
 
+const ALLOWED_EMBED_HOSTS = [
+  "youtube.com",
+  "www.youtube-nocookie.com",
+  "vimeo.com",
+  "player.vimeo.com",
+  "open.spotify.com",
+  "w.soundcloud.com",
+  "embed.music.apple.com",
+  "music.amazon.com",
+  "bandcamp.com",
+  "player.twitch.tv",
+  "embed.ted.com",
+]
+
 const htmlSanitizeOptions = {
   allowedTags: [
     ...new Set([
@@ -22,6 +36,7 @@ const htmlSanitizeOptions = {
       "th",
       "td",
       "del",
+      "iframe",
     ]),
   ],
   allowedAttributes: {
@@ -29,6 +44,7 @@ const htmlSanitizeOptions = {
     "*": ["id", "title"],
     a: ["href", "name", "target", "rel", "title"],
     img: ["src", "srcset", "alt", "title", "width", "height", "loading", "decoding"],
+    iframe: ["src", "width", "height", "title", "frameborder", "allow", "allowfullscreen", "loading", "referrerpolicy", "scrolling", "style"],
     code: ["class"],
     pre: ["class"],
     th: ["colspan", "rowspan", "align"],
@@ -41,8 +57,28 @@ const htmlSanitizeOptions = {
   allowedSchemes: ["http", "https", "mailto", "tel"],
   allowedSchemesByTag: {
     img: ["http", "https", "data"],
+    iframe: ["http", "https"],
   },
   allowProtocolRelative: false,
+  allowedIframeHostnames: [
+    "www.youtube.com",
+    "youtube.com",
+    "www.youtube-nocookie.com",
+    "player.vimeo.com",
+    "open.spotify.com",
+    "w.soundcloud.com",
+    "embed.music.apple.com",
+    "bandcamp.com",
+    "player.twitch.tv",
+    "embed.ted.com",
+  ],
+  exclusiveFilter: (tagName, attribs) => {
+    if (tagName !== "iframe") return false
+    const src = attribs.src || ""
+    const host = /^https?:\/\/([^/]+)/i.exec(src)?.[1] || ""
+    const ok = ALLOWED_EMBED_HOSTS.some((h) => host === h || host.endsWith("." + h))
+    return !ok
+  },
   transformTags: {
     a: (tagName, attribs) => {
       if (!attribs.href) return { tagName, attribs }
@@ -74,6 +110,7 @@ const markdownSanitizeSchema = {
       "th",
       "td",
       "del",
+      "iframe",
     ]),
   ],
   attributes: {
@@ -85,6 +122,7 @@ const markdownSanitizeSchema = {
     h3: [...(defaultSchema.attributes?.h3 || []), "id"],
     h4: [...(defaultSchema.attributes?.h4 || []), "id"],
     img: ["src", "alt", "title", "width", "height", "loading", "decoding"],
+    iframe: ["src", "width", "height", "title", "frameBorder", "allow", "allowFullScreen", "loading", "referrerPolicy", "scrolling", "style"],
     th: [...(defaultSchema.attributes?.th || []), "align"],
     td: [...(defaultSchema.attributes?.td || []), "align"],
   },
@@ -152,7 +190,23 @@ function splitInlineLabels(html) {
 
 function sanitizeArticleHtml(content) {
   const sanitized = sanitizeHtml(content, htmlSanitizeOptions)
-  return wrapTables(enhanceImages(splitInlineLabels(mergeAdjacentLists(sanitized))))
+  return wrapTables(enhanceImages(splitInlineLabels(mergeAdjacentLists(wrapIframes(sanitized)))))
+}
+
+function wrapIframes(html) {
+  return html.replace(
+    /<iframe\b([^>]*?)(\/?)>[\s\S]*?<\/iframe>/gi,
+    (match, attrs) => {
+      // Xoá hẳn iframe không có src (host không được phép đã bị sanitize-html cắt src)
+      if (!/src\s*=/i.test(attrs)) return ""
+      const width = attrs.match(/\bwidth=["']?(\d+)/i)?.[1]
+      const height = attrs.match(/\bheight=["']?(\d+)/i)?.[1]
+      const ratio = width && height ? `${width} / ${height}` : "16 / 9"
+      const hasLoading = /\bloading\s*=/i.test(attrs)
+      const tag = hasLoading ? match : match.replace("<iframe", '<iframe loading="lazy"')
+      return `<div class="articleEmbed" style="aspect-ratio:${ratio}">${tag}</div>`
+    }
+  )
 }
 
 function renderTable({ node: _node, ...props }) {
@@ -223,6 +277,17 @@ export default function ArticleBody({ content }) {
                 rel={isExternal ? rel || "noopener noreferrer" : rel}
                 {...props}
               />
+            )
+          },
+          iframe: function renderIframe({ node: _node, ...props }) {
+            void _node
+            const width = Number(props.width || props.widthAttribute || "")
+            const height = Number(props.height || props.heightAttribute || "")
+            const ratio = width && height ? `${width} / ${height}` : "16 / 9"
+            return (
+              <div className="articleEmbed" style={{ aspectRatio: ratio }}>
+                <iframe {...props} loading={props.loading || "lazy"} />
+              </div>
             )
           },
         }}

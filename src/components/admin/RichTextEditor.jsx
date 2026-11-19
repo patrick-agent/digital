@@ -5,6 +5,7 @@ import StarterKit from "@tiptap/starter-kit"
 import Image from "@tiptap/extension-image"
 import LinkExtension from "@tiptap/extension-link"
 import Placeholder from "@tiptap/extension-placeholder"
+import { Iframe } from "./extensions/Iframe"
 import { useEffect, useRef, useState } from "react"
 import {
   Bold,
@@ -193,6 +194,7 @@ export default function RichTextEditor({ content, onChange }) {
       Placeholder.configure({
         placeholder: "Start writing your post content…",
       }),
+      Iframe,
     ],
     content: content || "",
     onUpdate: ({ editor }) => {
@@ -228,6 +230,62 @@ export default function RichTextEditor({ content, onChange }) {
     if (url) {
       editor.chain().focus().setLink({ href: url }).run()
     }
+  }
+
+  const addEmbed = () => {
+    const url = prompt("Paste URL (YouTube, Vimeo, Spotify, SoundCloud…) hoặc mã <iframe>:")
+    if (!url) return
+
+    const normalized = normalizeEmbedUrl(url)
+    if (!normalized) {
+      alert("URL không được hỗ trợ. Hãy dùng YouTube, Vimeo, Spotify, SoundCloud…")
+      return
+    }
+
+    const { src, width, height, title } = normalized
+    editor.chain().focus().insertContent([{ type: "iframe", attrs: { src, width, height, title } }]).run()
+  }
+
+  function normalizeEmbedUrl(input) {
+    const trimmed = input.trim()
+    if (/^<iframe\b/i.test(trimmed)) {
+      const parser = new DOMParser()
+      const doc = parser.parseFromString(trimmed, "text/html")
+      const iframe = doc.querySelector("iframe")
+      if (!iframe) return null
+      return {
+        src: iframe.getAttribute("src") || "",
+        width: iframe.getAttribute("width") || "560",
+        height: iframe.getAttribute("height") || "315",
+        title: iframe.getAttribute("title") || "",
+      }
+    }
+
+    const url = new URL(trimmed)
+
+    if (url.hostname.includes("youtube.com")) {
+      const id = url.searchParams.get("v")
+      if (id) return { src: `https://www.youtube.com/embed/${id}`, width: "560", height: "315", title: "YouTube embed" }
+    }
+    if (url.hostname === "youtu.be") {
+      const id = url.pathname.replace(/\//g, "")
+      return { src: `https://www.youtube.com/embed/${id}`, width: "560", height: "315", title: "YouTube embed" }
+    }
+
+    if (url.hostname === "open.spotify.com") {
+      const match = url.pathname.match(/\/(track|album|playlist)\/([a-zA-Z0-9]+)/)
+      if (match) return { src: `https://open.spotify.com/embed/${match[1]}/${match[2]}`, width: "560", height: "380", title: "Spotify embed" }
+    }
+
+    if (url.hostname.includes("soundcloud.com")) {
+      return { src: `https://w.soundcloud.com/player/?url=${encodeURIComponent(trimmed)}`, width: "560", height: "315", title: "SoundCloud embed" }
+    }
+
+    if (url.hostname.includes("vimeo.com")) {
+      return { src: trimmed, width: "560", height: "315", title: "Vimeo embed" }
+    }
+
+    return null
   }
 
   function handleHtmlChange(e) {
@@ -321,6 +379,9 @@ export default function RichTextEditor({ content, onChange }) {
           </ToolbarButton>
           <ToolbarButton dark={mode === "html"} onClick={addLink} isActive={editor.isActive("link")} title="Insert link">
             <LinkIcon size={16} />
+          </ToolbarButton>
+          <ToolbarButton dark={mode === "html"} onClick={addEmbed} title="Embed video/audio">
+            <Code2 size={16} />
           </ToolbarButton>
 
           <div className="ml-2 flex gap-0.5">
